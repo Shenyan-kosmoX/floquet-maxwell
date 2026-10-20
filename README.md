@@ -31,6 +31,10 @@ Floquet–Maxwell 是一个研究时空调制光子晶体的 Python 工具箱。
 
 [案例总览](docs/sors/CASES.md)还收录均匀 PTC、开放色散薄膜、周期共振器、随机调制、完整有限 Floquet 散射和同网格直接 Meep 等独立基准。每个入口连接模型、运行方法、结果与针对该物理问题的检查。
 
+## 可下载的离线响应数据
+
+[有限 Floquet 数据包](https://github.com/Shenyan-kosmoX/floquet-maxwell/releases/download/v0.1.0/floquet-dataset-v0.1.zip)提供五个频率的静态 Green 响应、周期材料映射、20×10 散射矩阵和内部谐波场。解压后可按[加载说明](sptc_toolbox/results/full_floquet_20261017/analysis/README.md)重新计算已保存模型的响应；这一步使用 Python 数值环境，无需再次运行 Meep。
+
 ## 选一个入口开始
 
 如果想先亲手生成一份结果，可以从 [Jin 张量耦合案例](cases/jin2025-tensor/CASE.md)开始。在项目根目录安装核心模块与 Legume：

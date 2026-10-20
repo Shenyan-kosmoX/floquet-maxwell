@@ -7,6 +7,10 @@
 介质bulk参数调制为11.5+0.01cosΩt，空气孔不调制；出入射参考面z=±0.7a，薄膜中心为z=0。
 空间分辨率32/a，原生亚像素平滑；上下两侧x偏振正入射为本包输入子空间。
 
+## 取得数据
+
+[下载离线数据包](https://github.com/Shenyan-kosmoX/floquet-maxwell/releases/download/v0.1.0/floquet-dataset-v0.1.zip)，校验SHA-256：`1d2d38d5956259486171a8cf3782427954ab073e7c6f3d2711b8954ef13d40d1`。解压后以 `floquet_dataset/` 作为下文的数据目录，先阅读包中的 `PUBLIC-RELEASE.md` 与 `SOURCE-MANIFEST.json`。
+
 ## 本地加载
 
 数据目录可以移动。加载需要本项目的 `sptc_toolbox` 代码、NumPy 和 SciPy；重算已有数据的 Floquet 响应**不需要 Meep**。

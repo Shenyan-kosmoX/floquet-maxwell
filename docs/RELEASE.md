@@ -6,7 +6,7 @@
 
 `sptc_toolbox/results`、`ptc_fig4/results` 和其他案例结果目录保存既有研究记录。文件名中的日期与历史 manifest 对应原始计算；本次发行的 commit 标识这份公开快照。新环境复跑的结果另见 `docs/release-verification.json`。
 
-各案例的 `results.records` 指向报告；`results.artifacts` 指向随发行提供的主要产物。带有 `availability: not_bundled` 的条目说明材料的取得方式。历史报告还会提及较大的时域场数组、本地求解缓存或论文原图；这些材料有助于说明研究来源，源码发行主要保存相应摘要与生成程序。完整原始数组目前没有公开下载地址。
+各案例的 `results.records` 指向报告；`results.artifacts` 指向随发行提供的主要产物。带有 `availability: not_bundled` 的条目说明材料的取得方式。历史报告还会提及较大的时域场数组、本地求解缓存或论文原图；这些材料有助于说明研究来源，源码发行主要保存相应摘要与生成程序。完整的有限Floquet离线响应包已提供独立下载，其他大型原始研究数组仍按各案例的取得状态说明。
 
 NumPy 数组、CSV、JSON 和自有计算图可以结合相邻的参数记录复用。Pickle 缓存由使用者在本地重新生成。论文图像和补充材料可从案例中的 DOI 页面取得；对照图明确保留论文图号和计算范围。
 
@@ -21,3 +21,9 @@ NumPy 数组、CSV、JSON 和自有计算图可以结合相邻的参数记录复
 ## 发布校验
 
 SORS 自动检查维护项目与案例清单的字段、引用关系及文档入口；软件测试检查相应接口和物理控制。运行结果的适用范围由每个案例的模型与验证记录说明。欢迎在 issue 中附上案例 ID、版本、环境与可复现命令，让讨论容易定位到同一份计算。
+
+## 离线散射数据下载
+
+[下载 floquet-dataset-v0.1.zip](https://github.com/Shenyan-kosmoX/floquet-maxwell/releases/download/v0.1.0/floquet-dataset-v0.1.zip)（206,389,351字节）。SHA-256：`1d2d38d5956259486171a8cf3782427954ab073e7c6f3d2711b8954ef13d40d1`。
+
+该包保留五频静态响应、两档材料相位映射、20×10复散射矩阵和内部场。`SOURCE-MANIFEST.json`记录源文件与公开文件身份，数值数组保持原样，少量本机路径元信息已规范化。加载方法见[数据说明](../sptc_toolbox/results/full_floquet_20261017/analysis/README.md)。其他案例的场缓存和大型原始批次可按各自脚本重建或在Issue中讨论取得。
