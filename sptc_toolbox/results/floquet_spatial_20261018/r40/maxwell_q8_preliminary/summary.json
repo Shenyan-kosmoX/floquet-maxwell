@@ -1,0 +1,67 @@
+{
+  "status": "NATIVE_INTERIOR_MAXWELL_DIAGNOSTIC",
+  "base": "sptc_toolbox\\results\\floquet_spatial_20261018\\r40",
+  "resolution": 40,
+  "native_shape": [
+    40,
+    40,
+    32,
+    3,
+    3
+  ],
+  "plane_wave_controls": [
+    {
+      "wavevector": [
+        0.0,
+        0.0,
+        2.44
+      ],
+      "discrete_wavevector": [
+        0.0,
+        0.0,
+        2.4396217159286997
+      ],
+      "transverse_residual": 0.0,
+      "curlcurl_relative_error": 4.386662046743628e-14
+    },
+    {
+      "wavevector": [
+        6.283185307179586,
+        12.566370614359172,
+        1.17
+      ],
+      "discrete_wavevector": [
+        6.276727658227595,
+        12.514757203218469,
+        1.1699582917741773
+      ],
+      "transverse_residual": 8.881784197001252e-16,
+      "curlcurl_relative_error": 1.2725971638869565e-14
+    }
+  ],
+  "rows": [],
+  "failures": [
+    {
+      "path": "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q8\\response_t2000.npz",
+      "reason": "Source column exceeds the measured current support"
+    },
+    {
+      "path": "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_q8_preliminary\\rank2\\template_q8\\response_t2000.npz",
+      "reason": "Source column exceeds the measured current support"
+    }
+  ],
+  "aggregate": {},
+  "input_sha256": {
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\source_grid.npz": "ddecd289c2ea5c24d04029742f6ee199f316735fc5179d84af27f2b561b474db",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material\\grid.npz": "f72731952c9c804fa474b75d6b1e5c6e3d87e8e8edc95e7930a5f3617d01db84",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material\\K_base.npz": "453cb8df590a670a3978d2c4a5a2ca7b629d6269b8c29bb2999ce3320c7005ab",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\basis\\basis.npz": "d482460792ec43ad4a750048dd4e6ad4e7ae01e93f89049bc43e43ff47d6cf27",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\basis\\basis_multifrequency.npz": "6f0c8ba39442c8208490363f3c039a23aaf1a1da68fa1b5e9e70d1ba2cbad190"
+  },
+  "script_sha256": "6fe5890b28c12be569b1c0960d8087f7db440012ef3460eba0a2e418a50266c8",
+  "formula": "E=K D; curl_Yee curl_Yee E - kappa^2 (D+Q)=0, J=-i*kappa*Q",
+  "scope": "Periodic in-plane native chart; two z-index layers excluded. Port work uses all saved incident/outgoing channels. No PML, outgoing-boundary, QNM or spatial-convergence certification.",
+  "tolerance_policy": "Observed residuals, no retrospectively imposed physics pass threshold. Plane-wave implementation control uses 1e-10.",
+  "selected_for_scattering": false,
+  "independent_cw_validated": false
+}

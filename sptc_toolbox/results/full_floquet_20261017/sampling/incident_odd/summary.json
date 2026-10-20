@@ -1,0 +1,133 @@
+{
+  "status": "BROADBAND_NATIVE_YEE_STATIC_GREEN_RESPONSE",
+  "identity": {
+    "kind": "incident",
+    "template": 0,
+    "sector": -1,
+    "frequencies": [
+      0.378,
+      0.388,
+      0.398,
+      0.408,
+      0.418
+    ],
+    "resolution": 32,
+    "grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+    "basis_sha256": null,
+    "polarization_sha256": null,
+    "operator_id": "492bc3d7af1c1e77c05970f646e2e07b2308e199f0368d17ff9f88f5a2dca741",
+    "eps_averaging": true,
+    "y_mirror": false,
+    "empty": false,
+    "checkpoints": [
+      1000.0,
+      1500.0,
+      2000.0
+    ],
+    "pulse": {
+      "center": 0.398,
+      "fwidth": 0.08,
+      "cutoff": 7
+    },
+    "source_spectrum": "actual midpoint current DFT",
+    "script_sha256": "0538732e929231671b86008dda29c63efd9d32d7c751734ac09c1a1696dc1b28"
+  },
+  "completed": true,
+  "rows": [
+    {
+      "time": 1000.0,
+      "elapsed_seconds": 711.9360413560007,
+      "field_change": null,
+      "complex_output_change": null,
+      "output_power": [
+        1.0000005115078738,
+        1.0000001948914645,
+        1.0000001114159183,
+        1.0000000544018768,
+        0.999999703825531
+      ],
+      "incoming_power": [
+        1.0,
+        1.0,
+        0.9999999999999996,
+        0.9999999999999998,
+        1.0
+      ],
+      "work": null
+    },
+    {
+      "time": 1500.0,
+      "elapsed_seconds": 1029.9925312859996,
+      "field_change": [
+        6.742094423493326e-06,
+        3.1576463564270707e-06,
+        2.8548068991823013e-06,
+        5.0107766599448226e-06,
+        1.729660154518895e-05
+      ],
+      "complex_output_change": [
+        2.547760823222585e-07,
+        1.1192784442766018e-07,
+        9.450623242867023e-08,
+        1.5374180243394514e-07,
+        4.869739605074747e-07
+      ],
+      "output_power": [
+        1.0000000446607034,
+        0.9999999713129213,
+        0.9999999360992056,
+        0.9999998454913893,
+        0.9999994411603157
+      ],
+      "incoming_power": [
+        0.9999999999999998,
+        0.9999999999999997,
+        1.0000000000000002,
+        0.9999999999999996,
+        0.9999999999999997
+      ],
+      "work": null
+    },
+    {
+      "time": 2000.0,
+      "elapsed_seconds": 1356.1965010759995,
+      "field_change": [
+        6.1440968475842455e-06,
+        2.877853348152084e-06,
+        2.6021995154435538e-06,
+        4.568327542275437e-06,
+        1.577462441767154e-05
+      ],
+      "complex_output_change": [
+        1.6361252400943628e-07,
+        7.168251083085961e-08,
+        6.031653785460183e-08,
+        9.764192059827027e-08,
+        3.0684863755589296e-07
+      ],
+      "output_power": [
+        0.9999999171391502,
+        0.9999999685808938,
+        0.9999999818254464,
+        0.9999999895265657,
+        1.0000000326537524
+      ],
+      "incoming_power": [
+        0.9999999999999996,
+        1.0,
+        1.0,
+        0.9999999999999996,
+        0.9999999999999996
+      ],
+      "work": null
+    }
+  ],
+  "fields_normalization": "unit total incoming parity-channel power",
+  "port_order": [
+    "bottom x",
+    "top x",
+    "bottom y",
+    "top y"
+  ],
+  "frequency_scope": "Each entry is an actual DFT evaluation; no frequency interpolation"
+}

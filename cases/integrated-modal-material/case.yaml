@@ -1,0 +1,98 @@
+schema_version: '0.1'
+kind: case
+id: integrated-modal-material
+project_id: floquet-maxwell
+title: ModePackage、ADE与QNM算符控制
+stage: results_available
+question:
+  summary: ModePackage、ADE与QNM算符控制
+  scope: 有限算符和明确开放薄膜的度量与留数；实际图案的复频空间算符按其适配单独建立。
+  record:
+    path: sptc_toolbox/docs/integrated_backend.md
+capability_refs:
+- mode-package
+- dispersive-ade
+- qnm-residue
+- finite-floquet-dynamics
+model:
+  description: 有限算符和明确开放薄膜的度量与留数；实际图案的复频空间算符按其适配单独建立。
+  record:
+    path: sptc_toolbox/docs/integrated_backend.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/docs/integrated_backend.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/docs/integrated_backend.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_integrated_backend.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/docs/integrated_backend.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_dispersive.py
+  - id: workflow-3
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/docs/integrated_backend.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_qnm.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/integrated_backend/summary.json
+  record:
+    path: sptc_toolbox/results/integrated_backend/summary.json
+- id: output-2
+  description: sptc_toolbox/results/dispersive/report.md
+  record:
+    path: sptc_toolbox/results/dispersive/report.md
+- id: output-3
+  description: sptc_toolbox/results/qnm/report.md
+  record:
+    path: sptc_toolbox/results/qnm/report.md
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/docs/integrated_backend.md
+criteria:
+- id: criterion-1
+  description: 有限Maxwell–ADE算符的谱/能量关系、左右模态归一化和指定简单极点留数。
+  representation: documented
+  record:
+    path: sptc_toolbox/docs/integrated_backend.md
+checks:
+- id: check-1
+  method: 真实ModePackage往返、独立ADE时间积分、解析极点及围道留数
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/docs/integrated_backend.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/docs/integrated_backend.md
+  artifacts:
+  - path: sptc_toolbox/results/integrated_backend/summary.json
+  - path: sptc_toolbox/results/dispersive/report.md
+  - path: sptc_toolbox/results/qnm/report.md
+  notes: 实际包导出读回、Lorentz/Drude多振子、原始ADE积分、广义左右模态及解析/围道留数比较。 有限算符和明确开放薄膜的度量与留数；实际图案的复频空间算符按其适配单独建立。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/docs/integrated_backend.md

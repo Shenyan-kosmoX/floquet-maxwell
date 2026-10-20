@@ -1,0 +1,158 @@
+{
+  "status": "NARROW_CARRIER_AND_INDEPENDENT_FIRST_ORDER_SCATTERING_DIAGNOSTICS",
+  "records": [
+    {
+      "resolution": 16,
+      "sideband_power": [
+        2.8372649142170693e-05,
+        1.7602344144079647e-05
+      ],
+      "native_modal_over_reference": [
+        4.643177912834239,
+        7.725030952200194
+      ],
+      "relative_native_error": [
+        3.643177912834239,
+        6.725030952200194
+      ],
+      "carrier_R": 0.5646022333963087,
+      "carrier_T": 0.4455017274809927,
+      "carrier_power_balance": 1.0101039608773013,
+      "settling_time": 900.0
+    },
+    {
+      "resolution": 24,
+      "sideband_power": [
+        6.51587772444649e-05,
+        5.443332198439132e-05
+      ],
+      "native_modal_over_reference": [
+        2.0218190610185713,
+        2.4980774346876493
+      ],
+      "relative_native_error": [
+        1.0218190610185713,
+        1.4980774346876493
+      ],
+      "carrier_R": 0.8222052793560206,
+      "carrier_T": 0.19202735861676698,
+      "carrier_power_balance": 1.0142326379727875,
+      "settling_time": 900.0
+    },
+    {
+      "resolution": 32,
+      "sideband_power": [
+        0.00011220728109203111,
+        0.00011877672025167711
+      ],
+      "native_modal_over_reference": [
+        1.1740704929608916,
+        1.1448257963022437
+      ],
+      "relative_native_error": [
+        0.1740704929608916,
+        0.14482579630224368
+      ],
+      "carrier_R": 0.9927544496681612,
+      "carrier_T": 0.0012119521788713469,
+      "carrier_power_balance": 0.9939664018470322,
+      "settling_time": 900.0
+    }
+  ],
+  "fixed_carrier_fa_over_c": 0.398,
+  "drive_fa_over_c": 0.01,
+  "absolute_modulation_amplitude": 0.01,
+  "native_modal_sideband_power": [
+    0.0001317392578255223,
+    0.0001359786533442951
+  ],
+  "reciprocity": {
+    "status": "ACTUAL_STATIC_SCATTERING_FIELD_RECIPROCITY_CHECK",
+    "rows": [
+      {
+        "harmonic": -1,
+        "reciprocity_amplitudes": [
+          [
+            -0.005202628015671262,
+            -0.002833396635634059
+          ],
+          [
+            -0.005319705062271736,
+            -0.0006815247265306142
+          ]
+        ],
+        "polarization_current_amplitudes": [
+          [
+            -0.005293160930498289,
+            -0.0027145223106906534
+          ],
+          [
+            -0.005440753783460898,
+            -0.000413269283675912
+          ]
+        ],
+        "reciprocal_total_power": 6.385921266670205e-05,
+        "direct_total_power": 6.515877724446492e-05,
+        "relative_complex_amplitude_difference": 0.04088927345819636,
+        "reciprocal_static_power_balance": 1.0014136542651244
+      },
+      {
+        "harmonic": 1,
+        "reciprocity_amplitudes": [
+          [
+            0.005229667731588475,
+            0.00024862235574551935
+          ],
+          [
+            0.004495522982732072,
+            0.0022153260593549802
+          ]
+        ],
+        "polarization_current_amplitudes": [
+          [
+            0.00530873768320457,
+            0.00011703810131422567
+          ],
+          [
+            0.004705095309924609,
+            0.002024600306895486
+          ]
+        ],
+        "reciprocal_total_power": 5.2528634096123735e-05,
+        "direct_total_power": 5.443332198439132e-05,
+        "relative_complex_amplitude_difference": 0.0436816199014411,
+        "reciprocal_static_power_balance": 0.9994989815996291
+      }
+    ],
+    "formula": "deltaS=i omega_out/4 integral E_test . deltaepsilon . E_in, no complex conjugate, unit incoming power",
+    "source_sha256": {
+      "sptc_toolbox\\results\\targeted_resolution\\ports\\reciprocal_f0388_r24\\carrier.npz": "872b26754913b96890e3075577f7cc37c07b8cc67bf018b1dd84c39d22d7a1f9",
+      "sptc_toolbox\\results\\targeted_resolution\\ports\\reciprocal_f0408_r24\\carrier.npz": "d0912498e1b9d6d481230cd822847f5747e6aaa1249cdcee3687208b977baf91",
+      "sptc_toolbox\\results\\connected_physics\\ports\\weak_pattern_r24_time\\carrier.npz": "875da2c2cfadbfd68e26eaae905e023cbb3249419f01b48b2118a4a8195f5adc"
+    },
+    "quadrature": "Full unit cell x/y endpoint-excluded voxel samples; interior slab z samples; physical high-epsilon mask",
+    "scope": "Independent first-order response extraction from two static fields; Gamma, orthogonal zeroth-order x-polarized air ports, actual z mirror; no native-mode residue fit",
+    "limits": [
+      "Fields and masks are finite-grid interpolated; interface smoothing derivative is not identical to a sharp mask",
+      "Both references share a static full-wave geometry; numerical agreement does not prove arbitrary Floquet completeness",
+      "Weak modulation only; no carrier depletion or repeated conversion"
+    ]
+  },
+  "source_sha256": {
+    "sptc_toolbox\\results\\connected_physics\\ports\\weak_pattern_r16_time\\summary.json": "33369b5d6ca49ea7346b9d59c7b9527e3fdad8ccf01372c69028a9e14248be0c",
+    "sptc_toolbox\\results\\connected_physics\\ports\\weak_pattern_r24_time\\summary.json": "d794b6836eebaad4fa6ffdf3dbe9070895384ea4e43e5d6288a47ef9c0f94415",
+    "sptc_toolbox\\results\\targeted_resolution\\ports\\weak_pattern_r32_t900\\summary.json": "5d2ef17bbaa889b1d241fe638de988f0266644fb9543ea8453f6850efb3a8992"
+  },
+  "findings": [
+    "Broadband static S norm did not sample the narrow dynamic carrier",
+    "Increasing independent full-wave grid moves carrier field intensity toward native modal prediction",
+    "Unit-input reciprocal-field overlap and impressed polarization-current methods support each other at the same grid",
+    "No empirical amplitude calibration applied to native output"
+  ],
+  "limits": [
+    "r24-to-r32 full-wave sideband powers still change substantially; r32 is a reference approximation, not exact truth",
+    "Fixed native modal carrier field and exact mode-port phase remain approximate",
+    "Sharp-mask source and interpolated subpixel-smoothed fields are not an exact derivative of discrete constitutive tensor",
+    "Born comparisons are weak-modulation controls, not strong Floquet conversion/instability validation"
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "seed": 20261019,
+  "amplitudes": [
+    [
+      [
+        0.4614237763233392
+      ],
+      [
+        0.6830800748605541
+      ]
+    ],
+    [
+      [
+        0.6753178965859956
+      ],
+      [
+        0.4145173187707031
+      ]
+    ]
+  ],
+  "phases": [
+    [
+      [
+        -1.5536420113824938
+      ],
+      [
+        1.4979570235817548
+      ]
+    ],
+    [
+      [
+        -2.2107439926113694
+      ],
+      [
+        0.21693075169669918
+      ]
+    ]
+  ],
+  "patterns": {
+    "uniform": {
+      "representation": "piecewise_cell_region",
+      "equation": "delta_epsilon[j,r,tau]=sum_p c[p,j,r] exp(-i*p*tau)",
+      "temporal_convention": "exp(-i*p*tau)",
+      "lattice_convention": "primitive vectors are columns",
+      "cell_shape": [
+        2,
+        2
+      ],
+      "supercell_repeated": true,
+      "cell_dft_is_continuous_spatial_fourier": false,
+      "intra_cell_window_required_for_projection": true,
+      "amplitude_units": "absolute relative-permittivity change",
+      "real_instantaneous": true,
+      "has_static_offset": false,
+      "static_geometry_modified": false,
+      "region_masks_supplied": false,
+      "positivity_verified": false,
+      "fingerprint": "d0079a9b538218aead2cfc9413c624173dc08f6318ec4296d47bbc7ce1d35d3b",
+      "provenance": {}
+    },
+    "standing_cells": {
+      "representation": "piecewise_cell_region",
+      "equation": "delta_epsilon[j,r,tau]=sum_p c[p,j,r] exp(-i*p*tau)",
+      "temporal_convention": "exp(-i*p*tau)",
+      "lattice_convention": "primitive vectors are columns",
+      "cell_shape": [
+        2,
+        2
+      ],
+      "supercell_repeated": true,
+      "cell_dft_is_continuous_spatial_fourier": false,
+      "intra_cell_window_required_for_projection": true,
+      "amplitude_units": "absolute relative-permittivity change",
+      "real_instantaneous": true,
+      "has_static_offset": false,
+      "static_geometry_modified": false,
+      "region_masks_supplied": false,
+      "positivity_verified": false,
+      "fingerprint": "a7006befb3cedde90946718aec68d419f30243c83cb1e2dd9c926b8544389fc0",
+      "provenance": {}
+    },
+    "random_phase": {
+      "representation": "piecewise_cell_region",
+      "equation": "delta_epsilon[j,r,tau]=sum_p c[p,j,r] exp(-i*p*tau)",
+      "temporal_convention": "exp(-i*p*tau)",
+      "lattice_convention": "primitive vectors are columns",
+      "cell_shape": [
+        2,
+        2
+      ],
+      "supercell_repeated": true,
+      "cell_dft_is_continuous_spatial_fourier": false,
+      "intra_cell_window_required_for_projection": true,
+      "amplitude_units": "absolute relative-permittivity change",
+      "real_instantaneous": true,
+      "has_static_offset": false,
+      "static_geometry_modified": false,
+      "region_masks_supplied": false,
+      "positivity_verified": false,
+      "fingerprint": "bdd13e02d2e69032d6affd8a6023e6ddee4a272ec9397277667818f5ca07acd9",
+      "provenance": {}
+    },
+    "random_amplitude_phase": {
+      "representation": "piecewise_cell_region",
+      "equation": "delta_epsilon[j,r,tau]=sum_p c[p,j,r] exp(-i*p*tau)",
+      "temporal_convention": "exp(-i*p*tau)",
+      "lattice_convention": "primitive vectors are columns",
+      "cell_shape": [
+        2,
+        2
+      ],
+      "supercell_repeated": true,
+      "cell_dft_is_continuous_spatial_fourier": false,
+      "intra_cell_window_required_for_projection": true,
+      "amplitude_units": "absolute relative-permittivity change",
+      "real_instantaneous": true,
+      "has_static_offset": false,
+      "static_geometry_modified": false,
+      "region_masks_supplied": false,
+      "positivity_verified": false,
+      "fingerprint": "272dde340887ac40e0c6f2b6f0014d1f2a1dc93f86eb188771235500db275cf9",
+      "provenance": {}
+    },
+    "multi_temporal_pattern": {
+      "representation": "piecewise_cell_region",
+      "equation": "delta_epsilon[j,r,tau]=sum_p c[p,j,r] exp(-i*p*tau)",
+      "temporal_convention": "exp(-i*p*tau)",
+      "lattice_convention": "primitive vectors are columns",
+      "cell_shape": [
+        2,
+        2
+      ],
+      "supercell_repeated": true,
+      "cell_dft_is_continuous_spatial_fourier": false,
+      "intra_cell_window_required_for_projection": true,
+      "amplitude_units": "absolute relative-permittivity change",
+      "real_instantaneous": true,
+      "has_static_offset": false,
+      "static_geometry_modified": false,
+      "region_masks_supplied": false,
+      "positivity_verified": false,
+      "fingerprint": "07206610dedf4b4d683fc802d9ed328f158165b0419a8a1cab730806f554be6a",
+      "provenance": {}
+    }
+  },
+  "static_geometry_disorder": false,
+  "temporal_noise": false,
+  "spatial_scope": "One fixed 2x2 drive pattern periodically repeated, not an infinite random medium"
+}

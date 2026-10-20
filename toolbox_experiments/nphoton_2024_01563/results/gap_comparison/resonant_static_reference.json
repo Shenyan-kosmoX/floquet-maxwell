@@ -1,0 +1,275 @@
+{
+  "status": "STATIC_ONLY_FIXED_DRIVE_BRACKET_REFERENCE_NOT_CERTIFIED_MAXWELL_GAP",
+  "m": 0.01,
+  "delta_epsilon": 0.1068,
+  "static_discretization": {
+    "resolution": 24,
+    "courant": 0.5,
+    "eps_averaging": false,
+    "epsilon": 11.68,
+    "radius_over_a": 0.3333333333333333
+  },
+  "derivative_df_depsilon": -0.01511672977294702,
+  "derivative_source": "Two measured static epsilon perturbations at q=.86 only",
+  "source_static_samples": [
+    {
+      "q": 0.8,
+      "frequency": 0.4099170050263639,
+      "fitted_decay_uninterpreted": 1.542679341102474e-06,
+      "source": "results\\dynamic\\q0.8_m001_r24_s4\\summary.json",
+      "selection": "Unique source-visible pole before time modulation; no frequency-based reassignment"
+    },
+    {
+      "q": 0.82,
+      "frequency": 0.41110363619950613,
+      "fitted_decay_uninterpreted": 3.3044720496502727e-06,
+      "source": "results\\dynamic\\q0.82_m001_r24_s4\\summary.json",
+      "selection": "Unique source-visible pole before time modulation; no frequency-based reassignment"
+    },
+    {
+      "q": 0.84,
+      "frequency": 0.4120352064612628,
+      "fitted_decay_uninterpreted": -4.7249886963566186e-07,
+      "source": "results\\dynamic\\q0.84_m001_r24_s4\\summary.json",
+      "selection": "Unique source-visible pole before time modulation; no frequency-based reassignment"
+    },
+    {
+      "q": 0.86,
+      "frequency": 0.4127635942895124,
+      "fitted_decay_uninterpreted": -1.7797862169709317e-06,
+      "source": "results\\dynamic\\center_m001_r24_s4\\summary.json",
+      "selection": "Unique source-visible pole before time modulation; no frequency-based reassignment"
+    },
+    {
+      "q": 0.88,
+      "frequency": 0.4133325185208035,
+      "fitted_decay_uninterpreted": -7.320829018871366e-07,
+      "source": "results\\dynamic\\q0.88_m001_r24_s4\\summary.json",
+      "selection": "Unique source-visible pole before time modulation; no frequency-based reassignment"
+    },
+    {
+      "q": 0.9,
+      "frequency": 0.4137727680301847,
+      "fitted_decay_uninterpreted": 2.3693222658891026e-07,
+      "source": "results\\dynamic\\q0.9_m001_r24_s4\\summary.json",
+      "selection": "Unique source-visible pole before time modulation; no frequency-based reassignment"
+    },
+    {
+      "q": 0.92,
+      "frequency": 0.41410619165239165,
+      "fitted_decay_uninterpreted": 3.653575388320248e-07,
+      "source": "results\\dynamic\\q0.92_m001_r24_s4\\summary.json",
+      "selection": "Unique source-visible pole before time modulation; no frequency-based reassignment"
+    }
+  ],
+  "cases": [
+    {
+      "label": "measured_center_fixed_drive",
+      "fixed_drive": 0.825527188667,
+      "half_drive_THz": 195.8585193386433,
+      "static_linearized_two_systems": [
+        {
+          "epsilon_shift": -0.0534,
+          "epsilon": 11.6266,
+          "crossings_q": [
+            0.8380967935044837
+          ]
+        },
+        {
+          "epsilon_shift": 0.0534,
+          "epsilon": 11.7334,
+          "crossings_q": [
+            0.89016188953885
+          ]
+        }
+      ],
+      "static_edges_q": [
+        0.8380967935044837,
+        0.89016188953885
+      ],
+      "independent_oscillator_edges_q": [
+        0.8381062381319265,
+        0.8901797320592528
+      ],
+      "linear_interpolation_static_edges_q": [
+        0.8383072560197562,
+        0.8908260964518449
+      ],
+      "interpolated_center_q": 0.8600000013770751,
+      "relative_static_gap_percent": 6.054080924534538,
+      "relative_oscillator_gap_percent": 6.055057423714373
+    },
+    {
+      "label": "paper_392THz_drive_reference_only",
+      "fixed_drive": 0.8261235177570745,
+      "half_drive_THz": 196.0,
+      "static_linearized_two_systems": [
+        {
+          "epsilon_shift": -0.0534,
+          "epsilon": 11.6266,
+          "crossings_q": [
+            0.8455316530652645
+          ]
+        },
+        {
+          "epsilon_shift": 0.0534,
+          "epsilon": 11.7334,
+          "crossings_q": [
+            0.9052171848941944
+          ]
+        }
+      ],
+      "static_edges_q": [
+        0.8455316530652645,
+        0.9052171848941944
+      ],
+      "independent_oscillator_edges_q": [
+        0.8455419653608118,
+        0.9052391352600057
+      ],
+      "linear_interpolation_static_edges_q": [
+        0.8460220404266253,
+        0.9057718896814207
+      ],
+      "interpolated_center_q": 0.8698559340474386,
+      "relative_static_gap_percent": 6.861542181038335,
+      "relative_oscillator_gap_percent": 6.862880111816098
+    }
+  ],
+  "candidate_native_points": [
+    {
+      "q": 0.836,
+      "static_frequency": 0.4118670773309678,
+      "predicted_amplitude_growth": -1.475971438478511e-15,
+      "predicted_cyclic_growth": -2.3490815029631035e-16,
+      "detuning": -0.0008965170025322378,
+      "max_ODE_Floquet_multiplier_error": 8.878504568760415e-12,
+      "suggested_role": "left outside"
+    },
+    {
+      "q": 0.84,
+      "static_frequency": 0.4120352064612628,
+      "predicted_amplitude_growth": 0.002181080268281281,
+      "predicted_cyclic_growth": 0.0003471297059771631,
+      "detuning": -0.0007283878722372239,
+      "max_ODE_Floquet_multiplier_error": 9.69291566744937e-12,
+      "suggested_role": "left inside, existing trace"
+    },
+    {
+      "q": 0.888,
+      "static_frequency": 0.4135225372723021,
+      "predicted_amplitude_growth": 0.0017347453014213677,
+      "predicted_cyclic_growth": 0.0002760932897266506,
+      "detuning": 0.0007589429388020763,
+      "max_ODE_Floquet_multiplier_error": 8.970380075605084e-12,
+      "suggested_role": "right inside"
+    },
+    {
+      "q": 0.892,
+      "static_frequency": 0.41361081056514626,
+      "predicted_amplitude_growth": 2.4960644266976616e-15,
+      "predicted_cyclic_growth": 3.9726099178477067e-16,
+      "detuning": 0.0008472162316462417,
+      "max_ODE_Floquet_multiplier_error": 9.526060706401406e-12,
+      "suggested_role": "right outside"
+    }
+  ],
+  "derivative_one_sided_sensitivity": [
+    {
+      "derivative": -0.015156966295443101,
+      "static_edges_q": [
+        0.8380456260699771,
+        0.890259514694694
+      ]
+    },
+    {
+      "derivative": -0.015076493250450938,
+      "static_edges_q": [
+        0.8381479969357626,
+        0.8900643909597035
+      ]
+    }
+  ],
+  "existing_dynamic_diagnostics": [
+    {
+      "q": 0.8,
+      "larger_observed_trajectory_rate_range": [
+        9.298064224597701e-06,
+        1.2936007128582909e-05
+      ],
+      "scope": "Observed rank-two trajectory diagnostic only; tiny positive rates remain unresolved drift"
+    },
+    {
+      "q": 0.82,
+      "larger_observed_trajectory_rate_range": [
+        2.1910028736073883e-05,
+        2.477552121694757e-05
+      ],
+      "scope": "Observed rank-two trajectory diagnostic only; tiny positive rates remain unresolved drift"
+    },
+    {
+      "q": 0.84,
+      "larger_observed_trajectory_rate_range": [
+        0.002007090360975896,
+        0.0020210859170546294
+      ],
+      "scope": "Observed rank-two trajectory diagnostic only; tiny positive rates remain unresolved drift"
+    },
+    {
+      "q": 0.86,
+      "larger_observed_trajectory_rate_range": [
+        0.005022950360787701,
+        0.005024318879063539
+      ],
+      "scope": "Observed rank-two trajectory diagnostic only; tiny positive rates remain unresolved drift"
+    },
+    {
+      "q": 0.88,
+      "larger_observed_trajectory_rate_range": [
+        0.003572042537298838,
+        0.0035746573532948914
+      ],
+      "scope": "Observed rank-two trajectory diagnostic only; tiny positive rates remain unresolved drift"
+    },
+    {
+      "q": 0.9,
+      "larger_observed_trajectory_rate_range": [
+        5.98359643352291e-08,
+        2.0698076519904653e-06
+      ],
+      "scope": "Observed rank-two trajectory diagnostic only; tiny positive rates remain unresolved drift"
+    },
+    {
+      "q": 0.92,
+      "larger_observed_trajectory_rate_range": [
+        1.4683335423418342e-06,
+        2.815719469018362e-06
+      ],
+      "scope": "Observed rank-two trajectory diagnostic only; tiny positive rates remain unresolved drift"
+    }
+  ],
+  "mechanism_reference_drive": 0.825527188667,
+  "paper_drive": 0.8261235177570745,
+  "measured_carrier_THz": 195.85851932812804,
+  "modulation_gap_scaling": "Both resonant and nonresonant comparisons must use the same susceptibility amplitude m, each one fixed pump across its own q sweep",
+  "limits": [
+    "Linearized shifted static curves are not separately solved spatial dispersions at every epsilon",
+    "Derivative reused locally from q=.86; q dependence and epsilon-step convergence unverified",
+    "PCHIP and linear interpolation difference is a sensitivity diagnostic, not a rigorous error bar",
+    "Static q poles are source-visible candidates, not a complete spatial eigenspectrum",
+    "Oscillator ODE agreement verifies finite-model algebra, not full Maxwell or outgoing sidebands",
+    "Paper 392 THz and measured-resonance drive cases are kept separate; no dynamic-growth fitting"
+  ],
+  "files_sha256": {
+    "results/dynamic_static_calibration/summary.json": "e01901d208f2b77dad9a90f5466759e43c852df21f00b4e6ece1ff02ddb9f3b1",
+    "results/dynamic/q0.8_m001_r24_s4/summary.json": "4a2a8bfe7672fa29bedde7fb6bbf5a95c70837f22646831805b3aa479d5bf593",
+    "results/dynamic/q0.82_m001_r24_s4/summary.json": "001ca6d95f0dd8f62601bc5434f1a1d55e1b22bb858f55685c4eaa88ce2e2793",
+    "results/dynamic/q0.84_m001_r24_s4/summary.json": "42cc06925e172dc3216244db50ca3f6e27a846a21ab398d7139eeb8d2c792888",
+    "results/dynamic/center_m001_r24_s4/summary.json": "31be546e13c439a2b68ca4ba03bbbcf7fb30922bf4d952640bbe9951d78fe5d1",
+    "results/dynamic/q0.88_m001_r24_s4/summary.json": "f6d0e499c21e2101fa5b6a14d8e3abb89f20da3ecc907a4473a565d99aaa046c",
+    "results/dynamic/q0.9_m001_r24_s4/summary.json": "5b033a4878f89c614085350985461a68347ddeaf37e74a7332bdaefdf036d74f",
+    "results/dynamic/q0.92_m001_r24_s4/summary.json": "968c019b299c5bfdc8d3b13272444292210180ef0a16d3a560d220c8ec56c5b6"
+  },
+  "offline_diagnostic_sha256": "c97dde8d58a9d51335fe23b13c30f410bc23351b7a31fd6767d26403e62f6483",
+  "script_sha256": "58b8ac5d14dfced882ce5151847018f0ff0c9a6e7ccf2060959ef95b26362ef5"
+}

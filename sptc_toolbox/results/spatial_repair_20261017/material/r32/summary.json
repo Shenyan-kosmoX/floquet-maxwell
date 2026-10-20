@@ -1,0 +1,27 @@
+{
+  "status": "NATIVE_SUBPIXEL_TENSOR_STENCIL_INITIALIZATION_AUDIT",
+  "completed": true,
+  "resolution": 32,
+  "eps_averaging": true,
+  "sector": 1,
+  "y_mirror": true,
+  "volume_z": 0.75,
+  "ndof": 79872,
+  "nnz": 91104,
+  "operator_id": "5ab798c97b474cc2408f0e7743e1639d029714f3a452344dc2492df26dd77644",
+  "first_step_E_equal_KD_relative_residual": 8.083876287343244e-18,
+  "first_step_component_relative_residuals": [
+    1.566570974434894e-17,
+    1.1866420144941753e-17,
+    0.0
+  ],
+  "epsilon_derivative_centered_contrast_relative_residual": 7.392696178098081e-07,
+  "delta": 0.01,
+  "seconds": 5.52155839399984,
+  "dt": 0.015625,
+  "stencil_source": "https://github.com/NanoComp/meep/blob/v1.35.0/src/step_generic.cpp#L580",
+  "limitations": [
+    "Native bulk dielectric parameter only; no moving boundary or dispersion",
+    "Independent first-step operator audit is required before using any exported map"
+  ]
+}

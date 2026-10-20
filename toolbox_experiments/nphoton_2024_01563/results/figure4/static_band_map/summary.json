@@ -1,0 +1,2491 @@
+{
+  "status": "COMPLETE_NATIVE_STATIC_SPECTRAL_MAP",
+  "completed_points": 25,
+  "total_points": 25,
+  "completed_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "units": "k input in 2*pi/a; f in c/a; omega=2*pi*f; path distance in cyclic reciprocal coordinates",
+  "observable": "Per-k-normalized source-free FFT six-component field power summed over three probes; not S_min.",
+  "primary_window": "End-only 5% cosine taper; Hann and rectangular powers also saved",
+  "geometry": "Sphere array R/a=1/3, epsilon=11.68, air outside",
+  "path": "M(.5,.5)-Gamma(0,0)-X(.5,0)-M(.5,.5)",
+  "source_sha256": "541ca198b83b2c3a12261b9ab2a0698adf5d4a6b4779b541a7123522ade45140",
+  "total_recorded_native_seconds": 340.32817336102016,
+  "cases": [
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 0,
+        "kx_cyclic": 0.5,
+        "ky_cyclic": 0.5,
+        "path_distance": 0.0,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 26.643238360004034,
+      "meep_version": "1.35.0",
+      "raw_sha256": "7eabbf389fd9f40b8fbf4df5c36fcdb6dcd466b124c76224ff2577bf69c34008",
+      "spectrum_sha256": "b60d4bd49ed2538e22da3a9a5ef73b66fc06d81e2f3fe15d9bc2a41f4e05307f",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 1,
+        "kx_cyclic": 0.4375,
+        "ky_cyclic": 0.4375,
+        "path_distance": 0.08838834764831845,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 11.827023741963785,
+      "meep_version": "1.35.0",
+      "raw_sha256": "a97fbd5f24545b63f7f3eefcf66b0e7624a0a0cbe5c0c6de3c40507ad5eee7b7",
+      "spectrum_sha256": "96cf4396dff1b4ec72f868587cd957ebaca6583e002bce58a12d86d7677121c5",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 2,
+        "kx_cyclic": 0.375,
+        "ky_cyclic": 0.375,
+        "path_distance": 0.1767766952966369,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 13.044347452989314,
+      "meep_version": "1.35.0",
+      "raw_sha256": "4e8eebbe2420a1f19166f46de9d2fb6f3fbcd2594d1791865997a257c45bd269",
+      "spectrum_sha256": "000f5785d9140c1583594247e9472967f85bb480330c1384b7f8af56e18caedb",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 3,
+        "kx_cyclic": 0.3125,
+        "ky_cyclic": 0.3125,
+        "path_distance": 0.26516504294495535,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 11.717092174047139,
+      "meep_version": "1.35.0",
+      "raw_sha256": "3ffe338fdc632393a0b250aed6001372a1925872a232f3a8992ce115e20cd84b",
+      "spectrum_sha256": "d9be61e7649b59b98c925f74d092a9d9012d6dd3201d081ebb1c5c44b169d311",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 4,
+        "kx_cyclic": 0.25,
+        "ky_cyclic": 0.25,
+        "path_distance": 0.3535533905932738,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 11.213737900019623,
+      "meep_version": "1.35.0",
+      "raw_sha256": "4df04f9af473b184530530616dc117342e80fd95c8a08a45e0d5c08a8909716c",
+      "spectrum_sha256": "1c852992519237e66b5a582195fdfbd1a04c17a215f631df9d1c1efc55c7e3a2",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 5,
+        "kx_cyclic": 0.1875,
+        "ky_cyclic": 0.1875,
+        "path_distance": 0.4419417382415922,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 12.331098142953124,
+      "meep_version": "1.35.0",
+      "raw_sha256": "df9e25dc815e98bbfbcd1b86db7ea0b1ece936aafae2e7250c439a812133e89d",
+      "spectrum_sha256": "24b7632012ad6f8aef23dcefd3dbf9d10edd9d4f77d7201059ecede62255135c",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 6,
+        "kx_cyclic": 0.125,
+        "ky_cyclic": 0.125,
+        "path_distance": 0.5303300858899107,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 11.347959264996462,
+      "meep_version": "1.35.0",
+      "raw_sha256": "77e3d137fa2ba9687e46f96b0f30649145f787e937a87fecd27dae834e1d62a9",
+      "spectrum_sha256": "28808d825e125a678a1cc4a3e153321e88a0441f1a4b903b8b0b648a7152f9c5",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 7,
+        "kx_cyclic": 0.0625,
+        "ky_cyclic": 0.0625,
+        "path_distance": 0.6187184335382292,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 11.5360194700188,
+      "meep_version": "1.35.0",
+      "raw_sha256": "99e8edeb291e071622a0ab3ed91b3626f3f77fc30a92d60cc63f2d6a774e28d2",
+      "spectrum_sha256": "616ac16b8e1db44dc03f7b316e2c959829c1572fc39b9e0be8a8fed4f3456996",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 8,
+        "kx_cyclic": 0.0,
+        "ky_cyclic": 0.0,
+        "path_distance": 0.7071067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 28.491636758029927,
+      "meep_version": "1.35.0",
+      "raw_sha256": "cbf7ab0937fcf228c0230d176bfddb90d8e13dfa45dd20da1bb5501935386653",
+      "spectrum_sha256": "0949be7fe9b1c406ba5cefdfdad8b85678bfe2bfcdb58b3379446029d4949321",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 9,
+        "kx_cyclic": 0.0625,
+        "ky_cyclic": 0.0,
+        "path_distance": 0.7696067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 13.450397013046313,
+      "meep_version": "1.35.0",
+      "raw_sha256": "a8a2cb59d4320402967de7a8ee4c60cc378447e48c988cf3a7a902b4ce4914cc",
+      "spectrum_sha256": "5f12ebfa0b8b3ef610ee0ac2e41259eb9edbbc8bd35afa153ff06e9612dff8ed",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 10,
+        "kx_cyclic": 0.125,
+        "ky_cyclic": 0.0,
+        "path_distance": 0.8321067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 11.31838804797735,
+      "meep_version": "1.35.0",
+      "raw_sha256": "c677bddc55f7a78cce024972b5c49bffc598d3e4a374f92ec816ef98b13d17cc",
+      "spectrum_sha256": "20ff5bf32c9806a19d34ca3c4b7a25c70c23dfa1d90c34508b9ecfa48f3beea5",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 11,
+        "kx_cyclic": 0.1875,
+        "ky_cyclic": 0.0,
+        "path_distance": 0.8946067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 12.143647568998858,
+      "meep_version": "1.35.0",
+      "raw_sha256": "8e909439b2e164ca22846a5b4a81c2dd172de51b42a83770b6339b62d39f9808",
+      "spectrum_sha256": "99e9e3ea1bcf700b88b4e1b9cca5b072abfd389fc8810fdc3278d4e8fc57819d",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 12,
+        "kx_cyclic": 0.25,
+        "ky_cyclic": 0.0,
+        "path_distance": 0.9571067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 11.25278108601924,
+      "meep_version": "1.35.0",
+      "raw_sha256": "1fa98a727878359fb96e3e1f9841500bfb1d1e36950e14d41a57f44e7e4f321f",
+      "spectrum_sha256": "f86dca30b0a786529635cbdf90656f9bab093651ccad58c73c6e9006222d8fe8",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 13,
+        "kx_cyclic": 0.3125,
+        "ky_cyclic": 0.0,
+        "path_distance": 1.0196067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 10.512539784016553,
+      "meep_version": "1.35.0",
+      "raw_sha256": "ba63c9642fd318ce956728ea8ed4a3e84656c5af79c7b7fe35699b46908f0bc7",
+      "spectrum_sha256": "3a8370bc3f121f68748efa3d869b79161462657329d4c008bdad927e33c4c0b5",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 14,
+        "kx_cyclic": 0.375,
+        "ky_cyclic": 0.0,
+        "path_distance": 1.0821067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 12.5004157719668,
+      "meep_version": "1.35.0",
+      "raw_sha256": "0899761a0d549467c0df634e2c188f8eef980c3f92ff42569ad302c188f8b8e0",
+      "spectrum_sha256": "70403a4b5fb2f49cfed61bc78b7a4a8d913f83f2d09569e32703898dfa576f6b",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 15,
+        "kx_cyclic": 0.4375,
+        "ky_cyclic": 0.0,
+        "path_distance": 1.1446067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 12.326971959031653,
+      "meep_version": "1.35.0",
+      "raw_sha256": "77a4f26ded2be8e4dc2018f712b3e3c128e47a630cd832db3db0da68173bd3fb",
+      "spectrum_sha256": "009715cb35a68034482ee2754ce0d5bdcb0a801267b522b3f73a5f15c66db29e",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 16,
+        "kx_cyclic": 0.5,
+        "ky_cyclic": 0.0,
+        "path_distance": 1.2071067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 23.877025661990047,
+      "meep_version": "1.35.0",
+      "raw_sha256": "7967149c3aa3adb9f049d07703211c2787a5a694bddfaf27ed409de17f30eae8",
+      "spectrum_sha256": "fd64923791d9a85b020baee0ce56f3cc8091cf52f4fa0c8dab59c909deadaad7",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 17,
+        "kx_cyclic": 0.5,
+        "ky_cyclic": 0.0625,
+        "path_distance": 1.2696067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 10.683425992028788,
+      "meep_version": "1.35.0",
+      "raw_sha256": "c825a7fd68f26fe88dafb95b88f22547750e2c5e7dcc289dcdaf922316f28091",
+      "spectrum_sha256": "23e87a890d17b02e0ada0cbd0e1c83031420d857ae5a8b7e200ea2083dc7d3e0",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 18,
+        "kx_cyclic": 0.5,
+        "ky_cyclic": 0.125,
+        "path_distance": 1.3321067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 12.188679509970825,
+      "meep_version": "1.35.0",
+      "raw_sha256": "24e35a17b8de6d27e39acfd762e4c4f7def819a8d14d756acffe331a6364b631",
+      "spectrum_sha256": "0c0fef7b43d132f0df79655504b31cea4cec13a8b8727b3ceaa74c7d14eb77d0",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 19,
+        "kx_cyclic": 0.5,
+        "ky_cyclic": 0.1875,
+        "path_distance": 1.3946067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 11.862019941967446,
+      "meep_version": "1.35.0",
+      "raw_sha256": "409608b3ecd99c4e35b71c9678c6cffc008040a2e4cadb901e806361ab8e2b1e",
+      "spectrum_sha256": "f61e5024e6fa52e2d9916344c93fe44fe442ceeb24b4142df3179dfd6376272b",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 20,
+        "kx_cyclic": 0.5,
+        "ky_cyclic": 0.25,
+        "path_distance": 1.4571067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 11.615364915982354,
+      "meep_version": "1.35.0",
+      "raw_sha256": "6ebd33b8a84532ee8b21bc08589b50b60a3b82082f578d3fd2de6eb8b7f1a834",
+      "spectrum_sha256": "d1a78896cd4081462969b9044179a414c87842d6432a9527f14efcb72ea7d8a2",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 21,
+        "kx_cyclic": 0.5,
+        "ky_cyclic": 0.3125,
+        "path_distance": 1.5196067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 11.436266141943634,
+      "meep_version": "1.35.0",
+      "raw_sha256": "7d786102005774ed2f886e7c95968a512515a89267ad45ded11dc76c0a26d64e",
+      "spectrum_sha256": "bc78fe10b5817065ad0707bcc9d2d2f9de06b4a8623c08da6f6174365b52df0b",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 22,
+        "kx_cyclic": 0.5,
+        "ky_cyclic": 0.375,
+        "path_distance": 1.5821067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 14.17046803800622,
+      "meep_version": "1.35.0",
+      "raw_sha256": "903491249718b4c035b2af4b230f1355fbbe107bb144d1215a7c4d9e420d0b15",
+      "spectrum_sha256": "3f06be250f78626f1df07c12a6af9359460f169b94c9b715cfe3b6af59bcb6f1",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 23,
+        "kx_cyclic": 0.5,
+        "ky_cyclic": 0.4375,
+        "path_distance": 1.6446067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 10.593603057030123,
+      "meep_version": "1.35.0",
+      "raw_sha256": "cb1fa30d9f453b751e6a1a933d88a3e8724a8c62a22ff4c1f1af8b0d5287150f",
+      "spectrum_sha256": "76f19f369fd7322989f5e2d089686f7fa61fd58df3f69a595adad41d89b577d3",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    },
+    {
+      "status": "COMPLETED_NATIVE_STATIC_SPECTRAL_RESPONSE",
+      "config": {
+        "index": 24,
+        "kx_cyclic": 0.5,
+        "ky_cyclic": 0.5,
+        "path_distance": 1.7071067811865477,
+        "radius": 0.3333333333333333,
+        "epsilon": 11.68,
+        "resolution": 16,
+        "padding": 3.0,
+        "pml": 1.0,
+        "courant": 0.5,
+        "eps_averaging": false,
+        "symmetries": [],
+        "cell_size": [
+          1.0,
+          1.0,
+          8.666666666666666
+        ],
+        "frequency_center": 0.38,
+        "source_fwidth": 0.6,
+        "source_cutoff": 4.0,
+        "warmup_after_sources": 0.0,
+        "source_free_duration": 300.0,
+        "sample_interval": 0.125,
+        "sources": [
+          {
+            "component": "Hz",
+            "position": [
+              0.13,
+              -0.17,
+              0.11
+            ],
+            "amplitude": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "component": "Ez",
+            "position": [
+              -0.21,
+              0.09,
+              -0.13
+            ],
+            "amplitude": [
+              0.73,
+              0.19
+            ]
+          }
+        ],
+        "probes": [
+          [
+            0.07,
+            0.11,
+            0.04
+          ],
+          [
+            -0.19,
+            0.17,
+            0.21
+          ],
+          [
+            0.23,
+            -0.07,
+            -0.19
+          ]
+        ]
+      },
+      "spectral_config": {
+        "sample_interval": 0.125,
+        "sample_count": 2401,
+        "nfft": 8192,
+        "native_frequency_resolution": 0.003331945022907122,
+        "display_frequency_spacing": 0.0009765625,
+        "primary_window": "end_taper",
+        "primary_window_definition": "Unit weight from first source-free sample; final 5% cosine taper to zero. Preserves early radiation response.",
+        "normalization": "Squared FFT amplitude divided by window-sum squared; summed three probes, E/H components in Meep units. Each k normalized separately only in the plot.",
+        "fft_sign": "Positive physical f uses the negative numpy FFT bin because Meep fields use exp(-i*2*pi*f*t)."
+      },
+      "source_end_time": 13.34375,
+      "first_sample": 13.34375,
+      "last_sample": 313.34375,
+      "elapsed_seconds": 12.24402560602175,
+      "meep_version": "1.35.0",
+      "raw_sha256": "7eabbf389fd9f40b8fbf4df5c36fcdb6dcd466b124c76224ff2577bf69c34008",
+      "spectrum_sha256": "b60d4bd49ed2538e22da3a9a5ef73b66fc06d81e2f3fe15d9bc2a41f4e05307f",
+      "limits": [
+        "Source/probe-visible field response, not singular-value minima or complete eigenspectrum",
+        "No frequency sorting or branch stitching",
+        "r16 no-average voxelized sphere has not been spatially converged",
+        "Finite pad3/PML1 can distort long evanescent tails near the air light line",
+        "No physical linewidth/Q assignment from FFT peak width",
+        "Zero padding improves frequency sampling only, not independent resolution",
+        "Mixed Hz and Ez excitation includes both z parities; it does not assign TE/TM labels"
+      ]
+    }
+  ]
+}

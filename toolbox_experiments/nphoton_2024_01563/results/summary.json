@@ -1,0 +1,2534 @@
+{
+  "status": "INITIAL_STATIC_MEEP_REPRODUCTION_DYNAMIC_NOT_RUN",
+  "sphere": [
+    {
+      "status": "NATIVE_MEEP_STATIC_SCATTERING_CONTROL",
+      "resolution": 24,
+      "radius_over_a": 0.3333333333333333,
+      "epsilon": 11.68,
+      "period_nm": 631.8,
+      "padding": 1.0,
+      "pml": 0.5,
+      "decay_time": 100.0,
+      "flux_box_half_size": 0.56,
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 37.332715427008225,
+      "relative_l2_scattering_error_band_0p30_0p54": 0.14997751313780827,
+      "mie_lossless_optical_theorem_error": 1.3322676295501878e-15,
+      "normalization": "Outward scattered-only six-face flux / empty-cell incident plane-wave intensity",
+      "scope": "Isolated lossless sphere exact full-multipole Mie comparison; Figure4c dipoles plotted separately. Not periodic/Floquet validation.",
+      "folder": "results/sphere_r24"
+    },
+    {
+      "status": "NATIVE_MEEP_STATIC_SCATTERING_CONTROL",
+      "resolution": 24,
+      "radius_over_a": 0.3333333333333333,
+      "epsilon": 11.68,
+      "period_nm": 631.8,
+      "padding": 1.0,
+      "pml": 0.5,
+      "decay_time": 100.0,
+      "flux_box_half_size": 0.56,
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 58.44458943101927,
+      "source_is_integrated": true,
+      "relative_l2_scattering_error_band_0p30_0p54": 0.057389625086658506,
+      "mie_lossless_optical_theorem_error": 1.3322676295501878e-15,
+      "normalization": "Outward scattered-only six-face flux / empty-cell incident plane-wave intensity",
+      "scope": "Isolated lossless sphere exact full-multipole Mie comparison; Figure4c dipoles plotted separately. Not periodic/Floquet validation.",
+      "folder": "results/sphere_r24_integrated"
+    },
+    {
+      "status": "NATIVE_MEEP_STATIC_SCATTERING_CONTROL",
+      "resolution": 32,
+      "radius_over_a": 0.3333333333333333,
+      "epsilon": 11.68,
+      "period_nm": 631.8,
+      "padding": 1.0,
+      "pml": 0.5,
+      "decay_time": 100.0,
+      "flux_box_half_size": 0.56,
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 143.6950611140055,
+      "relative_l2_scattering_error_band_0p30_0p54": 0.14478440370126217,
+      "mie_lossless_optical_theorem_error": 1.3322676295501878e-15,
+      "normalization": "Outward scattered-only six-face flux / empty-cell incident plane-wave intensity",
+      "scope": "Isolated lossless sphere exact full-multipole Mie comparison; Figure4c dipoles plotted separately. Not periodic/Floquet validation.",
+      "folder": "results/sphere_r32"
+    },
+    {
+      "status": "NATIVE_MEEP_STATIC_SCATTERING_CONTROL",
+      "resolution": 32,
+      "radius_over_a": 0.3333333333333333,
+      "epsilon": 11.68,
+      "period_nm": 631.8,
+      "padding": 1.0,
+      "pml": 0.5,
+      "decay_time": 100.0,
+      "flux_box_half_size": 0.56,
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 169.18702142400434,
+      "source_is_integrated": true,
+      "relative_l2_scattering_error_band_0p30_0p54": 0.03567138845296638,
+      "mie_lossless_optical_theorem_error": 1.3322676295501878e-15,
+      "normalization": "Outward scattered-only six-face flux / empty-cell incident plane-wave intensity",
+      "scope": "Isolated lossless sphere exact full-multipole Mie comparison; Figure4c dipoles plotted separately. Not periodic/Floquet validation.",
+      "folder": "results/sphere_r32_integrated"
+    },
+    {
+      "status": "NATIVE_MEEP_STATIC_SCATTERING_CONTROL",
+      "resolution": 40,
+      "radius_over_a": 0.3333333333333333,
+      "epsilon": 11.68,
+      "period_nm": 631.8,
+      "padding": 1.0,
+      "pml": 0.5,
+      "decay_time": 100.0,
+      "flux_box_half_size": 0.56,
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 430.8721781040076,
+      "source_is_integrated": true,
+      "relative_l2_scattering_error_band_0p30_0p54": 0.02554244644969499,
+      "mie_lossless_optical_theorem_error": 1.3322676295501878e-15,
+      "normalization": "Outward scattered-only six-face flux / empty-cell incident plane-wave intensity",
+      "scope": "Isolated lossless sphere exact full-multipole Mie comparison; Figure4c dipoles plotted separately. Not periodic/Floquet validation.",
+      "folder": "results/sphere_r40_integrated"
+    }
+  ],
+  "array": [
+    {
+      "folder": "results/array/q0.82_r24_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 2.57610597594363,
+        "ky_ka": 2.57610597594363,
+        "resolution": 24,
+        "padding": 1.0,
+        "pml": 0.5,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.4053957491834185,
+          "frequency_thz": 192.3624376550309,
+          "decay": 1.1131348948554916e-06,
+          "frequency_spread": 2.227195761150824e-09,
+          "air_light_threshold": 0.5798275605729689,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.9999999998493706
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.4053957491834185,
+          "decay": 1.1131348948554916e-06,
+          "frequency_spread": 2.227195761150824e-09,
+          "decay_spread": 1.8561476937151042e-09,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": true,
+          "fit_only_nuisance": true,
+          "candidate_status": "FIT_ONLY_POSITIVE_DECAY_NUISANCE",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.4053957491860082,
+              "decay": 1.1131666622325397e-06,
+              "Q": -182091.21910503338,
+              "amplitude": [
+                1.9335316255955672,
+                -121.75199037352304
+              ],
+              "error": 1.2030806913836008e-12
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.4053957498474774,
+              "decay": 1.111330337449007e-06,
+              "Q": -182392.1007942784,
+              "amplitude": [
+                6.2314868444258895,
+                -77.33173009336824
+              ],
+              "error": 3.733151551144934e-11
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.40539574917988125,
+              "decay": 1.113186485142722e-06,
+              "Q": -182087.97653876714,
+              "amplitude": [
+                -0.7136703286370106,
+                -29.66045875632404
+              ],
+              "error": 2.7974074632269092e-12
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.40539574919079613,
+              "decay": 1.1131420625524773e-06,
+              "Q": -182095.24319888162,
+              "amplitude": [
+                93.54028762414227,
+                -78.1711090313952
+              ],
+              "error": 1.3509528428668634e-12
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.40539574762028163,
+              "decay": 1.112493982647213e-06,
+              "Q": -182201.32150990618,
+              "amplitude": [
+                62.68541396958672,
+                -45.858975032150525
+              ],
+              "error": 3.277531786375348e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.4053957491808287,
+              "decay": 1.113127727158506e-06,
+              "Q": -182097.58830448287,
+              "amplitude": [
+                22.012798858640746,
+                -19.941442953546378
+              ],
+              "error": 1.742839588770045e-12
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999998493706,
+          "finite_window_H_norm": 25.742508773352863,
+          "accepted_pole_evidence": false,
+          "rejection_reasons": [
+            "positive_fitted_decay_not_certified_as_passive_mode"
+          ],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 0.0007928939277402927
+    },
+    {
+      "folder": "results/array/q0.82_r32_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 2.57610597594363,
+        "ky_ka": 2.57610597594363,
+        "resolution": 32,
+        "padding": 1.0,
+        "pml": 0.5,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.4062457143916931,
+          "frequency_thz": 192.7657506638994,
+          "decay": -2.8365711825720907e-06,
+          "frequency_spread": 1.947658700984789e-09,
+          "air_light_threshold": 0.5798275605729689,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.999999999970822
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.4062457143916931,
+          "decay": -2.8365711825720907e-06,
+          "frequency_spread": 1.947658700984789e-09,
+          "decay_spread": 2.4225486014982355e-09,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.4062457144985015,
+              "decay": -2.836739044661593e-06,
+              "Q": 71604.35064744638,
+              "amplitude": [
+                -28.425667215782273,
+                -120.87719474141842
+              ],
+              "error": 3.657613248038035e-12
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.406245715414458,
+              "decay": -2.8379868718860055e-06,
+              "Q": 71572.86727413301,
+              "amplitude": [
+                -13.00673642468239,
+                -77.94621492937496
+              ],
+              "error": 2.7805046468727318e-11
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.40624571484197813,
+              "decay": -2.8364033204825884e-06,
+              "Q": 71612.8259878181,
+              "amplitude": [
+                -8.061494178287173,
+                -28.90487284495633
+              ],
+              "error": 2.9941318727361296e-12
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.4062457142733575,
+              "decay": -2.8355643232845072e-06,
+              "Q": 71634.01495381925,
+              "amplitude": [
+                -27.82517020437412,
+                -120.65403451056609
+              ],
+              "error": 1.205015684325605e-12
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.4062457134667993,
+              "decay": -2.8369536159660873e-06,
+              "Q": 71598.93471301215,
+              "amplitude": [
+                -12.634786885359045,
+                -77.77943795671419
+              ],
+              "error": 2.3276273678008777e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.40624571428488476,
+              "decay": -2.8355704842326775e-06,
+              "Q": 71633.85931399574,
+              "amplitude": [
+                -7.914295395667013,
+                -28.856943938820944
+              ],
+              "error": 6.411573230926454e-13
+            }
+          ],
+          "independent_window_field_overlap": 0.999999999970822,
+          "finite_window_H_norm": 26.31932920103706,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 0.0008532043325250793
+    },
+    {
+      "folder": "results/array/q0.84_r32_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 2.638937829015426,
+        "ky_ka": 2.638937829015426,
+        "resolution": 32,
+        "padding": 1.0,
+        "pml": 0.5,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.4070869658127326,
+          "frequency_thz": 193.16492893441134,
+          "decay": -3.5968429131815756e-06,
+          "frequency_spread": 2.634318152505699e-09,
+          "air_light_threshold": 0.5939696961966998,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.9999999999432835
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.4070869658127326,
+          "decay": -3.5968429131815756e-06,
+          "frequency_spread": 2.634318152505699e-09,
+          "decay_spread": 1.7886541154618727e-09,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.40708696571698316,
+              "decay": -3.5965752545680303e-06,
+              "Q": 56593.69496021802,
+              "amplitude": [
+                -58.59567133481852,
+                -113.11128118775142
+              ],
+              "error": 1.8842460798514344e-12
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.40708696827899254,
+              "decay": -3.5974323139931722e-06,
+              "Q": 56580.2123219274,
+              "amplitude": [
+                -33.22679294674332,
+                -73.79428881567539
+              ],
+              "error": 3.766314248727255e-11
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.4070869656446744,
+              "decay": -3.5966796356033608e-06,
+              "Q": 56592.052516290285,
+              "amplitude": [
+                -14.873196396407762,
+                -26.401390913647514
+              ],
+              "error": 1.682727530639577e-12
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.4070869658084082,
+              "decay": -3.5968501032167064e-06,
+              "Q": 56589.37043892174,
+              "amplitude": [
+                -122.93744882314239,
+                -31.576421671080425
+              ],
+              "error": 1.1909318917615385e-12
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.40708696774318703,
+              "decay": -3.598363908683492e-06,
+              "Q": 56565.56397211713,
+              "amplitude": [
+                -76.88407242794992,
+                -24.315987021099808
+              ],
+              "error": 3.540358456864653e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.4070869658170571,
+              "decay": -3.596835723146445e-06,
+              "Q": 56589.59668318477,
+              "amplitude": [
+                -29.489297687307154,
+                -6.481529030655833
+              ],
+              "error": 4.226600965955451e-13
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999999432835,
+          "finite_window_H_norm": 26.77520469887621,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 0.000384961223725255
+    },
+    {
+      "folder": "results/array/q0.86_r24_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 2.701769682087222,
+        "ky_ka": 2.701769682087222,
+        "resolution": 24,
+        "padding": 1.0,
+        "pml": 0.5,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.40688259140086147,
+          "frequency_thz": 193.06795218973397,
+          "decay": -1.2998686608571858e-06,
+          "frequency_spread": 3.9621362357689094e-08,
+          "air_light_threshold": 0.6081118318204308,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.9999999999455628
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.40688259140086147,
+          "decay": -1.2998686608571858e-06,
+          "frequency_spread": 3.9621362357689094e-08,
+          "decay_spread": 8.371278168753943e-09,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.40688259139800087,
+              "decay": -1.299710357839457e-06,
+              "Q": 156528.1791222979,
+              "amplitude": [
+                -52.04275627039173,
+                -116.33120860529661
+              ],
+              "error": 9.403298177047408e-13
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.4068825932608185,
+              "decay": -1.3000123468930325e-06,
+              "Q": 156491.81880204772,
+              "amplitude": [
+                -29.72255169469123,
+                -75.30404078111549
+              ],
+              "error": 3.5455310852676865e-11
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.4068825737554327,
+              "decay": -1.2944234591429335e-06,
+              "Q": 157167.49062352386,
+              "amplitude": [
+                -13.119344304347344,
+                -27.196350798969572
+              ],
+              "error": 3.504599501399295e-10
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.406882591403722,
+              "decay": -1.2997249748213388e-06,
+              "Q": 156526.41877549994,
+              "amplitude": [
+                -110.81792842981528,
+                -62.597112794045614
+              ],
+              "error": 1.3605457102541952e-12
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.40688259334788957,
+              "decay": -1.3003408990939185e-06,
+              "Q": 156452.27864147263,
+              "amplitude": [
+                -68.5486581383706,
+                -42.87315252077477
+              ],
+              "error": 3.89849050608856e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.4068825537265272,
+              "decay": -1.3027947373116875e-06,
+              "Q": 156157.58264656793,
+              "amplitude": [
+                -26.673051414602526,
+                -14.068929824033384
+              ],
+              "error": 7.441904073492539e-10
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999999455628,
+          "finite_window_H_norm": 26.54773048782134,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 0.0002130803421309301
+    },
+    {
+      "folder": "results/array/q0.86_r32_eps11.6266",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.6266,
+        "kx_ka": 2.701769682087222,
+        "ky_ka": 2.701769682087222,
+        "resolution": 32,
+        "padding": 1.0,
+        "pml": 0.5,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.4085666893905649,
+          "frequency_thz": 193.86706563678376,
+          "decay": -1.7662939405427647e-06,
+          "frequency_spread": 8.332741496808183e-09,
+          "air_light_threshold": 0.6081118318204308,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.9999999999822674
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.4085666893905649,
+          "decay": -1.7662939405427647e-06,
+          "frequency_spread": 8.332741496808183e-09,
+          "decay_spread": 1.6343907029801674e-08,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.40856668939757673,
+              "decay": -1.7663506149271404e-06,
+              "Q": 115652.7718633114,
+              "amplitude": [
+                -103.23226797011556,
+                -80.27881848257076
+              ],
+              "error": 4.252554814446213e-13
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.40856669086481134,
+              "decay": -1.7656664591200024e-06,
+              "Q": 115697.58511141411,
+              "amplitude": [
+                -63.10960196799726,
+                -53.910928475870534
+              ],
+              "error": 2.3097987216921696e-11
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.40856668938355306,
+              "decay": -1.7663025656431244e-06,
+              "Q": 115655.91799805567,
+              "amplitude": [
+                -24.83130596019405,
+                -18.144084127985113
+              ],
+              "error": 1.7603055662642783e-12
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.40856668936040075,
+              "decay": -1.7662853154424048e-06,
+              "Q": 115657.0475303041,
+              "amplitude": [
+                12.67236284869429,
+                129.92449353167603
+              ],
+              "error": 4.939236292531501e-13
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.4085666902518235,
+              "decay": -1.7648707243464635e-06,
+              "Q": 115749.75000027746,
+              "amplitude": [
+                4.243746338556785,
+                82.74522680000999
+              ],
+              "error": 2.3698723300636114e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.40856668253206985,
+              "decay": -1.7812146313762652e-06,
+              "Q": 114687.6618165854,
+              "amplitude": [
+                3.8934601376018243,
+                30.451660332569062
+              ],
+              "error": 2.3458877506615965e-10
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999999822674,
+          "finite_window_H_norm": 27.329725771487794,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 0.00018174039208871152
+    },
+    {
+      "folder": "results/array/q0.86_r32_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 2.701769682087222,
+        "ky_ka": 2.701769682087222,
+        "resolution": 32,
+        "padding": 1.0,
+        "pml": 0.5,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.40775204717350955,
+          "frequency_thz": 193.48051357498952,
+          "decay": -1.584326525699511e-06,
+          "frequency_spread": 1.8369034404663864e-08,
+          "air_light_threshold": 0.6081118318204308,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.9999999999677094
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.40775204717350955,
+          "decay": -1.584326525699511e-06,
+          "frequency_spread": 1.8369034404663864e-08,
+          "decay_spread": 1.8511646493227087e-08,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.4077520471700611,
+              "decay": -1.58437857258713e-06,
+              "Q": 128678.85687959136,
+              "amplitude": [
+                -80.97421384321459,
+                -101.53675871761341
+              ],
+              "error": 7.488490603234163e-13
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.40775204889203137,
+              "decay": -1.5839417786046713e-06,
+              "Q": 128714.3424082257,
+              "amplitude": [
+                -48.397429650516074,
+                -66.69576672910661
+              ],
+              "error": 2.55455714663491e-11
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.407752047176958,
+              "decay": -1.5843290079461285e-06,
+              "Q": 128682.88251111246,
+              "amplitude": [
+                -19.711320655196385,
+                -23.267356681261933
+              ],
+              "error": 1.0842932541704537e-12
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.40775204715926205,
+              "decay": -1.5843240434528936e-06,
+              "Q": 128683.2857344646,
+              "amplitude": [
+                -106.09826669265495,
+                74.5389258071076
+              ],
+              "error": 9.854864206361396e-13
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.40775204870358966,
+              "decay": -1.5832854002237528e-06,
+              "Q": 128767.70310834843,
+              "amplitude": [
+                -69.40147016774945,
+                44.186775398884826
+              ],
+              "error": 2.6740435849720672e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.40775203052299697,
+              "decay": -1.6017970467169799e-06,
+              "Q": 127279.55497193594,
+              "amplitude": [
+                -24.382785688755252,
+                18.233056704353224
+              ],
+              "error": 3.489162350958915e-10
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999999677094,
+          "finite_window_H_norm": 27.12342390767226,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 0.0001965438544132595
+    },
+    {
+      "folder": "results/array/q0.86_r32_eps11.7334",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.7334,
+        "kx_ka": 2.701769682087222,
+        "ky_ka": 2.701769682087222,
+        "resolution": 32,
+        "padding": 1.0,
+        "pml": 0.5,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.40694177397023956,
+          "frequency_thz": 193.09603463345763,
+          "decay": -1.398362412147314e-06,
+          "frequency_spread": 3.050199498533246e-08,
+          "air_light_threshold": 0.6081118318204308,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.9999999999500457
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.40694177397023956,
+          "decay": -1.398362412147314e-06,
+          "frequency_spread": 3.050199498533246e-08,
+          "decay_spread": 2.2617311396051443e-08,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.4069417739756279,
+              "decay": -1.398446082516053e-06,
+              "Q": 145497.841877274,
+              "amplitude": [
+                -54.63020245812078,
+                -116.69294327921054
+              ],
+              "error": 8.560444936952179e-13
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.4069417759060637,
+              "decay": -1.3983264246609057e-06,
+              "Q": 145510.2931365783,
+              "amplitude": [
+                -31.29097492598697,
+                -75.50571596355371
+              ],
+              "error": 2.7798102218446315e-11
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.4069417556818957,
+              "decay": -1.3973589602952545e-06,
+              "Q": 145611.0302523523,
+              "amplitude": [
+                -13.605302853426574,
+                -26.970217276463366
+              ],
+              "error": 2.6244039030106376e-10
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.40694177396485115,
+              "decay": -1.3983983996337221e-06,
+              "Q": 145502.80308939144,
+              "amplitude": [
+                -116.54784527577,
+                -54.51319883326578
+              ],
+              "error": 8.502953842828446e-13
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.4069417760013046,
+              "decay": -1.398037410868563e-06,
+              "Q": 145540.37425525067,
+              "amplitude": [
+                -72.30114491016482,
+                -37.86852046852111
+              ],
+              "error": 2.949212254032686e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.4069417454993096,
+              "decay": -1.419976271691306e-06,
+              "Q": 143291.74142276662,
+              "amplitude": [
+                -27.687725890839882,
+                -11.972687134275136
+              ],
+              "error": 5.191745188714724e-10
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999999500457,
+          "finite_window_H_norm": 26.89223034991508,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 0.00021277614262845147
+    },
+    {
+      "folder": "results/array/q0.86_r40_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 2.701769682087222,
+        "ky_ka": 2.701769682087222,
+        "resolution": 40,
+        "padding": 1.0,
+        "pml": 0.5,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.40814666503388053,
+          "frequency_thz": 193.66776184711887,
+          "decay": -3.8117244550701735e-08,
+          "frequency_spread": 9.838826975361314e-09,
+          "air_light_threshold": 0.6081118318204308,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.9999999999789774
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.40814666503388053,
+          "decay": -3.8117244550701735e-08,
+          "frequency_spread": 9.838826975361314e-09,
+          "decay_spread": 2.0519737337374454e-08,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.408146664961346,
+              "decay": -3.8243748639771635e-08,
+              "Q": 5336122.627593224,
+              "amplitude": [
+                -92.75023891655296,
+                -92.31839607217157
+              ],
+              "error": 1.1111788780149358e-13
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.40814666655571086,
+              "decay": -3.7434782328825715e-08,
+              "Q": 5451436.353637186,
+              "amplitude": [
+                -56.13549522180825,
+                -61.238966556451366
+              ],
+              "error": 1.9939044569726743e-11
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.408146665106415,
+              "decay": -3.81416683835688e-08,
+              "Q": 5350403.933591984,
+              "amplitude": [
+                -22.322823431153264,
+                -20.931121242096033
+              ],
+              "error": 1.9880254395097873e-12
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.4081466645139386,
+              "decay": -3.809282071783467e-08,
+              "Q": 5357264.923188643,
+              "amplitude": [
+                -56.580075390104916,
+                117.99438372434848
+              ],
+              "error": 5.728547055588006e-13
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.4081466654813712,
+              "decay": -3.654584556437048e-08,
+              "Q": 5584036.422997478,
+              "amplitude": [
+                -39.30883866242193,
+                73.18254817604435
+              ],
+              "error": 2.0773803961861373e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.4081466567168839,
+              "decay": -5.706558290174493e-08,
+              "Q": 3576119.229515517,
+              "amplitude": [
+                -12.40177186311769,
+                27.97431533552507
+              ],
+              "error": 2.357963086341495e-10
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999999789774,
+          "finite_window_H_norm": 27.31316661095109,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 0.00019199216149532223
+    },
+    {
+      "folder": "results/array/q0.88_r32_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 2.764601535159018,
+        "ky_ka": 2.764601535159018,
+        "resolution": 32,
+        "padding": 1.0,
+        "pml": 0.5,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.40827515507288625,
+          "frequency_thz": 193.7287310535482,
+          "decay": 1.8523792527454077e-07,
+          "frequency_spread": 1.1175356029458072e-08,
+          "air_light_threshold": 0.6222539674441618,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.9999999999996734
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.40827515507288625,
+          "decay": 1.8523792527454077e-07,
+          "frequency_spread": 1.1175356029458072e-08,
+          "decay_spread": 1.1896122444093083e-08,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": true,
+          "fit_only_nuisance": true,
+          "candidate_status": "FIT_ONLY_POSITIVE_DECAY_NUISANCE",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.40827515410985493,
+              "decay": 1.8523421830278746e-07,
+              "Q": -1102051.11628587,
+              "amplitude": [
+                -96.93315916343253,
+                -89.22922557141143
+              ],
+              "error": 1.1247979650478018e-12
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.40827515600958886,
+              "decay": 1.869435416536486e-07,
+              "Q": -1091974.4870512902,
+              "amplitude": [
+                -59.308065206180366,
+                -58.80841849697321
+              ],
+              "error": 3.60319700584727e-11
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.40827516082588194,
+              "decay": 1.7599876748368415e-07,
+              "Q": -1159880.73855043,
+              "amplitude": [
+                -23.024268581555827,
+                -20.16947095027946
+              ],
+              "error": 1.4518667685888248e-10
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.40827515413618365,
+              "decay": 1.852416322462941e-07,
+              "Q": -1102007.0088600493,
+              "amplitude": [
+                -36.280710265224904,
+                126.68097125932974
+              ],
+              "error": 8.678635939654163e-13
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.4082751538161955,
+              "decay": 1.8789488992777723e-07,
+              "Q": -1086445.6025736723,
+              "amplitude": [
+                -25.96509496684897,
+                79.39951001148785
+              ],
+              "error": 3.797038792228895e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.40827516499155153,
+              "decay": 1.8399638149997762e-07,
+              "Q": -1109465.201606699,
+              "amplitude": [
+                -7.701490557621119,
+                29.630273263252114
+              ],
+              "error": 1.3839856834918443e-10
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999999996734,
+          "finite_window_H_norm": 27.382290796055965,
+          "accepted_pole_evidence": false,
+          "rejection_reasons": [
+            "positive_fitted_decay_not_certified_as_passive_mode"
+          ],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 0.00011796914373156663
+    },
+    {
+      "folder": "results/array/q0.9_r24_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 2.827433388230814,
+        "ky_ka": 2.827433388230814,
+        "resolution": 24,
+        "padding": 1.0,
+        "pml": 0.5,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.407798694007224,
+          "frequency_thz": 193.5026477455137,
+          "decay": 6.055509190350384e-07,
+          "frequency_spread": 9.5427807877968e-09,
+          "air_light_threshold": 0.6363961030678927,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.9999999999944943
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.407798694007224,
+          "decay": 6.055509190350384e-07,
+          "frequency_spread": 9.5427807877968e-09,
+          "decay_spread": 5.8513533437680576e-09,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": true,
+          "fit_only_nuisance": true,
+          "candidate_status": "FIT_ONLY_POSITIVE_DECAY_NUISANCE",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.40779869459127926,
+              "decay": 6.042999900154316e-07,
+              "Q": -337414.1166052854,
+              "amplitude": [
+                -83.1931088925076,
+                -100.85006216744333
+              ],
+              "error": 1.2450040265296139e-11
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.40779869883771835,
+              "decay": 6.078109896312468e-07,
+              "Q": -335465.0588706252,
+              "amplitude": [
+                -50.876389925247146,
+                -65.47909956973993
+              ],
+              "error": 1.1564879318168017e-10
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.40779868929493757,
+              "decay": 6.084230419550598e-07,
+              "Q": -335127.5848992739,
+              "amplitude": [
+                -19.801064277241956,
+                -23.07626063905987
+              ],
+              "error": 1.1313445096291498e-10
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.4077986934231688,
+              "decay": 6.037308251345481e-07,
+              "Q": -337732.21148041135,
+              "amplitude": [
+                -102.05692105370109,
+                81.83517782721185
+              ],
+              "error": 1.2149689738304944e-11
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.4077986933826143,
+              "decay": 6.068018480546452e-07,
+              "Q": -336022.9494109008,
+              "amplitude": [
+                -66.21899906826393,
+                49.99327059870925
+              ],
+              "error": 5.1659415963510114e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.4077986970122945,
+              "decay": 6.025716886112918e-07,
+              "Q": -338381.8927438509,
+              "amplitude": [
+                -23.36318470869652,
+                19.49068712717532
+              ],
+              "error": 6.013815583248704e-11
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999999944943,
+          "finite_window_H_norm": 27.00285294287148,
+          "accepted_pole_evidence": false,
+          "rejection_reasons": [
+            "positive_fitted_decay_not_certified_as_passive_mode"
+          ],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 9.261362252208389e-05
+    },
+    {
+      "folder": "results/array/q0.9_r32_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 2.827433388230814,
+        "ky_ka": 2.827433388230814,
+        "resolution": 32,
+        "padding": 1.0,
+        "pml": 0.5,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.40868116168798835,
+          "frequency_thz": 193.92138335032837,
+          "decay": 7.351722770166225e-07,
+          "frequency_spread": 9.382231214161152e-09,
+          "air_light_threshold": 0.6363961030678927,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.9999999999958767
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.40868116168798835,
+          "decay": 7.351722770166225e-07,
+          "frequency_spread": 9.382231214161152e-09,
+          "decay_spread": 5.723224818596962e-09,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": true,
+          "fit_only_nuisance": true,
+          "candidate_status": "FIT_ONLY_POSITIVE_DECAY_NUISANCE",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.4086811619484881,
+              "decay": 7.342405673744586e-07,
+              "Q": -278301.94905320654,
+              "amplitude": [
+                -107.98708998967595,
+                -77.864130112009
+              ],
+              "error": 1.0597891414372246e-11
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.4086811643329282,
+              "decay": 7.387229450975135e-07,
+              "Q": -276613.2871904914,
+              "amplitude": [
+                -66.91934185430641,
+                -51.336948940145156
+              ],
+              "error": 8.202198489806834e-11
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.408681155091786,
+              "decay": 7.35623674874801e-07,
+              "Q": -277778.68565835734,
+              "amplitude": [
+                -25.229737335240557,
+                -17.436075217419955
+              ],
+              "error": 8.593887756623746e-11
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.4086811614274886,
+              "decay": 7.329997202789166e-07,
+              "Q": -278773.06779324537,
+              "amplitude": [
+                32.77563178409812,
+                129.13551540519816
+              ],
+              "error": 1.0339091320711987e-11
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.4086811593737325,
+              "decay": 7.347564425633858e-07,
+              "Q": -278106.55048354785,
+              "amplitude": [
+                18.328339407892635,
+                82.39103557524734
+              ],
+              "error": 3.178535386173271e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.4086811644740172,
+              "decay": 7.355881114698592e-07,
+              "Q": -277792.1217740908,
+              "amplitude": [
+                8.143283260558846,
+                29.591081339065006
+              ],
+              "error": 4.6345390006557715e-11
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999999958767,
+          "finite_window_H_norm": 27.568402204814042,
+          "accepted_pole_evidence": false,
+          "rejection_reasons": [
+            "positive_fitted_decay_not_certified_as_passive_mode"
+          ],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 8.579109089869564e-05
+    },
+    {
+      "folder": "results/array_boundary/q0.86_r32_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 2.701769682087222,
+        "ky_ka": 2.701769682087222,
+        "resolution": 32,
+        "padding": 1.5,
+        "pml": 0.8,
+        "frequency": 0.413,
+        "width": 0.16,
+        "warmup": 15.0,
+        "window": 160.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [
+        {
+          "index": 0,
+          "frequency": 0.40775390188079175,
+          "frequency_thz": 193.48139364345266,
+          "decay": -1.528930746639977e-08,
+          "frequency_spread": 1.770963486968924e-08,
+          "air_light_threshold": 0.6081118318204308,
+          "scope": "REAL_FREQUENCY_AND_FIELD_ONLY_NUMERICAL_DECAY_UNRESOLVED",
+          "window_field_overlap": 0.999999999964599
+        }
+      ],
+      "raw_poles": [
+        {
+          "frequency": 0.40775390188079175,
+          "decay": -1.528930746639977e-08,
+          "frequency_spread": 1.770963486968924e-08,
+          "decay_spread": 1.3624264772957942e-08,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.4077539018703829,
+              "decay": -1.529587835102355e-08,
+              "Q": 13328881.562499395,
+              "amplitude": [
+                -81.03411943075237,
+                -101.54838511728548
+              ],
+              "error": 9.600816025871958e-13
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.4077539036356832,
+              "decay": -1.492821527621199e-08,
+              "Q": 13657155.128431069,
+              "amplitude": [
+                -48.43674120593481,
+                -66.70467099445965
+              ],
+              "error": 2.5657445103869238e-11
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.40775390187065574,
+              "decay": -1.5283900240717196e-08,
+              "Q": 13339327.509622699,
+              "amplitude": [
+                -19.72514510307188,
+                -23.268503323748593
+              ],
+              "error": 1.1193033511222846e-12
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.4077539018909277,
+              "decay": -1.5294714692082345e-08,
+              "Q": 13329895.656766018,
+              "amplitude": [
+                -106.14150931748917,
+                74.91371870152965
+              ],
+              "error": 9.722120156621068e-13
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.4077539034966398,
+              "decay": -1.4376388755468302e-08,
+              "Q": 14181374.419968426,
+              "amplitude": [
+                -69.43959475165369,
+                44.424780336787656
+              ],
+              "error": 2.65449530931373e-11
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.40775388592604833,
+              "decay": -2.8000653528426245e-08,
+              "Q": 7281149.447317308,
+              "amplitude": [
+                -24.38909025172854,
+                18.321023049136766
+              ],
+              "error": 2.9261515310443595e-10
+            }
+          ],
+          "independent_window_field_overlap": 0.999999999964599,
+          "finite_window_H_norm": 27.132792136651446,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 0.0002082873557176672
+    },
+    {
+      "folder": "results/nonresonant/q0.27_r32_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 0.8482300164692442,
+        "ky_ka": 0.8482300164692442,
+        "resolution": 32,
+        "padding": 3.0,
+        "pml": 1.0,
+        "frequency": 0.195,
+        "width": 0.12,
+        "warmup": 15.0,
+        "window": 180.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [],
+      "raw_poles": [
+        {
+          "frequency": 0.18350524047017616,
+          "decay": -0.0032587960204699083,
+          "frequency_spread": 1.4133204321309378e-06,
+          "decay_spread": 3.4305951289569786e-06,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.18350508973822818,
+              "decay": -0.003258869652990897,
+              "Q": 28.154714560278972,
+              "amplitude": [
+                0.8763103841428559,
+                -0.47760096486613884
+              ],
+              "error": 3.318138929806567e-09
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.18350508812097002,
+              "decay": -0.003258871151355967,
+              "Q": 28.1547013671615,
+              "amplitude": [
+                0.9177802865725296,
+                -0.2127254286163647
+              ],
+              "error": 4.293686659444988e-09
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.18350539120212414,
+              "decay": -0.0032594758451086896,
+              "Q": 28.149524635609783,
+              "amplitude": [
+                0.703035405797657,
+                -0.4547419577134842
+              ],
+              "error": 1.1008167524080606e-08
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.1835040516085752,
+              "decay": -0.0032560452499797326,
+              "Q": 28.17897748959684,
+              "amplitude": [
+                0.0192315381052054,
+                -0.01599616608469787
+              ],
+              "error": 1.822627957661848e-07
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.18350544845018443,
+              "decay": -0.003258666514741664,
+              "Q": 28.156524704205903,
+              "amplitude": [
+                0.02155617427757471,
+                -0.009680819614360911
+              ],
+              "error": 4.102526526512627e-08
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.18350546492900732,
+              "decay": -0.003258722387948919,
+              "Q": 28.15604446816778,
+              "amplitude": [
+                0.01509524459129926,
+                -0.014592383729967871
+              ],
+              "error": 1.0437399425681884e-07
+            }
+          ],
+          "independent_window_field_overlap": 0.9999997012093388,
+          "finite_window_H_norm": 1.0208268491918284,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        },
+        {
+          "frequency": 0.1876260332674209,
+          "decay": 0.00011823356709305365,
+          "frequency_spread": 1.8190511652527164e-08,
+          "decay_spread": 2.8319171821195466e-08,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": true,
+          "fit_only_nuisance": true,
+          "candidate_status": "FIT_ONLY_POSITIVE_DECAY_NUISANCE",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.1876260363592629,
+              "decay": 0.00011823444828815326,
+              "Q": -793.4491135019847,
+              "amplitude": [
+                2.077548438822393,
+                0.42267034341928555
+              ],
+              "error": 1.7516883201612015e-10
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.18762603699123487,
+              "decay": 0.00011822782391140871,
+              "Q": -793.4935736101686,
+              "amplitude": [
+                1.7693249621901666,
+                0.907407764856383
+              ],
+              "error": 4.592077059647196e-10
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.18762604665883223,
+              "decay": 0.0001182561430832299,
+              "Q": -793.3035940753584,
+              "amplitude": [
+                1.7521199600245987,
+                0.20570559688239734
+              ],
+              "error": 7.879150539721405e-10
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.18762603017557888,
+              "decay": 0.00011823463469533087,
+              "Q": -793.4478364104435,
+              "amplitude": [
+                -0.14088232559968403,
+                2.419332475574428
+              ],
+              "error": 2.898818174047983e-10
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.18762602846832058,
+              "decay": 0.00011823268589795404,
+              "Q": -793.4609073765758,
+              "amplitude": [
+                -0.7393944832049408,
+                2.149293372145922
+              ],
+              "error": 1.2386878440134147e-10
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.18762602881626306,
+              "decay": 0.00011823267221465982,
+              "Q": -793.4610006767616,
+              "amplitude": [
+                0.05177942552615869,
+                2.0159413006058093
+              ],
+              "error": 1.7940198024736544e-10
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999992616145,
+          "finite_window_H_norm": 2.1355230101876623,
+          "accepted_pole_evidence": false,
+          "rejection_reasons": [
+            "positive_fitted_decay_not_certified_as_passive_mode"
+          ],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 4.81932734390364e-05
+    },
+    {
+      "folder": "results/nonresonant/q0.2818_r32_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 0.8853008097816036,
+        "ky_ka": 0.8853008097816036,
+        "resolution": 32,
+        "padding": 3.0,
+        "pml": 1.0,
+        "frequency": 0.195,
+        "width": 0.12,
+        "warmup": 15.0,
+        "window": 180.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [],
+      "raw_poles": [
+        {
+          "frequency": 0.19170387886412704,
+          "decay": -0.0029299185929333805,
+          "frequency_spread": 2.300495009960324e-06,
+          "decay_spread": 1.0317550130710222e-06,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.19170386019468216,
+              "decay": -0.002930030626047136,
+              "Q": 32.71362737482836,
+              "amplitude": [
+                -1.7537473166213213,
+                0.2325186171936381
+              ],
+              "error": 2.0161683998514607e-09
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.1917038317893063,
+              "decay": -0.00292996543891383,
+              "Q": 32.7143503543122,
+              "amplitude": [
+                -1.6406368697457918,
+                -0.2469355691057935
+              ],
+              "error": 2.4891123565315143e-09
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.19170410926613315,
+              "decay": -0.002930365367391525,
+              "Q": 32.70993293180694,
+              "amplitude": [
+                -1.4265775044705393,
+                0.30525975550833867
+              ],
+              "error": 3.844471693274535e-09
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.19170613228431627,
+              "decay": -0.002929333612378454,
+              "Q": 32.72179916180009,
+              "amplitude": [
+                0.06338744140333974,
+                -0.011086945217690153
+              ],
+              "error": 1.3415597832675696e-07
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.1917038701447907,
+              "decay": -0.0029298717469529306,
+              "Q": 32.71540304522935,
+              "amplitude": [
+                0.06001880956146169,
+                0.006465306308747416
+              ],
+              "error": 3.5796026325948105e-08
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.1917038875834634,
+              "decay": -0.0029298515119303334,
+              "Q": 32.71563197022897,
+              "amplitude": [
+                0.051380309653391874,
+                -0.013275524825143764
+              ],
+              "error": 4.3901598108883626e-08
+            }
+          ],
+          "independent_window_field_overlap": 0.9999998887807171,
+          "finite_window_H_norm": 1.7619112698439197,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        },
+        {
+          "frequency": 0.1956199243032759,
+          "decay": -0.00029936964206858657,
+          "frequency_spread": 4.857526758605957e-08,
+          "decay_spread": 4.653650591637283e-08,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.19561993957581814,
+              "decay": -0.0002993748276701233,
+              "Q": 326.71407462381717,
+              "amplitude": [
+                -1.78853924989536,
+                -1.808238734379912
+              ],
+              "error": 3.444705953211315e-10
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.1956199307500598,
+              "decay": -0.00029937659749698176,
+              "Q": 326.71212844556425,
+              "amplitude": [
+                -1.130241211872094,
+                -2.0852500540083296
+              ],
+              "error": 7.794745445639812e-10
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.19561996301758813,
+              "decay": -0.0002993300609910654,
+              "Q": 326.76297591010604,
+              "amplitude": [
+                -1.58455619267352,
+                -1.347070910105494
+              ],
+              "error": 2.3070067472266704e-10
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.19561991444232055,
+              "decay": -0.0002993728271640006,
+              "Q": 326.71621585608574,
+              "amplitude": [
+                -1.5562377269624543,
+                0.9298381725791267
+              ],
+              "error": 5.615841468020568e-10
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.19561991703380116,
+              "decay": -0.00029936645697317254,
+              "Q": 326.723172348149,
+              "amplitude": [
+                -1.6357989133945072,
+                0.4270073811945015
+              ],
+              "error": 2.1662077708356083e-10
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.195619917856492,
+              "decay": -0.00029936555480451586,
+              "Q": 326.7241583358359,
+              "amplitude": [
+                -1.2023367236656335,
+                0.867279123182712
+              ],
+              "error": 2.5100316047448835e-10
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999979812872,
+          "finite_window_H_norm": 2.495143814720735,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 6.391130723154433e-05
+    },
+    {
+      "folder": "results/nonresonant/q0.29_r32_eps11.68",
+      "config": {
+        "radius": 0.3333333333333333,
+        "height": 0.6666666666666666,
+        "epsilon": 11.68,
+        "kx_ka": 0.91106186954104,
+        "ky_ka": 0.91106186954104,
+        "resolution": 32,
+        "padding": 3.0,
+        "pml": 1.0,
+        "frequency": 0.195,
+        "width": 0.12,
+        "warmup": 15.0,
+        "window": 180.0,
+        "sample_dt": 0.5,
+        "source_variant": 0,
+        "xy_samples": 12,
+        "z_order": 5,
+        "field_extent": 0.9
+      },
+      "candidates": [],
+      "raw_poles": [
+        {
+          "frequency": 0.19733007720238654,
+          "decay": -0.002589983929507082,
+          "frequency_spread": 9.278967074699551e-07,
+          "decay_spread": 1.1990669696198587e-06,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.19733002147912948,
+              "decay": -0.0025899714006754585,
+              "Q": 38.09501939435823,
+              "amplitude": [
+                1.0038989123561517,
+                2.2811405141610255
+              ],
+              "error": 3.5369829403185652e-09
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.1973300394172691,
+              "decay": -0.002589995465238619,
+              "Q": 38.0946689030378,
+              "amplitude": [
+                0.29419451735543034,
+                2.3075259414471017
+              ],
+              "error": 2.436875948301525e-09
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.19733027148629623,
+              "decay": -0.0025902409100460135,
+              "Q": 38.09110394345343,
+              "amplitude": [
+                0.9670338517531734,
+                1.7849753292838204
+              ],
+              "error": 1.5809527776033103e-09
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.19733094937583695,
+              "decay": -0.00259113036844326,
+              "Q": 38.078159204006504,
+              "amplitude": [
+                -0.06812751075652783,
+                -0.11453427200038678
+              ],
+              "error": 8.170017264686536e-08
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.1973300314075208,
+              "decay": -0.002589972393775545,
+              "Q": 38.09500670388652,
+              "amplitude": [
+                -0.030607841367634798,
+                -0.12049132626566009
+              ],
+              "error": 2.677244465426767e-08
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.19733011498750402,
+              "decay": -0.00258993130147364,
+              "Q": 38.09562726146935,
+              "amplitude": [
+                -0.06288738063201522,
+                -0.08838228716873979
+              ],
+              "error": 1.0545346364769073e-08
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999573422342,
+          "finite_window_H_norm": 2.4352112265896437,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        },
+        {
+          "frequency": 0.2012269517576037,
+          "decay": -0.0006925155895950002,
+          "frequency_spread": 1.1171898131601132e-07,
+          "decay_spread": 1.234575910715732e-07,
+          "windows": [
+            0,
+            1
+          ],
+          "probes": [
+            0,
+            1,
+            2
+          ],
+          "probe_count_per_window": {
+            "0": 3,
+            "1": 3
+          },
+          "persistent": true,
+          "positive_decay_detected": false,
+          "fit_only_nuisance": false,
+          "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+          "detections": [
+            {
+              "window": 0,
+              "probe": 0,
+              "frequency": 0.20122695527581197,
+              "decay": -0.0006925056117727654,
+              "Q": 145.2890430452146,
+              "amplitude": [
+                -1.523366627410016,
+                1.9383264780611824
+              ],
+              "error": 1.4328965321404493e-09
+            },
+            {
+              "window": 0,
+              "probe": 1,
+              "frequency": 0.2012269708146196,
+              "decay": -0.0006925202583605378,
+              "Q": 145.2859814462333,
+              "amplitude": [
+                -1.870794040038303,
+                1.3200624119044804
+              ],
+              "error": 5.946457599924835e-10
+            },
+            {
+              "window": 0,
+              "probe": 2,
+              "frequency": 0.20122702990667404,
+              "decay": -0.0006924464989452094,
+              "Q": 145.3014999810089,
+              "amplitude": [
+                -1.0880258690867117,
+                1.6664598366827985
+              ],
+              "error": 1.0421932127301604e-09
+            },
+            {
+              "window": 1,
+              "probe": 0,
+              "frequency": 0.20122691818769273,
+              "decay": -0.0006925699565362809,
+              "Q": 145.27551786542972,
+              "amplitude": [
+                0.744152839275511,
+                0.845786076617426
+              ],
+              "error": 3.497879943047808e-09
+            },
+            {
+              "window": 1,
+              "probe": 1,
+              "frequency": 0.20122694700452273,
+              "decay": -0.0006925148436287275,
+              "Q": 145.2871002375257,
+              "amplitude": [
+                0.43742828669925,
+                0.9503797725675637
+              ],
+              "error": 8.667427257228229e-10
+            },
+            {
+              "window": 1,
+              "probe": 2,
+              "frequency": 0.2012269482393954,
+              "decay": -0.0006925163355612729,
+              "Q": 145.28678812775178,
+              "amplitude": [
+                0.6582749071238629,
+                0.6275460548877132
+              ],
+              "error": 1.1658188165347723e-10
+            }
+          ],
+          "independent_window_field_overlap": 0.9999999950614902,
+          "finite_window_H_norm": 2.372327120216477,
+          "accepted_pole_evidence": true,
+          "rejection_reasons": [],
+          "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+        }
+      ],
+      "fit_residual": 7.519176963603305e-05
+    }
+  ],
+  "resonant_static_sensitivity": {
+    "q": 0.86,
+    "baseline_frequency_thz": 193.48051357498952,
+    "epsilon_values": [
+      11.6266,
+      11.68,
+      11.7334
+    ],
+    "frequency_values_thz": [
+      193.86706563678376,
+      193.48051357498952,
+      193.09603463345763
+    ],
+    "material_field_overlaps": [
+      0.9999980002912453,
+      0.9999980569359013
+    ],
+    "sampled_secant_df_dq": 0.03044309120369057,
+    "local_linearized_delta_q": 0.053375506759587826,
+    "local_linearized_relative_momentum_percent": 6.206454274370677,
+    "scope": "Local static weak-modulation sensitivity near the computed 193 THz band; not paper fixed196 THz, not solved gap edges or Floquet growth",
+    "refined_secant_df_dq": 0.029704731503840676,
+    "refined_local_linearized_relative_momentum_percent": 6.360725849407938,
+    "relative_slope_change": 0.02485663604649744
+  },
+  "grid_and_boundary_comparisons": [
+    {
+      "first": "results/array/q0.86_r32_eps11.68",
+      "second": "results/array/q0.86_r24_eps11.68",
+      "frequency_difference_thz": -0.4125613852555432,
+      "relative_frequency_difference": 0.002132314917055704,
+      "field_overlap": 0.999753548722666
+    },
+    {
+      "first": "results/array/q0.86_r32_eps11.68",
+      "second": "results/array/q0.86_r40_eps11.68",
+      "frequency_difference_thz": 0.18724827212935224,
+      "relative_frequency_difference": 0.0009677887900414687,
+      "field_overlap": 0.9999649302887887
+    },
+    {
+      "first": "results/array/q0.86_r32_eps11.68",
+      "second": "results/array_boundary/q0.86_r32_eps11.68",
+      "frequency_difference_thz": 0.0008800684631466993,
+      "relative_frequency_difference": 4.5486155006632715e-06,
+      "field_overlap": 0.9999999701109215
+    }
+  ],
+  "dynamic_floquet_computed": false,
+  "paper_fixed_frequency_gap_reproduced": false,
+  "files_sha256": {
+    "meep_array_probe.py": "15038a5381f5654389122bbc2fa453c9a86f7c27014f5584adbc93b9cb0b3dbd",
+    "meep_dynamic_probe.py": "84622707a9a177a0777dc12baf11d68c7a6fb784f274080e198d579fcefaee32",
+    "meep_sphere_scattering.py": "c68482094e0674b6abcaa3b2ac69251f03ed7336e308cfd655992cb9191a2fda",
+    "mie_reference.py": "05966087f956cc7886726e185e9da934d3ac03a835a324c88800180314ad9062",
+    "modal_dynamic_reference.py": "549bf9a511f12bfd2b21e1bcbae2bfab8ef962d4af05644c7ea8c68b3c0a2952",
+    "offline_strobe_diagnostic.py": "a0437332a37c4c4e810ad32201884efd28a37c1e1348f81a2d2a20d89c2c177b",
+    "run_dynamic_campaign.py": "a00ca97360287101cdb67339e45d54506bd09014ec2a09f8963819ff882da748",
+    "run_static_controls.py": "fe06f8f55700692426fab1d9ff71ac74dedac197491cb9eeee5b947dd81e6dba",
+    "summarize.py": "ae9f199cd9a9ab9f5ed40a273b519b9f2ed77294a0dbfe29c52813e102a4fe30",
+    "summarize_dynamic.py": "979504aa1023d3a66673527c544a2a300c5fa1b0eec825ca2b5030ac1f868df2",
+    "test_direct_dynamic_analysis.py": "7eed4bccb81e426241ddee13f3c2775d8651e0f6cf8532fc876560f5abe3a069",
+    "test_dynamic_summary.py": "3a6fd331692260dc00a875b6e2210cd7512e7e3e5dc7c1a51acd5eac2aeac36f",
+    "test_mie_reference.py": "f7bd6a28424e76997501dca834d9b7dbdb645e5f6e5bfe9adc18b60a4ee3f35c",
+    "test_modal_dynamic_reference.py": "8a814fcc8ebef7e470033f35d31dc83616d3bbc25169bc33a7cfb9f2bd39f02a"
+  }
+}

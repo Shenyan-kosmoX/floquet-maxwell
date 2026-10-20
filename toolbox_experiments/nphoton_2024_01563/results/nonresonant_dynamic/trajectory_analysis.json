@@ -1,0 +1,1192 @@
+{
+  "scope": "Fixed-choice offline observed-trajectory audit; not a complete Floquet spectrum",
+  "window_cycles": [
+    50,
+    1100
+  ],
+  "trial_order": [
+    {
+      "delay": 64,
+      "phase": 0.25
+    },
+    {
+      "delay": 64,
+      "phase": 0.5
+    },
+    {
+      "delay": 96,
+      "phase": 0.25
+    },
+    {
+      "delay": 96,
+      "phase": 0.5
+    }
+  ],
+  "rank": 2,
+  "interpolation": "cubic",
+  "actual_sample_dt": 0.16666666666662877,
+  "policy": {
+    "all_trial_s3_over_s2_below": 0.1,
+    "max_relative_rate_spread_below": 0.2,
+    "zero_rate_absolute_scale": 1e-06,
+    "description": "Conservative diagnostic rejection criteria, not statistical confidence bounds or a physical correctness certificate"
+  },
+  "synthetic": {
+    "growing_and_decaying_noise_0": {
+      "expected_rates": [
+        -0.00011,
+        0.00011
+      ],
+      "injected_complex_field_relative_rms": 0.0,
+      "max_absolute_rate_error": 3.286264629170921e-08,
+      "trials": [
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00011001671457872896,
+            0.00010999108607367858
+          ],
+          "singular_ratio_2_1": 0.0003534471192426855,
+          "singular_ratio_3_2": 0.003449045603319794,
+          "relative_rank2_residual": 1.5453330034736846e-06,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.0001099807891235421,
+            0.00011001002305086296
+          ],
+          "singular_ratio_2_1": 0.0003534241127040847,
+          "singular_ratio_3_2": 0.0034493355388789636,
+          "relative_rank2_residual": 1.5453469308866828e-06,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00011003286264629171,
+            0.00010998679418737766
+          ],
+          "singular_ratio_2_1": 0.0005130839028373819,
+          "singular_ratio_3_2": 0.0023766462071508395,
+          "relative_rank2_residual": 1.5440713781601584e-06,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00011001868025503339,
+            0.00010999244385895222
+          ],
+          "singular_ratio_2_1": 0.0005130505384597745,
+          "singular_ratio_3_2": 0.002376795419512743,
+          "relative_rank2_residual": 1.544087986637306e-06,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        }
+      ],
+      "identifiability": {
+        "second_component_resolved_by_singular_separation": true,
+        "rates_stable_across_fixed_choices": true,
+        "observed_pair_accepted_for_diagnostic": true,
+        "amplitude_rate_min": [
+          -0.00011003286264629171,
+          0.00010998679418737766
+        ],
+        "amplitude_rate_max": [
+          -0.0001099807891235421,
+          0.00011001002305086296
+        ],
+        "singular_ratio_3_2_range": [
+          0.0023766462071508395,
+          0.0034493355388789636
+        ],
+        "status": "OBSERVED_PAIR_DIAGNOSTIC_ONLY"
+      }
+    },
+    "growing_and_decaying_noise_0.0005": {
+      "expected_rates": [
+        -0.00011,
+        0.00011
+      ],
+      "injected_complex_field_relative_rms": 0.0005,
+      "max_absolute_rate_error": 4.846779150196672e-05,
+      "trials": [
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00011940370414600448,
+            0.00010685327550302227
+          ],
+          "singular_ratio_2_1": 0.00035422882972346777,
+          "singular_ratio_3_2": 0.09900315428943159,
+          "relative_rank2_residual": 0.00047086231341552656,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00015846779150196672,
+            9.251200765843871e-05
+          ],
+          "singular_ratio_2_1": 0.00035618050867974096,
+          "singular_ratio_3_2": 0.09745660832138141,
+          "relative_rank2_residual": 0.0004707975476081405,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00010787369187558405,
+            0.00011245158399074474
+          ],
+          "singular_ratio_2_1": 0.0005135963049682126,
+          "singular_ratio_3_2": 0.06332647130996419,
+          "relative_rank2_residual": 0.00047123757951874094,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00013541869352578695,
+            0.00010403717265752189
+          ],
+          "singular_ratio_2_1": 0.0005158678674519696,
+          "singular_ratio_3_2": 0.062064985478025296,
+          "relative_rank2_residual": 0.0004711980654558577,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        }
+      ],
+      "identifiability": {
+        "second_component_resolved_by_singular_separation": true,
+        "rates_stable_across_fixed_choices": false,
+        "observed_pair_accepted_for_diagnostic": false,
+        "amplitude_rate_min": [
+          -0.00015846779150196672,
+          9.251200765843871e-05
+        ],
+        "amplitude_rate_max": [
+          -0.00010787369187558405,
+          0.00011245158399074474
+        ],
+        "singular_ratio_3_2_range": [
+          0.062064985478025296,
+          0.09900315428943159
+        ],
+        "status": "REJECTED_AS_RESOLVED_TWO_MODE_GROWTH_ESTIMATE"
+      }
+    },
+    "two_stable_beating_tones_noise_0": {
+      "expected_rates": [
+        0,
+        0
+      ],
+      "injected_complex_field_relative_rms": 0.0,
+      "max_absolute_rate_error": 2.6796212633610336e-08,
+      "trials": [
+        {
+          "amplitude_rates_per_meep_time": [
+            2.2152678775360312e-09,
+            2.6583478258285824e-09
+          ],
+          "singular_ratio_2_1": 0.0003893219989116479,
+          "singular_ratio_3_2": 0.00313071293644513,
+          "relative_rank2_residual": 1.5450813779018863e-06,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -2.667952332411888e-08,
+            -1.3487471248314192e-08
+          ],
+          "singular_ratio_2_1": 0.00038932069412700394,
+          "singular_ratio_3_2": 0.0031307082685961174,
+          "relative_rank2_residual": 1.5450843993123494e-06,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            1.4430694184280004e-08,
+            2.6796212633610336e-08
+          ],
+          "singular_ratio_2_1": 0.0005650449439546841,
+          "singular_ratio_3_2": 0.0021577322516242088,
+          "relative_rank2_residual": 1.543819313135383e-06,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            8.457337371848343e-09,
+            1.5566926472987627e-08
+          ],
+          "singular_ratio_2_1": 0.0005650430292727887,
+          "singular_ratio_3_2": 0.00215769009091962,
+          "relative_rank2_residual": 1.5438269345378482e-06,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        }
+      ],
+      "identifiability": {
+        "second_component_resolved_by_singular_separation": true,
+        "rates_stable_across_fixed_choices": true,
+        "observed_pair_accepted_for_diagnostic": true,
+        "amplitude_rate_min": [
+          -2.667952332411888e-08,
+          -1.3487471248314192e-08
+        ],
+        "amplitude_rate_max": [
+          1.4430694184280004e-08,
+          2.6796212633610336e-08
+        ],
+        "singular_ratio_3_2_range": [
+          0.00215769009091962,
+          0.00313071293644513
+        ],
+        "status": "OBSERVED_PAIR_DIAGNOSTIC_ONLY"
+      }
+    },
+    "two_stable_beating_tones_noise_0.0005": {
+      "expected_rates": [
+        0,
+        0
+      ],
+      "injected_complex_field_relative_rms": 0.0005,
+      "max_absolute_rate_error": 3.3340747462597855e-05,
+      "trials": [
+        {
+          "amplitude_rates_per_meep_time": [
+            -3.3340747462597855e-05,
+            -2.518743332904367e-05
+          ],
+          "singular_ratio_2_1": 0.00038902906792850456,
+          "singular_ratio_3_2": 0.08665513109314754,
+          "relative_rank2_residual": 0.00046437479639423434,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            1.9779719763108106e-06,
+            4.984204983401962e-06
+          ],
+          "singular_ratio_2_1": 0.0003901498921296237,
+          "singular_ratio_3_2": 0.09064299621317978,
+          "relative_rank2_residual": 0.0004667010820140839,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -1.6770232638192257e-06,
+            -1.5364254035945277e-06
+          ],
+          "singular_ratio_2_1": 0.000564193952724292,
+          "singular_ratio_3_2": 0.05488976481849417,
+          "relative_rank2_residual": 0.00046430130405315676,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            7.34593720616157e-06,
+            1.3251257494029917e-05
+          ],
+          "singular_ratio_2_1": 0.0005656238214960222,
+          "singular_ratio_3_2": 0.05860058541816854,
+          "relative_rank2_residual": 0.00046681690442644145,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        }
+      ],
+      "identifiability": {
+        "second_component_resolved_by_singular_separation": true,
+        "rates_stable_across_fixed_choices": false,
+        "observed_pair_accepted_for_diagnostic": false,
+        "amplitude_rate_min": [
+          -3.3340747462597855e-05,
+          -2.518743332904367e-05
+        ],
+        "amplitude_rate_max": [
+          7.34593720616157e-06,
+          1.3251257494029917e-05
+        ],
+        "singular_ratio_3_2_range": [
+          0.05488976481849417,
+          0.09064299621317978
+        ],
+        "status": "REJECTED_AS_RESOLVED_TWO_MODE_GROWTH_ESTIMATE"
+      }
+    }
+  },
+  "records": {
+    "center_m001_r12": {
+      "config": {
+        "q": 0.2818,
+        "resolution": 12,
+        "epsilon": 11.68,
+        "radius": 0.3333333333333333,
+        "padding": 20.0,
+        "pml": 2.0,
+        "courant": 0.5,
+        "source_frequency": 0.192948894855526,
+        "source_width": 0.04,
+        "drive_frequency": 0.385897789711053,
+        "modulation": 0.01,
+        "phase": 1.5707963267948966,
+        "periods": 1200.0,
+        "ramp_periods": 10.0,
+        "update_stride": 4,
+        "static_window": 400.0,
+        "eps_averaging": false,
+        "max_dynamic_wall_seconds": 900.0
+      },
+      "trials": [
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.0003080894150844185,
+            5.102290496288768e-05
+          ],
+          "singular_ratio_2_1": 0.0014302801508874583,
+          "singular_ratio_3_2": 0.4034900176174089,
+          "relative_rank2_residual": 0.0005766202221682981,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.000392376318140949,
+            0.00011299846801391025
+          ],
+          "singular_ratio_2_1": 0.0005844438055145028,
+          "singular_ratio_3_2": 0.888601400640599,
+          "relative_rank2_residual": 0.0005183830317594509,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00014199011530870135,
+            0.00015553717221590774
+          ],
+          "singular_ratio_2_1": 0.0016536823527722377,
+          "singular_ratio_3_2": 0.3429094355279648,
+          "relative_rank2_residual": 0.0005657051018826669,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00039288484584459383,
+            0.00011329257526996293
+          ],
+          "singular_ratio_2_1": 0.0005688989415532558,
+          "singular_ratio_3_2": 0.8656888409764475,
+          "relative_rank2_residual": 0.00049153255969973,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        }
+      ],
+      "identifiability": {
+        "second_component_resolved_by_singular_separation": false,
+        "rates_stable_across_fixed_choices": false,
+        "observed_pair_accepted_for_diagnostic": false,
+        "amplitude_rate_min": [
+          -0.00039288484584459383,
+          5.102290496288768e-05
+        ],
+        "amplitude_rate_max": [
+          -0.00014199011530870135,
+          0.00015553717221590774
+        ],
+        "singular_ratio_3_2_range": [
+          0.3429094355279648,
+          0.888601400640599
+        ],
+        "status": "REJECTED_AS_RESOLVED_TWO_MODE_GROWTH_ESTIMATE"
+      },
+      "raw_sha256": "cfcf6124f784e34ef82a195f2b40c95aee3f8cd54befa3103c08855772e3fdf4",
+      "cycle_envelope_growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 4.672319396859179e-05,
+          "growth_cyclic_fa_over_c": 7.436227277142815e-06,
+          "log_amplitude_fit_rms": 0.007320554830383578,
+          "cycles": [
+            420.4999581884774,
+            1139.4918567184543
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 3.6869275011960364e-05,
+          "growth_cyclic_fa_over_c": 5.867927366367991e-06,
+          "log_amplitude_fit_rms": 0.0053456511010306915,
+          "cycles": [
+            420.4999581884774,
+            779.513535216327
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 5.630212005138617e-05,
+          "growth_cyclic_fa_over_c": 8.960760712731424e-06,
+          "log_amplitude_fit_rms": 0.008056535716386901,
+          "cycles": [
+            780.5104378397472,
+            1139.4918567184543
+          ]
+        }
+      ],
+      "static_poles": [
+        {
+          "frequency": 0.1929488548261389,
+          "decay": 3.3652789925329006e-08,
+          "amplitude": [
+            -12.261708743698554,
+            -2.4880261018438787
+          ],
+          "error": 4.283784834887923e-10
+        },
+        {
+          "frequency": 0.19932069209936387,
+          "decay": -7.627697848990985e-05,
+          "amplitude": [
+            -0.02981548792180938,
+            0.025610146444398248
+          ],
+          "error": 5.310838603219584e-07
+        }
+      ],
+      "note": "Finite-window amplitude slopes remain observations even if the two-mode exponent is unresolved",
+      "observed_amplitude_ratios": {
+        "last_to_first_cycle_norm": 1.1294004405609082,
+        "last20_to_first20_cycle_RMS": 1.1140284361776402,
+        "last20_to_postramp_cycles10_30_RMS": 1.1138668151567597,
+        "meaning": "Observed H probe-norm amplitude ratios, not exp(lambda*t) eigenmode amplitudes"
+      }
+    },
+    "center_zero_r12": {
+      "config": {
+        "q": 0.2818,
+        "resolution": 12,
+        "epsilon": 11.68,
+        "radius": 0.3333333333333333,
+        "padding": 20.0,
+        "pml": 2.0,
+        "courant": 0.5,
+        "source_frequency": 0.192948894855526,
+        "source_width": 0.04,
+        "drive_frequency": 0.385897789711053,
+        "modulation": 0.0,
+        "phase": 1.5707963267948966,
+        "periods": 1200.0,
+        "ramp_periods": 10.0,
+        "update_stride": 4,
+        "static_window": 400.0,
+        "eps_averaging": false,
+        "max_dynamic_wall_seconds": 900.0
+      },
+      "trials": [
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.0014662616340419743,
+            -1.2182206624497836e-07
+          ],
+          "singular_ratio_2_1": 0.0006207634083110943,
+          "singular_ratio_3_2": 0.01435218948706462,
+          "relative_rank2_residual": 9.106566077773204e-06,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.0014663241641260088,
+            -1.2184075572383783e-07
+          ],
+          "singular_ratio_2_1": 0.0006201751748211327,
+          "singular_ratio_3_2": 0.01436660658118789,
+          "relative_rank2_residual": 9.106911933783018e-06,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.001467174216760469,
+            -1.219094416333396e-07
+          ],
+          "singular_ratio_2_1": 0.0005902114223114371,
+          "singular_ratio_3_2": 0.015095848815253289,
+          "relative_rank2_residual": 9.105445191257115e-06,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.0014672357171785233,
+            -1.2190569468906737e-07
+          ],
+          "singular_ratio_2_1": 0.0005896514655056084,
+          "singular_ratio_3_2": 0.015110051698358553,
+          "relative_rank2_residual": 9.105159426761167e-06,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        }
+      ],
+      "identifiability": {
+        "second_component_resolved_by_singular_separation": true,
+        "rates_stable_across_fixed_choices": true,
+        "observed_pair_accepted_for_diagnostic": true,
+        "amplitude_rate_min": [
+          -0.0014672357171785233,
+          -1.219094416333396e-07
+        ],
+        "amplitude_rate_max": [
+          -0.0014662616340419743,
+          -1.2182206624497836e-07
+        ],
+        "singular_ratio_3_2_range": [
+          0.01435218948706462,
+          0.015110051698358553
+        ],
+        "status": "OBSERVED_PAIR_DIAGNOSTIC_ONLY"
+      },
+      "raw_sha256": "0ebb565d7956353dd123ceb38a826799efef084effd89e6148b3d058913eb74c",
+      "cycle_envelope_growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -1.33370736030517e-07,
+          "growth_cyclic_fa_over_c": -2.1226611903061127e-08,
+          "log_amplitude_fit_rms": 0.0001433077141135099,
+          "cycles": [
+            420.4999581884774,
+            1139.4918567184543
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": -1.692541287183318e-07,
+          "growth_cyclic_fa_over_c": -2.6937631224234428e-08,
+          "log_amplitude_fit_rms": 0.0001964011835579445,
+          "cycles": [
+            420.4999581884774,
+            779.513535216327
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -1.1455402814984664e-07,
+          "growth_cyclic_fa_over_c": -1.823183983113622e-08,
+          "log_amplitude_fit_rms": 4.87667521585055e-05,
+          "cycles": [
+            780.5104378397472,
+            1139.4918567184543
+          ]
+        }
+      ],
+      "static_poles": [
+        {
+          "frequency": 0.1929488548261389,
+          "decay": 3.3652789925329006e-08,
+          "amplitude": [
+            -12.261708743698554,
+            -2.4880261018438787
+          ],
+          "error": 4.283784834887923e-10
+        },
+        {
+          "frequency": 0.19932069209936387,
+          "decay": -7.627697848990985e-05,
+          "amplitude": [
+            -0.02981548792180938,
+            0.025610146444398248
+          ],
+          "error": 5.310838603219584e-07
+        }
+      ],
+      "note": "Finite-window amplitude slopes remain observations even if the two-mode exponent is unresolved",
+      "observed_amplitude_ratios": {
+        "last_to_first_cycle_norm": 0.9997004594840045,
+        "last20_to_first20_cycle_RMS": 0.9981371135944868,
+        "last20_to_postramp_cycles10_30_RMS": 0.9980852304302497,
+        "meaning": "Observed H probe-norm amplitude ratios, not exp(lambda*t) eigenmode amplitudes"
+      }
+    },
+    "q0.2819_m001_r12": {
+      "config": {
+        "q": 0.2819,
+        "resolution": 12,
+        "epsilon": 11.68,
+        "radius": 0.3333333333333333,
+        "padding": 20.0,
+        "pml": 2.0,
+        "courant": 0.5,
+        "source_frequency": 0.192948894855526,
+        "source_width": 0.04,
+        "drive_frequency": 0.385897789711053,
+        "modulation": 0.01,
+        "phase": 1.5707963267948966,
+        "periods": 1200.0,
+        "ramp_periods": 10.0,
+        "update_stride": 4,
+        "static_window": 400.0,
+        "eps_averaging": false,
+        "max_dynamic_wall_seconds": 900.0
+      },
+      "trials": [
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00012843454401743,
+            -2.455450119721572e-05
+          ],
+          "singular_ratio_2_1": 0.003218357886518613,
+          "singular_ratio_3_2": 0.15571387783145396,
+          "relative_rank2_residual": 0.0005011357950047672,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -3.482699149177811e-05,
+            -3.110426273096161e-05
+          ],
+          "singular_ratio_2_1": 0.0024558452289172162,
+          "singular_ratio_3_2": 0.19905465515554568,
+          "relative_rank2_residual": 0.0004888236673965382,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -1.3985244006915733e-05,
+            -1.0357418524470376e-05
+          ],
+          "singular_ratio_2_1": 0.0045845615816908145,
+          "singular_ratio_3_2": 0.11192379264873824,
+          "relative_rank2_residual": 0.0005119259571038904,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -5.1507157874251575e-05,
+            -9.937368935371492e-06
+          ],
+          "singular_ratio_2_1": 0.0035131447689417043,
+          "singular_ratio_3_2": 0.14239908112981506,
+          "relative_rank2_residual": 0.0004992044339732885,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        }
+      ],
+      "identifiability": {
+        "second_component_resolved_by_singular_separation": false,
+        "rates_stable_across_fixed_choices": false,
+        "observed_pair_accepted_for_diagnostic": false,
+        "amplitude_rate_min": [
+          -0.00012843454401743,
+          -3.110426273096161e-05
+        ],
+        "amplitude_rate_max": [
+          -1.3985244006915733e-05,
+          -9.937368935371492e-06
+        ],
+        "singular_ratio_3_2_range": [
+          0.11192379264873824,
+          0.19905465515554568
+        ],
+        "status": "REJECTED_AS_RESOLVED_TWO_MODE_GROWTH_ESTIMATE"
+      },
+      "raw_sha256": "3efac508729781f4de71d32ebcdc4dbc61a34ddea732209248ea283544abea49",
+      "cycle_envelope_growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 2.8271034008230884e-05,
+          "growth_cyclic_fa_over_c": 4.499474808729024e-06,
+          "log_amplitude_fit_rms": 0.004074457872602871,
+          "cycles": [
+            420.4999581884774,
+            1139.4918567184543
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 2.8114919254121495e-05,
+          "growth_cyclic_fa_over_c": 4.474628373922939e-06,
+          "log_amplitude_fit_rms": 0.004076066098368456,
+          "cycles": [
+            420.4999581884774,
+            779.513535216327
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 2.6900523981957233e-05,
+          "growth_cyclic_fa_over_c": 4.281351363490569e-06,
+          "log_amplitude_fit_rms": 0.004052399545031569,
+          "cycles": [
+            780.5104378397472,
+            1139.4918567184543
+          ]
+        }
+      ],
+      "static_poles": [
+        {
+          "frequency": 0.193013201053429,
+          "decay": 3.268246376709174e-08,
+          "amplitude": [
+            -12.400672493272904,
+            -1.7675957547665497
+          ],
+          "error": 4.2020464759543046e-10
+        },
+        {
+          "frequency": 0.19939121809330243,
+          "decay": -7.748958407133428e-05,
+          "amplitude": [
+            -0.027827648348456708,
+            0.02718092067100711
+          ],
+          "error": 5.292559203811604e-07
+        }
+      ],
+      "note": "Finite-window amplitude slopes remain observations even if the two-mode exponent is unresolved",
+      "observed_amplitude_ratios": {
+        "last_to_first_cycle_norm": 1.0732770841651542,
+        "last20_to_first20_cycle_RMS": 1.0675784672396254,
+        "last20_to_postramp_cycles10_30_RMS": 1.0674675850387694,
+        "meaning": "Observed H probe-norm amplitude ratios, not exp(lambda*t) eigenmode amplitudes"
+      }
+    },
+    "center_m001_r12_narrow_long": {
+      "config": {
+        "q": 0.2818,
+        "resolution": 12,
+        "epsilon": 11.68,
+        "radius": 0.3333333333333333,
+        "padding": 20.0,
+        "pml": 2.0,
+        "courant": 0.5,
+        "source_frequency": 0.192948894855526,
+        "source_width": 0.005,
+        "drive_frequency": 0.385897789711053,
+        "modulation": 0.01,
+        "phase": 1.5707963267948966,
+        "periods": 2400.0,
+        "ramp_periods": 10.0,
+        "update_stride": 4,
+        "static_window": 400.0,
+        "eps_averaging": false,
+        "max_dynamic_wall_seconds": 1100.0
+      },
+      "trials": [
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00010723062245424672,
+            0.00011081007084844132
+          ],
+          "singular_ratio_2_1": 0.0014122979143738668,
+          "singular_ratio_3_2": 0.022423345704753482,
+          "relative_rank2_residual": 3.1543717838915553e-05,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00011975649809506404,
+            0.00011168642881665914
+          ],
+          "singular_ratio_2_1": 0.0005830619409719144,
+          "singular_ratio_3_2": 0.04685341268426111,
+          "relative_rank2_residual": 2.7206246669244584e-05,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00010967344442084812,
+            0.00011172148993390922
+          ],
+          "singular_ratio_2_1": 0.001646248149667329,
+          "singular_ratio_3_2": 0.016128507801014186,
+          "relative_rank2_residual": 2.6681705650177204e-05,
+          "phase": 0.25,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.0001186961121035883,
+            0.00011170881791393341
+          ],
+          "singular_ratio_2_1": 0.0005657716087026412,
+          "singular_ratio_3_2": 0.040475729827253844,
+          "relative_rank2_residual": 2.297193107761742e-05,
+          "phase": 0.5,
+          "window_cycles": [
+            50,
+            1100
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        }
+      ],
+      "identifiability": {
+        "second_component_resolved_by_singular_separation": true,
+        "rates_stable_across_fixed_choices": true,
+        "observed_pair_accepted_for_diagnostic": true,
+        "amplitude_rate_min": [
+          -0.00011975649809506404,
+          0.00011081007084844132
+        ],
+        "amplitude_rate_max": [
+          -0.00010723062245424672,
+          0.00011172148993390922
+        ],
+        "singular_ratio_3_2_range": [
+          0.016128507801014186,
+          0.04685341268426111
+        ],
+        "status": "OBSERVED_PAIR_DIAGNOSTIC_ONLY"
+      },
+      "raw_sha256": "3d7be4d585b28b24b6290a899e9fe668b507c932c907133c9226e9962338a3fe",
+      "cycle_envelope_growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 7.885603035399569e-05,
+          "growth_cyclic_fa_over_c": 1.2550327023442956e-05,
+          "log_amplitude_fit_rms": 0.013036810280208961,
+          "cycles": [
+            840.5175441398159,
+            2279.49824382319
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 6.664398524235849e-05,
+          "growth_cyclic_fa_over_c": 1.0606719678664678e-05,
+          "log_amplitude_fit_rms": 0.009795069241922312,
+          "cycles": [
+            840.5175441398159,
+            1559.5094426697929
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 8.966544792032595e-05,
+          "growth_cyclic_fa_over_c": 1.4270699261068783e-05,
+          "log_amplitude_fit_rms": 0.01291200621709593,
+          "cycles": [
+            1560.5063452932131,
+            2279.49824382319
+          ]
+        }
+      ],
+      "static_poles": [
+        {
+          "frequency": 0.192948894594337,
+          "decay": -1.9397572877457046e-08,
+          "amplitude": [
+            -29.978835623750815,
+            -95.49474176330197
+          ],
+          "error": 3.321532643927456e-12
+        }
+      ],
+      "note": "Finite-window amplitude slopes remain observations even if the two-mode exponent is unresolved",
+      "observed_amplitude_ratios": {
+        "last_to_first_cycle_norm": 1.4814019750979073,
+        "last20_to_first20_cycle_RMS": 1.4551174964189861,
+        "last20_to_postramp_cycles10_30_RMS": 1.454986991303946,
+        "meaning": "Observed H probe-norm amplitude ratios, not exp(lambda*t) eigenmode amplitudes"
+      },
+      "late_window_trials": [
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00011256802531243704,
+            0.0001117884145203639
+          ],
+          "singular_ratio_2_1": 0.000964585298905106,
+          "singular_ratio_3_2": 0.0022844928444251855,
+          "relative_rank2_residual": 2.775462237782558e-06,
+          "phase": 0.25,
+          "window_cycles": [
+            1250,
+            2300
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00011255052459291811,
+            0.00011178324302552853
+          ],
+          "singular_ratio_2_1": 0.0002897108734381063,
+          "singular_ratio_3_2": 0.003847470481462036,
+          "relative_rank2_residual": 1.6713998297400818e-06,
+          "phase": 0.5,
+          "window_cycles": [
+            1250,
+            2300
+          ],
+          "delay": 64,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00011254955825251889,
+            0.00011177790683956913
+          ],
+          "singular_ratio_2_1": 0.0011244177154256317,
+          "singular_ratio_3_2": 0.0019603786037927016,
+          "relative_rank2_residual": 2.7752308453252552e-06,
+          "phase": 0.25,
+          "window_cycles": [
+            1250,
+            2300
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        },
+        {
+          "amplitude_rates_per_meep_time": [
+            -0.00011255845335296346,
+            0.00011178351417420668
+          ],
+          "singular_ratio_2_1": 0.0002811206346122828,
+          "singular_ratio_3_2": 0.003964339442120857,
+          "relative_rank2_residual": 1.6714583036212576e-06,
+          "phase": 0.5,
+          "window_cycles": [
+            1250,
+            2300
+          ],
+          "delay": 96,
+          "interpolation": "cubic"
+        }
+      ],
+      "late_window_identifiability": {
+        "second_component_resolved_by_singular_separation": true,
+        "rates_stable_across_fixed_choices": true,
+        "observed_pair_accepted_for_diagnostic": true,
+        "amplitude_rate_min": [
+          -0.00011256802531243704,
+          0.00011177790683956913
+        ],
+        "amplitude_rate_max": [
+          -0.00011254955825251889,
+          0.0001117884145203639
+        ],
+        "singular_ratio_3_2_range": [
+          0.0019603786037927016,
+          0.003964339442120857
+        ],
+        "status": "OBSERVED_PAIR_DIAGNOSTIC_ONLY"
+      },
+      "narrow_source_evidence_limit": "Static Harminv uses the source frequency window; narrowing it also narrows pole detection. Absence of a reported near-light pole alone does not prove its field was eliminated."
+    }
+  },
+  "pending": [],
+  "estimator_sha256": "a0437332a37c4c4e810ad32201884efd28a37c1e1348f81a2d2a20d89c2c177b",
+  "analysis_sha256": "babb319119fd590b0fc742ae88ddebe6f0428ba5f4bb436124fe6fd6e4aba2ff",
+  "limitations": [
+    "Fixed-step held material coefficients are not exactly periodic with the intended pump",
+    "Stable synthetic beating distinguishes clean algebra from native modal identifiability",
+    "Injected white noise is a stress control, not an asserted model of native residuals",
+    "Do not select a phase or delay because its rate matches a static prediction",
+    "An unresolved second component precludes a measured +/- growth-pair claim"
+  ]
+}

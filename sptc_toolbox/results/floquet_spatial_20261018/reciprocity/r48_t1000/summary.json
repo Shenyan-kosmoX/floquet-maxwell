@@ -1,0 +1,80 @@
+{
+  "status": "FULL_SPATIAL_RECIPROCAL_FIRST_ORDER_X_CHANNEL_CONTROL",
+  "completed": true,
+  "resolution": 48,
+  "checkpoint": 1000.0,
+  "dt": 0.010416666666666666,
+  "selected_inputs": [
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_even\\response_t1000.npz",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t1000.npz"
+  ],
+  "sidebands": [
+    {
+      "harmonic": -1,
+      "complex_output_x": [
+        [
+          -0.00736312564280642,
+          0.0009044260706278877
+        ],
+        [
+          -0.007396613432122485,
+          0.003182614305627003
+        ]
+      ],
+      "power_x": 0.00011987252983162128
+    },
+    {
+      "harmonic": 1,
+      "complex_output_x": [
+        [
+          0.007859488757426052,
+          -0.0037073183517315565
+        ],
+        [
+          0.00715502438282822,
+          -0.0015904602645090621
+        ]
+      ],
+      "power_x": 0.0001292397106610407
+    }
+  ],
+  "time_windows": [
+    {
+      "checkpoint": 500.0,
+      "available": true,
+      "full_complex_relative_difference": [
+        0.25420170605543624,
+        0.24820625154426648
+      ],
+      "receiver_only_complex_relative_difference": [
+        0.17145176926127173,
+        0.15667118643852587
+      ],
+      "source_relative_difference": 0.12091496449887813
+    }
+  ],
+  "E_equal_KD_relative_residual": 4.991978269635386e-15,
+  "polarization_E_vs_D_relative_residual": 5.795905917030286e-15,
+  "incoming_identity_relative_residual": 1.3019871292261822e-07,
+  "formula": "S_h,x=i*kappa_h/4 * E0_x(f_h).T W [(A/2)*epsilon_prime*E0_x(f0)], A=.01; no conjugation",
+  "normalization": "Gamma reciprocal static medium; unit discrete Yee air power; phase reference z=+/-0.7. Bilinear port flux between unit incident test and outgoing source solution is -4*y; J=-i*kappa*P gives +i*kappa/4. The exact saved native volume metric W is used once.",
+  "no_fit": true,
+  "source_reduction": false,
+  "limits": [
+    "Only x-polarized receiving port fields exist: y outputs are unavailable, not zero.",
+    "First-order fixed-drive derivative response; no M2 feedback, second-order sidebands or carrier depletion.",
+    "Time-window sensitivity and independent same-grid references remain necessary.",
+    "Fixed Courant grid refinement also changes dt; no separate temporal convergence claim."
+  ],
+  "provenance": {
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_even\\response_t1000.npz": "48623f164098acba94725d85774fdc263796e3a524c540e0ae8394264d9e4058",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t1000.npz": "79212c95391d71913839ee838d58b1c5f40e73c4e5cdc4bb26576d76a3a13dbe",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\material\\grid.npz": "e47f0bc01086c9573489ac79fa862b55dabe1e6f0e2fe012e7d56a3403591d46",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\material\\K_base.npz": "85289c583a2cdcd89b7d14417b7687c4b33692390b47cd3620dcbb49ef6247ef",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\material\\K_derivative.npz": "48274b4619f13bf3c2b83f5c16c7469ce8b7edb938ff146359e2716b1bf4b757",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\static\\weak_summary.json": "b94e7f702b10dc59e0198de07a285b6f1b38be4db00cb2f544cb72e4640322a1",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_even\\response_t500.npz": "d127521a36d67ff92f12b486f5220da3ad872361bbe2835d37975d692221e602",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t500.npz": "93b3a699efa2ed0087513682789b357fbf80bd4e46aba18e2c910be1b6351ccd"
+  },
+  "script_sha256": "e89b1c43ce361431f35371672a1311aa7cf76bff6a190f84cae81c7926d9f19e"
+}

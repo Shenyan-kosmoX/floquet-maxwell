@@ -1,0 +1,48 @@
+{
+  "case": "k0_m0.01_gamma0.05_r40_shift1",
+  "resolution": 40,
+  "dt": 0.00625,
+  "modulation": 0.01,
+  "damping_ratio": 0.05,
+  "k_cyclic": 0.0,
+  "drive_cyclic": 0.8,
+  "phase": 0.37,
+  "sample_shift_dt": 1.0,
+  "E_relative_L2_error": 0.08440732385150469,
+  "D_relative_L2_error": 0.0,
+  "max_immediate_DBE_change": 0.0,
+  "adapter": {
+    "array_count": 1,
+    "state_count": 1,
+    "realnum_bytes": 8,
+    "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+  },
+  "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+  "initial_P_time1": [
+    0.0,
+    0.0
+  ],
+  "discrete_k0_recurrence": {
+    "max_absolute_P_error_by_material_time_offset_dt": {
+      "0": 1.0005721400334663e-14,
+      "-1": 0.00225867122419114,
+      "1": 0.0022435399748817492
+    },
+    "meaning": "Offset zero is the intended centered forcing time; +/-1 are deliberately wrong material-phase controls"
+  },
+  "scope": "Representative rerun binds final memory-guard-only adapter revision; prior 21 native controls retained unchanged",
+  "final_adapter_sha256": {
+    "native_lorentz_sigma.py": "c182c3cb4ca4c55d06902edba19da01fc722448846cc0cb7fe7dfa17199a9e78",
+    "native_lorentz_sigma.cpp": "a033aecb7bd3a83a56ff64927795a0761174f9f4b797833757363e3813582633",
+    "native_build/liblorentz_sigma.so": "143148ccb1882e2c7506b819fa8d59a281ce63154f171efc2708783195f679d9",
+    "native_build/build_manifest.json": "f4263f56559db23e3d42b6eee304e6a97e5ea8d6a35dbccac89bb294b970b112"
+  },
+  "prior_adapter_waveform_bitwise_identity": {
+    "time": true,
+    "D": true,
+    "B_half": true,
+    "E": true,
+    "P": true,
+    "updates": true
+  }
+}

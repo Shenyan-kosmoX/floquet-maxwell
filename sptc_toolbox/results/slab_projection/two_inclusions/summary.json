@@ -1,0 +1,147 @@
+{
+  "geometry": "single-layer two independent off-center Circle/Ellipse holes",
+  "gmax": 2.1,
+  "guided_reference_permittivity": [
+    10.0
+  ],
+  "guided_mode_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "kpoint_ka": [
+    0.41,
+    0.19
+  ],
+  "selected_modes": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "native_guided_basis_dimension": 50,
+  "retained_modal_dimension": 4,
+  "native_basis_id": "70e6d34787ddf8cfe8bd93cdf3b8ffa7ed34be704215b33bd3eda555db82697c",
+  "physical_signature": "7cc32bf4c6ed8d73c2f6e699911b5ff6ab5780822247c21856cccf3df6768f10",
+  "dielectric_reconstruction": [
+    2.2390813445925075e-16
+  ],
+  "region_derivatives": [
+    {
+      "region": "circle",
+      "step": 0.002,
+      "native_frequency_derivative": [
+        -0.0005327578486147289,
+        -0.0003332432530755991,
+        -0.0016724268506324025,
+        -0.0009134142508748777
+      ],
+      "projected_frequency_derivative": [
+        -0.000532757848967335,
+        -0.0003332432524225405,
+        -0.0016724268603614469,
+        -0.0009134142438104531
+      ],
+      "relative_error": 6.003462265154456e-09,
+      "minimum_sampled_H_overlap_squared": 0.9999999875933089
+    },
+    {
+      "region": "ellipse",
+      "step": 0.002,
+      "native_frequency_derivative": [
+        -0.0003802721201123793,
+        -0.00019685156714410734,
+        -0.001290228127351356,
+        -0.0005866467090026584
+      ],
+      "projected_frequency_derivative": [
+        -0.0003802721202968546,
+        -0.00019685156694337037,
+        -0.0012902281320940163,
+        -0.0005866467052304073
+      ],
+      "relative_error": 4.09700280825958e-09,
+      "minimum_sampled_H_overlap_squared": 0.9999999935228039
+    },
+    {
+      "region": "background",
+      "step": 0.002,
+      "native_frequency_derivative": [
+        -0.01490124307111651,
+        -0.015299632592072343,
+        -0.01645404064534728,
+        -0.01668204822603825
+      ],
+      "projected_frequency_derivative": [
+        -0.014901242789960445,
+        -0.01529963230210299,
+        -0.016454040341274605,
+        -0.01668204791328067
+      ],
+      "relative_error": 1.8750920751403094e-08,
+      "minimum_sampled_H_overlap_squared": 0.9999999997731357
+    },
+    {
+      "region": "whole layer",
+      "step": 0.002,
+      "native_frequency_derivative": [
+        -0.015814273086833808,
+        -0.015829727433788743,
+        -0.019416695816551477,
+        -0.018182109296507876
+      ],
+      "projected_frequency_derivative": [
+        -0.015814272759224646,
+        -0.015829727121468903,
+        -0.019416695333730066,
+        -0.018182108862321522
+      ],
+      "relative_error": 2.277093019359425e-08,
+      "minimum_sampled_H_overlap_squared": 0.9999999754945677
+    }
+  ],
+  "finite_delta": [
+    0.08,
+    -0.04,
+    0.025,
+    0.015
+  ],
+  "finite_projected_operator_relative_error": 2.2881762311506285e-15,
+  "finite_native_inverse_dielectric_absolute_error": 1.208096335216635e-16,
+  "reduced_vs_full_finite_native_frequency_difference": [
+    1.5186406265854657e-07,
+    7.928479694996327e-08,
+    7.897953415714198e-07,
+    3.4510102359108785e-07
+  ],
+  "retained_mode_truncation_diagnostic": [
+    {
+      "perturbation_factor": 1.0,
+      "reduced_vs_full_native_max_absolute_frequency_error": 7.897953415714198e-07
+    },
+    {
+      "perturbation_factor": 0.5,
+      "reduced_vs_full_native_max_absolute_frequency_error": 1.9894803598985433e-07
+    },
+    {
+      "perturbation_factor": 0.25,
+      "reduced_vs_full_native_max_absolute_frequency_error": 4.9925775735815137e-08
+    }
+  ],
+  "z16_to_z24_relative_stiffness_change": 6.215765695193422e-19,
+  "time_derivative_finite_difference_relative_error": 1.7527203598997332e-09,
+  "unmodulated_stiffness_error": 4.122256919138973e-15,
+  "serialization_roundtrip_error": 0.0,
+  "checks": {
+    "native_dielectric": true,
+    "region_static_derivatives": true,
+    "sampled_field_identity": true,
+    "finite_native_operator": true,
+    "finite_native_dielectric": true,
+    "quadrature": true,
+    "time_derivative": true,
+    "zero_perturbation": true,
+    "serialization": true
+  }
+}

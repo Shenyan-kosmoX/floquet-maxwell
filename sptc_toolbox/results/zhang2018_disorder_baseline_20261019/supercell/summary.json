@@ -1,0 +1,799 @@
+{
+  "status": "ZHANG_LOCAL_PROTOCOL_TRANSFER_AND_INDEPENDENT_SPACE_TIME_CHECK",
+  "completed": true,
+  "protocol": {
+    "source_sha256": "8a27b888a7dcae66c4d2a2d75d22cfeb248f65c52be8c7381ae3bede585b23c7",
+    "doi": "10.1038/s41467-018-06802-0",
+    "source_figure": "Supplementary Figure 1f, upper-left 2x2 crop",
+    "codes_y_x": [
+      [
+        "01101001",
+        "01101101"
+      ],
+      [
+        "01011011",
+        "01100100"
+      ]
+    ],
+    "full_paper_code_shape": [
+      8,
+      8,
+      8
+    ],
+    "tested_shape": [
+      2,
+      2,
+      8
+    ],
+    "physical_cell_centers": "(ix-0.5,iy-0.5); source y row increases in physical +y",
+    "static_epsilon": 11.5,
+    "amplitude": 0.2,
+    "stage_delta_epsilon": [
+      [
+        [
+          0.2,
+          -0.2,
+          -0.2,
+          0.2,
+          -0.2,
+          0.2,
+          0.2,
+          -0.2
+        ],
+        [
+          0.2,
+          -0.2,
+          0.2,
+          -0.2,
+          -0.2,
+          0.2,
+          -0.2,
+          -0.2
+        ]
+      ],
+      [
+        [
+          0.2,
+          -0.2,
+          -0.2,
+          0.2,
+          -0.2,
+          -0.2,
+          0.2,
+          -0.2
+        ],
+        [
+          0.2,
+          -0.2,
+          -0.2,
+          0.2,
+          0.2,
+          -0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    ],
+    "cell_time_means": [
+      [
+        0.0,
+        -0.05
+      ],
+      [
+        -0.05,
+        0.05
+      ]
+    ],
+    "dc_retained": true,
+    "physical_period": 35.73655639714536,
+    "drive_omega_a_over_c": 0.1758195512,
+    "material_mapping": "epsilon_bulk + amplitude*(1-2*bit); original paper states are reflection phases, not epsilon",
+    "scope": "Exact original local code strings; dielectric-platform transfer and periodically repeated 2x2 crop, not original finite 8x8 metal array"
+  },
+  "spatial": [
+    {
+      "status": "ACTUAL_LEGUME_PRIMITIVE_AND_SUPERCELL_COMPARISON",
+      "gmax": 2.1,
+      "modes_per_sector": 2,
+      "static_mode_count": 8,
+      "identity": {
+        "primitive_selection": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "supercell_matched_modes": [
+          14,
+          15,
+          10,
+          13,
+          11,
+          12,
+          8,
+          9
+        ],
+        "matched_overlap_squared": [
+          1.0000000000000027,
+          0.9999999999999976,
+          0.999487952566271,
+          0.9983575555904487,
+          0.9989503369680232,
+          0.998207847386199,
+          0.9969370861978275,
+          0.9939361684319628
+        ],
+        "minimum_overlap_squared": 0.9939361684319628,
+        "cluster_principal_overlap_squared": [
+          1.0000000000000027,
+          0.9999999999999991,
+          0.9995175714497002,
+          0.9993713628538259,
+          0.999089834942469,
+          0.9983823030113473,
+          0.9982167756982977,
+          0.995484011943671
+        ],
+        "full_field_relative_difference": 0.04203635867677397,
+        "individual_native_field_norm_primitive": [
+          0.9999996716476875,
+          0.999999907556282,
+          0.9999999934515252,
+          0.9999999986457855,
+          0.9999999974196248,
+          0.9999999975731187,
+          0.9999999998357337,
+          0.999999999891387
+        ],
+        "individual_native_field_norm_supercell": [
+          0.9999996716476879,
+          0.9999999075562817,
+          0.9999999934517564,
+          0.9999999984632092,
+          0.9999999973838646,
+          0.9999999976601059,
+          0.999999999921125,
+          0.9999999999870255
+        ],
+        "frequencies_primitive": [
+          0.35897169617691566,
+          0.36097304995334617,
+          0.33098914550602,
+          0.3526346902518372,
+          0.3348188600911047,
+          0.35215528243669086,
+          0.2924563180281879,
+          0.3028835539115872
+        ],
+        "frequencies_supercell": [
+          0.35897169617691554,
+          0.36097304995334567,
+          0.3313262059223955,
+          0.35239947216683426,
+          0.3348893136453462,
+          0.3515181876115483,
+          0.29235936435118987,
+          0.30286321871313443
+        ],
+        "max_cyclic_frequency_shift": 0.0006370948251425701,
+        "metric": "Physical H; exact full reciprocal union, common finite z quadrature [-4,4.42], supercell area4",
+        "phase_alignment": [
+          [
+            0.7227590036134282,
+            0.6911001538820004
+          ],
+          [
+            0.9207419964767007,
+            0.39017198249502644
+          ],
+          [
+            0.44716687287360707,
+            -0.8944505507877109
+          ],
+          [
+            -0.47369178820297625,
+            0.8806906890555087
+          ],
+          [
+            -0.19966314893193804,
+            0.9798645962369407
+          ],
+          [
+            0.18468079779161953,
+            0.982798556636634
+          ],
+          [
+            -0.9922236010987988,
+            0.12446817031888785
+          ],
+          [
+            0.17934420645506174,
+            -0.9837863871852488
+          ]
+        ],
+        "field_shift": [
+          -0.5,
+          -0.5
+        ],
+        "primitive_field_scale": 0.5,
+        "frequency_fit": false,
+        "amplitude_fit": false,
+        "reciprocal_support_count": 62,
+        "g_count_primitive": 13,
+        "g_count_supercell": 57
+      },
+      "comparison": {
+        "stage_relative_modulation_matrix_difference": 0.005581985510226564,
+        "maximum_absolute_matrix_difference": 8.656820203704374e-05,
+        "stage_reference_modulation_norms": [
+          0.04105318840563324,
+          0.04105318840563326,
+          0.020894818367355468,
+          0.02089481836735541,
+          0.020894818367355468,
+          1.2904705404020113e-16,
+          0.02089481836735541,
+          0.020894818367355468
+        ],
+        "stage_relative_differences": [
+          0.0006174034437312178,
+          0.0006174034437297832,
+          0.008870289365607116,
+          0.008870289365607197,
+          0.008870289365606993,
+          null,
+          0.008870289365607197,
+          0.008870289365606993
+        ],
+        "stage_absolute_differences": [
+          2.5346379897784466e-05,
+          2.534637989772558e-05,
+          0.00018534308516024545,
+          0.00018534308516024662,
+          0.00018534308516024288,
+          2.8699516767581216e-16,
+          0.00018534308516024662,
+          0.00018534308516024288
+        ],
+        "minimum_stage_mass_eigenvalue": 0.9829851557092222,
+        "exact_segment_multiplier_difference_between_spatial_routes": 0.1427103410364974,
+        "same_omega_auxiliary_multiplier_difference": 5.034213127632375e-05
+      },
+      "native_primitive_sha256": "7012acdce1d30c76f3b0cffd5243699685086138d346eb244c40b54d20c4bff5",
+      "native_supercell_sha256": "203afc8316bb6509063ba476e1bbd8c034434456ab7d5a1b465c7c09dfdc804f",
+      "quadrature": {
+        "xy_order": 32,
+        "z_order": 16
+      },
+      "seconds": 5.0723610000022745,
+      "limitation": "Same numerical gmax has differently shifted Fourier support in primitive and supercell charts; this is a refinement comparison, not algebraic exact-basis equivalence."
+    },
+    {
+      "status": "ACTUAL_LEGUME_PRIMITIVE_AND_SUPERCELL_COMPARISON",
+      "gmax": 3.1,
+      "modes_per_sector": 2,
+      "static_mode_count": 8,
+      "identity": {
+        "primitive_selection": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "supercell_matched_modes": [
+          14,
+          15,
+          10,
+          13,
+          11,
+          12,
+          8,
+          9
+        ],
+        "matched_overlap_squared": [
+          1.0000000000000018,
+          1.0000000000000013,
+          0.9997855210420139,
+          0.999179230208028,
+          0.9995309569269907,
+          0.9995537888578615,
+          0.9978981500941911,
+          0.9975244369132223
+        ],
+        "minimum_overlap_squared": 0.9975244369132223,
+        "cluster_principal_overlap_squared": [
+          1.0000000000000018,
+          0.9999999999999996,
+          0.9997986809555139,
+          0.9997881069730241,
+          0.9996193096628828,
+          0.9991897204389709,
+          0.9983859075879219,
+          0.997504707584733
+        ],
+        "full_field_relative_difference": 0.02857192930480054,
+        "individual_native_field_norm_primitive": [
+          0.9999995875178819,
+          0.9999999202396725,
+          0.9999999910216884,
+          0.9999999973793829,
+          0.9999999965163302,
+          0.9999999940524581,
+          0.9999999978126708,
+          0.9999999983961279
+        ],
+        "individual_native_field_norm_supercell": [
+          0.9999995875178815,
+          0.9999999202396712,
+          0.9999999917203404,
+          0.9999999954468908,
+          0.9999999968887401,
+          0.9999999949650401,
+          0.9999999962718497,
+          0.9999999962833971
+        ],
+        "frequencies_primitive": [
+          0.3595803005769037,
+          0.36139212082114475,
+          0.3318529950367503,
+          0.3529743717756859,
+          0.3352581191754898,
+          0.3532977760947144,
+          0.29424215818744975,
+          0.3042128913683548
+        ],
+        "frequencies_supercell": [
+          0.35958030057690443,
+          0.36139212082114447,
+          0.33183308643949727,
+          0.3529842098993286,
+          0.33521362429405793,
+          0.3526242203190646,
+          0.2951288827530708,
+          0.30520146981154417
+        ],
+        "max_cyclic_frequency_shift": 0.0009885784431893918,
+        "metric": "Physical H; exact full reciprocal union, common finite z quadrature [-4,4.42], supercell area4",
+        "phase_alignment": [
+          [
+            -0.9954405206744629,
+            0.09538432680138942
+          ],
+          [
+            -0.662158411694639,
+            -0.7493638887897074
+          ],
+          [
+            -0.8454031505216315,
+            0.5341287420539169
+          ],
+          [
+            -0.4026882711994968,
+            0.9153371817195893
+          ],
+          [
+            0.16516888857374293,
+            -0.9862652981055932
+          ],
+          [
+            -0.2208240062560146,
+            0.9753136717287642
+          ],
+          [
+            -0.928206656745229,
+            -0.3720650512663676
+          ],
+          [
+            -0.8220423878145902,
+            -0.5694263013209759
+          ]
+        ],
+        "field_shift": [
+          -0.5,
+          -0.5
+        ],
+        "primitive_field_scale": 0.5,
+        "frequency_fit": false,
+        "amplitude_fit": false,
+        "reciprocal_support_count": 130,
+        "g_count_primitive": 29,
+        "g_count_supercell": 121
+      },
+      "comparison": {
+        "stage_relative_modulation_matrix_difference": 0.007013866727290144,
+        "maximum_absolute_matrix_difference": 0.00014035065200865895,
+        "stage_reference_modulation_norms": [
+          0.041026764372458044,
+          0.04102676437245804,
+          0.02088579968003943,
+          0.020885799680039525,
+          0.02088579968003943,
+          1.9232963557440212e-16,
+          0.020885799680039525,
+          0.02088579968003943
+        ],
+        "stage_relative_differences": [
+          0.0009547788524031843,
+          0.0009547788524014552,
+          0.0111227807942444,
+          0.011122780794244018,
+          0.011122780794246381,
+          null,
+          0.011122780794244018,
+          0.011122780794246381
+        ],
+        "stage_absolute_differences": [
+          3.917148700535134e-05,
+          3.917148700528039e-05,
+          0.00023230817155357842,
+          0.0002323081715535715,
+          0.0002323081715536198,
+          4.2282236687305236e-16,
+          0.0002323081715535715,
+          0.0002323081715536198
+        ],
+        "minimum_stage_mass_eigenvalue": 0.9829870134907438,
+        "exact_segment_multiplier_difference_between_spatial_routes": 0.2173315961185855,
+        "same_omega_auxiliary_multiplier_difference": 9.062678699782067e-05
+      },
+      "native_primitive_sha256": "941f35277e038e490ebe9c34e6b9f3aebc49e0bf717d47101b94c6bc28f21653",
+      "native_supercell_sha256": "9475817ee11671c843985f7d061f03095fb7766c9fb28504f25eaca832c304cd",
+      "quadrature": {
+        "xy_order": 32,
+        "z_order": 16
+      },
+      "seconds": 7.311893799997051,
+      "limitation": "Same numerical gmax has differently shifted Fourier support in primitive and supercell charts; this is a refinement comparison, not algebraic exact-basis equivalence."
+    },
+    {
+      "status": "ACTUAL_LEGUME_PRIMITIVE_AND_SUPERCELL_COMPARISON",
+      "gmax": 4.1,
+      "modes_per_sector": 2,
+      "static_mode_count": 8,
+      "identity": {
+        "primitive_selection": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "supercell_matched_modes": [
+          14,
+          15,
+          10,
+          12,
+          11,
+          13,
+          8,
+          9
+        ],
+        "matched_overlap_squared": [
+          1.0000000000000044,
+          0.9999999999999971,
+          0.9999565569555178,
+          0.9998171974139112,
+          0.9999281378985343,
+          0.9998644003739664,
+          0.9991960187190729,
+          0.9991753549780888
+        ],
+        "minimum_overlap_squared": 0.9991753549780888,
+        "cluster_principal_overlap_squared": [
+          1.0000000000000022,
+          1.0000000000000004,
+          0.9999740062465589,
+          0.999954214991015,
+          0.9998882690732817,
+          0.9998301585776347,
+          0.9995448157960248,
+          0.9993626864033794
+        ],
+        "full_field_relative_difference": 0.016057242924261715,
+        "individual_native_field_norm_primitive": [
+          0.9999994678730334,
+          0.9999999528519553,
+          0.9999999835292476,
+          0.9999999907453535,
+          0.9999999940646668,
+          0.9999999837169105,
+          0.999999989180393,
+          0.9999999930060336
+        ],
+        "individual_native_field_norm_supercell": [
+          0.9999994678730327,
+          0.9999999528519555,
+          0.9999999827061132,
+          0.9999999833733957,
+          0.9999999936894833,
+          0.9999999782583061,
+          0.9999999876506788,
+          0.9999999869786411
+        ],
+        "frequencies_primitive": [
+          0.3601928249674704,
+          0.3616894375251686,
+          0.33232784522614384,
+          0.35354506440210565,
+          0.33564129460866293,
+          0.3544721712893288,
+          0.2960694091581003,
+          0.3061473356260018
+        ],
+        "frequencies_supercell": [
+          0.3601928249674724,
+          0.36168943752517113,
+          0.33248652407762114,
+          0.35369514901142185,
+          0.3357316114167633,
+          0.35460485398841496,
+          0.2964613513127129,
+          0.30668982543377177
+        ],
+        "max_cyclic_frequency_shift": 0.0005424898077699414,
+        "metric": "Physical H; exact full reciprocal union, common finite z quadrature [-4,4.42], supercell area4",
+        "phase_alignment": [
+          [
+            0.9570748591780948,
+            -0.2898408424105032
+          ],
+          [
+            0.3926550049624201,
+            0.9196858415121774
+          ],
+          [
+            -0.9994726125377126,
+            -0.03247301629106138
+          ],
+          [
+            -0.45241087073123015,
+            0.891809623206775
+          ],
+          [
+            -0.32759006922341793,
+            -0.9448199545660518
+          ],
+          [
+            -0.14093860948600198,
+            0.9900183373837841
+          ],
+          [
+            0.652770043603524,
+            -0.7575561168480216
+          ],
+          [
+            0.8401077733514165,
+            -0.5424195139875824
+          ]
+        ],
+        "field_shift": [
+          -0.5,
+          -0.5
+        ],
+        "primitive_field_scale": 0.5,
+        "frequency_fit": false,
+        "amplitude_fit": false,
+        "reciprocal_support_count": 219,
+        "g_count_primitive": 49,
+        "g_count_supercell": 213
+      },
+      "comparison": {
+        "stage_relative_modulation_matrix_difference": 0.0027093847638586434,
+        "maximum_absolute_matrix_difference": 4.029242818894354e-05,
+        "stage_reference_modulation_norms": [
+          0.04097214695493014,
+          0.040972146954930275,
+          0.02086942898503709,
+          0.020869428985037092,
+          0.02086942898503709,
+          8.045162405346254e-17,
+          0.020869428985037092,
+          0.02086942898503709
+        ],
+        "stage_relative_differences": [
+          0.0006134186102836175,
+          0.0006134186102869067,
+          0.0042518603068475115,
+          0.004251860306847384,
+          0.004251860306841041,
+          null,
+          0.004251860306847384,
+          0.004251860306841041
+        ],
+        "stage_absolute_differences": [
+          2.5133077445429398e-05,
+          2.5133077445564245e-05,
+          8.873389672805214e-05,
+          8.87338967280495e-05,
+          8.873389672791712e-05,
+          3.7396080952307e-16,
+          8.87338967280495e-05,
+          8.873389672791712e-05
+        ],
+        "minimum_stage_mass_eigenvalue": 0.9829892916962307,
+        "exact_segment_multiplier_difference_between_spatial_routes": 0.11954124479081363,
+        "same_omega_auxiliary_multiplier_difference": 0.0001491664284663766
+      },
+      "native_primitive_sha256": "2ad299b9f5c43b9ec39a094e4b8724ca9d7d9078cc03220b08930559e82b9bee",
+      "native_supercell_sha256": "f93f0170024ed900567b10ccbc12360cee5f299c05adac249ddc4ea1c0560f1e",
+      "quadrature": {
+        "xy_order": 32,
+        "z_order": 16
+      },
+      "seconds": 10.155281499999546,
+      "limitation": "Same numerical gmax has differently shifted Fourier support in primitive and supercell charts; this is a refinement comparison, not algebraic exact-basis equivalence."
+    }
+  ],
+  "temporal": [
+    {
+      "material_fourier_order": 4,
+      "floquet_halfwidth": 8,
+      "fourier_sampling_count": 2048,
+      "physical_count": 16,
+      "failure": null,
+      "multiplier_error_vs_exact_step": 0.0012894394141017014,
+      "seconds": 0.26765850000083447,
+      "maximum_selected_edge_weight": 6.224918802306491e-10
+    },
+    {
+      "material_fourier_order": 8,
+      "floquet_halfwidth": 12,
+      "fourier_sampling_count": 2048,
+      "physical_count": 16,
+      "failure": null,
+      "multiplier_error_vs_exact_step": 0.000685013787631409,
+      "seconds": 0.39120439999896917,
+      "maximum_selected_edge_weight": 1.5346084701883644e-11
+    },
+    {
+      "material_fourier_order": 16,
+      "floquet_halfwidth": 20,
+      "fourier_sampling_count": 2048,
+      "physical_count": 16,
+      "failure": null,
+      "multiplier_error_vs_exact_step": 0.000453354111560261,
+      "seconds": 1.0390989999978046,
+      "maximum_selected_edge_weight": 4.825069716242763e-12
+    },
+    {
+      "material_fourier_order": 32,
+      "floquet_halfwidth": 28,
+      "fourier_sampling_count": 2048,
+      "physical_count": 16,
+      "failure": null,
+      "multiplier_error_vs_exact_step": 0.00022107295843626048,
+      "seconds": 2.624406999999337,
+      "maximum_selected_edge_weight": 8.955029121650708e-07
+    },
+    {
+      "material_fourier_order": 32,
+      "floquet_halfwidth": 40,
+      "fourier_sampling_count": 2048,
+      "physical_count": 16,
+      "failure": null,
+      "multiplier_error_vs_exact_step": 0.00019987535053281493,
+      "seconds": 6.066984000000957,
+      "maximum_selected_edge_weight": 4.619241423483649e-11,
+      "multiplier_error_vs_same_fourier_material_ODE": 2.9132460237744606e-08,
+      "same_fourier_material_ODE_vs_exact_step": 0.00019987404447503694,
+      "ODE_nfev": 3506
+    },
+    {
+      "material_fourier_order": 64,
+      "floquet_halfwidth": 56,
+      "fourier_sampling_count": 2048,
+      "physical_count": 16,
+      "failure": null,
+      "multiplier_error_vs_exact_step": 9.446338178529082e-05,
+      "seconds": 14.990691999999399,
+      "maximum_selected_edge_weight": 5.853545997410347e-11,
+      "multiplier_error_vs_same_fourier_material_ODE": 7.400569597869012e-07,
+      "same_fourier_material_ODE_vs_exact_step": 9.372332482614889e-05,
+      "ODE_nfev": 5330
+    }
+  ],
+  "trajectory_controls": {
+    "random_code": {
+      "maximum_other_sector_coordinate_weight": 0.00017708510194592832,
+      "final_other_sector_coordinate_weight": 0.0001546835299164191
+    },
+    "uniform_code": {
+      "maximum_other_sector_coordinate_weight": 1.520948046147351e-63,
+      "final_other_sector_coordinate_weight": 1.3376887210499662e-63
+    },
+    "zero_drive": {
+      "maximum_other_sector_coordinate_weight": 0.0,
+      "final_other_sector_coordinate_weight": 0.0
+    }
+  },
+  "script_sha256": "dc4f3fdf4e5034c2b902c1da01ad3c54b5f5ded4c45d1dcf311d547917c7558f",
+  "scope": [
+    "Actual periodic dielectric Legume slab, not original metal/PIN platform.",
+    "Original upper-left 2x2 time code crop, periodically repeated, not full 8x8 finite sample.",
+    "Finite lossless material projection; radiation deliberately outside this isolated comparison.",
+    "Physical periodic time waveform, no independent stochastic resampling each cycle."
+  ]
+}

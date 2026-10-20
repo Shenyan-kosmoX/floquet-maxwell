@@ -1,0 +1,157 @@
+{
+  "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+  "q": 0.86,
+  "loss_ratio": 0.005,
+  "resolution": 16,
+  "courant": 0.25,
+  "material": {
+    "epsilon_inf": 1.0,
+    "N0": 1.21e+29,
+    "resonance_frequency_THz": 600.0,
+    "resonance_cyclic_fa_over_c": 1.2644747720771548,
+    "plasma_angular_wa_over_c": 41.35643878620493,
+    "sigma": 27.096063050128183,
+    "gamma_cyclic_fa_over_c": 0.006322373860385774,
+    "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+  },
+  "windows": [
+    [
+      [
+        {
+          "frequency": 0.26515985240148965,
+          "decay": -0.00012916653419509325,
+          "error": 1.7613531204007983e-10,
+          "amplitude": [
+            -274.7048532043209,
+            -422.1576995401863
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2651598513328637,
+          "decay": -0.00012917261199608634,
+          "error": 4.723949244768668e-11,
+          "amplitude": [
+            -165.44443954163506,
+            -256.5253091855847
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2651598517860313,
+          "decay": -0.00012917226375344485,
+          "error": 2.584513138104284e-11,
+          "amplitude": [
+            -51.926118900173904,
+            -79.29929911525274
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "frequency": 0.26515984684258254,
+          "decay": -0.00012916953119315838,
+          "error": 2.7646889348912433e-10,
+          "amplitude": [
+            -444.4978769869091,
+            158.77271279683123
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.26515985059555286,
+          "decay": -0.0001291711716473771,
+          "error": 4.7799540908837064e-11,
+          "amplitude": [
+            -269.7786943950084,
+            95.12835765685439
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.26515984660843545,
+          "decay": -0.00012916975707251378,
+          "error": 2.385716342747408e-10,
+          "amplitude": [
+            -83.56614105381249,
+            30.120347214634197
+          ]
+        }
+      ]
+    ]
+  ],
+  "meep_version": "1.35.0",
+  "source_frequency": 0.2651598755,
+  "source_width": 0.04,
+  "static_window": 80.0,
+  "modulation": 0.01,
+  "drive": 0.530319751,
+  "periods": 400.0,
+  "native_adapter": {
+    "array_count": 3,
+    "state_count": 2,
+    "realnum_bytes": 8,
+    "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+  },
+  "instantaneous_field_change_on_sigma_update": {
+    "Dx": 0.0,
+    "Dy": 0.0,
+    "Dz": 0.0,
+    "Bx": 0.0,
+    "By": 0.0,
+    "Bz": 0.0,
+    "Ex": 0.0,
+    "Ey": 0.0,
+    "Ez": 0.0
+  },
+  "growth_fits": [
+    {
+      "fraction_window": [
+        0.35,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": 0.0028683817776964933,
+      "growth_cyclic_fa_over_c": 0.00045651713859511496,
+      "log_amplitude_fit_rms": 0.008845590436111926,
+      "cycles": [
+        140.50158903056249,
+        379.51007180937495
+      ]
+    },
+    {
+      "fraction_window": [
+        0.35,
+        0.65
+      ],
+      "amplitude_growth_per_meep_time": 0.0028424704494336684,
+      "growth_cyclic_fa_over_c": 0.00045239322262000966,
+      "log_amplitude_fit_rms": 0.008919900286478195,
+      "cycles": [
+        140.50158903056249,
+        259.52522814562496
+      ]
+    },
+    {
+      "fraction_window": [
+        0.65,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": 0.002886472799477058,
+      "growth_cyclic_fa_over_c": 0.000459396414137075,
+      "log_amplitude_fit_rms": 0.008521746067360066,
+      "cycles": [
+        260.51957767874995,
+        379.51007180937495
+      ]
+    }
+  ],
+  "timing": "Sigma(t+dt) is updated before native step; polarization state is retained",
+  "constitutive_equation": "Pddot+gamma*Pdot+wr^2*P=wp0^2*[1+m*cos(Omega*t+phase)]*E; D=E+P",
+  "elapsed_seconds": 26.368279571994208
+}

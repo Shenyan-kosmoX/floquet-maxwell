@@ -1,0 +1,58 @@
+{
+  "status": "ACTUAL_NATIVE_FIELD_PHASE_AUDIT",
+  "native_basis": "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\main_g3.1_k32_f3",
+  "scope": "All retained K and folded sectors; initial physical reference windows; complete-period fields at all three paper snapshot times",
+  "window_checks": [
+    {
+      "gaussian_width_a": 4.0,
+      "min_normalized_physical_overlap": 0.9999582701910473,
+      "max_normalized_physical_overlap": 0.9999999999999994,
+      "center_a": -5.243598046315206e-15,
+      "width_a": 2.085961524090623,
+      "intensity_relative_l2_vs_width4": 0.0
+    },
+    {
+      "gaussian_width_a": 2.0,
+      "min_normalized_physical_overlap": 0.9999909969618761,
+      "max_normalized_physical_overlap": 1.0000000000000002,
+      "center_a": -5.3850023115671875e-15,
+      "width_a": 2.085961524090623,
+      "intensity_relative_l2_vs_width4": 2.909530445055915e-17
+    },
+    {
+      "gaussian_width_a": 6.0,
+      "min_normalized_physical_overlap": 0.9998359934809331,
+      "max_normalized_physical_overlap": 1.0000000000000004,
+      "center_a": -5.243598046315206e-15,
+      "width_a": 2.085961524090623,
+      "intensity_relative_l2_vs_width4": 1.2207719618904017e-19
+    },
+    {
+      "gaussian_width_a": 8.0,
+      "min_normalized_physical_overlap": 0.9997178396769812,
+      "max_normalized_physical_overlap": 1.0000000000000009,
+      "center_a": -5.243598046315206e-15,
+      "width_a": 2.085961524090623,
+      "intensity_relative_l2_vs_width4": 1.20002698268327e-19
+    }
+  ],
+  "random_modal_phase_checks": [
+    {
+      "t_over_T": 0.0,
+      "intensity_relative_l2": 2.0569564813098207e-15,
+      "complex_field_relative_l2_after_one_global_phase": 5.330729420339379e-14
+    },
+    {
+      "t_over_T": 1.5625,
+      "intensity_relative_l2": 3.7357828535643924e-14,
+      "complex_field_relative_l2_after_one_global_phase": 3.54268430155603e-13
+    },
+    {
+      "t_over_T": 3.125,
+      "intensity_relative_l2": 8.699348637951532e-14,
+      "complex_field_relative_l2_after_one_global_phase": 6.234035853279642e-13
+    }
+  ],
+  "conclusion": "Localized physical reference chooses one Wannier gauge. Nonzero normalized overlaps and window sensitivity support this particular packet construction; they do not certify unique wavepackets, Berry gauges or topology.",
+  "temporal_phase": "The dynamic solve propagates coefficients in a fixed native basis. It does not rediagonalize/relabel instantaneous modes to continue their phases, so no extra instantaneous gauge rule is needed at later times."
+}

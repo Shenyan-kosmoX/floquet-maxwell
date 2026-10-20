@@ -1,0 +1,78 @@
+{
+  "status": "SAME_K_FIELD_MATCHING_DIAGNOSTIC",
+  "meep_source": "toolbox_experiments\\results\\meep_cutoff\\path0.4_r32",
+  "meep_summary_file": "summary_v2.json",
+  "meep_summary_sha256": "3aaa76985e603bc80c283a8e906a6b20d3e473a45e1291fe48b2272be86039c3",
+  "kpoint_ka": [
+    0.4,
+    0.0
+  ],
+  "meep_config": {
+    "radius": 0.3125,
+    "height": 0.4445234708392603,
+    "epsilon": 16.0,
+    "kx_ka": 0.4,
+    "ky_ka": 0.0,
+    "resolution": 32,
+    "padding": 1.0,
+    "pml": 0.5,
+    "frequency": 0.747,
+    "width": 0.3,
+    "warmup": 12.0,
+    "window": 100.0,
+    "sample_dt": 0.5,
+    "source_variant": 0,
+    "xy_samples": 12,
+    "z_order": 4,
+    "field_extent": 0.7
+  },
+  "meep_fit": {
+    "relative_time_space_fit_residual": 0.010375316498498493,
+    "temporal_fit_rank": 14,
+    "temporal_fit_columns": 14,
+    "normalized_temporal_condition": 1404.8432495872737,
+    "mode_to_residual_ratio": [
+      2.712793778992625,
+      93.79007157611483,
+      11.45740843198285,
+      0.12843851965188893,
+      16.399943472580706,
+      9.322864314563406,
+      0.5725477928504499,
+      0.8400819536348975,
+      0.9046584262807238,
+      0.4656458038319927,
+      71.21028125428306,
+      116.50416279876822,
+      45.96023284298054,
+      19.796396538050082
+    ],
+    "norm_per_pole": [
+      0.9217613073563214,
+      33.16212076575075,
+      3.833305817695698,
+      0.008985816818559797,
+      5.572298029224256,
+      4.50284336119816,
+      1.4053924167643228,
+      1.050246063209331,
+      1.039759208250707,
+      7.417471919577436e-06,
+      43.31827007982162,
+      75.92401052965307,
+      31.203729621925632,
+      17.587378532614537
+    ]
+  },
+  "accepted_meep_pole_indexes": [
+    1,
+    4
+  ],
+  "comparisons": [],
+  "selection": "One-to-one assignment maximizes common-grid complex magnetic-field overlaps over every accepted Meep pole and60native modes; no nearest-frequency or strongest-two selection",
+  "limits": [
+    "Finite sampling metric and Meep pole fit need convergence checks",
+    "A missed lossy pole cannot be excluded by non-observation",
+    "Native GME radiation is approximate; this compares fields and real frequencies, not equal QNM norms"
+  ]
+}

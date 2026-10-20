@@ -1,0 +1,1916 @@
+{
+  "fixture": "Science physical geometry; approximate epsilon16",
+  "reference_epsilon": 16.0,
+  "metadata": {
+    "config": {
+      "gmax": 5.1,
+      "gmode_inds": [
+        0,
+        3,
+        4,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        19,
+        20,
+        23
+      ],
+      "reference_eps": [
+        16.0
+      ],
+      "numeig": 60,
+      "eps_eff": "custom",
+      "gmode_compute": "exact",
+      "gmode_step": 0.001,
+      "gmode_tol": 1e-10,
+      "compute_im": false,
+      "truncate_g": "abs",
+      "eig_solver": "eigh",
+      "eig_sigma": 0.7476,
+      "verbose": false,
+      "kz_symmetry": null,
+      "angles": null
+    },
+    "kpoints_ka": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        2.5805939654487586,
+        0.0
+      ],
+      [
+        2.6927937030769655,
+        0.0
+      ],
+      [
+        3.141592653589793,
+        0.0
+      ],
+      [
+        3.141592653589793,
+        1.7951958020513104
+      ],
+      [
+        3.141592653589793,
+        1.9073955396795172
+      ]
+    ],
+    "physical_signature": "a962984018cff8852c201dacedfb69af079e7a3ce1c7847433d1ce3c7746a8c3",
+    "z_nodes": [
+      -0.994700467495825,
+      -0.9722875115366163,
+      -0.9328156011939159,
+      -0.8777022041775016,
+      -0.8089381222013219,
+      -0.7290083888286136,
+      -0.6408017753896295,
+      -0.5475062549188188,
+      -0.4524937450811813,
+      -0.35919822461037054,
+      -0.2709916111713863,
+      -0.19106187779867811,
+      -0.1222977958224985,
+      -0.06718439880608412,
+      -0.0277124884633837,
+      -0.005299532504175031,
+      0.0023557665825813534,
+      0.01231885155733628,
+      0.029865042143529558,
+      0.054364240675008224,
+      0.084931489064135,
+      0.12046213156622791,
+      0.1596720415231021,
+      0.20114409009654216,
+      0.24337938074271814,
+      0.2848514293161582,
+      0.3240613392730324,
+      0.3595919817751253,
+      0.3901592301642521,
+      0.4146584286957308,
+      0.432204619281924,
+      0.44216770425667895,
+      0.4498230033434353,
+      0.47223595930264395,
+      0.5117078696453443,
+      0.5668212666617587,
+      0.6355853486379384,
+      0.7155150820106466,
+      0.8037216954496308,
+      0.8970172159204415,
+      0.992029725758079,
+      1.0853252462288898,
+      1.1735318596678739,
+      1.2534615930405821,
+      1.3222256750167618,
+      1.3773390720331762,
+      1.4168109823758765,
+      1.4392239383350853
+    ],
+    "z_weights": [
+      0.013576229705877019,
+      0.031126761969323853,
+      0.047579255841246296,
+      0.062314485627767015,
+      0.07479799440828838,
+      0.08457825969750131,
+      0.0913017075224618,
+      0.09472530522753429,
+      0.09472530522753429,
+      0.0913017075224618,
+      0.08457825969750131,
+      0.07479799440828838,
+      0.062314485627767015,
+      0.047579255841246296,
+      0.031126761969323853,
+      0.013576229705877019,
+      0.006034952749767522,
+      0.013836576266591329,
+      0.021150095946499952,
+      0.027700251434818197,
+      0.03324946408618794,
+      0.037597021558277606,
+      0.04058575192143572,
+      0.042107621456051875,
+      0.042107621456051875,
+      0.04058575192143572,
+      0.037597021558277606,
+      0.03324946408618794,
+      0.027700251434818197,
+      0.021150095946499952,
+      0.013836576266591329,
+      0.006034952749767522,
+      0.013576229705877019,
+      0.031126761969323853,
+      0.047579255841246296,
+      0.062314485627767015,
+      0.07479799440828838,
+      0.08457825969750131,
+      0.0913017075224618,
+      0.09472530522753429,
+      0.09472530522753429,
+      0.0913017075224618,
+      0.08457825969750131,
+      0.07479799440828838,
+      0.062314485627767015,
+      0.047579255841246296,
+      0.031126761969323853,
+      0.013576229705877019
+    ]
+  },
+  "external_selector_not_policy": "Old Gamma A2g doublet64-73THz; other points historical diagnosed planes",
+  "same_k_choices": [
+    {
+      "modes": [
+        8,
+        9
+      ],
+      "minimum_overlap_squared": 0.9999999999999982,
+      "mean_overlap_squared": 0.9999999999999989,
+      "competitor_margin": 0.9999999999978186,
+      "alternatives": [
+        {
+          "modes": [
+            0,
+            9
+          ],
+          "minimum_overlap_squared": 2.1795898419441073e-12
+        },
+        {
+          "modes": [
+            9,
+            29
+          ],
+          "minimum_overlap_squared": 1.8700041515273824e-12
+        },
+        {
+          "modes": [
+            0,
+            8
+          ],
+          "minimum_overlap_squared": 1.7290058273999875e-12
+        }
+      ],
+      "method": "exhaustive target-local principal-angle selection; no endpoint information",
+      "candidate_count": 962,
+      "capture_in_all_output_modes": {
+        "principal_overlaps_squared": [
+          1.0,
+          0.9999999999999991
+        ],
+        "directional_capture_squared": [
+          1.0,
+          0.9999999999999991
+        ],
+        "minimum_overlap_squared": 0.9999999999999991,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "old_anchor_frequency_thz": [
+        68.04015066891941,
+        69.81977927603666
+      ],
+      "selected_frequency_thz": [
+        68.04015066891968,
+        69.81977927603735
+      ],
+      "anchor_selector": {
+        "point": "Gamma",
+        "mode_indexes": [
+          7,
+          8
+        ],
+        "note": "External regression selector; historical old field subspace is not exact physical ground truth"
+      }
+    },
+    {
+      "modes": [
+        7,
+        11
+      ],
+      "minimum_overlap_squared": 1.0,
+      "mean_overlap_squared": 1.0,
+      "competitor_margin": 0.9990551668112784,
+      "alternatives": [
+        {
+          "modes": [
+            9,
+            11
+          ],
+          "minimum_overlap_squared": 0.0009448331887216832
+        },
+        {
+          "modes": [
+            11,
+            30
+          ],
+          "minimum_overlap_squared": 0.00048027051001099663
+        },
+        {
+          "modes": [
+            11,
+            59
+          ],
+          "minimum_overlap_squared": 0.00018649096019285327
+        }
+      ],
+      "method": "exhaustive target-local principal-angle selection; no endpoint information",
+      "candidate_count": 1770,
+      "capture_in_all_output_modes": {
+        "principal_overlaps_squared": [
+          1.0,
+          0.9999999999999996
+        ],
+        "directional_capture_squared": [
+          1.0,
+          0.9999999999999996
+        ],
+        "minimum_overlap_squared": 0.9999999999999996,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "old_anchor_frequency_thz": [
+        62.764005945516956,
+        68.62966815140797
+      ],
+      "selected_frequency_thz": [
+        62.76400594551546,
+        68.62966815140555
+      ],
+      "anchor_selector": {
+        "point": 18,
+        "mode_indexes": [
+          7,
+          11
+        ],
+        "note": "External regression selector; historical old field subspace is not exact physical ground truth"
+      }
+    },
+    {
+      "modes": [
+        8,
+        10
+      ],
+      "minimum_overlap_squared": 1.0,
+      "mean_overlap_squared": 1.0,
+      "competitor_margin": 0.9999998185928776,
+      "alternatives": [
+        {
+          "modes": [
+            0,
+            10
+          ],
+          "minimum_overlap_squared": 1.8140712246955681e-07
+        },
+        {
+          "modes": [
+            1,
+            10
+          ],
+          "minimum_overlap_squared": 6.156851046351663e-08
+        },
+        {
+          "modes": [
+            10,
+            13
+          ],
+          "minimum_overlap_squared": 3.718769618632489e-08
+        }
+      ],
+      "method": "exhaustive target-local principal-angle selection; no endpoint information",
+      "candidate_count": 1770,
+      "capture_in_all_output_modes": {
+        "principal_overlaps_squared": [
+          1.0,
+          1.0
+        ],
+        "directional_capture_squared": [
+          1.0,
+          1.0
+        ],
+        "minimum_overlap_squared": 1.0,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "old_anchor_frequency_thz": [
+        64.51222124683744,
+        68.40185376139269
+      ],
+      "selected_frequency_thz": [
+        64.5122212468369,
+        68.40185376139252
+      ],
+      "anchor_selector": {
+        "point": 19,
+        "mode_indexes": [
+          8,
+          10
+        ],
+        "note": "External regression selector; historical old field subspace is not exact physical ground truth"
+      }
+    },
+    {
+      "modes": [
+        8,
+        10
+      ],
+      "minimum_overlap_squared": 1.0,
+      "mean_overlap_squared": 1.0,
+      "competitor_margin": 0.9999999184852629,
+      "alternatives": [
+        {
+          "modes": [
+            0,
+            10
+          ],
+          "minimum_overlap_squared": 8.151473708528645e-08
+        },
+        {
+          "modes": [
+            5,
+            10
+          ],
+          "minimum_overlap_squared": 5.192216643440384e-08
+        },
+        {
+          "modes": [
+            10,
+            13
+          ],
+          "minimum_overlap_squared": 3.393178372307348e-08
+        }
+      ],
+      "method": "exhaustive target-local principal-angle selection; no endpoint information",
+      "candidate_count": 1770,
+      "capture_in_all_output_modes": {
+        "principal_overlaps_squared": [
+          1.0,
+          1.0
+        ],
+        "directional_capture_squared": [
+          1.0,
+          1.0
+        ],
+        "minimum_overlap_squared": 1.0,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "old_anchor_frequency_thz": [
+        64.14723711217677,
+        68.38841177195148
+      ],
+      "selected_frequency_thz": [
+        64.14723711217631,
+        68.38841177195134
+      ],
+      "anchor_selector": {
+        "point": 20,
+        "mode_indexes": [
+          8,
+          10
+        ],
+        "note": "External regression selector; historical old field subspace is not exact physical ground truth"
+      }
+    },
+    {
+      "modes": [
+        8,
+        10
+      ],
+      "minimum_overlap_squared": 0.9999999999999998,
+      "mean_overlap_squared": 0.9999999999999999,
+      "competitor_margin": 0.9994691992717423,
+      "alternatives": [
+        {
+          "modes": [
+            10,
+            19
+          ],
+          "minimum_overlap_squared": 0.0005308007282574662
+        },
+        {
+          "modes": [
+            8,
+            19
+          ],
+          "minimum_overlap_squared": 0.00042908433194271955
+        },
+        {
+          "modes": [
+            4,
+            10
+          ],
+          "minimum_overlap_squared": 1.7035426092271155e-06
+        }
+      ],
+      "method": "exhaustive target-local principal-angle selection; no endpoint information",
+      "candidate_count": 1770,
+      "capture_in_all_output_modes": {
+        "principal_overlaps_squared": [
+          1.0,
+          1.0
+        ],
+        "directional_capture_squared": [
+          1.0,
+          1.0
+        ],
+        "minimum_overlap_squared": 1.0,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "old_anchor_frequency_thz": [
+        65.31389992627506,
+        67.51722199867402
+      ],
+      "selected_frequency_thz": [
+        65.31389992627439,
+        67.51722199867434
+      ],
+      "anchor_selector": {
+        "point": 24,
+        "mode_indexes": [
+          8,
+          10
+        ],
+        "note": "External regression selector; historical old field subspace is not exact physical ground truth"
+      }
+    },
+    {
+      "modes": [
+        10,
+        12
+      ],
+      "minimum_overlap_squared": 0.9999999999999998,
+      "mean_overlap_squared": 0.9999999999999999,
+      "competitor_margin": 0.9977234483627979,
+      "alternatives": [
+        {
+          "modes": [
+            8,
+            10
+          ],
+          "minimum_overlap_squared": 0.0022765516372018624
+        },
+        {
+          "modes": [
+            3,
+            10
+          ],
+          "minimum_overlap_squared": 0.0011411191857927383
+        },
+        {
+          "modes": [
+            8,
+            12
+          ],
+          "minimum_overlap_squared": 0.0010204838766251223
+        }
+      ],
+      "method": "exhaustive target-local principal-angle selection; no endpoint information",
+      "candidate_count": 1770,
+      "capture_in_all_output_modes": {
+        "principal_overlaps_squared": [
+          1.0,
+          1.0
+        ],
+        "directional_capture_squared": [
+          1.0,
+          1.0
+        ],
+        "minimum_overlap_squared": 1.0,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "old_anchor_frequency_thz": [
+        66.55886353958394,
+        68.50915073723961
+      ],
+      "selected_frequency_thz": [
+        66.55886353958405,
+        68.50915073723948
+      ],
+      "anchor_selector": {
+        "point": 25,
+        "mode_indexes": [
+          10,
+          12
+        ],
+        "note": "External regression selector; historical old field subspace is not exact physical ground truth"
+      }
+    }
+  ],
+  "gamma_selected_irreps": [
+    "A2g",
+    "A2g"
+  ],
+  "edges": [
+    {
+      "edge_local_indexes": [
+        1,
+        2
+      ],
+      "selected_modes": [
+        [
+          7,
+          11
+        ],
+        [
+          8,
+          10
+        ]
+      ],
+      "two_plane": {
+        "principal_overlaps_squared": [
+          0.997033802187164,
+          0.3347358689218901
+        ],
+        "directional_capture_squared": [
+          0.997033802187164,
+          0.3347358689218901
+        ],
+        "minimum_overlap_squared": 0.3347358689218901,
+        "dimension_previous": 2,
+        "dimension_current": 2,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_to_entire_next": {
+        "principal_overlaps_squared": [
+          0.999974855330358,
+          0.7218294669625421
+        ],
+        "directional_capture_squared": [
+          0.999974855330358,
+          0.7218294669625421
+        ],
+        "minimum_overlap_squared": 0.7218294669625421,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "destination_to_entire_previous": {
+        "principal_overlaps_squared": [
+          0.9999783589443111,
+          0.999778791770675
+        ],
+        "directional_capture_squared": [
+          0.9999783589443111,
+          0.999778791770675
+        ],
+        "minimum_overlap_squared": 0.999778791770675,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "guided_dimension_before": 932,
+      "guided_dimension_after": 935,
+      "lost_guided_labels": [
+        [
+          4,
+          33,
+          -6.283185307179586,
+          0.0
+        ]
+      ],
+      "gained_guided_labels": [
+        [
+          12,
+          54,
+          6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          12,
+          56,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          19,
+          64,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          19,
+          66,
+          12.566370614359172,
+          6.283185307179586
+        ]
+      ],
+      "source_lost_weights": [
+        0.22258677314782005,
+        0.015343089273165623
+      ],
+      "destination_gained_weights": [
+        5.239755663665099e-10,
+        1.1209325872594185e-07
+      ]
+    },
+    {
+      "edge_local_indexes": [
+        2,
+        3
+      ],
+      "selected_modes": [
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          10
+        ]
+      ],
+      "two_plane": {
+        "principal_overlaps_squared": [
+          0.9973986248213893,
+          0.961161007543593
+        ],
+        "directional_capture_squared": [
+          0.9973986248213893,
+          0.961161007543593
+        ],
+        "minimum_overlap_squared": 0.961161007543593,
+        "dimension_previous": 2,
+        "dimension_current": 2,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_to_entire_next": {
+        "principal_overlaps_squared": [
+          0.9996855182443246,
+          0.9992038820232522
+        ],
+        "directional_capture_squared": [
+          0.9996855182443246,
+          0.9992038820232522
+        ],
+        "minimum_overlap_squared": 0.9992038820232522,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "destination_to_entire_previous": {
+        "principal_overlaps_squared": [
+          0.9996897090155717,
+          0.999228030855407
+        ],
+        "directional_capture_squared": [
+          0.9996897090155717,
+          0.999228030855407
+        ],
+        "minimum_overlap_squared": 0.999228030855407,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "guided_dimension_before": 935,
+      "guided_dimension_after": 938,
+      "lost_guided_labels": [],
+      "gained_guided_labels": [
+        [
+          11,
+          55,
+          6.283185307179586,
+          0.0
+        ],
+        [
+          23,
+          63,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          23,
+          67,
+          12.566370614359172,
+          12.566370614359172
+        ]
+      ],
+      "source_lost_weights": [
+        0.0,
+        0.0
+      ],
+      "destination_gained_weights": [
+        9.632401369746487e-09,
+        6.2569424450977605e-09
+      ]
+    },
+    {
+      "edge_local_indexes": [
+        4,
+        5
+      ],
+      "selected_modes": [
+        [
+          8,
+          10
+        ],
+        [
+          10,
+          12
+        ]
+      ],
+      "two_plane": {
+        "principal_overlaps_squared": [
+          0.9980136015955835,
+          0.5845614378596089
+        ],
+        "directional_capture_squared": [
+          0.9980136015955835,
+          0.5845614378596089
+        ],
+        "minimum_overlap_squared": 0.5845614378596089,
+        "dimension_previous": 2,
+        "dimension_current": 2,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_to_entire_next": {
+        "principal_overlaps_squared": [
+          0.9999018685726029,
+          0.9994051340661839
+        ],
+        "directional_capture_squared": [
+          0.9999018685726029,
+          0.9994051340661839
+        ],
+        "minimum_overlap_squared": 0.9994051340661839,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "destination_to_entire_previous": {
+        "principal_overlaps_squared": [
+          0.9999126409054273,
+          0.8696269588527336
+        ],
+        "directional_capture_squared": [
+          0.9999126409054273,
+          0.8696269588527336
+        ],
+        "minimum_overlap_squared": 0.8696269588527336,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "guided_dimension_before": 932,
+      "guided_dimension_after": 932,
+      "lost_guided_labels": [
+        [
+          7,
+          32,
+          -6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          7,
+          43,
+          0.0,
+          -6.283185307179586
+        ]
+      ],
+      "gained_guided_labels": [
+        [
+          4,
+          33,
+          -6.283185307179586,
+          0.0
+        ],
+        [
+          4,
+          44,
+          0.0,
+          0.0
+        ]
+      ],
+      "source_lost_weights": [
+        1.3187050055751367e-05,
+        1.1413018443449242e-05
+      ],
+      "destination_gained_weights": [
+        0.04056373528481546,
+        0.0922708942456405
+      ]
+    }
+  ],
+  "minimum_same_k_correspondence": 0.9999999999999982,
+  "gamma_same_k_correspondence": 0.9999999999999982,
+  "minimum_edge_two_plane": 0.3347358689218901,
+  "minimum_edge_full_window": 0.7218294669625421,
+  "maximum_target_weight_on_changed_guided_rows": 0.22258677314782005,
+  "generic_transitions": [
+    {
+      "k_previous": [
+        2.5805939654487586,
+        0.0
+      ],
+      "k_current": [
+        2.6927937030769655,
+        0.0
+      ],
+      "previous_modes": [
+        7,
+        11
+      ],
+      "current_modes": [
+        8,
+        10
+      ],
+      "selected": {
+        "principal_overlaps_squared": [
+          0.997033802187164,
+          0.3347358689218901
+        ],
+        "directional_capture_squared": [
+          0.997033802187164,
+          0.3347358689218901
+        ],
+        "minimum_overlap_squared": 0.3347358689218901,
+        "dimension_previous": 2,
+        "dimension_current": 2,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_in_all_current": {
+        "principal_overlaps_squared": [
+          0.999974855330358,
+          0.7218294669625421
+        ],
+        "directional_capture_squared": [
+          0.999974855330358,
+          0.7218294669625421
+        ],
+        "minimum_overlap_squared": 0.7218294669625421,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "current_in_all_source": {
+        "principal_overlaps_squared": [
+          0.9999783589443111,
+          0.999778791770675
+        ],
+        "directional_capture_squared": [
+          0.9999783589443111,
+          0.999778791770675
+        ],
+        "minimum_overlap_squared": 0.999778791770675,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "native_dimension_previous": 932,
+      "native_dimension_current": 935,
+      "field_diagnostics_previous": {
+        "column_norms": [
+          0.9771066811289935,
+          0.9985148555277877
+        ],
+        "singular_value_ratio": 0.9756216649394592,
+        "raw_gram_error_from_identity": 0.04819566257789256,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "field_diagnostics_current": {
+        "column_norms": [
+          0.9999174863141915,
+          0.999994494345585
+        ],
+        "singular_value_ratio": 0.9999140091375543,
+        "raw_gram_error_from_identity": 0.000174014740170376,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+      "lost_rows": [
+        [
+          4,
+          -6.283185307179586,
+          0.0
+        ]
+      ],
+      "gained_rows": [
+        [
+          12,
+          6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          12,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          19,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          19,
+          12.566370614359172,
+          6.283185307179586
+        ]
+      ],
+      "lost": {
+        "worst_weight": 0.23792986242098527,
+        "mean_weight": 0.11896493121049263,
+        "eigenvalues": [
+          0.0,
+          0.23792986242098527
+        ],
+        "raw_column_gram_error": 2.488133046320204e-15,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "gained": {
+        "worst_weight": 1.1261475144566561e-07,
+        "mean_weight": 5.630861714615424e-08,
+        "eigenvalues": [
+          2.4828466428785446e-12,
+          1.1261475144566561e-07
+        ],
+        "raw_column_gram_error": 2.0508430375735935e-15,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      }
+    },
+    {
+      "k_previous": [
+        2.6927937030769655,
+        0.0
+      ],
+      "k_current": [
+        3.141592653589793,
+        0.0
+      ],
+      "previous_modes": [
+        8,
+        10
+      ],
+      "current_modes": [
+        8,
+        10
+      ],
+      "selected": {
+        "principal_overlaps_squared": [
+          0.9973986248213893,
+          0.961161007543593
+        ],
+        "directional_capture_squared": [
+          0.9973986248213893,
+          0.961161007543593
+        ],
+        "minimum_overlap_squared": 0.961161007543593,
+        "dimension_previous": 2,
+        "dimension_current": 2,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_in_all_current": {
+        "principal_overlaps_squared": [
+          0.9996855182443246,
+          0.9992038820232522
+        ],
+        "directional_capture_squared": [
+          0.9996855182443246,
+          0.9992038820232522
+        ],
+        "minimum_overlap_squared": 0.9992038820232522,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "current_in_all_source": {
+        "principal_overlaps_squared": [
+          0.9996897090155717,
+          0.999228030855407
+        ],
+        "directional_capture_squared": [
+          0.9996897090155717,
+          0.999228030855407
+        ],
+        "minimum_overlap_squared": 0.999228030855407,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "native_dimension_previous": 935,
+      "native_dimension_current": 938,
+      "field_diagnostics_previous": {
+        "column_norms": [
+          0.9999174863141915,
+          0.999994494345585
+        ],
+        "singular_value_ratio": 0.9999140091375543,
+        "raw_gram_error_from_identity": 0.000174014740170376,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "field_diagnostics_current": {
+        "column_norms": [
+          0.999917824711546,
+          0.9999951629020623
+        ],
+        "singular_value_ratio": 0.999914531913858,
+        "raw_gram_error_from_identity": 0.000172480217159262,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+      "lost_rows": [],
+      "gained_rows": [
+        [
+          11,
+          6.283185307179586,
+          0.0
+        ],
+        [
+          23,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          23,
+          12.566370614359172,
+          12.566370614359172
+        ]
+      ],
+      "lost": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0,
+          0.0
+        ],
+        "raw_column_gram_error": 2.0508430375735935e-15,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "gained": {
+        "worst_weight": 1.5889343814844264e-08,
+        "mean_weight": 7.944671907422132e-09,
+        "eigenvalues": [
+          0.0,
+          1.5889343814844264e-08
+        ],
+        "raw_column_gram_error": 1.5121357420480627e-15,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      }
+    },
+    {
+      "k_previous": [
+        3.141592653589793,
+        1.7951958020513104
+      ],
+      "k_current": [
+        3.141592653589793,
+        1.9073955396795172
+      ],
+      "previous_modes": [
+        8,
+        10
+      ],
+      "current_modes": [
+        10,
+        12
+      ],
+      "selected": {
+        "principal_overlaps_squared": [
+          0.9980136015955835,
+          0.5845614378596089
+        ],
+        "directional_capture_squared": [
+          0.9980136015955835,
+          0.5845614378596089
+        ],
+        "minimum_overlap_squared": 0.5845614378596089,
+        "dimension_previous": 2,
+        "dimension_current": 2,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_in_all_current": {
+        "principal_overlaps_squared": [
+          0.9999018685726029,
+          0.9994051340661839
+        ],
+        "directional_capture_squared": [
+          0.9999018685726029,
+          0.9994051340661839
+        ],
+        "minimum_overlap_squared": 0.9994051340661839,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "current_in_all_source": {
+        "principal_overlaps_squared": [
+          0.9999126409054273,
+          0.8696269588527336
+        ],
+        "directional_capture_squared": [
+          0.9999126409054273,
+          0.8696269588527336
+        ],
+        "minimum_overlap_squared": 0.8696269588527336,
+        "dimension_previous": 2,
+        "dimension_current": 60,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 58
+      },
+      "native_dimension_previous": 932,
+      "native_dimension_current": 932,
+      "field_diagnostics_previous": {
+        "column_norms": [
+          0.9996996479924691,
+          0.9999427896259229
+        ],
+        "singular_value_ratio": 0.9996960085647222,
+        "raw_gram_error_from_identity": 0.0006636116854041282,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "field_diagnostics_current": {
+        "column_norms": [
+          0.9926197478630241,
+          0.9836034769965057
+        ],
+        "singular_value_ratio": 0.9764140801518726,
+        "raw_gram_error_from_identity": 0.04691661096373268,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+      "lost_rows": [
+        [
+          7,
+          -6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          7,
+          0.0,
+          -6.283185307179586
+        ]
+      ],
+      "gained_rows": [
+        [
+          4,
+          -6.283185307179586,
+          0.0
+        ],
+        [
+          4,
+          0.0,
+          0.0
+        ]
+      ],
+      "lost": {
+        "worst_weight": 2.4600057763601104e-05,
+        "mean_weight": 1.2300034249600308e-05,
+        "eigenvalues": [
+          1.0735599511792367e-11,
+          2.4600057763601104e-05
+        ],
+        "raw_column_gram_error": 2.519799428677629e-16,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "gained": {
+        "worst_weight": 0.13283420503795823,
+        "mean_weight": 0.06641731476522798,
+        "eigenvalues": [
+          4.244924977220288e-07,
+          0.13283420503795823
+        ],
+        "raw_column_gram_error": 1.1164676079468256e-15,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      }
+    }
+  ],
+  "acceptance": {
+    "status": "UNVERIFIED_CONFIGURATION",
+    "accepted": false,
+    "sampled_stability_passed": false,
+    "reasons": [
+      "sampled_path_stability_failed",
+      "independent_refinement_missing",
+      "independent_field_refinement_missing"
+    ],
+    "bad_edges": [
+      {
+        "edge_index": 0,
+        "reasons": [
+          "selected_field_discontinuity",
+          "output_window_or_reference_space_incomplete",
+          "lost_influential_guided_rows"
+        ]
+      },
+      {
+        "edge_index": 2,
+        "reasons": [
+          "selected_field_discontinuity",
+          "output_window_or_reference_space_incomplete",
+          "gained_influential_guided_rows"
+        ]
+      }
+    ],
+    "anchor_capture": 0.9999999999999982,
+    "convergence_relative_frequency": null,
+    "convergence_field_capture": null,
+    "policy": {
+      "minimum_selected_capture": 0.9,
+      "minimum_full_window_capture": 0.98,
+      "maximum_changed_row_weight": 0.02,
+      "minimum_anchor_capture": 0.85,
+      "maximum_convergence_relative_frequency": 0.005,
+      "minimum_convergence_field_capture": 0.98
+    },
+    "scope": "Only supplied geometry, sampled edges, field metric and refinement pair"
+  },
+  "accepted_as_physical_baseline": false,
+  "fixed_segment_anchor_continuation": {
+    "anchor_points": [
+      0,
+      1,
+      4
+    ],
+    "anchor_capture": 0.9999999999999982,
+    "mode_indexes": [
+      [
+        8,
+        9
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        10,
+        12
+      ]
+    ],
+    "edge_choices": [
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "modes": [
+          8,
+          10
+        ],
+        "minimum_overlap_squared": 0.3347358689218895,
+        "mean_overlap_squared": 0.6658848355545254,
+        "competitor_margin": 0.2197807529543473,
+        "alternatives": [
+          {
+            "modes": [
+              10,
+              22
+            ],
+            "minimum_overlap_squared": 0.1149551159675422
+          },
+          {
+            "modes": [
+              10,
+              48
+            ],
+            "minimum_overlap_squared": 0.05336592849521806
+          },
+          {
+            "modes": [
+              10,
+              14
+            ],
+            "minimum_overlap_squared": 0.04134470993132967
+          }
+        ],
+        "method": "exhaustive target-local principal-angle selection; no endpoint information",
+        "candidate_count": 1770,
+        "old_right_plane_overlap": {
+          "principal_overlaps_squared": [
+            1.0,
+            1.0
+          ],
+          "directional_capture_squared": [
+            1.0,
+            1.0
+          ],
+          "minimum_overlap_squared": 1.0,
+          "dimension_previous": 2,
+          "dimension_current": 2,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 0
+        }
+      },
+      {
+        "edge": [
+          2,
+          3
+        ],
+        "modes": [
+          8,
+          10
+        ],
+        "minimum_overlap_squared": 0.9611610075435936,
+        "mean_overlap_squared": 0.9792798161824919,
+        "competitor_margin": 0.9332443176669434,
+        "alternatives": [
+          {
+            "modes": [
+              4,
+              10
+            ],
+            "minimum_overlap_squared": 0.027916689876650226
+          },
+          {
+            "modes": [
+              1,
+              10
+            ],
+            "minimum_overlap_squared": 0.0029531531570572075
+          },
+          {
+            "modes": [
+              5,
+              10
+            ],
+            "minimum_overlap_squared": 0.0029501311478067754
+          }
+        ],
+        "method": "exhaustive target-local principal-angle selection; no endpoint information",
+        "candidate_count": 1770,
+        "old_right_plane_overlap": {
+          "principal_overlaps_squared": [
+            1.0,
+            0.9999999999999998
+          ],
+          "directional_capture_squared": [
+            1.0,
+            0.9999999999999998
+          ],
+          "minimum_overlap_squared": 0.9999999999999998,
+          "dimension_previous": 2,
+          "dimension_current": 2,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 0
+        }
+      },
+      {
+        "edge": [
+          4,
+          5
+        ],
+        "modes": [
+          10,
+          12
+        ],
+        "minimum_overlap_squared": 0.5845614378596086,
+        "mean_overlap_squared": 0.7912875197275958,
+        "competitor_margin": 0.2777892841533104,
+        "alternatives": [
+          {
+            "modes": [
+              8,
+              10
+            ],
+            "minimum_overlap_squared": 0.3067721537062982
+          },
+          {
+            "modes": [
+              8,
+              12
+            ],
+            "minimum_overlap_squared": 0.15622243089365445
+          },
+          {
+            "modes": [
+              3,
+              10
+            ],
+            "minimum_overlap_squared": 0.01751998589250317
+          }
+        ],
+        "method": "exhaustive target-local principal-angle selection; no endpoint information",
+        "candidate_count": 1770,
+        "old_right_plane_overlap": {
+          "principal_overlaps_squared": [
+            1.0,
+            0.9999999999999996
+          ],
+          "directional_capture_squared": [
+            1.0,
+            0.9999999999999996
+          ],
+          "minimum_overlap_squared": 0.9999999999999996,
+          "dimension_previous": 2,
+          "dimension_current": 2,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 0
+        }
+      }
+    ],
+    "transitions": [
+      {
+        "k_previous": [
+          2.5805939654487586,
+          0.0
+        ],
+        "k_current": [
+          2.6927937030769655,
+          0.0
+        ],
+        "previous_modes": [
+          7,
+          11
+        ],
+        "current_modes": [
+          8,
+          10
+        ],
+        "selected": {
+          "principal_overlaps_squared": [
+            0.997033802187164,
+            0.3347358689218901
+          ],
+          "directional_capture_squared": [
+            0.997033802187164,
+            0.3347358689218901
+          ],
+          "minimum_overlap_squared": 0.3347358689218901,
+          "dimension_previous": 2,
+          "dimension_current": 2,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 0
+        },
+        "source_in_all_current": {
+          "principal_overlaps_squared": [
+            0.999974855330358,
+            0.7218294669625421
+          ],
+          "directional_capture_squared": [
+            0.999974855330358,
+            0.7218294669625421
+          ],
+          "minimum_overlap_squared": 0.7218294669625421,
+          "dimension_previous": 2,
+          "dimension_current": 60,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 58
+        },
+        "current_in_all_source": {
+          "principal_overlaps_squared": [
+            0.9999783589443111,
+            0.999778791770675
+          ],
+          "directional_capture_squared": [
+            0.9999783589443111,
+            0.999778791770675
+          ],
+          "minimum_overlap_squared": 0.999778791770675,
+          "dimension_previous": 2,
+          "dimension_current": 60,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 58
+        },
+        "native_dimension_previous": 932,
+        "native_dimension_current": 935,
+        "field_diagnostics_previous": {
+          "column_norms": [
+            0.9771066811289935,
+            0.9985148555277877
+          ],
+          "singular_value_ratio": 0.9756216649394592,
+          "raw_gram_error_from_identity": 0.04819566257789256,
+          "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+        },
+        "field_diagnostics_current": {
+          "column_norms": [
+            0.9999174863141915,
+            0.999994494345585
+          ],
+          "singular_value_ratio": 0.9999140091375543,
+          "raw_gram_error_from_identity": 0.000174014740170376,
+          "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+        },
+        "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+        "lost_rows": [
+          [
+            4,
+            -6.283185307179586,
+            0.0
+          ]
+        ],
+        "gained_rows": [
+          [
+            12,
+            6.283185307179586,
+            -6.283185307179586
+          ],
+          [
+            12,
+            6.283185307179586,
+            6.283185307179586
+          ],
+          [
+            19,
+            12.566370614359172,
+            -6.283185307179586
+          ],
+          [
+            19,
+            12.566370614359172,
+            6.283185307179586
+          ]
+        ],
+        "lost": {
+          "worst_weight": 0.23792986242098527,
+          "mean_weight": 0.11896493121049263,
+          "eigenvalues": [
+            0.0,
+            0.23792986242098527
+          ],
+          "raw_column_gram_error": 2.488133046320204e-15,
+          "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+        },
+        "gained": {
+          "worst_weight": 1.1261475144566561e-07,
+          "mean_weight": 5.630861714615424e-08,
+          "eigenvalues": [
+            2.4828466428785446e-12,
+            1.1261475144566561e-07
+          ],
+          "raw_column_gram_error": 2.0508430375735935e-15,
+          "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+        }
+      },
+      {
+        "k_previous": [
+          2.6927937030769655,
+          0.0
+        ],
+        "k_current": [
+          3.141592653589793,
+          0.0
+        ],
+        "previous_modes": [
+          8,
+          10
+        ],
+        "current_modes": [
+          8,
+          10
+        ],
+        "selected": {
+          "principal_overlaps_squared": [
+            0.9973986248213893,
+            0.961161007543593
+          ],
+          "directional_capture_squared": [
+            0.9973986248213893,
+            0.961161007543593
+          ],
+          "minimum_overlap_squared": 0.961161007543593,
+          "dimension_previous": 2,
+          "dimension_current": 2,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 0
+        },
+        "source_in_all_current": {
+          "principal_overlaps_squared": [
+            0.9996855182443246,
+            0.9992038820232522
+          ],
+          "directional_capture_squared": [
+            0.9996855182443246,
+            0.9992038820232522
+          ],
+          "minimum_overlap_squared": 0.9992038820232522,
+          "dimension_previous": 2,
+          "dimension_current": 60,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 58
+        },
+        "current_in_all_source": {
+          "principal_overlaps_squared": [
+            0.9996897090155717,
+            0.999228030855407
+          ],
+          "directional_capture_squared": [
+            0.9996897090155717,
+            0.999228030855407
+          ],
+          "minimum_overlap_squared": 0.999228030855407,
+          "dimension_previous": 2,
+          "dimension_current": 60,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 58
+        },
+        "native_dimension_previous": 935,
+        "native_dimension_current": 938,
+        "field_diagnostics_previous": {
+          "column_norms": [
+            0.9999174863141915,
+            0.999994494345585
+          ],
+          "singular_value_ratio": 0.9999140091375543,
+          "raw_gram_error_from_identity": 0.000174014740170376,
+          "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+        },
+        "field_diagnostics_current": {
+          "column_norms": [
+            0.999917824711546,
+            0.9999951629020623
+          ],
+          "singular_value_ratio": 0.999914531913858,
+          "raw_gram_error_from_identity": 0.000172480217159262,
+          "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+        },
+        "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+        "lost_rows": [],
+        "gained_rows": [
+          [
+            11,
+            6.283185307179586,
+            0.0
+          ],
+          [
+            23,
+            12.566370614359172,
+            -12.566370614359172
+          ],
+          [
+            23,
+            12.566370614359172,
+            12.566370614359172
+          ]
+        ],
+        "lost": {
+          "worst_weight": 0.0,
+          "mean_weight": 0.0,
+          "eigenvalues": [
+            0.0,
+            0.0
+          ],
+          "raw_column_gram_error": 2.0508430375735935e-15,
+          "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+        },
+        "gained": {
+          "worst_weight": 1.5889343814844264e-08,
+          "mean_weight": 7.944671907422132e-09,
+          "eigenvalues": [
+            0.0,
+            1.5889343814844264e-08
+          ],
+          "raw_column_gram_error": 1.5121357420480627e-15,
+          "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+        }
+      },
+      {
+        "k_previous": [
+          3.141592653589793,
+          1.7951958020513104
+        ],
+        "k_current": [
+          3.141592653589793,
+          1.9073955396795172
+        ],
+        "previous_modes": [
+          8,
+          10
+        ],
+        "current_modes": [
+          10,
+          12
+        ],
+        "selected": {
+          "principal_overlaps_squared": [
+            0.9980136015955835,
+            0.5845614378596089
+          ],
+          "directional_capture_squared": [
+            0.9980136015955835,
+            0.5845614378596089
+          ],
+          "minimum_overlap_squared": 0.5845614378596089,
+          "dimension_previous": 2,
+          "dimension_current": 2,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 0
+        },
+        "source_in_all_current": {
+          "principal_overlaps_squared": [
+            0.9999018685726029,
+            0.9994051340661839
+          ],
+          "directional_capture_squared": [
+            0.9999018685726029,
+            0.9994051340661839
+          ],
+          "minimum_overlap_squared": 0.9994051340661839,
+          "dimension_previous": 2,
+          "dimension_current": 60,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 58
+        },
+        "current_in_all_source": {
+          "principal_overlaps_squared": [
+            0.9999126409054273,
+            0.8696269588527336
+          ],
+          "directional_capture_squared": [
+            0.9999126409054273,
+            0.8696269588527336
+          ],
+          "minimum_overlap_squared": 0.8696269588527336,
+          "dimension_previous": 2,
+          "dimension_current": 60,
+          "lost_previous_dimension": 0,
+          "gained_current_dimension": 58
+        },
+        "native_dimension_previous": 932,
+        "native_dimension_current": 932,
+        "field_diagnostics_previous": {
+          "column_norms": [
+            0.9996996479924691,
+            0.9999427896259229
+          ],
+          "singular_value_ratio": 0.9996960085647222,
+          "raw_gram_error_from_identity": 0.0006636116854041282,
+          "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+        },
+        "field_diagnostics_current": {
+          "column_norms": [
+            0.9926197478630241,
+            0.9836034769965057
+          ],
+          "singular_value_ratio": 0.9764140801518726,
+          "raw_gram_error_from_identity": 0.04691661096373268,
+          "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+        },
+        "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+        "lost_rows": [
+          [
+            7,
+            -6.283185307179586,
+            -6.283185307179586
+          ],
+          [
+            7,
+            0.0,
+            -6.283185307179586
+          ]
+        ],
+        "gained_rows": [
+          [
+            4,
+            -6.283185307179586,
+            0.0
+          ],
+          [
+            4,
+            0.0,
+            0.0
+          ]
+        ],
+        "lost": {
+          "worst_weight": 2.4600057763601104e-05,
+          "mean_weight": 1.2300034249600308e-05,
+          "eigenvalues": [
+            1.0735599511792367e-11,
+            2.4600057763601104e-05
+          ],
+          "raw_column_gram_error": 2.519799428677629e-16,
+          "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+        },
+        "gained": {
+          "worst_weight": 0.13283420503795823,
+          "mean_weight": 0.06641731476522798,
+          "eigenvalues": [
+            4.244924977220288e-07,
+            0.13283420503795823
+          ],
+          "raw_column_gram_error": 1.1164676079468256e-15,
+          "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+        }
+      }
+    ],
+    "acceptance": {
+      "status": "UNVERIFIED_CONFIGURATION",
+      "accepted": false,
+      "sampled_stability_passed": false,
+      "reasons": [
+        "sampled_path_stability_failed",
+        "independent_refinement_missing",
+        "independent_field_refinement_missing"
+      ],
+      "bad_edges": [
+        {
+          "edge_index": 0,
+          "reasons": [
+            "selected_field_discontinuity",
+            "output_window_or_reference_space_incomplete",
+            "lost_influential_guided_rows"
+          ]
+        },
+        {
+          "edge_index": 2,
+          "reasons": [
+            "selected_field_discontinuity",
+            "output_window_or_reference_space_incomplete",
+            "gained_influential_guided_rows"
+          ]
+        }
+      ],
+      "anchor_capture": 0.9999999999999982,
+      "convergence_relative_frequency": null,
+      "convergence_field_capture": null,
+      "policy": {
+        "minimum_selected_capture": 0.9,
+        "minimum_full_window_capture": 0.98,
+        "maximum_changed_row_weight": 0.02,
+        "minimum_anchor_capture": 0.85,
+        "maximum_convergence_relative_frequency": 0.005,
+        "minimum_convergence_field_capture": 0.98
+      },
+      "scope": "Only supplied geometry, sampled edges, field metric and refinement pair"
+    },
+    "minimum_selected_capture": 0.3347358689218901,
+    "minimum_full_capture": 0.7218294669625421,
+    "maximum_changed_row_weight": 0.23792986242098527,
+    "scope": "Two local segments1-2-3 and4-5 plus independent Gamma seed; no connection from remote segments to Gamma claimed"
+  },
+  "acceptance_note": "Candidate scores only; full path, spatial convergence, and old-field correspondence must not be replaced by frequency agreement"
+}

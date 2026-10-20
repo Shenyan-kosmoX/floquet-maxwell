@@ -1,0 +1,94 @@
+{
+  "status": "NATIVE_STATIC_DISPERSIVE_SPHERE",
+  "q": 0.2,
+  "loss_ratio": 0.0,
+  "resolution": 16,
+  "courant": 0.25,
+  "material": {
+    "epsilon_inf": 1.0,
+    "N0": 1.21e+29,
+    "resonance_frequency_THz": 600.0,
+    "resonance_cyclic_fa_over_c": 1.2644747720771548,
+    "plasma_angular_wa_over_c": 41.35643878620493,
+    "sigma": 27.096063050128183,
+    "gamma_cyclic_fa_over_c": 0.0,
+    "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+  },
+  "windows": [
+    [
+      [
+        {
+          "frequency": 0.2867971987567615,
+          "decay": -0.002005017563059606,
+          "error": 5.278197866878396e-10,
+          "amplitude": [
+            -64.03047764827647,
+            -9.511497268411548
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2867971842012859,
+          "decay": -0.002005018199827379,
+          "error": 8.599686510880722e-10,
+          "amplitude": [
+            -34.38171277830931,
+            -2.017390489980275
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2867972824138925,
+          "decay": -0.0020049762685220222,
+          "error": 2.320933777907293e-09,
+          "amplitude": [
+            -5.743296775792762,
+            -2.080528870143786
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "frequency": 0.2867971852737388,
+          "decay": -0.002004943960967933,
+          "error": 5.7693574210914116e-09,
+          "amplitude": [
+            -9.779145496365617,
+            -0.23902285830466624
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2867972871459477,
+          "decay": -0.002005070348784849,
+          "error": 5.254551162629239e-09,
+          "amplitude": [
+            -5.194025153881245,
+            0.3347897353547614
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.28679829435777066,
+          "decay": -0.0020051427651277616,
+          "error": 1.9685179480026804e-08,
+          "amplitude": [
+            -0.8999280301074348,
+            -0.20596917879778917
+          ]
+        }
+      ]
+    ]
+  ],
+  "meep_version": "1.35.0",
+  "source_frequency": 0.26516,
+  "source_width": 0.12,
+  "static_window": 150.0,
+  "elapsed_seconds": 6.518311158986762
+}

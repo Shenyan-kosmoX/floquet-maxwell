@@ -1,0 +1,122 @@
+{
+  "tag": "g4.1_k16_f3_steps4096",
+  "gmax": 4.1,
+  "steps_per_period": 4096,
+  "nk": 16,
+  "fold_halfwidth": 3,
+  "depth": 0.02,
+  "cases": [
+    {
+      "drive": 0.01,
+      "seconds": 2.1795877999993536,
+      "state_origin": "New 4096-step propagation using cached native Legume fields",
+      "xcom": [
+        -4.235286121297728e-15,
+        18.930699632105085,
+        39.157698631085694
+      ],
+      "width": [
+        2.098669041995687,
+        14.69667416343914,
+        27.146062305886982
+      ],
+      "negative_action_fraction": [
+        7.185910032809773e-33,
+        3.0779433418721616e-11,
+        4.019763714706126e-11
+      ],
+      "circular_centers": [
+        -3.680174608985149e-15,
+        19.148919097756558,
+        41.31340263030709
+      ],
+      "periodic_edge_fraction": [
+        4.114236063906163e-07,
+        1.1527029778698428e-05,
+        0.0021302965199053465
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256
+    },
+    {
+      "drive": 0.001,
+      "seconds": 2.140557299999273,
+      "state_origin": "New 4096-step propagation using cached native Legume fields",
+      "xcom": [
+        -4.235286121297728e-15,
+        25.03944599697305,
+        50.06691482383147
+      ],
+      "width": [
+        2.098669041995687,
+        4.502501251473478,
+        8.132265068017183
+      ],
+      "negative_action_fraction": [
+        7.185910032809773e-33,
+        2.8176192221284326e-12,
+        2.77928245573623e-12
+      ],
+      "circular_centers": [
+        -3.680174608985149e-15,
+        25.041756598193306,
+        50.07999064924652
+      ],
+      "periodic_edge_fraction": [
+        4.114236063906163e-07,
+        9.739314309652737e-06,
+        0.00033664174250608986
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256
+    },
+    {
+      "drive": 0.0001,
+      "seconds": 2.4760593000009976,
+      "state_origin": "New 4096-step propagation using cached native Legume fields",
+      "xcom": [
+        -4.235286121297728e-15,
+        25.003254872126558,
+        49.996369828772416
+      ],
+      "width": [
+        2.098669041995687,
+        19.082163435293314,
+        37.945212621373564
+      ],
+      "negative_action_fraction": [
+        7.185910032809773e-33,
+        3.838568687764093e-09,
+        1.7202215518285069e-09
+      ],
+      "circular_centers": [
+        -3.680174608985149e-15,
+        25.007708387744252,
+        50.0426379019449
+      ],
+      "periodic_edge_fraction": [
+        4.114236063906163e-07,
+        1.0218635713703181e-05,
+        1.6563897122730592e-05
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256
+    }
+  ],
+  "maximum_native_gamma": 0.0,
+  "mass_checks": {
+    "hermiticity_error": 7.806255641895632e-18,
+    "depth": 0.02,
+    "quadrature": 96,
+    "exact_momentum_selection": "q_j-q_i+pQ is primitive reciprocal; all other supercell sums vanish",
+    "Fourier_convention": "delta_epsilon_p exp(-ip*tau), mask integral exp(+i dk.r)",
+    "finite_model": "Electric Galerkin mass M=I+integral Ei*delta_epsilon Ej; R=M^-1. Not exact full-space inverse-epsilon projection.",
+    "strip_area": 5.553756444329974
+  },
+  "source": "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\control_g4.1_k16_f3",
+  "source_fingerprints": {
+    "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\control_g4.1_k16_f3\\native.pkl": "59b700f2f9209b04f19844c19ec141ddf82bb07f3ab3abe6915f801c345f4dcf",
+    "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\control_g4.1_k16_f3\\native_fields.npz": "35c4bc440c564949aa72a1ef43d1b99e07baa64ac9aff2a6bbf88ca973a9bf2b",
+    "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\control_g4.1_k16_f3\\basis_contract.json": "4bbe2f81f315af96208e907ffe7a59bf51610b7aa0d0ef98c838a71980d1efe4"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": "jin2025_official_SFig5_tensor_projection",
+  "date": "2026-10-19",
+  "paper": {
+    "title": "Towards Floquet Chern insulators of light",
+    "doi": "10.1038/s41565-025-02003-1",
+    "journal": "Nature Nanotechnology 20, 1574-1579 (2025)",
+    "official_figure": "Supplementary Figure 5(a-d)",
+    "pdf_page_1based": 18,
+    "printed_page": 17,
+    "not_main_Figure_5": true,
+    "original_label_error": "Lower-right panel printed b), designated d) in caption; original retained."
+  },
+  "task_scope": "Actual Legume field-derived tensor coupling and polarization interference. No static disorder. No claim of modulation-only spatial disorder, full Floquet spectrum, radiative scattering efficiency or Chern invariant.",
+  "geometry": {
+    "lattice": "square",
+    "a_nm": 465.0,
+    "slab_thickness_nm": 85.0,
+    "circular_air_hole_diameter_nm": 100.0,
+    "top_cladding": "air",
+    "bottom_cladding": "silica",
+    "source": "official main Figure 1 caption; nature2025_fig1_page.txt"
+  },
+  "materials": {
+    "primary": {
+      "AlGaAs_n": 3.47,
+      "AlGaAs_epsilon": 12.0409,
+      "silica_n": 1.46,
+      "silica_epsilon": 2.1315999999999997,
+      "air_n": 1.0,
+      "model": "one nondispersive static Maxwell model used consistently for all modes/operators"
+    },
+    "sensitivity": {
+      "AlGaAs_n": 3.3,
+      "AlGaAs_epsilon": 10.889999999999999,
+      "model": "separate complete static model, no combining fields of different material models"
+    },
+    "source": "arXiv 2304.09385v1 Methods, local source_extracted/maintext.tex line236: n=3.47 at760nm, n=3.3 at1um, silica n1.46",
+    "final_article_index_confirmation": "Not confirmed: official main HTML and PDF URL both return subscription preview on 2026-10-19; neither exposes Methods or the index values. See final_methods_access.json.",
+    "approximation": "No published full-frequency constitutive curve has been verified. Primary fixed n is an explicit approximation for selection-rule comparison, not exact final-paper dispersion."
+  },
+  "modulation": {
+    "physical_mechanism": "chi(2)-mediated non-diagonal permittivity under normal-incidence polarized pump",
+    "projection": "unit tensor shape, no fitted pump magnitude",
+    "Vx_nonzero_entries": [
+      "yz",
+      "zy"
+    ],
+    "Vy_nonzero_entries": [
+      "xz",
+      "zx"
+    ],
+    "unit_tensor_values": 1.0,
+    "polarizations": {
+      "a": "Vx",
+      "b": "Vy",
+      "c": "Vx - Vy",
+      "d": "Vx - 1j*Vy"
+    },
+    "source": "official SI Eqs.S2,S20a,S20b and Fig.S5 caption",
+    "pump_amplitude_note": "Official SI Fig.S8 specifies chi_xyz=200pm/V and E=.353GV/m, but common amplitude for Fig.S5 is not verified. Not used to fit this comparison.",
+    "temporal_omega": "not needed for this coupling-map observable"
+  },
+  "mode_identity": {
+    "mode_1": "TM-like yellow band near the paper short-wavelength resonance",
+    "mode_2": "higher-frequency member of the two relevant TE-like bands",
+    "selection": "Use Legume frequencies plus E/H polarization/field evidence within identified mode clusters, not a globally fixed eigenvalue index. Retain the TE subspace at Gamma.",
+    "shared_gauge": "Vx,Vy at each k must be formed from the same mode pair and same phases before their complex sum. Cross-k phase alignment is not necessary for the plotted magnitudes.",
+    "gamma": "Exclude undefined individual TE identity at Gamma as NaN; do not force its plotted coupling."
+  },
+  "observable": {
+    "paper": "inverse coupling magnitude, arbitrary scale (original colorbar only0/infinity)",
+    "axes": {
+      "x": "kx*a/(2*pi)",
+      "y": "ky*a/(2*pi)",
+      "bounds": [
+        0.0,
+        0.04
+      ]
+    },
+    "computed": "reciprocal of normalized coupling, shared fixed display cap; raw unnormalized complex Vx,Vy saved separately",
+    "normalization": "a single declared reference scale shared by all four polarization maps; no per-panel fitted matching",
+    "display_cap": "defined by root plot script and stored numerical metadata, not inferred from the unreported paper scale"
+  },
+  "expected_mechanism": {
+    "a": "nodal line kx=0",
+    "b": "nodal line ky=0",
+    "c": "nodal line kx=ky (Gamma-M)",
+    "d": "extended nodal line removed away from Gamma"
+  },
+  "source_limitations": [
+    "SI notes numerical errors close to Gamma caused by TE degeneracy.",
+    "No claim of full open-system QNM normalization or complete dynamic radiation validation from this overlap map.",
+    "This is tensor/phase control for the general-modulation toolbox, not a disordered-modulation literature reproduction."
+  ],
+  "provenance": {
+    "official_si_pdf_path": "sptc_toolbox\\literature\\sptc_baselines\\sources\\jin_followup\\41565_2025_2003_MOESM1_ESM.pdf",
+    "official_si_pdf_sha256": "9c5e59fe64526ad5d4644f3427ad700dc51356aff4c1908fae627761c26996dc",
+    "preprint_methods_path": "sptc_toolbox\\literature\\sptc_baselines\\sources\\jin_followup\\source_extracted\\maintext.tex",
+    "preprint_methods_sha256": "dce19cdddcca1a77e67e4ae9593ccf657c0ccdd174d1942830fc33e90599bb28",
+    "paper_page_png": "paper_SFig5_page.png",
+    "paper_page_png_sha256": "c64a5bc6f5a43a82b33e19a3f38bad684ff1a9d82c1e9e8e2ef9807f94bd6609",
+    "paper_panel_crop": "paper_SFig5_panels.png",
+    "paper_panel_crop_sha256": "f6222ad41cc48c61e19921e1793ea3ebfbb309d452baa210236ea52e95e6878c",
+    "crop_pdf_points": [
+      104,
+      96,
+      507,
+      456
+    ],
+    "crop_source_pdf_page_size_points": [
+      612,
+      792
+    ]
+  }
+}

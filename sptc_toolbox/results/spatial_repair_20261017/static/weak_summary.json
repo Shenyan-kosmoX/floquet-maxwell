@@ -1,0 +1,407 @@
+{
+  "status": "PAIRED_NATIVE_TENSOR_FIRST_ORDER_FIXED_DRIVE",
+  "grids": [
+    {
+      "resolution": 32,
+      "sidebands": [
+        {
+          "harmonic": -1,
+          "power_x": 0.00011906977629034595,
+          "total_power": 0.0001190697803123955,
+          "complex_output": [
+            [
+              -0.007450666842413424,
+              0.00037403216192644025
+            ],
+            [
+              -0.0075079877168588265,
+              0.00265472414368212
+            ],
+            [
+              1.7333492481656937e-06,
+              -7.464311507912092e-08
+            ],
+            [
+              9.236221704988293e-07,
+              -3.986231561258979e-07
+            ]
+          ],
+          "parity_numerical_checks": [
+            {
+              "time": 1500.0,
+              "elapsed_seconds": 493.2433388620002,
+              "output_power": 9.317388730635125,
+              "incoming_power": 2.8225824647248843e-11,
+              "source_factor": [
+                0.9997581865380482,
+                -0.019043602628639238
+              ],
+              "normalization": [
+                0.9997581865380482,
+                -0.019043602628639238
+              ],
+              "work": 9.30372378226437,
+              "output_work_relative_residual": 0.0014666070897981344,
+              "field_change": 0.001566248214186133,
+              "complex_output_change": 0.0015202168410917186
+            },
+            {
+              "solver_success": true,
+              "output_work_relative_residual": -5.38637254128197e-10
+            }
+          ],
+          "cw_independent_controls": [
+            {
+              "parity": "even",
+              "solver_success": false,
+              "complex_output_relative_difference": 0.0003989368496311846,
+              "power_relative_difference": 0.0007203454846769208
+            }
+          ],
+          "source_inputs": [
+            {
+              "parity": "even",
+              "polarization_file": "material\\r32_noY\\carrier_even_t2000_polarization.npz",
+              "polarization_sha256": "2983bddd01ab568b2cbdc7c9ed726b948afb34e248d77f4519288a6c5b7db9ce",
+              "carrier_time": 2000.0,
+              "sampling_file": "smooth_noY_r32\\born_minus_even_fdtd\\summary.json"
+            },
+            {
+              "parity": "odd",
+              "polarization_file": "material\\r32_noY\\carrier_odd_t2000_polarization.npz",
+              "polarization_sha256": "ed88349a70ea3a495aa5f4782bb0abae8503da2136a54934d4aa06c1db72c47a",
+              "carrier_time": 2000.0,
+              "sampling_file": "smooth_noY_r32\\born_minus_odd\\summary.json"
+            }
+          ],
+          "omega_discrete": 2.437728513361199
+        },
+        {
+          "harmonic": 1,
+          "power_x": 0.00012174417209589837,
+          "total_power": 0.00012174417489160836,
+          "complex_output": [
+            [
+              0.007802725896208215,
+              -0.003125258491144691
+            ],
+            [
+              0.007075572131591859,
+              -0.0010152236496007766
+            ],
+            [
+              -8.081688351575703e-07,
+              6.587767687184735e-07
+            ],
+            [
+              -1.3070498851235854e-06,
+              1.4384381680098325e-08
+            ]
+          ],
+          "parity_numerical_checks": [
+            {
+              "time": 1500.0,
+              "elapsed_seconds": 514.5650353029996,
+              "output_power": 9.540293979566716,
+              "incoming_power": 2.6636956503136354e-10,
+              "source_factor": [
+                0.9997326168551455,
+                -0.020024975566547358
+              ],
+              "normalization": [
+                0.9997326168551455,
+                -0.020024975566547358
+              ],
+              "work": 9.506612010212123,
+              "output_work_relative_residual": 0.0035304959602641484,
+              "field_change": 0.0012981389847283036,
+              "complex_output_change": 0.0012905760516209318
+            },
+            {
+              "solver_success": true,
+              "output_work_relative_residual": 1.3323652052743844e-09
+            }
+          ],
+          "cw_independent_controls": [],
+          "source_inputs": [
+            {
+              "parity": "even",
+              "polarization_file": "material\\r32_noY\\carrier_even_t2000_polarization.npz",
+              "polarization_sha256": "2983bddd01ab568b2cbdc7c9ed726b948afb34e248d77f4519288a6c5b7db9ce",
+              "carrier_time": 2000.0,
+              "sampling_file": "smooth_noY_r32\\born_plus_even_fdtd\\summary.json"
+            },
+            {
+              "parity": "odd",
+              "polarization_file": "material\\r32_noY\\carrier_odd_t2000_polarization.npz",
+              "polarization_sha256": "ed88349a70ea3a495aa5f4782bb0abae8503da2136a54934d4aa06c1db72c47a",
+              "carrier_time": 2000.0,
+              "sampling_file": "smooth_noY_r32\\born_plus_odd\\summary.json"
+            }
+          ],
+          "omega_discrete": 2.563368233199238
+        }
+      ],
+      "measured_input_power": 1.0000000000000018,
+      "carrier_wait_checks": [
+        {
+          "time": 2000.0,
+          "elapsed_seconds": 526.524644092,
+          "output_power": 1.0001838886501087,
+          "incoming_power": 1.0000000000000038,
+          "source_factor": [
+            0.9997455622552314,
+            -0.01953429380409268
+          ],
+          "normalization": [
+            -0.1665520173876513,
+            -0.47122700184759764
+          ],
+          "work": null,
+          "field_change": 0.0006398255996767447,
+          "complex_output_change": 0.0011848811038260244
+        },
+        {
+          "time": 2000.0,
+          "elapsed_seconds": 527.0129194239998,
+          "output_power": 1.0000011098901116,
+          "incoming_power": 1.0000000000000004,
+          "source_factor": [
+            0.9997455622552314,
+            -0.01953429380409268
+          ],
+          "normalization": [
+            -0.16655185961292374,
+            -0.4712266595357786
+          ],
+          "work": null,
+          "field_change": 7.020957865577907e-05,
+          "complex_output_change": 1.7851364060019465e-06
+        }
+      ],
+      "polarization_wait_checks": [
+        {
+          "parity": "even",
+          "t1500_to_t2000_polarization_relative_change": 0.0006401636263286659,
+          "scope": "Input polarization sensitivity, not a bound on sideband output error"
+        },
+        {
+          "parity": "odd",
+          "t1500_to_t2000_polarization_relative_change": 8.473006844066154e-05,
+          "scope": "Input polarization sensitivity, not a bound on sideband output error"
+        }
+      ]
+    },
+    {
+      "resolution": 40,
+      "sidebands": [
+        {
+          "harmonic": -1,
+          "power_x": 0.00010932959612565972,
+          "total_power": 0.0001093295964098872,
+          "complex_output": [
+            [
+              -0.007252748402129969,
+              -0.0005412820629796149
+            ],
+            [
+              -0.007306774683108091,
+              0.0017450771328649316
+            ],
+            [
+              -4.806280814075744e-07,
+              -5.44151215079352e-08
+            ],
+            [
+              -2.0858291933605628e-07,
+              8.219663050422728e-08
+            ]
+          ],
+          "parity_numerical_checks": [
+            {
+              "time": 1500.0,
+              "elapsed_seconds": 1169.1903574490007,
+              "output_power": 8.537153420625753,
+              "incoming_power": 1.7111072065515178e-10,
+              "source_factor": [
+                0.9998452353436942,
+                -0.015235545298546429
+              ],
+              "normalization": [
+                0.9998452353436942,
+                -0.015235545298546429
+              ],
+              "work": 8.492666471201959,
+              "output_work_relative_residual": 0.0052109816038111035,
+              "field_change": 0.0017109778818846305,
+              "complex_output_change": 0.0017303975716597762
+            },
+            {
+              "solver_success": true,
+              "output_work_relative_residual": -3.2413750502956833e-10
+            }
+          ],
+          "cw_independent_controls": [],
+          "source_inputs": [
+            {
+              "parity": "even",
+              "polarization_file": "material\\r40_noY\\carrier_even_t2000_polarization.npz",
+              "polarization_sha256": "626503aa889ced67727dc18ca1909e68a76637ffb081cfb5e644cf77e136efed",
+              "carrier_time": 2000.0,
+              "sampling_file": "smooth_noY_r40\\born_minus_even_fdtd\\summary.json"
+            },
+            {
+              "parity": "odd",
+              "polarization_file": "material\\r40_noY\\carrier_odd_t1500_polarization.npz",
+              "polarization_sha256": "76b14dec4c87b20f2719f756995d31c8bd31f55a8721a44e03450d2ce3de5f58",
+              "carrier_time": 1500.0,
+              "sampling_file": "smooth_noY_r40\\born_minus_odd\\summary.json"
+            }
+          ],
+          "omega_discrete": 2.4377815716421076
+        },
+        {
+          "harmonic": 1,
+          "power_x": 0.00010779417060170907,
+          "total_power": 0.00010779417078778102,
+          "complex_output": [
+            [
+              0.0075351894859298245,
+              -0.002158878420554053
+            ],
+            [
+              0.0068082641595304215,
+              -4.327946581528925e-05
+            ],
+            [
+              1.8858887792110984e-07,
+              -1.7258256656247878e-07
+            ],
+            [
+              3.4072864533277014e-07,
+              6.801041261486544e-08
+            ]
+          ],
+          "parity_numerical_checks": [
+            {
+              "time": 1500.0,
+              "elapsed_seconds": 1112.344993062,
+              "output_power": 8.423366485083118,
+              "incoming_power": 3.343769264052378e-10,
+              "source_factor": [
+                0.9998288698446727,
+                -0.016020751575652917
+              ],
+              "normalization": [
+                0.9998288698446727,
+                -0.016020751575652917
+              ],
+              "work": 8.425416203975479,
+              "output_work_relative_residual": -0.00024327805804930187,
+              "field_change": 0.0014437151135786252,
+              "complex_output_change": 0.0014302078756907404
+            },
+            {
+              "solver_success": true,
+              "output_work_relative_residual": -8.85564544504687e-10
+            }
+          ],
+          "cw_independent_controls": [],
+          "source_inputs": [
+            {
+              "parity": "even",
+              "polarization_file": "material\\r40_noY\\carrier_even_t2000_polarization.npz",
+              "polarization_sha256": "626503aa889ced67727dc18ca1909e68a76637ffb081cfb5e644cf77e136efed",
+              "carrier_time": 2000.0,
+              "sampling_file": "smooth_noY_r40\\born_plus_even_fdtd\\summary.json"
+            },
+            {
+              "parity": "odd",
+              "polarization_file": "material\\r40_noY\\carrier_odd_t1500_polarization.npz",
+              "polarization_sha256": "76b14dec4c87b20f2719f756995d31c8bd31f55a8721a44e03450d2ce3de5f58",
+              "carrier_time": 1500.0,
+              "sampling_file": "smooth_noY_r40\\born_plus_odd\\summary.json"
+            }
+          ],
+          "omega_discrete": 2.563429926374178
+        }
+      ],
+      "measured_input_power": 1.0000000000000007,
+      "carrier_wait_checks": [
+        {
+          "time": 2000.0,
+          "elapsed_seconds": 1041.9433676910003,
+          "output_power": 1.0000054315757632,
+          "incoming_power": 1.0,
+          "source_factor": [
+            0.9998371553723582,
+            -0.015628150847092247
+          ],
+          "normalization": [
+            -0.16485168917485415,
+            -0.47215126070325025
+          ],
+          "work": null,
+          "field_change": 0.0007203800963259331,
+          "complex_output_change": 0.0012729509197348693
+        },
+        {
+          "time": 2000.0,
+          "elapsed_seconds": 1494.606342225,
+          "output_power": 1.00000096936841,
+          "incoming_power": 1.000000000000001,
+          "source_factor": [
+            0.9998371553723582,
+            -0.015628150847092247
+          ],
+          "normalization": [
+            -0.16485171723890313,
+            -0.47215119917687665
+          ],
+          "work": null,
+          "field_change": 0.00012548100892618115,
+          "complex_output_change": 6.918979980412111e-06
+        }
+      ],
+      "polarization_wait_checks": [
+        {
+          "parity": "even",
+          "t1500_to_t2000_polarization_relative_change": 0.0007200967538209949,
+          "scope": "Input polarization sensitivity, not a bound on sideband output error"
+        },
+        {
+          "parity": "odd",
+          "t1500_to_t2000_polarization_relative_change": 0.00013482452686628792,
+          "scope": "Input polarization sensitivity, not a bound on sideband output error"
+        }
+      ]
+    }
+  ],
+  "completed": true,
+  "scope": "Same geometry, carrier .398, modulation .01, cosine epsilon amplitude .01; independent full-current reference, no modal reduction or finite-amplitude Floquet claim",
+  "power_relative_change_r32_to_r40": [
+    -0.08180228827284652,
+    -0.11458455262401246
+  ],
+  "complex_output_relative_difference_r32_to_r40": [
+    0.12633369958409735,
+    0.13694618423744762
+  ],
+  "output_channel_phase_difference_rad_r32_to_r40": [
+    [
+      0.12465226078865102,
+      0.10542803690802177
+    ],
+    [
+      0.10193515782734491,
+      0.13615343244052022
+    ]
+  ],
+  "same_numerical_branch_pole_check": {
+    "r32_frequency": 0.3976873701385377,
+    "r40_frequency": 0.39757625083484516,
+    "shift_over_r40_half_linewidth": -0.13901412978737157,
+    "r32_half_linewidth": 0.0008104010397206413,
+    "r40_half_linewidth": 0.0007993381957828745
+  }
+}

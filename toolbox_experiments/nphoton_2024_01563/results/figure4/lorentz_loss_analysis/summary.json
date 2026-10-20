@@ -1,0 +1,3003 @@
+{
+  "status": "ACTUAL_LORENTZ_CENTER_LOSS_RESPONSE_WITH_REJECTED_LATE_TAILS",
+  "rows": [
+    {
+      "case": "center_loss0",
+      "source_directory": "results/figure4/lorentz_dynamic/center_loss0",
+      "q": 0.86,
+      "loss_ratio": 0.0,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.0,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.2651598738396335,
+        "frequency_spread": 5.740604436255126e-09,
+        "decay_cyclic": -1.2629266919258662e-07,
+        "decay_spread": 5.868909975460796e-09,
+        "amplitude_decay_rate": -7.935202434753522e-07,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0036791562599645497,
+          "growth_cyclic_fa_over_c": 0.0005855559051808484,
+          "log_amplitude_fit_rms": 0.008871016559121307,
+          "cycles": [
+            140.50158903056249,
+            379.51007180937495
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 0.0036532157399547897,
+          "growth_cyclic_fa_over_c": 0.0005814273431949209,
+          "log_amplitude_fit_rms": 0.008944079150682483,
+          "cycles": [
+            140.50158903056249,
+            259.52522814562496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0036972586268579407,
+          "growth_cyclic_fa_over_c": 0.0005884369863535946,
+          "log_amplitude_fit_rms": 0.008548727770875378,
+          "cycles": [
+            260.51957767874995,
+            379.51007180937495
+          ]
+        }
+      ],
+      "late_amplitude_rate": 0.0036972586268579407,
+      "late_imaginary_frequency_over_drive": 0.0011095890455597886,
+      "rate_window_min": 0.0036532157399547897,
+      "rate_window_max": 0.0036972586268579407,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.0036791677426979696,
+              0.0036791473857307002,
+              0.0036790274793346094
+            ],
+            "probe_log_RMS": [
+              0.008910265599876033,
+              0.008795108338564384,
+              0.008704311533438987
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              0.003653243036742559,
+              0.0036532072912395567,
+              0.0036528339153988326
+            ],
+            "probe_log_RMS": [
+              0.008981532874986948,
+              0.008870044884393163,
+              0.00879443651031447
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.0036972749549641897,
+              0.003697224033255114,
+              0.003697207255858612
+            ],
+            "probe_log_RMS": [
+              0.00859116654210528,
+              0.008468847374242267,
+              0.008354947716635556
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 661.4172583770942,
+        "final_amplitude_median_last10": 7029.303235051733,
+        "final_over_initial": 10.627638069649693,
+        "min_amplitude": 658.2197519954395,
+        "max_amplitude": 7430.658657768482,
+        "absolute_sampled_Hmax": 8629.237021356867,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 7.935202434753522e-07,
+        "angular_detuning": -1.0432390117329267e-08,
+        "net_amplitude_rate": 0.0036961835445913998,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "66aecd64322456e8fe72698241909f512d586c87a7441f6d5c4dc81ee7d73f14",
+        "dynamic_fields.npz": "0671a686a1222fab0b75c51c572687d62472c52bb23cce1799cda3d7911bcfed",
+        "static_traces.npz": "79cfdc0c08e40aaca291cb4031bed467e0d4b3769a5e8e4df879e78219811243"
+      }
+    },
+    {
+      "case": "center_loss0.005",
+      "source_directory": "results/figure4/lorentz_dynamic/center_loss0.005",
+      "q": 0.86,
+      "loss_ratio": 0.005,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.006322373860385774,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.2651598499278259,
+        "frequency_spread": 5.793054203007131e-09,
+        "decay_cyclic": -0.00012917031164294565,
+        "decay_spread": 6.077800993091681e-09,
+        "amplitude_decay_rate": -0.0008116010042387643,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0028683817776964933,
+          "growth_cyclic_fa_over_c": 0.00045651713859511496,
+          "log_amplitude_fit_rms": 0.008845590436111926,
+          "cycles": [
+            140.50158903056249,
+            379.51007180937495
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 0.0028424704494336684,
+          "growth_cyclic_fa_over_c": 0.00045239322262000966,
+          "log_amplitude_fit_rms": 0.008919900286478195,
+          "cycles": [
+            140.50158903056249,
+            259.52522814562496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.002886472799477058,
+          "growth_cyclic_fa_over_c": 0.000459396414137075,
+          "log_amplitude_fit_rms": 0.008521746067360066,
+          "cycles": [
+            260.51957767874995,
+            379.51007180937495
+          ]
+        }
+      ],
+      "late_amplitude_rate": 0.002886472799477058,
+      "late_imaginary_frequency_over_drive": 0.0008662630672736816,
+      "rate_window_min": 0.0028424704494336684,
+      "rate_window_max": 0.002886472799477058,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.002868385148482224,
+              0.0028683783904565343,
+              0.0028683486849798274
+            ],
+            "probe_log_RMS": [
+              0.008875660288957525,
+              0.008793170463474121,
+              0.008683401008866715
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              0.0028424764173518398,
+              0.0028424659982529345,
+              0.002842402571146635
+            ],
+            "probe_log_RMS": [
+              0.008950624654703839,
+              0.008866423913985589,
+              0.008753609581521214
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.002886485795840598,
+              0.002886450569278325,
+              0.002886400093389347
+            ],
+            "probe_log_RMS": [
+              0.008551962923879443,
+              0.008469032290494874,
+              0.008358866196587569
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 521.420079674323,
+        "final_amplitude_median_last10": 3100.481378815824,
+        "final_over_initial": 5.946225509290652,
+        "min_amplitude": 520.2328447934764,
+        "max_amplitude": 3259.5900363264623,
+        "absolute_sampled_Hmax": 3773.0054587469053,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.0008116010042387643,
+        "angular_detuning": -1.6067470858080893e-07,
+        "net_amplitude_rate": 0.00288537605711928,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "bd1282fcc1ba6be23c5356014675ca26896db8713cb185a1f259e6a104967127",
+        "dynamic_fields.npz": "242e4ea421279e9ea9a76adb530b23d7aa4b63771742e5aac2798f005151e2a7",
+        "static_traces.npz": "5afb5ff6bb8d79e3399943cd955debf6d50ccc3fa84e53a9d34f6d4873c1d33b"
+      }
+    },
+    {
+      "case": "center_loss0.01",
+      "source_directory": "results/figure4/lorentz_dynamic/center_loss0.01",
+      "q": 0.86,
+      "loss_ratio": 0.01,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.012644747720771548,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.26515978366593124,
+        "frequency_spread": 6.588637135873654e-09,
+        "decay_cyclic": -0.0002582145222545707,
+        "decay_spread": 6.781820157536478e-09,
+        "amplitude_decay_rate": -0.0016224096923303148,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0020575769965869048,
+          "growth_cyclic_fa_over_c": 0.0003274735497989818,
+          "log_amplitude_fit_rms": 0.00882935347213106,
+          "cycles": [
+            140.50158903056249,
+            379.51007180937495
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 0.002031694741847391,
+          "growth_cyclic_fa_over_c": 0.0003233542610188245,
+          "log_amplitude_fit_rms": 0.00890345743434309,
+          "cycles": [
+            140.50158903056249,
+            259.52522814562496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0020756528029257323,
+          "growth_cyclic_fa_over_c": 0.000330350403728178,
+          "log_amplitude_fit_rms": 0.008505772976931046,
+          "cycles": [
+            260.51957767874995,
+            379.51007180937495
+          ]
+        }
+      ],
+      "late_amplitude_rate": 0.0020756528029257323,
+      "late_imaginary_frequency_over_drive": 0.0006229268344338509,
+      "rate_window_min": 0.002031694741847391,
+      "rate_window_max": 0.0020756528029257323,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.0020575807177441283,
+              0.0020575681693454084,
+              0.002057570951427657
+            ],
+            "probe_log_RMS": [
+              0.008851923487946887,
+              0.008791024304755478,
+              0.008701533357485082
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              0.002031700647530388,
+              0.0020316803931929384,
+              0.002031687162811225
+            ],
+            "probe_log_RMS": [
+              0.008926646410781246,
+              0.00886425623143947,
+              0.008771021306427691
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.002075663253054375,
+              0.0020756339408701135,
+              0.00207560026847618
+            ],
+            "probe_log_RMS": [
+              0.008528328596242725,
+              0.008467236619941745,
+              0.008379355684542707
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 411.30834774088976,
+        "final_amplitude_median_last10": 1368.1036290177112,
+        "final_over_initial": 3.3262238331218357,
+        "min_amplitude": 401.1295908099348,
+        "max_amplitude": 1430.496949953568,
+        "absolute_sampled_Hmax": 1650.946058882161,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.0016224096923303148,
+        "angular_detuning": -5.770104713953912e-07,
+        "net_amplitude_rate": 0.0020745673274904525,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "37387dadadc6e38a0096346d4a01c369744091aabac94b09c0d26c14b507f1e5",
+        "dynamic_fields.npz": "8d750c4672205a6cf196ed0e020502177412af254c03b1ef31a033d6cb7fc8a2",
+        "static_traces.npz": "1a7b06dd023b2f01e54191d181e621a94fefda892b13ad4abd6487fb52aa650c"
+      }
+    },
+    {
+      "case": "center_loss0.015",
+      "source_directory": "results/figure4/lorentz_dynamic/center_loss0.015",
+      "q": 0.86,
+      "loss_ratio": 0.015,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.01896712158115732,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.2651596750524868,
+        "frequency_spread": 7.868575624403462e-09,
+        "decay_cyclic": -0.00038725885544462743,
+        "decay_spread": 7.57807356839904e-09,
+        "amplitude_decay_rate": -0.0024332191506048666,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0012467623472273799,
+          "growth_cyclic_fa_over_c": 0.0001984283904220915,
+          "log_amplitude_fit_rms": 0.008816895456621456,
+          "cycles": [
+            140.50158903056249,
+            379.51007180937495
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 0.0012209078253822816,
+          "growth_cyclic_fa_over_c": 0.00019431351546916672,
+          "log_amplitude_fit_rms": 0.008890797572428069,
+          "cycles": [
+            140.50158903056249,
+            259.52522814562496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0012648247603634735,
+          "growth_cyclic_fa_over_c": 0.0002013031127568688,
+          "log_amplitude_fit_rms": 0.008493651598140152,
+          "cycles": [
+            260.51957767874995,
+            379.51007180937495
+          ]
+        }
+      ],
+      "late_amplitude_rate": 0.0012648247603634735,
+      "late_imaginary_frequency_over_drive": 0.00037958818689532234,
+      "rate_window_min": 0.0012209078253822816,
+      "rate_window_max": 0.0012648247603634735,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.0012467677642902255,
+              0.0012467471889668954,
+              0.0012467673731862273
+            ],
+            "probe_log_RMS": [
+              0.00883291717465091,
+              0.008789966699363185,
+              0.008724497789464426
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              0.0012209167202289028,
+              0.0012208819450231394,
+              0.0012209220013406595
+            ],
+            "probe_log_RMS": [
+              0.008907299248341556,
+              0.008863192710513463,
+              0.008794828670858072
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.0012648333203372083,
+              0.001264807998933249,
+              0.0012647895939207265
+            ],
+            "probe_log_RMS": [
+              0.0085096613143144,
+              0.008466504399554094,
+              0.008402718697558455
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 324.5837785976379,
+        "final_amplitude_median_last10": 603.9283270385596,
+        "final_over_initial": 1.8606238723568627,
+        "min_amplitude": 300.08976571317874,
+        "max_amplitude": 628.0483318367898,
+        "absolute_sampled_Hmax": 722.7942909861202,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.0024332191506048666,
+        "angular_detuning": -1.2594488697921421e-06,
+        "net_amplitude_rate": 0.0012637576997165507,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "62ae6c1f336ec82fb9c05ab8d42135648f900a396c67d758a6befaaba070b1aa",
+        "dynamic_fields.npz": "9c9fdebacacbdf2bd2fe9c0b6bdf82f17f2d9c83d2a5cb80cc3e031eef32f833",
+        "static_traces.npz": "12d9cdefb3596f8a28660721e6b0c75c24ca22b8b9a991f184b83ab8e64d994b"
+      }
+    },
+    {
+      "case": "center_loss0.02",
+      "source_directory": "results/figure4/lorentz_dynamic/center_loss0.02",
+      "q": 0.86,
+      "loss_ratio": 0.02,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.025289495441543096,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.265159524073378,
+        "frequency_spread": 9.421965763145579e-09,
+        "decay_cyclic": -0.0005163033315741896,
+        "decay_spread": 8.473250737118729e-09,
+        "amplitude_decay_rate": -0.0032440295069948184,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.00043594269799780325,
+          "growth_cyclic_fa_over_c": 6.938243529116769e-05,
+          "log_amplitude_fit_rms": 0.008806819045634745,
+          "cycles": [
+            140.50158903056249,
+            379.51007180937495
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 0.00041011537254772077,
+          "growth_cyclic_fa_over_c": 6.527188877894396e-05,
+          "log_amplitude_fit_rms": 0.008880580201042253,
+          "cycles": [
+            140.50158903056249,
+            259.52522814562496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.00045399286701259373,
+          "growth_cyclic_fa_over_c": 7.225520891351576e-05,
+          "log_amplitude_fit_rms": 0.008483900933279777,
+          "cycles": [
+            260.51957767874995,
+            379.51007180937495
+          ]
+        }
+      ],
+      "late_amplitude_rate": 0.00045399286701259373,
+      "late_imaginary_frequency_over_drive": 0.0001362483836916641,
+      "rate_window_min": 0.00041011537254772077,
+      "rate_window_max": 0.00045399286701259373,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.00043595013249228033,
+              0.0004359211002840269,
+              0.00043595435349603887
+            ],
+            "probe_log_RMS": [
+              0.00881740726467659,
+              0.008789252376737305,
+              0.008744395505104769
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              0.0004101279029247598,
+              0.0004100777232160942,
+              0.00041014248785792496
+            ],
+            "probe_log_RMS": [
+              0.00889152636402793,
+              0.008862494154075685,
+              0.008815588423563362
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.0004540000376499449,
+              0.00045397746084537076,
+              0.0004539715954384132
+            ],
+            "probe_log_RMS": [
+              0.00849449668393678,
+              0.00846608924689549,
+              0.008422810817644859
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 256.2509198110252,
+        "final_amplitude_median_last10": 266.70389730802964,
+        "final_over_initial": 1.0407919608823768,
+        "min_amplitude": 214.60969795693944,
+        "max_amplitude": 278.76355540655385,
+        "absolute_sampled_Hmax": 316.60115915775253,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.0032440295069948184,
+        "angular_detuning": -2.2080785877106395e-06,
+        "net_amplitude_rate": 0.00045294689844961903,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "be532b828599b1243a321e2bb7c0a2cda5d3bbf93ffaf678b938fe2a1a48dc39",
+        "dynamic_fields.npz": "9f258c820f4d1204cb110837140ea2d651d2cc536595e64c40ab0b918f621cbd",
+        "static_traces.npz": "3dc39118114fe629a71498cd71528fc58bd0dcbf7a96be2f3bd1c6f5b91254a6"
+      }
+    },
+    {
+      "case": "center_loss0.025",
+      "source_directory": "results/figure4/lorentz_dynamic/center_loss0.025",
+      "q": 0.86,
+      "loss_ratio": 0.025,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.03161186930192887,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.26515933071789427,
+        "frequency_spread": 1.1281888090408643e-08,
+        "decay_cyclic": -0.000645347991281906,
+        "decay_spread": 9.476649451604056e-09,
+        "amplitude_decay_rate": -0.004054841016840331,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.0003748791091812507,
+          "growth_cyclic_fa_over_c": -5.966386328808237e-05,
+          "log_amplitude_fit_rms": 0.008798514829146887,
+          "cycles": [
+            140.50158903056249,
+            379.51007180937495
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": -0.00040067945871281185,
+          "growth_cyclic_fa_over_c": -6.3770116449529e-05,
+          "log_amplitude_fit_rms": 0.008872179977320161,
+          "cycles": [
+            140.50158903056249,
+            259.52522814562496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.0003568405236315477,
+          "growth_cyclic_fa_over_c": -5.679293323146111e-05,
+          "log_amplitude_fit_rms": 0.008475918847404708,
+          "cycles": [
+            260.51957767874995,
+            379.51007180937495
+          ]
+        }
+      ],
+      "late_amplitude_rate": -0.0003568405236315477,
+      "late_imaginary_frequency_over_drive": -0.00010709186886660218,
+      "rate_window_min": -0.00040067945871281185,
+      "rate_window_max": -0.0003568405236315477,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.00037486957300871974,
+              -0.0003749071229993174,
+              -0.00037486229721146356
+            ],
+            "probe_log_RMS": [
+              0.008804645949987555,
+              0.008788668770070687,
+              0.008760434203951034
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              -0.00040066314285369225,
+              -0.00040072881895137426,
+              -0.0004006421259638045
+            ],
+            "probe_log_RMS": [
+              0.008878567639292645,
+              0.008861944619824381,
+              0.008832361401493951
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.00035683439378523716,
+              -0.0003568550711493084,
+              -0.00035685045009839375
+            ],
+            "probe_log_RMS": [
+              0.008482082439033357,
+              0.008465785540966235,
+              0.008439041301886205
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 202.38729660407662,
+        "final_amplitude_median_last10": 117.90694207290832,
+        "final_over_initial": 0.5825807451915604,
+        "min_amplitude": 117.46950273204847,
+        "max_amplitude": 225.11192901829466,
+        "absolute_sampled_Hmax": 188.1957915374249,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.004054841016840331,
+        "angular_detuning": -3.422966922178405e-06,
+        "net_amplitude_rate": -0.0003578655366239191,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "ea738dc5c5c1728cea24aa764baee1d5539fb95bba2319ad2516dc8cdfd14885",
+        "dynamic_fields.npz": "c7ebd9a4d638260dd6952611cec92b7bca83b626f02ba0863993141308cd6726",
+        "static_traces.npz": "b08a1c6904f8d7d11e97a6905a74a4c928c1b2e53e80c6b21aaf875ca5e84bb5"
+      }
+    },
+    {
+      "case": "center_loss0.03",
+      "source_directory": "results/figure4/lorentz_dynamic/center_loss0.03",
+      "q": 0.86,
+      "loss_ratio": 0.03,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.03793424316231464,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.26515909497629814,
+        "frequency_spread": 1.3492174710805216e-08,
+        "decay_cyclic": -0.0007743928799565893,
+        "decay_spread": 1.0598936419931732e-08,
+        "amplitude_decay_rate": -0.004865653965327727,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.001185701518870861,
+          "growth_cyclic_fa_over_c": -0.00018871025775986575,
+          "log_amplitude_fit_rms": 0.008791640559429941,
+          "cycles": [
+            140.50158903056249,
+            379.51007180937495
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": -0.001211475020927691,
+          "growth_cyclic_fa_over_c": -0.0001928122380129994,
+          "log_amplitude_fit_rms": 0.00886523748134482,
+          "cycles": [
+            140.50158903056249,
+            259.52522814562496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.0011676741892872229,
+          "growth_cyclic_fa_over_c": -0.00018584111914588298,
+          "log_amplitude_fit_rms": 0.00846937508327104,
+          "cycles": [
+            260.51957767874995,
+            379.51007180937495
+          ]
+        }
+      ],
+      "late_amplitude_rate": -0.0011676741892872229,
+      "late_imaginary_frequency_over_drive": -0.00035043220395893386,
+      "rate_window_min": -0.001211475020927691,
+      "rate_window_max": -0.0011676741892872229,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.0011856898572914392,
+              -0.001185735919466531,
+              -0.0011856801017422636
+            ],
+            "probe_log_RMS": [
+              0.008794117932431726,
+              0.008788183842259949,
+              0.008773164685105299
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              -0.0012114549211160119,
+              -0.0012115359356809278,
+              -0.001211428382871964
+            ],
+            "probe_log_RMS": [
+              0.008867884633897835,
+              0.00886150587224736,
+              0.008845707384143687
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.0011676688779862533,
+              -0.0011676881677856689,
+              -0.001167674559459694
+            ],
+            "probe_log_RMS": [
+              0.00847191595864775,
+              0.00846557041704452,
+              0.008451987424753189
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 159.91166537420065,
+        "final_amplitude_median_last10": 52.19106247085025,
+        "final_over_initial": 0.3263743289066546,
+        "min_amplitude": 51.55599887328158,
+        "max_amplitude": 181.86098832936017,
+        "absolute_sampled_Hmax": 152.1499952947601,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.004865653965327727,
+        "angular_detuning": -4.904175055291909e-06,
+        "net_amplitude_rate": -0.0011686801532631956,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "c9c3fbde72d832c397e1ea650cb09d135ebab4a7814c14a98bac7b9ccbde4f42",
+        "dynamic_fields.npz": "98ad1548ea1d69b116dac2d16f30bed893a200bd9a360366e68788c6a040c7ee",
+        "static_traces.npz": "acaf7c460330ffe5c4c57970ee6d578242ad012cb1da97c309ccbac625151b07"
+      }
+    },
+    {
+      "case": "center_loss0.05",
+      "source_directory": "results/figure4/lorentz_dynamic/center_loss0.05",
+      "q": 0.86,
+      "loss_ratio": 0.05,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.06322373860385774,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.2651577279091545,
+        "frequency_spread": 2.715032626499081e-08,
+        "decay_cyclic": -0.0012905756445757137,
+        "decay_spread": 1.653618903981781e-08,
+        "amplitude_decay_rate": -0.008108925927801948,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.004428969966224373,
+          "growth_cyclic_fa_over_c": -0.0007048924629301537,
+          "log_amplitude_fit_rms": 0.008775756710258799,
+          "cycles": [
+            140.50158903056249,
+            379.51007180937495
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": -0.0044546556817372795,
+          "growth_cyclic_fa_over_c": -0.000708980471520885,
+          "log_amplitude_fit_rms": 0.008847862009255997,
+          "cycles": [
+            140.50158903056249,
+            259.52522814562496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.004410970515115423,
+          "growth_cyclic_fa_over_c": -0.0007020277613132234,
+          "log_amplitude_fit_rms": 0.008456017179802837,
+          "cycles": [
+            260.51957767874995,
+            379.51007180937495
+          ]
+        }
+      ],
+      "late_amplitude_rate": -0.004410970515115423,
+      "late_imaginary_frequency_over_drive": -0.0013237820390235163,
+      "rate_window_min": -0.0044546556817372795,
+      "rate_window_max": -0.004410970515115423,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.004428941273060878,
+              -0.004429048785180412,
+              -0.004428952846273857
+            ],
+            "probe_log_RMS": [
+              0.008769998103099936,
+              0.008787392674831489,
+              0.00880285796041822
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              -0.0044546204721641145,
+              -0.0044547623433428135,
+              -0.004454574423484192
+            ],
+            "probe_log_RMS": [
+              0.008841143884131469,
+              0.008860954484079081,
+              0.008877146087867134
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.0044109526063186855,
+              -0.004411016419809314,
+              -0.004410980587348298
+            ],
+            "probe_log_RMS": [
+              0.008451273424233317,
+              0.008465813178206421,
+              0.008482722791962688
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 62.58303786951616,
+        "final_amplitude_median_last10": 2.000661718761747,
+        "final_over_initial": 0.031968114474293645,
+        "min_amplitude": 1.9202334747919831,
+        "max_amplitude": 77.78370848078526,
+        "absolute_sampled_Hmax": 65.26551392939402,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.008108925927801948,
+        "angular_detuning": -1.3493711246225847e-05,
+        "net_amplitude_rate": -0.004411973488591953,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "33aa6fdc26bcbfcdbc2901bc147aa7ff52815534af1482f888965f835e290b21",
+        "dynamic_fields.npz": "e32b5f48fd445e52ebd4758c214686b19ab198d58f1aa9ab20c89cfd05d187ba",
+        "static_traces.npz": "87eec0aaa63b94f0bd0061d1d6b2708c305e73d8a309c3b7d1d5ae2fab91a067"
+      }
+    },
+    {
+      "case": "center_loss0.07",
+      "source_directory": "results/figure4/lorentz_dynamic/center_loss0.07",
+      "q": 0.86,
+      "loss_ratio": 0.07,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.08851323404540085,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.26515568138225865,
+        "frequency_spread": 5.3583512404919986e-08,
+        "decay_cyclic": -0.0018067655949228604,
+        "decay_spread": 2.9715323040515815e-08,
+        "amplitude_decay_rate": -0.011352243039536901,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.007662484846796829,
+          "growth_cyclic_fa_over_c": -0.0012195223397344598,
+          "log_amplitude_fit_rms": 0.009130654907115149,
+          "cycles": [
+            140.50158903056249,
+            379.51007180937495
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": -0.007697125229036622,
+          "growth_cyclic_fa_over_c": -0.0012250355277985156,
+          "log_amplitude_fit_rms": 0.008848220835657065,
+          "cycles": [
+            140.50158903056249,
+            259.52522814562496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.007628477020204792,
+          "growth_cyclic_fa_over_c": -0.001214109826028525,
+          "log_amplitude_fit_rms": 0.008853965929126418,
+          "cycles": [
+            260.51957767874995,
+            379.51007180937495
+          ]
+        }
+      ],
+      "late_amplitude_rate": -0.007628477020204792,
+      "late_imaginary_frequency_over_drive": -0.0022893920577899147,
+      "rate_window_min": -0.007697125229036622,
+      "rate_window_max": -0.007628477020204792,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.007658650781060427,
+              -0.007671120254402921,
+              -0.007672105141562536
+            ],
+            "probe_log_RMS": [
+              0.009404858906549613,
+              0.00880304277210228,
+              0.008816627973743066
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              -0.0076967945869473005,
+              -0.0076979039929754405,
+              -0.007697724589032836
+            ],
+            "probe_log_RMS": [
+              0.008847386603174362,
+              0.008862520992693844,
+              0.008891338186184702
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.007618463675835041,
+              -0.007651016122348554,
+              -0.007653932884477151
+            ],
+            "probe_log_RMS": [
+              0.009248017709733393,
+              0.008463229416093504,
+              0.00849478940241673
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 24.654235562824525,
+        "final_amplitude_median_last10": 0.07789661347956854,
+        "final_over_initial": 0.003159563121763418,
+        "min_amplitude": 0.07232041617795597,
+        "max_amplitude": 33.48833463454113,
+        "absolute_sampled_Hmax": 28.17661480687777,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.011352243039536901,
+        "angular_detuning": -2.6352418968903412e-05,
+        "net_amplitude_rate": -0.007655359897207621,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "b7262a8d9301cb01dc631b8ed031dd8fcf26c124a0c8e9726d3c42829d674298",
+        "dynamic_fields.npz": "c53ceca30a12923a36cd63f910c27fbc0c527614cec4ba36274f053c73219c89",
+        "static_traces.npz": "e7eebbdbed38f0079b49ce70bd919b53c478758388fc9d98a29db52545c8c1bb"
+      }
+    },
+    {
+      "case": "center_loss0.09",
+      "source_directory": "results/figure4/lorentz_dynamic/center_loss0.09",
+      "q": 0.86,
+      "loss_ratio": 0.09,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.11380272948694392,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.2651529518593687,
+        "frequency_spread": 1.0459517746364e-07,
+        "decay_cyclic": -0.0023229678296035113,
+        "decay_spread": 5.7578691691709954e-08,
+        "amplitude_decay_rate": -0.014595637336015635,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.009123421402952372,
+          "growth_cyclic_fa_over_c": -0.0014520376141902648,
+          "log_amplitude_fit_rms": 0.16958593787730356,
+          "cycles": [
+            140.50158903056249,
+            379.51007180937495
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": -0.010850322669107378,
+          "growth_cyclic_fa_over_c": -0.0017268824869304867,
+          "log_amplitude_fit_rms": 0.010666429308812033,
+          "cycles": [
+            140.50158903056249,
+            259.52522814562496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.006266255164667205,
+          "growth_cyclic_fa_over_c": -0.0009973054841319043,
+          "log_amplitude_fit_rms": 0.09457137229778895,
+          "cycles": [
+            260.51957767874995,
+            379.51007180937495
+          ]
+        }
+      ],
+      "late_amplitude_rate": -0.006266255164667205,
+      "late_imaginary_frequency_over_drive": -0.0018805739032938724,
+      "rate_window_min": -0.010850322669107378,
+      "rate_window_max": -0.006266255164667205,
+      "stable_center_rate_for_plot": false,
+      "rejection_reasons": [
+        "AGGREGATE_LOG_FIT_NONEXPONENTIAL",
+        "FIT_WINDOW_RATE_INCONSISTENT",
+        "LATE_SPATIAL_PROBE_RATES_DISAGREE"
+      ],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.00878520627768962,
+              -0.010474624486472224,
+              -0.010854055413076649
+            ],
+            "probe_log_RMS": [
+              0.19038490416280135,
+              0.05503707713714649,
+              0.012628155780359585
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              -0.01081579389712306,
+              -0.010929298675258214,
+              -0.010939549516876047
+            ],
+            "probe_log_RMS": [
+              0.012024033310424806,
+              0.008936083155430631,
+              0.00891237339574386
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.005563170878274012,
+              -0.009610858046429442,
+              -0.01071196650154844
+            ],
+            "probe_log_RMS": [
+              0.0972314207301021,
+              0.042356240553242865,
+              0.010950331815900426
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 9.776438440476984,
+        "final_amplitude_median_last10": 0.011954811910506801,
+        "final_over_initial": 0.0012228187169890815,
+        "min_amplitude": 0.011722473869173525,
+        "max_amplitude": 14.51298089725809,
+        "absolute_sampled_Hmax": 12.240903057573885,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.014595637336015635,
+        "angular_detuning": -4.350251708653871e-05,
+        "net_amplitude_rate": -0.010898916228191696,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "a06318ea43a8536f689ed09f082490b3856077dcfc5782eb5d3fac85039c2304",
+        "dynamic_fields.npz": "e5a6e57cc189f1d29e9783ccad044da011c3341ed173bfe1c12aa02c3d6aceb8",
+        "static_traces.npz": "3c3e26cdf48f0b20a7f7cc8a1bc5b0edce261bda18b969d0ca27dc7cc18fb35f"
+      }
+    }
+  ],
+  "zero_loss_static_gain_amplitude": 0.0036969770648495946,
+  "static_calibration_source": "results/figure4/lorentz_calibration/summary.json",
+  "static_calibration_sha256": "b9e4a31d1774208fa01c44b5a242112a1d3040f87af1cb53f34e4a09eebc5a90",
+  "actual_half_drive_THz": 125.81977024235356,
+  "paper_half_drive_THz": 196.0,
+  "material_interpretation": "N0=1.21e29 m^-3, resonance 600 THz interpreted as cyclic; epsilon_inf1, sigma27.096... retained. This leads to a new 125.82 THz carrier, not paper196.",
+  "observed_center_threshold": [
+    {
+      "loss_ratio_bracket": [
+        0.02,
+        0.025
+      ],
+      "linear_interpolated_zero": 0.022799544716898826,
+      "scope": "Observed sign-change bracket, not exact instability threshold"
+    }
+  ],
+  "static_predicted_threshold": [
+    0.022793168419705228
+  ],
+  "static_dispersion_samples": [
+    {
+      "q": 0.6,
+      "frequency": 0.2634722083324177,
+      "source": "results/figure4/lorentz_calibration/extended_q/q0.6/summary.json",
+      "source_sha256": "e76d5ac80225635a507b36bfa9a6d017c9d51fddb6f3abc3916dbf19cfd6a9d4"
+    },
+    {
+      "q": 0.72,
+      "frequency": 0.26484441511642803,
+      "source": "original_calibration"
+    },
+    {
+      "q": 0.78,
+      "frequency": 0.26505183879588495,
+      "source": "original_calibration"
+    },
+    {
+      "q": 0.82,
+      "frequency": 0.2651215414460923,
+      "source": "original_calibration"
+    },
+    {
+      "q": 0.86,
+      "frequency": 0.2651598757092318,
+      "source": "original_calibration"
+    },
+    {
+      "q": 0.9,
+      "frequency": 0.26517930325632305,
+      "source": "original_calibration"
+    },
+    {
+      "q": 0.94,
+      "frequency": 0.26518807644397363,
+      "source": "original_calibration"
+    },
+    {
+      "q": 0.98,
+      "frequency": 0.26519125791329684,
+      "source": "original_calibration"
+    }
+  ],
+  "excluded_low_q_unassigned_modes": [
+    {
+      "q": 0.1,
+      "frequency": 0.2858133958774289,
+      "source": "results/figure4/lorentz_calibration/extended_q/q0.1/summary.json",
+      "source_sha256": "e1af8cbf195e45e21d1f63c341d5c4af574487e31f676e6cf9270ba6c197d09a"
+    },
+    {
+      "q": 0.2,
+      "frequency": 0.28679740535823284,
+      "source": "results/figure4/lorentz_calibration/extended_q/q0.2/summary.json",
+      "source_sha256": "436b86a3b3c90e695180261cfd5bee09fa357df66ffa60f8bcbfe331a23a0e38"
+    }
+  ],
+  "q_dependent_dynamic_controls": [
+    {
+      "case": "q0.66_loss0",
+      "source_directory": "results/figure4/lorentz_qcontrols/q0.66_loss0",
+      "q": 0.66,
+      "loss_ratio": 0.0,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.0,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": false,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.2644002902843252,
+        "frequency_spread": 3.959795547014977e-09,
+        "decay_cyclic": 1.0038433453169041e-05,
+        "decay_spread": 3.631507956277646e-09,
+        "amplitude_decay_rate": 6.307333758005176e-05,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.0006051893035134112,
+          "growth_cyclic_fa_over_c": -9.631886916050074e-05,
+          "log_amplitude_fit_rms": 0.08206262679134013,
+          "cycles": [
+            175.5026925965625,
+            474.50359720725
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 0.0003799062225499347,
+          "growth_cyclic_fa_over_c": 6.046395323019178e-05,
+          "log_amplitude_fit_rms": 0.02100636207859639,
+          "cycles": [
+            175.5026925965625,
+            324.48939764312496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.0015707083593488,
+          "growth_cyclic_fa_over_c": -0.00024998599954612256,
+          "log_amplitude_fit_rms": 0.018514927673786163,
+          "cycles": [
+            325.48374717624995,
+            474.50359720725
+          ]
+        }
+      ],
+      "late_amplitude_rate": -0.0015707083593488,
+      "late_imaginary_frequency_over_drive": -0.000471387307515391,
+      "rate_window_min": -0.0015707083593488,
+      "rate_window_max": 0.0003799062225499347,
+      "stable_center_rate_for_plot": false,
+      "rejection_reasons": [
+        "AGGREGATE_LOG_FIT_NONEXPONENTIAL",
+        "FIT_WINDOW_RATE_INCONSISTENT"
+      ],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.0006051709444445444,
+              -0.0006052355559144907,
+              -0.0006052007834788086
+            ],
+            "probe_log_RMS": [
+              0.08205597716486694,
+              0.08207249507602339,
+              0.0821092070541179
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              0.0003798534897270486,
+              0.0003799603080466239,
+              0.0003804056595277549
+            ],
+            "probe_log_RMS": [
+              0.02100789838245071,
+              0.021003585562089852,
+              0.021007141082061476
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.0015706328563555064,
+              -0.0015708138265750715,
+              -0.0015712567050311826
+            ],
+            "probe_log_RMS": [
+              0.018499331706235175,
+              0.0185493023737249,
+              0.01855908809925987
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 651.0663723906262,
+        "final_amplitude_median_last10": 750.7497598731655,
+        "final_over_initial": 1.1531078730368391,
+        "min_amplitude": 647.153467418238,
+        "max_amplitude": 1283.973052230906,
+        "absolute_sampled_Hmax": 1483.2025222813536,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": null,
+      "input_hashes": {
+        "summary.json": "56c3462f1c5b0e24e520e383e70d225f9e0da3a7471631c720a76583a2ed845b",
+        "dynamic_fields.npz": "887cd625e765a48ba6b8922b68a066e59bd356abac98759104fdf62fa140715a",
+        "static_traces.npz": "f0601c59b21a4f66afa98908f85fc97284382bf02c31cb5fd25f303ef21c7ed7"
+      }
+    },
+    {
+      "case": "q0.69_loss0",
+      "source_directory": "results/figure4/lorentz_qcontrols/q0.69_loss0",
+      "q": 0.69,
+      "loss_ratio": 0.0,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.0,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": false,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.2646638142747276,
+        "frequency_spread": 2.138716204136415e-09,
+        "decay_cyclic": 3.7659566814475984e-06,
+        "decay_spread": 4.702919645260206e-09,
+        "amplitude_decay_rate": 2.3662203688346342e-05,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0022260008999691414,
+          "growth_cyclic_fa_over_c": 0.00035427904655709654,
+          "log_amplitude_fit_rms": 0.014191317958741238,
+          "cycles": [
+            175.5026925965625,
+            474.50359720725
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 0.0023930578242298,
+          "growth_cyclic_fa_over_c": 0.00038086698183090867,
+          "log_amplitude_fit_rms": 0.00752985292332639,
+          "cycles": [
+            175.5026925965625,
+            324.48939764312496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0020860043784800076,
+          "growth_cyclic_fa_over_c": 0.0003319979081464301,
+          "log_amplitude_fit_rms": 0.005344927460321265,
+          "cycles": [
+            325.48374717624995,
+            474.50359720725
+          ]
+        }
+      ],
+      "late_amplitude_rate": 0.0020860043784800076,
+      "late_imaginary_frequency_over_drive": 0.0006260334590978305,
+      "rate_window_min": 0.0020860043784800076,
+      "rate_window_max": 0.0023930578242298,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.002225975156108524,
+              0.002226032712021211,
+              0.0022262145220954123
+            ],
+            "probe_log_RMS": [
+              0.014222476932464508,
+              0.014131354006046348,
+              0.014072414608406051
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              0.0023929940025002737,
+              0.0023931568694637965,
+              0.0023934681599367784
+            ],
+            "probe_log_RMS": [
+              0.007595285476664027,
+              0.0074009627829853385,
+              0.0072826558903240435
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.0020859841116302345,
+              0.0020860329556574397,
+              0.002086151686959963
+            ],
+            "probe_log_RMS": [
+              0.005426439594217578,
+              0.0051900226637425755,
+              0.0049938440835336885
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 651.118176949103,
+        "final_amplitude_median_last10": 5050.866432099905,
+        "final_over_initial": 7.757219212902919,
+        "min_amplitude": 647.745587814802,
+        "max_amplitude": 5118.867747628896,
+        "absolute_sampled_Hmax": 6016.786776831651,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": null,
+      "input_hashes": {
+        "summary.json": "5dce80e848c450f723f7e3c91ed038493df7e10932969f9225b57f7134bf60e4",
+        "dynamic_fields.npz": "d12ae3303921380e80c3588dda8928503adc7a9ceecc5c69baeeecd8059b3d39",
+        "static_traces.npz": "98c0416156059f82e621028022aef566abdff1a52c325a3fa995079513e8d7fa"
+      }
+    },
+    {
+      "case": "q0.74_loss0.02",
+      "source_directory": "results/figure4/lorentz_qcontrols/q0.74_loss0.02",
+      "q": 0.74,
+      "loss_ratio": 0.02,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.025289495441543096,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.26493169446447,
+        "frequency_spread": 3.895924305385989e-09,
+        "decay_cyclic": -0.000511419449840663,
+        "decay_spread": 5.185102751673054e-09,
+        "amplitude_decay_rate": -0.0032133431730447214,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.00018155819948594608,
+          "growth_cyclic_fa_over_c": 2.889588490705273e-05,
+          "log_amplitude_fit_rms": 0.0080832143999977,
+          "cycles": [
+            175.5026925965625,
+            474.50359720725
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 0.00019204389769891504,
+          "growth_cyclic_fa_over_c": 3.0564735609416595e-05,
+          "log_amplitude_fit_rms": 0.008065267333161751,
+          "cycles": [
+            175.5026925965625,
+            324.48939764312496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.00017043514071784949,
+          "growth_cyclic_fa_over_c": 2.712559512180851e-05,
+          "log_amplitude_fit_rms": 0.00800436931636351,
+          "cycles": [
+            325.48374717624995,
+            474.50359720725
+          ]
+        }
+      ],
+      "late_amplitude_rate": 0.00017043514071784949,
+      "late_imaginary_frequency_over_drive": 5.1149509462280076e-05,
+      "rate_window_min": 0.00017043514071784949,
+      "rate_window_max": 0.00019204389769891504,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.0001815604270808088,
+              0.00018154267369220123,
+              0.0001816156981540089
+            ],
+            "probe_log_RMS": [
+              0.00810971534024877,
+              0.008029400426132635,
+              0.007986770718336166
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              0.0001920426742576517,
+              0.0001920241811175137,
+              0.00019218074653493746
+            ],
+            "probe_log_RMS": [
+              0.008091720726426747,
+              0.008011475834020445,
+              0.007969404507844531
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.00017043476033367237,
+              0.0001704324929409611,
+              0.00017045693406597548
+            ],
+            "probe_log_RMS": [
+              0.00803124297014925,
+              0.007950035183793417,
+              0.007905123685242826
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 224.7777877603018,
+        "final_amplitude_median_last10": 211.42740564553523,
+        "final_over_initial": 0.9406063105799265,
+        "min_amplitude": 186.79276061035938,
+        "max_amplitude": 244.36282502417242,
+        "absolute_sampled_Hmax": 249.6387328900444,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.0032133431730447214,
+        "angular_detuning": -0.0014337037298188793,
+        "net_amplitude_rate": 0.0001943148252185078,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "feeea974439e46c25eaad5ac8a9a738e266138c1be99bad57f162ee88831d80e",
+        "dynamic_fields.npz": "0973f45956b889b1ff4de1dad9456c861f8ab8a44dbf4a80a4528baf10cad754",
+        "static_traces.npz": "47685a7aac4049225ab761810cbdffdd4aac0ad56ecf0c4f1505703a983a480f"
+      }
+    },
+    {
+      "case": "q0.86_loss0.025",
+      "source_directory": "results/figure4/lorentz_qcontrols/q0.86_loss0.025",
+      "q": 0.86,
+      "loss_ratio": 0.025,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.03161186930192887,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.2651593325868139,
+        "frequency_spread": 5.3056644633286965e-09,
+        "decay_cyclic": -0.0006453509559732466,
+        "decay_spread": 4.8753681027198514e-09,
+        "amplitude_decay_rate": -0.004054859644545403,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.00036294873676197145,
+          "growth_cyclic_fa_over_c": -5.776508554462687e-05,
+          "log_amplitude_fit_rms": 0.008652041127085364,
+          "cycles": [
+            175.5026925965625,
+            474.50359720725
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": -0.0003730528677611241,
+          "growth_cyclic_fa_over_c": -5.937320793879006e-05,
+          "log_amplitude_fit_rms": 0.008622866308874839,
+          "cycles": [
+            175.5026925965625,
+            324.48939764312496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": -0.0003593279406814963,
+          "growth_cyclic_fa_over_c": -5.7188817950491486e-05,
+          "log_amplitude_fit_rms": 0.008634067205539485,
+          "cycles": [
+            325.48374717624995,
+            474.50359720725
+          ]
+        }
+      ],
+      "late_amplitude_rate": -0.0003593279406814963,
+      "late_imaginary_frequency_over_drive": -0.00010783837079922655,
+      "rate_window_min": -0.0003730528677611241,
+      "rate_window_max": -0.0003593279406814963,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.0003629443769569272,
+              -0.00036296171104565505,
+              -0.0003629400514883522
+            ],
+            "probe_log_RMS": [
+              0.00865836440735577,
+              0.00864167905575843,
+              0.008614000637436363
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              -0.0003730454844325956,
+              -0.0003730770551469526,
+              -0.000373024883359194
+            ],
+            "probe_log_RMS": [
+              0.008629235787688283,
+              0.008612451881685074,
+              0.00858440747995248
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              -0.00035932615578095984,
+              -0.0003593327930145809,
+              -0.0003593271369815273
+            ],
+            "probe_log_RMS": [
+              0.008640409983629792,
+              0.008623587794382947,
+              0.008596418589893655
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 172.08471598216272,
+        "final_amplitude_median_last10": 93.63851295234306,
+        "final_over_initial": 0.5441419501895164,
+        "min_amplitude": 93.35487072711157,
+        "max_amplitude": 191.4019398295862,
+        "absolute_sampled_Hmax": 160.03466073336273,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.004054859644545403,
+        "angular_detuning": -3.411224153817848e-06,
+        "net_amplitude_rate": -0.0003578841534752101,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "169df3263d977ad7426bc2ec7b361b6b9175c697fa4104a3faf65b287fdc79c8",
+        "dynamic_fields.npz": "f89ea3a705435c3a64b4332de14eb7ed65a3112c45a5e3f5d0a2e5759fb57e93",
+        "static_traces.npz": "ced976d777f4ec4214bbbc0a4bb26d25c42f0fb13a8b5f035eeedb1f5904933f"
+      }
+    },
+    {
+      "case": "q0.8_loss0.02",
+      "source_directory": "results/figure4/lorentz_qcontrols/q0.8_loss0.02",
+      "q": 0.8,
+      "loss_ratio": 0.02,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.025289495441543096,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.2650912688611796,
+        "frequency_spread": 4.228693950558693e-09,
+        "decay_cyclic": -0.0005150577895676871,
+        "decay_spread": 4.607766004036465e-09,
+        "amplitude_decay_rate": -0.003236203535760087,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.00042135918608423646,
+          "growth_cyclic_fa_over_c": 6.7061397282484e-05,
+          "log_amplitude_fit_rms": 0.00860725943019151,
+          "cycles": [
+            175.5026925965625,
+            474.50359720725
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 0.00041261837903357467,
+          "growth_cyclic_fa_over_c": 6.567025463375867e-05,
+          "log_amplitude_fit_rms": 0.00858625323471997,
+          "cycles": [
+            175.5026925965625,
+            324.48939764312496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.00042400507488746437,
+          "growth_cyclic_fa_over_c": 6.748250356438922e-05,
+          "log_amplitude_fit_rms": 0.008593533712843746,
+          "cycles": [
+            325.48374717624995,
+            474.50359720725
+          ]
+        }
+      ],
+      "late_amplitude_rate": 0.00042400507488746437,
+      "late_imaginary_frequency_over_drive": 0.00012724870879717476,
+      "rate_window_min": 0.00041261837903357467,
+      "rate_window_max": 0.00042400507488746437,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.00042136268093393646,
+              0.0004213470143108299,
+              0.00042137674525027
+            ],
+            "probe_log_RMS": [
+              0.008620985361446456,
+              0.008580703794025802,
+              0.008549079009882552
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              0.0004126224874943009,
+              0.0004125991576214517,
+              0.0004126684191037352
+            ],
+            "probe_log_RMS": [
+              0.0085999481914237,
+              0.008559708363121598,
+              0.008528496558847852
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.00042400587340094817,
+              0.0004240020111800571,
+              0.00042401078072689356
+            ],
+            "probe_log_RMS": [
+              0.008607354016617592,
+              0.008566794531198827,
+              0.008534955250523186
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 224.75789540874757,
+        "final_amplitude_median_last10": 249.95769153703847,
+        "final_over_initial": 1.1121197370284244,
+        "min_amplitude": 187.97930792470999,
+        "max_amplitude": 256.9989915831824,
+        "absolute_sampled_Hmax": 296.0098933528057,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.003236203535760087,
+        "angular_detuning": -0.00043106822501104094,
+        "net_amplitude_rate": 0.0004355562062995366,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "bb7356843e10f398563c037597f63b95974d3a153761e4e6f215b58ce6bb1921",
+        "dynamic_fields.npz": "92d501c455ec4cff96db4558f33a83e36f4ed73176aaf0b1318546c460e3232a",
+        "static_traces.npz": "8f4bade851155bff1f276ff7ece694eec2c3569e669636263efd2feede57e5c5"
+      }
+    },
+    {
+      "case": "q1_loss0",
+      "source_directory": "results/figure4/lorentz_qcontrols/q1_loss0",
+      "q": 1.0,
+      "loss_ratio": 0.0,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.0,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": false,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.265191600144476,
+        "frequency_spread": 3.967601414078814e-09,
+        "decay_cyclic": 2.225790677840507e-07,
+        "decay_spread": 4.107424203445457e-09,
+        "amplitude_decay_rate": 1.3985055283864765e-06,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0036974923790936568,
+          "growth_cyclic_fa_over_c": 0.0005884741891773676,
+          "log_amplitude_fit_rms": 0.00872173145512168,
+          "cycles": [
+            175.5026925965625,
+            474.50359720725
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 0.0036878727584405704,
+          "growth_cyclic_fa_over_c": 0.00058694317899976,
+          "log_amplitude_fit_rms": 0.008693591421164777,
+          "cycles": [
+            175.5026925965625,
+            324.48939764312496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0037007793256939145,
+          "growth_cyclic_fa_over_c": 0.0005889973229764778,
+          "log_amplitude_fit_rms": 0.008707766737718212,
+          "cycles": [
+            325.48374717624995,
+            474.50359720725
+          ]
+        }
+      ],
+      "late_amplitude_rate": 0.0037007793256939145,
+      "late_imaginary_frequency_over_drive": 0.001110645647019241,
+      "rate_window_min": 0.0036878727584405704,
+      "rate_window_max": 0.0037007793256939145,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.003697490860252376,
+              0.0036974952209125733,
+              0.0036974993736565574
+            ],
+            "probe_log_RMS": [
+              0.008764763201916827,
+              0.008643144106480075,
+              0.008510804024568759
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              0.0036878591036417284,
+              0.0036879036267212914,
+              0.003687903985064093
+            ],
+            "probe_log_RMS": [
+              0.00873544579743749,
+              0.008616720542917526,
+              0.008491043476832572
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.003700776662069228,
+              0.003700785106027863,
+              0.0037007869637497373
+            ],
+            "probe_log_RMS": [
+              0.008752084009219868,
+              0.008627307604259928,
+              0.008487621002681243
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 663.8791253184679,
+        "final_amplitude_median_last10": 14372.357635825583,
+        "final_over_initial": 21.64905791989024,
+        "min_amplitude": 660.5926661944992,
+        "max_amplitude": 14723.053592624547,
+        "absolute_sampled_Hmax": 17515.000713750243,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": null,
+      "input_hashes": {
+        "summary.json": "01b92964567791defdb5bc627fb38a51e91a8e59aeceb1dab89a630ffc33a40c",
+        "dynamic_fields.npz": "9da3dbbfd60c001a6a51d1d0ef2457dacab7afef477a83a62c08fc492dcd4d8f",
+        "static_traces.npz": "5511cd53f5123dba83b48841cab4c12994b3c29cfd0c156224061903ccb20909"
+      }
+    },
+    {
+      "case": "q1_loss0.02",
+      "source_directory": "results/figure4/lorentz_qcontrols/q1_loss0.02",
+      "q": 1.0,
+      "loss_ratio": 0.02,
+      "drive": 0.530319751,
+      "modulation": 0.01,
+      "material": {
+        "epsilon_inf": 1.0,
+        "N0": 1.21e+29,
+        "resonance_frequency_THz": 600.0,
+        "resonance_cyclic_fa_over_c": 1.2644747720771548,
+        "plasma_angular_wa_over_c": 41.35643878620493,
+        "sigma": 27.096063050128183,
+        "gamma_cyclic_fa_over_c": 0.025289495441543096,
+        "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+      },
+      "resolution": 16,
+      "courant": 0.25,
+      "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+      "static_pole": {
+        "accepted": true,
+        "pole_counts": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "frequency": 0.2651912510178643,
+        "frequency_spread": 5.014832438199335e-09,
+        "decay_cyclic": -0.0005175282515939144,
+        "decay_spread": 4.2779259945644604e-09,
+        "amplitude_decay_rate": -0.003251725906465223,
+        "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+      },
+      "growth_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.00044440236389803426,
+          "growth_cyclic_fa_over_c": 7.072883293609541e-05,
+          "log_amplitude_fit_rms": 0.008669388902169792,
+          "cycles": [
+            175.5026925965625,
+            474.50359720725
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "amplitude_growth_per_meep_time": 0.00043481621191463545,
+          "growth_cyclic_fa_over_c": 6.920314946270731e-05,
+          "log_amplitude_fit_rms": 0.008642585882812606,
+          "cycles": [
+            175.5026925965625,
+            324.48939764312496
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "amplitude_growth_per_meep_time": 0.0004476781810385017,
+          "growth_cyclic_fa_over_c": 7.125019542666596e-05,
+          "log_amplitude_fit_rms": 0.008654128328838873,
+          "cycles": [
+            325.48374717624995,
+            474.50359720725
+          ]
+        }
+      ],
+      "late_amplitude_rate": 0.0004476781810385017,
+      "late_imaginary_frequency_over_drive": 0.00013435327515581437,
+      "rate_window_min": 0.00043481621191463545,
+      "rate_window_max": 0.0004476781810385017,
+      "stable_center_rate_for_plot": true,
+      "rejection_reasons": [],
+      "diagnostics": {
+        "probe_fits": [
+          {
+            "fraction_window": [
+              0.35,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.00044440197123631,
+              0.0004444031214598535,
+              0.0004444040467289129
+            ],
+            "probe_log_RMS": [
+              0.008687451781008727,
+              0.008637661084657902,
+              0.008573371133558346
+            ]
+          },
+          {
+            "fraction_window": [
+              0.35,
+              0.65
+            ],
+            "probe_amplitude_rates": [
+              0.00043481105468941365,
+              0.00043482552570967014,
+              0.0004348421060793419
+            ],
+            "probe_log_RMS": [
+              0.008660698221350526,
+              0.008610750877001515,
+              0.008546425351870642
+            ]
+          },
+          {
+            "fraction_window": [
+              0.65,
+              0.95
+            ],
+            "probe_amplitude_rates": [
+              0.0004476778059321094,
+              0.00044767857079350314,
+              0.00044768179185174445
+            ],
+            "probe_log_RMS": [
+              0.008672190424250674,
+              0.008622423745216263,
+              0.008557978203701667
+            ]
+          }
+        ],
+        "initial_amplitude_median_cycles10_20": 225.16264523694878,
+        "final_amplitude_median_last10": 255.01804413409465,
+        "final_over_initial": 1.1325948132547816,
+        "min_amplitude": 188.62143715188674,
+        "max_amplitude": 262.1935859075864,
+        "absolute_sampled_Hmax": 302.6114061742845,
+        "all_raw_finite": true,
+        "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+      },
+      "static_only_prediction": {
+        "growth_static_lossless": 0.0036969770648495946,
+        "kappa_static": 0.003251725906465223,
+        "angular_detuning": 0.00019713819285016528,
+        "net_amplitude_rate": 0.00043999130249644004,
+        "provenance": "One zero-loss static sigma derivative plus this loss case static frequency/damping; no dynamic-rate fit",
+        "approximation": "Central parametric coupling frozen at gamma=0; dispersive loss/deformation corrections and sideband radiation not independently included"
+      },
+      "input_hashes": {
+        "summary.json": "d38c16755934301c796a77912e6bddf2b7f67b9f2924dd7ac1aaaea15b301826",
+        "dynamic_fields.npz": "f4c8640a906e0d0f2754c668dd70d29c0730a9cd876305067831293ea480c4eb",
+        "static_traces.npz": "883454d86d4773b0195ae69105a2c4e2722635ff9cc60a4a24c7a3c814012cab"
+      }
+    }
+  ],
+  "full_amplification_width": {
+    "status": "FULL_AMPLIFICATION_INTERVAL_NOT_ESTABLISHED",
+    "relative_full_width": null,
+    "reason": "No verified pair of spatial boundaries and no q-dependent loss/coupling validation; do not extrapolate a tangent width"
+  },
+  "clipped_static_width_diagnostics": {
+    "status": "INVALID_CROSS_BRANCH_SPAN_DISCARDED_NO_WIDTH_NUMBERS",
+    "explanation": "Low-q .286 source-visible poles cannot be connected through missing q=.3-.5 data to the high-q .265 branch. Even on q>=.6, central g/kappa do not certify a full amplification width.",
+    "numerical_width_values": null
+  },
+  "rate_gate": {
+    "max_log_RMS": 0.05,
+    "max_window_spread": "max(1e-4, 20% of max absolute rate)",
+    "max_late_probe_spread": "max(1e-4, 20% of max absolute probe rate)"
+  },
+  "limitations": [
+    "Finite-window H amplitude observable; no global Floquet eigenvalue certification",
+    "One spatial resolution and one modulation/time protocol; not a spatial/material convergence result",
+    "High-loss contamination can reflect mode competition or numerical floor; no independent noise-only floor measurement",
+    "No density, effective mass, resonance frequency or damping fitted to paper or dynamic rates"
+  ],
+  "script_sha256": "a77acd1f120820e9f6ee5bbd67f47cd8939f90885e45a7899deaeb2be9172d7d",
+  "paper_drive_control": {
+    "case": "paper_drive_loss0",
+    "source_directory": "results/figure4/lorentz_dynamic/paper_drive_loss0",
+    "q": 0.86,
+    "loss_ratio": 0.0,
+    "drive": 0.826123517757074,
+    "modulation": 0.01,
+    "material": {
+      "epsilon_inf": 1.0,
+      "N0": 1.21e+29,
+      "resonance_frequency_THz": 600.0,
+      "resonance_cyclic_fa_over_c": 1.2644747720771548,
+      "plasma_angular_wa_over_c": 41.35643878620493,
+      "sigma": 27.096063050128183,
+      "gamma_cyclic_fa_over_c": 0.0,
+      "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+    },
+    "resolution": 16,
+    "courant": 0.25,
+    "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+    "static_pole": {
+      "accepted": false,
+      "pole_counts": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "frequency": 0.37588678040294127,
+      "frequency_spread": 0.0011658713086172279,
+      "decay_cyclic": -4.6980690056565065e-05,
+      "decay_spread": 0.0012090958229154258,
+      "amplitude_decay_rate": -0.0002951883814845677,
+      "scope": "Source-visible static isolated pole; damping of explicit Lorentz scenario, no claim of fully converged physical Q"
+    },
+    "growth_fits": [
+      {
+        "fraction_window": [
+          0.35,
+          0.95
+        ],
+        "amplitude_growth_per_meep_time": -2.4624660312865475e-05,
+        "growth_cyclic_fa_over_c": -3.919136410751358e-06,
+        "log_amplitude_fit_rms": 0.037619968391220775,
+        "cycles": [
+          140.50553891852735,
+          379.5004909696559
+        ]
+      },
+      {
+        "fraction_window": [
+          0.35,
+          0.65
+        ],
+        "amplitude_growth_per_meep_time": 8.292136102721241e-05,
+        "growth_cyclic_fa_over_c": 1.31973444953885e-05,
+        "log_amplitude_fit_rms": 0.036239357460625926,
+        "cycles": [
+          140.50553891852735,
+          259.48668774549344
+        ]
+      },
+      {
+        "fraction_window": [
+          0.65,
+          0.95
+        ],
+        "amplitude_growth_per_meep_time": 0.00011673844432434818,
+        "growth_cyclic_fa_over_c": 1.857950046307803e-05,
+        "log_amplitude_fit_rms": 0.03799484373041598,
+        "cycles": [
+          260.4870716927774,
+          379.5004909696559
+        ]
+      }
+    ],
+    "late_amplitude_rate": 0.00011673844432434818,
+    "late_imaginary_frequency_over_drive": 2.2489978875702972e-05,
+    "rate_window_min": -2.4624660312865475e-05,
+    "rate_window_max": 0.00011673844432434818,
+    "stable_center_rate_for_plot": false,
+    "rejection_reasons": [
+      "FIT_WINDOW_RATE_INCONSISTENT",
+      "LATE_SPATIAL_PROBE_RATES_DISAGREE"
+    ],
+    "diagnostics": {
+      "probe_fits": [
+        {
+          "fraction_window": [
+            0.35,
+            0.95
+          ],
+          "probe_amplitude_rates": [
+            0.00037512303756082407,
+            -0.00015081503019300023,
+            6.590084020686924e-05
+          ],
+          "probe_log_RMS": [
+            0.35616804854634554,
+            0.08773836790842829,
+            0.027756916044507418
+          ]
+        },
+        {
+          "fraction_window": [
+            0.35,
+            0.65
+          ],
+          "probe_amplitude_rates": [
+            0.0006044588620496751,
+            0.00014784475251368264,
+            2.7627023425425436e-05
+          ],
+          "probe_log_RMS": [
+            0.37277919340465154,
+            0.08195316720170993,
+            0.02629279525633049
+          ]
+        },
+        {
+          "fraction_window": [
+            0.65,
+            0.95
+          ],
+          "probe_amplitude_rates": [
+            0.0006617050467793627,
+            0.00021325313861184086,
+            3.329814623569296e-05
+          ],
+          "probe_log_RMS": [
+            0.33827823699587944,
+            0.09033911745779595,
+            0.029045918243322047
+          ]
+        }
+      ],
+      "initial_amplitude_median_cycles10_20": 1.5042553430198446,
+      "final_amplitude_median_last10": 1.5747765540010212,
+      "final_over_initial": 1.046881143755556,
+      "min_amplitude": 1.3676395494300795,
+      "max_amplitude": 1.6628543725275673,
+      "absolute_sampled_Hmax": 0.946506925903886,
+      "all_raw_finite": true,
+      "dynamic_range_note": "No noise-only background run exists; absolute amplitude is source-dependent. Small late signal is not proof of floating-point floor."
+    },
+    "static_only_prediction": null,
+    "input_hashes": {
+      "summary.json": "8ef63d6196732eea636e47e886c555d546bd2fa9d5f6e826070871a6985ba97d",
+      "dynamic_fields.npz": "8c6af6e8d40770ccc87a4347f045517fb7f6620dc88a08fbc1dba7e4e9912d33",
+      "static_traces.npz": "b86d3cf3b192f3d9d2fbf8c1240850933b48c8673a48902050319d39ccf35f7b"
+    }
+  }
+}

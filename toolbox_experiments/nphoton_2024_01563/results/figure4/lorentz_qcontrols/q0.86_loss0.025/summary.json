@@ -1,0 +1,157 @@
+{
+  "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+  "q": 0.86,
+  "loss_ratio": 0.025,
+  "resolution": 16,
+  "courant": 0.25,
+  "material": {
+    "epsilon_inf": 1.0,
+    "N0": 1.21e+29,
+    "resonance_frequency_THz": 600.0,
+    "resonance_cyclic_fa_over_c": 1.2644747720771548,
+    "plasma_angular_wa_over_c": 41.35643878620493,
+    "sigma": 27.096063050128183,
+    "gamma_cyclic_fa_over_c": 0.03161186930192887,
+    "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+  },
+  "windows": [
+    [
+      [
+        {
+          "frequency": 0.2651593343987051,
+          "decay": -0.000645352634272725,
+          "error": 1.625364673986215e-10,
+          "amplitude": [
+            -197.40960071828871,
+            -301.1405293079286
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.26515933247833734,
+          "decay": -0.0006453527216770781,
+          "error": 6.711775393959793e-11,
+          "amplitude": [
+            -118.92290087869515,
+            -182.99270477798032
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.26515933338892067,
+          "decay": -0.0006453515392986758,
+          "error": 1.538672136331684e-10,
+          "amplitude": [
+            -37.341838876813824,
+            -56.543908438338846
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "frequency": 0.26515932909304063,
+          "decay": -0.0006453478463089754,
+          "error": 2.3965109617601654e-10,
+          "amplitude": [
+            151.00929943864983,
+            186.59736139426528
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2651593321936884,
+          "decay": -0.0006453511729106206,
+          "error": 3.65308544914623e-11,
+          "amplitude": [
+            91.07578882377405,
+            113.45807045998757
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2651593339681911,
+          "decay": -0.0006453498213714046,
+          "error": 8.88224718883673e-11,
+          "amplitude": [
+            28.536800346595818,
+            35.01837274177612
+          ]
+        }
+      ]
+    ]
+  ],
+  "meep_version": "1.35.0",
+  "source_frequency": 0.26516,
+  "source_width": 0.04,
+  "static_window": 100.0,
+  "modulation": 0.01,
+  "drive": 0.530319751,
+  "periods": 500.0,
+  "native_adapter": {
+    "array_count": 3,
+    "state_count": 2,
+    "realnum_bytes": 8,
+    "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+  },
+  "instantaneous_field_change_on_sigma_update": {
+    "Dx": 0.0,
+    "Dy": 0.0,
+    "Dz": 0.0,
+    "Bx": 0.0,
+    "By": 0.0,
+    "Bz": 0.0,
+    "Ex": 0.0,
+    "Ey": 0.0,
+    "Ez": 0.0
+  },
+  "growth_fits": [
+    {
+      "fraction_window": [
+        0.35,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": -0.00036294873676197145,
+      "growth_cyclic_fa_over_c": -5.776508554462687e-05,
+      "log_amplitude_fit_rms": 0.008652041127085364,
+      "cycles": [
+        175.5026925965625,
+        474.50359720725
+      ]
+    },
+    {
+      "fraction_window": [
+        0.35,
+        0.65
+      ],
+      "amplitude_growth_per_meep_time": -0.0003730528677611241,
+      "growth_cyclic_fa_over_c": -5.937320793879006e-05,
+      "log_amplitude_fit_rms": 0.008622866308874839,
+      "cycles": [
+        175.5026925965625,
+        324.48939764312496
+      ]
+    },
+    {
+      "fraction_window": [
+        0.65,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": -0.0003593279406814963,
+      "growth_cyclic_fa_over_c": -5.7188817950491486e-05,
+      "log_amplitude_fit_rms": 0.008634067205539485,
+      "cycles": [
+        325.48374717624995,
+        474.50359720725
+      ]
+    }
+  ],
+  "timing": "Sigma(t+dt) is updated before native step; polarization state is retained",
+  "constitutive_equation": "Pddot+gamma*Pdot+wr^2*P=wp0^2*[1+m*cos(Omega*t+phase)]*E; D=E+P",
+  "elapsed_seconds": 22.58210764999967
+}

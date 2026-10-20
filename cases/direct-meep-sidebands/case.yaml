@@ -1,0 +1,96 @@
+schema_version: '0.1'
+kind: case
+id: direct-meep-sidebands
+project_id: floquet-maxwell
+title: 同网格直接时变Meep侧带比较
+stage: results_available
+question:
+  summary: 同网格直接时变Meep侧带比较
+  scope: 固定r32弱同步调制；二级原始复幅仍约6%–8%差异，空间精度由另案比较。
+  record:
+    path: sptc_toolbox/results/direct_meep_comparison_20261018/report.md
+capability_refs:
+- green-response
+- open-response-controls
+model:
+  description: 固定r32弱同步调制；二级原始复幅仍约6%–8%差异，空间精度由另案比较。
+  record:
+    path: sptc_toolbox/results/direct_meep_comparison_20261018/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/direct_meep_comparison_20261018/report.md
+execution:
+  environment_ref: meep-linux
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/direct_meep_comparison_20261018/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/meep_direct_slab_floquet.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/direct_meep_comparison_20261018/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/analyze_direct_meep_comparison.py
+  - id: workflow-3
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/direct_meep_comparison_20261018/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/report_direct_meep_comparison.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/direct_meep_comparison_20261018/validation_manifest.json
+  record:
+    path: sptc_toolbox/results/direct_meep_comparison_20261018/validation_manifest.json
+- id: output-2
+  description: sptc_toolbox/results/direct_meep_comparison_20261018/comparison_summary.json
+  record:
+    path: sptc_toolbox/results/direct_meep_comparison_20261018/comparison_summary.json
+- id: output-3
+  description: sptc_toolbox/results/direct_meep_comparison_20261018/backend_timing.json
+  record:
+    path: sptc_toolbox/results/direct_meep_comparison_20261018/backend_timing.json
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/direct_meep_comparison_20261018/report.md
+criteria:
+- id: criterion-1
+  description: 同一r32平滑材料上的奇偶扇区一级/二级复出射与稳态建立。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/direct_meep_comparison_20261018/report.md
+checks:
+- id: check-1
+  method: 直接时变FDTD、两档材料更新时间、零调制及独立晚窗对照
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/direct_meep_comparison_20261018/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/direct_meep_comparison_20261018/report.md
+  artifacts:
+  - path: sptc_toolbox/results/direct_meep_comparison_20261018/validation_manifest.json
+  - path: sptc_toolbox/results/direct_meep_comparison_20261018/comparison_summary.json
+  - path: sptc_toolbox/results/direct_meep_comparison_20261018/backend_timing.json
+  notes: 细档一级复出射差0.0561%/0.0522%，独立晚窗变化0.715%/0.639%，达到预声明1%目标；保存更新时间和实际耗时。 固定r32弱同步调制；二级原始复幅仍约6%–8%差异，空间精度由另案比较。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/direct_meep_comparison_20261018/report.md

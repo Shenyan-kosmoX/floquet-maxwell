@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-15",
+  "status": "FOUR_FOUNDATIONS_IMPLEMENTED_WITH_EXPLICIT_PHYSICAL_LIMITS",
+  "regression": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "806",
+    "time": "20.812",
+    "timestamp": "2026-10-15T19:16:14.232225+08:00",
+    "hostname": "ambiguous"
+  },
+  "new_tests": 57,
+  "prior_tests": 749,
+  "installed_legume_modified": false,
+  "validation_scopes": {
+    "spatial": "Two fixed native W1 momenta; independent cutoff/family sequences NOT_CONVERGED",
+    "bloch": "Synthetic full-subspace gauge controls and actual native local chart tests; missing support preserved",
+    "modal": "Two frozen-phase native 42-mode controls; outer window exhausted; no complete Maxwell claim",
+    "radiation": "Actual positive-axis LPR/Science channels; finite-window piecewise-linear continuum; threshold neighborhoods excluded"
+  },
+  "source_and_result_sha256": {
+    "sptc_toolbox/adaptive_refinement.py": "31c0535e5c934ca5036b3d18a87f2f8c86c4a3fc025d0122449866b5a03fe1f3",
+    "sptc_toolbox/bloch_transport.py": "51046c80c6cdf012c47d61908389ef633e28cc940e7579a6a69aaa0a57470827",
+    "sptc_toolbox/modal_enrichment.py": "2a78bad40486b2151786a152ff26cce3bb2f3975d155a88a4a542cc21312f9a3",
+    "sptc_toolbox/continuum_self_energy.py": "105b6f7847e3b9af0092686c9240a039ca9f0fc0c1afd05d947edfc896d88677",
+    "sptc_toolbox/scripts/plot_four_foundations.py": "95d331b2969db8d1a649a47ea331713469c3d0e60ddf0bde4c0260563a39b6b2",
+    "sptc_toolbox/scripts/validate_bloch_transport.py": "9b159556c9801f54710ea69bd687d6ff1535930b99834430516352abddf5609a",
+    "sptc_toolbox/scripts/validate_modal_enrichment.py": "7ee92da691bcc9eb26ae79191aa6cd16be33d2f5b39874ddc8b8cfb7749fbe0c",
+    "sptc_toolbox/scripts/validate_native_continuum.py": "9059f8d80d84f3e5dabaa5cf31762098ffcce4285ca75690cf8a25a24b035c01",
+    "sptc_toolbox/scripts/validate_spatial_refinement.py": "bd90841a927a2876085fc2fa2c128ff50fcc9ab9a8616166e263cc5f1f890cc4",
+    "sptc_toolbox/results/four_foundations/bloch/summary.json": "aac8663418467f623303c8e8c7518ef5247b335b2d95ec878967de6c4d2b61fa",
+    "sptc_toolbox/results/four_foundations/modal/summary.json": "bd775740c755fdb1d6f98952d8d3a02cb3cdec84d7c7026a225415d810c37db3",
+    "sptc_toolbox/results/four_foundations/radiation/summary.json": "e4af2613b6f02eef76be0987dd892caccb167f26ca1ca5f64d073a5dba7bc6b0",
+    "sptc_toolbox/results/four_foundations/spatial/summary.json": "5d0f55a6731b2cc263645832236432b2148ff5a0be4afe5e38472eb07fc205e9",
+    "sptc_toolbox/results/four_foundations/regression.xml": "1cfeb0d946c2141f1c4ffd331e92968366c39c770d8efe88e3f04a4256b920b8",
+    "sptc_toolbox/results/four_foundations/four_foundations.png": "6c43e02183341abc1f2838f1640ba25e4ed4c49136c8bc7fe6933c0bdb1c88bc"
+  },
+  "primary_report": "report.md",
+  "figure": "four_foundations.png",
+  "commands": [
+    ".venv/Scripts/python.exe -m pytest ptc_fig4/tests lpor_71318/tests sptc_toolbox/tests toolbox_experiments/nphoton_2024_01563 -q --disable-warnings",
+    ".venv/Scripts/python.exe -m sptc_toolbox.scripts.validate_spatial_refinement",
+    ".venv/Scripts/python.exe -m sptc_toolbox.scripts.validate_bloch_transport",
+    ".venv/Scripts/python.exe -m sptc_toolbox.scripts.validate_modal_enrichment",
+    ".venv/Scripts/python.exe -m sptc_toolbox.scripts.validate_native_continuum",
+    ".venv/Scripts/python.exe -m sptc_toolbox.scripts.plot_four_foundations"
+  ]
+}

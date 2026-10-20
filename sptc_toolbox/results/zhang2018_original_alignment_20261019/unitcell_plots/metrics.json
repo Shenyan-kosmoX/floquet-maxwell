@@ -1,0 +1,443 @@
+{
+  "doi": "10.1038/s41467-018-06802-0",
+  "source_panels": [
+    "Main Fig6f,g",
+    "SI Fig3a"
+  ],
+  "static_scope": "COMSOL frequency-domain original-dimension unit cell, normal incidence E_x, periodic boundaries; bias-free control; PEC zero-thickness metal and PEC via, source lossy F4B.",
+  "dynamic_scope": "Actual two complex static reflection states inserted in paper Eq6+7; adiabatic switching, isotropic Epq=1, no unequal-state mutual coupling, switching transient, bias network or dynamic full-wave array.",
+  "capacitance": "Printed article 28pF preserved. 0.028pF is a source-motivated control only, not confirmed erratum or fitted value.",
+  "reference_plane": "Surface z=2mm, propagation sign checked independently by grounded dielectric analytic response",
+  "mesh_sensitivity": {
+    "ON_R7p8": {
+      "common_frequencies": 6,
+      "max_complex_reflection_change": 0.3288379209597719,
+      "max_amplitude_change": 0.012014779664667574,
+      "max_phase_change_deg": 21.962995653735486
+    },
+    "OFF_literal_28pF": {
+      "common_frequencies": 6,
+      "max_complex_reflection_change": 0.37395818884014415,
+      "max_amplitude_change": 0.0010581431452976187,
+      "max_phase_change_deg": 21.853002519164924
+    },
+    "OFF_control_0p028pF": {
+      "common_frequencies": 6,
+      "max_complex_reflection_change": 0.1951539577195241,
+      "max_amplitude_change": 0.0007457169715928691,
+      "max_phase_change_deg": 11.294662772085148
+    }
+  },
+  "mesh4_vs_mesh6_relative_phase": {
+    "OFF_literal_28pF": {
+      "rows": [
+        {
+          "frequency_GHz": 8.0,
+          "phase_gap_change_deg": 0.04592268598858627,
+          "nonzero_harmonic_contrast_change_dB": -0.47951921718494805
+        },
+        {
+          "frequency_GHz": 9.0,
+          "phase_gap_change_deg": 0.015683335019450902,
+          "nonzero_harmonic_contrast_change_dB": -0.6988969130764324
+        },
+        {
+          "frequency_GHz": 9.8,
+          "phase_gap_change_deg": -0.0007932483851246163,
+          "nonzero_harmonic_contrast_change_dB": 0.09637948222298823
+        },
+        {
+          "frequency_GHz": 10.0,
+          "phase_gap_change_deg": 0.0016800176410804132,
+          "nonzero_harmonic_contrast_change_dB": -0.06682568596722481
+        },
+        {
+          "frequency_GHz": 10.2,
+          "phase_gap_change_deg": 0.06805570532378713,
+          "nonzero_harmonic_contrast_change_dB": -1.3408209272330556
+        },
+        {
+          "frequency_GHz": 11.0,
+          "phase_gap_change_deg": 0.10999313457055822,
+          "nonzero_harmonic_contrast_change_dB": 0.1402999335430431
+        }
+      ],
+      "max_abs_phase_gap_change_deg": 0.10999313457055822,
+      "max_abs_contrast_change_dB": 1.3408209272330556
+    },
+    "OFF_control_0p028pF": {
+      "rows": [
+        {
+          "frequency_GHz": 8.0,
+          "phase_gap_change_deg": -2.081207939190196,
+          "nonzero_harmonic_contrast_change_dB": -0.507600473866936
+        },
+        {
+          "frequency_GHz": 9.0,
+          "phase_gap_change_deg": -9.348702420648193,
+          "nonzero_harmonic_contrast_change_dB": -0.5795229420345618
+        },
+        {
+          "frequency_GHz": 9.8,
+          "phase_gap_change_deg": -0.4822047738965727,
+          "nonzero_harmonic_contrast_change_dB": 0.002258858522690748
+        },
+        {
+          "frequency_GHz": 10.0,
+          "phase_gap_change_deg": 0.06793408059294676,
+          "nonzero_harmonic_contrast_change_dB": 0.0005605389073743304
+        },
+        {
+          "frequency_GHz": 10.2,
+          "phase_gap_change_deg": 4.385544046359775,
+          "nonzero_harmonic_contrast_change_dB": -0.022727172624328863
+        },
+        {
+          "frequency_GHz": 11.0,
+          "phase_gap_change_deg": 20.78143582132413,
+          "nonzero_harmonic_contrast_change_dB": 0.4888979687708711
+        }
+      ],
+      "max_abs_phase_gap_change_deg": 20.78143582132413,
+      "max_abs_contrast_change_dB": 0.5795229420345618
+    }
+  },
+  "grounded_slab_checks": {
+    "6": {
+      "observed": [
+        -0.6008347572131961,
+        0.7991766041891994
+      ],
+      "analytic": [
+        -0.6009845265762014,
+        0.7990635736710655
+      ],
+      "absolute_complex_error": 0.00018763464532070724,
+      "reference_plane": "z=2mm",
+      "f_GHz": 10.0,
+      "scope": "Same mesh and periodic ports; PEC grounded dielectric slab analytic reflection"
+    },
+    "4": {
+      "observed": [
+        -0.6009468280942241,
+        0.7990923241213559
+      ],
+      "analytic": [
+        -0.6009845265762014,
+        0.7990635736710655
+      ],
+      "absolute_complex_error": 4.741058885200865e-05,
+      "reference_plane": "z=2mm",
+      "f_GHz": 10.0,
+      "scope": "Same mesh and periodic ports; PEC grounded dielectric slab analytic reflection"
+    },
+    "2": {
+      "observed": [
+        -0.6009868665006388,
+        0.7990620067703054
+      ],
+      "analytic": [
+        -0.6009845265762014,
+        0.7990635736710655
+      ],
+      "absolute_complex_error": 2.8161009152780683e-06,
+      "reference_plane": "z=2mm",
+      "f_GHz": 10.0,
+      "scope": "Same mesh and periodic ports; PEC grounded dielectric slab analytic reflection"
+    },
+    "bias_line_mesh4": {
+      "observed": [
+        -0.6009671245144736,
+        0.7990768294925683
+      ],
+      "analytic": [
+        -0.6009845265762014,
+        0.7990635736710655
+      ],
+      "absolute_complex_error": 2.187575269767764e-05,
+      "reference_plane": "z=2mm",
+      "f_GHz": 10.0,
+      "scope": "Same mesh and periodic ports; PEC grounded dielectric slab analytic reflection"
+    }
+  },
+  "at_10GHz": [
+    {
+      "case": "OFF_literal_28pF",
+      "on_complex": [
+        0.014575763125828478,
+        0.9483099721242322
+      ],
+      "off_complex": [
+        0.009893183447762188,
+        0.9969011794203482
+      ],
+      "ON_amplitude": 0.9484219820844318,
+      "OFF_amplitude": 0.9969502678711774,
+      "ON_phase_deg": 89.11941877741843,
+      "OFF_phase_deg": 89.43141901919249,
+      "unwrapped_ON_minus_OFF_deg": -0.31200024177405794,
+      "contrast_kappa": [
+        -0.002341289839033145,
+        0.024295603648057995
+      ],
+      "average": [
+        0.012234473286795333,
+        0.9726055757722902
+      ],
+      "all_nonzero_harmonic_amplitude_ratio": 0.024408154267250293,
+      "all_nonzero_harmonic_power_ratio": 0.0005957579947338887,
+      "all_nonzero_harmonic_offset_dB": -32.24930120957141,
+      "direct_code_vs_contrast_coefficient_max_error": 4.5076226882552065e-16,
+      "direct_spatial_sum_vs_contrast_max_error": 3.1776437161565096e-14,
+      "orders": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "peak_dB": [
+        -17.95627819711291,
+        -16.407440058004262,
+        -15.936960577188277,
+        35.87455375883407,
+        -15.936960577188248,
+        -16.407440058004273,
+        -17.9562781971129,
+        -18.2712293178816
+      ]
+    },
+    {
+      "case": "OFF_control_0p028pF",
+      "on_complex": [
+        0.014575763125828478,
+        0.9483099721242322
+      ],
+      "off_complex": [
+        -0.4088806878335288,
+        -0.9053239588902199
+      ],
+      "ON_amplitude": 0.9484219820844318,
+      "OFF_amplitude": 0.9933755017232306,
+      "ON_phase_deg": 89.11941877741843,
+      "OFF_phase_deg": -114.3058479803381,
+      "unwrapped_ON_minus_OFF_deg": 203.42526675775653,
+      "contrast_kappa": [
+        -0.21172822547967865,
+        -0.926816965507226
+      ],
+      "average": [
+        -0.19715246235385017,
+        0.02149300661700615
+      ],
+      "all_nonzero_harmonic_amplitude_ratio": 0.9506937093600631,
+      "all_nonzero_harmonic_power_ratio": 0.9038185290167962,
+      "all_nonzero_harmonic_offset_dB": -0.43918759522560363,
+      "direct_code_vs_contrast_coefficient_max_error": 2.237726045655905e-16,
+      "direct_spatial_sum_vs_contrast_max_error": 9.565974336450906e-15,
+      "orders": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "peak_dB": [
+        13.853835417232899,
+        15.402673556341545,
+        15.873153037157532,
+        22.374182744977627,
+        15.87315303715756,
+        15.402673556341536,
+        13.853835417232906,
+        13.53888429646421
+      ]
+    }
+  ],
+  "farfield_static_input_mesh": 2,
+  "sweep_frequencies_GHz": [
+    8.0,
+    8.5,
+    9.0,
+    9.25,
+    9.5,
+    9.75,
+    9.8,
+    10.0,
+    10.2,
+    10.25,
+    10.5,
+    11.0
+  ],
+  "additional_controls": {
+    "mesh2_vs_mesh4": {
+      "ON_R7p8": {
+        "common_frequencies": 3,
+        "max_complex_reflection_change": 0.10708779465962663,
+        "max_amplitude_change": 0.008203321756805049,
+        "max_phase_change_deg": 6.444240791980028
+      },
+      "OFF_literal_28pF": {
+        "common_frequencies": 3,
+        "max_complex_reflection_change": 0.11108271659018962,
+        "max_amplitude_change": 0.0006869120546381113,
+        "max_phase_change_deg": 6.395559619915958
+      },
+      "OFF_control_0p028pF": {
+        "common_frequencies": 3,
+        "max_complex_reflection_change": 0.22185407472134616,
+        "max_amplitude_change": 0.001097692130391792,
+        "max_phase_change_deg": 12.839426156208686
+      }
+    },
+    "mesh2_vs_mesh4_relative_phase": {
+      "OFF_literal_28pF": {
+        "rows": [
+          {
+            "frequency_GHz": 9.8,
+            "phase_gap_change_deg": 0.045507959700691304,
+            "nonzero_harmonic_contrast_change_dB": -1.4888019932700312
+          },
+          {
+            "frequency_GHz": 10.0,
+            "phase_gap_change_deg": 0.03410377578453823,
+            "nonzero_harmonic_contrast_change_dB": -0.9615338336288591
+          },
+          {
+            "frequency_GHz": 10.2,
+            "phase_gap_change_deg": 0.048681172064071083,
+            "nonzero_harmonic_contrast_change_dB": -1.0569896476892482
+          }
+        ],
+        "max_abs_phase_gap_change_deg": 0.048681172064071083,
+        "max_abs_contrast_change_dB": 1.4888019932700312
+      },
+      "OFF_control_0p028pF": {
+        "rows": [
+          {
+            "frequency_GHz": 9.8,
+            "phase_gap_change_deg": -6.420849907295799,
+            "nonzero_harmonic_contrast_change_dB": 0.08235724428758126
+          },
+          {
+            "frequency_GHz": 10.0,
+            "phase_gap_change_deg": -1.9221073300915028,
+            "nonzero_harmonic_contrast_change_dB": 0.056003946571155205
+          },
+          {
+            "frequency_GHz": 10.2,
+            "phase_gap_change_deg": 2.282217423456134,
+            "nonzero_harmonic_contrast_change_dB": -0.00948785928557107
+          }
+        ],
+        "max_abs_phase_gap_change_deg": 6.420849907295799,
+        "max_abs_contrast_change_dB": 0.08235724428758126
+      }
+    },
+    "mesh2_at_10GHz": {
+      "ON_R7p8": {
+        "reflection": [
+          0.014575763125828478,
+          0.9483099721242322
+        ],
+        "amplitude": 0.9484219820844318,
+        "phase_deg": 89.11941877741843
+      },
+      "OFF_literal_28pF": {
+        "reflection": [
+          0.009893183447762188,
+          0.9969011794203482
+        ],
+        "amplitude": 0.9969502678711774,
+        "phase_deg": 89.43141901919249,
+        "phase_ON_minus_OFF_deg": -0.31200024177405794,
+        "principal_phase_separation_deg": 0.3120002417740666,
+        "contrast_power_ratio": 0.0005957579947338887,
+        "contrast_offset_dB": -32.24930120957141
+      },
+      "OFF_control_0p028pF": {
+        "reflection": [
+          -0.4088806878335288,
+          -0.9053239588902199
+        ],
+        "amplitude": 0.9933755017232306,
+        "phase_deg": -114.3058479803381,
+        "phase_ON_minus_OFF_deg": 203.42526675775653,
+        "principal_phase_separation_deg": 156.57473324224347,
+        "contrast_power_ratio": 0.9038185290167962,
+        "contrast_offset_dB": -0.43918759522560363
+      }
+    },
+    "bias_line_vs_biasfree_mesh4": {
+      "ON_R7p8": {
+        "common_frequencies": 1,
+        "max_complex_reflection_change": 0.09524404832275983,
+        "max_amplitude_change": 0.006250228160196936,
+        "max_phase_change_deg": 5.762173950369075
+      },
+      "OFF_literal_28pF": {
+        "common_frequencies": 1,
+        "max_complex_reflection_change": 0.10085175697744388,
+        "max_amplitude_change": 0.0008901126046408914,
+        "max_phase_change_deg": 5.80349048463176
+      },
+      "OFF_control_0p028pF": {
+        "common_frequencies": 1,
+        "max_complex_reflection_change": 0.02966825985823526,
+        "max_amplitude_change": 0.0002240001464697272,
+        "max_phase_change_deg": 1.7102982036333176
+      }
+    },
+    "bias_line_at_10GHz": {
+      "ON_R7p8": {
+        "reflection": [
+          0.18280395161766982,
+          0.930758080594905
+        ],
+        "amplitude": 0.9485398722877952,
+        "phase_deg": 78.88835403436023
+      },
+      "OFF_literal_28pF": {
+        "reflection": [
+          0.18667675558077723,
+          0.9779578032761534
+        ],
+        "amplitude": 0.9956152249051261,
+        "phase_deg": 79.19314151765616,
+        "phase_ON_minus_OFF_deg": -0.3047874832959252,
+        "principal_phase_separation_deg": 0.3047874832959203,
+        "contrast_power_ratio": 0.0005607031079308563,
+        "contrast_offset_dB": -32.51267036636515
+      },
+      "OFF_control_0p028pF": {
+        "reflection": [
+          -0.5326076748344886,
+          -0.8390241384001609
+        ],
+        "amplitude": 0.9937969813350876,
+        "phase_deg": -122.40714430675203,
+        "phase_ON_minus_OFF_deg": 201.29549834111225,
+        "principal_phase_separation_deg": 158.70450165888775,
+        "contrast_power_ratio": 0.9109857244835056,
+        "contrast_offset_dB": -0.40488428544692345
+      }
+    },
+    "bias_scope": "Continuous 0.2mm bias-line geometry control; no unspecified-position RF choke. Not full bias-network reproduction.",
+    "mesh_scope": "Targeted 9.8/10/10.2GHz refinement; this does not establish full 8-11GHz convergence."
+  },
+  "input_hashes": {
+    "sptc_toolbox\\results\\zhang2018_original_alignment_20261019\\unitcell\\sweep_mesh4.json": "4c4df0079e05b52517e3bfc6c1befca417c86ccba1d2203796d31e02c8a4c181",
+    "sptc_toolbox\\results\\zhang2018_original_alignment_20261019\\unitcell\\sweep_mesh6.json": "d30e1b0da2e7d26b8e30b3b328561559de3179af4ee31a06d7d6cdfbc25d8685",
+    "sptc_toolbox\\scripts\\comsol_zhang2018_unitcell.py": "3d1adac14118a51feffecf46570c8a8d0ba859f77d93bec4f23945445319317f",
+    "sptc_toolbox\\literature\\zhang2018_original_alignment_20261019\\parameters\\source_contract.json": "8cd7bc847982afb3c9cc5392a21c29ab911ac846e476f7a2e2bb034c8bccf29a",
+    "sptc_toolbox\\scripts\\plot_zhang2018_unitcell_scattering.py": "0dc29b2c23b7a5ad1fa4fc3e4a36478710275aa49b06a0f6289c63e1c0f0533a",
+    "sptc_toolbox\\results\\zhang2018_original_alignment_20261019\\unitcell\\sweep_mesh2.json": "794885b84647ecc6912838b9fa62754722102ec200831d050f21383959db3ad8",
+    "sptc_toolbox\\results\\zhang2018_original_alignment_20261019\\unitcell\\bias_line\\sweep_mesh4.json": "dd8174ca975f8263a20090c0fafd6ed16cae36aa533b7da6d1011cfb48a33f68"
+  }
+}

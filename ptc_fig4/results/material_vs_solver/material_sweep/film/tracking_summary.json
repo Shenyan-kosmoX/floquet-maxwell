@@ -1,0 +1,908 @@
+{
+  "status": "APPROXIMATE",
+  "material": {
+    "model": "lossless nondispersive exploration",
+    "refractive_index": 4.188779416257368,
+    "epsilon_real": 17.54587299806142,
+    "epsilon_imag_not_used": 0.041741886618510235,
+    "rationale": "Public sample table frozen at 68 THz; no fitting to the target band",
+    "approximation": "constant epsilon; approximate qualitative comparison only",
+    "public_sample": "film",
+    "source_table": "ptc_fig4\\literature\\ge_film.yml",
+    "freeze_frequency_thz": 68.0
+  },
+  "gmax": 6.1,
+  "vertical_modes": 12,
+  "kpoint_count": 25,
+  "numeig_per_k": 24,
+  "seed": {
+    "reference": "ptc_fig4\\results\\legume_gamma_g8_v16",
+    "reference_mode": 6,
+    "selection": "largest physical H-field overlap among A2g modes",
+    "candidates": [
+      {
+        "mode": 6,
+        "irrep": "A2g",
+        "overlap_squared": 0.9969016153215877,
+        "frequency_thz": 65.75813628133758
+      }
+    ]
+  },
+  "tracking": [
+    {
+      "k_index": 0,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9693467771962042,
+      "second_overlap_squared": 0.004867025619828177,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.0000454167692727,
+          -5.196222089172386e-23
+        ]
+      ],
+      "second_mode_indices": [
+        12
+      ],
+      "frequency_range_thz": [
+        63.55348105027984,
+        63.55348105027984
+      ],
+      "radiation_q_range": [
+        Infinity,
+        Infinity
+      ]
+    },
+    {
+      "k_index": 1,
+      "mode_indices": [
+        7
+      ],
+      "overlap_squared": 0.9841373662754545,
+      "second_overlap_squared": 0.0018701865497765431,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.0007592430165444,
+          5.341303449963135e-23
+        ]
+      ],
+      "second_mode_indices": [
+        12
+      ],
+      "frequency_range_thz": [
+        63.60826469097616,
+        63.60826469097616
+      ],
+      "radiation_q_range": [
+        89.36818347076635,
+        89.36818347076635
+      ]
+    },
+    {
+      "k_index": 2,
+      "mode_indices": [
+        7
+      ],
+      "overlap_squared": 0.9922797108870565,
+      "second_overlap_squared": 0.0014324839653447842,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.0010953717136384,
+          -5.853985078456191e-23
+        ]
+      ],
+      "second_mode_indices": [
+        10
+      ],
+      "frequency_range_thz": [
+        63.79049899549893,
+        63.79049899549893
+      ],
+      "radiation_q_range": [
+        66.82030985536089,
+        66.82030985536089
+      ]
+    },
+    {
+      "k_index": 3,
+      "mode_indices": [
+        6
+      ],
+      "overlap_squared": 0.9935671399740154,
+      "second_overlap_squared": 0.0006742603927945001,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.0006303447185483,
+          6.386958557064752e-23
+        ]
+      ],
+      "second_mode_indices": [
+        10
+      ],
+      "frequency_range_thz": [
+        64.08822827587532,
+        64.08822827587532
+      ],
+      "radiation_q_range": [
+        66.23176748676264,
+        66.23176748676264
+      ]
+    },
+    {
+      "k_index": 4,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9919494084407889,
+      "second_overlap_squared": 0.0014258295745167631,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.0002684769342753,
+          6.835463048764899e-23
+        ]
+      ],
+      "second_mode_indices": [
+        7
+      ],
+      "frequency_range_thz": [
+        64.47469699269072,
+        64.47469699269072
+      ],
+      "radiation_q_range": [
+        71.1044305190771,
+        71.1044305190771
+      ]
+    },
+    {
+      "k_index": 5,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9899315417420971,
+      "second_overlap_squared": 0.0015892516733789369,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.000101799931878,
+          -7.115377759932286e-23
+        ]
+      ],
+      "second_mode_indices": [
+        23
+      ],
+      "frequency_range_thz": [
+        64.91252836897934,
+        64.91252836897934
+      ],
+      "radiation_q_range": [
+        87.68872818366218,
+        87.68872818366218
+      ]
+    },
+    {
+      "k_index": 6,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9866493144301558,
+      "second_overlap_squared": 0.0027145832559193686,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.0000589119205463,
+          -7.212498850742607e-23
+        ]
+      ],
+      "second_mode_indices": [
+        19
+      ],
+      "frequency_range_thz": [
+        65.32331482802535,
+        65.32331482802535
+      ],
+      "radiation_q_range": [
+        129.9765149709157,
+        129.9765149709157
+      ]
+    },
+    {
+      "k_index": 7,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9837340734982364,
+      "second_overlap_squared": 0.003475207957346229,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.0000518980435487,
+          6.926952971353316e-23
+        ]
+      ],
+      "second_mode_indices": [
+        15
+      ],
+      "frequency_range_thz": [
+        65.62778761980165,
+        65.62778761980165
+      ],
+      "radiation_q_range": [
+        299.1544040458609,
+        299.1544040458609
+      ]
+    },
+    {
+      "k_index": 8,
+      "mode_indices": [
+        6
+      ],
+      "overlap_squared": 1.0,
+      "second_overlap_squared": 0.0,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "frequency_range_thz": [
+        65.75813628133758,
+        65.75813628133758
+      ],
+      "radiation_q_range": [
+        4.232534341987183e+27,
+        4.232534341987183e+27
+      ]
+    },
+    {
+      "k_index": 9,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9912284887211285,
+      "second_overlap_squared": 0.0013881860353989865,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.0002384140017908,
+          -4.125657778591067e-24
+        ]
+      ],
+      "second_mode_indices": [
+        14
+      ],
+      "frequency_range_thz": [
+        65.68218737534565,
+        65.68218737534565
+      ],
+      "radiation_q_range": [
+        582.2616845007543,
+        582.2616845007543
+      ]
+    },
+    {
+      "k_index": 10,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9860194950748399,
+      "second_overlap_squared": 0.007903074095194917,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.0003358166973086,
+          3.2518009355847315e-23
+        ]
+      ],
+      "second_mode_indices": [
+        13
+      ],
+      "frequency_range_thz": [
+        65.46236392191118,
+        65.46236392191118
+      ],
+      "radiation_q_range": [
+        200.37286599744917,
+        200.37286599744917
+      ]
+    },
+    {
+      "k_index": 11,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9778895188212908,
+      "second_overlap_squared": 0.01487946249605424,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.0003343587060742,
+          -4.8458023395158944e-23
+        ]
+      ],
+      "second_mode_indices": [
+        9
+      ],
+      "frequency_range_thz": [
+        65.03441778499553,
+        65.03441778499553
+      ],
+      "radiation_q_range": [
+        93.51901795125777,
+        93.51901795125777
+      ]
+    },
+    {
+      "k_index": 12,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.970580973557325,
+      "second_overlap_squared": 0.017203157116014653,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.0002696631333474,
+          -5.2130675125249923e-23
+        ]
+      ],
+      "second_mode_indices": [
+        9
+      ],
+      "frequency_range_thz": [
+        64.33549131153545,
+        64.33549131153545
+      ],
+      "radiation_q_range": [
+        51.51658521806986,
+        51.51658521806986
+      ]
+    },
+    {
+      "k_index": 13,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9671100780541221,
+      "second_overlap_squared": 0.013176335396125827,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.0002173327622774,
+          -4.803050659263289e-23
+        ]
+      ],
+      "second_mode_indices": [
+        9
+      ],
+      "frequency_range_thz": [
+        63.383093818977464,
+        63.383093818977464
+      ],
+      "radiation_q_range": [
+        22.92593077009234,
+        22.92593077009234
+      ]
+    },
+    {
+      "k_index": 14,
+      "mode_indices": [
+        6
+      ],
+      "overlap_squared": 0.963062226025317,
+      "second_overlap_squared": 0.006594345294146725,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.0002013040564353,
+          4.2568553848926275e-23
+        ]
+      ],
+      "second_mode_indices": [
+        9
+      ],
+      "frequency_range_thz": [
+        62.3521143671761,
+        62.3521143671761
+      ],
+      "radiation_q_range": [
+        12.670898575438143,
+        12.670898575438143
+      ]
+    },
+    {
+      "k_index": 15,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9606056119607356,
+      "second_overlap_squared": 0.003509191468759593,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.000196925799008,
+          3.8535435965500895e-23
+        ]
+      ],
+      "second_mode_indices": [
+        16
+      ],
+      "frequency_range_thz": [
+        61.57393907263478,
+        61.57393907263478
+      ],
+      "radiation_q_range": [
+        10.558364668054386,
+        10.558364668054386
+      ]
+    },
+    {
+      "k_index": 16,
+      "mode_indices": [
+        4
+      ],
+      "overlap_squared": 0.9691000401728508,
+      "second_overlap_squared": 0.001149979694519303,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.0001937959638436,
+          3.6906918633452716e-23
+        ]
+      ],
+      "second_mode_indices": [
+        17
+      ],
+      "frequency_range_thz": [
+        61.293273618339256,
+        61.293273618339256
+      ],
+      "radiation_q_range": [
+        10.263343738844446,
+        10.263343738844446
+      ]
+    },
+    {
+      "k_index": 17,
+      "mode_indices": [
+        4
+      ],
+      "overlap_squared": 0.9978789817145121,
+      "second_overlap_squared": 0.0008907187730113794,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.0002172339733901,
+          3.6479662315907254e-23
+        ]
+      ],
+      "second_mode_indices": [
+        13
+      ],
+      "frequency_range_thz": [
+        61.303652418366156,
+        61.303652418366156
+      ],
+      "radiation_q_range": [
+        10.187829268033603,
+        10.187829268033603
+      ]
+    },
+    {
+      "k_index": 18,
+      "mode_indices": [
+        4
+      ],
+      "overlap_squared": 0.9971486079485158,
+      "second_overlap_squared": 0.0009067664952879729,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.000590711321817,
+          3.435080719072322e-23
+        ]
+      ],
+      "second_mode_indices": [
+        13
+      ],
+      "frequency_range_thz": [
+        61.352738328708895,
+        61.352738328708895
+      ],
+      "radiation_q_range": [
+        9.9385554909277,
+        9.9385554909277
+      ]
+    },
+    {
+      "k_index": 19,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9957226379629532,
+      "second_overlap_squared": 0.000819950956017389,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.0019804788844557,
+          -3.3257282172469436e-23
+        ]
+      ],
+      "second_mode_indices": [
+        14
+      ],
+      "frequency_range_thz": [
+        61.46467537450336,
+        61.46467537450336
+      ],
+      "radiation_q_range": [
+        9.572486677432089,
+        9.572486677432089
+      ]
+    },
+    {
+      "k_index": 20,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.992455248503929,
+      "second_overlap_squared": 0.0006024334089925905,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          1.0061141482986584,
+          3.382164446167458e-23
+        ]
+      ],
+      "second_mode_indices": [
+        14
+      ],
+      "frequency_range_thz": [
+        61.693437636115256,
+        61.693437636115256
+      ],
+      "radiation_q_range": [
+        9.135066568652183,
+        9.135066568652183
+      ]
+    },
+    {
+      "k_index": 21,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9776835207418437,
+      "second_overlap_squared": 0.0004852964150411633,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.0139003449407178,
+          -3.971757842082746e-23
+        ]
+      ],
+      "second_mode_indices": [
+        21
+      ],
+      "frequency_range_thz": [
+        62.18323141721702,
+        62.18323141721702
+      ],
+      "radiation_q_range": [
+        9.240695706539405,
+        9.240695706539405
+      ]
+    },
+    {
+      "k_index": 22,
+      "mode_indices": [
+        6
+      ],
+      "overlap_squared": 0.9328231185710175,
+      "second_overlap_squared": 0.03394678180209083,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.015161836539028,
+          -5.421511586137417e-23
+        ]
+      ],
+      "second_mode_indices": [
+        0
+      ],
+      "frequency_range_thz": [
+        63.004471409624045,
+        63.004471409624045
+      ],
+      "radiation_q_range": [
+        13.677784232641498,
+        13.677784232641498
+      ]
+    },
+    {
+      "k_index": 23,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.8514717085897582,
+      "second_overlap_squared": 0.10591211216347092,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.0019472415222335,
+          -5.847134972779926e-23
+        ]
+      ],
+      "second_mode_indices": [
+        9
+      ],
+      "frequency_range_thz": [
+        63.52992022932364,
+        63.52992022932364
+      ],
+      "radiation_q_range": [
+        54.76482658911964,
+        54.76482658911964
+      ]
+    },
+    {
+      "k_index": 24,
+      "mode_indices": [
+        5
+      ],
+      "overlap_squared": 0.9680496570958732,
+      "second_overlap_squared": 0.014905235451724608,
+      "ambiguous": false,
+      "degenerate": false,
+      "subspace_coefficients": [
+        [
+          -1.0000454167692727,
+          -5.442916195091395e-23
+        ]
+      ],
+      "second_mode_indices": [
+        9
+      ],
+      "frequency_range_thz": [
+        63.55348105027984,
+        63.55348105027984
+      ],
+      "radiation_q_range": [
+        Infinity,
+        Infinity
+      ]
+    }
+  ],
+  "vertex_frequencies_thz": {
+    "M_start": 63.55348105027984,
+    "Gamma": 65.75813628133758,
+    "X": 61.293273618339256,
+    "M_end": 63.55348105027984
+  },
+  "sampled_bandwidth_thz": 4.464862662998328,
+  "relative_sampled_bandwidth": 0.06789825435283016,
+  "sampled_minimum_thz": 61.293273618339256,
+  "sampled_maximum_thz": 65.75813628133758,
+  "Gamma_is_sampled_maximum": true,
+  "Gamma_difference_from_approximate_paper_68THz": -2.2418637186624153,
+  "minimum_neighbor_field_overlap_squared": 0.8514717085897582,
+  "ambiguous_k_indexes": [],
+  "degenerate_k_indexes": [],
+  "eigenvectors": "Hermitian GME right eigenvectors; left vectors equal right vectors for that spatial operator only",
+  "H_gram_diagnostics": [
+    {
+      "k_index": 0,
+      "relative_frobenius_error_to_identity": 0.019781770014799634,
+      "diagonal_min": 0.9372463252655395,
+      "diagonal_max": 0.9999757117423226,
+      "max_absolute_off_diagonal": 0.02002965170495752
+    },
+    {
+      "k_index": 1,
+      "relative_frobenius_error_to_identity": 0.02457954773455074,
+      "diagonal_min": 0.9161196922374021,
+      "diagonal_max": 0.9999713485388465,
+      "max_absolute_off_diagonal": 0.022118475648148245
+    },
+    {
+      "k_index": 2,
+      "relative_frobenius_error_to_identity": 0.0172465681734894,
+      "diagonal_min": 0.9676886642848138,
+      "diagonal_max": 0.999971448351838,
+      "max_absolute_off_diagonal": 0.018689790482178004
+    },
+    {
+      "k_index": 3,
+      "relative_frobenius_error_to_identity": 0.006472420343848156,
+      "diagonal_min": 0.9817375358691681,
+      "diagonal_max": 0.9999756106614041,
+      "max_absolute_off_diagonal": 0.009953561445359306
+    },
+    {
+      "k_index": 4,
+      "relative_frobenius_error_to_identity": 0.0033840908746672824,
+      "diagonal_min": 0.9895470977981264,
+      "diagonal_max": 0.9999759896698761,
+      "max_absolute_off_diagonal": 0.004619826891931448
+    },
+    {
+      "k_index": 5,
+      "relative_frobenius_error_to_identity": 0.0013305909363422116,
+      "diagonal_min": 0.9958830153704838,
+      "diagonal_max": 0.9999755559097834,
+      "max_absolute_off_diagonal": 0.001136512267639937
+    },
+    {
+      "k_index": 6,
+      "relative_frobenius_error_to_identity": 0.0005729185201893526,
+      "diagonal_min": 0.9985863626760797,
+      "diagonal_max": 0.9999656740899324,
+      "max_absolute_off_diagonal": 0.0006345039847497696
+    },
+    {
+      "k_index": 7,
+      "relative_frobenius_error_to_identity": 0.001596429731273823,
+      "diagonal_min": 0.9964110366972857,
+      "diagonal_max": 0.9999612171375768,
+      "max_absolute_off_diagonal": 0.002640766257948155
+    },
+    {
+      "k_index": 8,
+      "relative_frobenius_error_to_identity": 0.012984752151265643,
+      "diagonal_min": 0.9382343773186287,
+      "diagonal_max": 0.9999735091806138,
+      "max_absolute_off_diagonal": 0.010159169546725537
+    },
+    {
+      "k_index": 9,
+      "relative_frobenius_error_to_identity": 0.012583964344050104,
+      "diagonal_min": 0.9567070226783913,
+      "diagonal_max": 0.9999679242352986,
+      "max_absolute_off_diagonal": 0.023135784039284114
+    },
+    {
+      "k_index": 10,
+      "relative_frobenius_error_to_identity": 0.016659994762980006,
+      "diagonal_min": 0.9472799852468795,
+      "diagonal_max": 0.9999524481914892,
+      "max_absolute_off_diagonal": 0.0316286915600157
+    },
+    {
+      "k_index": 11,
+      "relative_frobenius_error_to_identity": 0.00949922089438743,
+      "diagonal_min": 0.97627217818872,
+      "diagonal_max": 0.9999611500276834,
+      "max_absolute_off_diagonal": 0.017168778352061716
+    },
+    {
+      "k_index": 12,
+      "relative_frobenius_error_to_identity": 0.007212927646242044,
+      "diagonal_min": 0.9774109756178965,
+      "diagonal_max": 0.9999512478462181,
+      "max_absolute_off_diagonal": 0.007016863277916956
+    },
+    {
+      "k_index": 13,
+      "relative_frobenius_error_to_identity": 0.018927117618136084,
+      "diagonal_min": 0.9187136188575691,
+      "diagonal_max": 0.9999614863627696,
+      "max_absolute_off_diagonal": 0.024725386685208454
+    },
+    {
+      "k_index": 14,
+      "relative_frobenius_error_to_identity": 0.051124903407741534,
+      "diagonal_min": 0.8748783019553276,
+      "diagonal_max": 0.9999705678003953,
+      "max_absolute_off_diagonal": 0.12371614175794608
+    },
+    {
+      "k_index": 15,
+      "relative_frobenius_error_to_identity": 0.0039324538282313045,
+      "diagonal_min": 0.9878260219657153,
+      "diagonal_max": 0.9999728970716787,
+      "max_absolute_off_diagonal": 0.0037060509883322713
+    },
+    {
+      "k_index": 16,
+      "relative_frobenius_error_to_identity": 0.008716893758125885,
+      "diagonal_min": 0.9610537971190746,
+      "diagonal_max": 0.9999731777521834,
+      "max_absolute_off_diagonal": 0.006393788980415152
+    },
+    {
+      "k_index": 17,
+      "relative_frobenius_error_to_identity": 0.02708449749121896,
+      "diagonal_min": 0.8911626800574688,
+      "diagonal_max": 0.9999559510990669,
+      "max_absolute_off_diagonal": 0.03156576028388458
+    },
+    {
+      "k_index": 18,
+      "relative_frobenius_error_to_identity": 0.027186582454781984,
+      "diagonal_min": 0.9499691214200007,
+      "diagonal_max": 0.9999413155222577,
+      "max_absolute_off_diagonal": 0.037889527210981176
+    },
+    {
+      "k_index": 19,
+      "relative_frobenius_error_to_identity": 0.01605305679926833,
+      "diagonal_min": 0.97362400818121,
+      "diagonal_max": 0.9998712917378435,
+      "max_absolute_off_diagonal": 0.025566708312577666
+    },
+    {
+      "k_index": 20,
+      "relative_frobenius_error_to_identity": 0.010123192972132862,
+      "diagonal_min": 0.9762440307861817,
+      "diagonal_max": 0.9999716964745455,
+      "max_absolute_off_diagonal": 0.010682039882428003
+    },
+    {
+      "k_index": 21,
+      "relative_frobenius_error_to_identity": 0.02218190800435512,
+      "diagonal_min": 0.9159211651999544,
+      "diagonal_max": 0.9999677598069812,
+      "max_absolute_off_diagonal": 0.02408414462559769
+    },
+    {
+      "k_index": 22,
+      "relative_frobenius_error_to_identity": 0.034386174388069304,
+      "diagonal_min": 0.8759737947506292,
+      "diagonal_max": 0.9999669781199031,
+      "max_absolute_off_diagonal": 0.03581954796245029
+    },
+    {
+      "k_index": 23,
+      "relative_frobenius_error_to_identity": 0.026316334797780932,
+      "diagonal_min": 0.9161249364719349,
+      "diagonal_max": 0.9999735172798442,
+      "max_absolute_off_diagonal": 0.028872610389732434
+    },
+    {
+      "k_index": 24,
+      "relative_frobenius_error_to_identity": 0.019781770014799634,
+      "diagonal_min": 0.9372463252655395,
+      "diagonal_max": 0.9999757117423226,
+      "max_absolute_off_diagonal": 0.02002965170495752
+    }
+  ],
+  "limitations": [
+    "GME real-frequency approximation",
+    "radiation linewidth computed perturbatively",
+    "constant lossless n=4.18878",
+    "finite spatial cutoffs",
+    "sampled k-path only",
+    "A2g character and continuation do not independently verify the paper's radial identity",
+    "no dynamic Ge/Floquet calculation"
+  ],
+  "execution_seconds": 162.837839099986
+}

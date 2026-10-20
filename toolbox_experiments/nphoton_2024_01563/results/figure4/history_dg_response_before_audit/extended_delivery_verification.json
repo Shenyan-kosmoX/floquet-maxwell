@@ -1,0 +1,162 @@
+{
+  "generated_at_utc": "2026-10-14T11:14:24.132016+00:00",
+  "status": "DELIVERY_VERIFIED_WITH_EXPLICIT_INCOMPLETE_FIGURE4J",
+  "complete_paper_figure4_reproduction": false,
+  "panel_b": {
+    "actual_k_points": 193,
+    "reused_points": 97,
+    "new_native_solves": 96,
+    "processing_status": "DENSE_193_POINT_PROCESSING_AND_PROVENANCE_CHECKS_PASS",
+    "old_97_columns_bitwise_equal": true,
+    "frequency_or_spatial_resolution_increased": false
+  },
+  "panels_d_g": {
+    "actual_k_points_each": 49,
+    "modulated_native_cases": 98,
+    "pump_THz": [
+      183,
+      392
+    ],
+    "processing_status": "ALL_98_NATIVE_DYNAMIC_CASES_AND_SIGNED_SPECTRA_VERIFIED",
+    "observable": "Signed dynamic field power folded modulo pump, finite observation window",
+    "complete_Smin_or_eigenmode_spectrum": false
+  },
+  "local_panels_e_f_h_i": {
+    "scope": "Prior independently checked local complex-frequency observations with static-calibrated single-mode approximations",
+    "same_run_zooms_of_d_g": false
+  },
+  "panel_j": {
+    "status": "LOSS_CONTROL_COMPUTED_ORIGINAL_PANEL_INCOMPLETE",
+    "actual_half_drive_THz": 125.81977024235356,
+    "paper_half_drive_THz": 196.0,
+    "observed_center_threshold": [
+      {
+        "loss_ratio_bracket": [
+          0.02,
+          0.025
+        ],
+        "linear_interpolated_zero": 0.022799544716898826,
+        "scope": "Observed sign-change bracket, not exact instability threshold"
+      }
+    ],
+    "full_amplification_width": {
+      "status": "FULL_AMPLIFICATION_INTERVAL_NOT_ESTABLISHED",
+      "relative_full_width": null,
+      "reason": "No verified pair of spatial boundaries and no q-dependent loss/coupling validation; do not extrapolate a tangent width"
+    },
+    "material_fit_used": false
+  },
+  "regression": {
+    "tests": 442,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "plot_source_hash_checks": {
+    "results/figure4/dispersion_data.json": true,
+    "results/figure4/static_band_map_193/band_map.npz": true,
+    "results/figure4/full_dynamic_maps/resonant/dynamic_map.npz": true,
+    "results/figure4/full_dynamic_maps/nonresonant/dynamic_map.npz": true,
+    "results/figure4/lorentz_loss_analysis/summary.json": true,
+    "plot_figure4_extended.py": true
+  },
+  "array_shapes": {
+    "results/figure4/static_band_map_193/band_map.npz": {
+      "k_cyclic": [
+        193,
+        2
+      ],
+      "normalized_power": [
+        193,
+        573
+      ]
+    },
+    "results/figure4/full_dynamic_maps/nonresonant/dynamic_map.npz": {
+      "k_cyclic": [
+        49,
+        2
+      ],
+      "normalized_power": [
+        49,
+        256
+      ]
+    },
+    "results/figure4/full_dynamic_maps/resonant/dynamic_map.npz": {
+      "k_cyclic": [
+        49,
+        2
+      ],
+      "normalized_power": [
+        49,
+        256
+      ]
+    }
+  },
+  "visual_review": "Combined rendered PNG checked for labels, units, overlaps, legends, observable definitions, and incomplete-j annotation; PDF/SVG exported.",
+  "historical_verification": "delivery_verification.json and history_97k preserve the preceding 97-point delivery. This manifest records the current expanded delivery.",
+  "sha256": {
+    "README.md": "261764163ba99799f2974fd6ea999d5598c31084ae12f3c91bccc2b2c70e3499",
+    "design.md": "217e51642948d306194203e6c2d5e1d9da5342dc5735d9a9d14a044c5e053f43",
+    "docs/figure4j_material_contract.md": "7fbb1284d50cd04609e1ae5ecf1f440c3ea73707f0f80aa66d22aff0a179c263",
+    "docs/lorentz_density_gate_review.md": "015d7488df4182a1d656214b4579f47151ff67d991349588ac541f37f607587b",
+    "plot_figure4_reproduction.py": "85b1525ec1a2672f6659bebe010fe7edcc6338de458864960c3bd1d06067890c",
+    "plot_figure4_extended.py": "d263bcac0509239619436277634f2fdf52546e773569d2392be63f9d76429e2d",
+    "meep_band_map.py": "541ca198b83b2c3a12261b9ab2a0698adf5d4a6b4779b541a7123522ade45140",
+    "refine_band_map_193.py": "270a707fcfa0143f6e1b78e4a559ae32375459905b84d271a4c23877be721fac",
+    "meep_floquet_spectral_map.py": "d1c070d2dcd079bb9facc1288ada29c19eb25fd5817133d944ee3915d70dbd4b",
+    "native_lorentz_sigma.cpp": "a033aecb7bd3a83a56ff64927795a0761174f9f4b797833757363e3813582633",
+    "native_lorentz_sigma.py": "c182c3cb4ca4c55d06902edba19da01fc722448846cc0cb7fe7dfa17199a9e78",
+    "lorentz_density_reference.py": "3e4f25841a1c26c8307926b436689330d9fa44b0119f69223a6b74349db7a5a3",
+    "meep_lorentz_density_gate.py": "819ac2f8d8a3b74350b84a7690b863179a9d760baf44d7ac19bc5800b9d5ee14",
+    "test_lorentz_density_reference.py": "cb8198de9dadd5bbe4d2dcdd35ee79c2412b0cb4629282aacbf68b3efa008ca6",
+    "meep_lorentz_sphere.py": "94dd2b183e7b9e8096aef4d0f7834ea37fe8046db49febbb4baa26638102e8ea",
+    "run_lorentz_loss_scan.py": "5f9066106f5b81a4e429da1f5bc6f0c0660e85ae8db3c14f0c475273a99c2f66",
+    "run_lorentz_momentum_controls.py": "3de41e69a130f069f1fcc20500ac20add4ec6cef0a52b19923e1ab5294432276",
+    "run_lorentz_static_scan.py": "998b6ea25619353c1aab22ca2ee3238b58de6e98d6ee6694dad6a90db772cc29",
+    "run_lorentz_extended_q.py": "5b256c4e9618a3825025d57ec7c59e8232da436f504a51c39612fcdd1106c27c",
+    "lorentz_loss_analysis.py": "a77acd1f120820e9f6ee5bbd67f47cd8939f90885e45a7899deaeb2be9172d7d",
+    "native_build/liblorentz_sigma.so": "143148ccb1882e2c7506b819fa8d59a281ce63154f171efc2708783195f679d9",
+    "native_build/build_manifest.json": "f4263f56559db23e3d42b6eee304e6a97e5ea8d6a35dbccac89bb294b970b112",
+    "results/lorentz_density_gate/native/summary.json": "c449edfc8786cde2975cd66131fa6b5fa700faea6019932e416e8568cbc3abeb",
+    "results/lorentz_density_gate/fine/summary.json": "5559ea0e0cf19cf0cef6bd640cd36bf92b4ce05446f56c31d60fd5424ec56abf",
+    "results/lorentz_density_gate/reference/summary.json": "19f9ea313ef5286096348ecefa0e77bdba74bf90798b33d230815deb577b7df9",
+    "results/lorentz_density_gate/final_guard_validation/summary.json": "7014a5f0e906a17146270e3c1536e4fba67a6e023c7f43bc318b26bce2575564",
+    "results/figure4/README.md": "70960b377935c53b40e5ae48b2853db2527559b71417986033cbcf38e687c1a5",
+    "results/figure4/EXTENDED_README.md": "b42ca3ea5be17f07314f236b8b38c24174ce85074247789fb69c5099c6ad82e8",
+    "results/figure4/extended_manifest.json": "bb625900980a1332246c82d489941d24d46d433e6a4da263e2e9be23855b3818",
+    "results/figure4/figure_manifest.json": "4d5f06ff65343a7c909666b8f0daf5a174a013619d3e0c2a3b1b385547026dda",
+    "results/figure4/extended_regression.xml": "3a1ddfb9ec81dee658bfcb438ee207a081483192acb6910abfb67307844b7735",
+    "results/figure4/dispersion_data.json": "15565dfb13dccfba40250cbd78d6500dca95809a928b3c368ec59f5b203c9c53",
+    "results/figure4/static_band_map_193/band_map.npz": "04b3908ef9d8b4f8625b0ee75e2706266aacd8c0927eff587ebca4517207bcda",
+    "results/figure4/static_band_map_193/summary.json": "0233bf602bab787cff19115622ef340a83a494867bc18bbe21df7e2fb2866d48",
+    "results/figure4/static_band_map_193/processing_checks.json": "181ce6d8361a12fb45e48bc15a8fb37fa0d8b1fbae344932ec8e7c5b838542e7",
+    "results/figure4/static_band_map_193/refinement_manifest.json": "5224969f698df688c9f974e7fb1821b91f6e15d48dc6af55e6095fdb0ec30071",
+    "results/figure4/full_dynamic_maps/nonresonant/dynamic_map.npz": "acfe0e9597f752927db49efb52116f6e488facd0661a99e93c155be7a1f18f90",
+    "results/figure4/full_dynamic_maps/resonant/dynamic_map.npz": "632bfe872c5731f8284cec8313ce94a2b023b22998798afb481f0584ffe8190a",
+    "results/figure4/full_dynamic_maps/processing_checks.json": "f0c8f47655794538a38f34d3dcb638b4451592398b185f691a5553f02e92a686",
+    "results/figure4/full_dynamic_maps/pilot_sideband_checks.json": "101accbb6d69f7876bb7c1883249eb130a61f106124481942579beb7d37731dd",
+    "results/figure4/lorentz_loss_analysis/summary.json": "ae3bd6496453fad04c518eea4ea1c9d27824d634258c0e8c1fdea5cd2edf5a4d",
+    "results/figure4/lorentz_loss_analysis/center_loss.csv": "dc37202dab8d6d8daab42b6fcbd5011efcef45b9fc5356460afec1a8ea7cf593",
+    "results/figure4/lorentz_loss_analysis/report.md": "6ac4f82c48e11f03336eac0b380e04cce6d5873abc39fabe4bfe7642222320fa",
+    "results/figure4/lorentz_calibration/summary.json": "b9e4a31d1774208fa01c44b5a242112a1d3040f87af1cb53f34e4a09eebc5a90",
+    "results/figure4/lorentz_calibration/extended_q/summary.json": "8b75d4cd21303ed86efa8731d14235b3d6e698dd832e72776151335b2e71d4cf",
+    "results/figure4/figure4_extended.png": "9c87005540e0f2c9b8414f3dda2c1f59051cac7d6ac828464270c00b0065b18f",
+    "results/figure4/figure4_extended.pdf": "905a389cfc3114efb096d46ea0c1bceca6a687b05a22b5a80ca8cb52a549b0d7",
+    "results/figure4/figure4_extended.svg": "f0dbcddea0d1f8be656e3898d7a6c9c595d63ba523ab9622d7fdf96ef2fd98c8",
+    "results/figure4/figure4_dg_detail.png": "a69eb61ef0c92797b3503c8e316229d561ad1366aa0a3d87b8755ee1807a5723",
+    "results/figure4/figure4_dg_detail.pdf": "713162c7d89a43d91d88373b22415f02cfd198eb326c6959796360f0b5979cae",
+    "results/figure4/figure4_dg_detail.svg": "eedb154bd9193074a6ce4fe3b35285ee9e7b3f82ee9a48ead6e27a0a67ee783f",
+    "results/figure4/figure4_reproduction.png": "11ea5beffbdf65b60c2c17bd09bc456d3d0e00c11c60106744bad57253bf233f",
+    "results/figure4/figure4_reproduction.pdf": "c2fc1810d0d1de23b090424db9acc0acfeeb49d7b356623460d5d699ba4b5ae4",
+    "results/figure4/figure4_reproduction.svg": "27026fb054183c5c4d816dae9ca70d27317964394f69deef6b49bb453bbd0631",
+    "results/figure4/figure4_b_detail.png": "14b703b237ef1f625b216de0edbb2dae12f0c5a79f2e42d3f8efd6f34158b289",
+    "results/figure4/figure4_b_detail.pdf": "5faa306b733c8eb390a7fa2b46ced2656cfb1e2360ee5958123af52e6b45ac21",
+    "results/figure4/figure4_b_detail.svg": "a636e5b376377bbc65b528efb468dc326aca4905bc46453e51f79058dceeba2e",
+    "results/figure4/figure4_b_refinement_comparison.png": "79d346f97a242b6c6e802adb1af080905015456d53049cc5575e278d594dff5c",
+    "results/figure4/figure4_b_refinement_comparison.pdf": "8ab0b019277091ba39da0c1d80625e7702611ee9ac3ab472e9ed0d728a61166e",
+    "results/figure4/figure4_b_refinement_comparison.svg": "e7d3aee90dd6c6b2069d0cb1efbd18afb9b6c2230d09190216e21d3d051f8978",
+    "results/figure4/lorentz_loss_analysis/center_loss_analysis.png": "b77948778c9b0852e0a16b031c51a5deb6f24237da582dcab3566905d4df4d3a",
+    "results/figure4/lorentz_loss_analysis/center_loss_analysis.pdf": "f3b88312b1b4d3938c404ec6d07d6fea204c0d99b713305103165f00069a8a70",
+    "results/figure4/lorentz_loss_analysis/center_loss_analysis.svg": "389179043a855b5d522cbde0c24d9d038ec69e6875b490739eb5f73099402430"
+  }
+}

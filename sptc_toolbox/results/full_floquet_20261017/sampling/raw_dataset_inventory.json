@@ -1,0 +1,796 @@
+{
+  "status": "RAW_DATASET_INVENTORY_AND_COORDINATE_UNIT_VALIDATION",
+  "completed": true,
+  "spatial_sources": 19,
+  "template_sources": 17,
+  "incident_sources": 2,
+  "frequencies": [
+    0.378,
+    0.388,
+    0.398,
+    0.408,
+    0.418
+  ],
+  "actual_source_frequency_pairs": 95,
+  "frequency_window_records": 285,
+  "raw_npz_files": 57,
+  "native_field_shape": [
+    5,
+    32,
+    32,
+    26,
+    3
+  ],
+  "port_order": [
+    "bottom x",
+    "top x",
+    "bottom y",
+    "top y"
+  ],
+  "incoming_scope": "Two x-polarized parity inputs; this does not include independently driven y-polarized incident channels.",
+  "units": "fa/c, t*c/a, native Yee J=-i*kappa*Q, unit power incoming parity channel",
+  "operator_id": "492bc3d7af1c1e77c05970f646e2e07b2308e199f0368d17ff9f88f5a2dca741",
+  "rows": [
+    {
+      "source": "incident_even",
+      "kind": "incident",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        }
+      ]
+    },
+    {
+      "source": "incident_odd",
+      "kind": "incident",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        }
+      ]
+    },
+    {
+      "source": "template_q0",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        }
+      ]
+    },
+    {
+      "source": "template_q1",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 1
+        }
+      ]
+    },
+    {
+      "source": "template_q2",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "template_q3",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "template_q4",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "template_q5",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "template_q6",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "template_q7",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "template_q8",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "extended_q9",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "extended_q10",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "extended_q11",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "extended_q12",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "extended_q13",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "extended_q14",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "extended_q15",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    },
+    {
+      "source": "extended_q16",
+      "kind": "template",
+      "snapshot_count": 3,
+      "snapshots": [
+        {
+          "time": 1000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 1500,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        },
+        {
+          "time": 2000,
+          "frequencies": [
+            0.378,
+            0.388,
+            0.398,
+            0.408,
+            0.418
+          ],
+          "dft_decimation": 8
+        }
+      ]
+    }
+  ],
+  "limitation": "These checks certify inventory, shape, coordinates, units and provenance. Raw finite-window responses with long-lived poles are not certified steady-state Green responses; tail extraction and physical validation are separate."
+}

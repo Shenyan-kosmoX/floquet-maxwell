@@ -1,0 +1,89 @@
+{
+  "source_sha256": "8a27b888a7dcae66c4d2a2d75d22cfeb248f65c52be8c7381ae3bede585b23c7",
+  "doi": "10.1038/s41467-018-06802-0",
+  "source_figure": "Supplementary Figure 1f, upper-left 2x2 crop",
+  "codes_y_x": [
+    [
+      "01101001",
+      "01101101"
+    ],
+    [
+      "01011011",
+      "01100100"
+    ]
+  ],
+  "full_paper_code_shape": [
+    8,
+    8,
+    8
+  ],
+  "tested_shape": [
+    2,
+    2,
+    8
+  ],
+  "physical_cell_centers": "(ix-0.5,iy-0.5); source y row increases in physical +y",
+  "static_epsilon": 11.5,
+  "amplitude": 0.2,
+  "stage_delta_epsilon": [
+    [
+      [
+        0.2,
+        -0.2,
+        -0.2,
+        0.2,
+        -0.2,
+        0.2,
+        0.2,
+        -0.2
+      ],
+      [
+        0.2,
+        -0.2,
+        0.2,
+        -0.2,
+        -0.2,
+        0.2,
+        -0.2,
+        -0.2
+      ]
+    ],
+    [
+      [
+        0.2,
+        -0.2,
+        -0.2,
+        0.2,
+        -0.2,
+        -0.2,
+        0.2,
+        -0.2
+      ],
+      [
+        0.2,
+        -0.2,
+        -0.2,
+        0.2,
+        0.2,
+        -0.2,
+        0.2,
+        0.2
+      ]
+    ]
+  ],
+  "cell_time_means": [
+    [
+      0.0,
+      -0.05
+    ],
+    [
+      -0.05,
+      0.05
+    ]
+  ],
+  "dc_retained": true,
+  "physical_period": 35.73655639714536,
+  "drive_omega_a_over_c": 0.1758195512,
+  "material_mapping": "epsilon_bulk + amplitude*(1-2*bit); original paper states are reflection phases, not epsilon",
+  "scope": "Exact original local code strings; dielectric-platform transfer and periodically repeated 2x2 crop, not original finite 8x8 metal array"
+}

@@ -1,0 +1,139 @@
+{
+  "status": "PHYSICAL_BACKGROUND_NATIVE_PORT_COMPLETION_WITH_INDEPENDENT_CONTROLS",
+  "background": {
+    "epsilon": 10.668734583860141,
+    "source": "Physical unit-cell area average; no fitted parameter",
+    "thickness": 0.42,
+    "reference_distance": 0.49
+  },
+  "static": [
+    {
+      "gmax": 3.1,
+      "native_mode": 5,
+      "native_omega": 2.4709665359856174,
+      "static_relative_complex_S_error": 0.14467735136919357,
+      "static_maximum_complex_S_error": 0.5956659378181434,
+      "static_unitarity_error": 7.076311083754595e-16,
+      "static_reciprocity_error": 1.8318991102549909e-13,
+      "projection_sha256": "74dc550c8cb8a7825439ecaba2828e72888afe3aada27bc5b6e4e94331d0cc8a",
+      "source_sha256": "b84ea70668e20049062b165c6bda54380e8ebe5cee43141a488325d418216adb"
+    },
+    {
+      "gmax": 6.1,
+      "native_mode": 5,
+      "native_omega": 2.500418252239389,
+      "static_relative_complex_S_error": 0.024890326863442048,
+      "static_maximum_complex_S_error": 0.052604518896767524,
+      "static_unitarity_error": 8.273303464972281e-16,
+      "static_reciprocity_error": 2.88088392426268e-13,
+      "projection_sha256": "0c738eff7549072996d3df50904103e77c9f339157f94a6a3f8604d1c036e481",
+      "source_sha256": "8e0d97e7f1a218bae167dc0c0e05ea1da7881dc488416e818c03563286b3e45f"
+    }
+  ],
+  "dynamic": [
+    {
+      "amplitude": 0.0,
+      "stability_max_growth_over_drive": -0.07510030717327609,
+      "lower_sideband_power": 0.0,
+      "upper_sideband_power": 0.0,
+      "all_output_power": 1.0000000000000004,
+      "boundary_residual": 0.0
+    },
+    {
+      "amplitude": 0.005,
+      "stability_max_growth_over_drive": -0.07510030717327071,
+      "lower_sideband_power": 3.293975471094758e-05,
+      "upper_sideband_power": 3.3999375533592644e-05,
+      "all_output_power": 0.9999999843562217,
+      "boundary_residual": 5.467804112973375e-15
+    },
+    {
+      "amplitude": 0.01,
+      "stability_max_growth_over_drive": -0.07510030717327304,
+      "lower_sideband_power": 0.0001317392578255223,
+      "upper_sideband_power": 0.0001359786533442951,
+      "all_output_power": 0.9999999374833644,
+      "boundary_residual": 6.317020185972198e-14,
+      "harmonic_refinement_max_amplitude_change": 2.7956079328695936e-15,
+      "independent_forced_ODE_end_error": 2.666691419322371e-09,
+      "cycle_pump_plus_input_minus_output": 7.105427357601002e-15
+    },
+    {
+      "amplitude": 0.02,
+      "stability_max_growth_over_drive": -0.07510030717327038,
+      "lower_sideband_power": 0.000526640924584703,
+      "upper_sideband_power": 0.0005436130926359152,
+      "all_output_power": 0.9999997508696222,
+      "boundary_residual": 3.980307453665343e-12
+    }
+  ],
+  "uniform_fullwave_weak_control": [
+    {
+      "resolution": 16,
+      "harmonic": -1,
+      "fullwave_born_power": 9.9960114800931e-07,
+      "exact_floquet_power": 1.0352293347064995e-06,
+      "relative_power_error": -0.0344157429689631
+    },
+    {
+      "resolution": 16,
+      "harmonic": 1,
+      "fullwave_born_power": 1.4908166918572792e-06,
+      "exact_floquet_power": 1.5498856873997966e-06,
+      "relative_power_error": -0.038111840132943
+    },
+    {
+      "resolution": 24,
+      "harmonic": -1,
+      "fullwave_born_power": 1.0350596904991967e-06,
+      "exact_floquet_power": 1.0352293347064995e-06,
+      "relative_power_error": -0.00016387113619709126
+    },
+    {
+      "resolution": 24,
+      "harmonic": 1,
+      "fullwave_born_power": 1.5380645123238374e-06,
+      "exact_floquet_power": 1.5498856873997966e-06,
+      "relative_power_error": -0.00762712706624924
+    }
+  ],
+  "pattern_fullwave_weak_comparison": [
+    {
+      "resolution": 16,
+      "harmonic": -1,
+      "fullwave_born_power": 2.8372649142170693e-05,
+      "native_modal_power": 0.0001317392578255223,
+      "ratio_modal_to_fullwave": 4.643177912834239
+    },
+    {
+      "resolution": 16,
+      "harmonic": 1,
+      "fullwave_born_power": 1.7602344144079647e-05,
+      "native_modal_power": 0.0001359786533442951,
+      "ratio_modal_to_fullwave": 7.725030952200194
+    },
+    {
+      "resolution": 24,
+      "harmonic": -1,
+      "fullwave_born_power": 6.51587772444649e-05,
+      "native_modal_power": 0.0001317392578255223,
+      "ratio_modal_to_fullwave": 2.0218190610185713
+    },
+    {
+      "resolution": 24,
+      "harmonic": 1,
+      "fullwave_born_power": 5.443332198439132e-05,
+      "native_modal_power": 0.0001359786533442951,
+      "ratio_modal_to_fullwave": 2.4980774346876493
+    }
+  ],
+  "carrier_omega": 2.5007077522574757,
+  "drive_omega": 0.06283185307179587,
+  "scope": "Gamma x-polarized air ports below diffraction; symmetric native modal parity; frozen coupling and explicit homogeneous background",
+  "limitations": [
+    "Static S agreement alone is not dynamic validation; weak sideband reference is reported separately",
+    "Background modulation is represented only through selected modal perturbation; direct continuum conversion may be missing",
+    "Real phase-sensitive degenerate input requires coherent conjugate-source combination",
+    "Finite gmax/modes and Meep grids remain independent approximations"
+  ]
+}

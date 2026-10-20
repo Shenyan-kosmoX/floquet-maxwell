@@ -1,0 +1,1437 @@
+{
+  "status": "PHYSICAL_FIELD_IDENTITY_AUDIT_COMPLETED",
+  "sources": {
+    "n3.47_g3.1_N25": {
+      "path": "sptc_toolbox\\results\\jin2025_legume_tensor_20261019\\n3.47_g3.1_N25\\native.pkl",
+      "sha256": "fcd6df29d8fd36d60db0bedaf411e922a976e2eb914d611eae9b14566fbd1c34"
+    },
+    "n3.47_g4.1_N9": {
+      "path": "sptc_toolbox\\results\\jin2025_legume_tensor_20261019\\n3.47_g4.1_N9\\native.pkl",
+      "sha256": "a296ac8978ad3f06ada594b7216533d54888a20ab8c01898a52a857e6459369d"
+    },
+    "n3.3_g3.1_N9": {
+      "path": "sptc_toolbox\\results\\jin2025_legume_tensor_20261019\\n3.3_g3.1_N9\\native.pkl",
+      "sha256": "8c54783a267c1309b0e3b1868c1cbdb4c3751350d600b3f5a01c90cba4fddced"
+    }
+  },
+  "script_sha256": "aa7168c0fc9db4d2d216ce2d3385342b124e921256ca71b0c1a878a448ba43fe",
+  "metric": "Positive integral of conjugate(H_left).H_right over one physical unit cell and common finite slab/cladding z domain; Parseval on full physical G union",
+  "z_domain_a": [
+    -4.0,
+    4.182795698924731
+  ],
+  "z_order_per_interval": 24,
+  "fixed_geometry_nm": {
+    "period": 465,
+    "thickness": 85,
+    "hole_diameter": 100
+  },
+  "no_frequency_or_phase_fit": true,
+  "no_new_Maxwell_solves": true,
+  "no_QNM_normalization_claim": true,
+  "no_full_radiative_or_frequency_convergence_claim": true,
+  "spatial_cutoff_comparison": [
+    {
+      "k_a_over_2pi": [
+        0.005,
+        0.005
+      ],
+      "left_cache_k_index": 77,
+      "right_cache_k_index": 9,
+      "left_modes": [
+        2,
+        3,
+        8
+      ],
+      "right_candidate_modes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "H_individual_overlap_squared": [
+        [
+          1.1766504750945345e-26,
+          9.641286293521547e-05,
+          0.9982455739750501,
+          2.617794070034415e-21,
+          1.5262648077570586e-28,
+          3.905156002461348e-28,
+          9.591684945704692e-05,
+          2.4434991034885114e-26,
+          2.5231389438654643e-29,
+          5.970327073434006e-07,
+          1.5167553682847356e-28,
+          3.705338090428069e-07
+        ],
+        [
+          0.00011365390007202837,
+          5.728066280491234e-26,
+          2.61763393581369e-21,
+          0.9982271569889739,
+          1.4224346859177236e-06,
+          6.515459912693442e-07,
+          2.3580004060183444e-26,
+          9.407976156680596e-05,
+          1.4699065282856827e-07,
+          9.321484139331693e-29,
+          8.22652674430951e-07,
+          5.302060709708027e-29
+        ],
+        [
+          3.2896172463046848e-09,
+          4.696369813019661e-31,
+          4.426307627112936e-28,
+          3.1878291962790367e-07,
+          3.7256712171832646e-08,
+          2.461102059081318e-07,
+          2.1540357506502833e-29,
+          3.4239324642982958e-06,
+          0.9996519110030923,
+          2.2744181495502843e-26,
+          0.00019837351799889704,
+          1.3968332648614612e-27
+        ]
+      ],
+      "assigned_left_modes": [
+        2,
+        3,
+        8
+      ],
+      "assigned_right_modes": [
+        2,
+        3,
+        8
+      ],
+      "matched_overlap_squared": [
+        0.9982455739750501,
+        0.9982271569889739,
+        0.9996519110030923
+      ],
+      "TE_subspace_singular_values": [
+        0.9991224018983116,
+        0.9991131852743087
+      ],
+      "TE_subspace_principal_overlap_squared": [
+        0.9982455739750512,
+        0.9982271569889751
+      ],
+      "TE_subspace_average_spillage": 0.001763634517986834,
+      "TM8_overlap_squared": 0.9996519110030923,
+      "frequencies_left_fa_over_c": [
+        0.4469551160081558,
+        0.44698445312012364,
+        0.6282916498281856
+      ],
+      "matched_frequencies_right_fa_over_c": [
+        0.4482352208898487,
+        0.44826268146671444,
+        0.6283460061911649
+      ],
+      "matched_frequency_change_fa_over_c": [
+        0.0012801048816928895,
+        0.001278228346590804,
+        5.4356362979235406e-05
+      ],
+      "matched_relative_frequency_change": [
+        0.002864056894852795,
+        0.002859670705923389,
+        8.651453985438108e-05
+      ],
+      "left_TE_upper_minus_lower": 2.9337111967842056e-05,
+      "right_TE_upper_minus_lower": 2.7460576865756536e-05,
+      "midplane_polarization_character": [
+        {
+          "side": "left",
+          "mode": 2,
+          "Ez_fraction": 8.989480226979762e-05,
+          "Hz_fraction": 0.9978569344542139
+        },
+        {
+          "side": "left",
+          "mode": 3,
+          "Ez_fraction": 8.989921805635471e-05,
+          "Hz_fraction": 0.997857168134138
+        },
+        {
+          "side": "left",
+          "mode": 8,
+          "Ez_fraction": 0.7757658453187817,
+          "Hz_fraction": 0.0008487008184024075
+        },
+        {
+          "side": "right",
+          "mode": 2,
+          "Ez_fraction": 0.00010595171093307287,
+          "Hz_fraction": 0.9978002933230052
+        },
+        {
+          "side": "right",
+          "mode": 3,
+          "Ez_fraction": 0.00010596171657929494,
+          "Hz_fraction": 0.9978004083062656
+        },
+        {
+          "side": "right",
+          "mode": 8,
+          "Ez_fraction": 0.7753612894924641,
+          "Hz_fraction": 0.0009531570670452056
+        }
+      ],
+      "complete_fourier_union": {
+        "union_size": 49,
+        "a_only_weight": 0.0,
+        "b_only_weight": 0.001179921075405986,
+        "reciprocal_shift": [
+          0,
+          0
+        ],
+        "metric": "caller weighted physical components; not QNM residue"
+      }
+    },
+    {
+      "k_a_over_2pi": [
+        0.02,
+        0.0
+      ],
+      "left_cache_k_index": 299,
+      "right_cache_k_index": 35,
+      "left_modes": [
+        2,
+        3,
+        8
+      ],
+      "right_candidate_modes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "H_individual_overlap_squared": [
+        [
+          2.757093508206029e-28,
+          3.0617467577207544e-27,
+          0.9983220611288387,
+          2.3407855998349744e-28,
+          6.471999657636234e-31,
+          7.026372462070145e-06,
+          9.063596500923051e-05,
+          1.6379056854056179e-31,
+          6.047692888012387e-07,
+          9.517412075746145e-08,
+          6.796896906280288e-31,
+          3.6059439198389904e-07
+        ],
+        [
+          0.00055412224515606,
+          2.2597902451264023e-06,
+          2.414009541356598e-28,
+          0.9979654266466941,
+          7.306743541318057e-06,
+          3.040338104007075e-30,
+          2.4794354259901228e-30,
+          8.010687304095063e-05,
+          9.575827290090345e-34,
+          1.376719088230061e-34,
+          8.586763016588635e-07,
+          1.0755879308652999e-33
+        ],
+        [
+          9.080260059239055e-33,
+          9.88455415537073e-32,
+          1.1958542863627978e-06,
+          2.23244472486332e-34,
+          4.844512984066684e-32,
+          9.33169843088985e-07,
+          1.4252802445100105e-05,
+          7.153564059756968e-33,
+          0.99931697175008,
+          0.00022790312069985853,
+          2.3347149829956806e-32,
+          1.0410280787511767e-05
+        ]
+      ],
+      "assigned_left_modes": [
+        2,
+        3,
+        8
+      ],
+      "assigned_right_modes": [
+        2,
+        3,
+        8
+      ],
+      "matched_overlap_squared": [
+        0.9983220611288387,
+        0.9979654266466941,
+        0.99931697175008
+      ],
+      "TE_subspace_singular_values": [
+        0.9991606783339895,
+        0.9989821953602052
+      ],
+      "TE_subspace_principal_overlap_squared": [
+        0.9983220611288379,
+        0.9979654266466951
+      ],
+      "TE_subspace_average_spillage": 0.0018562561122335008,
+      "TM8_overlap_squared": 0.99931697175008,
+      "frequencies_left_fa_over_c": [
+        0.4468383950939665,
+        0.4492565182979185,
+        0.6236799084454161
+      ],
+      "matched_frequencies_right_fa_over_c": [
+        0.4481326446682471,
+        0.45037995835803346,
+        0.6238480633011529
+      ],
+      "matched_frequency_change_fa_over_c": [
+        0.0012942495742805926,
+        0.0011234400601149441,
+        0.0001681548557368462
+      ],
+      "matched_relative_frequency_change": [
+        0.0028964600815210213,
+        0.0025006650195555976,
+        0.0002696172402859486
+      ],
+      "left_TE_upper_minus_lower": 0.002418123203952016,
+      "right_TE_upper_minus_lower": 0.0022473136897863677,
+      "midplane_polarization_character": [
+        {
+          "side": "left",
+          "mode": 2,
+          "Ez_fraction": 9.098373658986645e-05,
+          "Hz_fraction": 0.9978475846556566
+        },
+        {
+          "side": "left",
+          "mode": 3,
+          "Ez_fraction": 7.963237289239123e-05,
+          "Hz_fraction": 0.9979508736377689
+        },
+        {
+          "side": "left",
+          "mode": 8,
+          "Ez_fraction": 0.7518605222172275,
+          "Hz_fraction": 0.002875004375488151
+        },
+        {
+          "side": "right",
+          "mode": 2,
+          "Ez_fraction": 0.0001070813478811614,
+          "Hz_fraction": 0.9977914213601975
+        },
+        {
+          "side": "right",
+          "mode": 3,
+          "Ez_fraction": 9.518721568766895e-05,
+          "Hz_fraction": 0.9978927587175781
+        },
+        {
+          "side": "right",
+          "mode": 8,
+          "Ez_fraction": 0.74873183226004,
+          "Hz_fraction": 0.0033688558246690115
+        }
+      ],
+      "complete_fourier_union": {
+        "union_size": 49,
+        "a_only_weight": 0.0,
+        "b_only_weight": 0.0011796859579606283,
+        "reciprocal_shift": [
+          0,
+          0
+        ],
+        "metric": "caller weighted physical components; not QNM residue"
+      }
+    },
+    {
+      "k_a_over_2pi": [
+        0.0,
+        0.02
+      ],
+      "left_cache_k_index": 11,
+      "right_cache_k_index": 3,
+      "left_modes": [
+        2,
+        3,
+        8
+      ],
+      "right_candidate_modes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "H_individual_overlap_squared": [
+        [
+          2.4868101970898284e-30,
+          1.858308847767307e-27,
+          0.9983220611288393,
+          1.1068680762872398e-26,
+          1.5424125070791286e-30,
+          7.0263724620469456e-06,
+          9.063596500935358e-05,
+          6.000999928419993e-29,
+          6.047692888019189e-07,
+          9.517412075736997e-08,
+          2.672258561996685e-35,
+          3.605943919845108e-07
+        ],
+        [
+          0.0005541222451592839,
+          2.2597902452054047e-06,
+          1.1031657885099881e-26,
+          0.9979654266466914,
+          7.30674354130284e-06,
+          1.2187288290456922e-29,
+          1.7529273833086354e-29,
+          8.010687304098687e-05,
+          1.562165459810554e-30,
+          7.983147065078682e-33,
+          8.58676301658686e-07,
+          4.0058423257546305e-31
+        ],
+        [
+          1.2739054061146215e-34,
+          8.746862349503086e-32,
+          1.195854286363497e-06,
+          2.1032155108656226e-30,
+          1.4552145203326123e-30,
+          9.331698430728178e-07,
+          1.425280244509708e-05,
+          1.0171735401757553e-28,
+          0.9993169717500804,
+          0.0002279031206998943,
+          1.8724652222884445e-28,
+          1.0410280787323677e-05
+        ]
+      ],
+      "assigned_left_modes": [
+        2,
+        3,
+        8
+      ],
+      "assigned_right_modes": [
+        2,
+        3,
+        8
+      ],
+      "matched_overlap_squared": [
+        0.9983220611288393,
+        0.9979654266466914,
+        0.9993169717500804
+      ],
+      "TE_subspace_singular_values": [
+        0.9991606783339899,
+        0.998982195360203
+      ],
+      "TE_subspace_principal_overlap_squared": [
+        0.9983220611288388,
+        0.9979654266466909
+      ],
+      "TE_subspace_average_spillage": 0.0018562561122351662,
+      "TM8_overlap_squared": 0.9993169717500804,
+      "frequencies_left_fa_over_c": [
+        0.44683839509396595,
+        0.44925651829791824,
+        0.6236799084454162
+      ],
+      "matched_frequencies_right_fa_over_c": [
+        0.44813264466824737,
+        0.45037995835803424,
+        0.6238480633011537
+      ],
+      "matched_frequency_change_fa_over_c": [
+        0.0012942495742814253,
+        0.0011234400601159988,
+        0.00016815485573751232
+      ],
+      "matched_relative_frequency_change": [
+        0.0028964600815228887,
+        0.002500665019557947,
+        0.0002696172402870166
+      ],
+      "left_TE_upper_minus_lower": 0.0024181232039522937,
+      "right_TE_upper_minus_lower": 0.0022473136897868673,
+      "midplane_polarization_character": [
+        {
+          "side": "left",
+          "mode": 2,
+          "Ez_fraction": 9.098373658986429e-05,
+          "Hz_fraction": 0.9978475846556565
+        },
+        {
+          "side": "left",
+          "mode": 3,
+          "Ez_fraction": 7.963237289238887e-05,
+          "Hz_fraction": 0.9979508736377691
+        },
+        {
+          "side": "left",
+          "mode": 8,
+          "Ez_fraction": 0.7518605222172224,
+          "Hz_fraction": 0.002875004375488631
+        },
+        {
+          "side": "right",
+          "mode": 2,
+          "Ez_fraction": 0.00010708134788116361,
+          "Hz_fraction": 0.9977914213601975
+        },
+        {
+          "side": "right",
+          "mode": 3,
+          "Ez_fraction": 9.518721568766319e-05,
+          "Hz_fraction": 0.997892758717578
+        },
+        {
+          "side": "right",
+          "mode": 8,
+          "Ez_fraction": 0.7487318322600336,
+          "Hz_fraction": 0.0033688558246695605
+        }
+      ],
+      "complete_fourier_union": {
+        "union_size": 49,
+        "a_only_weight": 0.0,
+        "b_only_weight": 0.0011796859579606218,
+        "reciprocal_shift": [
+          0,
+          0
+        ],
+        "metric": "caller weighted physical components; not QNM residue"
+      }
+    },
+    {
+      "k_a_over_2pi": [
+        0.02,
+        0.02
+      ],
+      "left_cache_k_index": 311,
+      "right_cache_k_index": 39,
+      "left_modes": [
+        2,
+        3,
+        8
+      ],
+      "right_candidate_modes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "H_individual_overlap_squared": [
+        [
+          9.841319496545875e-28,
+          0.0005450062918422179,
+          0.9979922332011054,
+          7.572620834455356e-24,
+          5.600027903807913e-29,
+          7.467814487108476e-30,
+          8.583042407468036e-05,
+          2.2564090163854975e-28,
+          9.623281914936477e-30,
+          6.271740658336059e-07,
+          1.553653527988267e-31,
+          2.852784024899316e-07
+        ],
+        [
+          0.0005641934486689107,
+          1.3538410406973275e-27,
+          7.574463201993395e-24,
+          0.9979442425690183,
+          2.094568691104079e-05,
+          2.659973149469814e-07,
+          3.1353929582247724e-28,
+          6.899665656196151e-05,
+          5.433851917854162e-07,
+          9.300410092904569e-30,
+          4.1158941692186206e-07,
+          9.29068414100482e-33
+        ],
+        [
+          1.2412067441734916e-07,
+          2.04535358775317e-30,
+          2.327053296451645e-31,
+          1.0726089332061128e-06,
+          1.6252222169331116e-06,
+          2.2777421800014914e-07,
+          8.770396469942328e-31,
+          1.4426012259624262e-05,
+          0.9996294774387545,
+          4.822556547655425e-27,
+          5.4657563868818535e-05,
+          1.4980741103718556e-29
+        ]
+      ],
+      "assigned_left_modes": [
+        2,
+        3,
+        8
+      ],
+      "assigned_right_modes": [
+        2,
+        3,
+        8
+      ],
+      "matched_overlap_squared": [
+        0.9979922332011054,
+        0.9979442425690183,
+        0.9996294774387545
+      ],
+      "TE_subspace_singular_values": [
+        0.9989956122031298,
+        0.9989715924734885
+      ],
+      "TE_subspace_principal_overlap_squared": [
+        0.9979922332011062,
+        0.9979442425690177
+      ],
+      "TE_subspace_average_spillage": 0.0020317621149380516,
+      "TM8_overlap_squared": 0.9996294774387545,
+      "frequencies_left_fa_over_c": [
+        0.44913457096401066,
+        0.4494819977168137,
+        0.6227653626256643
+      ],
+      "matched_frequencies_right_fa_over_c": [
+        0.450261067295863,
+        0.4506000526483224,
+        0.6228892006832427
+      ],
+      "matched_frequency_change_fa_over_c": [
+        0.0011264963318523558,
+        0.0011180549315087385,
+        0.00012383805757842925
+      ],
+      "matched_relative_frequency_change": [
+        0.0025081487925422297,
+        0.0024874298352058686,
+        0.000198851871042267
+      ],
+      "left_TE_upper_minus_lower": 0.00034742675280302615,
+      "right_TE_upper_minus_lower": 0.00033898535245940886,
+      "midplane_polarization_character": [
+        {
+          "side": "left",
+          "mode": 2,
+          "Ez_fraction": 7.909701149093364e-05,
+          "Hz_fraction": 0.9979527941294873
+        },
+        {
+          "side": "left",
+          "mode": 3,
+          "Ez_fraction": 7.914169218507055e-05,
+          "Hz_fraction": 0.9979577597434172
+        },
+        {
+          "side": "left",
+          "mode": 8,
+          "Ez_fraction": 0.7444990086791642,
+          "Hz_fraction": 0.0028965130079859217
+        },
+        {
+          "side": "right",
+          "mode": 2,
+          "Ez_fraction": 9.47277055732155e-05,
+          "Hz_fraction": 0.9978948651642713
+        },
+        {
+          "side": "right",
+          "mode": 3,
+          "Ez_fraction": 9.499581403177194e-05,
+          "Hz_fraction": 0.9979003350102289
+        },
+        {
+          "side": "right",
+          "mode": 8,
+          "Ez_fraction": 0.7415990095407068,
+          "Hz_fraction": 0.0034159612069026013
+        }
+      ],
+      "complete_fourier_union": {
+        "union_size": 49,
+        "a_only_weight": 0.0,
+        "b_only_weight": 0.0011779496105326298,
+        "reciprocal_shift": [
+          0,
+          0
+        ],
+        "metric": "caller weighted physical components; not QNM residue"
+      }
+    },
+    {
+      "k_a_over_2pi": [
+        0.04,
+        0.04
+      ],
+      "left_cache_k_index": 623,
+      "right_cache_k_index": 79,
+      "left_modes": [
+        2,
+        3,
+        8
+      ],
+      "right_candidate_modes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "H_individual_overlap_squared": [
+        [
+          1.203331725196801e-29,
+          0.0004142385636064753,
+          0.9983443981225841,
+          5.577949447504454e-26,
+          3.33489184148689e-30,
+          1.1233949125554799e-29,
+          7.568456135450807e-05,
+          1.3876459457214485e-30,
+          2.7243572085092772e-30,
+          7.864339542929836e-07,
+          1.28042432159228e-30,
+          1.7693324272627907e-07
+        ],
+        [
+          0.0003825450695844323,
+          1.359687763445112e-28,
+          5.577601327674638e-26,
+          0.9982751653553184,
+          4.758203148055069e-05,
+          1.0252708226402014e-07,
+          1.2647072347134657e-29,
+          4.5453569897224274e-05,
+          9.931252138808964e-07,
+          3.01540690210457e-30,
+          2.2506399695139283e-07,
+          1.0695452304865936e-30
+        ],
+        [
+          4.2003244781730703e-07,
+          2.8723101381639206e-31,
+          5.021001561228267e-30,
+          1.7730026549066851e-06,
+          5.291294371688199e-06,
+          2.728771327031315e-07,
+          4.459321320426524e-29,
+          4.362547013635714e-05,
+          0.9995802265353622,
+          4.4558199906467e-27,
+          1.4165979420090122e-05,
+          1.1171236074667198e-29
+        ]
+      ],
+      "assigned_left_modes": [
+        2,
+        3,
+        8
+      ],
+      "assigned_right_modes": [
+        2,
+        3,
+        8
+      ],
+      "matched_overlap_squared": [
+        0.9983443981225841,
+        0.9982751653553184,
+        0.9995802265353622
+      ],
+      "TE_subspace_singular_values": [
+        0.9991718561501743,
+        0.9991372104747773
+      ],
+      "TE_subspace_principal_overlap_squared": [
+        0.9983443981225847,
+        0.9982751653553195
+      ],
+      "TE_subspace_average_spillage": 0.0016902182610479266,
+      "TM8_overlap_squared": 0.9995802265353622,
+      "frequencies_left_fa_over_c": [
+        0.4539989721785934,
+        0.4548791690537754,
+        0.6145377479341377
+      ],
+      "matched_frequencies_right_fa_over_c": [
+        0.45493593985506237,
+        0.45582513123306495,
+        0.6146886334480866
+      ],
+      "matched_frequency_change_fa_over_c": [
+        0.0009369676764689472,
+        0.0009459621792895501,
+        0.00015088551394881744
+      ],
+      "matched_relative_frequency_change": [
+        0.0020638101270862882,
+        0.0020795900178443194,
+        0.00024552684429238414
+      ],
+      "left_TE_upper_minus_lower": 0.0008801968751819822,
+      "right_TE_upper_minus_lower": 0.0008891913780025851,
+      "midplane_polarization_character": [
+        {
+          "side": "left",
+          "mode": 2,
+          "Ez_fraction": 6.678007160984103e-05,
+          "Hz_fraction": 0.9980858794782689
+        },
+        {
+          "side": "left",
+          "mode": 3,
+          "Ez_fraction": 6.983192381032835e-05,
+          "Hz_fraction": 0.9980744661245796
+        },
+        {
+          "side": "left",
+          "mode": 8,
+          "Ez_fraction": 0.7074999446927626,
+          "Hz_fraction": 0.005886534843920154
+        },
+        {
+          "side": "right",
+          "mode": 2,
+          "Ez_fraction": 8.06192077959579e-05,
+          "Hz_fraction": 0.9980342895460309
+        },
+        {
+          "side": "right",
+          "mode": 3,
+          "Ez_fraction": 8.406809643687591e-05,
+          "Hz_fraction": 0.9980222477078653
+        },
+        {
+          "side": "right",
+          "mode": 8,
+          "Ez_fraction": 0.7007505436729313,
+          "Hz_fraction": 0.007142465027836323
+        }
+      ],
+      "complete_fourier_union": {
+        "union_size": 49,
+        "a_only_weight": 0.0,
+        "b_only_weight": 0.0011752830839242515,
+        "reciprocal_shift": [
+          0,
+          0
+        ],
+        "metric": "caller weighted physical components; not QNM residue"
+      }
+    }
+  ],
+  "identity_metric_controls": {
+    "point": [
+      0.02,
+      0.02
+    ],
+    "records": {
+      "z_order16": {
+        "k_a_over_2pi": [
+          0.02,
+          0.02
+        ],
+        "left_cache_k_index": 311,
+        "right_cache_k_index": 39,
+        "left_modes": [
+          2,
+          3,
+          8
+        ],
+        "right_candidate_modes": [
+          2,
+          3,
+          8
+        ],
+        "H_individual_overlap_squared": [
+          [
+            0.9979938593246886,
+            7.572945066479443e-24,
+            9.624044966174687e-30
+          ],
+          [
+            7.574285337111551e-24,
+            0.9979459014232402,
+            5.428121695261893e-07
+          ],
+          [
+            2.3182352194907146e-31,
+            1.073445861057542e-06,
+            0.9996298006144122
+          ]
+        ],
+        "assigned_left_modes": [
+          2,
+          3,
+          8
+        ],
+        "assigned_right_modes": [
+          2,
+          3,
+          8
+        ],
+        "matched_overlap_squared": [
+          0.9979938593246886,
+          0.9979459014232402,
+          0.9996298006144122
+        ],
+        "TE_subspace_singular_values": [
+          0.9989964260820394,
+          0.998972422754122
+        ],
+        "TE_subspace_principal_overlap_squared": [
+          0.9979938593246876,
+          0.9979459014232402
+        ],
+        "TE_subspace_average_spillage": 0.0020301196260360532,
+        "TM8_overlap_squared": 0.9996298006144122,
+        "frequencies_left_fa_over_c": [
+          0.44913457096401066,
+          0.4494819977168137,
+          0.6227653626256643
+        ],
+        "matched_frequencies_right_fa_over_c": [
+          0.450261067295863,
+          0.4506000526483224,
+          0.6228892006832427
+        ],
+        "matched_frequency_change_fa_over_c": [
+          0.0011264963318523558,
+          0.0011180549315087385,
+          0.00012383805757842925
+        ],
+        "matched_relative_frequency_change": [
+          0.0025081487925422297,
+          0.0024874298352058686,
+          0.000198851871042267
+        ],
+        "left_TE_upper_minus_lower": 0.00034742675280302615,
+        "right_TE_upper_minus_lower": 0.00033898535245940886,
+        "midplane_polarization_character": [
+          {
+            "side": "left",
+            "mode": 2,
+            "Ez_fraction": 7.909701149093364e-05,
+            "Hz_fraction": 0.9979527941294873
+          },
+          {
+            "side": "left",
+            "mode": 3,
+            "Ez_fraction": 7.914169218507055e-05,
+            "Hz_fraction": 0.9979577597434172
+          },
+          {
+            "side": "left",
+            "mode": 8,
+            "Ez_fraction": 0.7444990086791642,
+            "Hz_fraction": 0.0028965130079859217
+          },
+          {
+            "side": "right",
+            "mode": 2,
+            "Ez_fraction": 9.47277055732155e-05,
+            "Hz_fraction": 0.9978948651642713
+          },
+          {
+            "side": "right",
+            "mode": 3,
+            "Ez_fraction": 9.499581403177194e-05,
+            "Hz_fraction": 0.9979003350102289
+          },
+          {
+            "side": "right",
+            "mode": 8,
+            "Ez_fraction": 0.7415990095407068,
+            "Hz_fraction": 0.0034159612069026013
+          }
+        ],
+        "complete_fourier_union": {
+          "union_size": 49,
+          "a_only_weight": 0.0,
+          "b_only_weight": 0.0009392675175280929,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      },
+      "z_order32": {
+        "k_a_over_2pi": [
+          0.02,
+          0.02
+        ],
+        "left_cache_k_index": 311,
+        "right_cache_k_index": 39,
+        "left_modes": [
+          2,
+          3,
+          8
+        ],
+        "right_candidate_modes": [
+          2,
+          3,
+          8
+        ],
+        "H_individual_overlap_squared": [
+          [
+            0.9979922321569671,
+            7.572924360788492e-24,
+            9.633162545684157e-30
+          ],
+          [
+            7.574285364687187e-24,
+            0.9979442415007571,
+            5.433852445399151e-07
+          ],
+          [
+            2.318912668969816e-31,
+            1.0726088549924548e-06,
+            0.9996294772307132
+          ]
+        ],
+        "assigned_left_modes": [
+          2,
+          3,
+          8
+        ],
+        "assigned_right_modes": [
+          2,
+          3,
+          8
+        ],
+        "matched_overlap_squared": [
+          0.9979922321569671,
+          0.9979442415007571,
+          0.9996294772307132
+        ],
+        "TE_subspace_singular_values": [
+          0.9989956116805356,
+          0.9989715919388082
+        ],
+        "TE_subspace_principal_overlap_squared": [
+          0.9979922321569675,
+          0.9979442415007568
+        ],
+        "TE_subspace_average_spillage": 0.002031763171137846,
+        "TM8_overlap_squared": 0.9996294772307132,
+        "frequencies_left_fa_over_c": [
+          0.44913457096401066,
+          0.4494819977168137,
+          0.6227653626256643
+        ],
+        "matched_frequencies_right_fa_over_c": [
+          0.450261067295863,
+          0.4506000526483224,
+          0.6228892006832427
+        ],
+        "matched_frequency_change_fa_over_c": [
+          0.0011264963318523558,
+          0.0011180549315087385,
+          0.00012383805757842925
+        ],
+        "matched_relative_frequency_change": [
+          0.0025081487925422297,
+          0.0024874298352058686,
+          0.000198851871042267
+        ],
+        "left_TE_upper_minus_lower": 0.00034742675280302615,
+        "right_TE_upper_minus_lower": 0.00033898535245940886,
+        "midplane_polarization_character": [
+          {
+            "side": "left",
+            "mode": 2,
+            "Ez_fraction": 7.909701149093364e-05,
+            "Hz_fraction": 0.9979527941294873
+          },
+          {
+            "side": "left",
+            "mode": 3,
+            "Ez_fraction": 7.914169218507055e-05,
+            "Hz_fraction": 0.9979577597434172
+          },
+          {
+            "side": "left",
+            "mode": 8,
+            "Ez_fraction": 0.7444990086791642,
+            "Hz_fraction": 0.0028965130079859217
+          },
+          {
+            "side": "right",
+            "mode": 2,
+            "Ez_fraction": 9.47277055732155e-05,
+            "Hz_fraction": 0.9978948651642713
+          },
+          {
+            "side": "right",
+            "mode": 3,
+            "Ez_fraction": 9.499581403177194e-05,
+            "Hz_fraction": 0.9979003350102289
+          },
+          {
+            "side": "right",
+            "mode": 8,
+            "Ez_fraction": 0.7415990095407068,
+            "Hz_fraction": 0.0034159612069026013
+          }
+        ],
+        "complete_fourier_union": {
+          "union_size": 49,
+          "a_only_weight": 0.0,
+          "b_only_weight": 0.0009404669892307519,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      },
+      "cladding_extent6": {
+        "k_a_over_2pi": [
+          0.02,
+          0.02
+        ],
+        "left_cache_k_index": 311,
+        "right_cache_k_index": 39,
+        "left_modes": [
+          2,
+          3,
+          8
+        ],
+        "right_candidate_modes": [
+          2,
+          3,
+          8
+        ],
+        "H_individual_overlap_squared": [
+          [
+            0.9979922303743798,
+            7.572810622871965e-24,
+            9.631155277914078e-30
+          ],
+          [
+            7.574328644947046e-24,
+            0.9979442353408448,
+            5.436621289316359e-07
+          ],
+          [
+            2.3195437893088804e-31,
+            1.0722302175635322e-06,
+            0.9996294731563156
+          ]
+        ],
+        "assigned_left_modes": [
+          2,
+          3,
+          8
+        ],
+        "assigned_right_modes": [
+          2,
+          3,
+          8
+        ],
+        "matched_overlap_squared": [
+          0.9979922303743798,
+          0.9979442353408448,
+          0.9996294731563156
+        ],
+        "TE_subspace_singular_values": [
+          0.9989956107883459,
+          0.9989715888556817
+        ],
+        "TE_subspace_principal_overlap_squared": [
+          0.9979922303743802,
+          0.9979442353408452
+        ],
+        "TE_subspace_average_spillage": 0.0020317671423872863,
+        "TM8_overlap_squared": 0.9996294731563156,
+        "frequencies_left_fa_over_c": [
+          0.44913457096401066,
+          0.4494819977168137,
+          0.6227653626256643
+        ],
+        "matched_frequencies_right_fa_over_c": [
+          0.450261067295863,
+          0.4506000526483224,
+          0.6228892006832427
+        ],
+        "matched_frequency_change_fa_over_c": [
+          0.0011264963318523558,
+          0.0011180549315087385,
+          0.00012383805757842925
+        ],
+        "matched_relative_frequency_change": [
+          0.0025081487925422297,
+          0.0024874298352058686,
+          0.000198851871042267
+        ],
+        "left_TE_upper_minus_lower": 0.00034742675280302615,
+        "right_TE_upper_minus_lower": 0.00033898535245940886,
+        "midplane_polarization_character": [
+          {
+            "side": "left",
+            "mode": 2,
+            "Ez_fraction": 7.909701149093364e-05,
+            "Hz_fraction": 0.9979527941294873
+          },
+          {
+            "side": "left",
+            "mode": 3,
+            "Ez_fraction": 7.914169218507055e-05,
+            "Hz_fraction": 0.9979577597434172
+          },
+          {
+            "side": "left",
+            "mode": 8,
+            "Ez_fraction": 0.7444990086791642,
+            "Hz_fraction": 0.0028965130079859217
+          },
+          {
+            "side": "right",
+            "mode": 2,
+            "Ez_fraction": 9.47277055732155e-05,
+            "Hz_fraction": 0.9978948651642713
+          },
+          {
+            "side": "right",
+            "mode": 3,
+            "Ez_fraction": 9.499581403177194e-05,
+            "Hz_fraction": 0.9979003350102289
+          },
+          {
+            "side": "right",
+            "mode": 8,
+            "Ez_fraction": 0.7415990095407068,
+            "Hz_fraction": 0.0034159612069026013
+          }
+        ],
+        "complete_fourier_union": {
+          "union_size": 49,
+          "a_only_weight": 0.0,
+          "b_only_weight": 0.0009404701654540881,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      }
+    }
+  },
+  "material_sensitivity": {
+    "description": "n3.47 to n3.3 is a different nondispersive material model, not convergence",
+    "record": {
+      "k_a_over_2pi": [
+        0.02,
+        0.02
+      ],
+      "left_cache_k_index": 311,
+      "right_cache_k_index": 39,
+      "left_modes": [
+        2,
+        3,
+        8
+      ],
+      "right_candidate_modes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "H_individual_overlap_squared": [
+        [
+          1.6432877443051706e-27,
+          6.77350716691019e-05,
+          0.9996683179777149,
+          1.1425998557296807e-24,
+          4.843724334189025e-30,
+          7.728861340288838e-30,
+          1.3510779599058128e-05,
+          3.6635346350035065e-29,
+          4.672915996657499e-30,
+          1.876317280673793e-06,
+          3.870199469088106e-30,
+          1.5398450811173365e-06
+        ],
+        [
+          5.714673914658045e-05,
+          4.47314244159644e-28,
+          1.1400463680601639e-24,
+          0.9996757040810418,
+          2.526897713168523e-06,
+          8.461773660173342e-08,
+          2.738387115031656e-29,
+          1.1338163823459646e-05,
+          1.5726606091043792e-06,
+          5.9231690598272604e-30,
+          2.0493621076774062e-06,
+          3.185340063663449e-30
+        ],
+        [
+          1.8034611406658495e-07,
+          1.810758161004633e-31,
+          1.3009875394308336e-29,
+          1.7160300178274073e-06,
+          5.2303286614389134e-05,
+          7.85218935869785e-06,
+          4.096069613690728e-30,
+          0.001278502904981514,
+          0.9927319515884098,
+          2.1406344955974307e-27,
+          0.00042050122243947216,
+          3.356777752280129e-28
+        ]
+      ],
+      "assigned_left_modes": [
+        2,
+        3,
+        8
+      ],
+      "assigned_right_modes": [
+        2,
+        3,
+        8
+      ],
+      "matched_overlap_squared": [
+        0.9996683179777149,
+        0.9996757040810418,
+        0.9927319515884098
+      ],
+      "TE_subspace_singular_values": [
+        0.9998378388924086,
+        0.9998341452349558
+      ],
+      "TE_subspace_principal_overlap_squared": [
+        0.9996757040810421,
+        0.9996683179777147
+      ],
+      "TE_subspace_average_spillage": 0.0003279889706215844,
+      "TM8_overlap_squared": 0.9927319515884098,
+      "frequencies_left_fa_over_c": [
+        0.44913457096401066,
+        0.4494819977168137,
+        0.6227653626256643
+      ],
+      "matched_frequencies_right_fa_over_c": [
+        0.46965421718427364,
+        0.47001836604644,
+        0.6325148815870772
+      ],
+      "matched_frequency_change_fa_over_c": [
+        0.020519646220262977,
+        0.020536368329626298,
+        0.009749518961412962
+      ],
+      "matched_relative_frequency_change": [
+        0.04568707809826384,
+        0.0456889673756518,
+        0.015655204265548187
+      ],
+      "left_TE_upper_minus_lower": 0.00034742675280302615,
+      "right_TE_upper_minus_lower": 0.0003641488621663469,
+      "midplane_polarization_character": [
+        {
+          "side": "left",
+          "mode": 2,
+          "Ez_fraction": 7.909701149093364e-05,
+          "Hz_fraction": 0.9979527941294873
+        },
+        {
+          "side": "left",
+          "mode": 3,
+          "Ez_fraction": 7.914169218507055e-05,
+          "Hz_fraction": 0.9979577597434172
+        },
+        {
+          "side": "left",
+          "mode": 8,
+          "Ez_fraction": 0.7444990086791642,
+          "Hz_fraction": 0.0028965130079859217
+        },
+        {
+          "side": "right",
+          "mode": 2,
+          "Ez_fraction": 9.622167672781003e-05,
+          "Hz_fraction": 0.9974414322338709
+        },
+        {
+          "side": "right",
+          "mode": 3,
+          "Ez_fraction": 9.748575415827655e-05,
+          "Hz_fraction": 0.9974371476628171
+        },
+        {
+          "side": "right",
+          "mode": 8,
+          "Ez_fraction": 0.6875169122681217,
+          "Hz_fraction": 0.008260796828744615
+        }
+      ],
+      "complete_fourier_union": {
+        "union_size": 29,
+        "a_only_weight": 0.0,
+        "b_only_weight": 0.0,
+        "reciprocal_shift": [
+          0,
+          0
+        ],
+        "metric": "caller weighted physical components; not QNM residue"
+      }
+    }
+  },
+  "minimum_TE_subspace_overlap_squared": 0.9979442425690177,
+  "minimum_TM8_overlap_squared": 0.99931697175008,
+  "maximum_absolute_frequency_change_fa_over_c": 0.0012942495742814253,
+  "all_mode_assignments_preserve_indices": true,
+  "seconds": 8.966849500000535
+}

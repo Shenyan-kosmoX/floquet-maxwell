@@ -1,0 +1,1054 @@
+{
+  "scope": "Same-k native spatial refinement for the fixed Minkov W1 geometry; four local targets only",
+  "status": "SPATIAL_REFINEMENT_EVIDENCE_NOT_A_GLOBAL_CONVERGENCE_CERTIFICATE",
+  "q": [
+    1.78,
+    2.2,
+    2.65,
+    3.141592653589793
+  ],
+  "frequency_units": "angular omega*a/c",
+  "native_frequency_units": "f*a/c",
+  "cross_k_identity": "not_assessed",
+  "field_metric": "cell_area integral dz sum_G,xyz |H_G|^2",
+  "field_metric_id": "7b513451f5c1c0e573904a66cfec1cc292216fb89ba92ba76ad116fa9cfc5695",
+  "field_metric_scope": "finite-window magnetic metric, not QNM residue normalization",
+  "union_G_count": 997,
+  "z_window": [
+    -3.0,
+    3.55
+  ],
+  "z_quadrature_per_interval": 20,
+  "interpolation_used": false,
+  "same_physical_k_all_configs": true,
+  "records": [
+    {
+      "tag": "g3.1_v0",
+      "contract": {
+        "gmax": 3.1,
+        "gmode_inds": [
+          0
+        ],
+        "q": [
+          1.78,
+          2.2,
+          2.65,
+          3.141592653589793
+        ],
+        "numeig": 32,
+        "geometry": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "radius": 0.25,
+          "transverse_rows": 14,
+          "missing_row": 0
+        },
+        "legume_version": "1.0.3",
+        "gmode_compute": "exact",
+        "gmode_tol": 1e-10,
+        "truncate_g": "abs",
+        "source_hashes": {
+          "sptc_toolbox\\scripts\\converge_w1_spatial.py": "fedf20d1668aa8c5ba5e03ba8866247e005bc28cc1a6f055cba0e1970f17e6e8",
+          "sptc_toolbox\\baselines\\minkov2018_spatial.py": "16599398dd0ee06431285ee752a69170e25092611d3ab79821a112c19ba17ffd",
+          "sptc_toolbox\\baselines\\minkov2018_legume_dynamic.py": "b33457adc952d8457b04c1c45afea3cfed9895afe3a95eb83f9ab5af636a676f",
+          "sptc_toolbox\\continuous_modulation.py": "5e591608e3440914ba6906b69d843e918b58678f002d529347f536d42c554b2d"
+        }
+      },
+      "choices": [
+        {
+          "mode": 14,
+          "omega": 1.7309012951194551,
+          "gamma": 0.0,
+          "ik": 0,
+          "kx": 1.78,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9995000611513033,
+          "mirror_y_real": -1.0,
+          "mirror_y_imag": -5.344788935437828e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6476530408993995,
+          "gamma": 0.0,
+          "ik": 1,
+          "kx": 2.2,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9882685584982012,
+          "mirror_y_real": -0.9999999999999999,
+          "mirror_y_imag": 3.074000153044198e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.615778059090439,
+          "gamma": 0.0,
+          "ik": 2,
+          "kx": 2.65,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9918817037776131,
+          "mirror_y_real": -0.9999999999999998,
+          "mirror_y_imag": 6.263653723030652e-19,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6094149732398528,
+          "gamma": 0.0,
+          "ik": 3,
+          "kx": 3.141592653589793,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9979591229739898,
+          "mirror_y_real": -1.0,
+          "mirror_y_imag": -8.585442157611687e-19,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        }
+      ],
+      "omega": [
+        1.7309012951194551,
+        1.6476530408993995,
+        1.615778059090439,
+        1.6094149732398528
+      ],
+      "gamma": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "S0_diagonal": [
+        -0.009638395178287483,
+        -0.009519677484415791,
+        -0.009503456331720318,
+        -0.009470126480204268
+      ],
+      "unweighted_E_mask_integral": [
+        0.07965615849824366,
+        0.07867502053236192,
+        0.07854096141917619,
+        0.07826550810086172
+      ],
+      "coupling_scope": "p=0 diagonal dielectric mass overlap only; not full Floquet coupling completeness",
+      "mass_metadata": {
+        "hermiticity_error": 4.64993242112634e-33,
+        "depth": 0.02,
+        "quadrature": 96,
+        "exact_momentum_selection": "q_j-q_i+pQ is primitive reciprocal; all other supercell sums vanish",
+        "Fourier_convention": "delta_epsilon_p exp(-ip*tau), mask integral exp(+i dk.r)",
+        "finite_model": "Electric Galerkin mass M=I+integral Ei*delta_epsilon Ej; R=M^-1. Not exact full-space inverse-epsilon projection.",
+        "strip_area": 5.553756444329974
+      },
+      "native_G_count": 369,
+      "native_sha256": "73fac8e9ab74da56552a07b9864bc13f3c062e12cffb2d5aff5689acffba1e43",
+      "cross_k_identity": "not_assessed",
+      "magnetic_window_norms": [
+        0.9999999631211539,
+        0.9999999903741394,
+        0.99999999860561,
+        0.9999999996446961
+      ]
+    },
+    {
+      "tag": "g3.1_v0_3",
+      "contract": {
+        "gmax": 3.1,
+        "gmode_inds": [
+          0,
+          3
+        ],
+        "q": [
+          1.78,
+          2.2,
+          2.65,
+          3.141592653589793
+        ],
+        "numeig": 32,
+        "geometry": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "radius": 0.25,
+          "transverse_rows": 14,
+          "missing_row": 0
+        },
+        "legume_version": "1.0.3",
+        "gmode_compute": "exact",
+        "gmode_tol": 1e-10,
+        "truncate_g": "abs",
+        "source_hashes": {
+          "sptc_toolbox\\scripts\\converge_w1_spatial.py": "fedf20d1668aa8c5ba5e03ba8866247e005bc28cc1a6f055cba0e1970f17e6e8",
+          "sptc_toolbox\\baselines\\minkov2018_spatial.py": "16599398dd0ee06431285ee752a69170e25092611d3ab79821a112c19ba17ffd",
+          "sptc_toolbox\\baselines\\minkov2018_legume_dynamic.py": "b33457adc952d8457b04c1c45afea3cfed9895afe3a95eb83f9ab5af636a676f",
+          "sptc_toolbox\\continuous_modulation.py": "5e591608e3440914ba6906b69d843e918b58678f002d529347f536d42c554b2d"
+        }
+      },
+      "choices": [
+        {
+          "mode": 14,
+          "omega": 1.7307642997828516,
+          "gamma": 0.0,
+          "ik": 0,
+          "kx": 1.78,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9994980878025449,
+          "mirror_y_real": -1.0000000000000002,
+          "mirror_y_imag": -8.986995248913777e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6474628882062294,
+          "gamma": 0.0,
+          "ik": 1,
+          "kx": 2.2,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9881639112249277,
+          "mirror_y_real": -0.9999999999999998,
+          "mirror_y_imag": -1.3603125220826138e-17,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.615562099666806,
+          "gamma": 0.0,
+          "ik": 2,
+          "kx": 2.65,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9915661465550923,
+          "mirror_y_real": -1.0,
+          "mirror_y_imag": -6.763076290494877e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6091512690819756,
+          "gamma": 0.0,
+          "ik": 3,
+          "kx": 3.141592653589793,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.997919660585763,
+          "mirror_y_real": -0.9999999999999999,
+          "mirror_y_imag": 2.278663796226861e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        }
+      ],
+      "omega": [
+        1.7307642997828516,
+        1.6474628882062294,
+        1.615562099666806,
+        1.6091512690819756
+      ],
+      "gamma": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "S0_diagonal": [
+        -0.009637172013793192,
+        -0.009519808409264143,
+        -0.009505029072065272,
+        -0.009471895559036297
+      ],
+      "unweighted_E_mask_integral": [
+        0.07964604970077019,
+        0.078676102555902,
+        0.07855395927326671,
+        0.07828012858707684
+      ],
+      "coupling_scope": "p=0 diagonal dielectric mass overlap only; not full Floquet coupling completeness",
+      "mass_metadata": {
+        "hermiticity_error": 8.045267184055807e-33,
+        "depth": 0.02,
+        "quadrature": 96,
+        "exact_momentum_selection": "q_j-q_i+pQ is primitive reciprocal; all other supercell sums vanish",
+        "Fourier_convention": "delta_epsilon_p exp(-ip*tau), mask integral exp(+i dk.r)",
+        "finite_model": "Electric Galerkin mass M=I+integral Ei*delta_epsilon Ej; R=M^-1. Not exact full-space inverse-epsilon projection.",
+        "strip_area": 5.553756444329974
+      },
+      "native_G_count": 369,
+      "native_sha256": "844295d6feced0d97ede7233a1fd5001962b50973637118a69b311189a9ab447",
+      "cross_k_identity": "not_assessed",
+      "magnetic_window_norms": [
+        0.9999771221444396,
+        0.9999941526047587,
+        0.9999996947447517,
+        0.9999999875510848
+      ]
+    },
+    {
+      "tag": "g4.1_v0_3",
+      "contract": {
+        "gmax": 4.1,
+        "gmode_inds": [
+          0,
+          3
+        ],
+        "q": [
+          1.78,
+          2.2,
+          2.65,
+          3.141592653589793
+        ],
+        "numeig": 32,
+        "geometry": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "radius": 0.25,
+          "transverse_rows": 14,
+          "missing_row": 0
+        },
+        "legume_version": "1.0.3",
+        "gmode_compute": "exact",
+        "gmode_tol": 1e-10,
+        "truncate_g": "abs",
+        "source_hashes": {
+          "sptc_toolbox\\scripts\\converge_w1_spatial.py": "fedf20d1668aa8c5ba5e03ba8866247e005bc28cc1a6f055cba0e1970f17e6e8",
+          "sptc_toolbox\\baselines\\minkov2018_spatial.py": "16599398dd0ee06431285ee752a69170e25092611d3ab79821a112c19ba17ffd",
+          "sptc_toolbox\\baselines\\minkov2018_legume_dynamic.py": "b33457adc952d8457b04c1c45afea3cfed9895afe3a95eb83f9ab5af636a676f",
+          "sptc_toolbox\\continuous_modulation.py": "5e591608e3440914ba6906b69d843e918b58678f002d529347f536d42c554b2d"
+        }
+      },
+      "choices": [
+        {
+          "mode": 14,
+          "omega": 1.7325764545481686,
+          "gamma": 0.0,
+          "ik": 0,
+          "kx": 1.78,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9995038394189629,
+          "mirror_y_real": -1.0000000000000002,
+          "mirror_y_imag": 1.0650117697289563e-17,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.64932554833741,
+          "gamma": 0.0,
+          "ik": 1,
+          "kx": 2.2,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9880520305390378,
+          "mirror_y_real": -1.0,
+          "mirror_y_imag": 8.327021841805359e-19,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6175753913435478,
+          "gamma": 0.0,
+          "ik": 2,
+          "kx": 2.65,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9911396249440807,
+          "mirror_y_real": -1.0,
+          "mirror_y_imag": 1.7316983066117172e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6110106573379381,
+          "gamma": 0.0,
+          "ik": 3,
+          "kx": 3.141592653589793,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9981089355338929,
+          "mirror_y_real": -0.9999999999999997,
+          "mirror_y_imag": -6.294568469091062e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        }
+      ],
+      "omega": [
+        1.7325764545481686,
+        1.64932554833741,
+        1.6175753913435478,
+        1.6110106573379381
+      ],
+      "gamma": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "S0_diagonal": [
+        -0.009628779083105913,
+        -0.00951138818984248,
+        -0.009493141167830827,
+        -0.00946295325313854
+      ],
+      "unweighted_E_mask_integral": [
+        0.07957668663723895,
+        0.07860651396564033,
+        0.07845571213083329,
+        0.07820622523254991
+      ],
+      "coupling_scope": "p=0 diagonal dielectric mass overlap only; not full Floquet coupling completeness",
+      "mass_metadata": {
+        "hermiticity_error": 3.141161596853579e-33,
+        "depth": 0.02,
+        "quadrature": 96,
+        "exact_momentum_selection": "q_j-q_i+pQ is primitive reciprocal; all other supercell sums vanish",
+        "Fourier_convention": "delta_epsilon_p exp(-ip*tau), mask integral exp(+i dk.r)",
+        "finite_model": "Electric Galerkin mass M=I+integral Ei*delta_epsilon Ej; R=M^-1. Not exact full-space inverse-epsilon projection.",
+        "strip_area": 5.553756444329974
+      },
+      "native_G_count": 643,
+      "native_sha256": "89a9c4972a340f7a38c87d1abc7421c0ab51e4ecd457fd23458dcf036668fa98",
+      "cross_k_identity": "not_assessed",
+      "magnetic_window_norms": [
+        0.9999768547579493,
+        0.9999940755676195,
+        0.9999996913763917,
+        0.9999999882226419
+      ]
+    },
+    {
+      "tag": "g5.1_v0_3",
+      "contract": {
+        "gmax": 5.1,
+        "gmode_inds": [
+          0,
+          3
+        ],
+        "q": [
+          1.78,
+          2.2,
+          2.65,
+          3.141592653589793
+        ],
+        "numeig": 32,
+        "geometry": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "radius": 0.25,
+          "transverse_rows": 14,
+          "missing_row": 0
+        },
+        "legume_version": "1.0.3",
+        "gmode_compute": "exact",
+        "gmode_tol": 1e-10,
+        "truncate_g": "abs",
+        "source_hashes": {
+          "sptc_toolbox\\scripts\\converge_w1_spatial.py": "fedf20d1668aa8c5ba5e03ba8866247e005bc28cc1a6f055cba0e1970f17e6e8",
+          "sptc_toolbox\\baselines\\minkov2018_spatial.py": "16599398dd0ee06431285ee752a69170e25092611d3ab79821a112c19ba17ffd",
+          "sptc_toolbox\\baselines\\minkov2018_legume_dynamic.py": "b33457adc952d8457b04c1c45afea3cfed9895afe3a95eb83f9ab5af636a676f",
+          "sptc_toolbox\\continuous_modulation.py": "5e591608e3440914ba6906b69d843e918b58678f002d529347f536d42c554b2d"
+        }
+      },
+      "choices": [
+        {
+          "mode": 14,
+          "omega": 1.7333803773731262,
+          "gamma": 0.0,
+          "ik": 0,
+          "kx": 1.78,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9995356102816244,
+          "mirror_y_real": -1.0,
+          "mirror_y_imag": 6.739499176239659e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6504362951615477,
+          "gamma": 0.0,
+          "ik": 1,
+          "kx": 2.2,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9884319125514872,
+          "mirror_y_real": -1.0,
+          "mirror_y_imag": 6.680256178480246e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6189398121357892,
+          "gamma": 0.0,
+          "ik": 2,
+          "kx": 2.65,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.99148016284087,
+          "mirror_y_real": -0.9999999999999999,
+          "mirror_y_imag": -1.0017681064491595e-17,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6125266419358326,
+          "gamma": 0.0,
+          "ik": 3,
+          "kx": 3.141592653589793,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9983173200689125,
+          "mirror_y_real": -1.0,
+          "mirror_y_imag": 1.925739069414074e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        }
+      ],
+      "omega": [
+        1.7333803773731262,
+        1.6504362951615477,
+        1.6189398121357892,
+        1.6125266419358326
+      ],
+      "gamma": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "S0_diagonal": [
+        -0.009628622214481268,
+        -0.009510622635926775,
+        -0.009489079489529468,
+        -0.009459318478689999
+      ],
+      "unweighted_E_mask_integral": [
+        0.07957539020232453,
+        0.078600187073775,
+        0.07842214454156586,
+        0.07817618577429751
+      ],
+      "coupling_scope": "p=0 diagonal dielectric mass overlap only; not full Floquet coupling completeness",
+      "mass_metadata": {
+        "hermiticity_error": 1.4855817598475891e-33,
+        "depth": 0.02,
+        "quadrature": 96,
+        "exact_momentum_selection": "q_j-q_i+pQ is primitive reciprocal; all other supercell sums vanish",
+        "Fourier_convention": "delta_epsilon_p exp(-ip*tau), mask integral exp(+i dk.r)",
+        "finite_model": "Electric Galerkin mass M=I+integral Ei*delta_epsilon Ej; R=M^-1. Not exact full-space inverse-epsilon projection.",
+        "strip_area": 5.553756444329974
+      },
+      "native_G_count": 997,
+      "native_sha256": "94ad2377ac22a9d659dec6d7881ea9d8fbf184c463ced2a0967e0feefa875dff",
+      "cross_k_identity": "not_assessed",
+      "magnetic_window_norms": [
+        0.999976898749098,
+        0.9999941584748315,
+        0.9999997058473387,
+        0.9999999894478975
+      ]
+    },
+    {
+      "tag": "g3.1_v0_3_4_7",
+      "contract": {
+        "gmax": 3.1,
+        "gmode_inds": [
+          0,
+          3,
+          4,
+          7
+        ],
+        "q": [
+          1.78,
+          2.2,
+          2.65,
+          3.141592653589793
+        ],
+        "numeig": 32,
+        "geometry": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "radius": 0.25,
+          "transverse_rows": 14,
+          "missing_row": 0
+        },
+        "legume_version": "1.0.3",
+        "gmode_compute": "exact",
+        "gmode_tol": 1e-10,
+        "truncate_g": "abs",
+        "source_hashes": {
+          "sptc_toolbox\\scripts\\converge_w1_spatial.py": "fedf20d1668aa8c5ba5e03ba8866247e005bc28cc1a6f055cba0e1970f17e6e8",
+          "sptc_toolbox\\baselines\\minkov2018_spatial.py": "16599398dd0ee06431285ee752a69170e25092611d3ab79821a112c19ba17ffd",
+          "sptc_toolbox\\baselines\\minkov2018_legume_dynamic.py": "b33457adc952d8457b04c1c45afea3cfed9895afe3a95eb83f9ab5af636a676f",
+          "sptc_toolbox\\continuous_modulation.py": "5e591608e3440914ba6906b69d843e918b58678f002d529347f536d42c554b2d"
+        }
+      },
+      "choices": [
+        {
+          "mode": 14,
+          "omega": 1.7290666674645214,
+          "gamma": 0.0,
+          "ik": 0,
+          "kx": 1.78,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9994528948173436,
+          "mirror_y_real": -1.0,
+          "mirror_y_imag": -4.081730721826402e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6450458888877433,
+          "gamma": 0.0,
+          "ik": 1,
+          "kx": 2.2,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9872364928459161,
+          "mirror_y_real": -1.0000000000000002,
+          "mirror_y_imag": 0.0,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6124334007640317,
+          "gamma": 0.0,
+          "ik": 2,
+          "kx": 2.65,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9904279595004033,
+          "mirror_y_real": -0.9999999999999999,
+          "mirror_y_imag": -2.2900921908062668e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        },
+        {
+          "mode": 14,
+          "omega": 1.6056313517501417,
+          "gamma": 0.0,
+          "ik": 3,
+          "kx": 3.141592653589793,
+          "cross_k_identity": "not_assessed",
+          "central_fraction": 0.9979136802093019,
+          "mirror_y_real": -1.0000000000000002,
+          "mirror_y_imag": -3.628720108382716e-18,
+          "omega_window": [
+            1.55,
+            1.91
+          ],
+          "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+          "radiation_source": "native compute_rad of selected target"
+        }
+      ],
+      "omega": [
+        1.7290666674645214,
+        1.6450458888877433,
+        1.6124334007640317,
+        1.6056313517501417
+      ],
+      "gamma": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "S0_diagonal": [
+        -0.009658325763614964,
+        -0.009544873659397836,
+        -0.009530952324377928,
+        -0.009493199165326024
+      ],
+      "unweighted_E_mask_integral": [
+        0.0798208740794625,
+        0.07888325338345319,
+        0.07876820102791676,
+        0.07845619144897541
+      ],
+      "coupling_scope": "p=0 diagonal dielectric mass overlap only; not full Floquet coupling completeness",
+      "mass_metadata": {
+        "hermiticity_error": 2.0221928132015169e-32,
+        "depth": 0.02,
+        "quadrature": 96,
+        "exact_momentum_selection": "q_j-q_i+pQ is primitive reciprocal; all other supercell sums vanish",
+        "Fourier_convention": "delta_epsilon_p exp(-ip*tau), mask integral exp(+i dk.r)",
+        "finite_model": "Electric Galerkin mass M=I+integral Ei*delta_epsilon Ej; R=M^-1. Not exact full-space inverse-epsilon projection.",
+        "strip_area": 5.553756444329974
+      },
+      "native_G_count": 369,
+      "native_sha256": "fcf64657b7a87f5cb6e6edc481af665fa56160d31b596760c5e78d6b6dadfc84",
+      "cross_k_identity": "not_assessed",
+      "magnetic_window_norms": [
+        0.9999740172285122,
+        0.9999925579758712,
+        0.9999993213619702,
+        0.9999998099538328
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "coarse": "g3.1_v0_3",
+      "fine": "g4.1_v0_3",
+      "axis": "gmax",
+      "same_k_field_overlap_squared": [
+        0.9997451766700979,
+        0.9996892141399745,
+        0.9995984196536298,
+        0.999558649816087
+      ],
+      "delta_angular_frequency": [
+        0.0018121547653169312,
+        0.0018626601311806379,
+        0.002013291676741691,
+        0.0018593882559625463
+      ],
+      "maximum_absolute_angular_frequency_change": 0.002013291676741691,
+      "common_frequency_shift": 0.0018868737073004516,
+      "centered_band_shape_change": [
+        -7.471894198352036e-05,
+        -2.4213576119813673e-05,
+        0.00012641796944123929,
+        -2.7485451337905253e-05
+      ],
+      "maximum_centered_band_shape_change": 0.00012641796944123929,
+      "S0_diagonal_change": [
+        8.392930687278408e-06,
+        8.420219421663433e-06,
+        1.1887904234444621e-05,
+        8.942305897758143e-06
+      ],
+      "maximum_relative_S0_change": 0.0012522624518351067
+    },
+    {
+      "coarse": "g4.1_v0_3",
+      "fine": "g5.1_v0_3",
+      "axis": "gmax",
+      "same_k_field_overlap_squared": [
+        0.9999122457048077,
+        0.9998982859179676,
+        0.9998810920331924,
+        0.9998616520686545
+      ],
+      "delta_angular_frequency": [
+        0.0008039228249576702,
+        0.0011107468241375873,
+        0.0013644207922414164,
+        0.001515984597894482
+      ],
+      "maximum_absolute_angular_frequency_change": 0.001515984597894482,
+      "common_frequency_shift": 0.001198768759807789,
+      "centered_band_shape_change": [
+        -0.00039484593485011876,
+        -8.802193567020167e-05,
+        0.00016565203243362747,
+        0.00031721583808669296
+      ],
+      "maximum_centered_band_shape_change": 0.00039484593485011876,
+      "S0_diagonal_change": [
+        1.568686246455897e-07,
+        7.655539157047642e-07,
+        4.061678301359173e-06,
+        3.6347744485406425e-06
+      ],
+      "maximum_relative_S0_change": 0.0004280371247644146
+    },
+    {
+      "coarse": "g3.1_v0",
+      "fine": "g3.1_v0_3",
+      "axis": "vertical_guided_basis",
+      "same_k_field_overlap_squared": [
+        0.9999239414929129,
+        0.999910771935056,
+        0.9999274239667844,
+        0.9999211648667058
+      ],
+      "delta_angular_frequency": [
+        -0.00013699533660349594,
+        -0.00019015269317002037,
+        -0.00021595942363283882,
+        -0.00026370415787724255
+      ],
+      "maximum_absolute_angular_frequency_change": 0.00026370415787724255,
+      "common_frequency_shift": -0.00020170290282089942,
+      "centered_band_shape_change": [
+        6.470756621740348e-05,
+        1.155020965087905e-05,
+        -1.42565208119394e-05,
+        -6.200125505634313e-05
+      ],
+      "maximum_centered_band_shape_change": 6.470756621740348e-05,
+      "S0_diagonal_change": [
+        1.2231644942913011e-06,
+        -1.3092484835164342e-07,
+        -1.572740344953777e-06,
+        -1.769078832029869e-06
+      ],
+      "maximum_relative_S0_change": 0.00018677136176212874
+    },
+    {
+      "coarse": "g3.1_v0_3",
+      "fine": "g3.1_v0_3_4_7",
+      "axis": "vertical_guided_basis",
+      "same_k_field_overlap_squared": [
+        0.9996624789017315,
+        0.9995730581218655,
+        0.9995908688694106,
+        0.9995442923008454
+      ],
+      "delta_angular_frequency": [
+        -0.0016976323183302,
+        -0.002416999318486157,
+        -0.0031286989027743406,
+        -0.0035199173318338772
+      ],
+      "maximum_absolute_angular_frequency_change": 0.0035199173318338772,
+      "common_frequency_shift": -0.0026908119678561437,
+      "centered_band_shape_change": [
+        0.0009931796495259437,
+        0.0002738126493699866,
+        -0.00043788693491819686,
+        -0.0008291053639777335
+      ],
+      "maximum_centered_band_shape_change": 0.0009931796495259437,
+      "S0_diagonal_change": [
+        -2.115374982177183e-05,
+        -2.5065250133692735e-05,
+        -2.5923252312655756e-05,
+        -2.130360628972705e-05
+      ],
+      "maximum_relative_S0_change": 0.0027199015827988346
+    }
+  ],
+  "failures": [],
+  "overlap_squared_by_q": [
+    [
+      [
+        1.0000000000000013,
+        0.9999239414929129,
+        0.9996793055299503,
+        0.9995613078586363,
+        0.9995278035958766
+      ],
+      [
+        0.9999239414929129,
+        0.9999999999999996,
+        0.9997451766700979,
+        0.9996166819379634,
+        0.9996624789017315
+      ],
+      [
+        0.9996793055299503,
+        0.9997451766700979,
+        0.9999999999999971,
+        0.9999122457048077,
+        0.9993147712339565
+      ],
+      [
+        0.9995613078586363,
+        0.9996166819379634,
+        0.9999122457048077,
+        0.9999999999999993,
+        0.9990936376825579
+      ],
+      [
+        0.9995278035958766,
+        0.9996624789017315,
+        0.9993147712339565,
+        0.9990936376825579,
+        0.9999999999999982
+      ]
+    ],
+    [
+      [
+        0.999999999999998,
+        0.999910771935056,
+        0.9996054218221737,
+        0.9994761647082089,
+        0.9994386986346121
+      ],
+      [
+        0.999910771935056,
+        1.0000000000000009,
+        0.9996892141399745,
+        0.9995507068574481,
+        0.9995730581218655
+      ],
+      [
+        0.9996054218221737,
+        0.9996892141399745,
+        1.0,
+        0.9998982859179676,
+        0.9991822310724984
+      ],
+      [
+        0.9994761647082089,
+        0.9995507068574481,
+        0.9998982859179676,
+        0.999999999999998,
+        0.9989053782498108
+      ],
+      [
+        0.9994386986346121,
+        0.9995730581218655,
+        0.9991822310724984,
+        0.9989053782498108,
+        0.9999999999999982
+      ]
+    ],
+    [
+      [
+        0.9999999999999996,
+        0.9999274239667844,
+        0.9995271063719939,
+        0.9993872792062889,
+        0.9994676663432703
+      ],
+      [
+        0.9999274239667844,
+        1.0000000000000004,
+        0.9995984196536298,
+        0.9994479942944154,
+        0.9995908688694106
+      ],
+      [
+        0.9995271063719939,
+        0.9995984196536298,
+        1.0,
+        0.9998810920331924,
+        0.9991112435045397
+      ],
+      [
+        0.9993872792062889,
+        0.9994479942944154,
+        0.9998810920331924,
+        0.9999999999999973,
+        0.9988198128052296
+      ],
+      [
+        0.9994676663432703,
+        0.9995908688694106,
+        0.9991112435045397,
+        0.9988198128052296,
+        0.9999999999999991
+      ]
+    ],
+    [
+      [
+        1.0000000000000009,
+        0.9999211648667058,
+        0.9994863349412645,
+        0.9993104641106254,
+        0.9994001970176533
+      ],
+      [
+        0.9999211648667058,
+        0.9999999999999993,
+        0.999558649816087,
+        0.9993724513820983,
+        0.9995442923008454
+      ],
+      [
+        0.9994863349412645,
+        0.999558649816087,
+        0.9999999999999969,
+        0.9998616520686545,
+        0.9989872383561528
+      ],
+      [
+        0.9993104641106254,
+        0.9993724513820983,
+        0.9998616520686545,
+        0.9999999999999984,
+        0.9986385589636717
+      ],
+      [
+        0.9994001970176533,
+        0.9995442923008454,
+        0.9989872383561528,
+        0.9986385589636717,
+        1.0000000000000009
+      ]
+    ]
+  ],
+  "limitations": [
+    "Four local momenta do not establish convergence of the full propagated wavepacket.",
+    "No cross-k identity or topology claim is made.",
+    "Static H overlap establishes same-k identity support, not precise bandwidth/curvature/coupling accuracy.",
+    "S0 is a field-derived diagonal mass overlap; off-diagonal coupling and omitted modal sectors need separate controls.",
+    "Observed static band-shape sensitivity alone does not establish the cause of dynamic packet-width differences."
+  ]
+}

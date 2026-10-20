@@ -1,0 +1,98 @@
+schema_version: '0.1'
+kind: case
+id: zhang2018-dielectric-migration
+project_id: floquet-maxwell
+title: Zhang 2018 编码协议的介质薄膜迁移
+stage: results_available
+question:
+  summary: Zhang 2018 编码协议的介质薄膜迁移
+  scope: 原协议迁移到周期介质薄膜；八模/扇区相邻转移轨迹变化11.7%，尚未达到原定5%目标。
+  record:
+    path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md
+capability_refs:
+- periodic-modulation-disorder
+- general-periodic-modulation
+- native-field-projection
+- finite-floquet-dynamics
+model:
+  description: 原协议迁移到周期介质薄膜；八模/扇区相邻转移轨迹变化11.7%，尚未达到原定5%目标。
+  record:
+    path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/run_zhang2018_legume_protocol.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_zhang2018_supercell.py
+  - id: workflow-3
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/check_zhang2018_realspace.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/manifest.json
+  record:
+    path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/manifest.json
+- id: output-2
+  description: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/realspace_checks.json
+  record:
+    path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/realspace_checks.json
+- id: output-3
+  description: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_identity.json
+  record:
+    path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_identity.json
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md
+criteria:
+- id: criterion-1
+  description: 逐晶胞材料算符及所选64扇区有限模型的周期乘子与转移轨迹。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md
+checks:
+- id: check-1
+  method: 独立2×2超胞矩阵、实空间投影、模式身份和相同带宽Floquet/ODE比较
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md
+  artifacts:
+  - path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/manifest.json
+  - path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/realspace_checks.json
+  - path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_identity.json
+  notes: 64×8完整编码、最高512静态模式；独立超胞矩阵差0.27%，相同带宽Floquet/ODE乘子差7.4e-7。 原协议迁移到周期介质薄膜；八模/扇区相邻转移轨迹变化11.7%，尚未达到原定5%目标。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md

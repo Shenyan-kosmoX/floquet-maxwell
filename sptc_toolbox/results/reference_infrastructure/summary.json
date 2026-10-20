@@ -1,0 +1,2846 @@
+{
+  "status": "PASSED_ANALYTIC_SLAB_CONTROL",
+  "physical_geometry": {
+    "epsilon": 12.0,
+    "thickness_over_a": 0.4,
+    "cladding_epsilon": 1.0,
+    "patterned": false
+  },
+  "kpoints_ka": [
+    [
+      1.0,
+      1.02,
+      1.04
+    ],
+    [
+      0.3,
+      0.3,
+      0.3
+    ]
+  ],
+  "coarse_config": {
+    "gmax": 2.1,
+    "gmode_inds": [
+      0
+    ],
+    "reference_eps": [
+      12.0
+    ],
+    "numeig": 5,
+    "eps_eff": "custom",
+    "gmode_compute": "exact",
+    "gmode_step": 0.001,
+    "gmode_tol": 1e-10,
+    "compute_im": false,
+    "truncate_g": "abs",
+    "eig_solver": "eigh",
+    "eig_sigma": 0.0,
+    "verbose": false,
+    "kz_symmetry": null,
+    "angles": null
+  },
+  "fine_config": {
+    "gmax": 3.1,
+    "gmode_inds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reference_eps": [
+      12.0
+    ],
+    "numeig": 8,
+    "eps_eff": "custom",
+    "gmode_compute": "exact",
+    "gmode_step": 0.001,
+    "gmode_tol": 1e-10,
+    "compute_im": false,
+    "truncate_g": "abs",
+    "eig_solver": "eigh",
+    "eig_sigma": 0.0,
+    "verbose": false,
+    "kz_symmetry": null,
+    "angles": null
+  },
+  "physical_signature": "1f31dd985d2f2acc3870225c5e589ae7316024ecaf8bfb4910f18bdbcccef995",
+  "analytic_equation": "q*tan(q*d/2)=alpha; q=sqrt(eps*Omega^2-k^2), alpha=sqrt(k^2-Omega^2)",
+  "analytic_frequencies_fa_over_c": [
+    0.10254913836573522,
+    0.10379686513937912,
+    0.10503773528506273
+  ],
+  "coarse_frequencies_fa_over_c": [
+    0.10254913836573532,
+    0.10379686513935628,
+    0.10503773528506279
+  ],
+  "fine_frequencies_fa_over_c": [
+    0.1025491383657357,
+    0.10379686513935628,
+    0.10503773528506383
+  ],
+  "fine_selected_modes": [
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "maximum_analytic_absolute_frequency_error": 2.2842838731662596e-14,
+  "transitions": [
+    {
+      "k_previous": [
+        1.0,
+        0.3
+      ],
+      "k_current": [
+        1.02,
+        0.3
+      ],
+      "previous_modes": [
+        0
+      ],
+      "current_modes": [
+        0
+      ],
+      "selected": {
+        "principal_overlaps_squared": [
+          0.9998720586046582
+        ],
+        "directional_capture_squared": [
+          0.9998720586046582
+        ],
+        "minimum_overlap_squared": 0.9998720586046582,
+        "dimension_previous": 1,
+        "dimension_current": 1,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_in_all_current": {
+        "principal_overlaps_squared": [
+          0.9998720586046589
+        ],
+        "directional_capture_squared": [
+          0.9998720586046589
+        ],
+        "minimum_overlap_squared": 0.9998720586046589,
+        "dimension_previous": 1,
+        "dimension_current": 5,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 4
+      },
+      "current_in_all_source": {
+        "principal_overlaps_squared": [
+          0.9998720586046589
+        ],
+        "directional_capture_squared": [
+          0.9998720586046589
+        ],
+        "minimum_overlap_squared": 0.9998720586046589,
+        "dimension_previous": 1,
+        "dimension_current": 5,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 4
+      },
+      "native_dimension_previous": 13,
+      "native_dimension_current": 13,
+      "field_diagnostics_previous": {
+        "column_norms": [
+          0.9999999989206202
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 2.1587593934668803e-09,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "field_diagnostics_current": {
+        "column_norms": [
+          0.9999999993059567
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 1.3880864235815693e-09,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+      "lost_rows": [],
+      "gained_rows": [],
+      "lost": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0
+        ],
+        "raw_column_gram_error": 0.0,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "gained": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0
+        ],
+        "raw_column_gram_error": 0.0,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      }
+    },
+    {
+      "k_previous": [
+        1.02,
+        0.3
+      ],
+      "k_current": [
+        1.04,
+        0.3
+      ],
+      "previous_modes": [
+        0
+      ],
+      "current_modes": [
+        0
+      ],
+      "selected": {
+        "principal_overlaps_squared": [
+          0.9998773749188948
+        ],
+        "directional_capture_squared": [
+          0.9998773749188948
+        ],
+        "minimum_overlap_squared": 0.9998773749188948,
+        "dimension_previous": 1,
+        "dimension_current": 1,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_in_all_current": {
+        "principal_overlaps_squared": [
+          0.9998773749188942
+        ],
+        "directional_capture_squared": [
+          0.9998773749188942
+        ],
+        "minimum_overlap_squared": 0.9998773749188942,
+        "dimension_previous": 1,
+        "dimension_current": 5,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 4
+      },
+      "current_in_all_source": {
+        "principal_overlaps_squared": [
+          0.9998773749188942
+        ],
+        "directional_capture_squared": [
+          0.9998773749188942
+        ],
+        "minimum_overlap_squared": 0.9998773749188942,
+        "dimension_previous": 1,
+        "dimension_current": 5,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 4
+      },
+      "native_dimension_previous": 13,
+      "native_dimension_current": 13,
+      "field_diagnostics_previous": {
+        "column_norms": [
+          0.9999999993059567
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 1.3880864235815693e-09,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "field_diagnostics_current": {
+        "column_norms": [
+          0.9999999995541755
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 8.916491989197084e-10,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+      "lost_rows": [],
+      "gained_rows": [],
+      "lost": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0
+        ],
+        "raw_column_gram_error": 0.0,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "gained": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0
+        ],
+        "raw_column_gram_error": 0.0,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      }
+    }
+  ],
+  "fine_transitions": [
+    {
+      "k_previous": [
+        1.0,
+        0.3
+      ],
+      "k_current": [
+        1.02,
+        0.3
+      ],
+      "previous_modes": [
+        0
+      ],
+      "current_modes": [
+        0
+      ],
+      "selected": {
+        "principal_overlaps_squared": [
+          0.9998720586046584
+        ],
+        "directional_capture_squared": [
+          0.9998720586046584
+        ],
+        "minimum_overlap_squared": 0.9998720586046584,
+        "dimension_previous": 1,
+        "dimension_current": 1,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_in_all_current": {
+        "principal_overlaps_squared": [
+          0.9998720586046596
+        ],
+        "directional_capture_squared": [
+          0.9998720586046596
+        ],
+        "minimum_overlap_squared": 0.9998720586046596,
+        "dimension_previous": 1,
+        "dimension_current": 8,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 7
+      },
+      "current_in_all_source": {
+        "principal_overlaps_squared": [
+          0.9998720586046596
+        ],
+        "directional_capture_squared": [
+          0.9998720586046596
+        ],
+        "minimum_overlap_squared": 0.9998720586046596,
+        "dimension_previous": 1,
+        "dimension_current": 8,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 7
+      },
+      "native_dimension_previous": 114,
+      "native_dimension_current": 114,
+      "field_diagnostics_previous": {
+        "column_norms": [
+          0.9999999989206209
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 2.1587582832438557e-09,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "field_diagnostics_current": {
+        "column_norms": [
+          0.9999999993059565
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 1.3880868676707792e-09,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+      "lost_rows": [],
+      "gained_rows": [],
+      "lost": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0
+        ],
+        "raw_column_gram_error": 1.3322676295501878e-15,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "gained": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0
+        ],
+        "raw_column_gram_error": 4.440892098500626e-16,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      }
+    },
+    {
+      "k_previous": [
+        1.02,
+        0.3
+      ],
+      "k_current": [
+        1.04,
+        0.3
+      ],
+      "previous_modes": [
+        0
+      ],
+      "current_modes": [
+        0
+      ],
+      "selected": {
+        "principal_overlaps_squared": [
+          0.9998773749188948
+        ],
+        "directional_capture_squared": [
+          0.9998773749188948
+        ],
+        "minimum_overlap_squared": 0.9998773749188948,
+        "dimension_previous": 1,
+        "dimension_current": 1,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_in_all_current": {
+        "principal_overlaps_squared": [
+          0.9998773749188948
+        ],
+        "directional_capture_squared": [
+          0.9998773749188948
+        ],
+        "minimum_overlap_squared": 0.9998773749188948,
+        "dimension_previous": 1,
+        "dimension_current": 8,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 7
+      },
+      "current_in_all_source": {
+        "principal_overlaps_squared": [
+          0.9998773749188948
+        ],
+        "directional_capture_squared": [
+          0.9998773749188948
+        ],
+        "minimum_overlap_squared": 0.9998773749188948,
+        "dimension_previous": 1,
+        "dimension_current": 8,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 7
+      },
+      "native_dimension_previous": 114,
+      "native_dimension_current": 114,
+      "field_diagnostics_previous": {
+        "column_norms": [
+          0.9999999993059565
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 1.3880868676707792e-09,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "field_diagnostics_current": {
+        "column_norms": [
+          0.9999999995541753
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 8.916496430089182e-10,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+      "lost_rows": [],
+      "gained_rows": [],
+      "lost": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0
+        ],
+        "raw_column_gram_error": 4.440892098500626e-16,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "gained": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0
+        ],
+        "raw_column_gram_error": 4.440892098500626e-16,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      }
+    }
+  ],
+  "refinements": [
+    {
+      "k_previous": [
+        1.0,
+        0.3
+      ],
+      "k_current": [
+        1.0,
+        0.3
+      ],
+      "previous_modes": [
+        0
+      ],
+      "current_modes": [
+        0
+      ],
+      "selected": {
+        "principal_overlaps_squared": [
+          1.0
+        ],
+        "directional_capture_squared": [
+          1.0
+        ],
+        "minimum_overlap_squared": 1.0,
+        "dimension_previous": 1,
+        "dimension_current": 1,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_in_all_current": {
+        "principal_overlaps_squared": [
+          0.9999999999999998
+        ],
+        "directional_capture_squared": [
+          0.9999999999999998
+        ],
+        "minimum_overlap_squared": 0.9999999999999998,
+        "dimension_previous": 1,
+        "dimension_current": 8,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 7
+      },
+      "current_in_all_source": {
+        "principal_overlaps_squared": [
+          0.9999999999999998
+        ],
+        "directional_capture_squared": [
+          0.9999999999999998
+        ],
+        "minimum_overlap_squared": 0.9999999999999998,
+        "dimension_previous": 1,
+        "dimension_current": 5,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 4
+      },
+      "native_dimension_previous": 13,
+      "native_dimension_current": 114,
+      "field_diagnostics_previous": {
+        "column_norms": [
+          0.9999999989206202
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 2.1587593934668803e-09,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "field_diagnostics_current": {
+        "column_norms": [
+          0.9999999989206209
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 2.1587582832438557e-09,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+      "lost_rows": [],
+      "gained_rows": [
+        [
+          0,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          0,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          0,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          0,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          0,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          0,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          0,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          0,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          0,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          0,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          0,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          0,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          0,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          0,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          0,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          0,
+          18.84955592153876,
+          0.0
+        ],
+        [
+          1,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          1,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          1,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          1,
+          -12.566370614359172,
+          0.0
+        ],
+        [
+          1,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          1,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          1,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          1,
+          -6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          1,
+          -6.283185307179586,
+          0.0
+        ],
+        [
+          1,
+          -6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          1,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          1,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          1,
+          0.0,
+          -12.566370614359172
+        ],
+        [
+          1,
+          0.0,
+          -6.283185307179586
+        ],
+        [
+          1,
+          0.0,
+          0.0
+        ],
+        [
+          1,
+          0.0,
+          6.283185307179586
+        ],
+        [
+          1,
+          0.0,
+          12.566370614359172
+        ],
+        [
+          1,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          1,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          1,
+          6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          1,
+          6.283185307179586,
+          0.0
+        ],
+        [
+          1,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          1,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          1,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          1,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          1,
+          12.566370614359172,
+          0.0
+        ],
+        [
+          1,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          1,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          1,
+          18.84955592153876,
+          0.0
+        ],
+        [
+          2,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          2,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          2,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          2,
+          -12.566370614359172,
+          0.0
+        ],
+        [
+          2,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          2,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          2,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          2,
+          -6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          2,
+          -6.283185307179586,
+          0.0
+        ],
+        [
+          2,
+          -6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          2,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          2,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          2,
+          0.0,
+          -12.566370614359172
+        ],
+        [
+          2,
+          0.0,
+          -6.283185307179586
+        ],
+        [
+          2,
+          0.0,
+          6.283185307179586
+        ],
+        [
+          2,
+          0.0,
+          12.566370614359172
+        ],
+        [
+          2,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          2,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          2,
+          6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          2,
+          6.283185307179586,
+          0.0
+        ],
+        [
+          2,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          2,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          2,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          2,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          2,
+          12.566370614359172,
+          0.0
+        ],
+        [
+          2,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          2,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          2,
+          18.84955592153876,
+          0.0
+        ],
+        [
+          3,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          3,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          3,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          3,
+          -12.566370614359172,
+          0.0
+        ],
+        [
+          3,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          3,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          3,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          3,
+          -6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          3,
+          -6.283185307179586,
+          0.0
+        ],
+        [
+          3,
+          -6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          3,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          3,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          3,
+          0.0,
+          -12.566370614359172
+        ],
+        [
+          3,
+          0.0,
+          -6.283185307179586
+        ],
+        [
+          3,
+          0.0,
+          6.283185307179586
+        ],
+        [
+          3,
+          0.0,
+          12.566370614359172
+        ],
+        [
+          3,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          3,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          3,
+          6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          3,
+          6.283185307179586,
+          0.0
+        ],
+        [
+          3,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          3,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          3,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          3,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          3,
+          12.566370614359172,
+          0.0
+        ],
+        [
+          3,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          3,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          3,
+          18.84955592153876,
+          0.0
+        ]
+      ],
+      "lost": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0
+        ],
+        "raw_column_gram_error": 0.0,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "gained": {
+        "worst_weight": 4.547547217545809e-31,
+        "mean_weight": 4.547547217545809e-31,
+        "eigenvalues": [
+          4.547547217545809e-31
+        ],
+        "raw_column_gram_error": 1.3322676295501878e-15,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "convergence_relative_frequency": 3.789188917735838e-15,
+      "convergence_field_capture": 1.0,
+      "frequency_comparison": "Sorted spectrum within the separately tested physical target subspace",
+      "coarse_metadata": {
+        "status": "EXPORTED_NATIVE_PHYSICAL_H_IN_COMMON_UNION",
+        "frequency_units": "f_a_over_c",
+        "kpoint_units": "k_a",
+        "field_metric": "finite_window_physical_H_norm_not_QNM_residue_metric",
+        "field_metric_formula": "cell_area * sum_z weights[z] * sum_component,G |H_G(z)|^2",
+        "flattening_order": [
+          "z",
+          "component_xyz",
+          "union_physical_G"
+        ],
+        "native_modes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kind": 0,
+        "physical_cell_area": 1.0,
+        "native_G_count": 13,
+        "union_G_count": 29,
+        "zero_filled_G_count": 16,
+        "native_to_union_G_indexes": [
+          3,
+          7,
+          8,
+          9,
+          12,
+          13,
+          14,
+          15,
+          16,
+          19,
+          20,
+          21,
+          25
+        ],
+        "z_min": -11.9576037399666,
+        "z_max": 12.3576037399666,
+        "quadrature_weight_sum": 24.4,
+        "physical_H_column_norms": [
+          0.9999999989206202,
+          0.9999999999999997,
+          0.9999999999999997,
+          1.0,
+          0.9999999999999997
+        ],
+        "mode_norms_were_rescaled": false,
+        "intersection_used": false,
+        "snapshot_native_coordinate_hash": "e07e56aa72d4b8a3319029f51b06d17db94e1ebe0e60f8b9c9736c6dc01c5732",
+        "source_config_id": "6d0673ef7367e19e55f2ba2fc72aaaca24c1736cf2acbeb2cd72ab2fa0ab6f13",
+        "source_full_basis_id": "d37fb909f4c17272714c45c2f3db756c4ee28e658a080932e6b63c014786dce8",
+        "native_lineage_validated_before_and_after_export": true,
+        "source_reference_config": {
+          "gmax": 2.1,
+          "gmode_inds": [
+            0
+          ],
+          "reference_eps": [
+            12.0
+          ],
+          "numeig": 5,
+          "eps_eff": "custom",
+          "gmode_compute": "exact",
+          "gmode_step": 0.001,
+          "gmode_tol": 1e-10,
+          "compute_im": false,
+          "truncate_g": "abs",
+          "eig_solver": "eigh",
+          "eig_sigma": 0.0,
+          "verbose": false,
+          "kz_symmetry": null,
+          "angles": null
+        }
+      },
+      "fine_metadata": {
+        "status": "EXPORTED_NATIVE_PHYSICAL_H_IN_COMMON_UNION",
+        "frequency_units": "f_a_over_c",
+        "kpoint_units": "k_a",
+        "field_metric": "finite_window_physical_H_norm_not_QNM_residue_metric",
+        "field_metric_formula": "cell_area * sum_z weights[z] * sum_component,G |H_G(z)|^2",
+        "flattening_order": [
+          "z",
+          "component_xyz",
+          "union_physical_G"
+        ],
+        "native_modes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "kind": 0,
+        "physical_cell_area": 1.0,
+        "native_G_count": 29,
+        "union_G_count": 29,
+        "zero_filled_G_count": 0,
+        "native_to_union_G_indexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "z_min": -11.9576037399666,
+        "z_max": 12.3576037399666,
+        "quadrature_weight_sum": 24.4,
+        "physical_H_column_norms": [
+          0.9999999989206209,
+          0.9979913255650422,
+          0.9999999999999997,
+          0.9999999999999999,
+          1.0000000000000004,
+          0.9999999999999996,
+          1.0000000000000002,
+          0.9999999999999994
+        ],
+        "mode_norms_were_rescaled": false,
+        "intersection_used": false,
+        "snapshot_native_coordinate_hash": "7fcf93a201979a10b29ee5a1f80c3946c8fb16884d6bb1c7a4dca1a7d46085bd",
+        "source_config_id": "807b59888a9fb3eeb6e40b81f130001f0d40838eae8f6f65b390861b1e3ba72d",
+        "source_full_basis_id": "eebe911ff5d467da64a63ca8f887d61720a6c99fc487ed39df41506e34228344",
+        "native_lineage_validated_before_and_after_export": true,
+        "source_reference_config": {
+          "gmax": 3.1,
+          "gmode_inds": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "reference_eps": [
+            12.0
+          ],
+          "numeig": 8,
+          "eps_eff": "custom",
+          "gmode_compute": "exact",
+          "gmode_step": 0.001,
+          "gmode_tol": 1e-10,
+          "compute_im": false,
+          "truncate_g": "abs",
+          "eig_solver": "eigh",
+          "eig_sigma": 0.0,
+          "verbose": false,
+          "kz_symmetry": null,
+          "angles": null
+        }
+      },
+      "scope": "Same-k field and spectral measurements; caller must establish independent numerical refinement"
+    },
+    {
+      "k_previous": [
+        1.02,
+        0.3
+      ],
+      "k_current": [
+        1.02,
+        0.3
+      ],
+      "previous_modes": [
+        0
+      ],
+      "current_modes": [
+        0
+      ],
+      "selected": {
+        "principal_overlaps_squared": [
+          1.0
+        ],
+        "directional_capture_squared": [
+          1.0
+        ],
+        "minimum_overlap_squared": 1.0,
+        "dimension_previous": 1,
+        "dimension_current": 1,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_in_all_current": {
+        "principal_overlaps_squared": [
+          1.0
+        ],
+        "directional_capture_squared": [
+          1.0
+        ],
+        "minimum_overlap_squared": 1.0,
+        "dimension_previous": 1,
+        "dimension_current": 8,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 7
+      },
+      "current_in_all_source": {
+        "principal_overlaps_squared": [
+          1.0
+        ],
+        "directional_capture_squared": [
+          1.0
+        ],
+        "minimum_overlap_squared": 1.0,
+        "dimension_previous": 1,
+        "dimension_current": 5,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 4
+      },
+      "native_dimension_previous": 13,
+      "native_dimension_current": 114,
+      "field_diagnostics_previous": {
+        "column_norms": [
+          0.9999999993059567
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 1.3880864235815693e-09,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "field_diagnostics_current": {
+        "column_norms": [
+          0.9999999993059565
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 1.3880868676707792e-09,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+      "lost_rows": [],
+      "gained_rows": [
+        [
+          0,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          0,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          0,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          0,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          0,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          0,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          0,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          0,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          0,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          0,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          0,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          0,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          0,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          0,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          0,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          0,
+          18.84955592153876,
+          0.0
+        ],
+        [
+          1,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          1,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          1,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          1,
+          -12.566370614359172,
+          0.0
+        ],
+        [
+          1,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          1,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          1,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          1,
+          -6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          1,
+          -6.283185307179586,
+          0.0
+        ],
+        [
+          1,
+          -6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          1,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          1,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          1,
+          0.0,
+          -12.566370614359172
+        ],
+        [
+          1,
+          0.0,
+          -6.283185307179586
+        ],
+        [
+          1,
+          0.0,
+          0.0
+        ],
+        [
+          1,
+          0.0,
+          6.283185307179586
+        ],
+        [
+          1,
+          0.0,
+          12.566370614359172
+        ],
+        [
+          1,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          1,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          1,
+          6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          1,
+          6.283185307179586,
+          0.0
+        ],
+        [
+          1,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          1,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          1,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          1,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          1,
+          12.566370614359172,
+          0.0
+        ],
+        [
+          1,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          1,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          1,
+          18.84955592153876,
+          0.0
+        ],
+        [
+          2,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          2,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          2,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          2,
+          -12.566370614359172,
+          0.0
+        ],
+        [
+          2,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          2,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          2,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          2,
+          -6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          2,
+          -6.283185307179586,
+          0.0
+        ],
+        [
+          2,
+          -6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          2,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          2,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          2,
+          0.0,
+          -12.566370614359172
+        ],
+        [
+          2,
+          0.0,
+          -6.283185307179586
+        ],
+        [
+          2,
+          0.0,
+          6.283185307179586
+        ],
+        [
+          2,
+          0.0,
+          12.566370614359172
+        ],
+        [
+          2,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          2,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          2,
+          6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          2,
+          6.283185307179586,
+          0.0
+        ],
+        [
+          2,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          2,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          2,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          2,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          2,
+          12.566370614359172,
+          0.0
+        ],
+        [
+          2,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          2,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          2,
+          18.84955592153876,
+          0.0
+        ],
+        [
+          3,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          3,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          3,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          3,
+          -12.566370614359172,
+          0.0
+        ],
+        [
+          3,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          3,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          3,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          3,
+          -6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          3,
+          -6.283185307179586,
+          0.0
+        ],
+        [
+          3,
+          -6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          3,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          3,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          3,
+          0.0,
+          -12.566370614359172
+        ],
+        [
+          3,
+          0.0,
+          -6.283185307179586
+        ],
+        [
+          3,
+          0.0,
+          6.283185307179586
+        ],
+        [
+          3,
+          0.0,
+          12.566370614359172
+        ],
+        [
+          3,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          3,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          3,
+          6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          3,
+          6.283185307179586,
+          0.0
+        ],
+        [
+          3,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          3,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          3,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          3,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          3,
+          12.566370614359172,
+          0.0
+        ],
+        [
+          3,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          3,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          3,
+          18.84955592153876,
+          0.0
+        ]
+      ],
+      "lost": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0
+        ],
+        "raw_column_gram_error": 0.0,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "gained": {
+        "worst_weight": 3.132029622379068e-33,
+        "mean_weight": 3.132029622379068e-33,
+        "eigenvalues": [
+          3.132029622379068e-33
+        ],
+        "raw_column_gram_error": 4.440892098500626e-16,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "convergence_relative_frequency": 0.0,
+      "convergence_field_capture": 1.0,
+      "frequency_comparison": "Sorted spectrum within the separately tested physical target subspace",
+      "coarse_metadata": {
+        "status": "EXPORTED_NATIVE_PHYSICAL_H_IN_COMMON_UNION",
+        "frequency_units": "f_a_over_c",
+        "kpoint_units": "k_a",
+        "field_metric": "finite_window_physical_H_norm_not_QNM_residue_metric",
+        "field_metric_formula": "cell_area * sum_z weights[z] * sum_component,G |H_G(z)|^2",
+        "flattening_order": [
+          "z",
+          "component_xyz",
+          "union_physical_G"
+        ],
+        "native_modes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kind": 1,
+        "physical_cell_area": 1.0,
+        "native_G_count": 13,
+        "union_G_count": 29,
+        "zero_filled_G_count": 16,
+        "native_to_union_G_indexes": [
+          3,
+          7,
+          8,
+          9,
+          12,
+          13,
+          14,
+          15,
+          16,
+          19,
+          20,
+          21,
+          25
+        ],
+        "z_min": -11.9576037399666,
+        "z_max": 12.3576037399666,
+        "quadrature_weight_sum": 24.4,
+        "physical_H_column_norms": [
+          0.9999999993059573,
+          0.9999999999999997,
+          0.9999999999999994,
+          0.9999999999999999,
+          0.9999999999999997
+        ],
+        "mode_norms_were_rescaled": false,
+        "intersection_used": false,
+        "snapshot_native_coordinate_hash": "2021e561573e84816307d57cb0a0eb5ce259148beaf73ca01d2f4baeb7ef00f3",
+        "source_config_id": "6d0673ef7367e19e55f2ba2fc72aaaca24c1736cf2acbeb2cd72ab2fa0ab6f13",
+        "source_full_basis_id": "b141ba58f2a0b2550c1c1ba7bd30bf649614b43671e4443f9471f6fc56f325b0",
+        "native_lineage_validated_before_and_after_export": true,
+        "source_reference_config": {
+          "gmax": 2.1,
+          "gmode_inds": [
+            0
+          ],
+          "reference_eps": [
+            12.0
+          ],
+          "numeig": 5,
+          "eps_eff": "custom",
+          "gmode_compute": "exact",
+          "gmode_step": 0.001,
+          "gmode_tol": 1e-10,
+          "compute_im": false,
+          "truncate_g": "abs",
+          "eig_solver": "eigh",
+          "eig_sigma": 0.0,
+          "verbose": false,
+          "kz_symmetry": null,
+          "angles": null
+        }
+      },
+      "fine_metadata": {
+        "status": "EXPORTED_NATIVE_PHYSICAL_H_IN_COMMON_UNION",
+        "frequency_units": "f_a_over_c",
+        "kpoint_units": "k_a",
+        "field_metric": "finite_window_physical_H_norm_not_QNM_residue_metric",
+        "field_metric_formula": "cell_area * sum_z weights[z] * sum_component,G |H_G(z)|^2",
+        "flattening_order": [
+          "z",
+          "component_xyz",
+          "union_physical_G"
+        ],
+        "native_modes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "kind": 1,
+        "physical_cell_area": 1.0,
+        "native_G_count": 29,
+        "union_G_count": 29,
+        "zero_filled_G_count": 0,
+        "native_to_union_G_indexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "z_min": -11.9576037399666,
+        "z_max": 12.3576037399666,
+        "quadrature_weight_sum": 24.4,
+        "physical_H_column_norms": [
+          0.999999999305957,
+          0.9984042451220564,
+          1.0000000000000002,
+          0.9999999999999996,
+          0.9999999999999998,
+          0.9999999999999997,
+          0.9999999999999993,
+          0.9999999999999993
+        ],
+        "mode_norms_were_rescaled": false,
+        "intersection_used": false,
+        "snapshot_native_coordinate_hash": "39a1aaabafc852edb0a5e5373051192d8be6259a1b527542bf435763d5ce38af",
+        "source_config_id": "807b59888a9fb3eeb6e40b81f130001f0d40838eae8f6f65b390861b1e3ba72d",
+        "source_full_basis_id": "917b7f64fbe80520b2b9b77549fcb116b27851877ba9a5c7ab344f2197938476",
+        "native_lineage_validated_before_and_after_export": true,
+        "source_reference_config": {
+          "gmax": 3.1,
+          "gmode_inds": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "reference_eps": [
+            12.0
+          ],
+          "numeig": 8,
+          "eps_eff": "custom",
+          "gmode_compute": "exact",
+          "gmode_step": 0.001,
+          "gmode_tol": 1e-10,
+          "compute_im": false,
+          "truncate_g": "abs",
+          "eig_solver": "eigh",
+          "eig_sigma": 0.0,
+          "verbose": false,
+          "kz_symmetry": null,
+          "angles": null
+        }
+      },
+      "scope": "Same-k field and spectral measurements; caller must establish independent numerical refinement"
+    },
+    {
+      "k_previous": [
+        1.04,
+        0.3
+      ],
+      "k_current": [
+        1.04,
+        0.3
+      ],
+      "previous_modes": [
+        0
+      ],
+      "current_modes": [
+        0
+      ],
+      "selected": {
+        "principal_overlaps_squared": [
+          1.0
+        ],
+        "directional_capture_squared": [
+          1.0
+        ],
+        "minimum_overlap_squared": 1.0,
+        "dimension_previous": 1,
+        "dimension_current": 1,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 0
+      },
+      "source_in_all_current": {
+        "principal_overlaps_squared": [
+          1.0
+        ],
+        "directional_capture_squared": [
+          1.0
+        ],
+        "minimum_overlap_squared": 1.0,
+        "dimension_previous": 1,
+        "dimension_current": 8,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 7
+      },
+      "current_in_all_source": {
+        "principal_overlaps_squared": [
+          1.0
+        ],
+        "directional_capture_squared": [
+          1.0
+        ],
+        "minimum_overlap_squared": 1.0,
+        "dimension_previous": 1,
+        "dimension_current": 5,
+        "lost_previous_dimension": 0,
+        "gained_current_dimension": 4
+      },
+      "native_dimension_previous": 13,
+      "native_dimension_current": 114,
+      "field_diagnostics_previous": {
+        "column_norms": [
+          0.9999999995541755
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 8.916491989197084e-10,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "field_diagnostics_current": {
+        "column_norms": [
+          0.9999999995541753
+        ],
+        "singular_value_ratio": 1.0,
+        "raw_gram_error_from_identity": 8.916496430089182e-10,
+        "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+      },
+      "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+      "lost_rows": [],
+      "gained_rows": [
+        [
+          0,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          0,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          0,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          0,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          0,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          0,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          0,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          0,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          0,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          0,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          0,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          0,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          0,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          0,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          0,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          0,
+          18.84955592153876,
+          0.0
+        ],
+        [
+          1,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          1,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          1,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          1,
+          -12.566370614359172,
+          0.0
+        ],
+        [
+          1,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          1,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          1,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          1,
+          -6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          1,
+          -6.283185307179586,
+          0.0
+        ],
+        [
+          1,
+          -6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          1,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          1,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          1,
+          0.0,
+          -12.566370614359172
+        ],
+        [
+          1,
+          0.0,
+          -6.283185307179586
+        ],
+        [
+          1,
+          0.0,
+          0.0
+        ],
+        [
+          1,
+          0.0,
+          6.283185307179586
+        ],
+        [
+          1,
+          0.0,
+          12.566370614359172
+        ],
+        [
+          1,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          1,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          1,
+          6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          1,
+          6.283185307179586,
+          0.0
+        ],
+        [
+          1,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          1,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          1,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          1,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          1,
+          12.566370614359172,
+          0.0
+        ],
+        [
+          1,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          1,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          1,
+          18.84955592153876,
+          0.0
+        ],
+        [
+          2,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          2,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          2,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          2,
+          -12.566370614359172,
+          0.0
+        ],
+        [
+          2,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          2,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          2,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          2,
+          -6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          2,
+          -6.283185307179586,
+          0.0
+        ],
+        [
+          2,
+          -6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          2,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          2,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          2,
+          0.0,
+          -12.566370614359172
+        ],
+        [
+          2,
+          0.0,
+          -6.283185307179586
+        ],
+        [
+          2,
+          0.0,
+          6.283185307179586
+        ],
+        [
+          2,
+          0.0,
+          12.566370614359172
+        ],
+        [
+          2,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          2,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          2,
+          6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          2,
+          6.283185307179586,
+          0.0
+        ],
+        [
+          2,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          2,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          2,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          2,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          2,
+          12.566370614359172,
+          0.0
+        ],
+        [
+          2,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          2,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          2,
+          18.84955592153876,
+          0.0
+        ],
+        [
+          3,
+          -18.84955592153876,
+          0.0
+        ],
+        [
+          3,
+          -12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          3,
+          -12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          3,
+          -12.566370614359172,
+          0.0
+        ],
+        [
+          3,
+          -12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          3,
+          -12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          3,
+          -6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          3,
+          -6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          3,
+          -6.283185307179586,
+          0.0
+        ],
+        [
+          3,
+          -6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          3,
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          3,
+          0.0,
+          -18.84955592153876
+        ],
+        [
+          3,
+          0.0,
+          -12.566370614359172
+        ],
+        [
+          3,
+          0.0,
+          -6.283185307179586
+        ],
+        [
+          3,
+          0.0,
+          6.283185307179586
+        ],
+        [
+          3,
+          0.0,
+          12.566370614359172
+        ],
+        [
+          3,
+          0.0,
+          18.84955592153876
+        ],
+        [
+          3,
+          6.283185307179586,
+          -12.566370614359172
+        ],
+        [
+          3,
+          6.283185307179586,
+          -6.283185307179586
+        ],
+        [
+          3,
+          6.283185307179586,
+          0.0
+        ],
+        [
+          3,
+          6.283185307179586,
+          6.283185307179586
+        ],
+        [
+          3,
+          6.283185307179586,
+          12.566370614359172
+        ],
+        [
+          3,
+          12.566370614359172,
+          -12.566370614359172
+        ],
+        [
+          3,
+          12.566370614359172,
+          -6.283185307179586
+        ],
+        [
+          3,
+          12.566370614359172,
+          0.0
+        ],
+        [
+          3,
+          12.566370614359172,
+          6.283185307179586
+        ],
+        [
+          3,
+          12.566370614359172,
+          12.566370614359172
+        ],
+        [
+          3,
+          18.84955592153876,
+          0.0
+        ]
+      ],
+      "lost": {
+        "worst_weight": 0.0,
+        "mean_weight": 0.0,
+        "eigenvalues": [
+          0.0
+        ],
+        "raw_column_gram_error": 0.0,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "gained": {
+        "worst_weight": 1.3568133534119172e-31,
+        "mean_weight": 1.3568133534119172e-31,
+        "eigenvalues": [
+          1.3568133534119172e-31
+        ],
+        "raw_column_gram_error": 4.440892098500626e-16,
+        "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+      },
+      "convergence_relative_frequency": 9.909144392359047e-15,
+      "convergence_field_capture": 1.0,
+      "frequency_comparison": "Sorted spectrum within the separately tested physical target subspace",
+      "coarse_metadata": {
+        "status": "EXPORTED_NATIVE_PHYSICAL_H_IN_COMMON_UNION",
+        "frequency_units": "f_a_over_c",
+        "kpoint_units": "k_a",
+        "field_metric": "finite_window_physical_H_norm_not_QNM_residue_metric",
+        "field_metric_formula": "cell_area * sum_z weights[z] * sum_component,G |H_G(z)|^2",
+        "flattening_order": [
+          "z",
+          "component_xyz",
+          "union_physical_G"
+        ],
+        "native_modes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "kind": 2,
+        "physical_cell_area": 1.0,
+        "native_G_count": 13,
+        "union_G_count": 29,
+        "zero_filled_G_count": 16,
+        "native_to_union_G_indexes": [
+          3,
+          7,
+          8,
+          9,
+          12,
+          13,
+          14,
+          15,
+          16,
+          19,
+          20,
+          21,
+          25
+        ],
+        "z_min": -11.9576037399666,
+        "z_max": 12.3576037399666,
+        "quadrature_weight_sum": 24.4,
+        "physical_H_column_norms": [
+          0.9999999995541756,
+          0.9999999999999999,
+          0.9999999999999997,
+          0.9999999999999996,
+          0.9999999999999999
+        ],
+        "mode_norms_were_rescaled": false,
+        "intersection_used": false,
+        "snapshot_native_coordinate_hash": "8ff57fa79f79480d772a76161ad74dcceb6b32afcd81b5ec422f6ac032a2d2f0",
+        "source_config_id": "6d0673ef7367e19e55f2ba2fc72aaaca24c1736cf2acbeb2cd72ab2fa0ab6f13",
+        "source_full_basis_id": "6822528ce2af3a5ce85eae7872775add0785bfae66f9098d8daacec03c172731",
+        "native_lineage_validated_before_and_after_export": true,
+        "source_reference_config": {
+          "gmax": 2.1,
+          "gmode_inds": [
+            0
+          ],
+          "reference_eps": [
+            12.0
+          ],
+          "numeig": 5,
+          "eps_eff": "custom",
+          "gmode_compute": "exact",
+          "gmode_step": 0.001,
+          "gmode_tol": 1e-10,
+          "compute_im": false,
+          "truncate_g": "abs",
+          "eig_solver": "eigh",
+          "eig_sigma": 0.0,
+          "verbose": false,
+          "kz_symmetry": null,
+          "angles": null
+        }
+      },
+      "fine_metadata": {
+        "status": "EXPORTED_NATIVE_PHYSICAL_H_IN_COMMON_UNION",
+        "frequency_units": "f_a_over_c",
+        "kpoint_units": "k_a",
+        "field_metric": "finite_window_physical_H_norm_not_QNM_residue_metric",
+        "field_metric_formula": "cell_area * sum_z weights[z] * sum_component,G |H_G(z)|^2",
+        "flattening_order": [
+          "z",
+          "component_xyz",
+          "union_physical_G"
+        ],
+        "native_modes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "kind": 2,
+        "physical_cell_area": 1.0,
+        "native_G_count": 29,
+        "union_G_count": 29,
+        "zero_filled_G_count": 0,
+        "native_to_union_G_indexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "z_min": -11.9576037399666,
+        "z_max": 12.3576037399666,
+        "quadrature_weight_sum": 24.4,
+        "physical_H_column_norms": [
+          0.9999999995541755,
+          0.9987403278292247,
+          1.0000000000000002,
+          0.9999999999999999,
+          0.9999999999999997,
+          0.9999999999999993,
+          1.0000000000000007,
+          0.9999999999999999
+        ],
+        "mode_norms_were_rescaled": false,
+        "intersection_used": false,
+        "snapshot_native_coordinate_hash": "e801f5f771f3ef9c393bbe1d3f0e69ad138b76c1ab9c42964611708db03f9311",
+        "source_config_id": "807b59888a9fb3eeb6e40b81f130001f0d40838eae8f6f65b390861b1e3ba72d",
+        "source_full_basis_id": "1127176a97d65c980740b728e7ca9fb0bb73e8548f52aea3bce38a2ae84afb0f",
+        "native_lineage_validated_before_and_after_export": true,
+        "source_reference_config": {
+          "gmax": 3.1,
+          "gmode_inds": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "reference_eps": [
+            12.0
+          ],
+          "numeig": 8,
+          "eps_eff": "custom",
+          "gmode_compute": "exact",
+          "gmode_step": 0.001,
+          "gmode_tol": 1e-10,
+          "compute_im": false,
+          "truncate_g": "abs",
+          "eig_solver": "eigh",
+          "eig_sigma": 0.0,
+          "verbose": false,
+          "kz_symmetry": null,
+          "angles": null
+        }
+      },
+      "scope": "Same-k field and spectral measurements; caller must establish independent numerical refinement"
+    }
+  ],
+  "acceptance": {
+    "status": "ACCEPTED_SAMPLED_CONFIGURATION",
+    "accepted": true,
+    "sampled_stability_passed": true,
+    "reasons": [],
+    "bad_edges": [],
+    "anchor_capture": 1.0,
+    "convergence_relative_frequency": 9.909144392359047e-15,
+    "convergence_field_capture": 1.0,
+    "policy": {
+      "minimum_selected_capture": 0.9,
+      "minimum_full_window_capture": 0.98,
+      "maximum_changed_row_weight": 0.02,
+      "minimum_anchor_capture": 0.85,
+      "maximum_convergence_relative_frequency": 0.005,
+      "minimum_convergence_field_capture": 0.98
+    },
+    "scope": "Only supplied geometry, sampled edges, field metric and refinement pair"
+  },
+  "quadrature_node_orders": [
+    16,
+    24
+  ],
+  "quadrature_norm_relative_change": 2.220446049250313e-16,
+  "fine_quadrature_minimum_refinement_field_capture": 0.9999999999999991,
+  "scope": "Uniform lossless guided slab TE0 over three sampled k points; independent boundary-matching reference. Not an open QNM certificate."
+}

@@ -1,0 +1,159 @@
+{
+  "status": "UNSELECTED_SAME_GRID_SECTOR_TAIL_CANDIDATE",
+  "source": "template_q6",
+  "sector": 1,
+  "anchor_source": "incident_even",
+  "pole_rank": 2,
+  "applied_coefficients": [
+    [
+      -0.022665988378182123,
+      -0.03782866854242528
+    ],
+    [
+      0.52855747126005,
+      -0.20431798345171087
+    ],
+    [
+      0.4941085171181321,
+      0.24214665199413615
+    ]
+  ],
+  "anchor_poles": [
+    [
+      0.38924062310986646,
+      -4.054988023058927e-06
+    ],
+    [
+      0.3975762489295289,
+      -0.000799337601064276
+    ]
+  ],
+  "anchor_window_validated": true,
+  "own_window_model_validated": false,
+  "window_validated": false,
+  "independent_validated": false,
+  "selected_for_scattering": false,
+  "normalization": "Incident raw DFT restored, common time operator applied to E/D/output/incoming/native ports, corrected incoming normalization reapplied",
+  "raw_checkpoint": 2000.0,
+  "source_hashes": {
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q6\\response_t500.npz": "f32933b78c9989f90dd55e14b4529bdeadf19348df6084e9f166bd982f14786f",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q6\\response_t1000.npz": "cce1cfa1f21fd1ce57e97e0bbf71ab3c50e6634030e6391112ef171a2d830794",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q6\\response_t1500.npz": "aee3c6d5bb94d71fb1d7d6c3fcdfc130771ecb2eae861f1ab8144687ec126793",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q6\\response_t2000.npz": "cb04f1286d4257dbe2d568d429fb5b29f3d4246f391b29d1dede2c4ba54e2f11"
+  },
+  "shared_pole_heldout_increment_predictions": {
+    "electric": [
+      {
+        "interval": [
+          1500.0,
+          2000.0
+        ],
+        "absolute_residual": 0.5374124600321947,
+        "relative_to_increment": 1.7135648482763796e-05,
+        "relative_to_late_response": 1.7754985215112532e-05
+      }
+    ],
+    "displacement": [
+      {
+        "interval": [
+          1500.0,
+          2000.0
+        ],
+        "absolute_residual": 5.377836555236631,
+        "relative_to_increment": 1.7727310814706083e-05,
+        "relative_to_late_response": 1.8368421832611204e-05
+      }
+    ],
+    "output": [
+      {
+        "interval": [
+          1500.0,
+          2000.0
+        ],
+        "absolute_residual": 7.126379551390705e-05,
+        "relative_to_increment": 3.907796412686864e-05,
+        "relative_to_late_response": 4.1308296993857206e-05
+      }
+    ],
+    "incoming": [
+      {
+        "interval": [
+          1500.0,
+          2000.0
+        ],
+        "absolute_residual": 2.1283852995159027e-06,
+        "relative_to_increment": 0.00033299199056139103,
+        "relative_to_late_response": 0.0006233704854981314
+      }
+    ],
+    "native_port_fields": [
+      {
+        "interval": [
+          1500.0,
+          2000.0
+        ],
+        "absolute_residual": 0.00014591624655911582,
+        "relative_to_increment": 4.004934010302674e-05,
+        "relative_to_late_response": 4.231325630514301e-05
+      }
+    ]
+  },
+  "differences": {
+    "electric": {
+      "raw_to_candidate": 1.059501315027074,
+      "shifted_time_window_candidate": 3.101178003312835e-05,
+      "per_frequency_raw_to_candidate": [
+        2.6968830876980325,
+        1.0282129522558163,
+        0.7274147130197396,
+        0.9549054377234959,
+        2.3258977962996936
+      ]
+    },
+    "displacement": {
+      "raw_to_candidate": 1.0595320044884322,
+      "shifted_time_window_candidate": 3.266752087948051e-05,
+      "per_frequency_raw_to_candidate": [
+        2.6976381504697002,
+        1.0282731030604932,
+        0.7269588474708757,
+        0.9531439089240613,
+        2.3173430518615485
+      ]
+    },
+    "output": {
+      "raw_to_candidate": 1.0978917129357322,
+      "shifted_time_window_candidate": 9.241247060095128e-05,
+      "per_frequency_raw_to_candidate": [
+        4.992027919042837,
+        1.0815641117335304,
+        0.5414140839732713,
+        0.5516801510748406,
+        1.0986522284546067
+      ]
+    },
+    "incoming": {
+      "raw_to_candidate": 1091.3793202213303,
+      "shifted_time_window_candidate": 0.37413345049484786,
+      "per_frequency_raw_to_candidate": [
+        1074.4728903735931,
+        1183.8889414273344,
+        1034.6388178820498,
+        1130.8462135033367,
+        1097.095591892126
+      ]
+    },
+    "native_port_fields": {
+      "raw_to_candidate": 1.095856988622841,
+      "shifted_time_window_candidate": 9.421280194292446e-05,
+      "per_frequency_raw_to_candidate": [
+        4.921748376703641,
+        1.07991463122919,
+        0.5471546825930746,
+        0.5640200564229646,
+        1.1357592878290623
+      ]
+    }
+  },
+  "scope": "Shared static sector tail candidate only. Review all-source residuals and observables before selecting; no CW/QNM/spatial convergence certificate."
+}

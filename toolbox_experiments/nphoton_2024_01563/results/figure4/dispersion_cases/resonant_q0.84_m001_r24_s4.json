@@ -1,0 +1,234 @@
+{
+  "source": "results/dynamic/q0.84_m001_r24_s4",
+  "case": "q0.84_m001_r24_s4",
+  "regime": "resonant",
+  "role": "main_fixed_pump",
+  "config": {
+    "q": 0.84,
+    "resolution": 24,
+    "epsilon": 11.68,
+    "radius": 0.3333333333333333,
+    "padding": 1.0,
+    "pml": 0.5,
+    "courant": 0.5,
+    "source_frequency": 0.4127635943335213,
+    "source_width": 0.1,
+    "drive_frequency": 0.8255271886670426,
+    "modulation": 0.01,
+    "phase": 1.5707963267948966,
+    "periods": 400.0,
+    "ramp_periods": 10.0,
+    "update_stride": 4,
+    "static_window": 100.0,
+    "eps_averaging": false,
+    "max_dynamic_wall_seconds": 900.0
+  },
+  "q": 0.84,
+  "drive": 0.8255271886670426,
+  "summary_sha256": "42cc06925e172dc3216244db50ca3f6e27a846a21ab398d7139eeb8d2c792888",
+  "raw_sha256": "6b6a8b2a34a0a9a9dc91e42cc573cfc10793ca094ba4ea8a9f82219995d0fa73",
+  "window_cycles": [
+    30,
+    380
+  ],
+  "delays": [
+    24,
+    32
+  ],
+  "phases": [
+    0.25,
+    0.5
+  ],
+  "pair_accepted_for_plot": true,
+  "rejection_reasons": [],
+  "branches": [
+    {
+      "local_branch": 0,
+      "real_mean": 0.5000056191277032,
+      "imag_mean": -0.0003883454050167775,
+      "real_min": 0.5000033946233426,
+      "real_max": 0.5000090590829106,
+      "imag_min": -0.0003907667346319498,
+      "imag_max": -0.00038628291541369634,
+      "real_spread": 5.664459567955582e-06,
+      "imag_spread": 4.4838192182534596e-06,
+      "amplitude_rate_mean": -0.0020143244325761048,
+      "amplitude_rate_spread": 2.3257302612328043e-05,
+      "branch_real_plot_allowed": true,
+      "branch_imag_plot_allowed": true,
+      "real_rejection_reasons": [],
+      "imag_rejection_reasons": []
+    },
+    {
+      "local_branch": 1,
+      "real_mean": 0.5000013565386384,
+      "imag_mean": 0.0003882355469060617,
+      "real_min": 0.49999934188126954,
+      "real_max": 0.5000041586682975,
+      "imag_min": 0.0003869507347131845,
+      "imag_max": 0.00038964896435698487,
+      "real_spread": 4.8167870279614e-06,
+      "imag_spread": 2.698229643800375e-06,
+      "amplitude_rate_mean": 0.0020137546051140756,
+      "amplitude_rate_spread": 1.39955560848554e-05,
+      "branch_real_plot_allowed": true,
+      "branch_imag_plot_allowed": true,
+      "real_rejection_reasons": [],
+      "imag_rejection_reasons": []
+    }
+  ],
+  "range_interpretation": "Range across four fixed numerical choices, not a statistical confidence interval",
+  "branch_interpretation": "Both measured eigenvalues retained; local labels do not establish cross-q mode identity",
+  "status": "OBSERVED_COMPLEX_PAIR",
+  "trials": [
+    {
+      "phase": 0.25,
+      "delay": 24,
+      "window_cycles": [
+        30,
+        380
+      ],
+      "rank": 2,
+      "interpolation": "cubic",
+      "complex_multiplier_real": [
+        -1.00245123591113,
+        -0.9975636980639951
+      ],
+      "complex_multiplier_imag": [
+        1.5200656518429834e-05,
+        3.32183655428657e-05
+      ],
+      "quasifrequency_over_drive_real": [
+        0.5000024133439476,
+        0.5000052997789373
+      ],
+      "quasifrequency_over_drive_imag": [
+        0.00038964896435698487,
+        -0.0003882225137390078
+      ],
+      "amplitude_rates_per_meep_time": [
+        0.0020210859170545397,
+        -0.0020136870028546142
+      ],
+      "singular_ratio_2_1": 0.004273437189615246,
+      "singular_ratio_3_2": 0.04396066996294581,
+      "relative_rank2_residual": 0.0002443734595220835,
+      "aligned_branch_indexes": [
+        1,
+        0
+      ]
+    },
+    {
+      "phase": 0.5,
+      "delay": 24,
+      "window_cycles": [
+        30,
+        380
+      ],
+      "rank": 2,
+      "interpolation": "cubic",
+      "complex_multiplier_real": [
+        -1.0024371115215718,
+        -0.9975644070207106
+      ],
+      "complex_multiplier_imag": [
+        -3.0720229346747896e-06,
+        2.1277098634552054e-05
+      ],
+      "quasifrequency_over_drive_real": [
+        0.49999951226103895,
+        0.5000033946233426
+      ],
+      "quasifrequency_over_drive_imag": [
+        0.0003874064614144618,
+        -0.0003881094562824561
+      ],
+      "amplitude_rates_per_meep_time": [
+        0.0020094541881634695,
+        -0.0020131005805767268
+      ],
+      "singular_ratio_2_1": 0.0053510489674912076,
+      "singular_ratio_3_2": 0.013079323795553889,
+      "relative_rank2_residual": 9.094284034487504e-05,
+      "aligned_branch_indexes": [
+        1,
+        0
+      ]
+    },
+    {
+      "phase": 0.25,
+      "delay": 32,
+      "window_cycles": [
+        30,
+        380
+      ],
+      "rank": 2,
+      "interpolation": "cubic",
+      "complex_multiplier_real": [
+        -1.0024467451972179,
+        -0.9975477502634903
+      ],
+      "complex_multiplier_imag": [
+        2.6193616228457027e-05,
+        5.678031490036391e-05
+      ],
+      "quasifrequency_over_drive_real": [
+        0.5000041586682975,
+        0.5000090590829106
+      ],
+      "quasifrequency_over_drive_imag": [
+        0.00038893602713961574,
+        -0.0003907667346319498
+      ],
+      "amplitude_rates_per_meep_time": [
+        0.0020173879542686084,
+        -0.002026883724742703
+      ],
+      "singular_ratio_2_1": 0.005161562185016176,
+      "singular_ratio_3_2": 0.036479560391694865,
+      "relative_rank2_residual": 0.00024553412099411045,
+      "aligned_branch_indexes": [
+        1,
+        0
+      ]
+    },
+    {
+      "phase": 0.5,
+      "delay": 32,
+      "window_cycles": [
+        30,
+        380
+      ],
+      "rank": 2,
+      "interpolation": "cubic",
+      "complex_multiplier_real": [
+        -1.0024342411280422,
+        -0.9975758554167431
+      ],
+      "complex_multiplier_imag": [
+        -4.1451477242326895e-06,
+        2.9603707151541175e-05
+      ],
+      "quasifrequency_over_drive_real": [
+        0.49999934188126954,
+        0.5000047230256226
+      ],
+      "quasifrequency_over_drive_imag": [
+        0.0003869507347131845,
+        -0.00038628291541369634
+      ],
+      "amplitude_rates_per_meep_time": [
+        0.0020070903609696843,
+        -0.002003626422130375
+      ],
+      "singular_ratio_2_1": 0.006936331777316965,
+      "singular_ratio_3_2": 0.01016708249025507,
+      "relative_rank2_residual": 9.181111629430884e-05,
+      "aligned_branch_indexes": [
+        1,
+        0
+      ]
+    }
+  ],
+  "analysis_sha256": "91fa55f041416756964b08f4ff6bb432a0782bb95891f6d17ddaeaa031a84500"
+}

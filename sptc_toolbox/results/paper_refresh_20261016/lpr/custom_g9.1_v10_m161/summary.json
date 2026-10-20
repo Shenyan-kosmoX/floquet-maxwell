@@ -1,0 +1,344 @@
+{
+  "status": "FRESH_NATIVE_MULTIMODE_SIGNED_MAXWELL_MECHANISM_REPRODUCTION",
+  "paper_doi": "10.1002/lpor.71318",
+  "paper_panels": "Fig.3(a) metasurface green series; Fig.3(b) metasurface cuts",
+  "geometry": {
+    "radius_nm": 150.0,
+    "height_nm": 50.0,
+    "period_nm": 400.0,
+    "epsilon": 16.0
+  },
+  "assumptions": [
+    "Square lattice",
+    "Gamma Bloch vector",
+    "Air claddings",
+    "Uniform cylinder-only additive modulation"
+  ],
+  "drive": {
+    "angular_frequency_per_s": 100000000000000.0,
+    "omega_a_over_c": 0.13342563807926083,
+    "waveform": "16 + amplitude sin(Omega t), no DC"
+  },
+  "gmax": 9.1,
+  "vertical_modes": 10,
+  "reference": "custom",
+  "native_basis_dimension": 2402,
+  "requested_numeig": 161,
+  "native_run_seconds": 20.153534899996885,
+  "retained_A2g_modes": [
+    2,
+    7,
+    14,
+    25,
+    43,
+    60,
+    64,
+    93,
+    121,
+    135,
+    142,
+    153
+  ],
+  "target_mode": 2,
+  "target_omega_over_Omega": 23.712276685250764,
+  "target_frequency_thz": 377.39260464203625,
+  "C_electric_mass": 0.015326548618153935,
+  "C_displacement": 0.016534395973539312,
+  "electric_slope": 1.9998210199662185,
+  "displacement_slope": 1.9999283203635747,
+  "modal_controls": [
+    {
+      "count": 1,
+      "modes": [
+        2
+      ],
+      "electric_C": 0.01533433280885446,
+      "displacement_C": 0.016592633819520062
+    },
+    {
+      "count": 3,
+      "modes": [
+        2,
+        7,
+        14
+      ],
+      "electric_C": 0.01533190102717614,
+      "displacement_C": 0.016586115233471636
+    },
+    {
+      "count": 5,
+      "modes": [
+        2,
+        7,
+        14,
+        25,
+        43
+      ],
+      "electric_C": 0.015330652925213082,
+      "displacement_C": 0.016579470882718415
+    },
+    {
+      "count": 7,
+      "modes": [
+        2,
+        7,
+        14,
+        25,
+        43,
+        60,
+        64
+      ],
+      "electric_C": 0.015329822501398895,
+      "displacement_C": 0.01657270533184175
+    },
+    {
+      "count": 12,
+      "modes": [
+        2,
+        7,
+        14,
+        25,
+        43,
+        60,
+        64,
+        93,
+        121,
+        135,
+        142,
+        153
+      ],
+      "electric_C": 0.015326548618153935,
+      "displacement_C": 0.016534395973539312
+    }
+  ],
+  "numerical_controls": {
+    "temporal": [
+      {
+        "half_harmonics": 1,
+        "samples": 128,
+        "shift": 1.532658799874298e-08
+      },
+      {
+        "half_harmonics": 2,
+        "samples": 128,
+        "shift": 1.5326623525879768e-08
+      },
+      {
+        "half_harmonics": 3,
+        "samples": 128,
+        "shift": 1.5326573787888265e-08
+      },
+      {
+        "half_harmonics": 5,
+        "samples": 256,
+        "shift": 1.53263499669265e-08
+      }
+    ],
+    "monodromy_max_multiplier_error": 1.194122643663506e-10,
+    "monodromy_matched_count": 24,
+    "expected_count": 24,
+    "z24_to32_overlap_relative_error": 1.7864899256458773e-16,
+    "static_derivative": {
+      "native": -0.014786999525229216,
+      "predicted": -0.014786999471562173,
+      "relative_error": 3.6293397176478948e-09,
+      "runs": [
+        {
+          "delta": -0.001,
+          "frequency": 0.50355327850414,
+          "overlap": 0.999999999998848
+        },
+        {
+          "delta": 0.001,
+          "frequency": 0.5035237045050895,
+          "overlap": 0.9999999999988494
+        }
+      ]
+    }
+  },
+  "radiation": [
+    {
+      "harmonic": -3,
+      "omega_a_over_c": 2.7635487328037804,
+      "target_gamma_over_drive": 5.288604473333779e-26,
+      "full_A2g_gamma_norm_over_drive": 5.627001280469929e-24,
+      "channel_count": 4
+    },
+    {
+      "harmonic": -2,
+      "omega_a_over_c": 2.8969743708830413,
+      "target_gamma_over_drive": 4.838430051395052e-26,
+      "full_A2g_gamma_norm_over_drive": 5.57331206205259e-24,
+      "channel_count": 4
+    },
+    {
+      "harmonic": -1,
+      "omega_a_over_c": 3.030400008962302,
+      "target_gamma_over_drive": 4.4616702794140143e-26,
+      "full_A2g_gamma_norm_over_drive": 5.628051092877016e-24,
+      "channel_count": 4
+    },
+    {
+      "harmonic": 0,
+      "omega_a_over_c": 3.163825647041563,
+      "target_gamma_over_drive": 4.1156079319480454e-26,
+      "full_A2g_gamma_norm_over_drive": 5.800573231192205e-24,
+      "channel_count": 4
+    },
+    {
+      "harmonic": 1,
+      "omega_a_over_c": 3.297251285120824,
+      "target_gamma_over_drive": 3.822089843561454e-26,
+      "full_A2g_gamma_norm_over_drive": 6.097139459356631e-24,
+      "channel_count": 4
+    },
+    {
+      "harmonic": 2,
+      "omega_a_over_c": 3.430676923200085,
+      "target_gamma_over_drive": 3.544980589003636e-26,
+      "full_A2g_gamma_norm_over_drive": 6.524503629832601e-24,
+      "channel_count": 4
+    },
+    {
+      "harmonic": 3,
+      "omega_a_over_c": 3.5641025612793458,
+      "target_gamma_over_drive": 3.292316358263865e-26,
+      "full_A2g_gamma_norm_over_drive": 7.091798110504631e-24,
+      "channel_count": 4
+    }
+  ],
+  "curve_metrics": [
+    {
+      "central_weight": 0.9999999993314651,
+      "residual": 4.4313376392098915e-17,
+      "edge_weight": 8.216659506999932e-28
+    },
+    {
+      "central_weight": 0.9999999990773342,
+      "residual": 3.5728114429852757e-17,
+      "edge_weight": 2.6640714624384482e-28
+    },
+    {
+      "central_weight": 0.9999999987266002,
+      "residual": 5.2594818073846724e-17,
+      "edge_weight": 1.3480300991041564e-27
+    },
+    {
+      "central_weight": 0.9999999982425413,
+      "residual": 4.252279702615932e-17,
+      "edge_weight": 9.164819929069044e-28
+    },
+    {
+      "central_weight": 0.9999999975744763,
+      "residual": 4.7184877031528647e-17,
+      "edge_weight": 5.7628935041457495e-28
+    },
+    {
+      "central_weight": 0.999999994542572,
+      "residual": 3.3175091275911277e-17,
+      "edge_weight": 5.162475261837044e-28
+    },
+    {
+      "central_weight": 0.9999999902979055,
+      "residual": 5.173915020831276e-17,
+      "edge_weight": 8.746217649221336e-27
+    },
+    {
+      "central_weight": 0.9999999848404774,
+      "residual": 4.883404032440617e-17,
+      "edge_weight": 2.7286031800180896e-26
+    },
+    {
+      "central_weight": 0.9999999781702877,
+      "residual": 3.7289728521503706e-17,
+      "edge_weight": 7.778409205425872e-26
+    },
+    {
+      "central_weight": 0.9999999702873359,
+      "residual": 3.776764193010107e-17,
+      "edge_weight": 1.7953194791715818e-25
+    },
+    {
+      "central_weight": 0.9999999611916226,
+      "residual": 4.255060234885109e-17,
+      "edge_weight": 4.552851340113485e-25
+    },
+    {
+      "central_weight": 0.9999999508831477,
+      "residual": 3.779891156174634e-17,
+      "edge_weight": 9.041217678973695e-25
+    },
+    {
+      "central_weight": 0.9999999393619109,
+      "residual": 3.818264387306178e-17,
+      "edge_weight": 1.6800633368502867e-24
+    },
+    {
+      "central_weight": 0.9999999266279126,
+      "residual": 3.3864491224503654e-17,
+      "edge_weight": 3.0197858898122626e-24
+    },
+    {
+      "central_weight": 0.9999999126811526,
+      "residual": 5.0772592073121546e-17,
+      "edge_weight": 5.074110101476825e-24
+    },
+    {
+      "central_weight": 0.999999897521631,
+      "residual": 5.356387698203048e-17,
+      "edge_weight": 8.214082449183019e-24
+    },
+    {
+      "central_weight": 0.999999881149348,
+      "residual": 4.818527228437412e-17,
+      "edge_weight": 1.2825077870104274e-23
+    },
+    {
+      "central_weight": 0.9999998635643033,
+      "residual": 2.806011191829794e-17,
+      "edge_weight": 1.9382968616912164e-23
+    },
+    {
+      "central_weight": 0.9999998447664975,
+      "residual": 3.291018157677966e-17,
+      "edge_weight": 2.856647970982605e-23
+    },
+    {
+      "central_weight": 0.9999998247559301,
+      "residual": 4.149221272020315e-17,
+      "edge_weight": 4.1088998090281285e-23
+    },
+    {
+      "central_weight": 0.9999998035326013,
+      "residual": 4.2856109264682726e-17,
+      "edge_weight": 5.788144686254486e-23
+    },
+    {
+      "central_weight": 0.9999997810965111,
+      "residual": 5.028910031655758e-17,
+      "edge_weight": 8.004883814397912e-23
+    },
+    {
+      "central_weight": 0.99999975744766,
+      "residual": 5.310745587468914e-17,
+      "edge_weight": 1.089251349969002e-22
+    }
+  ],
+  "fields": {
+    "xy_plane_z_over_a": 0.0625,
+    "xz_plane_y_over_a": 0.0,
+    "observable": "sqrt(|Ex|^2+|Ey|^2+|Ez|^2)",
+    "normalization": "One common maximum over both cuts",
+    "field_chart": "Physical exp(-i omega t), registered Legume native Fourier data"
+  },
+  "basis_id": "4623ff0e18500f0bddee128038bb8c38afd08cd85c45a55890d487c0723b6d31",
+  "native_sha256": "37cda7976dd1da6dbf3dc76d6a6ffc4d22cc6cded21da742e9d2684690d10caa",
+  "elapsed_seconds": 75.74145809999754,
+  "limits": [
+    "Paper target pole not uniquely specified; field resemblance alone does not prove exact target identity",
+    "Gamma A2g sidebands below diffraction threshold have symmetry-suppressed radiation",
+    "Higher-frequency continuum virtual contributions and exact outgoing QNM normalization are not completed",
+    "Finite E and D subspaces are different approximations; their spread is reported without fitting",
+    "Nanorod, bowtie and uniform-slab panels are not recomputed in this periodic metasurface task"
+  ]
+}

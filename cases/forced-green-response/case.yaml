@@ -1,0 +1,104 @@
+schema_version: '0.1'
+kind: case
+id: forced-green-response
+project_id: floquet-maxwell
+title: 相干激励、有限脉冲与Green响应
+stage: results_available
+question:
+  summary: 相干激励、有限脉冲与Green响应
+  scope: 原生薄膜实例为Gamma对称零阶端口，原生Green使用冻结辐射与所声明背景。
+  record:
+    path: sptc_toolbox/results/forced_excitation_20261016/report.md
+capability_refs:
+- forced-scattering
+- green-response
+- field-reconstruction
+model:
+  description: 原生薄膜实例为Gamma对称零阶端口，原生Green使用冻结辐射与所声明背景。
+  record:
+    path: sptc_toolbox/results/forced_excitation_20261016/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/forced_excitation_20261016/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/forced_excitation_20261016/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_native_excitation.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/forced_excitation_20261016/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_native_pulse.py
+  - id: workflow-3
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/forced_excitation_20261016/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_native_green.py
+  - id: workflow-4
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/forced_excitation_20261016/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_uniform_green.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/forced_excitation_20261016/validation_manifest.json
+  record:
+    path: sptc_toolbox/results/forced_excitation_20261016/validation_manifest.json
+- id: output-2
+  description: sptc_toolbox/results/green_response_20261016/report.md
+  record:
+    path: sptc_toolbox/results/green_response_20261016/report.md
+- id: output-3
+  description: sptc_toolbox/results/green_response_20261016/validation_manifest.json
+  record:
+    path: sptc_toolbox/results/green_response_20261016/validation_manifest.json
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/forced_excitation_20261016/report.md
+criteria:
+- id: criterion-1
+  description: Gamma零阶端口的双侧输入、有限脉冲、所声明背景模型和受迫场重建。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/forced_excitation_20261016/report.md
+checks:
+- id: check-1
+  method: 独立脉冲积分、实场相干功率、暗态相容性及均匀Maxwell Green比较
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/forced_excitation_20261016/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/forced_excitation_20261016/report.md
+  artifacts:
+  - path: sptc_toolbox/results/forced_excitation_20261016/validation_manifest.json
+  - path: sptc_toolbox/results/green_response_20261016/report.md
+  - path: sptc_toolbox/results/green_response_20261016/validation_manifest.json
+  notes: 双侧相干输入、有限脉冲、半泵实场功率、暗态相容求解和独立均匀Maxwell Green收敛对照。 原生薄膜实例为Gamma对称零阶端口，原生Green使用冻结辐射与所声明背景。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/forced_excitation_20261016/report.md

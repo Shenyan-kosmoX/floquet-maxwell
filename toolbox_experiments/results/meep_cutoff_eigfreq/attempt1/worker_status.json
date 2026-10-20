@@ -1,0 +1,37 @@
+{
+  "status": "STOPPED_AFTER_NATIVE_INNER_CW_FAILURE",
+  "config": {
+    "radius": 0.3125,
+    "height": 0.4445234708392603,
+    "epsilon": 16.0,
+    "kx_ka": 2.5936334233914913,
+    "ky_ka": 0.0,
+    "resolution": 24,
+    "padding": 1.0,
+    "pml": 0.5,
+    "frequency": 0.667,
+    "width": 0.3,
+    "warmup": 12.0,
+    "window": 100.0,
+    "sample_dt": 0.5,
+    "source_variant": 0,
+    "xy_samples": 12,
+    "z_order": 4,
+    "field_extent": 0.7
+  },
+  "guessfreq": [
+    0.667,
+    -0.009
+  ],
+  "tolerance": 1e-07,
+  "maxiters": 15,
+  "cwtol": 1e-08,
+  "cwmaxiters": 300,
+  "L": 10,
+  "native_meep_version": "1.35.0",
+  "units": "cyclic f*a/c; k input radians k*a converted to native k/(2pi)",
+  "symmetries": "MirrorY phase -1, MirrorZ phase +1",
+  "scope": "Finite-Q independent static native frequency-domain attempt, not Floquet",
+  "accepted_pole": false,
+  "accepted_field": false
+}

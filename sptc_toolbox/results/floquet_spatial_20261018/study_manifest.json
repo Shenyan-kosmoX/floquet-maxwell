@@ -1,0 +1,82 @@
+{
+  "status": "READY",
+  "completed": true,
+  "missing_data": [],
+  "unavailable_optional_data": [],
+  "chosen_first_order_data": [
+    {
+      "resolution": 32,
+      "selection": "selected",
+      "directory": "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r32_selected",
+      "dt": 0.015625,
+      "checkpoint": 2000,
+      "selected_inputs": [
+        "sptc_toolbox\\results\\full_floquet_20261017\\sampling_tail\\uniform_even\\incident_even\\response_t2000.npz",
+        "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\incident_odd\\response_t2000.npz"
+      ]
+    },
+    {
+      "resolution": 40,
+      "selection": "selected",
+      "directory": "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r40_selected",
+      "dt": 0.0125,
+      "checkpoint": 2000,
+      "selected_inputs": [
+        "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_incident\\rank2\\incident_even\\response_t2000.npz",
+        "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\incident_odd\\response_t2000.npz"
+      ]
+    },
+    {
+      "resolution": 48,
+      "selection": "selected",
+      "directory": "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r48_selected",
+      "dt": 0.010416666666666666,
+      "checkpoint": 2000.0,
+      "selected_inputs": [
+        "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\tail_diagnostics_t2000\\rank2\\incident_even\\response_t2000.npz",
+        "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t2000.npz"
+      ]
+    }
+  ],
+  "explicit_raw_fallback_enabled": false,
+  "source_sha256": {
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r32_selected\\summary.json": "13c7cbbd33e58061e5637f04eb71a62c91027bc1e5e66c78811b2fd3cdd46b94",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r32_selected\\reciprocal_born.npz": "a38e9268c19484974fa9db8a9960328077db37fb03ed1172621e202402f30b07",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r32_raw\\summary.json": "3f27d0adcf4c70539d0e36e094f5949c81670c1907c936988879a1ae1b66a920",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r32_raw\\reciprocal_born.npz": "da8f6ab510dc80b661f3d79865b2c15647541588436851d9c2a9a9bafce19045",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r40_selected\\summary.json": "f5cd67527497cf2a3625a48ded1ec3b04128c9f2032343be131c8b31f3a6b248",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r40_selected\\reciprocal_born.npz": "bf59b67783781f060858ae9e0b2ef8fd71af57d0270b24f58c10c65fbe86148c",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r40_raw\\summary.json": "2a0003c31994d819bd0630cf36ce03544221c94d625079f43b2f2b6ca86c877b",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r40_raw\\reciprocal_born.npz": "3ad11bf8ac1d60cc0cbaf004a9ce53ff1dd938446cd9dd9fa283be56df709d38",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r48_selected\\summary.json": "88de0717ad7ce47598108f937bcbd23b910c8d7249856a53337117ac5df23986",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r48_selected\\reciprocal_born.npz": "21e0e1df5c20fc309841b559f4727dc2e724359c42042421f8b871b7906b29b7",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r48_raw\\summary.json": "2eb9705dfa67877ebb7010e28b004e8707752d44f0accc33b50806eb040de2a7",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\reciprocity\\r48_raw\\reciprocal_born.npz": "6932b968c45a2186a2409c2e36467fccddcff307eea252493c7eee847beb06c7",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\comparison\\summary.json": "0749a29b5a464fdcdeb0c504913efa2c66e7437b72c33f21c12d0dd948778b77",
+    "sptc_toolbox\\results\\full_floquet_20261017\\analysis\\floquet_M2.npz": "2b838f0311669768f2f38572ef7ba27745ab44ec99a6d4e9f59588468a2c618d",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\analysis\\floquet_M2.npz": "0d254dac05271a0e5ce609131697d73a66cfd1f3edae159b99720635293f2f3b",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_validation.json": "adfe3dcec6f7fff444decce28acdbb842a92b59085ec38a9f57c6481406aaca5",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\tail_validation.json": "e9df1cc5f442eb61330e8254bd7a54fd797dd2600c80901a314a468e48e60dd4"
+  },
+  "meaning_of_completed": "All declared study inputs available and loaded; does not mean numerical convergence passed.",
+  "response_validation_scope": [
+    {
+      "resolution": 40,
+      "path": "r40\\tail_validation.json",
+      "status": "FINITE_WEAK_FORCED_RESPONSE_SELECTED",
+      "validation_scope": "Actual r40, rank17, +/-2, real-frequency weak forced scattering. Odd sectors remain raw; one identical two-pole time operator is applied to all even E/D/port responses.",
+      "continuous_wave_solver_validated": false,
+      "independent_validated": false
+    },
+    {
+      "resolution": 48,
+      "path": "r48\\tail_validation.json",
+      "status": "REVIEWED_R48_WEAK_FIRST_ORDER_RESPONSE_SELECTION",
+      "validation_scope": "See per-source acceptance_scope in the linked declaration",
+      "continuous_wave_solver_validated": false,
+      "independent_validated": false
+    }
+  ],
+  "required_scope": "First-order x-to-x at r32/r40/r48, raw/selected temporal controls where selected results exist, complete M2 r32/r40 comparison.",
+  "generator_sha256": "746f26012bd2121265bcd110d93054068c07bedb0ad3cad7ffd73cd76c142fd0"
+}

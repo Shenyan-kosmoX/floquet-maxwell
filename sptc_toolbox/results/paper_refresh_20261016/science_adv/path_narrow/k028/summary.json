@@ -1,0 +1,72 @@
+{
+  "k_index": 28,
+  "kpoint": [
+    2.356194490192345,
+    0.0
+  ],
+  "path_coordinate": 1.75,
+  "all_window_modes": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "all_window_frequencies_thz": [
+    63.7293074694719,
+    64.26491552869875,
+    66.1935690939871,
+    66.72480123717054,
+    68.69424456099443
+  ],
+  "modes": [
+    8,
+    9,
+    11
+  ],
+  "seed_tracking": {
+    "k_index": 28,
+    "modes": [
+      9,
+      11
+    ],
+    "overlap": 0.9951153226964754,
+    "ambiguous": false
+  },
+  "forbidden_modulation_relative_max": 2.4011048580840844e-14,
+  "declared_window_thz": [
+    63.0,
+    72.0
+  ],
+  "selection": "Connected component of actual field-derived modulation overlap within declared frequency window plus tracked parents, threshold1e-6; no radiation-loss cuts",
+  "cases": {
+    "static": {
+      "m": 0.0,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0,
+      "projection_fast_generic_error": 5.028701710453949e-16,
+      "common_sample_collective_loss_ratio": 0.054464663708926796,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "weak": {
+      "m": 0.0001,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0016,
+      "projection_fast_generic_error": 6.612717265565252e-16,
+      "common_sample_collective_loss_ratio": 0.054464663708926796,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "strong": {
+      "m": 0.03,
+      "drive_thz": 134.0,
+      "absolute_epsilon_amplitude": 0.48,
+      "projection_fast_generic_error": 5.783720633010211e-16,
+      "common_sample_collective_loss_ratio": 0.057668896879369345,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    }
+  },
+  "elapsed_seconds": 2.76988330000313
+}

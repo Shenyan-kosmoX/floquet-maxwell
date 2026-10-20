@@ -1,0 +1,188 @@
+{
+  "status": "PILOT_ACTUAL_SIGNED_SIDEBAND_COMPARISON",
+  "scope": "Same M, geometry, sources, pump frequency and timing; only modulation amplitude differs. Finite FFT evidence, not poles/growth proof.",
+  "cases": [
+    {
+      "regime": "resonant",
+      "drive": 0.8261235177570745,
+      "static_peak_selection": "Four largest positive-frequency peaks in unmodulated M spectrum between .1 and .7, only to locate sideband diagnostic bins, not modal identity",
+      "sideband_bins": [
+        {
+          "static_carrier_bin_frequency": 0.41455078124995287,
+          "harmonic": -1,
+          "target_frequency": -0.4115727365071216,
+          "actual_fft_bin_frequency": -0.4116210937499532,
+          "modulated_power": 22.404349751605526,
+          "zero_control_power": 2.1776734160452473e-08,
+          "modulated_normalized_power": 0.096551796639599,
+          "zero_normalized_power": 1.04930110054749e-10
+        },
+        {
+          "static_carrier_bin_frequency": 0.41455078124995287,
+          "harmonic": 1,
+          "target_frequency": 1.2406742990070274,
+          "actual_fft_bin_frequency": 1.240722656249859,
+          "modulated_power": 0.007173861585096364,
+          "zero_control_power": 2.2398461049804838e-07,
+          "modulated_normalized_power": 3.091583699434166e-05,
+          "zero_normalized_power": 1.0792587013718667e-09
+        },
+        {
+          "static_carrier_bin_frequency": 0.5229492187499405,
+          "harmonic": -1,
+          "target_frequency": -0.303174299007134,
+          "actual_fft_bin_frequency": -0.3032226562499655,
+          "modulated_power": 0.00020032127020692958,
+          "zero_control_power": 1.8077921933665905e-11,
+          "modulated_normalized_power": 8.632867616351863e-07,
+          "zero_normalized_power": 8.710756737369797e-14
+        },
+        {
+          "static_carrier_bin_frequency": 0.5229492187499405,
+          "harmonic": 1,
+          "target_frequency": 1.349072736507015,
+          "actual_fft_bin_frequency": 1.3491210937498466,
+          "modulated_power": 0.00032096328306746986,
+          "zero_control_power": 1.391852911105672e-07,
+          "modulated_normalized_power": 1.3831948697054974e-06,
+          "zero_normalized_power": 6.706574000777827e-10
+        },
+        {
+          "static_carrier_bin_frequency": 0.6093749999999307,
+          "harmonic": -1,
+          "target_frequency": -0.21674851775714377,
+          "actual_fft_bin_frequency": -0.21679687499997535,
+          "modulated_power": 2.768016254796968e-06,
+          "zero_control_power": 1.1310090188244045e-10,
+          "modulated_normalized_power": 1.192879710820928e-08,
+          "zero_normalized_power": 5.449710684060285e-13
+        },
+        {
+          "static_carrier_bin_frequency": 0.6093749999999307,
+          "harmonic": 1,
+          "target_frequency": 1.4354985177570052,
+          "actual_fft_bin_frequency": 1.4355468749998368,
+          "modulated_power": 2.0534304947115635e-05,
+          "zero_control_power": 2.570066826920184e-08,
+          "modulated_normalized_power": 8.849281757205843e-08,
+          "zero_normalized_power": 1.2383739132314005e-10
+        },
+        {
+          "static_carrier_bin_frequency": 0.5639648437499358,
+          "harmonic": -1,
+          "target_frequency": -0.26215867400713866,
+          "actual_fft_bin_frequency": -0.2622070312499702,
+          "modulated_power": 3.1208577838707523e-06,
+          "zero_control_power": 2.1186395639291357e-11,
+          "modulated_normalized_power": 1.3449371636764649e-08,
+          "zero_normalized_power": 1.0208559326271839e-13
+        },
+        {
+          "static_carrier_bin_frequency": 0.5639648437499358,
+          "harmonic": 1,
+          "target_frequency": 1.3900883615070103,
+          "actual_fft_bin_frequency": 1.390136718749842,
+          "modulated_power": 4.664720659367683e-06,
+          "zero_control_power": 9.310630139714688e-09,
+          "modulated_normalized_power": 2.0102666021428687e-08,
+          "zero_normalized_power": 4.486280807953004e-11
+        }
+      ],
+      "modulated_raw_sha256": "3cbc764890b0e857eff9896611134895338208e403ba102ba73f8edb939226ef",
+      "zero_control_raw_sha256": "06ffa83e83a413c297ddb2dd4c6b03692820aa0e1c20b712d545bb436471b59c",
+      "modulated_spectrum_sha256": "269a9448740f617f159a83c53d5b269cb6c47ef278d754047a9b7a56659eae23",
+      "zero_spectrum_sha256": "79b8de59bb7f9a478bf122e18374f82d1416aed00430d71ae35ad66d32dcd16b"
+    },
+    {
+      "regime": "nonresonant",
+      "drive": 0.3856648054835322,
+      "static_peak_selection": "Four largest positive-frequency peaks in unmodulated M spectrum between .1 and .7, only to locate sideband diagnostic bins, not modal identity",
+      "sideband_bins": [
+        {
+          "static_carrier_bin_frequency": 0.41455078125002354,
+          "harmonic": -1,
+          "target_frequency": 0.028885975766491323,
+          "actual_fft_bin_frequency": 0.029296875000001665,
+          "modulated_power": 1.5102248048668657e-05,
+          "zero_control_power": 9.42384356166737e-12,
+          "modulated_normalized_power": 7.313352965729523e-08,
+          "zero_normalized_power": 4.5628151865340417e-14
+        },
+        {
+          "static_carrier_bin_frequency": 0.41455078125002354,
+          "harmonic": 1,
+          "target_frequency": 0.8002155867335558,
+          "actual_fft_bin_frequency": 0.7998046875000455,
+          "modulated_power": 0.01585762276890595,
+          "zero_control_power": 4.4695011335755816e-11,
+          "modulated_normalized_power": 7.679147642964449e-05,
+          "zero_normalized_power": 2.1640329144960398e-13
+        },
+        {
+          "static_carrier_bin_frequency": 0.5229492187500298,
+          "harmonic": -1,
+          "target_frequency": 0.13728441326649754,
+          "actual_fft_bin_frequency": 0.13769531250000783,
+          "modulated_power": 2.8899433182324418e-05,
+          "zero_control_power": 1.2355812668828083e-10,
+          "modulated_normalized_power": 1.3994721493829938e-07,
+          "zero_normalized_power": 5.982409334193531e-13
+        },
+        {
+          "static_carrier_bin_frequency": 0.5229492187500298,
+          "harmonic": 1,
+          "target_frequency": 0.908614024233562,
+          "actual_fft_bin_frequency": 0.9082031250000516,
+          "modulated_power": 0.0020915766747751077,
+          "zero_control_power": 7.627589003460957e-08,
+          "modulated_normalized_power": 1.01285837897926e-05,
+          "zero_normalized_power": 3.693108731473247e-10
+        },
+        {
+          "static_carrier_bin_frequency": 0.4262695312500242,
+          "harmonic": -1,
+          "target_frequency": 0.04060472576649199,
+          "actual_fft_bin_frequency": 0.04101562500000233,
+          "modulated_power": 7.092019417755401e-06,
+          "zero_control_power": 1.4369313825128315e-11,
+          "modulated_normalized_power": 3.4343523609668914e-08,
+          "zero_normalized_power": 6.957301754038098e-14
+        },
+        {
+          "static_carrier_bin_frequency": 0.4262695312500242,
+          "harmonic": 1,
+          "target_frequency": 0.8119343367335564,
+          "actual_fft_bin_frequency": 0.8115234375000462,
+          "modulated_power": 0.00430425050193507,
+          "zero_control_power": 2.0693291062036977e-11,
+          "modulated_normalized_power": 2.084358770437798e-05,
+          "zero_normalized_power": 1.0019230699169809e-13
+        },
+        {
+          "static_carrier_bin_frequency": 0.6079101562500345,
+          "harmonic": -1,
+          "target_frequency": 0.22224535076650231,
+          "actual_fft_bin_frequency": 0.22265625000001266,
+          "modulated_power": 2.9086345528903176e-06,
+          "zero_control_power": 1.245998999468247e-09,
+          "modulated_normalized_power": 1.408523490347452e-08,
+          "zero_normalized_power": 6.03284967537602e-12
+        },
+        {
+          "static_carrier_bin_frequency": 0.6079101562500345,
+          "harmonic": 1,
+          "target_frequency": 0.9935749617335667,
+          "actual_fft_bin_frequency": 0.9931640625000564,
+          "modulated_power": 7.17305668248875e-05,
+          "zero_control_power": 1.3140647321952553e-11,
+          "modulated_normalized_power": 3.473595135847979e-07,
+          "zero_normalized_power": 6.36240879521609e-14
+        }
+      ],
+      "modulated_raw_sha256": "26221932f7e67dc3971af2b1fa6ea7bbda59542205e0941bc2b168906415d2ec",
+      "zero_control_raw_sha256": "f7c717a694268d39e86eeccc5dfc26789fa0650246f0dee4e4c38a72323b6ddf",
+      "modulated_spectrum_sha256": "37a3ae547b2047fa257091afe4267d4693d0492169ac4309a2603c6d5d6fe694",
+      "zero_spectrum_sha256": "a56dc89f2023641aac119fb1bbac3a432b210aa32adab2869ccb6345a47e86a3"
+    }
+  ]
+}

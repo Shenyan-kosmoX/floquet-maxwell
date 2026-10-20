@@ -1,0 +1,35 @@
+{
+  "status": "REVIEWED_R48_WEAK_FORCED_SELECTION",
+  "selections": {
+    "incident_even": {
+      "path": "tail_diagnostics_t2000\\rank2\\incident_even\\response_t2000.npz",
+      "mode": "same_grid_two_pole_time_completion",
+      "raw_checkpoint": 2000,
+      "window_validated": true,
+      "heldout_time_validated": true,
+      "maxwell_equation_validated": true,
+      "independent_validated": false,
+      "continuous_wave_solver_validated": false,
+      "selected_for_scattering": true,
+      "accepted_for_finite_forced_response": true,
+      "validation_file": "tail_validation.json",
+      "acceptance_scope": "Only this fixed-geometry, five-frequency, weak first-order x-polarized forced response; same-grid measured poles, coherent E/D/port time completion, actual fourth-window and Maxwell checks."
+    },
+    "incident_odd": {
+      "path": "sampling/incident_odd/response_t2000.npz",
+      "mode": "raw_final_window",
+      "raw_checkpoint": 2000,
+      "window_validated": false,
+      "heldout_time_validated": false,
+      "maxwell_equation_validated": true,
+      "independent_validated": false,
+      "continuous_wave_solver_validated": false,
+      "selected_for_scattering": true,
+      "accepted_for_finite_forced_response": true,
+      "validation_file": "tail_validation.json",
+      "acceptance_scope": "Keep actual raw response: neither tested one-pole nor two-pole tail model predicts later increments. Small raw window sensitivity, native residual and unit-input port imbalance recorded separately."
+    }
+  },
+  "method": "Two-pole completion for even only; odd retained raw. Candidate files remain historically unselected; this explicit manifest records the subsequent narrow acceptance.",
+  "validation_file": "tail_validation.json"
+}

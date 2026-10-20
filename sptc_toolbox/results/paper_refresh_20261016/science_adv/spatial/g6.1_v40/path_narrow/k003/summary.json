@@ -1,0 +1,85 @@
+{
+  "k_index": 3,
+  "kpoint": [
+    3.141592653589793,
+    3.141592653589793
+  ],
+  "path_coordinate": 3.0,
+  "all_window_modes": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "all_window_frequencies_thz": [
+    64.72140390517045,
+    65.37216978798234,
+    66.67249082822767,
+    67.4677970640687,
+    67.9767426137489,
+    68.0783304297308,
+    69.25311552751356,
+    70.672577417702
+  ],
+  "modes": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "seed_tracking": {
+    "k_index": 3,
+    "modes": [
+      9,
+      13
+    ],
+    "overlap": 0.9999982930130119,
+    "ambiguous": false,
+    "comparison": "Physical H Fourier overlap on common G,z versus fresh g6.1",
+    "reference_k_index": 48
+  },
+  "forbidden_modulation_relative_max": 0.0,
+  "declared_window_thz": [
+    63.0,
+    72.0
+  ],
+  "selection": "Connected component of actual field-derived modulation overlap within declared frequency window plus tracked parents, threshold1e-6; no radiation-loss cuts",
+  "cases": {
+    "static": {
+      "m": 0.0,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0,
+      "projection_fast_generic_error": 3.8312205698344947e-16,
+      "common_sample_collective_loss_ratio": 0.2876928032163348,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "weak": {
+      "m": 0.0001,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0016,
+      "projection_fast_generic_error": 5.202847828268228e-16,
+      "common_sample_collective_loss_ratio": 0.2876928032163348,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "strong": {
+      "m": 0.03,
+      "drive_thz": 134.0,
+      "absolute_epsilon_amplitude": 0.48,
+      "projection_fast_generic_error": 4.722855797007279e-16,
+      "common_sample_collective_loss_ratio": 0.28483074290923643,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    }
+  },
+  "elapsed_seconds": 1.005538899997191
+}

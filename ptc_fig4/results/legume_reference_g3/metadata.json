@@ -1,0 +1,44 @@
+{
+  "status": "APPROXIMATE",
+  "legume_version": "1.0.3",
+  "geometry": {
+    "radius_nm": 1030.0,
+    "radius_over_height": 0.703,
+    "period_over_radius": 3.2
+  },
+  "height_nm_derived": 1465.149359886202,
+  "height_note": "Derived from published approximate r/h=0.703",
+  "material": {
+    "frequency_thz": 68.0,
+    "wavelength_um": 4.408712617647059,
+    "n": 3.9770728738235293,
+    "k": 0.0,
+    "epsilon_real": 15.817108643702946,
+    "epsilon_imag_not_used": 0.0,
+    "interpolation": "linear in wavelength",
+    "source_path": "ptc_fig4\\literature\\ge_amotchkina.yml",
+    "approximation": "frozen Re[(n+ik)^2]; dispersion and absorption omitted"
+  },
+  "gmax": 3.1,
+  "gmode_inds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "physical_air_background_verified": true,
+  "reference_basis_epsilon": 5.545831998290919,
+  "frequency_convention": "omega*a/c = 2*pi*legume.freqs",
+  "decay_convention": "exp(-i omega t); Im omega = -2*pi*legume.freqs_im",
+  "modal_identity": "UNVERIFIED; all candidates retained; no nearest-frequency tracking",
+  "open_complex_frequency_eigenproblem": false,
+  "missing": [
+    "material dispersion",
+    "material absorption",
+    "nonperturbative outgoing radiation",
+    "Maxwell residual",
+    "qBIC identity",
+    "convergence of target mode",
+    "dynamic Ge response and Floquet coupling"
+  ]
+}

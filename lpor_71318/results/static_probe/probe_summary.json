@@ -1,0 +1,162 @@
+{
+  "status": "APPROXIMATE_NATIVE_LEGUME",
+  "published_target": "Fig3(a,b) periodic metasurface",
+  "assumptions": [
+    "square lattice",
+    "Gamma",
+    "air claddings"
+  ],
+  "physical_geometry": {
+    "r_nm": 150,
+    "h_nm": 50,
+    "a_nm": 400,
+    "epsilon": 16
+  },
+  "runs": [
+    {
+      "directory": "average_g3.1_v4",
+      "reference": "average",
+      "gmax": 3.1,
+      "vertical_modes": 4,
+      "basis_dimension": 98,
+      "candidate": {
+        "mode": 2,
+        "omega_a_over_c": 3.237827051761372,
+        "frequency_thz": 386.21976074670107,
+        "q_radiative": 1.8138939804665844e+30,
+        "irrep": "A2g",
+        "degenerate_modes": [
+          2
+        ],
+        "center_to_annulus_intensity": 0.043587960144825036,
+        "inplane_azimuthal_E_fraction": 0.989200449403954
+      }
+    },
+    {
+      "directory": "average_g5.1_v6",
+      "reference": "average",
+      "gmax": 5.1,
+      "vertical_modes": 6,
+      "basis_dimension": 458,
+      "candidate": {
+        "mode": 2,
+        "omega_a_over_c": 3.2328756750816847,
+        "frequency_thz": 385.62914256789645,
+        "q_radiative": 8.017795866402702e+28,
+        "irrep": "A2g",
+        "degenerate_modes": [
+          2
+        ],
+        "center_to_annulus_intensity": 0.04407382138468017,
+        "inplane_azimuthal_E_fraction": 0.9914241064167899
+      }
+    },
+    {
+      "directory": "average_g7.1_v8",
+      "reference": "average",
+      "gmax": 7.1,
+      "vertical_modes": 8,
+      "basis_dimension": 1074,
+      "candidate": {
+        "mode": 2,
+        "omega_a_over_c": 3.2326821054638164,
+        "frequency_thz": 385.6060528814167,
+        "q_radiative": 1.2121052525639662e+29,
+        "irrep": "A2g",
+        "degenerate_modes": [
+          2
+        ],
+        "center_to_annulus_intensity": 0.03455191888295753,
+        "inplane_azimuthal_E_fraction": 0.9913959300585664
+      }
+    },
+    {
+      "directory": "custom_g3.1_v4",
+      "reference": "custom",
+      "gmax": 3.1,
+      "vertical_modes": 4,
+      "basis_dimension": 106,
+      "candidate": {
+        "mode": 2,
+        "omega_a_over_c": 3.17311204270461,
+        "frequency_thz": 378.50031961687716,
+        "q_radiative": 1.8439551745986525e+29,
+        "irrep": "A2g",
+        "degenerate_modes": [
+          2
+        ],
+        "center_to_annulus_intensity": 0.04684734637233079,
+        "inplane_azimuthal_E_fraction": 0.9931602009183427
+      }
+    },
+    {
+      "directory": "custom_g5.1_v6",
+      "reference": "custom",
+      "gmax": 5.1,
+      "vertical_modes": 6,
+      "basis_dimension": 498,
+      "candidate": {
+        "mode": 2,
+        "omega_a_over_c": 3.1648252521236495,
+        "frequency_thz": 377.5118411637753,
+        "q_radiative": 1.3156673381191831e+28,
+        "irrep": "A2g",
+        "degenerate_modes": [
+          2
+        ],
+        "center_to_annulus_intensity": 0.05547532604972019,
+        "inplane_azimuthal_E_fraction": 0.995267249589878
+      }
+    },
+    {
+      "directory": "custom_g7.1_v8",
+      "reference": "custom",
+      "gmax": 7.1,
+      "vertical_modes": 8,
+      "basis_dimension": 1194,
+      "candidate": {
+        "mode": 2,
+        "omega_a_over_c": 3.164286444594617,
+        "frequency_thz": 377.44757024639006,
+        "q_radiative": 1.7653499073482892e+28,
+        "irrep": "A2g",
+        "degenerate_modes": [
+          2
+        ],
+        "center_to_annulus_intensity": 0.04630318715055699,
+        "inplane_azimuthal_E_fraction": 0.9955147728562853
+      }
+    }
+  ],
+  "field_overlap_checks": [
+    {
+      "from": "average_g3.1_v4",
+      "to": "average_g5.1_v6",
+      "common_H_overlap_squared": 0.994469184409261
+    },
+    {
+      "from": "average_g5.1_v6",
+      "to": "average_g7.1_v8",
+      "common_H_overlap_squared": 0.9994420606815801
+    },
+    {
+      "from": "custom_g3.1_v4",
+      "to": "custom_g5.1_v6",
+      "common_H_overlap_squared": 0.9939420166867056
+    },
+    {
+      "from": "custom_g5.1_v6",
+      "to": "custom_g7.1_v8",
+      "common_H_overlap_squared": 0.9993968145010793
+    },
+    {
+      "from": "average_g7.1_v8",
+      "to": "custom_g7.1_v8",
+      "common_H_overlap_squared": 0.9946980948920686
+    }
+  ],
+  "candidates_retained": 144,
+  "identity": "Lowest nondegenerate A2g, azimuthal-E single ring; image correspondence qualitative, absolute paper eigenvalue not stated",
+  "radiation": "Symmetry-protected BIC under Gamma/square assumptions; huge numerical Q is not resolved physical linewidth",
+  "convergence": "Each reference stabilizes in cutoff, but average/custom remain ~2.1% apart; native basis systematic error unresolved"
+}

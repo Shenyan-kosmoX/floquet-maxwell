@@ -1,0 +1,574 @@
+{
+  "schema": "random-spatial-drive-benchmark-v1",
+  "paper_doi": "10.1038/s41467-018-06802-0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "legume-gme": "1.0.3",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.3"
+  },
+  "evidence": [
+    "Original SI1b/c reflection-code map comparison",
+    "Complete 64-cell Legume dielectric protocol transfer",
+    "Independent 2x2 Legume supercell and exact-step/Fourier controls"
+  ],
+  "scope": "Material operator and finite dynamics; no original metal/PIN full-wave or complete open random scattering certification",
+  "files": [
+    {
+      "path": "sptc_toolbox/docs/zhang2018_disorder_baseline_design.md",
+      "bytes": 2747,
+      "sha256": "b95311769caa4a9c7f553d62f9e3eb4bfe544dd73f4e9dd4ff8d24993f98d69b"
+    },
+    {
+      "path": "sptc_toolbox/literature/general_spatiotemporal_20261019/sources/patterned/zhang2018_main.pdf",
+      "bytes": 3753861,
+      "sha256": "9e576de5634f9cf0c0cb6aa64774d4f960485d51f50077a1f3450611e3d1077c"
+    },
+    {
+      "path": "sptc_toolbox/literature/general_spatiotemporal_20261019/sources/patterned/zhang2018_SI.pdf",
+      "bytes": 2530219,
+      "sha256": "33c07e616e2ae741aa5460bc625b68ddf537b44cdadcfcea9a266307db1a2d0d"
+    },
+    {
+      "path": "sptc_toolbox/literature/general_spatiotemporal_20261019/zhang2018_code.json",
+      "bytes": 13815,
+      "sha256": "8a27b888a7dcae66c4d2a2d75d22cfeb248f65c52be8c7381ae3bede585b23c7"
+    },
+    {
+      "path": "sptc_toolbox/literature/modulation_disorder_baseline_20261019/search/screened_candidates.md",
+      "bytes": 6568,
+      "sha256": "f1446308c53fbb616a2fe633c7db269783be2769da7a1c809035a4cb3a54962a"
+    },
+    {
+      "path": "sptc_toolbox/literature/modulation_disorder_baseline_20261019/search/test_review.md",
+      "bytes": 4073,
+      "sha256": "86cf182905ed546d1696fd4f00acd2ffe08fac2c6a241e5b4b4e243733f18897"
+    },
+    {
+      "path": "sptc_toolbox/literature/modulation_disorder_baseline_20261019/zhu_review/review.md",
+      "bytes": 3541,
+      "sha256": "a1944f7305dcc9f29c9219aac8e603fb728c2fb440fe20473c20c2b4aa47b54b"
+    },
+    {
+      "path": "sptc_toolbox/patterned_drive.py",
+      "bytes": 14144,
+      "sha256": "bd8cba072abcc10dbaf3214dff7696edb4eccff5895fe9ca8b831f6566edc37b"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g2.1_m2_z12/dc_only_control.npz",
+      "bytes": 1778811,
+      "sha256": "99c22b999961e77e0fe9ce767f5718884d2dc297d2c0348da2e5407c027efc63"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g2.1_m2_z12/dynamics.npz",
+      "bytes": 1781566,
+      "sha256": "77d0f920bc34fae63b589e9b26eb5a8aa836ce48a767e9e220051873aa888564"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g2.1_m2_z12/material_projection.npz",
+      "bytes": 18412253,
+      "sha256": "5810a5b5879a900ce0b2750cf984d2b632bfc7a955e6a713af4e46d43c5cb09f"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g2.1_m2_z12/native.pkl",
+      "bytes": 1880060,
+      "sha256": "60df28b9dc4b073b0d4c59856f8e9b40ac4fee3564b1f24dd14b367ef569650b"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g2.1_m2_z12/projection_metadata.json",
+      "bytes": 25642,
+      "sha256": "9d0791baa38c024999f0f659b1f57010b8d71e0f77b056dac8c5edcce4525285"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g2.1_m2_z12/static.json",
+      "bytes": 23100,
+      "sha256": "1a0da6a9e46d2dfb01958f94d01e665158bff37cd0d03bba7a4967df1637bab8"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g2.1_m2_z12/summary.json",
+      "bytes": 6257,
+      "sha256": "e2c7da955550e306ea76838c0d9c10d5e0b943b46da10ec3f8644192ed4c8d8e"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g2.1_m2_z12/synchronous_control.npz",
+      "bytes": 1755076,
+      "sha256": "7f3a14ff7faf4518fc760184becd68cd9ae1778b1dd207f7bcefb4b765f116dc"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m2_z12/dc_only_control.npz",
+      "bytes": 1778644,
+      "sha256": "9e874b24492d67a99fd5c9e83d773f1fe3be144d0480a2fff87d74c851cc5e0a"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m2_z12/dynamics.npz",
+      "bytes": 1781929,
+      "sha256": "a6b7af085ba2d3be4ddb2c154b72aa552676b82d071be5d8714f2750b10d26bc"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m2_z12/material_projection.npz",
+      "bytes": 18417252,
+      "sha256": "82905815db8c541274d3600d96a4d95c27a0ca86b9ff8bfdaf2d8c642566a634"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m2_z12/native.pkl",
+      "bytes": 4506978,
+      "sha256": "0c1bc76969d78c7bc4a3de2afab72c346b466326611b68ec110ee9833da79453"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m2_z12/projection_metadata.json",
+      "bytes": 25642,
+      "sha256": "84a0fda0a81c760f41d9fad0b8296c4ae10e03d20cadca039d736c4ae6898da9"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m2_z12/static.json",
+      "bytes": 23067,
+      "sha256": "9c67b02845f2401f9389ba3e3d589481e0123fd12c8254b4de6ed511f63fb91a"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m2_z12/summary.json",
+      "bytes": 6261,
+      "sha256": "e798b0f3d97c0b137291847f84b184b121871f99f2be096f54b26fb5e9fc0453"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m2_z12/synchronous_control.npz",
+      "bytes": 1755373,
+      "sha256": "8942b6927e6b892df71f8f4046cbc41ba833f61c1a242e714cf60074f53a9ea9"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m4_z12/dc_only_control.npz",
+      "bytes": 5604947,
+      "sha256": "6968ada4a1678d37d3ee3d06ccd7ac53424f1ebd5040fc9e30c9b8f52153bfa6"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m4_z12/dynamics.npz",
+      "bytes": 5600424,
+      "sha256": "2806a49da1eafbdfd8112c82e93d1de2f2bddde0ecbe0ffc079a38de8d1b2cdd"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m4_z12/material_projection.npz",
+      "bytes": 74143755,
+      "sha256": "ee027c406648a51102b5177d5b7c02c06d7fed8dddda86356729b1b36c720f3d"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m4_z12/native.pkl",
+      "bytes": 4506978,
+      "sha256": "eb5b8260fcf0d000c9e8f0e279097e97c4e94f3c79a0ceb7d98a1893e2bb888e"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m4_z12/projection_metadata.json",
+      "bytes": 27178,
+      "sha256": "2ee3d0a8936a981f7168213917197eb353169348828f8a4abbf892b0156f91a7"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m4_z12/static.json",
+      "bytes": 23066,
+      "sha256": "211039d58808dc55bb0e728520d5ba4419addf017bc8fcc25609d9c2a282b457"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m4_z12/summary.json",
+      "bytes": 7536,
+      "sha256": "3b4ebcc2f4bfb5e9d6bd4f9eb80aebe994f10dcc098654cfc4dcfe541f1c4fb3"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m4_z12/synchronous_control.npz",
+      "bytes": 5570833,
+      "sha256": "97ce4b7ab8ebf3d63005db237f5ac2f33973b07c0acb75df7c5d1b08d0084fe4"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_pluslow_z12/dc_only_control.npz",
+      "bytes": 19430218,
+      "sha256": "a5e39c3f8c1dde72c075f145e528fa23d28da73e4fc974f6b8e37458537a7fd4"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_pluslow_z12/dynamics.npz",
+      "bytes": 19362931,
+      "sha256": "d352d37476a3447599a38fc3f55a59686c16bb1863162a2a2c84d0c851af30f2"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_pluslow_z12/material_projection.npz",
+      "bytes": 296085525,
+      "sha256": "b45155567fcba746f72744bc99eb9e79e95571310161c80ffbed768af8a29d7f"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_pluslow_z12/native.pkl",
+      "bytes": 4506978,
+      "sha256": "e2b1ee440c7a3bf6e1afa3059dd6a93ce6ca4ac3a1fcf59330f9e56aaa6d8d05"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_pluslow_z12/projection_metadata.json",
+      "bytes": 30250,
+      "sha256": "2d44210be53585bd61343d347a66d9878e66c695c9c2347cfb66035303a90a1b"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_pluslow_z12/static.json",
+      "bytes": 23067,
+      "sha256": "d111c2a8aeb69dcdf151ec78b4f4f64798b08dd844fb4fa92cf0207ec4533736"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_pluslow_z12/summary.json",
+      "bytes": 10100,
+      "sha256": "8bf1d461990a5853367bcf7b900cacea072f5fe874087b1d78e51fe207da63d5"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_pluslow_z12/synchronous_control.npz",
+      "bytes": 19366017,
+      "sha256": "2d0be144d170c5d061ca3636fde70a6328d8904866d5a131c1d0615e9b3fc701"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_z12/dc_only_control.npz",
+      "bytes": 11477682,
+      "sha256": "729077efd06db067c69ba19da501babc9ef42251c24e83af7b87ef6574973b41"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_z12/dynamics.npz",
+      "bytes": 11458139,
+      "sha256": "f9aaa1cbba61ecddd92f385581dca1051353b63c3ad90acfad4d9eacd21d5ebb"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_z12/material_projection.npz",
+      "bytes": 166681153,
+      "sha256": "c492407970ac699ebc6a854784a933297e2d90b56dc13014edf5e8978512c528"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_z12/native.pkl",
+      "bytes": 4506978,
+      "sha256": "0c1eec058c848e68a05a5f41c119dd5c6606c93def8ad41ce1d232aa3e14f70d"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_z12/projection_metadata.json",
+      "bytes": 28714,
+      "sha256": "b61a358d3772a7efd9592b417e4372d4b425f921b11aa3b603d9300d3f14367b"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_z12/static.json",
+      "bytes": 23067,
+      "sha256": "284dd2c2d309108a51d9232118d9ffaeff883fbbba34e0ee5fd31ee939a0a217"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_z12/summary.json",
+      "bytes": 8822,
+      "sha256": "c67624cc092028f2c27cffff5202efbd2a91635d292358749662eb822e20e797"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_g3.1_m6_z12/synchronous_control.npz",
+      "bytes": 11441748,
+      "sha256": "a6ff1a2bbe023d5443f5616663c51fa309142cea67e225801b4cd052a9e5c963"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/full64_identity.json",
+      "bytes": 221889,
+      "sha256": "ed7277f77c56c3acd1387095deb53109ca78d16d0afb355444b1b2b3e2a31d88"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/legume_full64.pdf",
+      "bytes": 35925,
+      "sha256": "4bae627786a5a3a5855fa52dae9e8893e9eab5a6d1cfbe772dac881e37d8fd78"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/legume_full64.png",
+      "bytes": 353277,
+      "sha256": "a51865d970eccf2926843c9461b527914383725e11473e3c3ad8ba4a5d7cb76e"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/legume_full64.svg",
+      "bytes": 109561,
+      "sha256": "75ff415328bae7df704cb8fc2cd1ffc072557601fab9cf092642ef13bacbabc2"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/computed.pdf",
+      "bytes": 27512,
+      "sha256": "4c41320a689feb2088cca0087c93bc1034e0ce9fc185fe59cbe4bcededb2051b"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/computed.png",
+      "bytes": 83527,
+      "sha256": "ebc08d0bbb55370111a011f75a9d7eabbaa6d65ed93455c853084be155472bc3"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/metrics.json",
+      "bytes": 3000,
+      "sha256": "16b8f10953ae08cfcfae4951a91e6a069f60f355dbc9541b254654e3313a69ba"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/paper_amplitude.png",
+      "bytes": 288058,
+      "sha256": "0d4400967f8091769d3d9c7401fe18b4ed6a3215684fa25a669ddca5b1c4c7fe"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/paper_codes.png",
+      "bytes": 1191943,
+      "sha256": "3a31da4991aa32498c4693bd01e3667564b4aba4d1c0bc55ddd03f2ccc40501f"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/paper_phase.png",
+      "bytes": 350932,
+      "sha256": "85be061d57bac065a9c4f05db3a6e9e7e0c65217b24505c2dba0062de639e7f4"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/paper_vs_protocol.pdf",
+      "bytes": 603659,
+      "sha256": "7d8f3ec16d960eda89cde589e9e153243f9de70ffe5288757d81a92fb87e5149"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/paper_vs_protocol.png",
+      "bytes": 855194,
+      "sha256": "dd5c462dc07789dcf1a055e634f85615038125c3b4d841a63cf3b919533ae295"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/paper_vs_protocol.svg",
+      "bytes": 850815,
+      "sha256": "460a9f256af5b04940e69535b474de9ac8e97d9262d3e970208d4535b37eea2b"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/pdf_preview.png",
+      "bytes": 389881,
+      "sha256": "2b06defbc31291cf01938c64ac2454e2a34adea3e2672b9b1a1b7424961e49e3"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/protocol_data.npz",
+      "bytes": 7589,
+      "sha256": "2bb8d2a1f0304246eb51e1ef84a3e88622c731e3836a7cf138e4076ce73e7bbe"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/report.md",
+      "bytes": 2816,
+      "sha256": "fd69b2730cd4ea65af439178135b25f9f5173a035255f04e3d734024fcd0f827"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/paper_protocol/source_manifest.json",
+      "bytes": 2070,
+      "sha256": "6ea566db3c3bbb45eec867096cca05da944d05e415bba50ef61737cc57ae68d0"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/realspace_checks.json",
+      "bytes": 8140,
+      "sha256": "e1cff86e0562e727c7076c916b69be34c612ea3b196f952e6cbf606b3c0f3230"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/report.md",
+      "bytes": 7748,
+      "sha256": "5d674dcf67e2f91288b971909ba01d1b53cb82bb50fb2ffa78e00450447a330c"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g2.1_spatial.json",
+      "bytes": 5116,
+      "sha256": "1df93b347bcd1d0293759e7cd9fd619b1c7fb566eb34bc492aa008b43b5d4718"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g2.1_spatial.npz",
+      "bytes": 25374,
+      "sha256": "5538c4706e4bf2d16c5bd3f9ae68b8a0f313b6853594210879200f318f63cd8c"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g2.1_supercell_native.json",
+      "bytes": 4071,
+      "sha256": "37fa5bf2cb634197b7aa5363eab2ba01186d0cb2149594cdc01d5b07ba4647ca"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g2.1_supercell_native.pkl",
+      "bytes": 670730,
+      "sha256": "203afc8316bb6509063ba476e1bbd8c034434456ab7d5a1b465c7c09dfdc804f"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g3.1_spatial.json",
+      "bytes": 5117,
+      "sha256": "fcb9cdb5a120f7470b93e442961674a8190f59765bc7635f990628721c6fcd02"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g3.1_spatial.npz",
+      "bytes": 25346,
+      "sha256": "3a45b8bbac2a0848be9d0217de61f104df06cf25846a390aad0b1d4ea911d084"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g3.1_supercell_native.json",
+      "bytes": 7383,
+      "sha256": "f5b42b5877172a4b4376040c14abe1c4402cb613c6174c117f68ae8d5e609a0c"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g3.1_supercell_native.pkl",
+      "bytes": 2333069,
+      "sha256": "9475817ee11671c843985f7d061f03095fb7766c9fb28504f25eaca832c304cd"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g4.1_spatial.json",
+      "bytes": 5119,
+      "sha256": "8d64418ae97a829c2764294058d539dec826d22b6a35b3e018c5bff047b637d6"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g4.1_spatial.npz",
+      "bytes": 25299,
+      "sha256": "5fe534bc315795e43b163d9d84a7df35a99f9af50180269497ae070b5cf63420"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g4.1_supercell_native.json",
+      "bytes": 12227,
+      "sha256": "1c7e47996a387fceceab8d743e8cfff62b1c26aaf1e00d7c8721d5d6c8898edb"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/g4.1_supercell_native.pkl",
+      "bytes": 6330111,
+      "sha256": "f93f0170024ed900567b10ccbc12360cee5f299c05adac249ddc4ea1c0560f1e"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/independent_quadrature_refinement.json",
+      "bytes": 212,
+      "sha256": "42caf68f0e2d32446bb9bdcef267649b1546c04791e1faaee1894062a755bc49"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/independent_supercell.pdf",
+      "bytes": 29374,
+      "sha256": "aacd8a714e868d4eee64f2cc42fc2aefdb9dbaffe65430d61d33810b8b1d4ee1"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/independent_supercell.png",
+      "bytes": 226886,
+      "sha256": "ef4f7591b35030f102f9420d6c9939fd57d8dfd9d67e09b6a2b496f8dc658613"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/independent_supercell.svg",
+      "bytes": 125738,
+      "sha256": "12e234c611fc24743d892f7eb1e691cdda43fddf170a1367a723384552ce10ed"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/primitive/g4.1/native.pkl",
+      "bytes": 755708,
+      "sha256": "2ad299b9f5c43b9ec39a094e4b8724ca9d7d9078cc03220b08930559e82b9bee"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/primitive/g4.1/static.npz",
+      "bytes": 1155,
+      "sha256": "44a3d85fbb851dd6296603ca46ba4d566026c3ba0df66a9290de050fe86b95f9"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/primitive/g4.1/summary.json",
+      "bytes": 2049,
+      "sha256": "183c0dfc0d0e1020ddf51630e5a7006565ad81df25f5cfaadac4f326e0ae92c9"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/protocol.json",
+      "bytes": 1655,
+      "sha256": "dd4e2d4b9cfb6f93c10a836e9216167a076dfb274a3321bdea896ce74e9733c4"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/render_report.py",
+      "bytes": 6782,
+      "sha256": "b0cbbb14b11aa6a4e63ed1c41ea906cd05430c6f937d33a2fb42e918d5974e8e"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/report.md",
+      "bytes": 3355,
+      "sha256": "2b86dbd98f12adc3a08048f1a13d6e815dd9d1be6e71e9c32a2a0e56d5aadd4e"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/summary.json",
+      "bytes": 23189,
+      "sha256": "f34542dd48619c152ddddd5fc4e691e301efd1f78f152b388a5d218b04229852"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/temporal_P16_M20.npz",
+      "bytes": 54078,
+      "sha256": "0cf6e6571d5c2f1886b4b7f2e53a0528a4b2651128e285d59a273525d4b3e1bd"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/temporal_P32_M28.npz",
+      "bytes": 97338,
+      "sha256": "3ecb056c54fc2ef4206cb941d838ca354ec4b8e44f9c2e26e984d5dbbce21ebe"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/temporal_P32_M40.npz",
+      "bytes": 105515,
+      "sha256": "71363e7f39fc17c5b27938cca208718e2dface4e9bd4f99ae54917917425d47e"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/temporal_P32_ODE.npz",
+      "bytes": 4697,
+      "sha256": "4bbf70113f942ecf2692dc1fe3ff1b644faaa1c08a53f39519ad87c787a08de6"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/temporal_P4_M8.npz",
+      "bytes": 17636,
+      "sha256": "69414b339b76e837a5bb6149a671313f2816943dd273adf27a901a1fb0c9e99a"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/temporal_P64_M56.npz",
+      "bytes": 191868,
+      "sha256": "39724b72319f610d3a2a8214d8020b6cc941434064bfdbb73fbf3f4ef12e51ff"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/temporal_P64_ODE.npz",
+      "bytes": 4703,
+      "sha256": "41382c3ca517fef5a62911ae7ada34690e4a62affdcea8d4f955654db1a4be1f"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/temporal_P8_M12.npz",
+      "bytes": 29781,
+      "sha256": "061b997db6db5a839d2e4f9d6a3d42fd1031d74cb7b6cf21f11df975a6b041ff"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/temporal_progress.json",
+      "bytes": 2261,
+      "sha256": "5b78cd511bf0325cf1a9cd5f787c348c952d9ad45f8ae794fe36918ba944e027"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/trajectory_controls.json",
+      "bytes": 460,
+      "sha256": "6b6db2673f5d9d2331df5acc627b0f640200d8dc81628062cb35e0cb38fce92c"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/trajectory_random_code.npz",
+      "bytes": 73514,
+      "sha256": "8def0bfca9550e4d818a7c3a9aa3756f3acc2ebf778eb81247e6809742d10008"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/trajectory_uniform_code.npz",
+      "bytes": 74264,
+      "sha256": "0676f91d51a42dce56ddf67f977e63f1d853816b3d54529a315c8825462c311d"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/trajectory_zero_drive.npz",
+      "bytes": 11291,
+      "sha256": "0793716b404707f81c30a9af729f953b536d0eb28bc373cfa34f976ac8ddd6e9"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_disorder_baseline_20261019/supercell/validation_manifest.json",
+      "bytes": 6217,
+      "sha256": "4a37d691123b560cd759f7aed457d2125f6b390e69fc9402c415770224b493b3"
+    },
+    {
+      "path": "sptc_toolbox/scripts/check_zhang2018_full64_identity.py",
+      "bytes": 10187,
+      "sha256": "2c0ad4ac61ecd8c54cf6cd9646c5b06c30a21c3e8f769e13a99f610b7cbab1a1"
+    },
+    {
+      "path": "sptc_toolbox/scripts/check_zhang2018_realspace.py",
+      "bytes": 3557,
+      "sha256": "a9c63872caf72c8ec926a0991e8e27732f6ace00ae38d235732cb932fc0234c6"
+    },
+    {
+      "path": "sptc_toolbox/scripts/plot_zhang2018_protocol_reference.py",
+      "bytes": 15160,
+      "sha256": "9a7d358b440488e9b3ad56d634e01e190aa2e6486abd9063366440e30c1c8bd9"
+    },
+    {
+      "path": "sptc_toolbox/scripts/report_zhang2018_legume_protocol.py",
+      "bytes": 12364,
+      "sha256": "d92247cf0a40ae803bf28ad29e694b141ff37ca1153ddd59c459aa5d86f2e58c"
+    },
+    {
+      "path": "sptc_toolbox/scripts/run_zhang2018_legume_protocol.py",
+      "bytes": 11103,
+      "sha256": "11e1518095b85764f001d642a91c6b87cd9e0ea7e64594130c5a14ba988dba29"
+    },
+    {
+      "path": "sptc_toolbox/scripts/validate_zhang2018_supercell.py",
+      "bytes": 19499,
+      "sha256": "dc4f3fdf4e5034c2b902c1da01ad3c54b5f5ded4c45d1dcf311d547917c7558f"
+    },
+    {
+      "path": "sptc_toolbox/spatial_drive.py",
+      "bytes": 21274,
+      "sha256": "96e6d082271cfb653e222edbd341102dfa16e2cfadf5cd889593e0a6e463dc07"
+    }
+  ]
+}

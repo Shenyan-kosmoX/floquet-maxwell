@@ -1,0 +1,135 @@
+{
+  "status": "ACTUAL_LEGUME_SPATIAL_FIELDS_TO_FINITE_MAXWELL_DYNAMICS",
+  "time_integrator": "Full positive/negative second-order Maxwell: exact frozen midpoint substeps; independent refinement required",
+  "steps_per_period": 2048,
+  "depth": 0.02,
+  "targets_T": [
+    0,
+    1.5625,
+    3.125
+  ],
+  "radiation": "Native gamma exported; zero-radiation guided finite basis, no diagonal-Q substitution",
+  "maximum_native_gamma": 0.0,
+  "source_contract": "Minkov/Fan2018 Eq30,Fig9(c-e); source is author manuscript",
+  "cases": [
+    {
+      "drive": 0.01,
+      "seconds": 1.5197691999992458,
+      "xcom": [
+        -1.0637722961087329e-15,
+        18.907041036088227,
+        39.17934131375568
+      ],
+      "width": [
+        2.084229613445809,
+        14.771082135567699,
+        27.404916364391585
+      ],
+      "negative_action_fraction": [
+        1.630291469944542e-32,
+        4.234038769222281e-11,
+        2.819384392170544e-11
+      ],
+      "circular_centers": [
+        -1.0548295271541542e-15,
+        19.114965827990133,
+        41.26479418571489
+      ],
+      "periodic_edge_fraction": [
+        8.003825157164282e-08,
+        1.1708092830044796e-05,
+        0.002165561518642205
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256,
+      "file": "drive0.01_steps2048_fullcom.npz"
+    },
+    {
+      "drive": 0.001,
+      "seconds": 1.7678159000006417,
+      "xcom": [
+        -1.0637722961087329e-15,
+        25.04371480088816,
+        50.03667657970705
+      ],
+      "width": [
+        2.084229613445809,
+        4.80315546072179,
+        8.937461045321545
+      ],
+      "negative_action_fraction": [
+        1.630291469944542e-32,
+        5.533680636452244e-13,
+        6.936629900381839e-13
+      ],
+      "circular_centers": [
+        -1.0548295271541542e-15,
+        25.047967300915975,
+        50.06190248387135
+      ],
+      "periodic_edge_fraction": [
+        8.003825157164282e-08,
+        1.0004294141330078e-05,
+        0.00018668928524927686
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256,
+      "file": "drive0.001_steps2048_fullcom.npz"
+    },
+    {
+      "drive": 0.0001,
+      "seconds": 1.5339684000000489,
+      "xcom": [
+        -1.0637722961087329e-15,
+        25.012935087264392,
+        50.15587200804273
+      ],
+      "width": [
+        2.084229613445809,
+        24.962804632328282,
+        47.541223601941944
+      ],
+      "negative_action_fraction": [
+        1.630291469944542e-32,
+        5.3483590270231224e-11,
+        1.513259660163584e-10
+      ],
+      "circular_centers": [
+        -1.0548295271541542e-15,
+        25.186655357828744,
+        51.946658486689515
+      ],
+      "periodic_edge_fraction": [
+        8.003825157164282e-08,
+        2.8913259113908548e-05,
+        0.0014125964037071245
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256,
+      "file": "drive0.0001_steps2048_fullcom.npz"
+    }
+  ],
+  "initial_state": {
+    "instantaneous_lowest_omega": [
+      1.6131269145630323,
+      1.6131274853386017,
+      1.6131288715939567,
+      1.6131314952291087,
+      1.6131358679502052,
+      1.6131424751674814,
+      1.6131516602164069,
+      1.6131635269916094,
+      1.613163526991613,
+      1.6131516602164024,
+      1.6131424751674759,
+      1.6131358679502112,
+      1.6131314952291103,
+      1.6131288715939491,
+      1.6131274853386002,
+      1.613126914563026
+    ],
+    "phase_reference": "Physical Ex/Ey/Ez overlap with central-K instantaneous field on y=0,x[-8,8],Gaussian window width4a",
+    "local_reference_overlap_min": 1.2073992273934768,
+    "normalization": "Each K has H norm1 and electric material energy1: q=v/omega_inst,p=-iv; c_K1=1 after physical gauge"
+  }
+}

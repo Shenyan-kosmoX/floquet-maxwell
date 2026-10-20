@@ -1,0 +1,82 @@
+{
+  "k_index": 33,
+  "kpoint": [
+    3.141592653589793,
+    0.19634954084936207
+  ],
+  "path_coordinate": 2.0625,
+  "all_window_modes": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "all_window_frequencies_thz": [
+    62.753279211277004,
+    64.07155651165057,
+    66.72596735495542,
+    68.33447091929608,
+    73.44310291277527,
+    74.04637885312044,
+    74.58122957711166,
+    75.23498628478464,
+    77.40654171951816
+  ],
+  "modes": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "seed_tracking": {
+    "k_index": 33,
+    "modes": [
+      8,
+      10
+    ],
+    "overlap": 0.9980896968037173,
+    "ambiguous": false
+  },
+  "forbidden_modulation_relative_max": 0.0,
+  "selection": "Connected component of actual field-derived modulation overlap, threshold1e-6; no radiation-loss cuts",
+  "cases": {
+    "static": {
+      "m": 0.0,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0,
+      "projection_fast_generic_error": 3.725632334198242e-16,
+      "common_sample_collective_loss_ratio": 0.0912479337790108,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "weak": {
+      "m": 0.0001,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0016,
+      "projection_fast_generic_error": 5.185549902776873e-16,
+      "common_sample_collective_loss_ratio": 0.0912479337790108,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "strong": {
+      "m": 0.03,
+      "drive_thz": 134.0,
+      "absolute_epsilon_amplitude": 0.48,
+      "projection_fast_generic_error": 7.728266435325037e-16,
+      "common_sample_collective_loss_ratio": 0.09163911764298509,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    }
+  },
+  "elapsed_seconds": 2.752648199995747
+}

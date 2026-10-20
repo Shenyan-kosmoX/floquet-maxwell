@@ -1,0 +1,112 @@
+{
+  "scope": "Official Meep v1.35.0 source audit; no FDTD run by theory reviewer",
+  "files": [
+    {
+      "file": "python_adjoint_objective.py",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/python/adjoint/objective.py",
+      "bytes": 23678,
+      "sha256": "0cce8ce7e50da9c36df085658d04a8e3080a35ab7134c51649ce54b58391244c"
+    },
+    {
+      "file": "python_adjoint_utils.py",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/python/adjoint/utils.py",
+      "bytes": 8463,
+      "sha256": "e8cbae69357e9eb3bcacdd0e8e1fbe56337dd8f2ef9ff9fb7984f7d84df790ed"
+    },
+    {
+      "file": "python_simulation.py",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/python/simulation.py",
+      "bytes": 288141,
+      "sha256": "fc791160f245b83107deb813bc651f4cfee9081e4b7fe0141f445468f8e94588"
+    },
+    {
+      "file": "python_source.py",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/python/source.py",
+      "bytes": 51432,
+      "sha256": "aebc79ff9f71af93e9091d1cf94d9c0245ac0e6ccd2c46e614522eff869ade72"
+    },
+    {
+      "file": "src_dft.cpp",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/dft.cpp",
+      "bytes": 62541,
+      "sha256": "bd5c675bbdef988d2df46a010bd22800ba9379830d629032e4869a265f680feb"
+    },
+    {
+      "file": "src_energy_and_flux.cpp",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/energy_and_flux.cpp",
+      "bytes": 11270,
+      "sha256": "a69ae34e45a8c56ae074831a4b1c0658b50137ffca88b5dcefd6f8c913758b17"
+    },
+    {
+      "file": "src_fields.cpp",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/fields.cpp",
+      "bytes": 26829,
+      "sha256": "2ced02c5f6b1bece7d18f4a45f385585ed3345f4f3e8dd85143af2ce1add0ce9"
+    },
+    {
+      "file": "src_integrate.cpp",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/integrate.cpp",
+      "bytes": 9056,
+      "sha256": "13283eda467847579bc855a34624c4fc1cbb001667d89f58ca65177f7da428f5"
+    },
+    {
+      "file": "src_meep.hpp",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/meep.hpp",
+      "bytes": 108128,
+      "sha256": "cab8adce61e9348d7e9b17a168c3dd653895e7a7cc0564ff32b65798d6ef15f1"
+    },
+    {
+      "file": "src_meep_internals.hpp",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/meep_internals.hpp",
+      "bytes": 13749,
+      "sha256": "411b0f5d2fb6197bc8aee1fb337d895296457edb0308ee6b05eec640353ba304"
+    },
+    {
+      "file": "src_sources.cpp",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/sources.cpp",
+      "bytes": 29853,
+      "sha256": "193d7f41a33af5526fa9db7681ea6035a1081cef35e90d61674dacc99d127558"
+    },
+    {
+      "file": "src_step.cpp",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/step.cpp",
+      "bytes": 11259,
+      "sha256": "3ae31255b91dd9a6e8946da66856dd1f8107ea7741d19a23303ed73e8889b4ba"
+    },
+    {
+      "file": "src_step_db.cpp",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/step_db.cpp",
+      "bytes": 21526,
+      "sha256": "76eb1cda32b2bef5bd1164a2ecd45bfd619f5251f19b4fbe53d7ef749523efeb"
+    },
+    {
+      "file": "src_update_eh.cpp",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/update_eh.cpp",
+      "bytes": 8288,
+      "sha256": "3964a7baf59ed6bb9c4e830542257c130ed3ad14a5e0587bf2a3357d6c226bb0"
+    },
+    {
+      "file": "src_vec.cpp",
+      "source_url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/vec.cpp",
+      "bytes": 51848,
+      "sha256": "e540b94f1d9f6ae5f5fdfb081e3472b7a55a6d4e676e071e426b65ddfeb75526"
+    }
+  ],
+  "installed_source_function_check": {
+    "meep_version": "1.35.0",
+    "source": "ContinuousSource(0.398,width=20), default is_integrated=False",
+    "time": 900,
+    "dt": 0.020833333333333332,
+    "measured_current_times_exp_iomega_t": [
+      0.9995476930968243,
+      -0.026043147739457095
+    ],
+    "formula_current_times_exp_iomega_t": [
+      0.9995476930956176,
+      -0.026043147739395686
+    ],
+    "formula": "sinc(omega*dt/2)*exp(-1j*omega*dt/2)",
+    "installed_header": "<meep-environment>/include/meep.hpp",
+    "fdtd_executed": false
+  }
+}

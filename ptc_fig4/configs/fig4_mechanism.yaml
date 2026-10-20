@@ -1,0 +1,39 @@
+schema_version: 1
+study_type: qualitative_mechanism_reproduction
+status: APPROXIMATE
+authorization: User update on 2026-10-13 allows reasonable material approximations and does not require exact quantitative agreement with the paper.
+geometry:
+  radius_nm: 1030.0
+  radius_over_height: 0.703
+  period_nm: 3296.0
+  background_epsilon: 1.0
+  path: [M, Gamma, X, M]
+material:
+  model: nondispersive_instantaneous_dielectric
+  refractive_index: 4.0
+  relative_permittivity: 16.0
+  absorption: 0.0
+  rationale: A round Ge-like near-infrared index, not fitted to force a 68 THz resonance.
+  author_lorentz_coefficients_required: false
+modulation:
+  epsilon_inside: 16*(1+m*(1+cos(Omega*t)))
+  spatial_support: cylinders_only
+  keep_dc_shift: true
+  nominal_paper_cases:
+    weak: {m: 0.0001, frequency_thz: 136.0}
+    strong: {m: 0.03, frequency_thz: 134.0}
+  interpretation: m is a fractional instantaneous dielectric modulation in this approximate model; it is not calibrated to the unknown author epsilon_infinity.
+comparison:
+  prioritize: [modal_identity, field_shape, static_band_flatness, radiation_trend, paired_floquet_branches, gap_coverage, robustness]
+  absolute_frequency_match_required: false
+  numerical_convergence_required: true
+  freely_fitted_coupling_allowed: false
+  reconstruct_target_band_from_maxwell_modes: true
+  preserve_full_spectrum: true
+  lossless_results_establish_net_gain_with_real_loss: false
+static_backend:
+  name: legume-gme
+  version: 1.0.3
+  radiation: perturbative_reference
+  interpretation: Standard GME remains an approximation; outgoing-complex-pole validation is retained as a separate future quantitative test.
+strict_reproduction_profile: fig4.yaml

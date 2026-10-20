@@ -1,0 +1,42 @@
+{
+  "status": "NATIVE_YEE_SOURCE_AND_WORK_DIAGNOSTIC",
+  "frequency": 0.388,
+  "resolution": 24,
+  "dt": 0.020833333333333332,
+  "omega": 2.4378758991856797,
+  "omega_discrete": 2.4376138836383925,
+  "first_step_uniform_control": {
+    "maximum_interior_error": 2.220446049250313e-16,
+    "get_source_last_slice_relative_difference": 0.1884051108863171,
+    "extraction_seconds": 0.4368992419999813,
+    "formula": "D(first step)/(-dt*src.current(dt/2,dt)); initial H=0 and D=0, no PML in sampled support"
+  },
+  "source_extractions": [
+    {
+      "template": 0,
+      "initial_current_real_imag": [
+        0.0024794527214793945,
+        -2.4554850418842533e-05
+      ],
+      "get_source_last_slice_relative_difference": 0.24542869014031402,
+      "extraction_seconds": 1.84558684000001
+    },
+    {
+      "template": 1,
+      "initial_current_real_imag": [
+        0.0024794527214793945,
+        -2.4554850418842533e-05
+      ],
+      "get_source_last_slice_relative_difference": 0.09974379501724506,
+      "extraction_seconds": 1.4816316729999812
+    }
+  ],
+  "basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+  "source_coordinate_method": "Component offset independently established with initialized linear source probes; get_field_point at native grid positions",
+  "source_lift_method": "First zero-field Maxwell update recovers sum of all source-volume contributions, unlike get_source slice overwrite",
+  "projection": "Native E paired with measured total current lift using dv once per unique periodic Yee site",
+  "source_frequency_factor": "src.swigobj.current(t,dt)*exp(i omega t), directly evaluated; no response amplitude fit",
+  "material_derivative_scope": "Same old masked interpolated current fixture; not derivative of Meep subpixel epsilon inverse tensor",
+  "rows": [],
+  "completed": true
+}

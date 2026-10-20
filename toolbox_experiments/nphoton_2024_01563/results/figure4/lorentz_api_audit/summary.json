@@ -1,0 +1,31 @@
+{
+  "status": "PUBLIC_TIME_DEPENDENT_LORENTZ_STRENGTH_UPDATE_NOT_VERIFIED",
+  "scope": "Read-only source/API audit; no native dynamics test or library modification",
+  "meep_version": "1.35.0",
+  "findings": [
+    {
+      "api": "Simulation.set_materials",
+      "preserves_polarization_history": false,
+      "evidence": "Installed Python calls fields.remove_susceptibilities; upstream fields.cpp599\u2013607 deletes polarization internal data"
+    },
+    {
+      "api": "Simulation.phase_in_material",
+      "updates_lorentz_sigma": false,
+      "evidence": "structure.cpp584\u2013623 updates chi1inv/conductivity only; susceptibility mixing FIXME at622"
+    },
+    {
+      "api": "MaterialGrid.update_weights",
+      "native_lorentz_update_implemented_here": false,
+      "evidence": "Installed function copies weights into Python array"
+    },
+    {
+      "api": "Low-level SWIG chiP/sigma arrays",
+      "status": "EXPOSED_BUT_NOT_VERIFIED_PUBLIC_UPDATE_WORKFLOW",
+      "evidence": "No documented in-place high-level sigma setter found; ownership/state preservation untested"
+    }
+  ],
+  "candidate_equations": "Pddot+gamma*Pdot+omega0^2*P=omega0^2*sigma(t)*E; D=epsilon_inf*E+P, only if this oscillator-strength model matches intended physics",
+  "prohibited_inference": "A frequency-dependent instantaneous epsilon substitution is not a causal memory-preserving Lorentz modulation",
+  "snapshot_sha256": "cb856728bef01b99cf4fede83540b313900d3f77f94590b4a5cc4653af7894a0",
+  "report_sha256": "2a7643d6f0a0be07105af47e792ac829e0672e2e5b274c7e7008ad4c0b2fface"
+}

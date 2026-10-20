@@ -1,0 +1,51 @@
+{
+  "status": "NATIVE_LEGUME_BACKGROUND_EXACT_Y_Q1_BASIS",
+  "rank": 3,
+  "gram_relative_error": 6.508730330684854e-15,
+  "coverage": {
+    "even": 3.0481692725148045e-07,
+    "odd": 1.1490629414660096e-06,
+    "bottom": 3.346903079491806e-07
+  },
+  "real_imag_source_svd_relative_threshold": 1e-06,
+  "minimum_basis_requested": true,
+  "minimum_basis_scope": "Three static seed/even/odd shapes with explicit coverage; no claim that discarded secondary singular directions are physically zero",
+  "actual_z_parity_projection_relative_changes": {
+    "seed": 8.771224855918637e-14,
+    "even": 5.963229484457596e-08,
+    "odd": 0.0
+  },
+  "even_residual_singular_values": [
+    0.6481610598268149,
+    2.053961689996872e-06
+  ],
+  "odd_singular_values": [
+    0.8742154885612793,
+    1.0045286207620397e-06
+  ],
+  "basis_sha256": "1c486d4b2b222352039e10330cff878d7c4539147a939cb32bed6d228bacff5b",
+  "operator_id": "c433728a92ba0a843e3efd62c5924131d3915dcfb7374f163fd2c7a4f89fb6d5",
+  "source_inputs": [
+    "Actual Legume eigenfield seed",
+    "Fresh scalar-Yee complete even carrier field",
+    "Fresh scalar-Yee complete odd carrier field; real/imag source shapes"
+  ],
+  "no_dynamic_target_fit": true,
+  "no_old_response_inputs": true,
+  "y_projection": {
+    "status": "EXACT_ACTUAL_Y_SYMMETRY_SOURCE_COLUMN",
+    "parent_basis_sha256": "b6ba6977a3ad6bb6820878e350e68db2f505f7ff56a8169ba490e7db38e8212d",
+    "basis_sha256": "1c486d4b2b222352039e10330cff878d7c4539147a939cb32bed6d228bacff5b",
+    "preserved_columns": [
+      0,
+      2
+    ],
+    "preserved_column_sha256": {
+      "0": "3f86911e140e666b7a7593f774ed537761acfd1d4eb29460ae20655d1c0f0ebc",
+      "2": "6c4e40d94d43a34c9896668ecef71985ebbb17fd2a973aaac83d91d4e0f030dc"
+    },
+    "Q1_relative_change": 9.667537207445153e-07,
+    "operator_id": "c433728a92ba0a843e3efd62c5924131d3915dcfb7374f163fd2c7a4f89fb6d5",
+    "scope": "Exact physical y-even vector parity on component-native coordinates before source construction; failed original-source attempts preserved. No dynamic response fitting."
+  }
+}

@@ -1,0 +1,4557 @@
+{
+  "policy": {
+    "purpose": "Declared finite-study accuracy targets; not universal solver defaults or proof of asymptotic convergence",
+    "spatial": {
+      "omega_atol": 0.0001,
+      "relative_band_shape_atol": 1e-06,
+      "mass_overlap_atol": 0.0001,
+      "minimum_field_overlap_squared": 0.999
+    },
+    "temporal": {
+      "complex_operator_entry_atol": 0.0005,
+      "quasifrequency_atol": 5e-08,
+      "growth_rate_atol": 1e-10
+    },
+    "sampling": {
+      "center_atol_a": 0.25,
+      "width_atol_a": 1.0
+    },
+    "modal": {
+      "phase_aligned_state_atol": 0.01,
+      "retained_frequency_atol": 1e-06
+    },
+    "bloch_boundary": {
+      "phase_aligned_field_atol": 0.0001
+    },
+    "rationale": "Spatial band-shape tolerance resolves a few percent of the ~4e-5 flat bandwidth. Temporal5e-8 limits frequency phase error to~.01rad over the longest plotted duration. Width1a and center.25a are separate observable goals."
+  },
+  "spatial": {
+    "reciprocal_cutoff": {
+      "verdict": "NOT_CONVERGED",
+      "layer": "spatial",
+      "level_count": 3,
+      "minimum_levels": 3,
+      "required_successive_passing_pairs": 2,
+      "pairs": [
+        {
+          "verdict": "NOT_CONVERGED",
+          "coarse": "g3.1_v0_3",
+          "fine": "g4.1_v0_3",
+          "layer": "spatial",
+          "changed_axes": [
+            "gmax"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02
+          },
+          "model_scope": {
+            "approximation": "native static GME; selected local target"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Native solver independently run at identical four q; onlygmax increased",
+            "identity_status": "verified",
+            "identity_note": "Common union-G/z H overlap squared minimum=0.99955865; spatial/summary.json",
+            "refinement_kind": "independent_refinement"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "band_shape": {
+              "verdict": "NOT_CONVERGED",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 0.0001264179694413503,
+              "max_allowed_error": 1e-06,
+              "max_excess": 0.0001254179694413503,
+              "violation_count": 4,
+              "tolerance": {
+                "atol": 1e-06,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "diagonal_modulation_mass": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 1.1887904234444621e-05,
+              "max_allowed_error": 0.0001,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0001,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "omega": {
+              "verdict": "NOT_CONVERGED",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 0.002013291676741691,
+              "max_allowed_error": 0.0001,
+              "max_excess": 0.0019132916767416908,
+              "violation_count": 4,
+              "tolerance": {
+                "atol": 0.0001,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "NOT_CONVERGED",
+          "coarse": "g4.1_v0_3",
+          "fine": "g5.1_v0_3",
+          "layer": "spatial",
+          "changed_axes": [
+            "gmax"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02
+          },
+          "model_scope": {
+            "approximation": "native static GME; selected local target"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Native solver independently run at identical four q; onlygmax increased",
+            "identity_status": "verified",
+            "identity_note": "Common union-G/z H overlap squared minimum=0.999861652; spatial/summary.json",
+            "refinement_kind": "independent_refinement"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "band_shape": {
+              "verdict": "NOT_CONVERGED",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 0.00039484593484995223,
+              "max_allowed_error": 1e-06,
+              "max_excess": 0.0003938459348499522,
+              "violation_count": 4,
+              "tolerance": {
+                "atol": 1e-06,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "diagonal_modulation_mass": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 4.061678301359173e-06,
+              "max_allowed_error": 0.0001,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0001,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "omega": {
+              "verdict": "NOT_CONVERGED",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 0.001515984597894482,
+              "max_allowed_error": 0.0001,
+              "max_excess": 0.0014159845978944819,
+              "violation_count": 4,
+              "tolerance": {
+                "atol": 0.0001,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        }
+      ],
+      "observables": {
+        "band_shape": {
+          "verdict": "NOT_CONVERGED",
+          "pair_verdicts": [
+            "NOT_CONVERGED",
+            "NOT_CONVERGED"
+          ]
+        },
+        "diagonal_modulation_mass": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "omega": {
+          "verdict": "NOT_CONVERGED",
+          "pair_verdicts": [
+            "NOT_CONVERGED",
+            "NOT_CONVERGED"
+          ]
+        }
+      },
+      "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+    },
+    "guided_families": {
+      "verdict": "NOT_CONVERGED",
+      "layer": "spatial",
+      "level_count": 3,
+      "minimum_levels": 3,
+      "required_successive_passing_pairs": 2,
+      "pairs": [
+        {
+          "verdict": "NOT_CONVERGED",
+          "coarse": "g3.1_v0",
+          "fine": "g3.1_v0_3",
+          "layer": "spatial",
+          "changed_axes": [
+            "gmode_inds"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02
+          },
+          "model_scope": {
+            "approximation": "native static GME; selected local target"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Native solver independently run at identical four q; onlygmode_inds increased",
+            "identity_status": "verified",
+            "identity_note": "Common union-G/z H overlap squared minimum=0.999910772; spatial/summary.json",
+            "refinement_kind": "independent_refinement"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "band_shape": {
+              "verdict": "NOT_CONVERGED",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 6.470756621745899e-05,
+              "max_allowed_error": 1e-06,
+              "max_excess": 6.370756621745899e-05,
+              "violation_count": 4,
+              "tolerance": {
+                "atol": 1e-06,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "diagonal_modulation_mass": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 1.769078832029869e-06,
+              "max_allowed_error": 0.0001,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0001,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "omega": {
+              "verdict": "NOT_CONVERGED",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 0.00026370415787724255,
+              "max_allowed_error": 0.0001,
+              "max_excess": 0.00016370415787724256,
+              "violation_count": 4,
+              "tolerance": {
+                "atol": 0.0001,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "NOT_CONVERGED",
+          "coarse": "g3.1_v0_3",
+          "fine": "g3.1_v0_3_4_7",
+          "layer": "spatial",
+          "changed_axes": [
+            "gmode_inds"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02
+          },
+          "model_scope": {
+            "approximation": "native static GME; selected local target"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Native solver independently run at identical four q; onlygmode_inds increased",
+            "identity_status": "verified",
+            "identity_note": "Common union-G/z H overlap squared minimum=0.999544292; spatial/summary.json",
+            "refinement_kind": "independent_refinement"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "band_shape": {
+              "verdict": "NOT_CONVERGED",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 0.0009931796495259437,
+              "max_allowed_error": 1e-06,
+              "max_excess": 0.0009921796495259438,
+              "violation_count": 4,
+              "tolerance": {
+                "atol": 1e-06,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "diagonal_modulation_mass": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 2.5923252312655756e-05,
+              "max_allowed_error": 0.0001,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0001,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "omega": {
+              "verdict": "NOT_CONVERGED",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                4
+              ],
+              "max_abs_error": 0.0035199173318338772,
+              "max_allowed_error": 0.0001,
+              "max_excess": 0.0034199173318338774,
+              "violation_count": 4,
+              "tolerance": {
+                "atol": 0.0001,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        }
+      ],
+      "observables": {
+        "band_shape": {
+          "verdict": "NOT_CONVERGED",
+          "pair_verdicts": [
+            "NOT_CONVERGED",
+            "NOT_CONVERGED"
+          ]
+        },
+        "diagonal_modulation_mass": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "omega": {
+          "verdict": "NOT_CONVERGED",
+          "pair_verdicts": [
+            "NOT_CONVERGED",
+            "NOT_CONVERGED"
+          ]
+        }
+      },
+      "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+    }
+  },
+  "temporal": {
+    "period_drive0.01": {
+      "verdict": "PASS_SEQUENCE",
+      "layer": "temporal",
+      "level_count": 4,
+      "minimum_levels": 3,
+      "required_successive_passing_pairs": 2,
+      "pairs": [
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.01_steps1024",
+          "fine": "period_Omega0.01_steps2048",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.01
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "2dc78fcdda69d7068e4dd23b3d2baa9c6995efc1614a077a6a0f95a3419f23f8:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 7.916047207192389e-16,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 3.496731879833686e-06,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 5.597154033656904e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.01_steps2048",
+          "fine": "period_Omega0.01_steps4096",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.01
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "2dc78fcdda69d7068e4dd23b3d2baa9c6995efc1614a077a6a0f95a3419f23f8:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 2.095632140116442e-15,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 8.497623463424511e-07,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 1.3990264766984561e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.01_steps4096",
+          "fine": "period_Omega0.01_steps8192",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.01
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "2dc78fcdda69d7068e4dd23b3d2baa9c6995efc1614a077a6a0f95a3419f23f8:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 3.4070808537652094e-15,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 2.1106051247843064e-07,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 3.4974188215658453e-10,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        }
+      ],
+      "observables": {
+        "growth": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "operator": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "quasifrequency": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        }
+      },
+      "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+    },
+    "period_drive0.001": {
+      "verdict": "PASS_SEQUENCE",
+      "layer": "temporal",
+      "level_count": 4,
+      "minimum_levels": 3,
+      "required_successive_passing_pairs": 2,
+      "pairs": [
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.001_steps1024",
+          "fine": "period_Omega0.001_steps2048",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "2dc78fcdda69d7068e4dd23b3d2baa9c6995efc1614a077a6a0f95a3419f23f8:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 8.951494453489818e-17,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 2.8025678178539083e-05,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 6.1118112324592966e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.001_steps2048",
+          "fine": "period_Omega0.001_steps4096",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "2dc78fcdda69d7068e4dd23b3d2baa9c6995efc1614a077a6a0f95a3419f23f8:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 1.4948607002859286e-16,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 8.028557400731135e-06,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 1.5295354579246412e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.001_steps4096",
+          "fine": "period_Omega0.001_steps8192",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "2dc78fcdda69d7068e4dd23b3d2baa9c6995efc1614a077a6a0f95a3419f23f8:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 3.4113215933414863e-16,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 6.3443194077155075e-06,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 3.84670529099667e-10,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        }
+      ],
+      "observables": {
+        "growth": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "operator": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "quasifrequency": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        }
+      },
+      "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+    },
+    "period_drive0.0001": {
+      "verdict": "PASS_SEQUENCE",
+      "layer": "temporal",
+      "level_count": 4,
+      "minimum_levels": 3,
+      "required_successive_passing_pairs": 2,
+      "pairs": [
+        {
+          "verdict": "NOT_CONVERGED",
+          "coarse": "period_Omega0.0001_steps1024",
+          "fine": "period_Omega0.0001_steps2048",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.0001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "2dc78fcdda69d7068e4dd23b3d2baa9c6995efc1614a077a6a0f95a3419f23f8:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 7.654534933383769e-18,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "NOT_CONVERGED",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 0.0005708219914121429,
+              "max_allowed_error": 0.0005,
+              "max_excess": 7.082199141214291e-05,
+              "violation_count": 4,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 6.171816908360123e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.0001_steps2048",
+          "fine": "period_Omega0.0001_steps4096",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.0001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "2dc78fcdda69d7068e4dd23b3d2baa9c6995efc1614a077a6a0f95a3419f23f8:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 1.9775982219380045e-17,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 7.692600681445887e-05,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 1.537019357201032e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.0001_steps4096",
+          "fine": "period_Omega0.0001_steps8192",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.0001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "2dc78fcdda69d7068e4dd23b3d2baa9c6995efc1614a077a6a0f95a3419f23f8:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 3.735031380919452e-17,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 1.730506239585672e-05,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 3.838962016658974e-10,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        }
+      ],
+      "observables": {
+        "growth": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "operator": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "NOT_CONVERGED",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "quasifrequency": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        }
+      },
+      "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+    },
+    "Fourier_harmonic_sequences": [
+      {
+        "verdict": "PASS_SEQUENCE",
+        "layer": "temporal",
+        "level_count": 3,
+        "minimum_levels": 3,
+        "required_successive_passing_pairs": 2,
+        "pairs": [
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K0_N5",
+            "fine": "Fourier_K0_N7",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 5.193139004900851e-16,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 1.1097303197898922e-11,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          },
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K0_N7",
+            "fine": "Fourier_K0_N9",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 5.588941365261129e-16,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 3.238796492284479e-14,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          }
+        ],
+        "observables": {
+          "growth": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          },
+          "quasifrequency": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          }
+        },
+        "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+      },
+      {
+        "verdict": "PASS_SEQUENCE",
+        "layer": "temporal",
+        "level_count": 3,
+        "minimum_levels": 3,
+        "required_successive_passing_pairs": 2,
+        "pairs": [
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K16_N5",
+            "fine": "Fourier_K16_N7",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 1.0405714732855193e-15,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 7.454670561402033e-14,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          },
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K16_N7",
+            "fine": "Fourier_K16_N9",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 7.470769551795297e-16,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 1.3027339623716827e-14,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          }
+        ],
+        "observables": {
+          "growth": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          },
+          "quasifrequency": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          }
+        },
+        "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+      },
+      {
+        "verdict": "PASS_SEQUENCE",
+        "layer": "temporal",
+        "level_count": 3,
+        "minimum_levels": 3,
+        "required_successive_passing_pairs": 2,
+        "pairs": [
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K31_N5",
+            "fine": "Fourier_K31_N7",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 1.3909625806931507e-15,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 1.109078931124663e-11,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          },
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K31_N7",
+            "fine": "Fourier_K31_N9",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 5.380438336142859e-16,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 1.664640647547344e-14,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          }
+        ],
+        "observables": {
+          "growth": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          },
+          "quasifrequency": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          }
+        },
+        "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+      }
+    ],
+    "coarse_harmonic_rejections": [
+      {
+        "k_index": 0,
+        "k": -0.1902136176978195,
+        "drive": 0.01,
+        "n_harmonics": 3,
+        "n_samples": 128,
+        "operator_fourier_check": {
+          "grids": [
+            {
+              "samples": 128,
+              "discarded_relative_tail": 1.1106669120253742e-18,
+              "coefficient_change": 0.0
+            },
+            {
+              "samples": 256,
+              "discarded_relative_tail": 1.1318990607645831e-18,
+              "coefficient_change": 8.012879431174313e-19
+            }
+          ],
+          "shifted_time_relative_error": 8.974503096457587e-19,
+          "tolerance": 1e-10,
+          "scope": "Sampled operator Fourier convergence; separate from state-sideband boundary convergence"
+        },
+        "status": "REJECTED_INCOMPLETE_HARMONIC_SPECTRUM",
+        "reason": "Found 5/14 independent quasifrequency classes. Increase N, resolve a degeneracy as a subspace, or inspect the raw spectrum; do not report an incomplete band spectrum."
+      },
+      {
+        "k_index": 16,
+        "k": 0.006135923151542565,
+        "drive": 0.01,
+        "n_harmonics": 3,
+        "n_samples": 128,
+        "operator_fourier_check": {
+          "grids": [
+            {
+              "samples": 128,
+              "discarded_relative_tail": 1.0909523055104117e-18,
+              "coefficient_change": 0.0
+            },
+            {
+              "samples": 256,
+              "discarded_relative_tail": 1.1193020585349628e-18,
+              "coefficient_change": 6.858740674628796e-19
+            }
+          ],
+          "shifted_time_relative_error": 9.404484397415082e-19,
+          "tolerance": 1e-10,
+          "scope": "Sampled operator Fourier convergence; separate from state-sideband boundary convergence"
+        },
+        "status": "REJECTED_INCOMPLETE_HARMONIC_SPECTRUM",
+        "reason": "Found 6/14 independent quasifrequency classes. Increase N, resolve a degeneracy as a subspace, or inspect the raw spectrum; do not report an incomplete band spectrum."
+      },
+      {
+        "k_index": 31,
+        "k": 0.1902136176978195,
+        "drive": 0.01,
+        "n_harmonics": 3,
+        "n_samples": 128,
+        "operator_fourier_check": {
+          "grids": [
+            {
+              "samples": 128,
+              "discarded_relative_tail": 1.1217733762865907e-18,
+              "coefficient_change": 0.0
+            },
+            {
+              "samples": 256,
+              "discarded_relative_tail": 1.1656846634503072e-18,
+              "coefficient_change": 6.010453602552813e-19
+            }
+          ],
+          "shifted_time_relative_error": 9.427038400138633e-19,
+          "tolerance": 1e-10,
+          "scope": "Sampled operator Fourier convergence; separate from state-sideband boundary convergence"
+        },
+        "status": "REJECTED_INCOMPLETE_HARMONIC_SPECTRUM",
+        "reason": "Found 5/14 independent quasifrequency classes. Increase N, resolve a degeneracy as a subspace, or inspect the raw spectrum; do not report an incomplete band spectrum."
+      }
+    ]
+  },
+  "sampling": {
+    "verdict": "NOT_CONVERGED",
+    "layer": "sampling",
+    "level_count": 3,
+    "minimum_levels": 3,
+    "required_successive_passing_pairs": 2,
+    "pairs": [
+      {
+        "verdict": "NOT_CONVERGED",
+        "coarse": "K16",
+        "fine": "K32",
+        "layer": "sampling",
+        "changed_axes": [
+          "nk"
+        ],
+        "is_joint": false,
+        "physical_signature": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "hole_radius": 0.25,
+          "Lx": 1,
+          "Ly": 12.12435565298214,
+          "supercell": 16,
+          "depth": 0.02
+        },
+        "model_scope": {
+          "approximation": "same fixed seven-sector guided Maxwell model and localized initial gauge"
+        },
+        "evidence": {
+          "refinement_status": "verified",
+          "refinement_note": "Actual native Legume K grids16/32/64; fixed geometry/families/7sectors/time and unchanged physical gauge prescription",
+          "identity_status": "not_assessed",
+          "identity_note": "",
+          "refinement_kind": "explicit_refinement"
+        },
+        "missing_evidence": [],
+        "representation_limits": [],
+        "observables": {
+          "center": {
+            "verdict": "PASS_PAIR",
+            "reasons": [],
+            "units": "a",
+            "shape": [
+              3,
+              3
+            ],
+            "max_abs_error": 0.13450593847728243,
+            "max_allowed_error": 0.25,
+            "max_excess": 0.0,
+            "violation_count": 0,
+            "tolerance": {
+              "atol": 0.25,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          },
+          "width": {
+            "verdict": "NOT_CONVERGED",
+            "reasons": [],
+            "units": "a",
+            "shape": [
+              3,
+              3
+            ],
+            "max_abs_error": 5.484549627581586,
+            "max_allowed_error": 1.0,
+            "max_excess": 4.484549627581586,
+            "violation_count": 2,
+            "tolerance": {
+              "atol": 1.0,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          }
+        },
+        "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+      },
+      {
+        "verdict": "NOT_CONVERGED",
+        "coarse": "K32",
+        "fine": "K64",
+        "layer": "sampling",
+        "changed_axes": [
+          "nk"
+        ],
+        "is_joint": false,
+        "physical_signature": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "hole_radius": 0.25,
+          "Lx": 1,
+          "Ly": 12.12435565298214,
+          "supercell": 16,
+          "depth": 0.02
+        },
+        "model_scope": {
+          "approximation": "same fixed seven-sector guided Maxwell model and localized initial gauge"
+        },
+        "evidence": {
+          "refinement_status": "verified",
+          "refinement_note": "Actual native Legume K grids16/32/64; fixed geometry/families/7sectors/time and unchanged physical gauge prescription",
+          "identity_status": "not_assessed",
+          "identity_note": "",
+          "refinement_kind": "explicit_refinement"
+        },
+        "missing_evidence": [],
+        "representation_limits": [],
+        "observables": {
+          "center": {
+            "verdict": "PASS_PAIR",
+            "reasons": [],
+            "units": "a",
+            "shape": [
+              3,
+              3
+            ],
+            "max_abs_error": 0.01572789118000628,
+            "max_allowed_error": 0.25,
+            "max_excess": 0.0,
+            "violation_count": 0,
+            "tolerance": {
+              "atol": 0.25,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          },
+          "width": {
+            "verdict": "NOT_CONVERGED",
+            "reasons": [],
+            "units": "a",
+            "shape": [
+              3,
+              3
+            ],
+            "max_abs_error": 1.805282896577232,
+            "max_allowed_error": 1.0,
+            "max_excess": 0.8052828965772321,
+            "violation_count": 1,
+            "tolerance": {
+              "atol": 1.0,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          }
+        },
+        "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+      }
+    ],
+    "observables": {
+      "center": {
+        "verdict": "PASS_SEQUENCE",
+        "pair_verdicts": [
+          "PASS_PAIR",
+          "PASS_PAIR"
+        ]
+      },
+      "width": {
+        "verdict": "NOT_CONVERGED",
+        "pair_verdicts": [
+          "NOT_CONVERGED",
+          "NOT_CONVERGED"
+        ]
+      }
+    },
+    "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim",
+    "values": [
+      {
+        "nk": 16,
+        "centers": [
+          [
+            -1.0637722961087329e-15,
+            18.907041036088227,
+            39.17934131375568
+          ],
+          [
+            -1.0637722961087329e-15,
+            25.04371480088816,
+            50.03667657970705
+          ],
+          [
+            -1.0637722961087329e-15,
+            25.012935087264392,
+            50.15587200804273
+          ]
+        ],
+        "widths": [
+          [
+            2.084229613445809,
+            14.771082135567699,
+            27.404916364391585
+          ],
+          [
+            2.084229613445809,
+            4.80315546072179,
+            8.937461045321545
+          ],
+          [
+            2.084229613445809,
+            24.962804632328282,
+            47.541223601941944
+          ]
+        ],
+        "edge_fractions": [
+          [
+            8.003825157164282e-08,
+            1.1708092830044796e-05,
+            0.002165561518642205
+          ],
+          [
+            8.003825157164282e-08,
+            1.0004294141330078e-05,
+            0.00018668928524927686
+          ],
+          [
+            8.003825157164282e-08,
+            2.8913259113908548e-05,
+            0.0014125964037071245
+          ]
+        ]
+      },
+      {
+        "nk": 32,
+        "centers": [
+          [
+            2.48213583431358e-15,
+            18.90530599711201,
+            39.28805422725115
+          ],
+          [
+            2.48213583431358e-15,
+            25.038333044378493,
+            50.03703253954652
+          ],
+          [
+            2.48213583431358e-15,
+            25.006402259362535,
+            50.021366069565445
+          ]
+        ],
+        "widths": [
+          [
+            2.0859615240906226,
+            14.774548513918447,
+            27.66250768473915
+          ],
+          [
+            2.0859615240906226,
+            5.1716675890574635,
+            9.187023379559507
+          ],
+          [
+            2.0859615240906226,
+            26.717713049511428,
+            53.02577322952353
+          ]
+        ],
+        "edge_fractions": [
+          [
+            3.962012842262129e-08,
+            2.3367702407950333e-08,
+            1.265638032902237e-05
+          ],
+          [
+            3.962012842262129e-08,
+            2.725459380137621e-05,
+            8.904360249575655e-06
+          ],
+          [
+            3.962012842262129e-08,
+            1.0981212920156953e-05,
+            3.076084156773221e-05
+          ]
+        ]
+      },
+      {
+        "nk": 64,
+        "centers": [
+          [
+            -1.5171370588439584e-14,
+            18.905329496090392,
+            39.284288071107
+          ],
+          [
+            -1.5171370588439584e-14,
+            25.02892083776869,
+            50.02130464836652
+          ],
+          [
+            -1.5171370588439584e-14,
+            25.00420566231491,
+            50.00881138226346
+          ]
+        ],
+        "widths": [
+          [
+            2.0894281856576455,
+            14.774994969530015,
+            27.669268610038717
+          ],
+          [
+            2.0894281856576455,
+            5.516604430109134,
+            9.88684689425919
+          ],
+          [
+            2.0894281856576455,
+            27.65144717344718,
+            54.83105612610076
+          ]
+        ],
+        "edge_fractions": [
+          [
+            1.9748289846301867e-08,
+            8.376538299105076e-09,
+            3.309921070650802e-08
+          ],
+          [
+            1.9748289846301867e-08,
+            4.222992006008997e-06,
+            2.6653459994280436e-05
+          ],
+          [
+            1.9748289846301867e-08,
+            1.817581687121189e-05,
+            9.546960758876974e-06
+          ]
+        ]
+      }
+    ]
+  },
+  "modal": [
+    {
+      "k_index": 16,
+      "partial": {
+        "verdict": "NOT_CONVERGED",
+        "coarse": "retained7",
+        "fine": "expanded42",
+        "layer": "modal",
+        "changed_axes": [
+          "states"
+        ],
+        "is_joint": false,
+        "physical_signature": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "hole_radius": 0.25,
+          "Lx": 1,
+          "Ly": 12.12435565298214,
+          "supercell": 16,
+          "depth": 0.02
+        },
+        "model_scope": {
+          "approximation": "same guided finite Maxwell embedding"
+        },
+        "evidence": {
+          "refinement_status": "verified",
+          "refinement_note": "Same original state embedded; complete lower same-symmetry guided subwindow and actual field couplings",
+          "identity_status": "verified",
+          "identity_note": "Instantaneous target matching in orthonormal native H space, minimum overlap²=0.999631793",
+          "refinement_kind": "nested"
+        },
+        "missing_evidence": [],
+        "representation_limits": [],
+        "observables": {
+          "aligned_state_difference": {
+            "verdict": "NOT_CONVERGED",
+            "reasons": [],
+            "units": "relative action norm",
+            "shape": [
+              3
+            ],
+            "max_abs_error": 0.014063819320338913,
+            "max_allowed_error": 0.01,
+            "max_excess": 0.004063819320338913,
+            "violation_count": 3,
+            "tolerance": {
+              "atol": 0.01,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          },
+          "target_frequency": {
+            "verdict": "NOT_CONVERGED",
+            "reasons": [],
+            "units": "omega*a/c",
+            "shape": [
+              7
+            ],
+            "max_abs_error": 4.102527282778823e-05,
+            "max_allowed_error": 1e-06,
+            "max_excess": 4.002527282778823e-05,
+            "violation_count": 7,
+            "tolerance": {
+              "atol": 1e-06,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          }
+        },
+        "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound",
+        "scope": "Two-point guided subwindow diagnostic only; no full completeness sequence"
+      },
+      "full_window": {
+        "verdict": "REPRESENTATION_LIMIT",
+        "coarse": "retained7",
+        "fine": "full_window",
+        "layer": "modal",
+        "changed_axes": [
+          "states"
+        ],
+        "is_joint": false,
+        "physical_signature": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "hole_radius": 0.25,
+          "Lx": 1,
+          "Ly": 12.12435565298214,
+          "supercell": 16,
+          "depth": 0.02
+        },
+        "model_scope": {
+          "approximation": "same guided finite Maxwell embedding"
+        },
+        "evidence": {
+          "refinement_status": "verified",
+          "refinement_note": "Same original state embedded; complete lower same-symmetry guided subwindow and actual field couplings",
+          "identity_status": "verified",
+          "identity_note": "Instantaneous target matching in orthonormal native H space, minimum overlap²=0.999631793",
+          "refinement_kind": "nested"
+        },
+        "missing_evidence": [],
+        "representation_limits": [],
+        "observables": {
+          "aligned_state_difference": {
+            "verdict": "REPRESENTATION_LIMIT",
+            "reasons": [
+              "nonzero native radiation; cached spectrum lacks complete upper frequency/cluster guard"
+            ]
+          },
+          "target_frequency": {
+            "verdict": "REPRESENTATION_LIMIT",
+            "reasons": [
+              "Incomplete retained window and outgoing modes"
+            ]
+          }
+        },
+        "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+      }
+    },
+    {
+      "k_index": 31,
+      "partial": {
+        "verdict": "NOT_CONVERGED",
+        "coarse": "retained7",
+        "fine": "expanded42",
+        "layer": "modal",
+        "changed_axes": [
+          "states"
+        ],
+        "is_joint": false,
+        "physical_signature": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "hole_radius": 0.25,
+          "Lx": 1,
+          "Ly": 12.12435565298214,
+          "supercell": 16,
+          "depth": 0.02
+        },
+        "model_scope": {
+          "approximation": "same guided finite Maxwell embedding"
+        },
+        "evidence": {
+          "refinement_status": "verified",
+          "refinement_note": "Same original state embedded; complete lower same-symmetry guided subwindow and actual field couplings",
+          "identity_status": "verified",
+          "identity_note": "Instantaneous target matching in orthonormal native H space, minimum overlap²=0.999604138",
+          "refinement_kind": "nested"
+        },
+        "missing_evidence": [],
+        "representation_limits": [],
+        "observables": {
+          "aligned_state_difference": {
+            "verdict": "NOT_CONVERGED",
+            "reasons": [],
+            "units": "relative action norm",
+            "shape": [
+              3
+            ],
+            "max_abs_error": 0.018718110008582926,
+            "max_allowed_error": 0.01,
+            "max_excess": 0.008718110008582925,
+            "violation_count": 3,
+            "tolerance": {
+              "atol": 0.01,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          },
+          "target_frequency": {
+            "verdict": "NOT_CONVERGED",
+            "reasons": [],
+            "units": "omega*a/c",
+            "shape": [
+              7
+            ],
+            "max_abs_error": 4.015832751447235e-05,
+            "max_allowed_error": 1e-06,
+            "max_excess": 3.915832751447235e-05,
+            "violation_count": 7,
+            "tolerance": {
+              "atol": 1e-06,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          }
+        },
+        "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound",
+        "scope": "Two-point guided subwindow diagnostic only; no full completeness sequence"
+      },
+      "full_window": {
+        "verdict": "REPRESENTATION_LIMIT",
+        "coarse": "retained7",
+        "fine": "full_window",
+        "layer": "modal",
+        "changed_axes": [
+          "states"
+        ],
+        "is_joint": false,
+        "physical_signature": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "hole_radius": 0.25,
+          "Lx": 1,
+          "Ly": 12.12435565298214,
+          "supercell": 16,
+          "depth": 0.02
+        },
+        "model_scope": {
+          "approximation": "same guided finite Maxwell embedding"
+        },
+        "evidence": {
+          "refinement_status": "verified",
+          "refinement_note": "Same original state embedded; complete lower same-symmetry guided subwindow and actual field couplings",
+          "identity_status": "verified",
+          "identity_note": "Instantaneous target matching in orthonormal native H space, minimum overlap²=0.999604138",
+          "refinement_kind": "nested"
+        },
+        "missing_evidence": [],
+        "representation_limits": [],
+        "observables": {
+          "aligned_state_difference": {
+            "verdict": "REPRESENTATION_LIMIT",
+            "reasons": [
+              "nonzero native radiation; cached spectrum lacks complete upper frequency/cluster guard"
+            ]
+          },
+          "target_frequency": {
+            "verdict": "REPRESENTATION_LIMIT",
+            "reasons": [
+              "Incomplete retained window and outgoing modes"
+            ]
+          }
+        },
+        "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+      }
+    }
+  ],
+  "overall_status": "REPRESENTATION_LIMIT",
+  "reason": "Spatial/modal/sampling gates remain independent; temporal success cannot certify the whole toolbox",
+  "scope": "Actual W1 reference study. PASS_SEQUENCE means supplied refinements meet the stated tolerances, not universal/asymptotic convergence",
+  "assessment_script_sha256": "36e60f1563625d3b8de7e0a8c0a931609d7df26f4001054e308a36115f2b2a05",
+  "boundary_diagnostic": "sptc_toolbox\\results\\convergence\\w1\\sampling\\boundary_audit.json",
+  "bloch_boundary": {
+    "verdict": "REPRESENTATION_LIMIT",
+    "maximum_phase_aligned_field_distance": 0.0024509995450961637,
+    "tolerance": 0.0001,
+    "reason": "Truncated folded primitive sets differ across physically equivalent supercell BZ endpoints",
+    "source": "sptc_toolbox\\results\\convergence\\w1\\sampling\\exact_boundary\\summary.json",
+    "interpretation": "Exact endpoint physical-field diagnostic; no claim that it explains the full packet-width difference"
+  },
+  "joint": {
+    "verdict": "NOT_CONVERGED",
+    "coarse": "g3.1_k16_f3_steps2048",
+    "fine": "g4.1_k16_f3_steps4096",
+    "layer": "joint",
+    "changed_axes": [
+      "gmax",
+      "steps_per_period"
+    ],
+    "is_joint": true,
+    "physical_signature": {
+      "epsilon": 12.1,
+      "thickness": 0.55,
+      "hole_radius": 0.25,
+      "Lx": 1,
+      "Ly": 12.12435565298214,
+      "supercell": 16,
+      "depth": 0.02
+    },
+    "model_scope": {
+      "approximation": "same seven-sector guided Maxwell and physical initial gauge"
+    },
+    "evidence": {
+      "refinement_status": "verified",
+      "refinement_note": "Only gmax and steps-per-period raised together, actual new dynamics",
+      "identity_status": "verified",
+      "identity_note": "All112 same-q target H fields checked in common union metric; min overlap²=0.9995568345265805",
+      "refinement_kind": "joint_refinement"
+    },
+    "missing_evidence": [],
+    "representation_limits": [],
+    "observables": {
+      "center": {
+        "verdict": "PASS_PAIR",
+        "reasons": [],
+        "units": "a",
+        "shape": [
+          3,
+          3
+        ],
+        "max_abs_error": 0.15950217927031218,
+        "max_allowed_error": 0.25,
+        "max_excess": 0.0,
+        "violation_count": 0,
+        "tolerance": {
+          "atol": 0.25,
+          "rtol": 0.0,
+          "reference_scale": 0.0
+        }
+      },
+      "width": {
+        "verdict": "NOT_CONVERGED",
+        "reasons": [],
+        "units": "a",
+        "shape": [
+          3,
+          3
+        ],
+        "max_abs_error": 9.596010980568387,
+        "max_allowed_error": 1.0,
+        "max_excess": 8.596010980568387,
+        "violation_count": 2,
+        "tolerance": {
+          "atol": 1.0,
+          "rtol": 0.0,
+          "reference_scale": 0.0
+        }
+      }
+    },
+    "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+  },
+  "momentum_chart_diagnostic": "sptc_toolbox\\results\\convergence\\w1\\sampling\\extended_chart_local\\summary.json",
+  "continuous_chart_trial": {
+    "source": "sptc_toolbox\\results\\convergence\\w1\\sampling\\g3.1_k32_extended\\summary_steps2048_fullcom.json",
+    "data": {
+      "cases": [
+        {
+          "drive": 0.01,
+          "file": "drive0.01_steps2048_fullcom.npz",
+          "xcom": [
+            -2.481434824665977e-12,
+            18.960423732808433,
+            39.17723000714507
+          ],
+          "width": [
+            2.106119642698636,
+            14.626086249536922,
+            27.185577877285418
+          ],
+          "negative_action_fraction": [
+            1.0075430875716369e-32,
+            4.148797030205681e-11,
+            3.2275341550182223e-11
+          ],
+          "circular_centers": [
+            -7.635881196203479e-15,
+            19.0215528252736,
+            39.705241346218926
+          ],
+          "periodic_edge_fraction": [
+            4.164388425306076e-10,
+            7.575642054276436e-09,
+            1.3530255015374046e-05
+          ],
+          "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+          "com_period_a": 512
+        },
+        {
+          "drive": 0.001,
+          "file": "drive0.001_steps2048_fullcom.npz",
+          "xcom": [
+            -2.481434824665977e-12,
+            24.98014131485722,
+            49.98716816343793
+          ],
+          "width": [
+            2.106119642698636,
+            5.018904271068904,
+            8.618811585128245
+          ],
+          "negative_action_fraction": [
+            1.0075430875716369e-32,
+            6.796609393177298e-13,
+            5.764997370545793e-13
+          ],
+          "circular_centers": [
+            -7.635881196203479e-15,
+            24.98370141130721,
+            49.99346232328935
+          ],
+          "periodic_edge_fraction": [
+            4.164388425306076e-10,
+            3.04258179832025e-05,
+            7.240050422365294e-06
+          ],
+          "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+          "com_period_a": 512
+        },
+        {
+          "drive": 0.0001,
+          "file": "drive0.0001_steps2048_fullcom.npz",
+          "xcom": [
+            -2.481434824665977e-12,
+            24.99936861251785,
+            50.00174825058046
+          ],
+          "width": [
+            2.106119642698636,
+            21.205930966145665,
+            42.2237012829059
+          ],
+          "negative_action_fraction": [
+            1.0075430875716369e-32,
+            1.329024315249511e-10,
+            1.8773643922277663e-10
+          ],
+          "circular_centers": [
+            -7.635881196203479e-15,
+            24.999478578032182,
+            50.00334645561647
+          ],
+          "periodic_edge_fraction": [
+            4.164388425306076e-10,
+            5.056165148620553e-06,
+            2.345432538499298e-06
+          ],
+          "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+          "com_period_a": 512
+        }
+      ],
+      "steps_per_period": 2048,
+      "layer": "sampling",
+      "physical_model": "Original W1 geometry and Delta=.02 unchanged",
+      "numerical_controls": {
+        "gmax": 3.1,
+        "nk": 32,
+        "fold_halfwidth": 3,
+        "z_order": 10,
+        "gmode_inds": [
+          0,
+          3
+        ],
+        "momentum_chart": "extended"
+      },
+      "source_sha256": "ca1dacb657ef4433ad6bcbd5e52220da12f3ed848e3b8944e47fb8e21bff639a",
+      "cache_npz_sha256": "f78829a83529e03f5272b9ba824a6f4b0237e8003437ce169bfac6d79ec92e75",
+      "cache_evidence": {
+        "fields_sha256": "f78829a83529e03f5272b9ba824a6f4b0237e8003437ce169bfac6d79ec92e75",
+        "cache_validation": "sptc_toolbox\\results\\convergence\\w1\\cache_checks\\a23527a1a33bbb6c.json",
+        "authority": "Export-time field digest"
+      }
+    },
+    "scope": "Corrective numerical representation trial, not another level of the wrapped-chart convergence sequence"
+  },
+  "continuous_chart_temporal": {
+    "period_drive0.01": {
+      "verdict": "PASS_SEQUENCE",
+      "layer": "temporal",
+      "level_count": 4,
+      "minimum_levels": 3,
+      "required_successive_passing_pairs": 2,
+      "pairs": [
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.01_steps1024",
+          "fine": "period_Omega0.01_steps2048",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.01
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "f78829a83529e03f5272b9ba824a6f4b0237e8003437ce169bfac6d79ec92e75:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 8.71118587755449e-16,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 3.3550956015408232e-06,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 5.646889011945433e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.01_steps2048",
+          "fine": "period_Omega0.01_steps4096",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.01
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "f78829a83529e03f5272b9ba824a6f4b0237e8003437ce169bfac6d79ec92e75:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 2.322158312428118e-15,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 8.154055744833444e-07,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 1.4114615210121528e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.01_steps4096",
+          "fine": "period_Omega0.01_steps8192",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.01
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "f78829a83529e03f5272b9ba824a6f4b0237e8003437ce169bfac6d79ec92e75:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 5.2465016445330054e-15,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 2.025313634764426e-07,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 3.528507833139294e-10,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        }
+      ],
+      "observables": {
+        "growth": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "operator": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "quasifrequency": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        }
+      },
+      "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+    },
+    "period_drive0.001": {
+      "verdict": "PASS_SEQUENCE",
+      "layer": "temporal",
+      "level_count": 4,
+      "minimum_levels": 3,
+      "required_successive_passing_pairs": 2,
+      "pairs": [
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.001_steps1024",
+          "fine": "period_Omega0.001_steps2048",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "f78829a83529e03f5272b9ba824a6f4b0237e8003437ce169bfac6d79ec92e75:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 1.2220397876098875e-16,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 2.560989161640359e-05,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 6.10485817052666e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.001_steps2048",
+          "fine": "period_Omega0.001_steps4096",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "f78829a83529e03f5272b9ba824a6f4b0237e8003437ce169bfac6d79ec92e75:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 2.2899993706487373e-16,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 6.4088983917688445e-06,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 1.5277922386675458e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.001_steps4096",
+          "fine": "period_Omega0.001_steps8192",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "f78829a83529e03f5272b9ba824a6f4b0237e8003437ce169bfac6d79ec92e75:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 5.175822651611534e-16,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 7.200384692787686e-06,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 3.842377419927337e-10,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        }
+      ],
+      "observables": {
+        "growth": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "operator": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "quasifrequency": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        }
+      },
+      "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+    },
+    "period_drive0.0001": {
+      "verdict": "PASS_SEQUENCE",
+      "layer": "temporal",
+      "level_count": 4,
+      "minimum_levels": 3,
+      "required_successive_passing_pairs": 2,
+      "pairs": [
+        {
+          "verdict": "NOT_CONVERGED",
+          "coarse": "period_Omega0.0001_steps1024",
+          "fine": "period_Omega0.0001_steps2048",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.0001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "f78829a83529e03f5272b9ba824a6f4b0237e8003437ce169bfac6d79ec92e75:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 1.0032883045184183e-17,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "NOT_CONVERGED",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 0.0005699931860502291,
+              "max_allowed_error": 0.0005,
+              "max_excess": 6.999318605022912e-05,
+              "violation_count": 2,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 6.151155762412655e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.0001_steps2048",
+          "fine": "period_Omega0.0001_steps4096",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.0001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "f78829a83529e03f5272b9ba824a6f4b0237e8003437ce169bfac6d79ec92e75:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 2.8699205075675215e-17,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 9.821143617601496e-05,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 1.5317924179989307e-09,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        },
+        {
+          "verdict": "PASS_PAIR",
+          "coarse": "period_Omega0.0001_steps4096",
+          "fine": "period_Omega0.0001_steps8192",
+          "layer": "temporal",
+          "changed_axes": [
+            "steps"
+          ],
+          "is_joint": false,
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "hole_radius": 0.25,
+            "Lx": 1,
+            "Ly": 12.12435565298214,
+            "supercell": 16,
+            "depth": 0.02,
+            "drive": 0.0001
+          },
+          "model_scope": {
+            "approximation": "fixed seven-mode full signed Maxwell",
+            "basis_id": "f78829a83529e03f5272b9ba824a6f4b0237e8003437ce169bfac6d79ec92e75:K0,16,31"
+          },
+          "evidence": {
+            "refinement_status": "verified",
+            "refinement_note": "Same native field/cache hash; independently doubled exact-midpoint step counts",
+            "identity_status": "not_assessed",
+            "identity_note": "",
+            "refinement_kind": "nested"
+          },
+          "missing_evidence": [],
+          "representation_limits": [],
+          "observables": {
+            "growth": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 5.192432214946776e-17,
+              "max_allowed_error": 1e-10,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 1e-10,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "operator": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "dimensionless in fixed(q,p)coordinates",
+              "shape": [
+                3,
+                14,
+                14
+              ],
+              "max_abs_error": 2.4547607383703578e-05,
+              "max_allowed_error": 0.0005,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 0.0005,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            },
+            "quasifrequency": {
+              "verdict": "PASS_PAIR",
+              "reasons": [],
+              "units": "omega*a/c",
+              "shape": [
+                3,
+                14
+              ],
+              "max_abs_error": 3.8258568996917723e-10,
+              "max_allowed_error": 5e-08,
+              "max_excess": 0.0,
+              "violation_count": 0,
+              "tolerance": {
+                "atol": 5e-08,
+                "rtol": 0.0,
+                "reference_scale": 0.0
+              }
+            }
+          },
+          "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+        }
+      ],
+      "observables": {
+        "growth": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "operator": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "NOT_CONVERGED",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        },
+        "quasifrequency": {
+          "verdict": "PASS_SEQUENCE",
+          "pair_verdicts": [
+            "PASS_PAIR",
+            "PASS_PAIR",
+            "PASS_PAIR"
+          ]
+        }
+      },
+      "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+    },
+    "Fourier_harmonic_sequences": [
+      {
+        "verdict": "PASS_SEQUENCE",
+        "layer": "temporal",
+        "level_count": 3,
+        "minimum_levels": 3,
+        "required_successive_passing_pairs": 2,
+        "pairs": [
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K0_N5",
+            "fine": "Fourier_K0_N7",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 8.698817053801873e-16,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 1.6100968648624647e-11,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          },
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K0_N7",
+            "fine": "Fourier_K0_N9",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 1.022194935125591e-15,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 1.7732126531000425e-14,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          }
+        ],
+        "observables": {
+          "growth": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          },
+          "quasifrequency": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          }
+        },
+        "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+      },
+      {
+        "verdict": "PASS_SEQUENCE",
+        "layer": "temporal",
+        "level_count": 3,
+        "minimum_levels": 3,
+        "required_successive_passing_pairs": 2,
+        "pairs": [
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K16_N5",
+            "fine": "Fourier_K16_N7",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 7.023724921564383e-16,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 8.033634521509292e-14,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          },
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K16_N7",
+            "fine": "Fourier_K16_N9",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 6.445924154431372e-16,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 1.4474966364419473e-14,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          }
+        ],
+        "observables": {
+          "growth": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          },
+          "quasifrequency": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          }
+        },
+        "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+      },
+      {
+        "verdict": "PASS_SEQUENCE",
+        "layer": "temporal",
+        "level_count": 3,
+        "minimum_levels": 3,
+        "required_successive_passing_pairs": 2,
+        "pairs": [
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K31_N5",
+            "fine": "Fourier_K31_N7",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 4.793802694894294e-16,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 8.145114790969465e-12,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          },
+          {
+            "verdict": "PASS_PAIR",
+            "coarse": "Fourier_K31_N7",
+            "fine": "Fourier_K31_N9",
+            "layer": "temporal",
+            "changed_axes": [
+              "N"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "hole_radius": 0.25,
+              "Lx": 1,
+              "Ly": 12.12435565298214,
+              "supercell": 16,
+              "depth": 0.02,
+              "drive": 0.01
+            },
+            "model_scope": {
+              "approximation": "fixed seven-mode full signed Maxwell"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "N increased with same matrix, complete14-state set, operator sampling/doubled-grid and shifted-time checks passed",
+              "identity_status": "not_assessed",
+              "identity_note": "",
+              "refinement_kind": "explicit_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "growth": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 4.101148564265104e-16,
+                "max_allowed_error": 1e-10,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-10,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "quasifrequency": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  14
+                ],
+                "max_abs_error": 2.6055112928302648e-14,
+                "max_allowed_error": 5e-08,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 5e-08,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          }
+        ],
+        "observables": {
+          "growth": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          },
+          "quasifrequency": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          }
+        },
+        "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+      }
+    ],
+    "coarse_harmonic_rejections": [
+      {
+        "k_index": 0,
+        "k": -0.1902136176978195,
+        "drive": 0.01,
+        "n_harmonics": 3,
+        "n_samples": 128,
+        "operator_fourier_check": {
+          "grids": [
+            {
+              "samples": 128,
+              "discarded_relative_tail": 1.1176299640010362e-18,
+              "coefficient_change": 0.0
+            },
+            {
+              "samples": 256,
+              "discarded_relative_tail": 1.1464562425978797e-18,
+              "coefficient_change": 6.304492608456563e-19
+            }
+          ],
+          "shifted_time_relative_error": 8.952967045435291e-19,
+          "tolerance": 1e-10,
+          "scope": "Sampled operator Fourier convergence; separate from state-sideband boundary convergence"
+        },
+        "status": "REJECTED_INCOMPLETE_HARMONIC_SPECTRUM",
+        "reason": "Found 5/14 independent quasifrequency classes. Increase N, resolve a degeneracy as a subspace, or inspect the raw spectrum; do not report an incomplete band spectrum."
+      },
+      {
+        "k_index": 16,
+        "k": 0.006135923151542565,
+        "drive": 0.01,
+        "n_harmonics": 3,
+        "n_samples": 128,
+        "operator_fourier_check": {
+          "grids": [
+            {
+              "samples": 128,
+              "discarded_relative_tail": 1.0348531547988903e-18,
+              "coefficient_change": 0.0
+            },
+            {
+              "samples": 256,
+              "discarded_relative_tail": 1.0950291925907618e-18,
+              "coefficient_change": 6.582529052369205e-19
+            }
+          ],
+          "shifted_time_relative_error": 9.577879906386975e-19,
+          "tolerance": 1e-10,
+          "scope": "Sampled operator Fourier convergence; separate from state-sideband boundary convergence"
+        },
+        "status": "REJECTED_INCOMPLETE_HARMONIC_SPECTRUM",
+        "reason": "Found 6/14 independent quasifrequency classes. Increase N, resolve a degeneracy as a subspace, or inspect the raw spectrum; do not report an incomplete band spectrum."
+      },
+      {
+        "k_index": 31,
+        "k": 0.1902136176978195,
+        "drive": 0.01,
+        "n_harmonics": 3,
+        "n_samples": 128,
+        "operator_fourier_check": {
+          "grids": [
+            {
+              "samples": 128,
+              "discarded_relative_tail": 1.0723072859172145e-18,
+              "coefficient_change": 0.0
+            },
+            {
+              "samples": 256,
+              "discarded_relative_tail": 1.0862518622680324e-18,
+              "coefficient_change": 5.72022173144457e-19
+            }
+          ],
+          "shifted_time_relative_error": 9.056669912660645e-19,
+          "tolerance": 1e-10,
+          "scope": "Sampled operator Fourier convergence; separate from state-sideband boundary convergence"
+        },
+        "status": "REJECTED_INCOMPLETE_HARMONIC_SPECTRUM",
+        "reason": "Found 5/14 independent quasifrequency classes. Increase N, resolve a degeneracy as a subspace, or inspect the raw spectrum; do not report an incomplete band spectrum."
+      }
+    ]
+  },
+  "continuous_chart_sampling": {
+    "verdict": "PASS_SEQUENCE",
+    "layer": "sampling",
+    "level_count": 3,
+    "minimum_levels": 3,
+    "required_successive_passing_pairs": 2,
+    "pairs": [
+      {
+        "verdict": "PASS_PAIR",
+        "coarse": "K16",
+        "fine": "K32",
+        "layer": "sampling",
+        "changed_axes": [
+          "nk"
+        ],
+        "is_joint": false,
+        "physical_signature": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "hole_radius": 0.25,
+          "Lx": 1,
+          "Ly": 12.12435565298214,
+          "supercell": 16,
+          "depth": 0.02
+        },
+        "model_scope": {
+          "approximation": "same fixed seven-sector guided Maxwell model and localized initial gauge"
+        },
+        "evidence": {
+          "refinement_status": "verified",
+          "refinement_note": "Actual native Legume K grids16/32/64; fixed geometry/families/7sectors/time and unchanged physical gauge prescription",
+          "identity_status": "not_assessed",
+          "identity_note": "",
+          "refinement_kind": "explicit_refinement"
+        },
+        "missing_evidence": [],
+        "representation_limits": [],
+        "observables": {
+          "center": {
+            "verdict": "PASS_PAIR",
+            "reasons": [],
+            "units": "a",
+            "shape": [
+              3,
+              3
+            ],
+            "max_abs_error": 0.047483873811053456,
+            "max_allowed_error": 0.25,
+            "max_excess": 0.0,
+            "violation_count": 0,
+            "tolerance": {
+              "atol": 0.25,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          },
+          "width": {
+            "verdict": "PASS_PAIR",
+            "reasons": [],
+            "units": "a",
+            "shape": [
+              3,
+              3
+            ],
+            "max_abs_error": 0.3182415464515609,
+            "max_allowed_error": 1.0,
+            "max_excess": 0.0,
+            "violation_count": 0,
+            "tolerance": {
+              "atol": 1.0,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          }
+        },
+        "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+      },
+      {
+        "verdict": "PASS_PAIR",
+        "coarse": "K32",
+        "fine": "K64",
+        "layer": "sampling",
+        "changed_axes": [
+          "nk"
+        ],
+        "is_joint": false,
+        "physical_signature": {
+          "epsilon": 12.1,
+          "thickness": 0.55,
+          "hole_radius": 0.25,
+          "Lx": 1,
+          "Ly": 12.12435565298214,
+          "supercell": 16,
+          "depth": 0.02
+        },
+        "model_scope": {
+          "approximation": "same fixed seven-sector guided Maxwell model and localized initial gauge"
+        },
+        "evidence": {
+          "refinement_status": "verified",
+          "refinement_note": "Actual native Legume K grids16/32/64; fixed geometry/families/7sectors/time and unchanged physical gauge prescription",
+          "identity_status": "not_assessed",
+          "identity_note": "",
+          "refinement_kind": "explicit_refinement"
+        },
+        "missing_evidence": [],
+        "representation_limits": [],
+        "observables": {
+          "center": {
+            "verdict": "PASS_PAIR",
+            "reasons": [],
+            "units": "a",
+            "shape": [
+              3,
+              3
+            ],
+            "max_abs_error": 0.013609267180335394,
+            "max_allowed_error": 0.25,
+            "max_excess": 0.0,
+            "violation_count": 0,
+            "tolerance": {
+              "atol": 0.25,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          },
+          "width": {
+            "verdict": "PASS_PAIR",
+            "reasons": [],
+            "units": "a",
+            "shape": [
+              3,
+              3
+            ],
+            "max_abs_error": 0.7044250822209701,
+            "max_allowed_error": 1.0,
+            "max_excess": 0.0,
+            "violation_count": 0,
+            "tolerance": {
+              "atol": 1.0,
+              "rtol": 0.0,
+              "reference_scale": 0.0
+            }
+          }
+        },
+        "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+      }
+    ],
+    "observables": {
+      "center": {
+        "verdict": "PASS_SEQUENCE",
+        "pair_verdicts": [
+          "PASS_PAIR",
+          "PASS_PAIR"
+        ]
+      },
+      "width": {
+        "verdict": "PASS_SEQUENCE",
+        "pair_verdicts": [
+          "PASS_PAIR",
+          "PASS_PAIR"
+        ]
+      }
+    },
+    "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim",
+    "values": [
+      {
+        "nk": 16,
+        "centers": [
+          [
+            -4.9131890860786116e-12,
+            18.96252569126915,
+            39.12974613333402
+          ],
+          [
+            -4.9131890860786116e-12,
+            24.98484328869045,
+            49.99588133551567
+          ],
+          [
+            -4.9131890860786116e-12,
+            24.99153827990198,
+            50.0078684588043
+          ]
+        ],
+        "widths": [
+          [
+            2.1061013097382855,
+            14.623248729847784,
+            26.937222021921155
+          ],
+          [
+            2.1061013097382855,
+            4.700662724617343,
+            8.495473716163401
+          ],
+          [
+            2.1061013097382855,
+            21.196955324211988,
+            42.203936885396494
+          ]
+        ],
+        "edge_fractions": [
+          [
+            8.035708862723382e-10,
+            1.2706133521503255e-05,
+            0.0020977908392415126
+          ],
+          [
+            8.035708862723382e-10,
+            1.0030723201744678e-05,
+            0.0004737381848932986
+          ],
+          [
+            8.035708862723382e-10,
+            4.6972010136360665e-06,
+            3.862632630200417e-05
+          ]
+        ]
+      },
+      {
+        "nk": 32,
+        "centers": [
+          [
+            -2.481434824665977e-12,
+            18.960423732808433,
+            39.17723000714507
+          ],
+          [
+            -2.481434824665977e-12,
+            24.98014131485722,
+            49.98716816343793
+          ],
+          [
+            -2.481434824665977e-12,
+            24.99936861251785,
+            50.00174825058046
+          ]
+        ],
+        "widths": [
+          [
+            2.106119642698636,
+            14.626086249536922,
+            27.185577877285418
+          ],
+          [
+            2.106119642698636,
+            5.018904271068904,
+            8.618811585128245
+          ],
+          [
+            2.106119642698636,
+            21.205930966145665,
+            42.2237012829059
+          ]
+        ],
+        "edge_fractions": [
+          [
+            4.164388425306076e-10,
+            7.575642054276436e-09,
+            1.3530255015374046e-05
+          ],
+          [
+            4.164388425306076e-10,
+            3.04258179832025e-05,
+            7.240050422365294e-06
+          ],
+          [
+            4.164388425306076e-10,
+            5.056165148620553e-06,
+            2.345432538499298e-06
+          ]
+        ]
+      },
+      {
+        "nk": 64,
+        "centers": [
+          [
+            -1.255992328331091e-12,
+            18.960423482961065,
+            39.17299523784908
+          ],
+          [
+            -1.255992328331091e-12,
+            24.967762792609836,
+            49.98015970819963
+          ],
+          [
+            -1.255992328331091e-12,
+            24.998006915135772,
+            49.98813898340013
+          ]
+        ],
+        "widths": [
+          [
+            2.106156137219954,
+            14.626107544612964,
+            27.191850756926765
+          ],
+          [
+            2.106156137219954,
+            5.341538708919559,
+            9.323236667349216
+          ],
+          [
+            2.106156137219954,
+            21.451143107537792,
+            42.26187676727249
+          ]
+        ],
+        "edge_fractions": [
+          [
+            2.1171139063552423e-10,
+            7.535862376387353e-10,
+            1.1423678619281863e-08
+          ],
+          [
+            2.1171139063552423e-10,
+            4.310705491191839e-06,
+            3.005760043478237e-05
+          ],
+          [
+            2.1171139063552423e-10,
+            2.609833272845085e-05,
+            5.4525789690528976e-06
+          ]
+        ]
+      }
+    ]
+  },
+  "required_layer_verdicts": [
+    "NOT_CONVERGED",
+    "NOT_CONVERGED",
+    "REPRESENTATION_LIMIT",
+    "REPRESENTATION_LIMIT",
+    "PASS_SEQUENCE",
+    "PASS_SEQUENCE",
+    "PASS_SEQUENCE",
+    "PASS_SEQUENCE"
+  ]
+}

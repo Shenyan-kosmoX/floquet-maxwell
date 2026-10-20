@@ -1,0 +1,50 @@
+{
+  "status": "APPROXIMATE_COMPARISON",
+  "material": "n=4, epsilon=16, no absorption",
+  "run": "results\\qualitative_comparison\\n4_g6_v12_k25",
+  "k_points": 25,
+  "paper_plot_uncertainty_thz": 0.1,
+  "vertices": [
+    {
+      "vertex": "M_start",
+      "paper_thz": 67.33086144380907,
+      "legume_thz": 66.28990609810022,
+      "difference_thz": -1.040955345708852,
+      "relative_difference_percent": -1.546030042371549
+    },
+    {
+      "vertex": "Gamma",
+      "paper_thz": 67.8845582138315,
+      "legume_thz": 68.76362147101432,
+      "difference_thz": 0.8790632571828212,
+      "relative_difference_percent": 1.2949384665859265
+    },
+    {
+      "vertex": "X",
+      "paper_thz": 67.60140939703288,
+      "legume_thz": 63.717883237833156,
+      "difference_thz": -3.883526159199725,
+      "relative_difference_percent": -5.74474140974075
+    },
+    {
+      "vertex": "M_end",
+      "paper_thz": 67.33127838414794,
+      "legume_thz": 66.28990609810022,
+      "difference_thz": -1.041372286047718,
+      "relative_difference_percent": -1.546639706001618
+    }
+  ],
+  "paper_bandwidth_thz": 0.5536967700224267,
+  "computed_bandwidth_thz": 5.0457382331811615,
+  "bandwidth_ratio": 9.112818615461295,
+  "paper_relative_bandwidth_percent": 0.8156446540880793,
+  "computed_relative_bandwidth_percent": 7.33780176965821,
+  "minimum_field_overlap_squared": 0.8042758204348394,
+  "ambiguous_k_indexes": [],
+  "conclusions": [
+    "A2g-seeded frequency range is similar near Gamma",
+    "The tracked approximate GME branch is substantially less flat",
+    "No conclusion that material approximation alone causes the discrepancy",
+    "No Floquet gap or gain has been calculated for this branch"
+  ]
+}

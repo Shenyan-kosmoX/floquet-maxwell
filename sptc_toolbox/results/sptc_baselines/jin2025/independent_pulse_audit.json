@@ -1,0 +1,69 @@
+{
+  "scope": "Independent mathematical and primitive-ODE audit of Jin2025 SI S39-48 reduced two-mode photon model",
+  "source": "10.1038/s41565-025-02003-1 SI PDF pages24-28, plus Fig2 static linewidth source data",
+  "decay_GHz": [
+    190.2827597038855,
+    123.73030067434513
+  ],
+  "amplitude_rate_units": "kappa=2*pi*GHz/1000 in ps^-1; photon number decay rate=2*kappa",
+  "photon_coordinates": "b_j=a_j/sqrt(omega_j), g=sqrt(g1*g2) exactly at omega2=omega1+Omega",
+  "symmetric_ports": "single incident face sqrt(kappa1); both output faces 2*kappa2*abs(b2)^2; CW prefactor1/2",
+  "pulse_FWHM": "tau is intensity FWHM; amplitude exp[-2ln2(t-center)^2/tau^2]",
+  "spectral_observable": "2*kappa2*abs(integral b2 dt)^2/abs(integral s dt)^2",
+  "integrated_observable": "2*kappa2*integral abs(b2)^2 dt/integral abs(s)^2 dt",
+  "source_ambiguity": "SI7 says absolute photon efficiency but does not specify its integration functional; a peak above1/2 is incompatible with total single-sided pulse conversion in its stated symmetric photon-conserving model, while spectral-density ratio may exceed1/2.",
+  "prior_delay_probe": {
+    "C_low": 0.0001,
+    "delay_ps": [
+      0.6008234132423868,
+      0.7984893551293839
+    ],
+    "note": "Prior exploratory values use lower C than root C_low=.001; small delay and efficiency differences are intentional parameter differences, not solver error."
+  },
+  "same_delay_comparison": {
+    "root_C_low": 0.001,
+    "checks": [
+      {
+        "pump_intensity_FWHM_ps": 1.5,
+        "delay_ps": 0.6006299716057537,
+        "C0": 2.0,
+        "interval_ps": [
+          -1.183,
+          23.15349562751136
+        ],
+        "method": "Independent primitive real-envelope Radau, with integral states; no transient.py or Floquet calls",
+        "spectral": 0.875045193231712,
+        "integrated": 0.11147866047653315,
+        "photon_balance_relative": 1.2188728825929115e-14,
+        "root_spectral": 0.8750451932317566,
+        "root_integrated": 0.11147866047652771,
+        "spectral_absolute_difference": 4.451994328746878e-14,
+        "integrated_absolute_difference": 5.440092820663267e-15,
+        "success": true
+      },
+      {
+        "pump_intensity_FWHM_ps": 6.0,
+        "delay_ps": 0.7969380891371111,
+        "C0": 2.0,
+        "interval_ps": [
+          -1.183,
+          24.79693808913711
+        ],
+        "method": "Independent primitive real-envelope Radau, with integral states; no transient.py or Floquet calls",
+        "spectral": 0.4338441960204284,
+        "integrated": 0.10910174412680675,
+        "photon_balance_relative": 2.3143155998599568e-15,
+        "root_spectral": 0.433844196020458,
+        "root_integrated": 0.1091017441268059,
+        "spectral_absolute_difference": 2.958744360626042e-14,
+        "integrated_absolute_difference": 8.465450562766819e-16,
+        "success": true
+      }
+    ]
+  },
+  "scope_limits": [
+    "This is the explicit paper TCMT closure, not a Legume tensor/full-Maxwell certificate.",
+    "Actual asymmetric slab radiation branching and material absorption are not inferred from total linewidth.",
+    "Residual paper-curve differences are retained without refitting decay rates or rescaling efficiencies."
+  ]
+}

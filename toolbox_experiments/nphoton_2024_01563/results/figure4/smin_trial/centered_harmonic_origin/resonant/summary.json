@@ -1,0 +1,29 @@
+{
+  "status": "CENTERED_HARMONIC_TRUNCATION_REAL_AXIS_I_MINUS_TG_COMPARISON",
+  "regime": "resonant",
+  "half_harmonics": 1,
+  "maximum_multipole": 1,
+  "base_frequency_interval": "(-Omega/2,Omega/2], zero excluded by source grid",
+  "displayed_frequency": "base omega/Omega modulo one",
+  "original_base_frequency_interval": "(0,Omega), same N=1 retained separately",
+  "physical_model": "epsilon(t)=11.68+0.1068 cos(Omega*t), R/a=1/3, unit square lattice",
+  "drive_angular_a_over_c": 5.190687148686764,
+  "k_points": 193,
+  "distinct_k_points": 192,
+  "displayed_frequency_samples": 501,
+  "direct_positive_frequency_columns": 251,
+  "exact_symmetry_derived_negative_frequency_columns": 250,
+  "original_data_sha256": "3a00e48f994ce9dd8a9be2e8fcbfb6bc8ffcf626ef6e33216d8b094615cdd8e6",
+  "original_summary_sha256": "7374d226c29f40f1ad98070fb39df1a0308baef17e282ff2702af89c1aa1cb16",
+  "centered_data_sha256": "60820ca6679672787ef51b877f5e48a9282c0efb4c11470b8b7a4810fd380aab",
+  "matrix_symmetry": "A(-omega,k)=U conj(A(+omega,k)) U^T, U=J_harmonic tensor [C_VSH Rz(pi)]",
+  "validation": "Ten actual negative-frequency full matrices checked, both pumps and five different momenta; static counterpart identity also checked",
+  "interpretation": "A distinct finite-harmonic origin convention, not a correction of FFT signs and not proof of the source authors' convention",
+  "limitations": [
+    "The paper's precise base-zone truncation origin is not documented in the inspected source",
+    "Finite-N results are not invariant under an integer shift of base frequency with fixed harmonic labels",
+    "The centered convention can omit high physical frequencies carried by the old upper-zone edge channel",
+    "Exact symmetry at this real-frequency square isotropic geometry is not complex-pole continuation or a general traveling-modulation identity",
+    "No interpolation, mirrored FFT, or invented mode amplitudes enter this comparison"
+  ]
+}

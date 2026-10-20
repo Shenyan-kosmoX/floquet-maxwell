@@ -1,0 +1,16 @@
+name: Project review
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: sors-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  structure:
+    uses: Shenyan-kosmoX/community/.github/workflows/sors-project-review.yml@68fad7e518b3e96f454e843a47ec9da22e942d55
+    with:
+      checker-ref: 68fad7e518b3e96f454e843a47ec9da22e942d55

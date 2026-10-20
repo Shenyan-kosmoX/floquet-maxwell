@@ -1,0 +1,532 @@
+{
+  "schema": "traveling-window-and-open-control-v1",
+  "physical_geometry": "Unchanged generic 2D patterned slab from physics_pipeline traveling fixture",
+  "physical_Q": [
+    0.6283185307179586,
+    0.6283185307179586
+  ],
+  "physical_base_k": [
+    1.5,
+    1.2
+  ],
+  "drive": 0.29509688610500695,
+  "time_end": 900.0,
+  "primitive_orbit_order": 10,
+  "supercell_cells": 100,
+  "momentum_comparisons": [
+    {
+      "sectors": 3,
+      "maximum_total_variation_to_complete_orbit": 0.8335027298693456,
+      "final_total_variation_to_complete_orbit": 0.6233838524682872
+    },
+    {
+      "sectors": 5,
+      "maximum_total_variation_to_complete_orbit": 0.12164681327647271,
+      "final_total_variation_to_complete_orbit": 0.08937138191838832
+    },
+    {
+      "sectors": 7,
+      "maximum_total_variation_to_complete_orbit": 0.010605836255088206,
+      "final_total_variation_to_complete_orbit": 0.007694048600166328
+    },
+    {
+      "sectors": 9,
+      "maximum_total_variation_to_complete_orbit": 0.00012444896354391947,
+      "final_total_variation_to_complete_orbit": 0.00012444896354391947
+    }
+  ],
+  "complete_orbit_forward": {
+    "final_positive_weight": 1.0004333629821527,
+    "max_higher_label_weight": 0.8721010275593131,
+    "max_lower_label_weight": 0.3699886484386257,
+    "maximum_coordinate_end_weight": 1.822223200004448e-07,
+    "max_negative_weight": 0.0012411570874617075,
+    "max_energy_balance_error": 3.4565272477582454e-08,
+    "final_energy": 0.6810466694604734,
+    "integrated_pump_work": 0.18433801293009167,
+    "integrated_radiation_work": 0.0
+  },
+  "complete_orbit_reverse": {
+    "final_positive_weight": 1.0009666798699388,
+    "max_higher_label_weight": 0.009270755484082925,
+    "max_lower_label_weight": 0.0035139309600584192,
+    "maximum_coordinate_end_weight": 2.978334215643787e-09,
+    "max_negative_weight": 0.0011845257436528694,
+    "max_energy_balance_error": 1.6261539746058665e-08,
+    "final_energy": 0.49581917321240765,
+    "integrated_pump_work": -0.000889500294740385,
+    "integrated_radiation_work": 0.0
+  },
+  "independent_integrator_max_population_difference": 7.228457554742107e-08,
+  "fixed_drive_spatial_max_population_difference": 0.04759221214585452,
+  "two_to_four_mode_max_population_difference": 0.894392189117217,
+  "markov_on_off_max_population_difference": 0.003992251306633443,
+  "markov_reference_max_population_difference": 0.005596052529174944,
+  "markov_no_pump": {
+    "final_positive_weight": 0.1810784492215082,
+    "max_higher_label_weight": 0.0,
+    "max_lower_label_weight": 0.9999999999999996,
+    "maximum_coordinate_end_weight": 0.0,
+    "max_negative_weight": 1.9605902455640538e-07,
+    "max_energy_balance_error": 2.833681644887065e-08,
+    "final_energy": 0.19880324752032572,
+    "integrated_pump_work": 0.0,
+    "integrated_radiation_work": 0.8990825925953148
+  },
+  "endpoint_sewing": [
+    {
+      "gmax": 1.6,
+      "metric": "slab-interior physical H with Gauss z quadrature, full G+k union",
+      "checks": [
+        {
+          "mode": 0,
+          "omega_difference": -4.196411672146005e-05,
+          "overlap_squared": 0.9991320025964799,
+          "phase_aligned_distance": 0.02946499346992886,
+          "a_only_weight": 0.0005567713878197562,
+          "b_only_weight": 0.00031060626023981706,
+          "union_size": 14
+        },
+        {
+          "mode": 1,
+          "omega_difference": 0.0005129142594713879,
+          "overlap_squared": 0.9996452440663087,
+          "phase_aligned_distance": 0.018835801077103448,
+          "a_only_weight": 0.0003473856800272601,
+          "b_only_weight": 7.2443823829194325e-06,
+          "union_size": 14
+        }
+      ]
+    },
+    {
+      "gmax": 2.1,
+      "metric": "slab-interior physical H with Gauss z quadrature, full G+k union",
+      "checks": [
+        {
+          "mode": 0,
+          "omega_difference": -0.0001858693129496678,
+          "overlap_squared": 0.9989985972626033,
+          "phase_aligned_distance": 0.03164891095855662,
+          "a_only_weight": 0.0006733807825885646,
+          "b_only_weight": 0.00032711633220808213,
+          "union_size": 18
+        },
+        {
+          "mode": 1,
+          "omega_difference": 0.0005576212134518881,
+          "overlap_squared": 0.9996161135294425,
+          "phase_aligned_distance": 0.019593961310486775,
+          "a_only_weight": 0.00037939713558677164,
+          "b_only_weight": 2.947965670585211e-06,
+          "union_size": 18
+        }
+      ]
+    }
+  ],
+  "scope": "Ten distinct sectors exhaust this Q orbit in the selected static subspace. Primitive reciprocal closure is computed using physical Fourier overlaps, not padded/forced edge links. More than ten sectors double-counts primitive-equivalent Hilbert spaces. Full spatial and modal completeness is separate. The connected open model is a positive-frequency frozen-sector Markov approximation, not retarded QNM-Floquet radiation.",
+  "run_names": [
+    "sectors_3_modes_2",
+    "sectors_5_modes_2",
+    "sectors_7_modes_2",
+    "sectors_9_modes_2",
+    "sectors_10_modes_2",
+    "sectors_10_reverse_Q",
+    "sectors_10_gmax_2p1",
+    "sectors_10_modes_4_markov"
+  ],
+  "markov_passivity_expm_error": 7.747702549328305e-08,
+  "markov_passive_initial_global_mode": 15,
+  "four_to_six_mode_max_population_difference": 0.6515243421038378,
+  "six_mode_loss_omitted": {
+    "final_positive_weight": 1.000528808197547,
+    "max_higher_label_weight": 0.8712995336775876,
+    "max_lower_label_weight": 0.47417922809747337,
+    "maximum_coordinate_end_weight": 0.20215443249350673,
+    "max_negative_weight": 0.0011647348829924113,
+    "max_energy_balance_error": 1.2944149985205655e-07,
+    "final_energy": 0.8577663099378605,
+    "integrated_pump_work": 0.3610576304724061,
+    "integrated_radiation_work": 0.0
+  },
+  "four_mode_reverse_loss_omitted": {
+    "final_positive_weight": 1.0004572813501214,
+    "max_higher_label_weight": 0.009265655072368666,
+    "max_lower_label_weight": 0.003511078332826893,
+    "maximum_coordinate_end_weight": 1.5046528759771518e-08,
+    "max_negative_weight": 0.0011680556753710203,
+    "max_energy_balance_error": 4.011446447124657e-09,
+    "final_energy": 0.49584210978465676,
+    "integrated_pump_work": -0.0008666071597876807,
+    "integrated_radiation_work": 0.0
+  },
+  "modal_window_status": "Momentum orbit complete; quantify modal-window effect separately. The 2-mode result cannot be called fully converged.",
+  "remaining_limits": "Native G support differs between reciprocal charts. Markov reference choice changes bath opening and is not a sideband-resolved radiation treatment.",
+  "momentum_difference_definition": "Half L1 distance between positive-sign modal weights on the union of ten labels; weights are not normalized probabilities.",
+  "native_six_mode_max_cyclic_gamma": 0.0003849151951951937,
+  "new_tests": "17 tests passed across test_traveling_open.py and test_traveling_slab.py",
+  "spatial_field_identity": {
+    "metric": "Physical H Parseval on full Fourier union, same Gauss z in [-6,6.45] including claddings; positive norm, not QNM residue",
+    "sectors": [
+      {
+        "sector": 0,
+        "mode_overlap_squared": [
+          [
+            0.9999436039334404,
+            3.1829562452834486e-34
+          ],
+          [
+            9.729673280101144e-35,
+            0.999979821329706
+          ]
+        ],
+        "best_assignment": [
+          0,
+          1
+        ],
+        "matched_overlap_squared": [
+          0.9999436039334404,
+          0.999979821329706
+        ],
+        "subspace_minimum_singular_value_squared": 0.9999436039334406,
+        "support": {
+          "union_size": 13,
+          "a_only_weight": 0.0,
+          "b_only_weight": 3.72027294865386e-05,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      },
+      {
+        "sector": 1,
+        "mode_overlap_squared": [
+          [
+            0.9999869153604594,
+            2.6342943367229777e-32
+          ],
+          [
+            6.286554488962265e-32,
+            0.9999994132104852
+          ]
+        ],
+        "best_assignment": [
+          0,
+          1
+        ],
+        "matched_overlap_squared": [
+          0.9999869153604594,
+          0.9999994132104852
+        ],
+        "subspace_minimum_singular_value_squared": 0.9999869153604592,
+        "support": {
+          "union_size": 13,
+          "a_only_weight": 0.0,
+          "b_only_weight": 6.592512862092327e-06,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      },
+      {
+        "sector": 2,
+        "mode_overlap_squared": [
+          [
+            0.9999968604515881,
+            1.0990049555737583e-35
+          ],
+          [
+            4.898122826995077e-36,
+            0.999999976016845
+          ]
+        ],
+        "best_assignment": [
+          0,
+          1
+        ],
+        "matched_overlap_squared": [
+          0.9999968604515881,
+          0.999999976016845
+        ],
+        "subspace_minimum_singular_value_squared": 0.9999968604515886,
+        "support": {
+          "union_size": 13,
+          "a_only_weight": 0.0,
+          "b_only_weight": 1.5778373277970795e-06,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      },
+      {
+        "sector": 3,
+        "mode_overlap_squared": [
+          [
+            0.999959479388868,
+            4.212904882909886e-33
+          ],
+          [
+            2.3465192643427627e-33,
+            0.9999979708367969
+          ]
+        ],
+        "best_assignment": [
+          0,
+          1
+        ],
+        "matched_overlap_squared": [
+          0.999959479388868,
+          0.9999979708367969
+        ],
+        "subspace_minimum_singular_value_squared": 0.9999594793888686,
+        "support": {
+          "union_size": 13,
+          "a_only_weight": 0.0,
+          "b_only_weight": 2.1097141673350865e-05,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      },
+      {
+        "sector": 4,
+        "mode_overlap_squared": [
+          [
+            0.9999013805592487,
+            4.6104132521174497e-32
+          ],
+          [
+            4.432697464951562e-32,
+            0.9999616517049841
+          ]
+        ],
+        "best_assignment": [
+          0,
+          1
+        ],
+        "matched_overlap_squared": [
+          0.9999013805592487,
+          0.9999616517049841
+        ],
+        "subspace_minimum_singular_value_squared": 0.9999013805592484,
+        "support": {
+          "union_size": 13,
+          "a_only_weight": 0.0,
+          "b_only_weight": 6.740488893696125e-05,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      },
+      {
+        "sector": 5,
+        "mode_overlap_squared": [
+          [
+            0.999827319408912,
+            1.960966972350197e-07
+          ],
+          [
+            2.444325619414059e-07,
+            0.9997191205756367
+          ]
+        ],
+        "best_assignment": [
+          0,
+          1
+        ],
+        "matched_overlap_squared": [
+          0.999827319408912,
+          0.9997191205756367
+        ],
+        "subspace_minimum_singular_value_squared": 0.9996782314367075,
+        "support": {
+          "union_size": 13,
+          "a_only_weight": 0.0,
+          "b_only_weight": 0.00021469520909277745,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      },
+      {
+        "sector": 6,
+        "mode_overlap_squared": [
+          [
+            0.9997380351173565,
+            1.1377280603162718e-06
+          ],
+          [
+            1.0962178058762874e-06,
+            0.9995714085784646
+          ]
+        ],
+        "best_assignment": [
+          0,
+          1
+        ],
+        "matched_overlap_squared": [
+          0.9997380351173565,
+          0.9995714085784646
+        ],
+        "subspace_minimum_singular_value_squared": 0.9995497552582489,
+        "support": {
+          "union_size": 13,
+          "a_only_weight": 0.0,
+          "b_only_weight": 0.000327504731622754,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      },
+      {
+        "sector": 7,
+        "mode_overlap_squared": [
+          [
+            0.9981672535264171,
+            0.001294877046580546
+          ],
+          [
+            0.0012743559846194869,
+            0.9983808697084513
+          ]
+        ],
+        "best_assignment": [
+          0,
+          1
+        ],
+        "matched_overlap_squared": [
+          0.9981672535264171,
+          0.9983808697084513
+        ],
+        "subspace_minimum_singular_value_squared": 0.9992531166835981,
+        "support": {
+          "union_size": 13,
+          "a_only_weight": 0.0,
+          "b_only_weight": 0.0003900503364815042,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      },
+      {
+        "sector": 8,
+        "mode_overlap_squared": [
+          [
+            0.9998916875219339,
+            2.4641972229909095e-06
+          ],
+          [
+            1.931804254500967e-06,
+            0.9990584295688797
+          ]
+        ],
+        "best_assignment": [
+          0,
+          1
+        ],
+        "matched_overlap_squared": [
+          0.9998916875219339,
+          0.9990584295688797
+        ],
+        "subspace_minimum_singular_value_squared": 0.9990213328495273,
+        "support": {
+          "union_size": 13,
+          "a_only_weight": 0.0,
+          "b_only_weight": 0.0005150159967331651,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      },
+      {
+        "sector": 9,
+        "mode_overlap_squared": [
+          [
+            0.9999467814928209,
+            1.214536010408994e-07
+          ],
+          [
+            5.8079757940549156e-08,
+            0.9986723455232323
+          ]
+        ],
+        "best_assignment": [
+          0,
+          1
+        ],
+        "matched_overlap_squared": [
+          0.9999467814928209,
+          0.9986723455232323
+        ],
+        "subspace_minimum_singular_value_squared": 0.9986552757192521,
+        "support": {
+          "union_size": 13,
+          "a_only_weight": 0.0,
+          "b_only_weight": 0.0006681887742524795,
+          "reciprocal_shift": [
+            0,
+            0
+          ],
+          "metric": "caller weighted physical components; not QNM residue"
+        }
+      }
+    ],
+    "all_fixed_mode_assignments_preserved": true,
+    "minimum_matched_overlap_squared": 0.9981672535264171,
+    "minimum_subspace_overlap_squared": 0.9986552757192521
+  },
+  "four_to_six_by_observation_time": [
+    {
+      "drive_periods": 2,
+      "max_single_sector_difference": 0.007296424694598649,
+      "max_higher_label_total_difference": 6.66647140471488e-05,
+      "four_mode_higher_peak": 0.6588006655802922,
+      "six_mode_higher_peak": 0.658734000866245
+    },
+    {
+      "drive_periods": 5,
+      "max_single_sector_difference": 0.33574658605599605,
+      "max_higher_label_total_difference": 0.007666846685897344,
+      "four_mode_higher_peak": 0.8397816683599495,
+      "six_mode_higher_peak": 0.8321148216740522
+    },
+    {
+      "drive_periods": 10,
+      "max_single_sector_difference": 0.3797417696169618,
+      "max_higher_label_total_difference": 0.35922931487664195,
+      "four_mode_higher_peak": 0.8436935564879785,
+      "six_mode_higher_peak": 0.8338508513073345
+    },
+    {
+      "drive_periods": 20,
+      "max_single_sector_difference": 0.6515243421038378,
+      "max_higher_label_total_difference": 0.5974178554246998,
+      "four_mode_higher_peak": 0.979508271260996,
+      "six_mode_higher_peak": 0.8483930924887711
+    },
+    {
+      "drive_periods": 42,
+      "max_single_sector_difference": 0.6515243421038378,
+      "max_higher_label_total_difference": 0.6461136060282158,
+      "four_mode_higher_peak": 0.979508271260996,
+      "six_mode_higher_peak": 0.8712995336775876
+    }
+  ]
+}

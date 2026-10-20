@@ -1,0 +1,250 @@
+{
+  "label": "ref12_right",
+  "cache": "sptc_toolbox\\results\\basis_stability\\probes\\science_ref12_Gamma_connected_path\\native.pkl",
+  "cache_sha256": "66ef7b5fbf6fc0aaf1ad0bf2bb4dbb1e7955de3731ee9cf65c642b081770cf49",
+  "kind": 5,
+  "kpoint_ka": [
+    2.243994752564138,
+    0.0
+  ],
+  "meep_kpoint_reciprocal_2pi_over_a": [
+    0.35714285714285715,
+    0.0
+  ],
+  "geometry": {
+    "radius_over_a": 0.3125,
+    "height_over_a": 0.4445234708392603,
+    "epsilon_physical": 16.0,
+    "period_nm": 3296.0,
+    "legume_layer_z": [
+      0,
+      0.4445234708392603
+    ],
+    "meep_layer_z": [
+      -0.22226173541963015,
+      0.22226173541963015
+    ]
+  },
+  "modes": [
+    {
+      "native_mode_index": 8,
+      "cyclic_frequency_fa_over_c": 0.718338248289507,
+      "frequency_THz": 65.3374967021012,
+      "omega_a_over_c": 4.513452327237752,
+      "H_component_norm_fractions": [
+        0.09584287909597161,
+        0.06256855019250104,
+        0.8415885707115274
+      ],
+      "symmetries": {
+        "xz_mirror_y": {
+          "character_real": -1.0,
+          "character_imag": 1.7098033377238258e-39,
+          "eigenvalue_sign": -1,
+          "relative_residual": 1.7856813193795595e-13
+        },
+        "xy_mirror_z": {
+          "character_real": 0.9999999999999999,
+          "character_imag": -1.9096003800740704e-39,
+          "eigenvalue_sign": 1,
+          "relative_residual": 4.232462496895344e-13
+        },
+        "yz_mirror_x": "Maps +kx to -kx; not a same-k parity at the sampled generic kx"
+      },
+      "probe_ratios": {
+        "Hx": {
+          "reference_probe": 5,
+          "ratio_real": [
+            1.2628713886601714e-13,
+            -2.990826786161574e-13,
+            7.389428206847892e-14,
+            8.324686845011965e-14,
+            -1.4762295423492231e-13,
+            1.0
+          ],
+          "ratio_imag": [
+            -3.1029455762265083e-13,
+            7.131119558307808e-14,
+            6.595169861984677e-14,
+            -2.045422079488086e-13,
+            8.580602041226319e-14,
+            0.0
+          ]
+        },
+        "Hz": {
+          "reference_probe": 0,
+          "ratio_real": [
+            0.9999999999999999,
+            -0.27562119280866965,
+            -0.6572051774887384,
+            0.5314550718609096,
+            -0.24965549402010143,
+            -0.27112620202982474
+          ],
+          "ratio_imag": [
+            0.0,
+            -0.17846064605632794,
+            -0.031343574918847754,
+            -1.8504175247730256e-15,
+            -0.047315206217592005,
+            -0.10358802906341012
+          ]
+        },
+        "Ex": {
+          "reference_probe": 3,
+          "ratio_real": [
+            9.746404886864534e-30,
+            7.424395508527992e-15,
+            6.449633545739632e-14,
+            1.0,
+            0.13133944602442385,
+            4.0255385744094035e-14
+          ],
+          "ratio_imag": [
+            6.697736027527305e-16,
+            1.7652421836368323e-14,
+            2.4797027366967075e-14,
+            -0.0,
+            -0.23658153394112671,
+            3.848614320359201e-14
+          ]
+        },
+        "Ey": {
+          "reference_probe": 1,
+          "ratio_real": [
+            -0.01958303026592387,
+            1.0,
+            -0.3955173415700192,
+            -0.006424829806400345,
+            0.5723485687922852,
+            0.6926273347247557
+          ],
+          "ratio_imag": [
+            0.2276290028236187,
+            0.0,
+            -0.20944943212485817,
+            0.07468086308893412,
+            -0.019745951535656683,
+            0.007991080168750608
+          ]
+        }
+      },
+      "source_note": "Use symmetry-compatible Hz or Ey pulses at multiple nonnodal probes; profile overlap is diagnostic, not QNM normalization"
+    },
+    {
+      "native_mode_index": 10,
+      "cyclic_frequency_fa_over_c": 0.7533230392992376,
+      "frequency_THz": 68.51958908360105,
+      "omega_a_over_c": 4.73326825208484,
+      "H_component_norm_fractions": [
+        0.14192532375072717,
+        0.5180214059913021,
+        0.3400532702579707
+      ],
+      "symmetries": {
+        "xz_mirror_y": {
+          "character_real": -0.9999999999999999,
+          "character_imag": -4.1804535826184393e-39,
+          "eigenvalue_sign": -1,
+          "relative_residual": 2.990027242407364e-13
+        },
+        "xy_mirror_z": {
+          "character_real": 1.0,
+          "character_imag": 9.328166250264284e-41,
+          "eigenvalue_sign": 1,
+          "relative_residual": 3.1794425904666896e-13
+        },
+        "yz_mirror_x": "Maps +kx to -kx; not a same-k parity at the sampled generic kx"
+      },
+      "probe_ratios": {
+        "Hx": {
+          "reference_probe": 5,
+          "ratio_real": [
+            1.2351335389093853e-14,
+            4.555735917117026e-14,
+            7.115250076205718e-14,
+            -8.562767700283424e-16,
+            -2.3429031545716376e-15,
+            1.0
+          ],
+          "ratio_imag": [
+            -1.6587167342568192e-13,
+            -3.361417630531146e-14,
+            8.211244662421394e-14,
+            1.1499328314485041e-14,
+            6.80385939050175e-15,
+            0.0
+          ]
+        },
+        "Hz": {
+          "reference_probe": 0,
+          "ratio_real": [
+            1.0,
+            0.0500295929667391,
+            -0.5613224487956466,
+            -0.9542086728769202,
+            -0.8181002775215722,
+            0.9139579217925381
+          ],
+          "ratio_imag": [
+            0.0,
+            -0.13376132612663108,
+            -0.012710161992505624,
+            -7.2103223782156e-14,
+            0.014403898526070342,
+            -0.09291248943705382
+          ]
+        },
+        "Ex": {
+          "reference_probe": 3,
+          "ratio_real": [
+            3.773720588619165e-27,
+            2.230232125612196e-13,
+            4.4726921533731476e-14,
+            1.0,
+            0.9702186926679403,
+            8.971947525051903e-14
+          ],
+          "ratio_imag": [
+            -1.520646228572962e-14,
+            1.1361822387241037e-13,
+            1.625852439918726e-13,
+            0.0,
+            0.09236487187093717,
+            2.081897135435914e-13
+          ]
+        },
+        "Ey": {
+          "reference_probe": 1,
+          "ratio_real": [
+            -0.0030396943641368495,
+            1.0,
+            0.5242246864399467,
+            0.0006294495217382217,
+            0.04155992393720445,
+            0.3029016513778398
+          ],
+          "ratio_imag": [
+            0.06528025793171742,
+            0.0,
+            -0.006408010371412632,
+            -0.013518012737398421,
+            -0.024904809661121314,
+            -0.016974646840620625
+          ]
+        }
+      },
+      "source_note": "Use symmetry-compatible Hz or Ey pulses at multiple nonnodal probes; profile overlap is diagnostic, not QNM normalization"
+    }
+  ],
+  "Fourier_convention": "Legume ft_field/get_field periodic part; physical field exp(i*k.r) explicitly included in exported Bloch arrays",
+  "comparison_contract": [
+    "Same physical geometry, k, polarization sector and spatial origin",
+    "Meep frequencies cyclic f*a/c, decay negative for passive with exp(-i omega t)",
+    "Compare all resolved poles/windows/probes; nearest frequency only locates candidates, never establishes identity",
+    "A late ringdown snapshot can be multimode and is not normalized open-QNM field",
+    "Use common-grid complex field overlap or multi-probe complex amplitudes to distinguish nearby modes",
+    "At kx!=0 only y and z mirrors preserve k; x mirror needs a -kx partner"
+  ],
+  "status": "STATIC_LEGUME_SOURCE_EXPORT_NOT_MEEP_COMPARISON_RESULT"
+}

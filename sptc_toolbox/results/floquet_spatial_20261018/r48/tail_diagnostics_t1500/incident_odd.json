@@ -1,0 +1,440 @@
+{
+  "source": "incident_odd",
+  "sector": -1,
+  "incident": true,
+  "times": [
+    500.0,
+    1000.0,
+    1500.0
+  ],
+  "frequency_cycles": [
+    0.378,
+    0.388,
+    0.398,
+    0.408,
+    0.418
+  ],
+  "resolution": 48,
+  "latest_raw_tail_weighted_norm": 0.0001445169198364721,
+  "raw_window_changes": [
+    {
+      "start": 500.0,
+      "stop": 1000.0,
+      "quantities": {
+        "electric": {
+          "relative_change": 2.126011316834455e-05,
+          "per_frequency_relative_change": [
+            1.792540189912271e-05,
+            8.390590214748483e-06,
+            7.5869308718698215e-06,
+            1.3335479476005588e-05,
+            4.620843028056726e-05
+          ]
+        },
+        "displacement": {
+          "relative_change": 2.3484425562253088e-05,
+          "per_frequency_relative_change": [
+            2.1011894324097985e-05,
+            9.524169720158152e-06,
+            8.331312768760378e-06,
+            1.4154933659324574e-05,
+            4.738098135221477e-05
+          ]
+        },
+        "output": {
+          "relative_change": 7.840093603011048e-07,
+          "per_frequency_relative_change": [
+            7.423603088876448e-07,
+            3.282000144419202e-07,
+            2.787924275798639e-07,
+            4.564886589615436e-07,
+            1.4589143090797986e-06
+          ]
+        },
+        "incoming": {
+          "relative_change": 2.358980166745658e-10,
+          "per_frequency_relative_change": [
+            3.7292535163060893e-10,
+            1.4042823885139036e-10,
+            9.812209989997536e-11,
+            1.2721270323737549e-10,
+            3.059982758865007e-10
+          ]
+        },
+        "native_port_fields": {
+          "relative_change": 1.4231116733307764e-06,
+          "per_frequency_relative_change": [
+            1.4286557106361622e-06,
+            1.0256857735231506e-06,
+            7.427970064255477e-07,
+            7.77294867613735e-07,
+            1.7966582539821478e-06
+          ]
+        }
+      }
+    },
+    {
+      "start": 1000.0,
+      "stop": 1500.0,
+      "quantities": {
+        "electric": {
+          "relative_change": 1.9705067535636875e-05,
+          "per_frequency_relative_change": [
+            1.6600596176027037e-05,
+            7.771582639105659e-06,
+            7.028605164391211e-06,
+            1.235773502141014e-05,
+            4.28406790150278e-05
+          ]
+        },
+        "displacement": {
+          "relative_change": 2.1655745627934092e-05,
+          "per_frequency_relative_change": [
+            1.9357723583540617e-05,
+            8.775793231813913e-06,
+            7.678397134836411e-06,
+            1.3049959304603558e-05,
+            4.370546419412789e-05
+          ]
+        },
+        "output": {
+          "relative_change": 4.969461221827905e-07,
+          "per_frequency_relative_change": [
+            4.7296626369472613e-07,
+            2.089137128865678e-07,
+            1.7725131111987435e-07,
+            2.8969972322603186e-07,
+            9.230880425394653e-07
+          ]
+        },
+        "incoming": {
+          "relative_change": 9.006561886786802e-11,
+          "per_frequency_relative_change": [
+            1.423828598406573e-10,
+            5.361540549014405e-11,
+            3.746289523420493e-11,
+            4.856958113434823e-11,
+            1.1682942821519083e-10
+          ]
+        },
+        "native_port_fields": {
+          "relative_change": 9.020430042976283e-07,
+          "per_frequency_relative_change": [
+            9.102148609733089e-07,
+            6.528950139591754e-07,
+            4.722576377482883e-07,
+            4.932919913439112e-07,
+            1.136785784909776e-06
+          ]
+        }
+      }
+    }
+  ],
+  "fits": {
+    "1": {
+      "status": "TAIL_MODEL_DIAGNOSED",
+      "ranks": 1,
+      "increment_fits": [
+        {
+          "pole_cycles": [
+            [
+              0.4519186861730898,
+              -3.5883444360366274e-05
+            ]
+          ],
+          "retained_spatial_energy_fraction": 0.9999724618273299,
+          "discrete_frequency_fit_relative_residual": 0.005247733002294988,
+          "singular_values": [
+            0.00015594353124594114,
+            8.183467379904866e-07,
+            3.3079090666989366e-09,
+            2.787709454810816e-14,
+            1.9042322044923175e-14
+          ],
+          "all_poles_decaying": true,
+          "pole_alias_interval_cycles": [
+            -6.0,
+            6.0
+          ]
+        },
+        {
+          "pole_cycles": [
+            [
+              0.45184736593104413,
+              -2.5667178274717e-05
+            ]
+          ],
+          "retained_spatial_energy_fraction": 0.999972923730522,
+          "discrete_frequency_fit_relative_residual": 0.005203537605370039,
+          "singular_values": [
+            0.00014451496333369539,
+            7.519849148112007e-07,
+            3.2202241904740615e-09,
+            2.784174560188643e-14,
+            1.850487256408112e-14
+          ],
+          "all_poles_decaying": true,
+          "pole_alias_interval_cycles": [
+            -6.0,
+            6.0
+          ]
+        }
+      ],
+      "later_increment_prediction_relative_residuals": [
+        1.8979528592968244
+      ],
+      "early_late_pole_difference_cycles": [
+        [
+          -7.132024204562974e-05,
+          1.021626608564927e-05
+        ]
+      ],
+      "coefficients": [
+        [
+          -0.9553332604932194,
+          -3.255213448844665
+        ],
+        [
+          1.9553332604932194,
+          3.255213448844665
+        ]
+      ],
+      "coefficient_condition_number": 14.353160777055878,
+      "checks": {
+        "all_poles_decaying": true,
+        "discrete_frequency_law": false,
+        "independent_later_increment": false,
+        "every_pole_time_ratio_consistent": false,
+        "resolved_extrapolation": true
+      },
+      "window_validated": false,
+      "differences": {
+        "electric": {
+          "raw_to_candidate": 6.684951321367159e-05,
+          "early_late_pole_candidate": 3.316299245679965e-05,
+          "shifted_time_window_candidate": 0.00014199432274138838,
+          "per_frequency_raw_to_candidate": [
+            5.6317561982880794e-05,
+            2.6365116894286543e-05,
+            2.3844564545597103e-05,
+            4.192365810903923e-05,
+            0.00014533731078605517
+          ]
+        },
+        "displacement": {
+          "raw_to_candidate": 7.346717165832774e-05,
+          "early_late_pole_candidate": 3.644590876428249e-05,
+          "shifted_time_window_candidate": 0.00015632736378746366,
+          "per_frequency_raw_to_candidate": [
+            6.567107860016751e-05,
+            2.9771892962484907e-05,
+            2.6048978148106554e-05,
+            4.427201871409631e-05,
+            0.00014827109021151434
+          ]
+        },
+        "output": {
+          "raw_to_candidate": 1.685893020283216e-06,
+          "early_late_pole_candidate": 8.363450208755082e-07,
+          "shifted_time_window_candidate": 4.496651873870358e-06,
+          "per_frequency_raw_to_candidate": [
+            1.604539951105244e-06,
+            7.087406977227413e-07,
+            6.013259321215132e-07,
+            9.828081856137532e-07,
+            3.1315882295195397e-06
+          ]
+        },
+        "incoming": {
+          "raw_to_candidate": 3.0554787514889017e-10,
+          "early_late_pole_candidate": 1.5157749785304074e-10,
+          "shifted_time_window_candidate": 9.627510121587232e-10,
+          "per_frequency_raw_to_candidate": [
+            4.830342322259038e-10,
+            1.8189042458274816e-10,
+            1.2709298764951584e-10,
+            1.6477245691029734e-10,
+            3.9634421140860916e-10
+          ]
+        },
+        "native_port_fields": {
+          "raw_to_candidate": 3.060188977102296e-06,
+          "early_late_pole_candidate": 1.5181116377957272e-06,
+          "shifted_time_window_candidate": 8.162203958599935e-06,
+          "per_frequency_raw_to_candidate": [
+            3.0879142089508745e-06,
+            2.214949984374679e-06,
+            1.6021352114669794e-06,
+            1.6734952679175627e-06,
+            3.856559666270912e-06
+          ]
+        }
+      },
+      "independent_validated": false,
+      "selected_for_scattering": false
+    },
+    "2": {
+      "status": "TAIL_MODEL_DIAGNOSED",
+      "ranks": 2,
+      "increment_fits": [
+        {
+          "pole_cycles": [
+            [
+              0.4512101017488752,
+              -1.5779640013260687e-05
+            ],
+            [
+              0.45311976284138045,
+              -4.808401293565615e-05
+            ]
+          ],
+          "retained_spatial_energy_fraction": 0.9999999995500539,
+          "discrete_frequency_fit_relative_residual": 2.1212027485575867e-05,
+          "singular_values": [
+            0.00015594353124594114,
+            8.183467379904866e-07,
+            3.3079090666989366e-09,
+            2.787709454810816e-14,
+            1.9042322044923175e-14
+          ],
+          "all_poles_decaying": true,
+          "pole_alias_interval_cycles": [
+            -6.0,
+            6.0
+          ]
+        },
+        {
+          "pole_cycles": [
+            [
+              0.4512080503773594,
+              -7.49199790555203e-06
+            ],
+            [
+              0.4531822771630153,
+              -6.734872708222228e-05
+            ]
+          ],
+          "retained_spatial_energy_fraction": 0.9999999995034822,
+          "discrete_frequency_fit_relative_residual": 2.2282805315584063e-05,
+          "singular_values": [
+            0.00014451496333369539,
+            7.519849148112007e-07,
+            3.2202241904740615e-09,
+            2.784174560188643e-14,
+            1.850487256408112e-14
+          ],
+          "all_poles_decaying": true,
+          "pole_alias_interval_cycles": [
+            -6.0,
+            6.0
+          ]
+        }
+      ],
+      "later_increment_prediction_relative_residuals": [
+        0.37175650141000266
+      ],
+      "early_late_pole_difference_cycles": [
+        [
+          -2.0513715157988457e-06,
+          8.287642107708655e-06
+        ],
+        [
+          6.251432163482114e-05,
+          -1.9264714146566126e-05
+        ]
+      ],
+      "coefficients": [
+        [
+          0.20789670173255426,
+          -0.12489928013802418
+        ],
+        [
+          0.5313113507700152,
+          -0.015988085203164942
+        ],
+        [
+          0.26079194749743045,
+          0.14088736534118912
+        ]
+      ],
+      "coefficient_condition_number": 9.410313929482145,
+      "checks": {
+        "all_poles_decaying": true,
+        "discrete_frequency_law": true,
+        "independent_later_increment": false,
+        "every_pole_time_ratio_consistent": false,
+        "resolved_extrapolation": true
+      },
+      "window_validated": false,
+      "differences": {
+        "electric": {
+          "raw_to_candidate": 1.0026154729452999e-05,
+          "early_late_pole_candidate": 2.961069949136121e-07,
+          "shifted_time_window_candidate": null,
+          "per_frequency_raw_to_candidate": [
+            8.451796102697087e-06,
+            3.956258521413321e-06,
+            3.577476895330494e-06,
+            6.288555007595048e-06,
+            2.1793224213005424e-05
+          ]
+        },
+        "displacement": {
+          "raw_to_candidate": 1.0991094148974399e-05,
+          "early_late_pole_candidate": 3.243572433147329e-07,
+          "shifted_time_window_candidate": null,
+          "per_frequency_raw_to_candidate": [
+            9.830626328419788e-06,
+            4.456200258917524e-06,
+            3.898376894979546e-06,
+            6.6241524629782246e-06,
+            2.2177655536029676e-05
+          ]
+        },
+        "output": {
+          "raw_to_candidate": 2.0102771728890997e-07,
+          "early_late_pole_candidate": 1.2492757299486465e-08,
+          "shifted_time_window_candidate": null,
+          "per_frequency_raw_to_candidate": [
+            1.9293432146764784e-07,
+            8.508579552198543e-08,
+            7.204347324867343e-08,
+            1.1740293759630485e-07,
+            3.7232210446826104e-07
+          ]
+        },
+        "incoming": {
+          "raw_to_candidate": 4.102857827942884e-11,
+          "early_late_pole_candidate": 3.86629854436896e-12,
+          "shifted_time_window_candidate": null,
+          "per_frequency_raw_to_candidate": [
+            6.48611718692685e-11,
+            2.4424016394607212e-11,
+            1.7065898131186033e-11,
+            2.2125461767435776e-11,
+            5.3220635543095405e-11
+          ]
+        },
+        "native_port_fields": {
+          "raw_to_candidate": 3.648999672764455e-07,
+          "early_late_pole_candidate": 2.2676494838113372e-08,
+          "shifted_time_window_candidate": null,
+          "per_frequency_raw_to_candidate": [
+            3.7129838466862696e-07,
+            2.659091985209003e-07,
+            1.9194825373931072e-07,
+            1.999102121594218e-07,
+            4.5851597782607086e-07
+          ]
+        }
+      },
+      "independent_validated": false,
+      "selected_for_scattering": false
+    }
+  },
+  "source_hashes": {
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t500.npz": "93b3a699efa2ed0087513682789b357fbf80bd4e46aba18e2c910be1b6351ccd",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t1000.npz": "79212c95391d71913839ee838d58b1c5f40e73c4e5cdc4bb26576d76a3a13dbe",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t1500.npz": "9fddc67bc6fc82880f190680067cca2af53f4dae0bdd3c906bfca0abf45c16e4"
+  }
+}

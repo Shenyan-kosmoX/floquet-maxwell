@@ -1,0 +1,90 @@
+schema_version: '0.1'
+kind: case
+id: garg2022-array
+project_id: floquet-maxwell
+title: Garg 2022 Fig.4(a–e) 时变色散球阵列
+stage: results_available
+question:
+  summary: Garg 2022 Fig.4(a–e) 时变色散球阵列
+  scope: 独立球阵列对照；静态及中调制机制有支持，强调制高频多极敏感性和论文差异保留。
+  record:
+    path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/README.md
+capability_refs:
+- open-response-controls
+- forced-scattering
+- dispersive-ade
+model:
+  description: 独立球阵列对照；静态及中调制机制有支持，强调制高频多极敏感性和论文差异保留。
+  record:
+    path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/README.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/README.md
+execution:
+  environment_ref: python-sphere
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/README.md
+    entrypoint:
+      path: sptc_toolbox/baselines/garg_2022_full_figure.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/README.md
+    entrypoint:
+      path: sptc_toolbox/baselines/plot_garg_figure4.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/config.json
+  record:
+    path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/config.json
+- id: output-2
+  description: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/summary.json
+  record:
+    path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/summary.json
+- id: output-3
+  description: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/figure4_data.json
+  record:
+    path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/figure4_data.json
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/README.md
+criteria:
+- id: criterion-1
+  description: 原图五个观测量在三档调制强度和采样频率的截断敏感性。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/README.md
+checks:
+- id: check-1
+  method: 时间谐波与空间多极阶加密、独立偶极场公式及端口幅相控制
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/README.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/README.md
+  artifacts:
+  - path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/config.json
+  - path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/summary.json
+  - path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/figure4_data.json
+  notes: 597点、完整五面板的R/T/A与偶极幅比和相位，88个截断检查记录。 独立球阵列对照；静态及中调制机制有支持，强调制高频多极敏感性和论文差异保留。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/sptc_baselines/garg_2022_full_figure/README.md

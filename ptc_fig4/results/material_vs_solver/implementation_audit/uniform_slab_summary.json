@@ -1,0 +1,8 @@
+{
+  "status": "VERIFIED",
+  "checks": 8,
+  "max_absolute_error": 6.827871601444713e-14,
+  "equation": "q*h=m*pi+2*atan2(factor*alpha,q); factor=1 TE, epsilon TM",
+  "no_legume_slab_solver_reused_in_reference": true,
+  "upstream_single_G_issue": "gmax=0.1 produces IndexError in Legume 1.0.3 compute_eps_inv for uniform layer; gmax=1.1 avoids it. Current cylinder runs gmax>=2.1 are unaffected."
+}

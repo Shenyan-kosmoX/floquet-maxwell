@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "sptc_toolbox\scripts\comsol_zhang2018_unitcell.py", line 133, in main
+    if args.solve:solve(model,args)
+                  ~~~~~^^^^^^^^^^^^
+  File "sptc_toolbox\scripts\comsol_zhang2018_unitcell.py", line 108, in solve
+    model.solve('std1')
+    ~~~~~~~~~~~^^^^^^^^
+  File "D:\Anaconda\Lib\site-packages\mph\model.py", line 339, in solve
+    raise LookupError(error)
+LookupError: Study "std1" does not exist.

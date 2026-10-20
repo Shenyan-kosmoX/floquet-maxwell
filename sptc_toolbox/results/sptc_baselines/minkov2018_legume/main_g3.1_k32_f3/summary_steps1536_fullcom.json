@@ -1,0 +1,151 @@
+{
+  "status": "ACTUAL_LEGUME_SPATIAL_FIELDS_TO_FINITE_MAXWELL_DYNAMICS",
+  "time_integrator": "Full positive/negative second-order Maxwell: exact frozen midpoint substeps; independent refinement required",
+  "steps_per_period": 1536,
+  "depth": 0.02,
+  "targets_T": [
+    0,
+    1.5625,
+    3.125
+  ],
+  "radiation": "Native gamma exported; zero-radiation guided finite basis, no diagonal-Q substitution",
+  "maximum_native_gamma": 0.0,
+  "source_contract": "Minkov/Fan2018 Eq30,Fig9(c-e); source is author manuscript",
+  "cases": [
+    {
+      "drive": 0.01,
+      "seconds": 3.5396332000000257,
+      "xcom": [
+        -5.243598046315206e-15,
+        18.905307246836696,
+        39.28805723114522
+      ],
+      "width": [
+        2.085961524090623,
+        14.774545772258625,
+        27.66250376459231
+      ],
+      "negative_action_fraction": [
+        8.840798159672771e-33,
+        3.640010332674133e-11,
+        2.4708951511634987e-11
+      ],
+      "circular_centers": [
+        -7.353021793103003e-15,
+        18.95706726839867,
+        39.757690554686654
+      ],
+      "periodic_edge_fraction": [
+        3.962081952109657e-08,
+        2.33672362290367e-08,
+        1.265619474494993e-05
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 512,
+      "file": "drive0.01_steps1536_fullcom.npz"
+    },
+    {
+      "drive": 0.001,
+      "seconds": 3.1869246999995084,
+      "xcom": [
+        -5.243598046315206e-15,
+        25.03834957832294,
+        50.03704691977253
+      ],
+      "width": [
+        2.085961524090623,
+        5.171525233128409,
+        9.186935191242501
+      ],
+      "negative_action_fraction": [
+        8.840798159672771e-33,
+        1.2290232194382711e-10,
+        1.5285549366098868e-10
+      ],
+      "circular_centers": [
+        -7.353021793103003e-15,
+        25.044114444471397,
+        50.0440451945229
+      ],
+      "periodic_edge_fraction": [
+        3.962081952109657e-08,
+        2.72430332172471e-05,
+        8.904409617547633e-06
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 512,
+      "file": "drive0.001_steps1536_fullcom.npz"
+    },
+    {
+      "drive": 0.0001,
+      "seconds": 2.727690299999267,
+      "xcom": [
+        -5.243598046315206e-15,
+        25.00637867447727,
+        50.021354770346626
+      ],
+      "width": [
+        2.085961524090623,
+        26.71748562087339,
+        53.02563003657939
+      ],
+      "negative_action_fraction": [
+        8.840798159672771e-33,
+        7.030258305321362e-10,
+        6.732794630276153e-10
+      ],
+      "circular_centers": [
+        -7.353021793103003e-15,
+        25.05572318223634,
+        50.4549061325135
+      ],
+      "periodic_edge_fraction": [
+        3.962081952109657e-08,
+        1.0921623485262021e-05,
+        3.074309935593788e-05
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 512,
+      "file": "drive0.0001_steps1536_fullcom.npz"
+    }
+  ],
+  "initial_state": {
+    "instantaneous_lowest_omega": [
+      1.6131268664580223,
+      1.6131269976139069,
+      1.6131272792011793,
+      1.6131277415141216,
+      1.6131284278819873,
+      1.6131293921899663,
+      1.6131306958080731,
+      1.6131324040971076,
+      1.613134582670502,
+      1.6131372935920303,
+      1.6131405916664219,
+      1.613144520972734,
+      1.6131491117590517,
+      1.6131543777987276,
+      1.6131603142888467,
+      1.6131668963570414,
+      1.6131668963570447,
+      1.6131603142888493,
+      1.6131543777987225,
+      1.6131491117590524,
+      1.6131445209727402,
+      1.6131405916664217,
+      1.613137293592032,
+      1.6131345826705066,
+      1.6131324040971056,
+      1.613130695808067,
+      1.6131293921899668,
+      1.6131284278819835,
+      1.6131277415141183,
+      1.6131272792011804,
+      1.6131269976139122,
+      1.6131268664580185
+    ],
+    "phase_reference": "Physical Ex/Ey/Ez overlap with central-K instantaneous field on y=0,x[-8,8],Gaussian window width4a",
+    "local_reference_overlap_min": 1.2074229209913567,
+    "normalization": "Each K has H norm1 and electric material energy1: q=v/omega_inst,p=-iv; c_K1=1 after physical gauge"
+  }
+}

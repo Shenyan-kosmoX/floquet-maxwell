@@ -1,0 +1,72 @@
+{
+  "status": "ACTUAL_STATIC_SCATTERING_FIELD_RECIPROCITY_CHECK",
+  "rows": [
+    {
+      "harmonic": -1,
+      "reciprocity_amplitudes": [
+        [
+          -0.005202628015671262,
+          -0.002833396635634059
+        ],
+        [
+          -0.005319705062271736,
+          -0.0006815247265306142
+        ]
+      ],
+      "polarization_current_amplitudes": [
+        [
+          -0.005293160930498289,
+          -0.0027145223106906534
+        ],
+        [
+          -0.005440753783460898,
+          -0.000413269283675912
+        ]
+      ],
+      "reciprocal_total_power": 6.385921266670205e-05,
+      "direct_total_power": 6.515877724446492e-05,
+      "relative_complex_amplitude_difference": 0.04088927345819636,
+      "reciprocal_static_power_balance": 1.0014136542651244
+    },
+    {
+      "harmonic": 1,
+      "reciprocity_amplitudes": [
+        [
+          0.005229667731588475,
+          0.00024862235574551935
+        ],
+        [
+          0.004495522982732072,
+          0.0022153260593549802
+        ]
+      ],
+      "polarization_current_amplitudes": [
+        [
+          0.00530873768320457,
+          0.00011703810131422567
+        ],
+        [
+          0.004705095309924609,
+          0.002024600306895486
+        ]
+      ],
+      "reciprocal_total_power": 5.2528634096123735e-05,
+      "direct_total_power": 5.443332198439132e-05,
+      "relative_complex_amplitude_difference": 0.0436816199014411,
+      "reciprocal_static_power_balance": 0.9994989815996291
+    }
+  ],
+  "formula": "deltaS=i omega_out/4 integral E_test . deltaepsilon . E_in, no complex conjugate, unit incoming power",
+  "source_sha256": {
+    "sptc_toolbox\\results\\targeted_resolution\\ports\\reciprocal_f0388_r24\\carrier.npz": "872b26754913b96890e3075577f7cc37c07b8cc67bf018b1dd84c39d22d7a1f9",
+    "sptc_toolbox\\results\\targeted_resolution\\ports\\reciprocal_f0408_r24\\carrier.npz": "d0912498e1b9d6d481230cd822847f5747e6aaa1249cdcee3687208b977baf91",
+    "sptc_toolbox\\results\\connected_physics\\ports\\weak_pattern_r24_time\\carrier.npz": "875da2c2cfadbfd68e26eaae905e023cbb3249419f01b48b2118a4a8195f5adc"
+  },
+  "quadrature": "Full unit cell x/y endpoint-excluded voxel samples; interior slab z samples; physical high-epsilon mask",
+  "scope": "Independent first-order response extraction from two static fields; Gamma, orthogonal zeroth-order x-polarized air ports, actual z mirror; no native-mode residue fit",
+  "limits": [
+    "Fields and masks are finite-grid interpolated; interface smoothing derivative is not identical to a sharp mask",
+    "Both references share a static full-wave geometry; numerical agreement does not prove arbitrary Floquet completeness",
+    "Weak modulation only; no carrier depletion or repeated conversion"
+  ]
+}

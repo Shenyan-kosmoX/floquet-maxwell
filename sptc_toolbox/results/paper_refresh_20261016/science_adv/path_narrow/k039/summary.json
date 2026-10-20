@@ -1,0 +1,74 @@
+{
+  "k_index": 39,
+  "kpoint": [
+    3.141592653589793,
+    1.3744467859455345
+  ],
+  "path_coordinate": 2.4375,
+  "all_window_modes": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "all_window_frequencies_thz": [
+    63.8906430576326,
+    64.71928810235678,
+    66.26090684258027,
+    67.77742831689821,
+    71.84022284773508
+  ],
+  "modes": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "seed_tracking": {
+    "k_index": 39,
+    "modes": [
+      8,
+      10
+    ],
+    "overlap": 0.9963318534693134,
+    "ambiguous": false
+  },
+  "forbidden_modulation_relative_max": 0.0,
+  "declared_window_thz": [
+    63.0,
+    72.0
+  ],
+  "selection": "Connected component of actual field-derived modulation overlap within declared frequency window plus tracked parents, threshold1e-6; no radiation-loss cuts",
+  "cases": {
+    "static": {
+      "m": 0.0,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0,
+      "projection_fast_generic_error": 4.069863842713091e-16,
+      "common_sample_collective_loss_ratio": 0.09188794686188895,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "weak": {
+      "m": 0.0001,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0016,
+      "projection_fast_generic_error": 6.015549107710381e-16,
+      "common_sample_collective_loss_ratio": 0.09188794686188895,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "strong": {
+      "m": 0.03,
+      "drive_thz": 134.0,
+      "absolute_epsilon_amplitude": 0.48,
+      "projection_fast_generic_error": 4.2888865189742026e-16,
+      "common_sample_collective_loss_ratio": 0.09340190990949129,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    }
+  },
+  "elapsed_seconds": 5.312935900001321
+}

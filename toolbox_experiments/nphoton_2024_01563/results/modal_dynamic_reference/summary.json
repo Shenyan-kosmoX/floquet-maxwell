@@ -1,0 +1,2613 @@
+{
+  "status": "STATIC_CALIBRATED_SINGLE_MODE_FLOQUET_AND_INDEPENDENT_ODE",
+  "convention": "exp(-i 2 pi f t); cyclic f*a/c, time t*c/a, epsilon=11.68+10.68*m*cos(2*pi*f_drive*t)",
+  "closure": "x_tt + [(2*pi*f0)^2 + 2*(2*pi*f0)*(2*pi*df/depsilon)*Delta_epsilon*cos(2*pi*f_drive*t)] x=0",
+  "measured_inputs": {
+    "q": [
+      0.82,
+      0.84,
+      0.86,
+      0.88,
+      0.9
+    ],
+    "frequencies": [
+      0.4062457143916931,
+      0.4070869658127326,
+      0.40775204717350955,
+      0.40827515507288625,
+      0.40868116168798835
+    ],
+    "carrier": 0.40775204717350955,
+    "sensitivity": -0.015214563860724107,
+    "epsilon_values": [
+      11.6266,
+      11.68,
+      11.7334
+    ],
+    "epsilon_perturbed_frequencies": [
+      0.4085666893905649,
+      0.40775204717350955,
+      0.40694177397023956
+    ],
+    "epsilon_field_overlaps": [
+      0.9999980002912453,
+      0.9999980569359013
+    ],
+    "adjacent_q_field_overlaps": [
+      0.9989616372637382,
+      0.9991573496521078,
+      0.9993015985703565,
+      0.9994094846132198
+    ],
+    "one_sided_sensitivities": [
+      -0.01525547222950094,
+      -0.015173655491947272
+    ],
+    "relative_one_sided_spread": 0.005377527630934911,
+    "files_sha256": {
+      "results/array/q0.82_r32_eps11.68/summary_v2.json": "ae530e39c6d8a52080c4c8c6455a97160fac94b527d0f39021ea5efe87d769b2",
+      "results/array/q0.82_r32_eps11.68/modal_fields_v2.npz": "9029e2bb3bb4c550d66800f071fcb497211ce84ae367428008ff58012e65de73",
+      "results/array/q0.84_r32_eps11.68/summary_v2.json": "da5ac286135c01645a469fbe9247b9d5f0c201b30dec38960ec4aca4fd339480",
+      "results/array/q0.84_r32_eps11.68/modal_fields_v2.npz": "3a0bef31a9b78d8ea768691900347d8aef2c476583614bb653cfe855d3cb5553",
+      "results/array/q0.86_r32_eps11.68/summary_v2.json": "4c9d439aefd57e3990283c96fd03c90c46d0460eaa7ec2e8b2364b6f7aada593",
+      "results/array/q0.86_r32_eps11.68/modal_fields_v2.npz": "425bc0b35716959f46447c6c9a70f74f22e8aa66bacc4396b54f9e475ea91426",
+      "results/array/q0.88_r32_eps11.68/summary_v2.json": "6de636bd8a2733945d2cfe78fdc7764f23f112e322591de85920fd9eaa5028e0",
+      "results/array/q0.88_r32_eps11.68/modal_fields_v2.npz": "b9b64085b60d5671ef1c5684c1e1e2d4da0dc3c51b4c497d1a36ecb9d241ee4b",
+      "results/array/q0.9_r32_eps11.68/summary_v2.json": "4f58224aac1c6c0c907a4856c3653b5032eeec147316155b30105e758338a23a",
+      "results/array/q0.9_r32_eps11.68/modal_fields_v2.npz": "74e1aa55107e00e7b32c2b766d4e23a353bb0c262b091d8cd75819dba760a707",
+      "results/array/q0.86_r32_eps11.6266/summary_v2.json": "82cb7f6616270eb5a0f542099ed8bd00eb5bdf59650b40fdc55852def7105782",
+      "results/array/q0.86_r32_eps11.6266/modal_fields_v2.npz": "333dbc9e7b2af84d19b858f59169098383b0f20e89ed416891d32c06004ebbc6",
+      "results/array/q0.86_r32_eps11.7334/summary_v2.json": "a5168f9c0097caa0b15e0480a34e17b57638d2f71f489d451201542054a092cb",
+      "results/array/q0.86_r32_eps11.7334/modal_fields_v2.npz": "363bd3edae4a5571c3e7a4bebeb0322533e9fa0242a664bbdf42737800202af0"
+    },
+    "static_scope": "Real bound-mode frequency and H shape only; tiny numerical fitted decay is not imported"
+  },
+  "override_provenance": null,
+  "m": 0.01,
+  "center": {
+    "carrier": 0.40775204717350955,
+    "drive": 0.8155040943470191,
+    "sensitivity": -0.015214563860724107,
+    "epsilon_amplitude": 0.1068,
+    "growth_cyclic": 0.0008124561981712837,
+    "amplitude_growth_per_meep_time": 0.005104812847076796,
+    "growth_per_drive_period": 0.006259702290231004,
+    "ode_growth_cyclic": 0.0008124561979211007,
+    "rwa_coupling_cyclic": 0.0008124577101626673,
+    "rwa_growth_cyclic": 0.0008124577101626673,
+    "detuning_cyclic": 0.0,
+    "max_multiplier_error": 1.9397826096961945e-12,
+    "monodromy_determinant": 0.9999999999972675,
+    "quasifrequencies_over_drive_real": [
+      -0.4999999999999996,
+      -0.4999999999999997
+    ],
+    "quasifrequencies_over_drive_imag": [
+      -0.0009962625617737965,
+      0.0009962625617739222
+    ],
+    "maximum_eigen_residual": 1.6307698134266062e-16,
+    "maximum_harmonic_edge_weight": 1.9839594784800156e-14,
+    "n_harmonics": 3,
+    "n_samples": 128,
+    "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP"
+  },
+  "carrier_THz": 193.48051357498952,
+  "fixed_drive_THz": 386.96102714997903,
+  "paper_reference_carrier_THz": 196.0,
+  "spatial_frequency_offset_THz": -2.5194864250104843,
+  "harmonic_convergence": [
+    {
+      "n_harmonics": 2,
+      "status": "TRUNCATION_REJECTED",
+      "reason": "Found 0/2 independent quasifrequency classes. Increase N, resolve a degeneracy as a subspace, or inspect the raw spectrum; do not report an incomplete band spectrum."
+    },
+    {
+      "carrier": 0.40775204717350955,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008124561981712837,
+      "amplitude_growth_per_meep_time": 0.005104812847076796,
+      "growth_per_drive_period": 0.006259702290231004,
+      "ode_growth_cyclic": 0.0008124561979211007,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008124577101626673,
+      "detuning_cyclic": 0.0,
+      "max_multiplier_error": 1.9397826096961945e-12,
+      "monodromy_determinant": 0.9999999999972675,
+      "quasifrequencies_over_drive_real": [
+        -0.4999999999999996,
+        -0.4999999999999997
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009962625617737965,
+        0.0009962625617739222
+      ],
+      "maximum_eigen_residual": 1.6307698134266062e-16,
+      "maximum_harmonic_edge_weight": 1.9839594784800156e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP"
+    },
+    {
+      "carrier": 0.40775204717350955,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008124561981712731,
+      "amplitude_growth_per_meep_time": 0.005104812847076729,
+      "growth_per_drive_period": 0.006259702290230922,
+      "ode_growth_cyclic": 0.0008124561979211007,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008124577101626673,
+      "detuning_cyclic": 0.0,
+      "max_multiplier_error": 1.9395623492400658e-12,
+      "monodromy_determinant": 0.9999999999972675,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000007,
+        0.4999999999999995
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009962625617739457,
+        0.0009962625617739094
+      ],
+      "maximum_eigen_residual": 6.324831270387098e-16,
+      "maximum_harmonic_edge_weight": 1.0631209571555664e-30,
+      "n_harmonics": 5,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP"
+    }
+  ],
+  "temporal_sampling_convergence": [
+    {
+      "carrier": 0.40775204717350955,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008124561981711733,
+      "amplitude_growth_per_meep_time": 0.005104812847076102,
+      "growth_per_drive_period": 0.006259702290230153,
+      "ode_growth_cyclic": 0.0008124561979211007,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008124577101626673,
+      "detuning_cyclic": 0.0,
+      "max_multiplier_error": 1.9388949235957422e-12,
+      "monodromy_determinant": 0.9999999999972675,
+      "quasifrequencies_over_drive_real": [
+        -0.49999999999999967,
+        0.4999999999999996
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.000996262561773787,
+        -0.0009962625617738
+      ],
+      "maximum_eigen_residual": 2.2260184693422577e-16,
+      "maximum_harmonic_edge_weight": 1.9839594784792555e-14,
+      "n_harmonics": 3,
+      "n_samples": 64,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP"
+    },
+    {
+      "carrier": 0.40775204717350955,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008124561981712837,
+      "amplitude_growth_per_meep_time": 0.005104812847076796,
+      "growth_per_drive_period": 0.006259702290231004,
+      "ode_growth_cyclic": 0.0008124561979211007,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008124577101626673,
+      "detuning_cyclic": 0.0,
+      "max_multiplier_error": 1.9397826096961945e-12,
+      "monodromy_determinant": 0.9999999999972675,
+      "quasifrequencies_over_drive_real": [
+        -0.4999999999999996,
+        -0.4999999999999997
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009962625617737965,
+        0.0009962625617739222
+      ],
+      "maximum_eigen_residual": 1.6307698134266062e-16,
+      "maximum_harmonic_edge_weight": 1.9839594784800156e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP"
+    },
+    {
+      "carrier": 0.40775204717350955,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008124561981712845,
+      "amplitude_growth_per_meep_time": 0.005104812847076801,
+      "growth_per_drive_period": 0.00625970229023101,
+      "ode_growth_cyclic": 0.0008124561979211007,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008124577101626673,
+      "detuning_cyclic": 0.0,
+      "max_multiplier_error": 1.939785586484798e-12,
+      "monodromy_determinant": 0.9999999999972675,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000006,
+        -0.5000000000000007
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.000996262561773509,
+        0.0009962625617739233
+      ],
+      "maximum_eigen_residual": 2.315978314128363e-16,
+      "maximum_harmonic_edge_weight": 1.983959478480352e-14,
+      "n_harmonics": 3,
+      "n_samples": 256,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP"
+    }
+  ],
+  "sweep": [
+    {
+      "carrier": 0.4062457143916931,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 9.19921765484843e-19,
+      "amplitude_growth_per_meep_time": 5.780038920649071e-18,
+      "growth_per_drive_period": 7.087688413480249e-18,
+      "ode_growth_cyclic": -1.8131790976761717e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.001506332781816444,
+      "max_multiplier_error": 4.459287891991869e-12,
+      "monodromy_determinant": 0.9999999999972061,
+      "quasifrequencies_over_drive_real": [
+        -0.49844399718718363,
+        0.4984439971871841
+      ],
+      "quasifrequencies_over_drive_imag": [
+        1.128040646100535e-18,
+        -5.571674799061416e-17
+      ],
+      "maximum_eigen_residual": 2.246752158512286e-16,
+      "maximum_harmonic_edge_weight": 3.044450166959802e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.82
+    },
+    {
+      "carrier": 0.4062919854684608,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 6.5119044146626606e-18,
+      "amplitude_growth_per_meep_time": 4.0915502139966315e-17,
+      "growth_per_drive_period": 5.0172037667974797e-17,
+      "ode_growth_cyclic": -1.8121704150342153e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.001460061705048754,
+      "max_multiplier_error": 4.528422393004034e-12,
+      "monodromy_determinant": 0.9999999999972078,
+      "quasifrequencies_over_drive_real": [
+        0.4985118133894099,
+        -0.49851181338940953
+      ],
+      "quasifrequencies_over_drive_imag": [
+        7.985127799850958e-18,
+        7.931412766176844e-18
+      ],
+      "maximum_eigen_residual": 2.320074497991882e-16,
+      "maximum_harmonic_edge_weight": 3.2635566011483404e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.821
+    },
+    {
+      "carrier": 0.40633785990274485,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 2.74062870496655e-17,
+      "amplitude_growth_per_meep_time": 1.7219878011480445e-16,
+      "growth_per_drive_period": 2.1115624226593913e-16,
+      "ode_growth_cyclic": -1.810873537351699e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0014141872707646996,
+      "max_multiplier_error": 4.605877816577597e-12,
+      "monodromy_determinant": 0.9999999999972093,
+      "quasifrequencies_over_drive_real": [
+        0.49858000709984457,
+        -0.49858000709984523
+      ],
+      "quasifrequencies_over_drive_imag": [
+        3.3606559721334006e-17,
+        2.398895249510928e-17
+      ],
+      "maximum_eigen_residual": 2.326871180452143e-16,
+      "maximum_harmonic_edge_weight": 3.505896649083986e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.822
+    },
+    {
+      "carrier": 0.40638332996819215,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 4.386956669306812e-18,
+      "amplitude_growth_per_meep_time": 2.7564061687822058e-17,
+      "growth_per_drive_period": 3.380002856992745e-17,
+      "ode_growth_cyclic": -1.810008952230022e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0013687172053173935,
+      "max_multiplier_error": 4.681383101076519e-12,
+      "monodromy_determinant": 0.9999999999972107,
+      "quasifrequencies_over_drive_real": [
+        0.498648684437082,
+        -0.4986486844370822
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -3.236783090423013e-17,
+        5.37944162355124e-18
+      ],
+      "maximum_eigen_residual": 2.979592672849408e-16,
+      "maximum_harmonic_edge_weight": 3.7749385755949534e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.823
+    },
+    {
+      "carrier": 0.4064283879384498,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 2.0571064793683356e-17,
+      "amplitude_growth_per_meep_time": 1.2925181206471052e-16,
+      "growth_per_drive_period": 1.5849314915850118e-16,
+      "ode_growth_cyclic": -1.8085679770272263e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0013236592350597265,
+      "max_multiplier_error": 4.789276188400518e-12,
+      "monodromy_determinant": 0.999999999997213,
+      "quasifrequencies_over_drive_real": [
+        -0.49871797581451854,
+        0.49871797581451993
+      ],
+      "quasifrequencies_over_drive_imag": [
+        2.5224968134776537e-17,
+        1.6538244806097634e-17
+      ],
+      "maximum_eigen_residual": 1.9487599745286707e-16,
+      "maximum_harmonic_edge_weight": 4.074870698608148e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.824
+    },
+    {
+      "carrier": 0.4064730260871648,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 4.4102942040073494e-17,
+      "amplitude_growth_per_meep_time": 2.7710695742958266e-16,
+      "growth_per_drive_period": 3.3979836441098987e-16,
+      "ode_growth_cyclic": -1.807847489425829e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.001279021086344756,
+      "max_multiplier_error": 4.900236319493051e-12,
+      "monodromy_determinant": 0.9999999999972143,
+      "quasifrequencies_over_drive_real": [
+        -0.49878804338834104,
+        0.4987880433883425
+      ],
+      "quasifrequencies_over_drive_imag": [
+        5.4080589350550206e-17,
+        -1.3364018939425176e-17
+      ],
+      "maximum_eigen_residual": 2.873524579661369e-16,
+      "maximum_harmonic_edge_weight": 4.4108082224406e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.825
+    },
+    {
+      "carrier": 0.4065172366879841,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 2.5678150270749573e-17,
+      "amplitude_growth_per_meep_time": 1.6134057649672322e-16,
+      "growth_per_drive_period": 1.9784152846701518e-16,
+      "ode_growth_cyclic": -1.8066947092635924e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0012348104855254283,
+      "max_multiplier_error": 5.0268289799128584e-12,
+      "monodromy_determinant": 0.9999999999972161,
+      "quasifrequencies_over_drive_real": [
+        -0.49885909166491055,
+        0.4988590916649107
+      ],
+      "quasifrequencies_over_drive_imag": [
+        3.14874572043814e-17,
+        -1.8634100519981143e-17
+      ],
+      "maximum_eigen_residual": 2.4750613322648327e-16,
+      "maximum_harmonic_edge_weight": 4.789081621359057e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.826
+    },
+    {
+      "carrier": 0.40656101201455475,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": -1.5153315708242714e-18,
+      "amplitude_growth_per_meep_time": -9.521109061308425e-18,
+      "growth_per_drive_period": -1.1675121102772704e-17,
+      "ode_growth_cyclic": -1.805541929101356e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0011910351589548007,
+      "max_multiplier_error": 5.193532855236562e-12,
+      "monodromy_determinant": 0.9999999999972179,
+      "quasifrequencies_over_drive_real": [
+        -0.498931383060416,
+        0.49893138306041673
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -1.119057629426924e-17,
+        -1.858153234702776e-18
+      ],
+      "maximum_eigen_residual": 3.228742780654985e-16,
+      "maximum_harmonic_edge_weight": 5.2176500587625e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.827
+    },
+    {
+      "carrier": 0.4066043443405238,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": -3.254160683678898e-18,
+      "amplitude_growth_per_meep_time": -2.0446494594892732e-17,
+      "growth_per_drive_period": -2.5072215745605066e-17,
+      "ode_growth_cyclic": -1.8046773439796789e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0011477028329857641,
+      "max_multiplier_error": 5.3927172708691595e-12,
+      "monodromy_determinant": 0.9999999999972191,
+      "quasifrequencies_over_drive_real": [
+        -0.49900526154063934,
+        0.49900526154064223
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -8.790965176526809e-18,
+        -3.9903670701794966e-18
+      ],
+      "maximum_eigen_residual": 4.945142365518666e-16,
+      "maximum_harmonic_edge_weight": 5.70671431912032e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.828
+    },
+    {
+      "carrier": 0.40664722593953817,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 5.439730112547374e-17,
+      "amplitude_growth_per_meep_time": 3.4178832318180014e-16,
+      "growth_per_drive_period": 4.19112945662735e-16,
+      "ode_growth_cyclic": -1.803668661337722e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0011048212339713759,
+      "max_multiplier_error": 5.614035607797711e-12,
+      "monodromy_determinant": 0.9999999999972207,
+      "quasifrequencies_over_drive_real": [
+        0.499081190096252,
+        -0.4990811900962518
+      ],
+      "quasifrequencies_over_drive_imag": [
+        6.670389701602922e-17,
+        -9.128410454055295e-17
+      ],
+      "maximum_eigen_residual": 1.1403339695132336e-16,
+      "maximum_harmonic_edge_weight": 6.269663596003831e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.829
+    },
+    {
+      "carrier": 0.40668964908524485,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 6.244293689404104e-17,
+      "amplitude_growth_per_meep_time": 3.923405436297808e-16,
+      "growth_per_drive_period": 4.811018685858728e-16,
+      "ode_growth_cyclic": -1.8026599786957653e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0010623980882646933,
+      "max_multiplier_error": 5.917083585056933e-12,
+      "monodromy_determinant": 0.9999999999972223,
+      "quasifrequencies_over_drive_real": [
+        -0.49915981335794624,
+        0.4991598133579478
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -3.8879119862205876e-17,
+        7.656974051618909e-17
+      ],
+      "maximum_eigen_residual": 2.111143441682528e-16,
+      "maximum_harmonic_edge_weight": 6.924615133978857e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.83
+    },
+    {
+      "carrier": 0.4067316060512909,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 1.39693450869866e-17,
+      "amplitude_growth_per_meep_time": 8.777198380147555e-17,
+      "growth_per_drive_period": 1.0762911481364825e-16,
+      "ode_growth_cyclic": -1.801507198533529e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0010204411222186627,
+      "max_multiplier_error": 6.3074143655918914e-12,
+      "monodromy_determinant": 0.999999999997224,
+      "quasifrequencies_over_drive_real": [
+        0.4992420694508474,
+        -0.4992420694508476
+      ],
+      "quasifrequencies_over_drive_imag": [
+        1.7129705643197257e-17,
+        -3.101380683258619e-17
+      ],
+      "maximum_eigen_residual": 1.539617770013751e-16,
+      "maximum_harmonic_edge_weight": 7.6970884696422e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.831
+    },
+    {
+      "carrier": 0.4067730891113233,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 1.119973353923559e-17,
+      "amplitude_growth_per_meep_time": 7.037000121805149e-17,
+      "growth_per_drive_period": 8.629018751205331e-17,
+      "ode_growth_cyclic": -1.8003544183712926e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0009789580621862304,
+      "max_multiplier_error": 6.8491323109536735e-12,
+      "monodromy_determinant": 0.9999999999972256,
+      "quasifrequencies_over_drive_real": [
+        0.49932940824457267,
+        -0.49932940824457356
+      ],
+      "quasifrequencies_over_drive_imag": [
+        1.3733509882869822e-17,
+        -2.2051032827863135e-17
+      ],
+      "maximum_eigen_residual": 1.831395235687779e-16,
+      "maximum_harmonic_edge_weight": 8.625075752005641e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.832
+    },
+    {
+      "carrier": 0.40681409053898915,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 6.484568575308154e-19,
+      "amplitude_growth_per_meep_time": 4.074374599577466e-18,
+      "growth_per_drive_period": 4.9961424201552925e-18,
+      "ode_growth_cyclic": -1.7989134431684972e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0009379566345203982,
+      "max_multiplier_error": 7.66376184409298e-12,
+      "monodromy_determinant": 0.999999999997228,
+      "quasifrequencies_over_drive_real": [
+        -0.49942427281695356,
+        0.49942427281695395
+      ],
+      "quasifrequencies_over_drive_imag": [
+        7.951607625588198e-19,
+        -2.4708594844080677e-17
+      ],
+      "maximum_eigen_residual": 3.0477965470632504e-16,
+      "maximum_harmonic_edge_weight": 9.769906837085315e-15,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.833
+    },
+    {
+      "carrier": 0.4068546026079353,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 3.2285206777841336e-17,
+      "amplitude_growth_per_meep_time": 2.0285393686578747e-16,
+      "growth_per_drive_period": 2.4874668106751114e-16,
+      "ode_growth_cyclic": -1.7979047605265405e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0008974445655742236,
+      "max_multiplier_error": 9.006556184891758e-12,
+      "monodromy_determinant": 0.9999999999972293,
+      "quasifrequencies_over_drive_real": [
+        -0.4995313776805911,
+        0.4995313776805921
+      ],
+      "quasifrequencies_over_drive_imag": [
+        3.958926386959758e-17,
+        1.8765998168811683e-17
+      ],
+      "maximum_eigen_residual": 2.398619319610852e-16,
+      "maximum_harmonic_edge_weight": 1.1244265011803784e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.834
+    },
+    {
+      "carrier": 0.40689461759180884,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 4.3655628058507514e-17,
+      "amplitude_growth_per_meep_time": 2.742964007929113e-16,
+      "growth_per_drive_period": 3.363519603326366e-16,
+      "ode_growth_cyclic": -1.797184272925143e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0008574295817007083,
+      "max_multiplier_error": 1.1961978388757851e-11,
+      "monodromy_determinant": 0.9999999999972304,
+      "quasifrequencies_over_drive_real": [
+        0.499662406098554,
+        -0.49966240609855467
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -7.439406087989078e-17,
+        5.3532077105588215e-17
+      ],
+      "maximum_eigen_residual": 1.6782130005644068e-16,
+      "maximum_harmonic_edge_weight": 1.331212344041937e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.835
+    },
+    {
+      "carrier": 0.4069341277642568,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 7.99932392744131e-16,
+      "amplitude_growth_per_meep_time": 5.026123456826934e-15,
+      "growth_per_drive_period": 6.163210573272956e-15,
+      "ode_growth_cyclic": -1.7958873952426272e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": -0.0008179194092527431,
+      "max_multiplier_error": 3.217014814336202e-11,
+      "monodromy_determinant": 0.9999999999972328,
+      "quasifrequencies_over_drive_real": [
+        0.4998800431673281,
+        -0.4998800431673342
+      ],
+      "quasifrequencies_over_drive_imag": [
+        2.3377137372450826e-16,
+        9.80905428052625e-16
+      ],
+      "maximum_eigen_residual": 1.774333008268518e-16,
+      "maximum_harmonic_edge_weight": 1.7292374959657498e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.836
+    },
+    {
+      "carrier": 0.40697312539892616,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.00022964073957997414,
+      "amplitude_growth_per_meep_time": 0.0014428753208587473,
+      "growth_per_drive_period": 0.001769304815096078,
+      "ode_growth_cyclic": 0.00022964073769569736,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.00023101601650672276,
+      "detuning_cyclic": -0.0007789217745833854,
+      "max_multiplier_error": 1.4543477553608561e-11,
+      "monodromy_determinant": 0.9999999999972337,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000001,
+        0.5000000000000002
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0002815936071588327,
+        -0.0002815936071587443
+      ],
+      "maximum_eigen_residual": 3.7006450865702423e-16,
+      "maximum_harmonic_edge_weight": 1.966344373599151e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.837
+    },
+    {
+      "carrier": 0.4070116027694639,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0003335075516102923,
+      "amplitude_growth_per_meep_time": 0.002095489748111226,
+      "growth_per_drive_period": 0.0025695637368799503,
+      "ode_growth_cyclic": 0.0003335075503057542,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.00033440935291984003,
+      "detuning_cyclic": -0.000740444404045637,
+      "max_multiplier_error": 1.007682858300253e-11,
+      "monodromy_determinant": 0.9999999999972357,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000004,
+        0.49999999999999917
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.00040895877031412646,
+        -0.0004089587703124398
+      ],
+      "maximum_eigen_residual": 4.46574033052343e-16,
+      "maximum_harmonic_edge_weight": 1.967211193748074e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.838
+    },
+    {
+      "carrier": 0.40704955214951705,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.00040745148784777257,
+      "amplitude_growth_per_meep_time": 0.002560093201833586,
+      "growth_per_drive_period": 0.003139276944873556,
+      "ode_growth_cyclic": 0.00040745148678799265,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.00040815226578881284,
+      "detuning_cyclic": -0.0007024950239924999,
+      "max_multiplier_error": 8.191003467095234e-12,
+      "monodromy_determinant": 0.9999999999972374,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000001,
+        -0.5000000000000001
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0004996314435110499,
+        -0.0004996314435111722
+      ],
+      "maximum_eigen_residual": 2.367963647952516e-16,
+      "maximum_harmonic_edge_weight": 1.9680664585827677e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.839
+    },
+    {
+      "carrier": 0.4070869658127326,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0004660612526910415,
+      "amplitude_growth_per_meep_time": 0.0029283492151540645,
+      "growth_per_drive_period": 0.003590845509486765,
+      "ode_growth_cyclic": 0.00046606125177645356,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.00046664152660247127,
+      "detuning_cyclic": -0.0006650813607769201,
+      "max_multiplier_error": 7.071899175386856e-12,
+      "monodromy_determinant": 0.9999999999972384,
+      "quasifrequencies_over_drive_real": [
+        -0.49999999999999956,
+        0.4999999999999994
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.000571500812714154,
+        -0.0005715008127144503
+      ],
+      "maximum_eigen_residual": 2.975198254898575e-16,
+      "maximum_harmonic_edge_weight": 1.9689099792637707e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.84
+    },
+    {
+      "carrier": 0.4071239185871075,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0005148113676646013,
+      "amplitude_growth_per_meep_time": 0.0032346552212792513,
+      "growth_per_drive_period": 0.00396644878143655,
+      "ode_growth_cyclic": 0.0005148113668496461,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0005153076845413186,
+      "detuning_cyclic": -0.0006281285864020436,
+      "max_multiplier_error": 6.3038493036145895e-12,
+      "monodromy_determinant": 0.9999999999972401,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000008,
+        -0.500000000000001
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0006312799300863578,
+        0.0006312799300864518
+      ],
+      "maximum_eigen_residual": 3.222004871037366e-16,
+      "maximum_harmonic_edge_weight": 1.9697434300914393e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.841
+    },
+    {
+      "carrier": 0.40716048960878387,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.000556476017815972,
+      "amplitude_growth_per_meep_time": 0.0034964419389391208,
+      "growth_per_drive_period": 0.004287460925305042,
+      "ode_growth_cyclic": 0.0005564760170767479,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.000556908590720769,
+      "detuning_cyclic": -0.0005915575647256754,
+      "max_multiplier_error": 5.719869151912634e-12,
+      "monodromy_determinant": 0.999999999997242,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000002,
+        -0.5000000000000008
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0006823705995756489,
+        -0.0006823705995756298
+      ],
+      "maximum_eigen_residual": 2.219362079435292e-16,
+      "maximum_harmonic_edge_weight": 1.970568584680573e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.842
+    },
+    {
+      "carrier": 0.4071966776136266,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0005926212070937281,
+      "amplitude_growth_per_meep_time": 0.0037235488611343432,
+      "growth_per_drive_period": 0.004565947475856415,
+      "ode_growth_cyclic": 0.0005926212064151609,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.000593002683601169,
+      "detuning_cyclic": -0.0005553695598829456,
+      "max_multiplier_error": 5.252021041732657e-12,
+      "monodromy_determinant": 0.9999999999972436,
+      "quasifrequencies_over_drive_real": [
+        0.5,
+        0.5
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0007266931106805295,
+        0.0007266931106805108
+      ],
+      "maximum_eigen_residual": 3.5450225728526297e-16,
+      "maximum_harmonic_edge_weight": 1.9713854051260714e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.843
+    },
+    {
+      "carrier": 0.4072324813375007,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0006242720588845831,
+      "amplitude_growth_per_meep_time": 0.003922417028066362,
+      "growth_per_drive_period": 0.004809806664682749,
+      "ode_growth_cyclic": 0.0006242720582554643,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0006246109772131496,
+      "detuning_cyclic": -0.0005195658360088729,
+      "max_multiplier_error": 4.870548442300526e-12,
+      "monodromy_determinant": 0.9999999999972444,
+      "quasifrequencies_over_drive_real": [
+        -0.5,
+        -0.49999999999999994
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.000765504506000518,
+        0.000765504506000602
+      ],
+      "maximum_eigen_residual": 1.5224168228035011e-16,
+      "maximum_harmonic_edge_weight": 1.9721938536494474e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.844
+    },
+    {
+      "carrier": 0.40726789951627096,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0006521456974979394,
+      "amplitude_growth_per_meep_time": 0.004097552264659436,
+      "growth_per_drive_period": 0.00502456369387131,
+      "ode_growth_cyclic": 0.0006521456969115054,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.000652448141075712,
+      "detuning_cyclic": -0.0004841476572385872,
+      "max_multiplier_error": 4.5410393336213604e-12,
+      "monodromy_determinant": 0.9999999999972469,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000002,
+        0.49999999999999895
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0007996841487597357,
+        0.0007996841487596919
+      ],
+      "maximum_eigen_residual": 2.791934637170428e-16,
+      "maximum_harmonic_edge_weight": 1.972993891769518e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.845
+    },
+    {
+      "carrier": 0.4073029308858024,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0006767687288027549,
+      "amplitude_growth_per_meep_time": 0.004252263333172076,
+      "growth_per_drive_period": 0.005214275884876947,
+      "ode_growth_cyclic": 0.000676768728253014,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0006770392092921218,
+      "detuning_cyclic": -0.00044911628770716305,
+      "max_multiplier_error": 4.257705369012977e-12,
+      "monodromy_determinant": 0.9999999999972484,
+      "quasifrequencies_over_drive_real": [
+        0.4999999999999999,
+        0.5000000000000001
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0008298777817232156,
+        0.0008298777817230327
+      ],
+      "maximum_eigen_residual": 9.383580377220577e-17,
+      "maximum_harmonic_edge_weight": 1.973785480706968e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.846
+    },
+    {
+      "carrier": 0.40733757418195987,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0006985424553796173,
+      "amplitude_growth_per_meep_time": 0.004389071692082363,
+      "growth_per_drive_period": 0.005382035139378092,
+      "ode_growth_cyclic": 0.0006985424548622554,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0006987844231797299,
+      "detuning_cyclic": -0.00041447299154967476,
+      "max_multiplier_error": 4.007685934675398e-12,
+      "monodromy_determinant": 0.9999999999972495,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000007,
+        -0.5000000000000008
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0008565774963261444,
+        0.0008565774963263011
+      ],
+      "maximum_eigen_residual": 2.713739231194754e-16,
+      "maximum_harmonic_edge_weight": 1.9745685840115043e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.847
+    },
+    {
+      "carrier": 0.40737182814060824,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007177817651750396,
+      "amplitude_growth_per_meep_time": 0.004509955840709237,
+      "growth_per_drive_period": 0.005530267563304383,
+      "ode_growth_cyclic": 0.0007177817646875609,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007179979232716199,
+      "detuning_cyclic": -0.00038021903290130776,
+      "max_multiplier_error": 3.7767575501969025e-12,
+      "monodromy_determinant": 0.9999999999972502,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000004,
+        -0.5000000000000006
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0008801694193206638,
+        -0.0008801694193205827
+      ],
+      "maximum_eigen_residual": 3.3778644832846795e-16,
+      "maximum_harmonic_edge_weight": 1.975343162913528e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.848
+    },
+    {
+      "carrier": 0.40740569149761247,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007347396512502869,
+      "amplitude_growth_per_meep_time": 0.004616505381338056,
+      "growth_per_drive_period": 0.00566092238327084,
+      "ode_growth_cyclic": 0.0007347396507893745,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007349321578054949,
+      "detuning_cyclic": -0.00034635567589708094,
+      "max_multiplier_error": 3.5713654277378117e-12,
+      "monodromy_determinant": 0.9999999999972524,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000007,
+        0.5
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009009637797569116,
+        0.0009009637797571071
+      ],
+      "maximum_eigen_residual": 2.348464959082751e-16,
+      "maximum_harmonic_edge_weight": 1.9761091791632163e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.849
+    },
+    {
+      "carrier": 0.4074391629888375,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007496233791508069,
+      "amplitude_growth_per_meep_time": 0.0047100226017986625,
+      "growth_per_drive_period": 0.005775596510732441,
+      "ode_growth_cyclic": 0.0007496233787147922,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.000749793983561391,
+      "detuning_cyclic": -0.0003128841846720687,
+      "max_multiplier_error": 3.378854315986434e-12,
+      "monodromy_determinant": 0.999999999997254,
+      "quasifrequencies_over_drive_real": [
+        0.4999999999999995,
+        0.4999999999999999
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0009192147339873709,
+        -0.000919214733987374
+      ],
+      "maximum_eigen_residual": 1.8501629978603287e-16,
+      "maximum_harmonic_edge_weight": 1.9768665952913805e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.85
+    },
+    {
+      "carrier": 0.4074722413501482,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007626055457394463,
+      "amplitude_growth_per_meep_time": 0.004791591960163759,
+      "growth_per_drive_period": 0.00587561974658193,
+      "ode_growth_cyclic": 0.0007626055453262816,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.000762755683043951,
+      "detuning_cyclic": -0.0002798058233613454,
+      "max_multiplier_error": 3.2021054089978604e-12,
+      "monodromy_determinant": 0.9999999999972549,
+      "quasifrequencies_over_drive_real": [
+        -0.4999999999999999,
+        0.4999999999999999
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0009351339263968637,
+        -0.0009351339263967745
+      ],
+      "maximum_eigen_residual": 3.251978254215219e-16,
+      "maximum_harmonic_edge_weight": 1.9776153738152008e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.851
+    },
+    {
+      "carrier": 0.40750492531740945,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007738318792946183,
+      "amplitude_growth_per_meep_time": 0.004862129094211113,
+      "growth_per_drive_period": 0.0059621148782879625,
+      "ode_growth_cyclic": 0.000773831878903196,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007739627375012365,
+      "detuning_cyclic": -0.0002471218561000965,
+      "max_multiplier_error": 3.0337956812040907e-12,
+      "monodromy_determinant": 0.9999999999972565,
+      "quasifrequencies_over_drive_real": [
+        0.4999999999999993,
+        -0.5000000000000002
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009489000541613609,
+        0.0009489000541612632
+      ],
+      "maximum_eigen_residual": 2.977002788787566e-16,
+      "maximum_harmonic_edge_weight": 1.9783554766711265e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.852
+    },
+    {
+      "carrier": 0.40753721362648615,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007834268859957875,
+      "amplitude_growth_per_meep_time": 0.0049224162993381886,
+      "growth_per_drive_period": 0.0060360411841703975,
+      "ode_growth_cyclic": 0.0007834268856249891,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007835394552133995,
+      "detuning_cyclic": -0.0002148335470233964,
+      "max_multiplier_error": 2.874145469386988e-12,
+      "monodromy_determinant": 0.9999999999972584,
+      "quasifrequencies_over_drive_real": [
+        -0.5,
+        -0.5000000000000001
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009606657911669121,
+        0.0009606657911669762
+      ],
+      "maximum_eigen_residual": 1.4074629419492433e-16,
+      "maximum_harmonic_edge_weight": 1.9790868659147025e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.853
+    },
+    {
+      "carrier": 0.40756910501324334,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007914980294278927,
+      "amplitude_growth_per_meep_time": 0.0049731287891629315,
+      "growth_per_drive_period": 0.006098226635078953,
+      "ode_growth_cyclic": 0.0007914980290758999,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007915931384239618,
+      "detuning_cyclic": -0.00018294216026620846,
+      "max_multiplier_error": 2.7284843768218174e-12,
+      "monodromy_determinant": 0.9999999999972597,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000008,
+        -0.5000000000000002
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009705629130671857,
+        0.0009705629130674711
+      ],
+      "maximum_eigen_residual": 3.571232616198097e-16,
+      "maximum_harmonic_edge_weight": 1.9798095051202794e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.854
+    },
+    {
+      "carrier": 0.40760059821354583,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007981388843061688,
+      "amplitude_growth_per_meep_time": 0.005014854510961227,
+      "growth_per_drive_period": 0.006149392192784345,
+      "ode_growth_cyclic": 0.0007981388839728639,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007982172281582706,
+      "detuning_cyclic": -0.0001514489599637181,
+      "max_multiplier_error": 2.5839393225981365e-12,
+      "monodromy_determinant": 0.9999999999972603,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000009,
+        -0.5000000000000003
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.000978706164492338,
+        -0.0009787061644925402
+      ],
+      "maximum_eigen_residual": 2.774360155779944e-16,
+      "maximum_harmonic_edge_weight": 1.9805233561171635e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.855
+    },
+    {
+      "carrier": 0.40763169196325844,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008034315562752721,
+      "amplitude_growth_per_meep_time": 0.005048109349713219,
+      "growth_per_drive_period": 0.0061901704537183,
+      "ode_growth_cyclic": 0.0008034315559599176,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008034937175660901,
+      "detuning_cyclic": -0.00012035521025111073,
+      "max_multiplier_error": 2.4447114032984162e-12,
+      "monodromy_determinant": 0.9999999999972625,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000002,
+        0.5
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.000985196226290668,
+        -0.0009851962262908843
+      ],
+      "maximum_eigen_residual": 1.8427037471434808e-16,
+      "maximum_harmonic_edge_weight": 1.981228381187748e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.856
+    },
+    {
+      "carrier": 0.4076623849982463,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008074485657819714,
+      "amplitude_growth_per_meep_time": 0.005073348964824512,
+      "growth_per_drive_period": 0.006221120163580275,
+      "ode_growth_cyclic": 0.0008074485654834068,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008074950310248535,
+      "detuning_cyclic": -8.966217526323872e-05,
+      "max_multiplier_error": 2.3145937503574396e-12,
+      "monodromy_determinant": 0.9999999999972643,
+      "quasifrequencies_over_drive_real": [
+        -0.4999999999999997,
+        -0.5000000000000003
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0009901220256024615,
+        -0.000990122025602458
+      ],
+      "maximum_eigen_residual": 1.194885894625046e-16,
+      "maximum_harmonic_edge_weight": 1.9819245430329033e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.857
+    },
+    {
+      "carrier": 0.40769267605437415,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008102543333952479,
+      "amplitude_growth_per_meep_time": 0.005090978122667612,
+      "growth_per_drive_period": 0.006242737661230261,
+      "ode_growth_cyclic": 0.0008102543331131998,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008102855058652938,
+      "detuning_cyclic": -5.93711191353985e-05,
+      "max_multiplier_error": 2.1866954050508146e-12,
+      "monodromy_determinant": 0.9999999999972656,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000003,
+        -0.5000000000000001
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009935625572105966,
+        0.0009935625572107339
+      ],
+      "maximum_eigen_residual": 1.545219186617329e-16,
+      "maximum_harmonic_edge_weight": 1.9826118047145446e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.858
+    },
+    {
+      "carrier": 0.4077225638675069,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008119063637641998,
+      "amplitude_growth_per_meep_time": 0.005101358135608825,
+      "growth_per_drive_period": 0.006255466000687004,
+      "ode_growth_cyclic": 0.0008119063634983386,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008119225735683901,
+      "detuning_cyclic": -2.9483306002664467e-05,
+      "max_multiplier_error": 2.061240318401619e-12,
+      "monodromy_determinant": 0.9999999999972672,
+      "quasifrequencies_over_drive_real": [
+        -0.4999999999999999,
+        -0.49999999999999994
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0009955883353526263,
+        -0.0009955883353527624
+      ],
+      "maximum_eigen_residual": 1.7616186529932138e-16,
+      "maximum_harmonic_edge_weight": 1.9832901288319463e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.859
+    },
+    {
+      "carrier": 0.40775204717350955,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008124561981712837,
+      "amplitude_growth_per_meep_time": 0.005104812847076796,
+      "growth_per_drive_period": 0.006259702290231004,
+      "ode_growth_cyclic": 0.0008124561979211007,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008124577101626673,
+      "detuning_cyclic": 0.0,
+      "max_multiplier_error": 1.9397826096961945e-12,
+      "monodromy_determinant": 0.9999999999972675,
+      "quasifrequencies_over_drive_real": [
+        -0.4999999999999996,
+        -0.4999999999999997
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009962625617737965,
+        0.0009962625617739222
+      ],
+      "maximum_eigen_residual": 1.6307698134266062e-16,
+      "maximum_harmonic_edge_weight": 1.9839594784800156e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.86
+    },
+    {
+      "carrier": 0.4077811796780221,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008119482437764424,
+      "amplitude_growth_per_meep_time": 0.005101621275486412,
+      "growth_per_drive_period": 0.006255788672123495,
+      "ode_growth_cyclic": 0.0008119482435418217,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.000811935236323435,
+      "detuning_cyclic": 2.9132504512530133e-05,
+      "max_multiplier_error": 1.818989687840803e-12,
+      "monodromy_determinant": 0.9999999999972695,
+      "quasifrequencies_over_drive_real": [
+        -0.4999999999999999,
+        -0.5000000000000001
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0009956396901067385,
+        -0.000995639690106664
+      ],
+      "maximum_eigen_residual": 1.8999692171545312e-16,
+      "maximum_harmonic_edge_weight": 1.9846210644498848e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.861
+    },
+    {
+      "carrier": 0.4078100142167553,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.000810414592603031,
+      "amplitude_growth_per_meep_time": 0.005091985060967294,
+      "growth_per_drive_period": 0.006243972404632117,
+      "ode_growth_cyclic": 0.0008104145923835469,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008103871622256316,
+      "detuning_cyclic": 5.796704324573243e-05,
+      "max_multiplier_error": 1.7017543178729288e-12,
+      "monodromy_determinant": 0.999999999997271,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000007,
+        0.5000000000000004
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0009937590727265896,
+        -0.0009937590727266213
+      ],
+      "maximum_eigen_residual": 1.8045156098881305e-16,
+      "maximum_harmonic_edge_weight": 1.9852760814297164e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.862
+    },
+    {
+      "carrier": 0.40783854822068055,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008078815820434502,
+      "amplitude_growth_per_meep_time": 0.005076069686236406,
+      "growth_per_drive_period": 0.006224456408524665,
+      "ode_growth_cyclic": 0.0008078815818390027,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008078397734953907,
+      "detuning_cyclic": 8.650104717100593e-05,
+      "max_multiplier_error": 1.5849545772353838e-12,
+      "monodromy_determinant": 0.9999999999972714,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000001,
+        0.5000000000000001
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0009906530054767263,
+        -0.0009906530054768167
+      ],
+      "maximum_eigen_residual": 2.585684674757269e-16,
+      "maximum_harmonic_edge_weight": 1.985924463109602e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.863
+    },
+    {
+      "carrier": 0.40786677912076885,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0008043721196819087,
+      "amplitude_growth_per_meep_time": 0.005054019083890269,
+      "growth_per_drive_period": 0.006197417179048088,
+      "ode_growth_cyclic": 0.0008043721194924186,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0008043159274071679,
+      "detuning_cyclic": 0.00011473194725930558,
+      "max_multiplier_error": 1.4690471113522033e-12,
+      "monodromy_determinant": 0.9999999999972723,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000002,
+        0.5
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009863495784479125,
+        0.000986349578448133
+      ],
+      "maximum_eigen_residual": 9.292040503564428e-17,
+      "maximum_harmonic_edge_weight": 1.9865661461333257e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.864
+    },
+    {
+      "carrier": 0.4078947043479917,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007999059027021075,
+      "amplitude_growth_per_meep_time": 0.005025957014984105,
+      "growth_per_drive_period": 0.006163006476391061,
+      "ode_growth_cyclic": 0.0007999059025276727,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007998352713975151,
+      "detuning_cyclic": 0.00014265717448214144,
+      "max_multiplier_error": 1.3738033246630222e-12,
+      "monodromy_determinant": 0.9999999999972741,
+      "quasifrequencies_over_drive_real": [
+        0.500000000000001,
+        0.5000000000000006
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009808729450249214,
+        0.0009808729450250016
+      ],
+      "maximum_eigen_residual": 2.9566399282909283e-16,
+      "maximum_harmonic_edge_weight": 1.9872010668360757e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.865
+    },
+    {
+      "carrier": 0.40792232133332007,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.000794499577178153,
+      "amplitude_growth_per_meep_time": 0.004991988069886165,
+      "growth_per_drive_period": 0.006121352552966998,
+      "ode_growth_cyclic": 0.0007944995770191091,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007944144014955827,
+      "detuning_cyclic": 0.00017027415981052396,
+      "max_multiplier_error": 1.4880369022656196e-12,
+      "monodromy_determinant": 0.999999999997276,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000007,
+        0.4999999999999993
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009742435172131351,
+        0.0009742435172128908
+      ],
+      "maximum_eigen_residual": 2.5830173031167674e-16,
+      "maximum_harmonic_edge_weight": 1.9878291597003545e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.866
+    },
+    {
+      "carrier": 0.40794962750772523,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007881668422536255,
+      "amplitude_growth_per_meep_time": 0.00495219832285411,
+      "growth_per_drive_period": 0.0060725609560788,
+      "ode_growth_cyclic": 0.0007881668421094217,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007880669656406001,
+      "detuning_cyclic": 0.00019758033421568566,
+      "max_multiplier_error": 1.603495565342012e-12,
+      "monodromy_determinant": 0.9999999999972771,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000002,
+        0.5000000000000002
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009664780933865774,
+        0.000966478093386787
+      ],
+      "maximum_eigen_residual": 3.091112841097923e-16,
+      "maximum_harmonic_edge_weight": 1.988450358959206e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.867
+    },
+    {
+      "carrier": 0.40797662030217846,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007809185019217335,
+      "amplitude_growth_per_meep_time": 0.004906655657379329,
+      "growth_per_drive_period": 0.00601671492686757,
+      "ode_growth_cyclic": 0.0007809185017927975,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007808037145676369,
+      "detuning_cyclic": 0.00022457312866891455,
+      "max_multiplier_error": 1.719187558966595e-12,
+      "monodromy_determinant": 0.9999999999972778,
+      "quasifrequencies_over_drive_real": [
+        0.4999999999999992,
+        0.4999999999999992
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009575899217856208,
+        0.0009575899217857653
+      ],
+      "maximum_eigen_residual": 3.010596484407128e-16,
+      "maximum_harmonic_edge_weight": 1.9890646032637544e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.868
+    },
+    {
+      "carrier": 0.408003297147651,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007727624649933863,
+      "amplitude_growth_per_meep_time": 0.0048554097659863245,
+      "growth_per_drive_period": 0.0059538754000666196,
+      "ode_growth_cyclic": 0.0007727624648803801,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007726325008027353,
+      "detuning_cyclic": 0.0002512499741414431,
+      "max_multiplier_error": 1.8353137229604742e-12,
+      "monodromy_determinant": 0.99999999999728,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000007,
+        -0.4999999999999993
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009475887004743487,
+        0.0009475887004738384
+      ],
+      "maximum_eigen_residual": 6.972749670814513e-16,
+      "maximum_harmonic_edge_weight": 1.9896718267288002e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.869
+    },
+    {
+      "carrier": 0.4080296554751139,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007637036916804395,
+      "amplitude_growth_per_meep_time": 0.004798491814605346,
+      "growth_per_drive_period": 0.005884080592443302,
+      "ode_growth_cyclic": 0.0007637036915826651,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007635582241604892,
+      "detuning_cyclic": 0.00027760830160433736,
+      "max_multiplier_error": 1.954993357450063e-12,
+      "monodromy_determinant": 0.99999999999728,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000004,
+        -0.4999999999999997
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009364805118384731,
+        0.0009364805118384395
+      ],
+      "maximum_eigen_residual": 3.000543157566772e-16,
+      "maximum_harmonic_edge_weight": 1.9902719648334257e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.87
+    },
+    {
+      "carrier": 0.4080556927155386,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.000753744082915909,
+      "amplitude_growth_per_meep_time": 0.004735913747150791,
+      "growth_per_drive_period": 0.005807345150048421,
+      "ode_growth_cyclic": 0.0007537440828346548,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007535827198182347,
+      "detuning_cyclic": 0.0003036455420290518,
+      "max_multiplier_error": 2.078115805578423e-12,
+      "monodromy_determinant": 0.9999999999972821,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000002,
+        0.49999999999999933
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.00092426768687125,
+        0.000924267686870951
+      ],
+      "maximum_eigen_residual": 1.9238992766175585e-16,
+      "maximum_harmonic_edge_weight": 1.990864953099479e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.871
+    },
+    {
+      "carrier": 0.40808140629989603,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007428823058908978,
+      "amplitude_growth_per_meep_time": 0.00466766718933738,
+      "growth_per_drive_period": 0.005723658804036809,
+      "ode_growth_cyclic": 0.0007428823058258228,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007427045823668355,
+      "detuning_cyclic": 0.0003293591263864859,
+      "max_multiplier_error": 2.2024676025254937e-12,
+      "monodromy_determinant": 0.9999999999972828,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000009,
+        0.5000000000000008
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0009109485912340267,
+        0.000910948591233904
+      ],
+      "maximum_eigen_residual": 2.634954418541402e-16,
+      "maximum_harmonic_edge_weight": 1.9914507273464776e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.872
+    },
+    {
+      "carrier": 0.4081067936591577,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.000731113545998197,
+      "amplitude_growth_per_meep_time": 0.004593721890095838,
+      "growth_per_drive_period": 0.005632984459476036,
+      "ode_growth_cyclic": 0.0007311135459501116,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007309189159701996,
+      "detuning_cyclic": 0.0003547464856481497,
+      "max_multiplier_error": 2.3301362084857016e-12,
+      "monodromy_determinant": 0.9999999999972851,
+      "quasifrequencies_over_drive_real": [
+        0.49999999999999994,
+        -0.5000000000000001
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0008965173210854394,
+        -0.0008965173210856344
+      ],
+      "maximum_eigen_residual": 1.6656701784431247e-16,
+      "maximum_harmonic_edge_weight": 1.9920292228772142e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.873
+    },
+    {
+      "carrier": 0.40813185222429466,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.000718429171275947,
+      "amplitude_growth_per_meep_time": 0.004514023613210237,
+      "growth_per_drive_period": 0.005535255609997462,
+      "ode_growth_cyclic": 0.0007184291712458892,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.000718216996597049,
+      "detuning_cyclic": 0.0003798050507851092,
+      "max_multiplier_error": 2.469693822710908e-12,
+      "monodromy_determinant": 0.9999999999972852,
+      "quasifrequencies_over_drive_real": [
+        0.49999999999999944,
+        0.4999999999999992
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0008809632916082299,
+        0.0008809632916082404
+      ],
+      "maximum_eigen_residual": 3.9136702367153494e-16,
+      "maximum_harmonic_edge_weight": 1.9926003758416867e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.874
+    },
+    {
+      "carrier": 0.4081565794262782,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0007048162899261182,
+      "amplitude_growth_per_meep_time": 0.004428491357124613,
+      "growth_per_drive_period": 0.005430372928624648,
+      "ode_growth_cyclic": 0.0007048162899134136,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0007045858267611434,
+      "detuning_cyclic": 0.00040453225276865235,
+      "max_multiplier_error": 2.6004755020945236e-12,
+      "monodromy_determinant": 0.9999999999972866,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000001,
+        -0.5000000000000002
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.000864270694423146,
+        0.0008642706944230249
+      ],
+      "maximum_eigen_residual": 5.94726225551103e-16,
+      "maximum_harmonic_edge_weight": 1.993164121606832e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.875
+    },
+    {
+      "carrier": 0.40818097269607945,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0006902571740141236,
+      "amplitude_growth_per_meep_time": 0.0043370137339408445,
+      "growth_per_drive_period": 0.005318199827572328,
+      "ode_growth_cyclic": 0.0006902571740203539,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0006900075556766768,
+      "detuning_cyclic": 0.0004289255225699007,
+      "max_multiplier_error": 2.743141756302686e-12,
+      "monodromy_determinant": 0.9999999999972883,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000007,
+        -0.49999999999999956
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0008464177909089038,
+        0.0008464177909086014
+      ],
+      "maximum_eigen_residual": 2.1421306060615266e-16,
+      "maximum_harmonic_edge_weight": 1.9937203951545705e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.876
+    },
+    {
+      "carrier": 0.40820502946466963,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.00067472851203569,
+      "amplitude_growth_per_meep_time": 0.004239444273157792,
+      "growth_per_drive_period": 0.005198556699525034,
+      "ode_growth_cyclic": 0.0006747285120616112,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.000674458727201393,
+      "detuning_cyclic": 0.0004529822911600867,
+      "max_multiplier_error": 2.8940252304316565e-12,
+      "monodromy_determinant": 0.9999999999972895,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000002,
+        0.499999999999999
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0008273759956728982,
+        -0.0008273759956730817
+      ],
+      "maximum_eigen_residual": 3.678420970765581e-16,
+      "maximum_harmonic_edge_weight": 1.9942691334661633e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.877
+    },
+    {
+      "carrier": 0.40822874716302004,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0006582004380527812,
+      "amplitude_growth_per_meep_time": 0.0041355953215524025,
+      "growth_per_drive_period": 0.005071213437455281,
+      "ode_growth_cyclic": 0.0006582004380996937,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0006579093028704302,
+      "detuning_cyclic": 0.0004766999895104984,
+      "max_multiplier_error": 3.051892238042173e-12,
+      "monodromy_determinant": 0.9999999999972914,
+      "quasifrequencies_over_drive_real": [
+        0.4999999999999998,
+        -0.4999999999999999
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0008071086860450502,
+        -0.0008071086860454681
+      ],
+      "maximum_eigen_residual": 2.0847040159344634e-16,
+      "maximum_harmonic_edge_weight": 1.9948102708148435e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.878
+    },
+    {
+      "carrier": 0.40825212322210186,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.00064063526328682,
+      "amplitude_growth_per_meep_time": 0.004025230073544874,
+      "growth_per_drive_period": 0.004935879661975099,
+      "ode_growth_cyclic": 0.0006406352633557911,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0006403213852645119,
+      "detuning_cyclic": 0.0005000760485923128,
+      "max_multiplier_error": 3.2176493642729192e-12,
+      "monodromy_determinant": 0.9999999999972917,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000002,
+        0.5000000000000004
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0007855696467100905,
+        -0.0007855696467110506
+      ],
+      "maximum_eigen_residual": 1.808848436430771e-16,
+      "maximum_harmonic_edge_weight": 1.9953437444082626e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.879
+    },
+    {
+      "carrier": 0.40827515507288625,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0006219858033022391,
+      "amplitude_growth_per_meep_time": 0.003908052060582921,
+      "growth_per_drive_period": 0.004792191832846812,
+      "ode_growth_cyclic": 0.0006219858033944059,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0006216475339068384,
+      "detuning_cyclic": 0.0005231078993767069,
+      "max_multiplier_error": 3.4010574267560557e-12,
+      "monodromy_determinant": 0.9999999999972928,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000002,
+        0.5000000000000001
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0007627010184421831,
+        0.00076270101844218
+      ],
+      "maximum_eigen_residual": 1.0644985961962171e-16,
+      "maximum_harmonic_edge_weight": 1.995869487982877e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.88
+    },
+    {
+      "carrier": 0.4082979035613992,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0006021357044347941,
+      "amplitude_growth_per_meep_time": 0.0037833302110329282,
+      "growth_per_drive_period": 0.004639253484143783,
+      "ode_growth_cyclic": 0.0006021357045521811,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.000601770998472675,
+      "detuning_cyclic": 0.000545856387889676,
+      "max_multiplier_error": 3.5934619906074137e-12,
+      "monodromy_determinant": 0.9999999999972936,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000008,
+        0.5000000000000008
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0007383601242579084,
+        0.0007383601242577809
+      ],
+      "maximum_eigen_residual": 3.850651878436024e-16,
+      "maximum_harmonic_edge_weight": 1.9963888869315742e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.881
+    },
+    {
+      "carrier": 0.4083204275566268,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0005809376465837013,
+      "amplitude_growth_per_meep_time": 0.0036501388854021993,
+      "growth_per_drive_period": 0.004475929563940321,
+      "ode_growth_cyclic": 0.0005809376467282089,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0005805439439786317,
+      "detuning_cyclic": 0.0005683803831172396,
+      "max_multiplier_error": 3.801071039459727e-12,
+      "monodromy_determinant": 0.999999999997295,
+      "quasifrequencies_over_drive_real": [
+        -0.49999999999999994,
+        -0.4999999999999997
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0007123663150322536,
+        -0.0007123663150322709
+      ],
+      "maximum_eigen_residual": 1.5438433540039418e-16,
+      "maximum_harmonic_edge_weight": 1.9969032812608695e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.882
+    },
+    {
+      "carrier": 0.4083427215239804,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0005582711171801694,
+      "amplitude_growth_per_meep_time": 0.0035077208808891734,
+      "growth_per_drive_period": 0.004301291563346269,
+      "ode_growth_cyclic": 0.0005582711173555177,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0005578452675237328,
+      "detuning_cyclic": 0.0005906743504708323,
+      "max_multiplier_error": 4.039102828392938e-12,
+      "monodromy_determinant": 0.999999999997296,
+      "quasifrequencies_over_drive_real": [
+        0.4999999999999997,
+        0.49999999999999967
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0006845718139857687,
+        0.0006845718139860251
+      ],
+      "maximum_eigen_residual": 2.56453758488658e-16,
+      "maximum_harmonic_edge_weight": 1.9974125402881776e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.883
+    },
+    {
+      "carrier": 0.40836477992887155,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0005339842948763288,
+      "amplitude_growth_per_meep_time": 0.003355122275831601,
+      "growth_per_drive_period": 0.004114169749838074,
+      "ode_growth_cyclic": 0.0005339842950846331,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0005335223531486345,
+      "detuning_cyclic": 0.0006127327553619999,
+      "max_multiplier_error": 4.290790454272147e-12,
+      "monodromy_determinant": 0.9999999999972972,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000003,
+        0.5000000000000003
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0006547904524057702,
+        0.000654790452405876
+      ],
+      "maximum_eigen_residual": 3.2638264047645395e-16,
+      "maximum_harmonic_edge_weight": 1.997916534166812e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.884
+    },
+    {
+      "carrier": 0.4083865972367117,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0005078823744089861,
+      "amplitude_growth_per_meep_time": 0.003191119072662023,
+      "growth_per_drive_period": 0.003913063214252993,
+      "ode_growth_cyclic": 0.0005078823746562336,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0005073792941112966,
+      "detuning_cyclic": 0.0006345500632021772,
+      "max_multiplier_error": 4.5898862792119805e-12,
+      "monodromy_determinant": 0.9999999999972976,
+      "quasifrequencies_over_drive_real": [
+        -0.4999999999999994,
+        -0.4999999999999993
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0006227833531794243,
+        -0.0006227833531793262
+      ],
+      "maximum_eigen_residual": 1.5874741018812088e-16,
+      "maximum_harmonic_edge_weight": 1.9984151327170122e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.885
+    },
+    {
+      "carrier": 0.40840816791291235,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.00047970959579601944,
+      "amplitude_growth_per_meep_time": 0.0030141042840186073,
+      "growth_per_drive_period": 0.003696001411779576,
+      "ode_growth_cyclic": 0.0004797095960880031,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.00047915874835829616,
+      "detuning_cyclic": 0.000656120739402799,
+      "max_multiplier_error": 4.932165845897652e-12,
+      "monodromy_determinant": 0.9999999999972992,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000002,
+        -0.5000000000000001
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0005882368943593433,
+        -0.0005882368943593598
+      ],
+      "maximum_eigen_residual": 2.2544093688185673e-16,
+      "maximum_harmonic_edge_weight": 1.9989082059315026e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.886
+    },
+    {
+      "carrier": 0.40842948642288485,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.00044912026420253556,
+      "amplitude_growth_per_meep_time": 0.0028219058451939855,
+      "growth_per_drive_period": 0.0034603208797541465,
+      "ode_growth_cyclic": 0.0004491202645476169,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.000448512646654021,
+      "detuning_cyclic": 0.0006774392493753001,
+      "max_multiplier_error": 5.334621634719867e-12,
+      "monodromy_determinant": 0.9999999999973002,
+      "quasifrequencies_over_drive_real": [
+        0.5,
+        -0.5000000000000001
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0005507271726978364,
+        0.0005507271726969684
+      ],
+      "maximum_eigen_residual": 3.106392730111852e-16,
+      "maximum_harmonic_edge_weight": 1.9993956231426987e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.887
+    },
+    {
+      "carrier": 0.40845054723204083,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.00041562920344056446,
+      "amplitude_growth_per_meep_time": 0.00261147530429251,
+      "growth_per_drive_period": 0.00320228349850719,
+      "ode_growth_cyclic": 0.00041562920384869903,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.00041495204425880437,
+      "detuning_cyclic": 0.0006985000585312817,
+      "max_multiplier_error": 5.827117117994845e-12,
+      "monodromy_determinant": 0.9999999999973013,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000007,
+        -0.5000000000000004
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.0005096592479690273,
+        -0.0005096592479686389
+      ],
+      "maximum_eigen_residual": 2.2911601830185487e-16,
+      "maximum_harmonic_edge_weight": 1.9998772542733873e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.888
+    },
+    {
+      "carrier": 0.4084713448057916,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.00037852039225461494,
+      "amplitude_growth_per_meep_time": 0.00237831376708205,
+      "growth_per_drive_period": 0.002916372564611568,
+      "ode_growth_cyclic": 0.00037852039274514725,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.00037775447978306766,
+      "detuning_cyclic": 0.0007192976322820677,
+      "max_multiplier_error": 6.454503676926119e-12,
+      "monodromy_determinant": 0.9999999999973023,
+      "quasifrequencies_over_drive_real": [
+        -0.4999999999999997,
+        0.4999999999999999
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.000464155109555519,
+        -0.0004641551095561366
+      ],
+      "maximum_eigen_residual": 3.6935753697799713e-16,
+      "maximum_harmonic_edge_weight": 2.000352968903034e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.889
+    },
+    {
+      "carrier": 0.4084918736095487,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.0003366603664348412,
+      "amplitude_growth_per_meep_time": 0.00211529946789309,
+      "growth_per_drive_period": 0.0025938551167996623,
+      "ode_growth_cyclic": 0.0003366603670337483,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0003357742922565348,
+      "detuning_cyclic": 0.0007398264360391482,
+      "max_multiplier_error": 7.285505632123065e-12,
+      "monodromy_determinant": 0.9999999999973035,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000002,
+        0.5000000000000002
+      ],
+      "quasifrequencies_over_drive_imag": [
+        0.00041282486350287175,
+        -0.0004128248635038789
+      ],
+      "maximum_eigen_residual": 2.2054428165909636e-16,
+      "maximum_harmonic_edge_weight": 2.0008226362098325e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.89
+    },
+    {
+      "carrier": 0.4085121281087235,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.000288056754648168,
+      "amplitude_growth_per_meep_time": 0.001809913968439204,
+      "growth_per_drive_period": 0.0022193806027282024,
+      "ode_growth_cyclic": 0.0002880567554075178,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.00028699216492273695,
+      "detuning_cyclic": 0.0007600809352139581,
+      "max_multiplier_error": 8.526957295575978e-12,
+      "monodromy_determinant": 0.9999999999973039,
+      "quasifrequencies_over_drive_real": [
+        0.5000000000000004,
+        0.5000000000000002
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.0003532253935265692,
+        0.0003532253935264634
+      ],
+      "maximum_eigen_residual": 1.7300191016160385e-16,
+      "maximum_harmonic_edge_weight": 2.0012861260113792e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.891
+    },
+    {
+      "carrier": 0.40853210276872765,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.00022853692839489985,
+      "amplitude_growth_per_meep_time": 0.0014359398706387879,
+      "growth_per_drive_period": 0.001760800320430711,
+      "ode_growth_cyclic": 0.00022853692943802865,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.00022715809290382407,
+      "detuning_cyclic": 0.0007800555952180988,
+      "max_multiplier_error": 1.0711322987458167e-11,
+      "monodromy_determinant": 0.9999999999973055,
+      "quasifrequencies_over_drive_real": [
+        -0.5000000000000011,
+        0.4999999999999998
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.00028024007479454465,
+        0.0002802400747943409
+      ],
+      "maximum_eigen_residual": 2.9011830748402407e-16,
+      "maximum_harmonic_edge_weight": 2.00174330660742e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.892
+    },
+    {
+      "carrier": 0.4085517920549724,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 0.00014539563205337742,
+      "amplitude_growth_per_meep_time": 0.0009135476990458704,
+      "growth_per_drive_period": 0.0011202245401077423,
+      "ode_growth_cyclic": 0.0001453956338515565,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.00014316303774632424,
+      "detuning_cyclic": 0.0007997448814628383,
+      "max_multiplier_error": 1.6529555532958655e-11,
+      "monodromy_determinant": 0.9999999999973064,
+      "quasifrequencies_over_drive_real": [
+        0.4999999999999999,
+        0.4999999999999997
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -0.00017828927293097203,
+        0.00017828927293099235
+      ],
+      "maximum_eigen_residual": 1.9878074580472725e-16,
+      "maximum_harmonic_edge_weight": 2.0021940489747295e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.893
+    },
+    {
+      "carrier": 0.4085711904328694,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 3.029535639702245e-17,
+      "amplitude_growth_per_meep_time": 1.9035133818954056e-16,
+      "growth_per_drive_period": 2.334155518151708e-16,
+      "ode_growth_cyclic": -1.7474706284287036e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": 0.0008191432593598336,
+      "max_multiplier_error": 2.253211821533005e-11,
+      "monodromy_determinant": 0.9999999999973072,
+      "quasifrequencies_over_drive_real": [
+        0.5001241362381855,
+        -0.5001241362381823
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -4.063148863493508e-18,
+        3.714923886590685e-17
+      ],
+      "maximum_eigen_residual": 1.5389556692332767e-16,
+      "maximum_harmonic_edge_weight": 1.7563553175399976e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.894
+    },
+    {
+      "carrier": 0.40859029236782995,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 2.973745547935972e-16,
+      "amplitude_growth_per_meep_time": 1.8684594334082007e-15,
+      "growth_per_drive_period": 2.291171125148417e-15,
+      "ode_growth_cyclic": -1.7461737507461879e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": 0.0008382451943204083,
+      "max_multiplier_error": 1.1488875685028588e-11,
+      "monodromy_determinant": 0.9999999999973093,
+      "quasifrequencies_over_drive_real": [
+        -0.5002509805860008,
+        0.5002509805860007
+      ],
+      "quasifrequencies_over_drive_imag": [
+        3.646512100367902e-16,
+        -2.251255646833864e-16
+      ],
+      "maximum_eigen_residual": 1.7193314821458705e-16,
+      "maximum_harmonic_edge_weight": 1.5161290189224646e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.895
+    },
+    {
+      "carrier": 0.4086090923252656,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 1.8988109884286583e-16,
+      "amplitude_growth_per_meep_time": 1.1930581303606093e-15,
+      "growth_per_drive_period": 1.4629701293111236e-15,
+      "ode_growth_cyclic": -1.7458855557056288e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": 0.0008570451517560529,
+      "max_multiplier_error": 8.961150311983909e-12,
+      "monodromy_determinant": 0.9999999999973095,
+      "quasifrequencies_over_drive_real": [
+        0.5003330044082062,
+        -0.5003330044082034
+      ],
+      "quasifrequencies_over_drive_imag": [
+        2.1206020633043268e-17,
+        2.3283892767565467e-16
+      ],
+      "maximum_eigen_residual": 2.1853339868403607e-16,
+      "maximum_harmonic_edge_weight": 1.3712676849242624e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.896
+    },
+    {
+      "carrier": 0.4086275847705878,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 1.0938019731426103e-16,
+      "amplitude_growth_per_meep_time": 6.872560486613689e-16,
+      "growth_per_drive_period": 8.427377047219616e-16,
+      "ode_growth_cyclic": -1.7458855557056288e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": 0.0008755375970782575,
+      "max_multiplier_error": 7.684484058995807e-12,
+      "monodromy_determinant": 0.9999999999973095,
+      "quasifrequencies_over_drive_real": [
+        -0.5003988057982297,
+        0.5003988057982289
+      ],
+      "quasifrequencies_over_drive_imag": [
+        1.341258714364183e-16,
+        2.3300782240606968e-17
+      ],
+      "maximum_eigen_residual": 2.2799619996131387e-16,
+      "maximum_harmonic_edge_weight": 1.2624337392633166e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.897
+    },
+    {
+      "carrier": 0.408645764169208,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 5.201858643340219e-17,
+      "amplitude_growth_per_meep_time": 3.26842417978604e-16,
+      "growth_per_drive_period": 4.0078574742204016e-16,
+      "ode_growth_cyclic": -1.744588678023113e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": 0.000893716995698457,
+      "max_multiplier_error": 6.924449570351146e-12,
+      "monodromy_determinant": 0.9999999999973118,
+      "quasifrequencies_over_drive_real": [
+        -0.5004553981421954,
+        0.5004553981421955
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -3.34679962908159e-17,
+        6.378703282299755e-17
+      ],
+      "maximum_eigen_residual": 1.455480242710851e-16,
+      "maximum_harmonic_edge_weight": 1.1745324493661221e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.898
+    },
+    {
+      "carrier": 0.40866362498653774,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": -1.691931021680795e-17,
+      "amplitude_growth_per_meep_time": -1.0630716136186117e-16,
+      "growth_per_drive_period": -1.3035760592591775e-16,
+      "ode_growth_cyclic": -1.7444445805028336e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": 0.0009115778130281971,
+      "max_multiplier_error": 6.416061138366795e-12,
+      "monodromy_determinant": 0.9999999999973118,
+      "quasifrequencies_over_drive_real": [
+        0.5005058158122373,
+        -0.5005058158122369
+      ],
+      "quasifrequencies_over_drive_imag": [
+        -1.0057898084504741e-16,
+        -2.0747057352735158e-17
+      ],
+      "maximum_eigen_residual": 2.63390691533128e-16,
+      "maximum_harmonic_edge_weight": 1.100811792060685e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.899
+    },
+    {
+      "carrier": 0.40868116168798835,
+      "drive": 0.8155040943470191,
+      "sensitivity": -0.015214563860724107,
+      "epsilon_amplitude": 0.1068,
+      "growth_cyclic": 2.2016805732585325e-17,
+      "amplitude_growth_per_meep_time": 1.383356702900074e-16,
+      "growth_per_drive_period": 1.696320978017577e-16,
+      "ode_growth_cyclic": -1.7437240929014358e-13,
+      "rwa_coupling_cyclic": 0.0008124577101626673,
+      "rwa_growth_cyclic": 0.0,
+      "detuning_cyclic": 0.0009291145144788016,
+      "max_multiplier_error": 6.043723181578352e-12,
+      "monodromy_determinant": 0.9999999999973131,
+      "quasifrequencies_over_drive_real": [
+        -0.5005516935518085,
+        0.500551693551804
+      ],
+      "quasifrequencies_over_drive_imag": [
+        2.6997786872197574e-17,
+        6.77117797807123e-18
+      ],
+      "maximum_eigen_residual": 2.842536622967671e-16,
+      "maximum_harmonic_edge_weight": 1.0375165608487374e-14,
+      "n_harmonics": 3,
+      "n_samples": 128,
+      "scope": "STATIC_CALIBRATED_FINITE_OSCILLATOR_NOT_TIME_VARYING_MEEP",
+      "q": 0.9
+    }
+  ],
+  "interpolated_oscillator_instability_edges_q": [
+    0.8361496360711289,
+    0.8936744594162429
+  ],
+  "approximate_relative_gap_percent": 6.688932947106279,
+  "approximation_limits": [
+    "One bound spatial mode; frozen profile; first-order epsilon stiffness sensitivity",
+    "Sensitivity measured only at q=.86 and reused locally; intermediate q frequencies are PCHIP interpolation",
+    "No intermode coupling, outgoing sidebands, material dispersion or dynamically changing spatial profile",
+    "No dynamic-growth fitting; no numerical static linewidth interpreted as physical gain or loss",
+    "Retuned mechanism reference near 193.48 THz, not fixed-196-THz paper reproduction",
+    "ODE/Floquet agreement certifies this finite oscillator only; true dynamic Maxwell comparison is separate"
+  ],
+  "script_sha256": "549bf9a511f12bfd2b21e1bcbae2bfab8ef962d4af05644c7ea8c68b3c0a2952"
+}

@@ -1,0 +1,83 @@
+{
+  "k_index": 21,
+  "kpoint": [
+    0.9817477042468103,
+    0.0
+  ],
+  "path_coordinate": 1.3125,
+  "all_window_modes": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "all_window_frequencies_thz": [
+    60.74186819558423,
+    65.25871076377457,
+    67.04056147944254,
+    67.44570553569991,
+    67.57999348607899,
+    69.39727210603515,
+    73.66947057198617,
+    73.78836333937231,
+    75.08507269487359,
+    75.21725576427399,
+    77.85672516513154
+  ],
+  "modes": [
+    7,
+    8,
+    9,
+    10,
+    12,
+    14
+  ],
+  "seed_tracking": {
+    "k_index": 21,
+    "modes": [
+      8,
+      9
+    ],
+    "overlap": 0.9848499307815495,
+    "ambiguous": false
+  },
+  "forbidden_modulation_relative_max": 1.4967485798173253e-13,
+  "selection": "Connected component of actual field-derived modulation overlap, threshold1e-6; no radiation-loss cuts",
+  "cases": {
+    "static": {
+      "m": 0.0,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0,
+      "projection_fast_generic_error": 4.696215322568771e-16,
+      "common_sample_collective_loss_ratio": 0.13125763772746762,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "weak": {
+      "m": 0.0001,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0016,
+      "projection_fast_generic_error": 5.224166272159902e-16,
+      "common_sample_collective_loss_ratio": 0.13125763772746762,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "strong": {
+      "m": 0.03,
+      "drive_thz": 134.0,
+      "absolute_epsilon_amplitude": 0.48,
+      "projection_fast_generic_error": 5.22878966207254e-16,
+      "common_sample_collective_loss_ratio": 0.14589803566145088,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    }
+  },
+  "elapsed_seconds": 3.422363400000904
+}

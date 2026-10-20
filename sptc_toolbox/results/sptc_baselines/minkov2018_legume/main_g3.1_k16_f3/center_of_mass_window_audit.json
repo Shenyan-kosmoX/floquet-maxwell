@@ -1,0 +1,31 @@
+{
+  "scope": "Independent postprocessing audit of the same retained Legume fields and full signed Maxwell state; no new spatial or dynamic solve",
+  "state_file": "drive0.0001_steps2048.npz",
+  "snapshot_T": 3.125,
+  "sampling": "y=0, dx=0.1a; intensity=|Ex|^2+|Ey|^2",
+  "finite_k_grid_period_a": 256,
+  "comparisons": [
+    {
+      "x_limits_a": [-64, 128],
+      "line_intensity_integral": 1.421460137679246,
+      "center_a": 45.35182486904367,
+      "width_a": 43.84068264290627,
+      "interpretation": "Display-window truncation loses approximately5.42percent of complete-period line intensity; unsuitable as an unqualified physical center"
+    },
+    {
+      "x_limits_a": [-128, 128],
+      "line_intensity_integral": 1.5029090739571709,
+      "center_a": 36.501667056398865,
+      "width_a": 56.49958308489811,
+      "interpretation": "A complete periodic interval, but the packet's tails wrap across this interval's boundary; ordinary first moment depends on the cut"
+    },
+    {
+      "x_limits_a": [-78, 178],
+      "line_intensity_integral": 1.5029090739571576,
+      "center_a": 50.14975869039886,
+      "width_a": 47.54113560241252,
+      "interpretation": "A complete periodic interval centered on the prescribed modulation displacement of50a; not a frequency, coupling or material fit. Need larger nk or boundary-tail evidence for infinite-domain moment convergence"
+    }
+  ],
+  "recommendation": "Separate paper display crop from moment integration, retain the finite-k periodicity, and refine nk before claiming convergence of broad-packet centers or widths"
+}

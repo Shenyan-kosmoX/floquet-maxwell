@@ -1,0 +1,41 @@
+{
+  "resolution": 16,
+  "method": "sphere_no_averaging",
+  "call_count": 20,
+  "setup_seconds": 0.06317483299062587,
+  "update_total_seconds": 0.09055034306948073,
+  "median_seconds_per_update": 0.0044955735065741464,
+  "max_seconds_per_update": 0.004988214001059532,
+  "last_step_seconds": 0.0003780710103455931,
+  "estimated_10000_update_seconds": 44.955735065741464,
+  "epsilon_center_before": 11.680000000000001,
+  "last_requested_epsilon": 11.7868,
+  "epsilon_center_after_updates": 11.786799999999998,
+  "epsilon_center_after_step": 11.786799999999998,
+  "native_material_change_observed": true,
+  "updates_advanced_time": 0.0,
+  "same_fields_object": true,
+  "immediate_relative_field_changes": {
+    "Dx": 0.0,
+    "Dy": 0.0,
+    "Dz": 0.0,
+    "Bx": 0.0,
+    "By": 0.0,
+    "Bz": 0.0,
+    "Ex": 0.0,
+    "Ey": 0.0,
+    "Ez": 0.0
+  },
+  "requested_center_constitutive_relative_error_after_step": 1.1500326914953177e-16,
+  "native_center_constitutive_relative_error_after_step": 1.1501730677779881e-16,
+  "all_fields_finite_after_step": true,
+  "boundary_layers": {
+    "z_pml": 0.5,
+    "periodic_xy": true
+  },
+  "geometry": "native analytic Sphere",
+  "eps_averaging": false,
+  "note": "D/B preservation and no-op stepping are bounded state checks, not complete dynamic/PML validation",
+  "same_structure_SWIG_proxy_repr": false,
+  "structure_proxy_note": "str(SWIG pointer) includes proxy identity and is not a native-pointer equality test; see separate native_pointer_control"
+}

@@ -1,0 +1,205 @@
+{
+  "status": "COMPLETED_NATIVE_TIME_VARYING_SPECTRAL_RESPONSE",
+  "config": {
+    "index": 16,
+    "regime": "resonant",
+    "k_cyclic": [
+      0.0,
+      0.0
+    ],
+    "path_position": 0.7071067811865478,
+    "intervals_per_segment": 16,
+    "radius": 0.3333333333333333,
+    "epsilon": 11.68,
+    "modulation": 0.01,
+    "drive_frequency": 0.8261235177570745,
+    "drive_THz": 392.0,
+    "resolution": 12,
+    "padding": 3.0,
+    "pml": 1.0,
+    "courant": 0.5,
+    "eps_averaging": false,
+    "symmetries": [],
+    "source_frequency": 0.38,
+    "source_width": 0.6,
+    "source_cutoff": 4.0,
+    "sourcefree_settle": 20.0,
+    "ramp_periods": 10.0,
+    "record_periods": 100.0,
+    "phase": 1.5707963267948966,
+    "material_update_stride": 4,
+    "field_sample_stride": 1,
+    "sources": [
+      {
+        "component": "Hz",
+        "position": [
+          0.13,
+          -0.17,
+          0.11
+        ],
+        "amplitude": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "component": "Ez",
+        "position": [
+          -0.21,
+          0.09,
+          -0.13
+        ],
+        "amplitude": [
+          0.73,
+          0.19
+        ]
+      }
+    ],
+    "probes": [
+      [
+        0.07,
+        0.11,
+        0.04
+      ],
+      [
+        -0.19,
+        0.17,
+        0.21
+      ],
+      [
+        0.23,
+        -0.07,
+        -0.19
+      ]
+    ]
+  },
+  "meep_version": "1.35.0",
+  "elapsed_seconds": 7.062846932967659,
+  "dt": 0.041666666666666664,
+  "modulation_start": 33.375,
+  "source_free": true,
+  "recorded_cycles": 99.99536746184589,
+  "material_updates": 800,
+  "post_ramp_epsilon_range": [
+    11.573200000029978,
+    11.786799620603293
+  ],
+  "native_epsilon_checks": [
+    {
+      "time": 0.0,
+      "requested_epsilon": 11.679989955823189,
+      "native_inside": 11.679989955823187,
+      "native_outside": 1.000000000000001
+    },
+    {
+      "time": 0.1666666666666643,
+      "requested_epsilon": 11.6798699265672,
+      "native_inside": 11.679869926567202,
+      "native_outside": 1.000000000000001
+    },
+    {
+      "time": 0.3333333333333286,
+      "requested_epsilon": 11.679737024694434,
+      "native_inside": 11.679737024694434,
+      "native_outside": 1.000000000000001
+    },
+    {
+      "time": 0.5,
+      "requested_epsilon": 11.679996362433661,
+      "native_inside": 11.679996362433661,
+      "native_outside": 1.000000000000001
+    },
+    {
+      "time": 0.6666666666666643,
+      "requested_epsilon": 11.680806841353347,
+      "native_inside": 11.680806841353347,
+      "native_outside": 1.000000000000001
+    },
+    {
+      "time": 0.8333333333333286,
+      "requested_epsilon": 11.681554309937422,
+      "native_inside": 11.681554309937422,
+      "native_outside": 1.000000000000001
+    },
+    {
+      "time": 1.0,
+      "requested_epsilon": 11.681141593751939,
+      "native_inside": 11.68114159375194,
+      "native_outside": 1.000000000000001
+    },
+    {
+      "time": 1.1666666666666643,
+      "requested_epsilon": 11.679112870382573,
+      "native_inside": 11.679112870382571,
+      "native_outside": 1.000000000000001
+    },
+    {
+      "time": 1.3333333333333286,
+      "requested_epsilon": 11.676605716386508,
+      "native_inside": 11.676605716386506,
+      "native_outside": 1.000000000000001
+    },
+    {
+      "time": 1.5,
+      "requested_epsilon": 11.675938705639904,
+      "native_inside": 11.675938705639902,
+      "native_outside": 1.000000000000001
+    },
+    {
+      "time": 1.6666666666666643,
+      "requested_epsilon": 11.678720911211816,
+      "native_inside": 11.678720911211816,
+      "native_outside": 1.000000000000001
+    },
+    {
+      "time": 1.8333333333333286,
+      "requested_epsilon": 11.683905984211505,
+      "native_inside": 11.683905984211505,
+      "native_outside": 1.000000000000001
+    }
+  ],
+  "initial_DB_relative_change": {
+    "Dx": 0.0,
+    "Dy": 0.0,
+    "Dz": 0.0,
+    "Bx": 0.0,
+    "By": 0.0,
+    "Bz": 0.0
+  },
+  "spectral_config": {
+    "sample_dt": 0.041666666666671404,
+    "samples": 2906,
+    "actual_time_span": 121.04166666666666,
+    "nfft": 16384,
+    "native_frequency_scale": 0.008258774948381717,
+    "native_normalized_frequency_scale": 0.009997021959626925,
+    "fft_display_frequency_spacing": 0.00146484375,
+    "nyquist_frequency": 11.999999999998636,
+    "folded_bins": 256,
+    "fold_retained_signed_frequency": [
+      -3.304494071028298,
+      3.304494071028298
+    ],
+    "folding": "Incoherent sum of actual signed dynamic spectral power into f/fm modulo 1, |f|<4*fm; no static-frequency replacement",
+    "FFT_sign": "Physical signed f uses -numpy.fftfreq for exp(-i*2*pi*f*t)",
+    "folding_integral_relative_errors": {
+      "E_hann": 5.89722828458166e-15,
+      "H_hann": 1.5184558319937554e-15,
+      "total_hann": 5.352393065955076e-15,
+      "E_end_taper": 2.1179059553090817e-15,
+      "H_end_taper": 2.8771770430202613e-15,
+      "total_end_taper": 4.820095176123055e-15
+    },
+    "normalization": "FFT divided by window sum; E/H probe components in native units; not an energy or modal residue metric"
+  },
+  "raw_sha256": "a5d65e78ba6283bcced0891be0a288bc9cd29cd65fa439e3d3252ae461408080",
+  "spectrum_sha256": "244cf809ca61302d714eb39bab3d9d070525488bb57fb6b6da349d0be6c5f831",
+  "solver_sha256": "d1c070d2dcd079bb9facc1288ada29c19eb25fd5817133d944ee3915d70dbd4b",
+  "limits": [
+    "Finite source-visible dynamic response, not S_min or complete quasienergy bands",
+    "Signed dynamic FFT folds observed harmonic intensity, not eigenmode identities or pole residues",
+    "r12 voxel and pad3/PML1 not converged; near-light long tails may be distorted",
+    "100-period finite-time response cannot resolve the very narrow nonresonant momentum gap",
+    "Fixed-step material hold is not exactly pump-periodic; stride4 is an explicit approximation"
+  ]
+}

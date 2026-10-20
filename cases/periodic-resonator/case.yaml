@@ -1,0 +1,77 @@
+schema_version: '0.1'
+kind: case
+id: periodic-resonator
+project_id: floquet-maxwell
+title: 周期共振器的Bessel与时间积分控制
+stage: results_available
+question:
+  summary: 周期共振器的Bessel与时间积分控制
+  scope: 正光学载频包络的解析方法控制；参数来自指定共振器模型。
+  record:
+    path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/report.md
+capability_refs:
+- forced-scattering
+- finite-floquet-dynamics
+model:
+  description: 正光学载频包络的解析方法控制；参数来自指定共振器模型。
+  record:
+    path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/report.md
+    entrypoint:
+      path: sptc_toolbox/baselines/periodic_resonator_2017.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/summary.json
+  record:
+    path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/summary.json
+- id: output-2
+  description: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/primitive_time_controls.npz
+  record:
+    path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/primitive_time_controls.npz
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/report.md
+criteria:
+- id: criterion-1
+  description: 指定CMT参数下Fig.3/5a的所有保留侧带复幅和周期波形。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/report.md
+checks:
+- id: check-1
+  method: 独立Bessel系数、原始空腔启动ODE、全侧带功率平衡及谐波加密
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/report.md
+  artifacts:
+  - path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/summary.json
+  - path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/primitive_time_controls.npz
+  notes: Fig.3/5a全侧带与时域波形；Bessel复振幅差小于7e-16，原始ODE侧带差约6.3e-12。 正光学载频包络的解析方法控制；参数来自指定共振器模型。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/sptc_baselines/periodic_resonator_2017/report.md

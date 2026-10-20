@@ -1,0 +1,144 @@
+{
+  "config": "custom_g3.1_v4",
+  "status": "PARTIAL_FIG3_BASELINE_FIXED_CHANNEL_MODEL",
+  "cache_sha256": "1ed609484e4f4525258a22bac52bc9576cfc8ff22c7b15afeba75dcb9008cbc0",
+  "basis_id": "883bae947d8a29251cf248c07e6d1af9112e77c4ae4525f407dd545c8513e7cd",
+  "mode": 2,
+  "irrep": "A2g",
+  "frequency_thz": 378.50031961687716,
+  "gmax": 3.1,
+  "guided_mode_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "C_second_order": 0.016534636827050635,
+  "loglog_slope": 1.9999846926580975,
+  "native_gamma_over_drive": [
+    6.44860482440189e-29
+  ],
+  "numerical_checks": [
+    {
+      "amplitude": 0.0001,
+      "max_residual": 9.7471020355662e-17,
+      "physical_modes": 2,
+      "max_edge_weight": 1.112813363934506e-28,
+      "monodromy": {
+        "max_multiplier_error": 3.574474282952909e-12,
+        "physical_count": 2,
+        "scope": "Finite frozen-channel model only"
+      },
+      "power_balance": {
+        "mean_energy": 0.998235016854671,
+        "mean_pump_power": 5.128519797828772e-22,
+        "mean_radiation_power": 1.287444629115185e-28,
+        "growth_energy_rate": 2.894886921304922e-15,
+        "absolute_balance_residual": 2.894886408453071e-15,
+        "relative_balance_residual": 0.9999998228421817
+      }
+    },
+    {
+      "amplitude": 0.0001333521432163324,
+      "max_residual": 8.425717370951914e-17,
+      "physical_modes": 2,
+      "max_edge_weight": 7.070682295784737e-28
+    },
+    {
+      "amplitude": 0.00017782794100389227,
+      "max_residual": 1.1534522175061317e-16,
+      "physical_modes": 2,
+      "max_edge_weight": 3.542765598062291e-27
+    },
+    {
+      "amplitude": 0.00023713737056616554,
+      "max_residual": 6.520264302389352e-17,
+      "physical_modes": 2,
+      "max_edge_weight": 1.9851826370652967e-26
+    },
+    {
+      "amplitude": 0.00031622776601683794,
+      "max_residual": 7.827168436583207e-17,
+      "physical_modes": 2,
+      "max_edge_weight": 1.1173267497566364e-25
+    },
+    {
+      "amplitude": 0.00042169650342858224,
+      "max_residual": 9.386638990016601e-17,
+      "physical_modes": 2,
+      "max_edge_weight": 6.282016761988737e-25
+    },
+    {
+      "amplitude": 0.0005623413251903491,
+      "max_residual": 1.014432719307955e-16,
+      "physical_modes": 2,
+      "max_edge_weight": 3.532825109655299e-24
+    },
+    {
+      "amplitude": 0.0007498942093324559,
+      "max_residual": 9.192262922276968e-17,
+      "physical_modes": 2,
+      "max_edge_weight": 1.986589520657338e-23
+    },
+    {
+      "amplitude": 0.001,
+      "max_residual": 6.51950999567828e-17,
+      "physical_modes": 2,
+      "max_edge_weight": 1.1171812351243878e-22,
+      "monodromy": {
+        "max_multiplier_error": 3.5146679730089323e-12,
+        "physical_count": 2,
+        "scope": "Finite frozen-channel model only"
+      },
+      "power_balance": {
+        "mean_energy": 0.9982350168563439,
+        "mean_pump_power": 1.5881867761018131e-21,
+        "mean_radiation_power": 1.2874446291173425e-28,
+        "growth_energy_rate": -1.6027952549878044e-15,
+        "absolute_balance_residual": 1.6027968431744517e-15,
+        "relative_balance_residual": 1.0000009908855434
+      }
+    }
+  ],
+  "temporal_convergence": [
+    {
+      "half_harmonics": 1,
+      "shift": 1.6534681179791733e-08
+    },
+    {
+      "half_harmonics": 3,
+      "shift": 1.6534645652654945e-08
+    },
+    {
+      "half_harmonics": 5,
+      "shift": 1.6534645652654945e-08
+    }
+  ],
+  "modal_controls": [
+    {
+      "count": 1,
+      "modes": [
+        2
+      ],
+      "C": 0.016534636827050635,
+      "scope": "Lossless modal-truncation control; common-bath narrowband not claimed for these separated modes"
+    },
+    {
+      "count": 3,
+      "modes": [
+        2,
+        7,
+        15
+      ],
+      "C": 0.016521089665121613,
+      "scope": "Lossless modal-truncation control; common-bath narrowband not claimed for these separated modes"
+    }
+  ],
+  "radiation_scope": "Gamma A2g symmetry-suppressed native loss; no resolved finite radiative Q",
+  "assumptions": [
+    "square lattice",
+    "Gamma Bloch momentum",
+    "air claddings",
+    "uniform cylinder-only additive modulation"
+  ]
+}

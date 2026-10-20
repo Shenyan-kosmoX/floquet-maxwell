@@ -1,0 +1,1126 @@
+{
+  "k_index": 6,
+  "kpoint_ka": [
+    2.356194490192345,
+    0.0
+  ],
+  "modes": [
+    2,
+    3
+  ],
+  "cross_k_identity": "not_assessed",
+  "selection_mode": "explicit_local_native_clusters",
+  "scope": "Local native finite spatial subspace plus frozen common-frequency radiation; no band-connection claim",
+  "complete_open_dynamics_certified": false,
+  "radiation_policy": "assess",
+  "radiation_backend": "frozen",
+  "local_selection": {
+    "status": "COMPLETE_SELECTED_LOCAL_FREQUENCY_CLUSTERS",
+    "mode_indices": [
+      2,
+      3
+    ],
+    "selected_clusters": [
+      [
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "all_returned_clusters": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ]
+    ],
+    "returned_mode_count": 12,
+    "native_selected_frequencies_fa_over_c": [
+      0.3021801343868968,
+      0.372517533228425
+    ],
+    "minimum_selected_to_omitted_frequency_gap_fa_over_c": 0.013315011316397563,
+    "cluster_rtol": 1e-06,
+    "cluster_atol_fa_over_c": 1e-10,
+    "selected_eigenvector_gram_error": 3.098474541094346e-16,
+    "highest_returned_cluster_excluded": true,
+    "cross_k_identity": "not_assessed",
+    "scope": "Complete local frequency clusters within returned native modes; not full spatial convergence, QNM completeness, band continuity, or topology"
+  },
+  "physical_indices": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "sideband_coverage": [
+    {
+      "status": "DIAGNOSTIC_ONLY_NOT_FREQUENCY_DEPENDENT_RADIATION_VALIDATION",
+      "branch_index": 12,
+      "frequency_window": 0.05,
+      "negative_frequency_weight": 0.0,
+      "outside_frequency_window_weight": 1.0,
+      "changed_channel_set_weight": 0.0,
+      "near_diffraction_threshold_weight": 0.0,
+      "significant_changed_channel_harmonics": [],
+      "frozen_total_power": 0.0,
+      "sidebands": [
+        {
+          "harmonic": -3,
+          "physical_omega_a_over_c": -11.81572406315987,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 4.574440171131376,
+          "outside_frequency_window": true,
+          "open_channel_count": 40,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -2,
+          "physical_omega_a_over_c": -7.244264781939479,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 2.4177101965900336,
+          "outside_frequency_window": true,
+          "open_channel_count": 16,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -1,
+          "physical_omega_a_over_c": -2.6728055007190883,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 0.2609802220486913,
+          "outside_frequency_window": true,
+          "open_channel_count": 4,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 0,
+          "physical_omega_a_over_c": 1.8986537805013028,
+          "reference_energy_weight": 1.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 0.10425024750734876,
+          "outside_frequency_window": true,
+          "open_channel_count": 0,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 1,
+          "physical_omega_a_over_c": 6.470113061721694,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 2.052479727033994,
+          "outside_frequency_window": true,
+          "open_channel_count": 8,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 2,
+          "physical_omega_a_over_c": 11.041572342942086,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 4.209209701575336,
+          "outside_frequency_window": true,
+          "open_channel_count": 40,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 3,
+          "physical_omega_a_over_c": 15.613031624162476,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 6.365939676116679,
+          "outside_frequency_window": true,
+          "open_channel_count": 52,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        }
+      ],
+      "notes": [
+        "Weights use a fixed reference stiffness, not the full physical time-dependent energy metric",
+        "Negative-frequency amplitudes require a validated reality/retarded map; abs(frequency) only diagnoses geometric thresholds",
+        "Zero output in a dark mode does not certify unrepresented channels",
+        "Only diffraction orders within the native spatial truncation are inspected",
+        "kz=0 is a threshold, not a safely propagating channel; no threshold self-energy is computed"
+      ]
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY_NOT_FREQUENCY_DEPENDENT_RADIATION_VALIDATION",
+      "branch_index": 13,
+      "frequency_window": 0.05,
+      "negative_frequency_weight": 1.0,
+      "outside_frequency_window_weight": 1.0,
+      "changed_channel_set_weight": 0.0,
+      "near_diffraction_threshold_weight": 0.0,
+      "significant_changed_channel_harmonics": [],
+      "frozen_total_power": 0.0,
+      "sidebands": [
+        {
+          "harmonic": -3,
+          "physical_omega_a_over_c": -15.613031624162476,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 6.365939676116679,
+          "outside_frequency_window": true,
+          "open_channel_count": 52,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -2,
+          "physical_omega_a_over_c": -11.041572342942086,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 4.209209701575336,
+          "outside_frequency_window": true,
+          "open_channel_count": 40,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -1,
+          "physical_omega_a_over_c": -6.470113061721693,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 2.0524797270339934,
+          "outside_frequency_window": true,
+          "open_channel_count": 8,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 0,
+          "physical_omega_a_over_c": -1.8986537805013024,
+          "reference_energy_weight": 1.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 0.10425024750734897,
+          "outside_frequency_window": true,
+          "open_channel_count": 0,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 1,
+          "physical_omega_a_over_c": 2.6728055007190887,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 0.26098022204869153,
+          "outside_frequency_window": true,
+          "open_channel_count": 4,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 2,
+          "physical_omega_a_over_c": 7.24426478193948,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 2.417710196590034,
+          "outside_frequency_window": true,
+          "open_channel_count": 16,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 3,
+          "physical_omega_a_over_c": 11.81572406315987,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 4.574440171131376,
+          "outside_frequency_window": true,
+          "open_channel_count": 40,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        }
+      ],
+      "notes": [
+        "Weights use a fixed reference stiffness, not the full physical time-dependent energy metric",
+        "Negative-frequency amplitudes require a validated reality/retarded map; abs(frequency) only diagnoses geometric thresholds",
+        "Zero output in a dark mode does not certify unrepresented channels",
+        "Only diffraction orders within the native spatial truncation are inspected",
+        "kz=0 is a threshold, not a safely propagating channel; no threshold self-energy is computed"
+      ]
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY_NOT_FREQUENCY_DEPENDENT_RADIATION_VALIDATION",
+      "branch_index": 14,
+      "frequency_window": 0.05,
+      "negative_frequency_weight": 0.0,
+      "outside_frequency_window_weight": 1.0,
+      "changed_channel_set_weight": 0.0,
+      "near_diffraction_threshold_weight": 0.0,
+      "significant_changed_channel_harmonics": [],
+      "frozen_total_power": 0.0,
+      "sidebands": [
+        {
+          "harmonic": -3,
+          "physical_omega_a_over_c": -11.37378115221355,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 4.365939676116678,
+          "outside_frequency_window": true,
+          "open_channel_count": 40,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -2,
+          "physical_omega_a_over_c": -6.8023218709931585,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 2.209209701575336,
+          "outside_frequency_window": true,
+          "open_channel_count": 16,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -1,
+          "physical_omega_a_over_c": -2.2308625897727676,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 0.05247972703399377,
+          "outside_frequency_window": true,
+          "open_channel_count": 0,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": false
+        },
+        {
+          "harmonic": 0,
+          "physical_omega_a_over_c": 2.3405966914476233,
+          "reference_energy_weight": 1.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 0.10425024750734867,
+          "outside_frequency_window": true,
+          "open_channel_count": 0,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 1,
+          "physical_omega_a_over_c": 6.912055972668014,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 2.260980222048691,
+          "outside_frequency_window": true,
+          "open_channel_count": 16,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 2,
+          "physical_omega_a_over_c": 11.483515253888406,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 4.417710196590034,
+          "outside_frequency_window": true,
+          "open_channel_count": 40,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 3,
+          "physical_omega_a_over_c": 16.054974535108798,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 6.574440171131377,
+          "outside_frequency_window": true,
+          "open_channel_count": 52,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        }
+      ],
+      "notes": [
+        "Weights use a fixed reference stiffness, not the full physical time-dependent energy metric",
+        "Negative-frequency amplitudes require a validated reality/retarded map; abs(frequency) only diagnoses geometric thresholds",
+        "Zero output in a dark mode does not certify unrepresented channels",
+        "Only diffraction orders within the native spatial truncation are inspected",
+        "kz=0 is a threshold, not a safely propagating channel; no threshold self-energy is computed"
+      ]
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY_NOT_FREQUENCY_DEPENDENT_RADIATION_VALIDATION",
+      "branch_index": 15,
+      "frequency_window": 0.05,
+      "negative_frequency_weight": 1.0,
+      "outside_frequency_window_weight": 1.0,
+      "changed_channel_set_weight": 0.0,
+      "near_diffraction_threshold_weight": 0.0,
+      "significant_changed_channel_harmonics": [],
+      "frozen_total_power": 0.0,
+      "sidebands": [
+        {
+          "harmonic": -3,
+          "physical_omega_a_over_c": -16.054974535108798,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 6.574440171131377,
+          "outside_frequency_window": true,
+          "open_channel_count": 52,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -2,
+          "physical_omega_a_over_c": -11.483515253888406,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 4.417710196590034,
+          "outside_frequency_window": true,
+          "open_channel_count": 40,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -1,
+          "physical_omega_a_over_c": -6.912055972668014,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 2.260980222048691,
+          "outside_frequency_window": true,
+          "open_channel_count": 16,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 0,
+          "physical_omega_a_over_c": -2.3405966914476233,
+          "reference_energy_weight": 1.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": true,
+          "magnitude_detuning": 0.10425024750734867,
+          "outside_frequency_window": true,
+          "open_channel_count": 0,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 1,
+          "physical_omega_a_over_c": 2.2308625897727676,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 0.05247972703399377,
+          "outside_frequency_window": true,
+          "open_channel_count": 0,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": false
+        },
+        {
+          "harmonic": 2,
+          "physical_omega_a_over_c": 6.8023218709931585,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 2.209209701575336,
+          "outside_frequency_window": true,
+          "open_channel_count": 16,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 3,
+          "physical_omega_a_over_c": 11.37378115221355,
+          "reference_energy_weight": 0.0,
+          "frozen_model_radiation_power": 0.0,
+          "negative_frequency": false,
+          "magnitude_detuning": 4.365939676116678,
+          "outside_frequency_window": true,
+          "open_channel_count": 40,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        }
+      ],
+      "notes": [
+        "Weights use a fixed reference stiffness, not the full physical time-dependent energy metric",
+        "Negative-frequency amplitudes require a validated reality/retarded map; abs(frequency) only diagnoses geometric thresholds",
+        "Zero output in a dark mode does not certify unrepresented channels",
+        "Only diffraction orders within the native spatial truncation are inspected",
+        "kz=0 is a threshold, not a safely propagating channel; no threshold self-energy is computed"
+      ]
+    }
+  ],
+  "operator_fourier_check": {
+    "grids": [
+      {
+        "samples": 64,
+        "discarded_relative_tail": 0.0,
+        "coefficient_change": 0.0
+      },
+      {
+        "samples": 128,
+        "discarded_relative_tail": 0.0,
+        "coefficient_change": 0.0
+      }
+    ],
+    "shifted_time_relative_error": 0.0,
+    "tolerance": 1e-09,
+    "scope": "Sampled operator Fourier convergence; separate from state-sideband boundary convergence"
+  },
+  "spectrum_basis_id": "25603c3b9790775b4b84ec94a46d04fdf57d6914ffc16c6e455c0ee977e6a08b",
+  "maximum_growth_over_drive": 4.740084794668085e-17,
+  "frequency_window_passed": false,
+  "independent_period": {
+    "max_multiplier_error": 9.554374059703974e-12,
+    "physical_count": 4,
+    "scope": "Finite frozen-channel model only"
+  },
+  "power_balance": [
+    {
+      "mean_energy": 0.14711943928702853,
+      "mean_pump_power": 0.0,
+      "mean_radiation_power": 0.0,
+      "growth_energy_rate": -9.066935472779142e-34,
+      "absolute_balance_residual": 9.066935472779142e-34,
+      "relative_balance_residual": 1.0
+    },
+    {
+      "mean_energy": 0.14711943928702856,
+      "mean_pump_power": 0.0,
+      "mean_radiation_power": 0.0,
+      "growth_energy_rate": 4.386484212123816e-33,
+      "absolute_balance_residual": 4.386484212123816e-33,
+      "relative_balance_residual": 1.0
+    },
+    {
+      "mean_energy": 0.20769871980762702,
+      "mean_pump_power": 0.0,
+      "mean_radiation_power": 0.0,
+      "growth_energy_rate": 1.96901908726432e-17,
+      "absolute_balance_residual": 1.96901908726432e-17,
+      "relative_balance_residual": 1.0
+    },
+    {
+      "mean_energy": 0.20769871980762702,
+      "mean_pump_power": 0.0,
+      "mean_radiation_power": 0.0,
+      "growth_energy_rate": -1.9690190872643195e-17,
+      "absolute_balance_residual": 1.9690190872643195e-17,
+      "relative_balance_residual": 1.0
+    }
+  ],
+  "radiation_assessment": {
+    "status": "FIXED_STATE_NATIVE_RADIATION_ASSESSMENT_NOT_CORRECTED_POLES",
+    "branches": [
+      {
+        "index": 12,
+        "frequency_over_drive": [
+          0.41532772440979515,
+          -3.0814879110195774e-33
+        ],
+        "status": "ASSESSED_FIXED_STATE",
+        "power_balance": {
+          "mean_energy": 0.14711943928702853,
+          "mean_pump_power": 0.0,
+          "mean_radiation_power": 0.0,
+          "growth_energy_rate": -9.066935472779142e-34,
+          "absolute_balance_residual": 9.066935472779142e-34,
+          "relative_balance_residual": 1.0
+        },
+        "sidebands": [
+          {
+            "harmonic": -3,
+            "physical_omega_a_over_c": -11.81572406315987,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": -2,
+            "physical_omega_a_over_c": -7.244264781939479,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": -1,
+            "physical_omega_a_over_c": -2.6728055007190883,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 0,
+            "physical_omega_a_over_c": 1.8986537805013028,
+            "velocity_norm_weight": 1.0,
+            "frozen_power": 0.0,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 0.0,
+            "channel_count": 0,
+            "channel_labels": [],
+            "damping_change_operator_norm": 0.0
+          },
+          {
+            "harmonic": 1,
+            "physical_omega_a_over_c": 6.470113061721694,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 2,
+            "physical_omega_a_over_c": 11.041572342942086,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 3,
+            "physical_omega_a_over_c": 15.613031624162476,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          }
+        ],
+        "all_nonzero_velocity_sidebands_evaluated": true,
+        "sampled_frozen_power": 0.0,
+        "sampled_frequency_resolved_power": 0.0,
+        "sampled_power_change": 0.0,
+        "unresolved_velocity_weight": 0.0,
+        "absolute_change_over_absolute_net_power": null,
+        "fixed_state_net_power_after_replacement": -9.066935472779142e-34,
+        "fixed_state_growth_sign_preserved": null,
+        "net_power_sign_resolution": 2.0906929774899443e-15,
+        "original_net_sign_resolved": false,
+        "within_requested_power_tolerance": null
+      },
+      {
+        "index": 13,
+        "frequency_over_drive": [
+          -0.4153277244097951,
+          1.4907901475772448e-32
+        ],
+        "status": "ASSESSED_FIXED_STATE",
+        "power_balance": {
+          "mean_energy": 0.14711943928702856,
+          "mean_pump_power": 0.0,
+          "mean_radiation_power": 0.0,
+          "growth_energy_rate": 4.386484212123816e-33,
+          "absolute_balance_residual": 4.386484212123816e-33,
+          "relative_balance_residual": 1.0
+        },
+        "sidebands": [
+          {
+            "harmonic": -3,
+            "physical_omega_a_over_c": -15.613031624162476,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": -2,
+            "physical_omega_a_over_c": -11.041572342942086,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": -1,
+            "physical_omega_a_over_c": -6.470113061721693,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 0,
+            "physical_omega_a_over_c": -1.8986537805013024,
+            "velocity_norm_weight": 1.0,
+            "frozen_power": 0.0,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 0.0,
+            "channel_count": 0,
+            "channel_labels": [],
+            "damping_change_operator_norm": 0.0
+          },
+          {
+            "harmonic": 1,
+            "physical_omega_a_over_c": 2.6728055007190887,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 2,
+            "physical_omega_a_over_c": 7.24426478193948,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 3,
+            "physical_omega_a_over_c": 11.81572406315987,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          }
+        ],
+        "all_nonzero_velocity_sidebands_evaluated": true,
+        "sampled_frozen_power": 0.0,
+        "sampled_frequency_resolved_power": 0.0,
+        "sampled_power_change": 0.0,
+        "unresolved_velocity_weight": 0.0,
+        "absolute_change_over_absolute_net_power": null,
+        "fixed_state_net_power_after_replacement": 4.386484212123816e-33,
+        "fixed_state_growth_sign_preserved": null,
+        "net_power_sign_resolution": 2.0906929774899447e-15,
+        "original_net_sign_resolved": false,
+        "within_requested_power_tolerance": null
+      },
+      {
+        "index": 14,
+        "frequency_over_drive": [
+          0.5120020867434656,
+          4.740084794668085e-17
+        ],
+        "status": "ASSESSED_FIXED_STATE",
+        "power_balance": {
+          "mean_energy": 0.20769871980762702,
+          "mean_pump_power": 0.0,
+          "mean_radiation_power": 0.0,
+          "growth_energy_rate": 1.96901908726432e-17,
+          "absolute_balance_residual": 1.96901908726432e-17,
+          "relative_balance_residual": 1.0
+        },
+        "sidebands": [
+          {
+            "harmonic": -3,
+            "physical_omega_a_over_c": -11.37378115221355,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": -2,
+            "physical_omega_a_over_c": -6.8023218709931585,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": -1,
+            "physical_omega_a_over_c": -2.2308625897727676,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 0,
+            "physical_omega_a_over_c": 2.3405966914476233,
+            "velocity_norm_weight": 1.0,
+            "frozen_power": 0.0,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 0.0,
+            "channel_count": 0,
+            "channel_labels": [],
+            "damping_change_operator_norm": 0.0
+          },
+          {
+            "harmonic": 1,
+            "physical_omega_a_over_c": 6.912055972668014,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 2,
+            "physical_omega_a_over_c": 11.483515253888406,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 3,
+            "physical_omega_a_over_c": 16.054974535108798,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          }
+        ],
+        "all_nonzero_velocity_sidebands_evaluated": true,
+        "sampled_frozen_power": 0.0,
+        "sampled_frequency_resolved_power": 0.0,
+        "sampled_power_change": 0.0,
+        "unresolved_velocity_weight": 0.0,
+        "absolute_change_over_absolute_net_power": null,
+        "fixed_state_net_power_after_replacement": 1.96901908726432e-17,
+        "fixed_state_growth_sign_preserved": null,
+        "net_power_sign_resolution": 2.9515763317196363e-15,
+        "original_net_sign_resolved": false,
+        "within_requested_power_tolerance": null
+      },
+      {
+        "index": 15,
+        "frequency_over_drive": [
+          -0.5120020867434656,
+          -4.7400847946680845e-17
+        ],
+        "status": "ASSESSED_FIXED_STATE",
+        "power_balance": {
+          "mean_energy": 0.20769871980762702,
+          "mean_pump_power": 0.0,
+          "mean_radiation_power": 0.0,
+          "growth_energy_rate": -1.9690190872643195e-17,
+          "absolute_balance_residual": 1.9690190872643195e-17,
+          "relative_balance_residual": 1.0
+        },
+        "sidebands": [
+          {
+            "harmonic": -3,
+            "physical_omega_a_over_c": -16.054974535108798,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": -2,
+            "physical_omega_a_over_c": -11.483515253888406,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": -1,
+            "physical_omega_a_over_c": -6.912055972668014,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 0,
+            "physical_omega_a_over_c": -2.3405966914476233,
+            "velocity_norm_weight": 1.0,
+            "frozen_power": 0.0,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 0.0,
+            "channel_count": 0,
+            "channel_labels": [],
+            "damping_change_operator_norm": 0.0
+          },
+          {
+            "harmonic": 1,
+            "physical_omega_a_over_c": 2.2308625897727676,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 2,
+            "physical_omega_a_over_c": 6.8023218709931585,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          },
+          {
+            "harmonic": 3,
+            "physical_omega_a_over_c": 11.37378115221355,
+            "velocity_norm_weight": 0.0,
+            "frozen_power": 0.0,
+            "status": "ZERO_VELOCITY_NO_POWER",
+            "resolved_power": 0.0,
+            "channel_count": null
+          }
+        ],
+        "all_nonzero_velocity_sidebands_evaluated": true,
+        "sampled_frozen_power": 0.0,
+        "sampled_frequency_resolved_power": 0.0,
+        "sampled_power_change": 0.0,
+        "unresolved_velocity_weight": 0.0,
+        "absolute_change_over_absolute_net_power": null,
+        "fixed_state_net_power_after_replacement": -1.9690190872643195e-17,
+        "fixed_state_growth_sign_preserved": null,
+        "net_power_sign_resolution": 2.9515763317196363e-15,
+        "original_net_sign_resolved": false,
+        "within_requested_power_tolerance": null
+      }
+    ],
+    "window_policy": "trial",
+    "absolute_power_tolerance": null,
+    "net_power_tolerance": null,
+    "sampler_metadata": {
+      "plus_basis_id": "25603c3b9790775b4b84ec94a46d04fdf57d6914ffc16c6e455c0ee977e6a08b",
+      "minus_basis_id": "3fd231f16a06ba7f1d64605d9dde688bb5866211a53536da04d2239ce9c72763",
+      "signed_mapping": "measured",
+      "reality_map": {
+        "verified_from_physical_fields": true,
+        "least_squares_map": [
+          [
+            [
+              -0.899818834225603,
+              -0.4362637568866753
+            ],
+            [
+              4.978011694957314e-15,
+              -8.89192062322283e-16
+            ]
+          ],
+          [
+            [
+              -3.1228769191288535e-15,
+              -4.146623345616569e-15
+            ],
+            [
+              -0.9573640169711468,
+              -0.2888843003848939
+            ]
+          ]
+        ],
+        "least_squares_field_residual": 2.6302079789161364e-15,
+        "unitary_field_residual": 2.643507220792325e-15,
+        "raw_map_unitarity_residual": 5.933568650758273e-16,
+        "polar_map_relative_change": 2.543428987545736e-16,
+        "metric_isometry_residual": 1.1989675510946872e-15,
+        "frequency_intertwining_relative_residual": 2.0374056914903595e-15,
+        "principal_overlaps_squared": [
+          1.0,
+          0.9999999999999998
+        ],
+        "field_rank_ratios": [
+          0.9999973123511786,
+          0.9999973123511795
+        ],
+        "field_Gram_condition_numbers": [
+          1.0000053753193132,
+          1.0000053753193114
+        ],
+        "plus_finite_window_Gram_identity_error": 3.8022979040700446e-06,
+        "minus_finite_window_Gram_identity_error": 3.802297903836715e-06,
+        "field_tolerance": 1e-06,
+        "unitary_tolerance": 1e-06,
+        "spectral_tolerance": 1e-07,
+        "rank_tolerance": 1e-09,
+        "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+        "not_a_whitened_coordinate_map": true,
+        "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+        "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+        "minus_G_index_for_each_plus_G": [
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "plus_kind": 6,
+        "minus_kind": 6,
+        "plus_modes": [
+          2,
+          3
+        ],
+        "minus_modes": [
+          2,
+          3
+        ],
+        "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "minus_native_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+        "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+      }
+    },
+    "scope": "Actual signed real-axis dissipative power on computed states; not reactive shift, updated pole or physical SI scattering",
+    "limitations": [
+      "All contributions use the native weak-radiation normalization in the supplied modal coordinates",
+      "Missing negative-k maps or exact thresholds remain explicit unresolved samples",
+      "A fixed-state margin cannot bound eigenvector/reactive changes or near-EP sensitivity"
+    ]
+  },
+  "status": "SOLVED_LOCAL_APPROXIMATE_FROZEN_SLAB_MODEL",
+  "amplitude": 0.0,
+  "strict_status": "REJECTED_MODEL_OR_REPRESENTATION",
+  "strict_reason": "Modal frequency spread or common evaluation frequency exceeds the frozen-bath window",
+  "strict_reason_category": "HEURISTIC_FROZEN_WINDOW",
+  "quasifrequencies_over_drive": [
+    [
+      0.41532772440979515,
+      -3.0814879110195774e-33
+    ],
+    [
+      -0.4153277244097951,
+      1.4907901475772448e-32
+    ],
+    [
+      0.5120020867434656,
+      4.740084794668085e-17
+    ],
+    [
+      -0.5120020867434656,
+      -4.7400847946680845e-17
+    ]
+  ],
+  "branch_power_changes": [
+    {
+      "index": 12,
+      "status": "ASSESSED_FIXED_STATE",
+      "sampled_power_change": 0.0,
+      "absolute_change_over_absolute_net_power": null,
+      "fixed_state_growth_sign_preserved": null,
+      "unresolved_velocity_weight": 0.0
+    },
+    {
+      "index": 13,
+      "status": "ASSESSED_FIXED_STATE",
+      "sampled_power_change": 0.0,
+      "absolute_change_over_absolute_net_power": null,
+      "fixed_state_growth_sign_preserved": null,
+      "unresolved_velocity_weight": 0.0
+    },
+    {
+      "index": 14,
+      "status": "ASSESSED_FIXED_STATE",
+      "sampled_power_change": 0.0,
+      "absolute_change_over_absolute_net_power": null,
+      "fixed_state_growth_sign_preserved": null,
+      "unresolved_velocity_weight": 0.0
+    },
+    {
+      "index": 15,
+      "status": "ASSESSED_FIXED_STATE",
+      "sampled_power_change": 0.0,
+      "absolute_change_over_absolute_net_power": null,
+      "fixed_state_growth_sign_preserved": null,
+      "unresolved_velocity_weight": 0.0
+    }
+  ]
+}

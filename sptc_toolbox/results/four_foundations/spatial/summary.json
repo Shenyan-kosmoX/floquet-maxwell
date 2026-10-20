@@ -1,0 +1,1162 @@
+{
+  "policy": {
+    "omega": {
+      "atol": 1e-05,
+      "rtol": 0.0,
+      "reference_scale": 0.0
+    },
+    "S0": {
+      "atol": 1e-05,
+      "rtol": 0.0,
+      "reference_scale": 0.0
+    }
+  },
+  "sequences": {
+    "plane_wave": {
+      "stop_reason": "SCHEDULE_EXHAUSTED",
+      "assessment": {
+        "verdict": "NOT_CONVERGED",
+        "layer": "spatial",
+        "level_count": 4,
+        "minimum_levels": 3,
+        "required_successive_passing_pairs": 2,
+        "pairs": [
+          {
+            "verdict": "NOT_CONVERGED",
+            "coarse": "g3.1_v0_3",
+            "fine": "g4.1_v0_3",
+            "layer": "spatial",
+            "changed_axes": [
+              "gmax"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "radius": 0.25,
+              "transverse_rows": 14,
+              "missing_row": 0,
+              "q": [
+                2.2,
+                3.141592653589793
+              ]
+            },
+            "model_scope": {
+              "model": "Native Legume guided expansion and perturbative radiation",
+              "identity": "Finite-window H positive metric; not QNM normalization"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "Actual fixed-geometry native cutoff/family refinement",
+              "identity_status": "verified",
+              "identity_note": "Full-union H identity: sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3__g4.1_v0_3.json",
+              "refinement_kind": "independent_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "S0": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "dimensionless electric mass",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 8.942305897759878e-06,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "omega": {
+                "verdict": "NOT_CONVERGED",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 0.0018626601311806379,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.0018526601311806379,
+                "violation_count": 2,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          },
+          {
+            "verdict": "NOT_CONVERGED",
+            "coarse": "g4.1_v0_3",
+            "fine": "g5.1_v0_3",
+            "layer": "spatial",
+            "changed_axes": [
+              "gmax"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "radius": 0.25,
+              "transverse_rows": 14,
+              "missing_row": 0,
+              "q": [
+                2.2,
+                3.141592653589793
+              ]
+            },
+            "model_scope": {
+              "model": "Native Legume guided expansion and perturbative radiation",
+              "identity": "Finite-window H positive metric; not QNM normalization"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "Actual fixed-geometry native cutoff/family refinement",
+              "identity_status": "verified",
+              "identity_note": "Full-union H identity: sptc_toolbox\\results\\four_foundations\\spatial\\g4.1_v0_3__g5.1_v0_3.json",
+              "refinement_kind": "independent_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "S0": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "dimensionless electric mass",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 3.6347744485458466e-06,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "omega": {
+                "verdict": "NOT_CONVERGED",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 0.001515984597894482,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.001505984597894482,
+                "violation_count": 2,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          },
+          {
+            "verdict": "NOT_CONVERGED",
+            "coarse": "g5.1_v0_3",
+            "fine": "g6.1_v0_3",
+            "layer": "spatial",
+            "changed_axes": [
+              "gmax"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "radius": 0.25,
+              "transverse_rows": 14,
+              "missing_row": 0,
+              "q": [
+                2.2,
+                3.141592653589793
+              ]
+            },
+            "model_scope": {
+              "model": "Native Legume guided expansion and perturbative radiation",
+              "identity": "Finite-window H positive metric; not QNM normalization"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "Actual fixed-geometry native cutoff/family refinement",
+              "identity_status": "verified",
+              "identity_note": "Full-union H identity: sptc_toolbox\\results\\four_foundations\\spatial\\g5.1_v0_3__g6.1_v0_3.json",
+              "refinement_kind": "independent_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "S0": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "dimensionless electric mass",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 7.0470114600720835e-06,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "omega": {
+                "verdict": "NOT_CONVERGED",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 0.0008659111649114148,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.0008559111649114148,
+                "violation_count": 2,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          }
+        ],
+        "observables": {
+          "S0": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          },
+          "omega": {
+            "verdict": "NOT_CONVERGED",
+            "pair_verdicts": [
+              "NOT_CONVERGED",
+              "NOT_CONVERGED",
+              "NOT_CONVERGED"
+            ]
+          }
+        },
+        "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+      },
+      "estimated_bytes": [
+        34857216,
+        105842944,
+        254466304,
+        515471616
+      ],
+      "snapshots": [
+        {
+          "run_id": "g3.1_v0_3",
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "radius": 0.25,
+            "transverse_rows": 14,
+            "missing_row": 0,
+            "q": [
+              2.2,
+              3.141592653589793
+            ]
+          },
+          "model_scope": {
+            "model": "Native Legume guided expansion and perturbative radiation",
+            "identity": "Finite-window H positive metric; not QNM normalization"
+          },
+          "numerical_controls": {
+            "gmax": 3.1,
+            "gmode_inds": [
+              0,
+              3
+            ],
+            "numeig": 32
+          },
+          "observables": {
+            "omega": {
+              "values": [
+                1.6474628882062294,
+                1.6091512690819756
+              ],
+              "units": "omega*a/c",
+              "status": "available",
+              "note": ""
+            },
+            "S0": {
+              "values": [
+                -0.009519808409264146,
+                -0.009471895559036306
+              ],
+              "units": "dimensionless electric mass",
+              "status": "available",
+              "note": ""
+            }
+          },
+          "limitations": [],
+          "metadata": {
+            "record": "sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3\\record.json",
+            "fields": "sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3\\fields.npz"
+          }
+        },
+        {
+          "run_id": "g4.1_v0_3",
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "radius": 0.25,
+            "transverse_rows": 14,
+            "missing_row": 0,
+            "q": [
+              2.2,
+              3.141592653589793
+            ]
+          },
+          "model_scope": {
+            "model": "Native Legume guided expansion and perturbative radiation",
+            "identity": "Finite-window H positive metric; not QNM normalization"
+          },
+          "numerical_controls": {
+            "gmax": 4.1,
+            "gmode_inds": [
+              0,
+              3
+            ],
+            "numeig": 32
+          },
+          "observables": {
+            "omega": {
+              "values": [
+                1.64932554833741,
+                1.6110106573379381
+              ],
+              "units": "omega*a/c",
+              "status": "available",
+              "note": ""
+            },
+            "S0": {
+              "values": [
+                -0.00951138818984248,
+                -0.009462953253138546
+              ],
+              "units": "dimensionless electric mass",
+              "status": "available",
+              "note": ""
+            }
+          },
+          "limitations": [],
+          "metadata": {
+            "record": "sptc_toolbox\\results\\four_foundations\\spatial\\g4.1_v0_3\\record.json",
+            "fields": "sptc_toolbox\\results\\four_foundations\\spatial\\g4.1_v0_3\\fields.npz"
+          }
+        },
+        {
+          "run_id": "g5.1_v0_3",
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "radius": 0.25,
+            "transverse_rows": 14,
+            "missing_row": 0,
+            "q": [
+              2.2,
+              3.141592653589793
+            ]
+          },
+          "model_scope": {
+            "model": "Native Legume guided expansion and perturbative radiation",
+            "identity": "Finite-window H positive metric; not QNM normalization"
+          },
+          "numerical_controls": {
+            "gmax": 5.1,
+            "gmode_inds": [
+              0,
+              3
+            ],
+            "numeig": 32
+          },
+          "observables": {
+            "omega": {
+              "values": [
+                1.6504362951615477,
+                1.6125266419358326
+              ],
+              "units": "omega*a/c",
+              "status": "available",
+              "note": ""
+            },
+            "S0": {
+              "values": [
+                -0.009510622635926778,
+                -0.00945931847869
+              ],
+              "units": "dimensionless electric mass",
+              "status": "available",
+              "note": ""
+            }
+          },
+          "limitations": [],
+          "metadata": {
+            "record": "sptc_toolbox\\results\\four_foundations\\spatial\\g5.1_v0_3\\record.json",
+            "fields": "sptc_toolbox\\results\\four_foundations\\spatial\\g5.1_v0_3\\fields.npz"
+          }
+        },
+        {
+          "run_id": "g6.1_v0_3",
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "radius": 0.25,
+            "transverse_rows": 14,
+            "missing_row": 0,
+            "q": [
+              2.2,
+              3.141592653589793
+            ]
+          },
+          "model_scope": {
+            "model": "Native Legume guided expansion and perturbative radiation",
+            "identity": "Finite-window H positive metric; not QNM normalization"
+          },
+          "numerical_controls": {
+            "gmax": 6.1,
+            "gmode_inds": [
+              0,
+              3
+            ],
+            "numeig": 32
+          },
+          "observables": {
+            "omega": {
+              "values": [
+                1.6510411721736693,
+                1.613392553100744
+              ],
+              "units": "omega*a/c",
+              "status": "available",
+              "note": ""
+            },
+            "S0": {
+              "values": [
+                -0.009507780305918576,
+                -0.009452271467229928
+              ],
+              "units": "dimensionless electric mass",
+              "status": "available",
+              "note": ""
+            }
+          },
+          "limitations": [],
+          "metadata": {
+            "record": "sptc_toolbox\\results\\four_foundations\\spatial\\g6.1_v0_3\\record.json",
+            "fields": "sptc_toolbox\\results\\four_foundations\\spatial\\g6.1_v0_3\\fields.npz"
+          }
+        }
+      ],
+      "budget": {
+        "max_levels": 5,
+        "max_estimated_bytes": 1500000000
+      },
+      "scope": "Observed supplied-axis agreement only; other axes and missing continua remain independent"
+    },
+    "vertical": {
+      "stop_reason": "SCHEDULE_EXHAUSTED",
+      "assessment": {
+        "verdict": "NOT_CONVERGED",
+        "layer": "spatial",
+        "level_count": 3,
+        "minimum_levels": 3,
+        "required_successive_passing_pairs": 2,
+        "pairs": [
+          {
+            "verdict": "NOT_CONVERGED",
+            "coarse": "g3.1_v0_3",
+            "fine": "g3.1_v0_3_4_7",
+            "layer": "spatial",
+            "changed_axes": [
+              "gmode_inds"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "radius": 0.25,
+              "transverse_rows": 14,
+              "missing_row": 0,
+              "q": [
+                2.2,
+                3.141592653589793
+              ]
+            },
+            "model_scope": {
+              "model": "Native Legume guided expansion and perturbative radiation",
+              "identity": "Finite-window H positive metric; not QNM normalization"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "Actual fixed-geometry native cutoff/family refinement",
+              "identity_status": "verified",
+              "identity_note": "Full-union H identity: sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3__g3.1_v0_3_4_7.json",
+              "refinement_kind": "independent_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "S0": {
+                "verdict": "NOT_CONVERGED",
+                "reasons": [],
+                "units": "dimensionless electric mass",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 2.506525013370141e-05,
+                "max_allowed_error": 1e-05,
+                "max_excess": 1.5065250133701407e-05,
+                "violation_count": 2,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "omega": {
+                "verdict": "NOT_CONVERGED",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 0.0035199173318338772,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.003509917331833877,
+                "violation_count": 2,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          },
+          {
+            "verdict": "NOT_CONVERGED",
+            "coarse": "g3.1_v0_3_4_7",
+            "fine": "g3.1_v0_3_4_7_8_11",
+            "layer": "spatial",
+            "changed_axes": [
+              "gmode_inds"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "radius": 0.25,
+              "transverse_rows": 14,
+              "missing_row": 0,
+              "q": [
+                2.2,
+                3.141592653589793
+              ]
+            },
+            "model_scope": {
+              "model": "Native Legume guided expansion and perturbative radiation",
+              "identity": "Finite-window H positive metric; not QNM normalization"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "Actual fixed-geometry native cutoff/family refinement",
+              "identity_status": "verified",
+              "identity_note": "Full-union H identity: sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3_4_7__g3.1_v0_3_4_7_8_11.json",
+              "refinement_kind": "independent_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "S0": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "dimensionless electric mass",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 7.59236947579095e-07,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "omega": {
+                "verdict": "NOT_CONVERGED",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 0.000478858880217814,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.00046885888021781395,
+                "violation_count": 2,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          }
+        ],
+        "observables": {
+          "S0": {
+            "verdict": "NOT_CONVERGED",
+            "pair_verdicts": [
+              "NOT_CONVERGED",
+              "PASS_PAIR"
+            ]
+          },
+          "omega": {
+            "verdict": "NOT_CONVERGED",
+            "pair_verdicts": [
+              "NOT_CONVERGED",
+              "NOT_CONVERGED"
+            ]
+          }
+        },
+        "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+      },
+      "estimated_bytes": [
+        34857216,
+        139428864,
+        313714944
+      ],
+      "snapshots": [
+        {
+          "run_id": "g3.1_v0_3",
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "radius": 0.25,
+            "transverse_rows": 14,
+            "missing_row": 0,
+            "q": [
+              2.2,
+              3.141592653589793
+            ]
+          },
+          "model_scope": {
+            "model": "Native Legume guided expansion and perturbative radiation",
+            "identity": "Finite-window H positive metric; not QNM normalization"
+          },
+          "numerical_controls": {
+            "gmax": 3.1,
+            "gmode_inds": [
+              0,
+              3
+            ],
+            "numeig": 32
+          },
+          "observables": {
+            "omega": {
+              "values": [
+                1.6474628882062294,
+                1.6091512690819756
+              ],
+              "units": "omega*a/c",
+              "status": "available",
+              "note": ""
+            },
+            "S0": {
+              "values": [
+                -0.009519808409264146,
+                -0.009471895559036306
+              ],
+              "units": "dimensionless electric mass",
+              "status": "available",
+              "note": ""
+            }
+          },
+          "limitations": [],
+          "metadata": {
+            "record": "sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3\\record.json",
+            "fields": "sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3\\fields.npz"
+          }
+        },
+        {
+          "run_id": "g3.1_v0_3_4_7",
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "radius": 0.25,
+            "transverse_rows": 14,
+            "missing_row": 0,
+            "q": [
+              2.2,
+              3.141592653589793
+            ]
+          },
+          "model_scope": {
+            "model": "Native Legume guided expansion and perturbative radiation",
+            "identity": "Finite-window H positive metric; not QNM normalization"
+          },
+          "numerical_controls": {
+            "gmax": 3.1,
+            "gmode_inds": [
+              0,
+              3,
+              4,
+              7
+            ],
+            "numeig": 32
+          },
+          "observables": {
+            "omega": {
+              "values": [
+                1.6450458888877433,
+                1.6056313517501417
+              ],
+              "units": "omega*a/c",
+              "status": "available",
+              "note": ""
+            },
+            "S0": {
+              "values": [
+                -0.009544873659397848,
+                -0.009493199165326026
+              ],
+              "units": "dimensionless electric mass",
+              "status": "available",
+              "note": ""
+            }
+          },
+          "limitations": [],
+          "metadata": {
+            "record": "sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3_4_7\\record.json",
+            "fields": "sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3_4_7\\fields.npz"
+          }
+        },
+        {
+          "run_id": "g3.1_v0_3_4_7_8_11",
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "radius": 0.25,
+            "transverse_rows": 14,
+            "missing_row": 0,
+            "q": [
+              2.2,
+              3.141592653589793
+            ]
+          },
+          "model_scope": {
+            "model": "Native Legume guided expansion and perturbative radiation",
+            "identity": "Finite-window H positive metric; not QNM normalization"
+          },
+          "numerical_controls": {
+            "gmax": 3.1,
+            "gmode_inds": [
+              0,
+              3,
+              4,
+              7,
+              8,
+              11
+            ],
+            "numeig": 32
+          },
+          "observables": {
+            "omega": {
+              "values": [
+                1.6447178694133162,
+                1.605152492869924
+              ],
+              "units": "omega*a/c",
+              "status": "available",
+              "note": ""
+            },
+            "S0": {
+              "values": [
+                -0.009544114422450269,
+                -0.009493576414717991
+              ],
+              "units": "dimensionless electric mass",
+              "status": "available",
+              "note": ""
+            }
+          },
+          "limitations": [],
+          "metadata": {
+            "record": "sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3_4_7_8_11\\record.json",
+            "fields": "sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3_4_7_8_11\\fields.npz"
+          }
+        }
+      ],
+      "budget": {
+        "max_levels": 5,
+        "max_estimated_bytes": 1500000000
+      },
+      "scope": "Observed supplied-axis agreement only; other axes and missing continua remain independent"
+    },
+    "enriched_plane_wave": {
+      "stop_reason": "SCHEDULE_EXHAUSTED",
+      "assessment": {
+        "verdict": "NOT_CONVERGED",
+        "layer": "spatial",
+        "level_count": 3,
+        "minimum_levels": 3,
+        "required_successive_passing_pairs": 2,
+        "pairs": [
+          {
+            "verdict": "NOT_CONVERGED",
+            "coarse": "g3.1_v0_3_4_7",
+            "fine": "g4.1_v0_3_4_7",
+            "layer": "spatial",
+            "changed_axes": [
+              "gmax"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "radius": 0.25,
+              "transverse_rows": 14,
+              "missing_row": 0,
+              "q": [
+                2.2,
+                3.141592653589793
+              ]
+            },
+            "model_scope": {
+              "model": "Native Legume guided expansion and perturbative radiation",
+              "identity": "Finite-window H positive metric; not QNM normalization"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "Actual fixed-geometry native cutoff/family refinement",
+              "identity_status": "verified",
+              "identity_note": "Full-union H identity: sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3_4_7__g4.1_v0_3_4_7.json",
+              "refinement_kind": "independent_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "S0": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "dimensionless electric mass",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 2.9228856389274666e-06,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "omega": {
+                "verdict": "NOT_CONVERGED",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 0.0014372991313442718,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.0014272991313442718,
+                "violation_count": 2,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          },
+          {
+            "verdict": "NOT_CONVERGED",
+            "coarse": "g4.1_v0_3_4_7",
+            "fine": "g5.1_v0_3_4_7",
+            "layer": "spatial",
+            "changed_axes": [
+              "gmax"
+            ],
+            "is_joint": false,
+            "physical_signature": {
+              "epsilon": 12.1,
+              "thickness": 0.55,
+              "radius": 0.25,
+              "transverse_rows": 14,
+              "missing_row": 0,
+              "q": [
+                2.2,
+                3.141592653589793
+              ]
+            },
+            "model_scope": {
+              "model": "Native Legume guided expansion and perturbative radiation",
+              "identity": "Finite-window H positive metric; not QNM normalization"
+            },
+            "evidence": {
+              "refinement_status": "verified",
+              "refinement_note": "Actual fixed-geometry native cutoff/family refinement",
+              "identity_status": "verified",
+              "identity_note": "Full-union H identity: sptc_toolbox\\results\\four_foundations\\spatial\\g4.1_v0_3_4_7__g5.1_v0_3_4_7.json",
+              "refinement_kind": "independent_refinement"
+            },
+            "missing_evidence": [],
+            "representation_limits": [],
+            "observables": {
+              "S0": {
+                "verdict": "PASS_PAIR",
+                "reasons": [],
+                "units": "dimensionless electric mass",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 2.5270723664726213e-06,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.0,
+                "violation_count": 0,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              },
+              "omega": {
+                "verdict": "NOT_CONVERGED",
+                "reasons": [],
+                "units": "omega*a/c",
+                "shape": [
+                  2
+                ],
+                "max_abs_error": 0.0009593406214738476,
+                "max_allowed_error": 1e-05,
+                "max_excess": 0.0009493406214738476,
+                "violation_count": 2,
+                "tolerance": {
+                  "atol": 1e-05,
+                  "rtol": 0.0,
+                  "reference_scale": 0.0
+                }
+              }
+            },
+            "interpretation": "Pairwise agreement only; not a convergence sequence or asymptotic error bound"
+          }
+        ],
+        "observables": {
+          "S0": {
+            "verdict": "PASS_SEQUENCE",
+            "pair_verdicts": [
+              "PASS_PAIR",
+              "PASS_PAIR"
+            ]
+          },
+          "omega": {
+            "verdict": "NOT_CONVERGED",
+            "pair_verdicts": [
+              "NOT_CONVERGED",
+              "NOT_CONVERGED"
+            ]
+          }
+        },
+        "interpretation": "Observed agreement over supplied refinements only; no extrapolation or error-order claim"
+      },
+      "estimated_bytes": [
+        139428864,
+        423371776,
+        1017865216
+      ],
+      "snapshots": [
+        {
+          "run_id": "g3.1_v0_3_4_7",
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "radius": 0.25,
+            "transverse_rows": 14,
+            "missing_row": 0,
+            "q": [
+              2.2,
+              3.141592653589793
+            ]
+          },
+          "model_scope": {
+            "model": "Native Legume guided expansion and perturbative radiation",
+            "identity": "Finite-window H positive metric; not QNM normalization"
+          },
+          "numerical_controls": {
+            "gmax": 3.1,
+            "gmode_inds": [
+              0,
+              3,
+              4,
+              7
+            ],
+            "numeig": 32
+          },
+          "observables": {
+            "omega": {
+              "values": [
+                1.6450458888877433,
+                1.6056313517501417
+              ],
+              "units": "omega*a/c",
+              "status": "available",
+              "note": ""
+            },
+            "S0": {
+              "values": [
+                -0.009544873659397848,
+                -0.009493199165326026
+              ],
+              "units": "dimensionless electric mass",
+              "status": "available",
+              "note": ""
+            }
+          },
+          "limitations": [],
+          "metadata": {
+            "record": "sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3_4_7\\record.json",
+            "fields": "sptc_toolbox\\results\\four_foundations\\spatial\\g3.1_v0_3_4_7\\fields.npz"
+          }
+        },
+        {
+          "run_id": "g4.1_v0_3_4_7",
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "radius": 0.25,
+            "transverse_rows": 14,
+            "missing_row": 0,
+            "q": [
+              2.2,
+              3.141592653589793
+            ]
+          },
+          "model_scope": {
+            "model": "Native Legume guided expansion and perturbative radiation",
+            "identity": "Finite-window H positive metric; not QNM normalization"
+          },
+          "numerical_controls": {
+            "gmax": 4.1,
+            "gmode_inds": [
+              0,
+              3,
+              4,
+              7
+            ],
+            "numeig": 32
+          },
+          "observables": {
+            "omega": {
+              "values": [
+                1.6464831880190876,
+                1.6067236340550084
+              ],
+              "units": "omega*a/c",
+              "status": "available",
+              "note": ""
+            },
+            "S0": {
+              "values": [
+                -0.00954195077375892,
+                -0.00949489646924847
+              ],
+              "units": "dimensionless electric mass",
+              "status": "available",
+              "note": ""
+            }
+          },
+          "limitations": [],
+          "metadata": {
+            "record": "sptc_toolbox\\results\\four_foundations\\spatial\\g4.1_v0_3_4_7\\record.json",
+            "fields": "sptc_toolbox\\results\\four_foundations\\spatial\\g4.1_v0_3_4_7\\fields.npz"
+          }
+        },
+        {
+          "run_id": "g5.1_v0_3_4_7",
+          "physical_signature": {
+            "epsilon": 12.1,
+            "thickness": 0.55,
+            "radius": 0.25,
+            "transverse_rows": 14,
+            "missing_row": 0,
+            "q": [
+              2.2,
+              3.141592653589793
+            ]
+          },
+          "model_scope": {
+            "model": "Native Legume guided expansion and perturbative radiation",
+            "identity": "Finite-window H positive metric; not QNM normalization"
+          },
+          "numerical_controls": {
+            "gmax": 5.1,
+            "gmode_inds": [
+              0,
+              3,
+              4,
+              7
+            ],
+            "numeig": 32
+          },
+          "observables": {
+            "omega": {
+              "values": [
+                1.6472537384047787,
+                1.6076829746764822
+              ],
+              "units": "omega*a/c",
+              "status": "available",
+              "note": ""
+            },
+            "S0": {
+              "values": [
+                -0.009544477846125393,
+                -0.00949673856911426
+              ],
+              "units": "dimensionless electric mass",
+              "status": "available",
+              "note": ""
+            }
+          },
+          "limitations": [],
+          "metadata": {
+            "record": "sptc_toolbox\\results\\four_foundations\\spatial\\g5.1_v0_3_4_7\\record.json",
+            "fields": "sptc_toolbox\\results\\four_foundations\\spatial\\g5.1_v0_3_4_7\\fields.npz"
+          }
+        }
+      ],
+      "budget": {
+        "max_levels": 5,
+        "max_estimated_bytes": 1500000000
+      },
+      "scope": "Observed supplied-axis agreement only; other axes and missing continua remain independent"
+    }
+  },
+  "scope": "Two local guided W1 modes; does not establish full dynamic, open or global spatial convergence"
+}

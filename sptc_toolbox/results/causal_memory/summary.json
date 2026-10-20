@@ -1,0 +1,156 @@
+{
+  "status": "VERIFIED_FINITE_CAUSAL_MEMORY_CONTROL",
+  "scope": "Synthetic passive Debye velocity-memory machinery, NOT native Legume radiation or a paper reproduction",
+  "checks": {
+    "single_material_single_memory_full_state_count": true,
+    "single_material_single_memory_monodromy_agreement": true,
+    "single_material_single_memory_energy_identity": true,
+    "single_material_single_memory_liouville_determinant": true,
+    "two_material_two_memory_full_state_count": true,
+    "two_material_two_memory_monodromy_agreement": true,
+    "two_material_two_memory_energy_identity": true,
+    "two_material_two_memory_liouville_determinant": true,
+    "upper_half_plane_cauchy_value": true,
+    "upper_half_plane_cauchy_derivative": true,
+    "real_axis_positive_dissipation": true,
+    "markov_slow_poles_first_order_convergence": true,
+    "markov_fast_poles_preserved": true
+  },
+  "temporal_controls": [
+    {
+      "case": "single_material_single_memory",
+      "n_modes": 1,
+      "n_memory": 1,
+      "dimension": 3,
+      "determinant_error": 1.7416623698807143e-15,
+      "convergence": [
+        {
+          "half_harmonics": 3,
+          "selection_status": "COMPLETE",
+          "physical_count": 3,
+          "multiplier_error": 6.22890526550857e-14,
+          "previous_order_multiplier_error": null,
+          "max_envelope_energy_residual": 7.216449660063518e-16,
+          "max_selected_right_residual": 2.8863890725385227e-16,
+          "max_selected_left_residual": 6.296025038078961e-16
+        },
+        {
+          "half_harmonics": 5,
+          "selection_status": "COMPLETE",
+          "physical_count": 3,
+          "multiplier_error": 7.28915318256505e-14,
+          "previous_order_multiplier_error": 1.5161354563838166e-14,
+          "max_envelope_energy_residual": 1.3877787807814457e-15,
+          "max_selected_right_residual": 7.337546101572487e-16,
+          "max_selected_left_residual": 7.834005521688174e-16
+        },
+        {
+          "half_harmonics": 7,
+          "selection_status": "COMPLETE",
+          "physical_count": 3,
+          "multiplier_error": 7.066968540501904e-14,
+          "previous_order_multiplier_error": 7.27767917777395e-15,
+          "max_envelope_energy_residual": 2.7755575615628914e-16,
+          "max_selected_right_residual": 2.758684119207836e-16,
+          "max_selected_left_residual": 5.983974237415593e-16
+        }
+      ]
+    },
+    {
+      "case": "two_material_two_memory",
+      "n_modes": 2,
+      "n_memory": 2,
+      "dimension": 6,
+      "determinant_error": 3.6736697252657196e-17,
+      "convergence": [
+        {
+          "half_harmonics": 3,
+          "selection_status": "REJECTED_TRUNCATION",
+          "physical_count": null,
+          "error": "Found 5/6 independent quasifrequency classes. Increase N, resolve a degeneracy as a subspace, or inspect the raw spectrum; do not report an incomplete band spectrum."
+        },
+        {
+          "half_harmonics": 5,
+          "selection_status": "COMPLETE",
+          "physical_count": 6,
+          "multiplier_error": 4.584621048131897e-13,
+          "previous_order_multiplier_error": null,
+          "max_envelope_energy_residual": 2.6645352591003757e-15,
+          "max_selected_right_residual": 8.777653869772932e-16,
+          "max_selected_left_residual": 8.934597437962846e-16
+        },
+        {
+          "half_harmonics": 7,
+          "selection_status": "COMPLETE",
+          "physical_count": 6,
+          "multiplier_error": 4.5024747090467683e-13,
+          "previous_order_multiplier_error": 3.240729408379682e-14,
+          "max_envelope_energy_residual": 1.0894063429134349e-15,
+          "max_selected_right_residual": 6.319586856826154e-16,
+          "max_selected_left_residual": 6.722341648774664e-16
+        }
+      ]
+    }
+  ],
+  "analyticity": {
+    "center": [
+      0.43,
+      0.6
+    ],
+    "radius": 0.24,
+    "cauchy_value_error": 8.182674270850422e-18,
+    "cauchy_derivative_error": 7.359808400080196e-18,
+    "min_real_axis_dissipation_eigenvalue": 0.0004945534251281307
+  },
+  "markov_limit": [
+    {
+      "relaxation_rate": 10.0,
+      "slow_pole_error": 0.0014041338671529637,
+      "fast_pole": [
+        -1.4956324158204377e-17,
+        -9.960036899947742
+      ],
+      "full_state_count": 3
+    },
+    {
+      "relaxation_rate": 20.0,
+      "slow_pole_error": 0.000701610431507937,
+      "fast_pole": [
+        -1.319970091167664e-17,
+        -19.959969012309898
+      ],
+      "full_state_count": 3
+    },
+    {
+      "relaxation_rate": 40.0,
+      "slow_pole_error": 0.00035052765973237485,
+      "fast_pole": [
+        -1.375935725594238e-19,
+        -39.95997221519951
+      ],
+      "full_state_count": 3
+    },
+    {
+      "relaxation_rate": 80.0,
+      "slow_pole_error": 0.00017517429858045986,
+      "fast_pole": [
+        -1.691089811938904e-18,
+        -79.95998304837595
+      ],
+      "full_state_count": 3
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "source_sha256": "4f4a5bb1031b4f1cfd37cba457aa12db5ba92588751b94d1759d7a9f6dfc7d91",
+  "elapsed_seconds": 0.5780000000377186,
+  "limits": [
+    "Relaxation rates/couplings are declared synthetic inputs, not fitted from native linewidths",
+    "No actual photonic continuum, diffraction branch cuts, or Legume reactive shift inferred",
+    "Full multiplier checks use moderate rates; large-rate Markov test uses static poles to avoid underflow",
+    "An auxiliary transfer pole is not automatically a pole of the complete coupled system"
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "status": "LOCAL_GAUGE_AND_FULL_SUPPORT_VALIDATION",
+  "source": "sptc_toolbox\\results\\convergence\\w1\\sampling\\extended_chart_local",
+  "sha256": {
+    "fields": "4d1f9b937c2257db7214f77d57667e537b150569a4bf1b70ad3f81f56570f32e",
+    "native": "74e8a1bbe5342ab3907975e5a850179024ab6716e94523f9cd799ead03c91d2e",
+    "script": "9b159556c9801f54710ea69bd687d6ff1535930b99834430516352abddf5609a"
+  },
+  "metric": "Actual native H; sqrt(z quadrature weights * primitive cell area); full Fourier union; no QNM normalization",
+  "source_spatial_basis": {
+    "gmax": 3.1,
+    "gmode_inds": [
+      0,
+      3
+    ]
+  },
+  "controls": {
+    "random_GL_degenerate_alignment_error": 3.0125367722983916e-15,
+    "form_and_generator_consistency_error": 1.5296476454026185e-14,
+    "incorrect_generator_congruence_error": 22.275559939108415,
+    "radiation_amplitude_covariance_error": 4.6257812371663175e-15,
+    "common_channel_Gram_covariance_error": 1.7717712506737047e-14,
+    "wilson_eigenphases": [
+      0.0,
+      1.5706911823717773
+    ],
+    "spinor_continuum_phase": 1.5707963267948961,
+    "wilson_GL_gauge_eigenphase_error": 3.4729163989055907e-15,
+    "wilson_distance_to_identity": 1.414139212084217,
+    "holonomy_scope": "Synthetic two-dimensional transported subspace; no topology claim for native W1 slab"
+  },
+  "native_comparisons": [
+    {
+      "epsilon": 0.001,
+      "comparison": "adjacent_k_continuous_chart_periodic_parts",
+      "actual_k": [
+        3.1405926535897932,
+        3.142592653589793
+      ],
+      "union_size": 369,
+      "a_only_weight": 0.0,
+      "b_only_weight": 0.0,
+      "reciprocal_shift": [
+        0,
+        0
+      ],
+      "metric": "caller weighted physical components; not QNM residue",
+      "singular_values": [
+        0.9999981459043736
+      ],
+      "spillage": 3.70818781503246e-06,
+      "projector_distance": 0.0019256655511880718,
+      "aligned_distance": 0.0019256664439997382,
+      "left_original_norm": 0.9999999998545351,
+      "right_original_norm": 0.9999999998543423
+    },
+    {
+      "epsilon": 0.001,
+      "comparison": "adjacent_k_wrapped_then_sewn_periodic_parts",
+      "actual_k": [
+        3.1405926535897932,
+        -3.1405926535897932
+      ],
+      "common_chart_k": [
+        3.1405926535897932,
+        3.142592653589793
+      ],
+      "union_size": 444,
+      "a_only_weight": 0.00011489441872543927,
+      "b_only_weight": 0.00011489441872544387,
+      "reciprocal_shift": [
+        -1,
+        0
+      ],
+      "metric": "caller weighted physical components; not QNM residue",
+      "singular_values": [
+        0.9998466025012761
+      ],
+      "spillage": 0.00030677146665514243,
+      "projector_distance": 0.017514892710352024,
+      "aligned_distance": 0.017515564434178843,
+      "left_original_norm": 0.9999999998545357,
+      "right_original_norm": 0.9999999998545356
+    },
+    {
+      "epsilon": 0.001,
+      "comparison": "equivalent_k_different_chart_full_union",
+      "actual_k": [
+        3.142592653589793,
+        -3.1405926535897932
+      ],
+      "union_size": 444,
+      "a_only_weight": 0.00011484363884464748,
+      "b_only_weight": 0.00011489441872544387,
+      "reciprocal_shift": [
+        -1,
+        0
+      ],
+      "metric": "caller weighted physical components; not QNM residue",
+      "singular_values": [
+        0.9998354613905872
+      ],
+      "spillage": 0.00032905014587159,
+      "projector_distance": 0.018139739410244844,
+      "aligned_distance": 0.018140485628209815,
+      "left_original_norm": 0.9999999998543425,
+      "right_original_norm": 0.9999999998545356
+    },
+    {
+      "epsilon": 0.0001,
+      "comparison": "adjacent_k_continuous_chart_periodic_parts",
+      "actual_k": [
+        3.141492653589793,
+        3.1416926535897933
+      ],
+      "union_size": 369,
+      "a_only_weight": 0.0,
+      "b_only_weight": 0.0,
+      "reciprocal_shift": [
+        0,
+        0
+      ],
+      "metric": "caller weighted physical components; not QNM residue",
+      "singular_values": [
+        0.9999999814590133
+      ],
+      "spillage": 3.7081973158770154e-08,
+      "projector_distance": 0.00019256680180854163,
+      "aligned_distance": 0.00019256680281388365,
+      "left_original_norm": 0.9999999998544606,
+      "right_original_norm": 0.9999999998544437
+    },
+    {
+      "epsilon": 0.0001,
+      "comparison": "adjacent_k_wrapped_then_sewn_periodic_parts",
+      "actual_k": [
+        3.141492653589793,
+        -3.141492653589793
+      ],
+      "common_chart_k": [
+        3.141492653589793,
+        3.1416926535897933
+      ],
+      "union_size": 444,
+      "a_only_weight": 0.00011487158336562312,
+      "b_only_weight": 0.00011487158336562368,
+      "reciprocal_shift": [
+        -1,
+        0
+      ],
+      "metric": "caller weighted physical components; not QNM residue",
+      "singular_values": [
+        0.9998367421568851
+      ],
+      "spillage": 0.0003264890331063919,
+      "projector_distance": 0.01806900752964567,
+      "aligned_distance": 0.018069745051570357,
+      "left_original_norm": 0.999999999854462,
+      "right_original_norm": 0.9999999998544623
+    },
+    {
+      "epsilon": 0.0001,
+      "comparison": "equivalent_k_different_chart_full_union",
+      "actual_k": [
+        3.1416926535897933,
+        -3.141492653589793
+      ],
+      "union_size": 444,
+      "a_only_weight": 0.00011486650536816096,
+      "b_only_weight": 0.00011487158336562368,
+      "reciprocal_shift": [
+        -1,
+        0
+      ],
+      "metric": "caller weighted physical components; not QNM residue",
+      "singular_values": [
+        0.9998354612427572
+      ],
+      "spillage": 0.0003290504414829032,
+      "projector_distance": 0.0181397475584117,
+      "aligned_distance": 0.01814049377732701,
+      "left_original_norm": 0.9999999998544428,
+      "right_original_norm": 0.9999999998544623
+    }
+  ],
+  "limitations": [
+    "Full-union transport reveals missing support; gauge alignment cannot reconstruct it.",
+    "Two local epsilon values near a chart seam only; no complete BZ band-identity or topological validation.",
+    "The Wilson-loop control is synthetic. Native W1 has not been assigned Chern/EP/BIC labels.",
+    "Positive physical-field metric; generalized QNM residue metric remains a separate problem.",
+    "Neighboring k comparison uses periodic parts; it is distinct from overlapping complete Bloch fields at different k over a finite cell."
+  ]
+}

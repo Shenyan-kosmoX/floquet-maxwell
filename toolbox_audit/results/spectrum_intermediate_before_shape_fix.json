@@ -1,0 +1,169 @@
+{
+  "status": "AUDIT_COUNTEREXAMPLES_NOT_PRODUCTION_VALIDATION",
+  "label": "afterfix",
+  "source_snapshots": [
+    {
+      "file": "ptc_fig4\\src\\ptc_fig4\\floquet_maxwell.py",
+      "sha256": "2404ccf21c543c10682f28b3da2aca73f0324590d86a895f877a344eeb24391c"
+    },
+    {
+      "file": "ptc_fig4\\src\\ptc_fig4\\mode_tracking.py",
+      "sha256": "863f3f7e3cca0bd78dc4754ca8a3321ebaaa4ba90b406ddd024af5a510e4dd1d"
+    },
+    {
+      "file": "ptc_fig4\\src\\ptc_fig4\\static_modes.py",
+      "sha256": "c30149ed9eb48a7d607f865e358ec6c0647647f9fb373da766d01f15549ee873"
+    }
+  ],
+  "cases": {
+    "ordinary_distinct_nonhermitian": {
+      "dimension": 2,
+      "N": 2,
+      "full_raw_spectrum_matching_error": 0.0,
+      "max_right_residual": 1.0054873512369066e-17,
+      "max_left_residual": 3.437774496211107e-17,
+      "central_edge_weights": [
+        0.0,
+        0.0
+      ],
+      "independent_monodromy_multiplier_count_with_multiplicity": 2,
+      "selection_status": "returned",
+      "selected_count": 2
+    },
+    "ordinary_static_N0": {
+      "dimension": 2,
+      "N": 0,
+      "full_raw_spectrum_matching_error": 0.0,
+      "max_right_residual": 0.0,
+      "max_left_residual": 0.0,
+      "central_edge_weights": [
+        0.0,
+        0.0
+      ],
+      "independent_monodromy_multiplier_count_with_multiplicity": 2,
+      "selection_status": "returned",
+      "selected_count": 2
+    },
+    "semisimple_equal_frequencies": {
+      "dimension": 2,
+      "N": 2,
+      "full_raw_spectrum_matching_error": 0.0,
+      "max_right_residual": 0.0,
+      "max_left_residual": 0.0,
+      "central_edge_weights": [
+        0.0,
+        0.0
+      ],
+      "independent_monodromy_multiplier_count_with_multiplicity": 2,
+      "selection_status": "returned",
+      "selected_count": 2
+    },
+    "nondegenerate_close_frequencies": {
+      "dimension": 2,
+      "N": 2,
+      "full_raw_spectrum_matching_error": 0.0,
+      "max_right_residual": 0.0,
+      "max_left_residual": 0.0,
+      "central_edge_weights": [
+        0.0,
+        0.0
+      ],
+      "independent_monodromy_multiplier_count_with_multiplicity": 2,
+      "selection_status": "returned",
+      "selected_count": 2
+    },
+    "independent_integer_separated_frequencies": {
+      "dimension": 2,
+      "N": 2,
+      "full_raw_spectrum_matching_error": 0.0,
+      "max_right_residual": 0.0,
+      "max_left_residual": 0.0,
+      "central_edge_weights": [
+        0.0,
+        0.0
+      ],
+      "independent_monodromy_multiplier_count_with_multiplicity": 2,
+      "selection_status": "returned",
+      "selected_count": 2
+    },
+    "defective_EP": {
+      "dimension": 2,
+      "N": 2,
+      "full_raw_spectrum_matching_error": 0.0,
+      "max_right_residual": 9.746167360611466e-17,
+      "max_left_residual": 9.746167360611466e-17,
+      "central_edge_weights": [
+        0.0,
+        0.0
+      ],
+      "independent_monodromy_multiplier_count_with_multiplicity": 2,
+      "selection_status": "rejected",
+      "error": "Physical eigenvectors are rank deficient; use an invariant subspace at a defective degeneracy"
+    },
+    "ordinary_tracking": {
+      "ambiguous": false,
+      "permutation": [
+        0,
+        1
+      ],
+      "overlaps": [
+        1.0,
+        1.0
+      ],
+      "subspace_angle": 0.0
+    },
+    "orthogonal_selected_state_not_flagged": {
+      "ambiguous": true,
+      "overlap": 0.0,
+      "subspace_angle": 1.5707963267948966,
+      "interpretation": "Selected mode moved to an orthogonal invariant subspace; a correct confidence guard must flag it."
+    },
+    "NEP_EP_exact_seed_returns_success": {
+      "frequency": [
+        0.3,
+        -0.02
+      ],
+      "residual": 0.0,
+      "derivative_pairing_abs": 0.0,
+      "iterations": 0,
+      "matrix_nullity": 1,
+      "determinant_root_order": 2,
+      "simple_pole_compatible": false,
+      "reported_nullity": 1,
+      "relative_derivative_pairing": 0.0,
+      "residue_warning": "A simple residue r*l^H/(l^H A_prime r) is undefined."
+    },
+    "NEP_simple_root_control": {
+      "residual": 0.0,
+      "derivative_pairing_abs": 1.0,
+      "simple_pole_compatible": true
+    },
+    "generalized_metric_scope": {
+      "euclidean_offdiagonal_norm": 0.15184173477862012,
+      "correct_metric_offdiagonal_norm": 3.305636063629472e-17,
+      "scope": "Current solver accepts standard matrices only; future A v=omega B v topology must use B and its k-dependence."
+    },
+    "assembler_wrong_block_shape": {
+      "status": "accepted",
+      "provided_sideband_shape": [
+        1,
+        1
+      ],
+      "base_block_shape": [
+        2,
+        2
+      ],
+      "actual_inserted_block": [
+        [
+          0.01,
+          0.01
+        ],
+        [
+          0.01,
+          0.01
+        ]
+      ],
+      "risk": "A callback/adapter shape mistake becomes a different coupling matrix via NumPy broadcasting."
+    }
+  }
+}

@@ -1,0 +1,193 @@
+"""Direct Fourier-Galerkin eigensolver for a finite first-order Maxwell system.
+
+The matrix input can come from spatial discretization, but no unvalidated Ge
+spatial model is provided or silently substituted by this module.
+"""
+from dataclasses import dataclass
+import numpy as np
+from scipy.linalg import eig
+
+
+def fold_quasifrequency(w, omega=1.0):
+    """Fold only the real part to [-omega/2,omega/2)."""
+    if omega <= 0:
+        raise ValueError("omega must be positive")
+    w = np.asarray(w, dtype=complex)
+    return (w.real + omega / 2) % omega - omega / 2 + 1j * w.imag
+
+
+def quasifrequency_distance(a, b, omega=1.0):
+    return np.abs(fold_quasifrequency(np.asarray(a) - np.asarray(b), omega))
+
+
+def fourier_blocks(model, kappa, max_order, n_samples=1024):
+    """M_p=<M(tau) exp(+i*p*tau)> (IFFT, not FFT).
+
+    Samples exclude the duplicate endpoint. Sampling convergence is distinct
+    from Floquet truncation convergence and must be checked independently.
+    """
+    if max_order < 0 or n_samples < 2 * max_order + 1:
+        raise ValueError("Fourier grid is too small for requested coefficients")
+    tau = 2 * np.pi * np.arange(n_samples) / n_samples
+    samples = np.stack([model.matrix(t, kappa) for t in tau])
+    if samples.ndim != 3 or samples.shape[1] != samples.shape[2]:
+        raise ValueError("model.matrix must return a square matrix")
+    if not np.all(np.isfinite(samples)):
+        raise ValueError("Non-finite material operator")
+    coeff = np.fft.ifft(samples, axis=0)
+    return {p: coeff[p % n_samples].copy()
+            for p in range(-max_order, max_order + 1)}
+
+
+def assemble_floquet(blocks, n_harmonics, omega=1.0):
+    """F_mn=M_(m-n)-m*omega*I for m,n=-N,...,+N."""
+    if (not np.isfinite(n_harmonics) or n_harmonics < 0
+            or int(n_harmonics) != n_harmonics or not np.isfinite(omega) or omega <= 0):
+        raise ValueError("Require integer N>=0 and omega>0")
+    if 0 not in blocks:
+        raise ValueError("Fourier blocks must include the zero harmonic")
+    converted = {}
+    for harmonic, value in blocks.items():
+        if not isinstance(harmonic, (int, np.integer)):
+            raise ValueError("Fourier block keys must be integer harmonics")
+        block = np.asarray(value, dtype=complex)
+        if block.ndim != 2 or block.shape[0] == 0 or block.shape[0] != block.shape[1]:
+            raise ValueError("Every Fourier block must be a nonempty square matrix")
+        if not np.all(np.isfinite(block)):
+            raise ValueError("Every Fourier block must be finite")
+        converted[harmonic] = block
+    shape = converted[0].shape
+    if any(block.shape != shape for block in converted.values()):
+        raise ValueError("Every Fourier block must have the same shape; broadcasting is not physical coupling")
+    blocks = converted
+    n_harmonics = int(n_harmonics)
+    d = shape[0]
+    ms = np.arange(-n_harmonics, n_harmonics + 1)
+    f = np.zeros((len(ms) * d, len(ms) * d), dtype=complex)
+    for i, m in enumerate(ms):
+        for j, n in enumerate(ms):
+            if m - n in blocks:
+                f[i*d:(i+1)*d, j*d:(j+1)*d] = blocks[m - n]
+        f[i*d:(i+1)*d, i*d:(i+1)*d] -= m * omega * np.eye(d)
+    return f
+
+
+class TruncationError(RuntimeError):
+    """No complete set of localized physical Floquet modes was found."""
+
+
+@dataclass
+class FloquetSpectrum:
+    eigenvalues: np.ndarray
+    right: np.ndarray
+    left: np.ndarray
+    residuals: np.ndarray
+    left_residuals: np.ndarray
+    edge_weights: np.ndarray
+    mean_harmonics: np.ndarray
+    central_weights: np.ndarray
+    condition_numbers: np.ndarray
+    n_harmonics: int
+    dimension: int
+    matrix: np.ndarray
+
+    def physical_modes(self, edge_tolerance=1e-6, replica_tolerance=1e-7):
+        """Choose one localized representative per quasifrequency class.
+
+        Representatives are ranked by harmonic centroid, then central weight.
+        Frequency equivalence and a nonzero integer shift of BOTH left/right
+        vectors identify replicas. Independent semisimple degeneracies retain
+        multiplicity; a defective eigenspace needs a Schur/Jordan subspace.
+        The returned count must equal the model's finite state dimension.
+        """
+        # Integer-gauge shifts change the harmonic centroid by an integer.
+        # Every localized class has a representative within [-.5,.5]. A .75
+        # margin admits both gauges near a zone edge without trusting distant
+        # replicas that are distorted by the truncated matrix boundaries.
+        good = np.flatnonzero((self.edge_weights <= edge_tolerance)
+                             & (abs(self.mean_harmonics) <= .75))
+        order = sorted(good, key=lambda j: (abs(self.mean_harmonics[j]),
+                                            -self.central_weights[j]))
+        chosen = []
+        def is_replica(j, q):
+            distance = quasifrequency_distance(self.eigenvalues[j],self.eigenvalues[q])
+            shift = int(np.rint((self.eigenvalues[j]-self.eigenvalues[q]).real))
+            if shift == 0 or abs(shift) > 2*self.n_harmonics:
+                return False
+            # Edge participation is a heuristic uncertainty indicator, NOT an
+            # error bound. A matching integer shift of BOTH eigenvectors is
+            # required before treating distorted eigenvalues as replicas.
+            uncertainty = 5*np.sqrt(max(self.edge_weights[j],self.edge_weights[q]))
+            if distance > max(replica_tolerance,uncertainty):
+                return False
+            for vectors in (self.right,self.left):
+                v = vectors[:,q].reshape(2*self.n_harmonics+1,self.dimension)
+                aligned = np.zeros_like(v)
+                delta = -shift
+                if delta > 0:
+                    aligned[delta:] = v[:-delta]
+                else:
+                    aligned[:delta] = v[-delta:]
+                aligned = aligned.ravel()
+                overlap = abs(np.vdot(vectors[:,j],aligned))/max(np.linalg.norm(aligned),1e-100)
+                if overlap < 1-1e-5:
+                    return False
+            return True
+
+        for j in order:
+            if any(is_replica(j,q) for q in chosen):
+                continue
+            chosen.append(j)
+        if len(chosen) == self.dimension:
+            # Distinct eigenvector indices do not establish an independent
+            # physical basis at an exceptional point. The tau=0 state map is
+            # gauge invariant and must span all finite-state initial data.
+            states = np.column_stack([self.periodic_state(j, 0)[0] for j in chosen])
+            singular = np.linalg.svd(states, compute_uv=False)
+            rank_threshold = max(states.shape) * np.finfo(float).eps * singular[0]
+            if singular[-1] > rank_threshold:
+                return np.asarray(chosen,dtype=int)
+            raise TruncationError("Physical eigenvectors are rank deficient; use an invariant subspace at a defective degeneracy")
+        raise TruncationError(
+            f"Found {len(chosen)}/{self.dimension} independent quasifrequency "
+            "classes. Increase N, resolve a degeneracy as a subspace, or inspect "
+            "the raw spectrum; do not report an incomplete band spectrum."
+        )
+
+    def periodic_state(self, index, tau):
+        """Periodic Floquet factor u(tau); eigenmode is exp(-i*w*tau)*u."""
+        ms = np.arange(-self.n_harmonics, self.n_harmonics + 1)
+        v = self.right[:, index].reshape(len(ms), self.dimension)
+        return np.exp(-1j * np.outer(np.atleast_1d(tau), ms)) @ v
+
+    def save(self, path):
+        np.savez_compressed(
+            path, eigenvalues=self.eigenvalues, right=self.right, left=self.left,
+            residuals=self.residuals, left_residuals=self.left_residuals,
+            edge_weights=self.edge_weights, mean_harmonics=self.mean_harmonics,
+            central_weights=self.central_weights, condition_numbers=self.condition_numbers,
+            n_harmonics=self.n_harmonics, dimension=self.dimension,
+        )
+
+
+def solve_floquet(model, kappa, n_harmonics=5, n_samples=1024):
+    blocks = fourier_blocks(model, kappa, 2 * n_harmonics, n_samples)
+    f = assemble_floquet(blocks, n_harmonics)
+    w, left, right = eig(f, left=True, right=True, check_finite=True)
+    d = blocks[0].shape[0]
+    denom = np.linalg.norm(f, 2) + np.abs(w)
+    denom = np.maximum(denom, np.finfo(float).tiny)
+    residual = np.linalg.norm(f @ right - right * w, axis=0) / denom
+    left_residual = np.linalg.norm(f.conj().T @ left - left * w.conj(), axis=0) / denom
+    participation = np.sum(abs(right.reshape(2*n_harmonics+1, d, -1))**2, axis=1)
+    participation /= participation.sum(axis=0)
+    ms = np.arange(-n_harmonics, n_harmonics + 1)
+    # N=0 has no truncated sideband edges. It provides no convergence evidence,
+    # but its static/averaged finite-state spectrum is still a valid selection.
+    edge = participation[0] + participation[-1] if n_harmonics else np.zeros(len(w))
+    dot = np.abs(np.sum(left.conj() * right, axis=0))
+    return FloquetSpectrum(
+        w, right, left, residual, left_residual, edge,
+        ms @ participation, participation[n_harmonics],
+        1 / np.maximum(dot, np.finfo(float).tiny), n_harmonics, d, f,
+    )

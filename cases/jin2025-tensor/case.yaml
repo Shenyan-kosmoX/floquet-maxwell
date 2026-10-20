@@ -1,0 +1,147 @@
+schema_version: '0.1'
+kind: case
+id: jin2025-tensor-selection
+project_id: floquet-maxwell
+title: 实际Legume场的张量调制选择规则
+stage: results_available
+question:
+  summary: 实际Legume场的张量调制选择规则
+  scope: 明确无色散材料模型；本案例不验证完整开放拓扑或散射。
+  record:
+    path: sptc_toolbox/results/jin2025_legume_tensor_20261019/report.md
+capability_refs:
+- native-field-projection
+- tensor-phase-coupling
+- finite-floquet-dynamics
+model:
+  description: 明确无色散材料模型；本案例不验证完整开放拓扑或散射。
+  record:
+    path: sptc_toolbox/results/jin2025_legume_tensor_20261019/source_contract.json
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/jin2025_legume_tensor_20261019/source_contract.json
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: small-tensor-map
+    role: run
+    mode: command
+    argv:
+    - python
+    - sptc_toolbox/scripts/reproduce_jin2025_tensor.py
+    - --gmax
+    - '4.1'
+    - --grid-size
+    - '9'
+    - --output
+    - .sors-runs/jin-first-map
+    timeout_seconds: 1200
+    output_refs:
+    - new-couplings
+  - id: plot
+    role: plot
+    mode: command
+    argv:
+    - python
+    - sptc_toolbox/scripts/plot_jin2025_tensor.py
+    - --dataset
+    - .sors-runs/jin-first-map/n3.47_g4.1_N9/coupling.npz
+    - --output
+    - .sors-runs/jin-first-plot
+    depends_on:
+    - small-tensor-map
+    timeout_seconds: 120
+    output_refs:
+    - new-figure
+  - id: full-validation
+    role: check
+    mode: documented
+    instructions:
+      path: docs/sors/RUN.md
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/jin2025_legume_tensor_20261019/n3.47_g3.1_N25/coupling.npz
+  record:
+    path: sptc_toolbox/results/jin2025_legume_tensor_20261019/n3.47_g3.1_N25/coupling.npz
+- id: output-2
+  description: sptc_toolbox/results/jin2025_legume_tensor_20261019/computed.svg
+  record:
+    path: sptc_toolbox/results/jin2025_legume_tensor_20261019/computed.svg
+- id: output-3
+  description: sptc_toolbox/results/jin2025_legume_tensor_20261019/plot_metrics.json
+  record:
+    path: sptc_toolbox/results/jin2025_legume_tensor_20261019/plot_metrics.json
+- id: new-couplings
+  description: Regenerated N9 coupling array
+  path: .sors-runs/jin-first-map/n3.47_g4.1_N9/coupling.npz
+  format: npz
+- id: new-figure
+  description: Computed tensor coupling maps
+  path: .sors-runs/jin-first-plot/computed.svg
+  format: svg
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/jin2025_legume_tensor_20261019/report.md
+criteria:
+- id: criterion-1
+  description: 各检查只支持其投影或有限模型范围，不是完整全波认证。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/jin2025_legume_tensor_20261019/validation_checks.json
+- id: criterion-2
+  description: 已检k点和静态模式空间。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/jin2025_legume_tensor_20261019/mode_identity_checks.json
+- id: criterion-3
+  description: 当前Windows环境与所执行命令。
+  representation: documented
+  record:
+    path: docs/sors/verification.json
+checks:
+- id: check-1
+  method: 独立实空间积分、材料/空间敏感性、有限模型时间积分
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/jin2025_legume_tensor_20261019/validation_checks.json
+- id: check-2
+  method: 模式与兼容子空间身份检查
+  criterion_refs:
+  - criterion-2
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/jin2025_legume_tensor_20261019/mode_identity_checks.json
+- id: check-3
+  method: 新输出目录N9投影与张量/空间驱动接口测试
+  criterion_refs:
+  - criterion-3
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: docs/sors/verification.json
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/jin2025_legume_tensor_20261019/report.md
+  artifacts:
+  - path: sptc_toolbox/results/jin2025_legume_tensor_20261019/n3.47_g3.1_N25/coupling.npz
+  - path: sptc_toolbox/results/jin2025_legume_tensor_20261019/computed.svg
+  - path: sptc_toolbox/results/jin2025_legume_tensor_20261019/plot_metrics.json
+  notes: '  历史manifest中的文件摘要；不能用本次清单日期代替生成日期。 Historical results retain their original
+    scope and numerical verdicts; see release verification for the checks rerun from
+    this snapshot.'
+limitations:
+  path: cases/jin2025-tensor/CASE.md

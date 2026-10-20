@@ -1,0 +1,412 @@
+{
+  "status": "ACTUAL_NONLOCAL_MATERIAL_PROJECTION_INTERFACE_VALIDATED",
+  "completed": true,
+  "resolution": 32,
+  "sectors": [
+    "even",
+    "odd"
+  ],
+  "checkpoint": 2000,
+  "material_operator_id": "492bc3d7af1c1e77c05970f646e2e07b2308e199f0368d17ff9f88f5a2dca741",
+  "grid_id": "645d9bea5eee64e462e98675ee5cba3b11d4fa8ff9c81256d047e6dce5128a7e",
+  "seed": "Direct Fourier evaluation of actual native Legume mode5 on each component-native coordinate",
+  "native_legume_frequency": 0.3979539246410964,
+  "all_halo_weights_positive": true,
+  "constitutive_E_vs_D_polarization_relative_residual": [
+    1.509053325532363e-16,
+    1.432904274325738e-16
+  ],
+  "material_fourier_amplitudes": {
+    "-1": 0.005,
+    "1": 0.005
+  },
+  "rcond": 1e-07,
+  "field_records": [
+    {
+      "sector": "even",
+      "source": "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r32\\carrier_even_fdtd\\response_t2000.npz",
+      "E_equal_KD_relative_residual": 1.2484286534123522e-16,
+      "checkpoint": 2000,
+      "last_checkpoint_diagnostics": {
+        "time": 2000.0,
+        "elapsed_seconds": 526.524644092,
+        "output_power": 1.0001838886501087,
+        "incoming_power": 1.0000000000000038,
+        "source_factor": [
+          0.9997455622552314,
+          -0.01953429380409268
+        ],
+        "normalization": [
+          -0.1665520173876513,
+          -0.47122700184759764
+        ],
+        "work": null,
+        "field_change": 0.0006398255996767447,
+        "complex_output_change": 0.0011848811038260244
+      },
+      "normalization": "Measured unit incoming parity channel; retained from static sampler",
+      "prepared_polarization_source": "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r32_noY\\carrier_even_t2000_polarization.npz",
+      "saved_prepared_polarization_D_relative_residual": 0.0
+    },
+    {
+      "sector": "odd",
+      "source": "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r32\\carrier_odd_fdtd\\response_t2000.npz",
+      "E_equal_KD_relative_residual": 9.462533736243893e-17,
+      "checkpoint": 2000,
+      "last_checkpoint_diagnostics": {
+        "time": 2000.0,
+        "elapsed_seconds": 527.0129194239998,
+        "output_power": 1.0000011098901116,
+        "incoming_power": 1.0000000000000004,
+        "source_factor": [
+          0.9997455622552314,
+          -0.01953429380409268
+        ],
+        "normalization": [
+          -0.16655185961292374,
+          -0.4712266595357786
+        ],
+        "work": null,
+        "field_change": 7.020957865577907e-05,
+        "complex_output_change": 1.7851364060019465e-06
+      },
+      "normalization": "Measured unit incoming parity channel; retained from static sampler",
+      "prepared_polarization_source": "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r32_noY\\carrier_odd_t2000_polarization.npz",
+      "saved_prepared_polarization_D_relative_residual": 0.0
+    }
+  ],
+  "rank_rows": [
+    {
+      "family": "static_fields",
+      "rank": 1,
+      "field_coverage_relative_residual": [
+        0.11814692480357705,
+        0.9999954037869734
+      ],
+      "polarization_coverage_relative_residual": [
+        0.5913550708452905,
+        0.9999994858294857
+      ],
+      "full_modulation_source_relative_residual": [
+        0.5913705657311698,
+        1.000001668948899
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields",
+      "rank": 2,
+      "field_coverage_relative_residual": [
+        0.11814636432698204,
+        0.00047828969681045543
+      ],
+      "polarization_coverage_relative_residual": [
+        0.5913499630660138,
+        0.7516230088086043
+      ],
+      "full_modulation_source_relative_residual": [
+        0.5913662629737625,
+        0.7516230090968525
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields",
+      "rank": 3,
+      "field_coverage_relative_residual": [
+        4.6026708065261015e-05,
+        0.00017087112481532142
+      ],
+      "polarization_coverage_relative_residual": [
+        0.5906471645731407,
+        0.7515488968324257
+      ],
+      "full_modulation_source_relative_residual": [
+        0.5906471645731464,
+        0.75154889683243
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields",
+      "rank": 4,
+      "field_coverage_relative_residual": [
+        4.6025004313007925e-05,
+        1.0667051759547562e-07
+      ],
+      "polarization_coverage_relative_residual": [
+        0.5906471644291879,
+        0.7515488226077162
+      ],
+      "full_modulation_source_relative_residual": [
+        0.5906471644292279,
+        0.7515488226077118
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields",
+      "rank": 5,
+      "field_coverage_relative_residual": [
+        8.117866692719142e-15,
+        2.0193698416714568e-14
+      ],
+      "polarization_coverage_relative_residual": [
+        0.590643930156811,
+        0.751546287165352
+      ],
+      "full_modulation_source_relative_residual": [
+        0.5906439301568002,
+        0.7515462871653577
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields_and_material_polarization",
+      "rank": 1,
+      "field_coverage_relative_residual": [
+        0.23367947478487977,
+        0.9999980614427955
+      ],
+      "polarization_coverage_relative_residual": [
+        0.42056016075222363,
+        0.9999997143779781
+      ],
+      "full_modulation_source_relative_residual": [
+        0.43232319040727146,
+        1.0000013384036435
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields_and_material_polarization",
+      "rank": 2,
+      "field_coverage_relative_residual": [
+        0.23367907214029446,
+        0.41255089532621775
+      ],
+      "polarization_coverage_relative_residual": [
+        0.4205576406951942,
+        0.4125582775262243
+      ],
+      "full_modulation_source_relative_residual": [
+        0.4323220392657603,
+        0.48333252846007213
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields_and_material_polarization",
+      "rank": 3,
+      "field_coverage_relative_residual": [
+        0.23363568437837748,
+        0.003798977212024542
+      ],
+      "polarization_coverage_relative_residual": [
+        0.4205292386436665,
+        0.003326696046891947
+      ],
+      "full_modulation_source_relative_residual": [
+        0.43228806119781205,
+        0.00404198922902592
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields_and_material_polarization",
+      "rank": 4,
+      "field_coverage_relative_residual": [
+        0.11689877146945156,
+        0.0008380151228759186
+      ],
+      "polarization_coverage_relative_residual": [
+        0.0025692681763873895,
+        0.0005833773869330003
+      ],
+      "full_modulation_source_relative_residual": [
+        0.002849251124277283,
+        0.0005834780638951673
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields_and_material_polarization",
+      "rank": 5,
+      "field_coverage_relative_residual": [
+        4.6026301736960134e-05,
+        0.00017087110987119237
+      ],
+      "polarization_coverage_relative_residual": [
+        4.8589985429599945e-05,
+        0.00017460454175579205
+      ],
+      "full_modulation_source_relative_residual": [
+        4.858998814831678e-05,
+        0.00017460454181849778
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields_and_material_polarization",
+      "rank": 6,
+      "field_coverage_relative_residual": [
+        4.6025847672579625e-05,
+        7.104453134611631e-05
+      ],
+      "polarization_coverage_relative_residual": [
+        4.8589984756750663e-05,
+        6.879698413821172e-05
+      ],
+      "full_modulation_source_relative_residual": [
+        4.8590416758592054e-05,
+        8.054611866942753e-05
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields_and_material_polarization",
+      "rank": 7,
+      "field_coverage_relative_residual": [
+        4.602166363714182e-05,
+        2.861453589266512e-07
+      ],
+      "polarization_coverage_relative_residual": [
+        4.858973010782032e-05,
+        2.1667209119610261e-07
+      ],
+      "full_modulation_source_relative_residual": [
+        4.8589903447964516e-05,
+        2.1667490559317402e-07
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields_and_material_polarization",
+      "rank": 8,
+      "field_coverage_relative_residual": [
+        1.3741682614668567e-05,
+        5.564995577025798e-08
+      ],
+      "polarization_coverage_relative_residual": [
+        1.2883244912204586e-05,
+        3.703178299032801e-08
+      ],
+      "full_modulation_source_relative_residual": [
+        1.3706645626649869e-05,
+        4.399842611101525e-08
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    },
+    {
+      "family": "static_fields_and_material_polarization",
+      "rank": 9,
+      "field_coverage_relative_residual": [
+        9.900713569147155e-15,
+        1.620295156924873e-14
+      ],
+      "polarization_coverage_relative_residual": [
+        7.294253687014459e-15,
+        9.772393770242159e-15
+      ],
+      "full_modulation_source_relative_residual": [
+        1.143411501696824e-14,
+        1.586163129417083e-14
+      ],
+      "generic_apply_vs_recorded_displacement_relative_residual": [
+        1.5964655432310108e-16,
+        1.5223388698002793e-16
+      ],
+      "source_residual_not_scattering_bound": true
+    }
+  ],
+  "complex_unitary_covariance": [
+    {
+      "family": "static_fields",
+      "rank": 5,
+      "matrix_relative_covariance_error": 6.563173972013722e-15,
+      "physical_source_relative_covariance_error": [
+        1.6647615984787408e-14,
+        1.7859110660048804e-14
+      ]
+    },
+    {
+      "family": "static_fields_and_material_polarization",
+      "rank": 9,
+      "matrix_relative_covariance_error": 6.918757765051541e-15,
+      "physical_source_relative_covariance_error": [
+        1.057008452195806e-14,
+        1.7771121026139546e-14
+      ]
+    }
+  ],
+  "enrichment": "Columns from static E and epsilon_prime E only, no dynamic target or fitted output",
+  "training_source_exactness": "The enlarged basis explicitly includes the supplied static E and epsilon_prime E columns; roundoff residual for those columns is a representation closure check, not independent Maxwell scattering accuracy.",
+  "scope": "Actual native material/source projection interface. No new Green R/T dataset or Floquet scattering solve was computed; source residuals are not efficiency errors.",
+  "source_sha256": {
+    "sptc_toolbox\\results\\connected_physics\\spatial\\g6.1_v01234567\\native.pkl": "8e0d97e7f1a218bae167dc0c0e05ea1da7881dc488416e818c03563286b3e45f",
+    "sptc_toolbox\\scripts\\validate_smooth_operator_projection.py": "1bf347774cc7843b2a96cf05bbd32da58acf95b71d3e48ad0694e061e94f46a6",
+    "sptc_toolbox\\yee_material.py": "db5d1b78945740d8d7e0bf487b295f18fca0140e3d37cdaee3da52e9d4a59e94",
+    "sptc_toolbox\\projected_green.py": "65ba241da99e96a0226794ed722076bbfd8d49267bf175a1c01415874f2ea6c4",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r32_noY\\grid.npz": "cd365c007328a08962b37304d00a2cb29e1af177998e8cf13ba74a5baf4c0fd7",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r32_noY\\K_base.npz": "f4d3159417a0958b0557ca5f27ba0b54da7fa874f054f2665f59ce4050c49335",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r32_noY\\K_derivative.npz": "ea7aa6f51aea87b4f05359e7fbc4240dc164dc77015992f65e6ab493f02419a9",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r32\\carrier_even_fdtd\\response_t2000.npz": "1902d45525500e2f0e71ddd65750f2cb68d749d4dd06e8b95112d8ac2ce41ea9",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r32\\carrier_even_fdtd\\summary.json": "2cb29008e3aa86c711f66740a3cf34c07090480e512e104e950d6c0ac903ced9",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r32_noY\\carrier_even_t2000_polarization.npz": "2983bddd01ab568b2cbdc7c9ed726b948afb34e248d77f4519288a6c5b7db9ce",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r32\\carrier_odd_fdtd\\response_t2000.npz": "781f384f7408481eca8363e2ad754fa5bd976ede92a9b362ce53312e98faec26",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r32\\carrier_odd_fdtd\\summary.json": "67d6a7e4350db08acb73e022a7d4095adb29b60046a2d25e1da01f0af5576d74",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r32_noY\\carrier_odd_t2000_polarization.npz": "ed88349a70ea3a495aa5f4782bb0abae8503da2136a54934d4aa06c1db72c47a"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "resolution": 16,
+  "method": "grid_weights_only",
+  "call_count": 20,
+  "setup_seconds": 0.07582609102246352,
+  "update_total_seconds": 0.00022799504222348332,
+  "median_seconds_per_update": 7.27850419934839e-06,
+  "max_seconds_per_update": 7.637200178578496e-05,
+  "last_step_seconds": 0.0003653670137282461,
+  "estimated_10000_update_seconds": 0.0727850419934839,
+  "epsilon_center_before": 11.680000000000001,
+  "last_requested_epsilon": 11.7868,
+  "epsilon_center_after_updates": 11.680000000000001,
+  "epsilon_center_after_step": 11.680000000000001,
+  "native_material_change_observed": false,
+  "updates_advanced_time": 0.0,
+  "same_fields_object": true,
+  "immediate_relative_field_changes": {
+    "Dx": 0.0,
+    "Dy": 0.0,
+    "Dz": 0.0,
+    "Bx": 0.0,
+    "By": 0.0,
+    "Bz": 0.0,
+    "Ex": 0.0,
+    "Ey": 0.0,
+    "Ez": 0.0
+  },
+  "requested_center_constitutive_relative_error_after_step": 0.00914383561643826,
+  "native_center_constitutive_relative_error_after_step": 1.1500326914953177e-16,
+  "all_fields_finite_after_step": true,
+  "boundary_layers": {
+    "z_pml": 0.5,
+    "periodic_xy": true
+  },
+  "geometry": "voxel/interpolated MaterialGrid Block sphere approximation",
+  "eps_averaging": true,
+  "note": "D/B preservation and no-op stepping are bounded state checks, not complete dynamic/PML validation",
+  "same_structure_SWIG_proxy_repr": true,
+  "structure_proxy_note": "str(SWIG pointer) includes proxy identity and is not a native-pointer equality test; see separate native_pointer_control"
+}

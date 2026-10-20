@@ -1,0 +1,111 @@
+schema_version: '0.1'
+kind: case
+id: w1-convergence
+project_id: floquet-maxwell
+title: W1连续Bloch坐标与分层收敛
+stage: results_available
+question:
+  summary: W1连续Bloch坐标与分层收敛
+  scope: 沿用各次预声明容差；空间宽度与模态敏感性按具体观测量保留，历史wrapped图与新版分存。
+  record:
+    path: sptc_toolbox/results/convergence/w1/report.md
+capability_refs:
+- identity-convergence
+- traveling-modulation
+- field-reconstruction
+model:
+  description: 沿用各次预声明容差；空间宽度与模态敏感性按具体观测量保留，历史wrapped图与新版分存。
+  record:
+    path: sptc_toolbox/results/convergence/w1/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/convergence/w1/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/convergence/w1/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/run_w1_convergence_sampling.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/convergence/w1/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/converge_w1_spatial.py
+  - id: workflow-3
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/convergence/w1/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/converge_w1_temporal.py
+  - id: workflow-4
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/convergence/w1/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/converge_w1_joint.py
+  - id: workflow-5
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/convergence/w1/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/resolve_w1_tail.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/convergence/w1/assessment.json
+  record:
+    path: sptc_toolbox/results/convergence/w1/assessment.json
+- id: output-2
+  description: sptc_toolbox/results/convergence/w1/policy.json
+  record:
+    path: sptc_toolbox/results/convergence/w1/policy.json
+- id: output-3
+  description: sptc_toolbox/results/targeted_resolution/w1/report.md
+  record:
+    path: sptc_toolbox/results/targeted_resolution/w1/report.md
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/convergence/w1/report.md
+criteria:
+- id: criterion-1
+  description: 固定W1物理模型的波包主峰、质心、RMS宽度及长期逐扇区转移。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/convergence/w1/report.md
+checks:
+- id: check-1
+  method: 独立空间/模态/时间/K网格加密、Bloch边界场连续性及远尾积分
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/convergence/w1/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/convergence/w1/report.md
+  artifacts:
+  - path: sptc_toolbox/results/convergence/w1/assessment.json
+  - path: sptc_toolbox/results/convergence/w1/policy.json
+  - path: sptc_toolbox/results/targeted_resolution/w1/report.md
+  notes: 空间、模态、时间、K网格和联合检查；连续Bloch坐标修复有限G折回场跳变，远尾与长期转移另有控制。 沿用各次预声明容差；空间宽度与模态敏感性按具体观测量保留，历史wrapped图与新版分存。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/convergence/w1/report.md

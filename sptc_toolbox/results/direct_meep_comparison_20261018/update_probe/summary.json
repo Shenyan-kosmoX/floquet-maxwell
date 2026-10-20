@@ -1,0 +1,159 @@
+{
+  "completed": true,
+  "status": "SHORT_NATIVE_SMOOTHED_MATERIAL_UPDATE_PROBE",
+  "meep_version": "1.35.0",
+  "resolution": 32,
+  "dt": 0.015625,
+  "eps_averaging": true,
+  "sector": 1,
+  "y_mirror": false,
+  "modulation_amplitude": 0.01,
+  "modulation_frequency": 0.01,
+  "geometry": "a=1; h=.42; slab epsilon=11.5+.01*cos(phi); air circle(-.22,0) r=.12; air ellipse(.22,0) rx=.12 ry=.09",
+  "init_wall_seconds": 0.19550616800006537,
+  "init_cpu_seconds": 0.19466939900000002,
+  "no_update_steps": 640,
+  "no_update_simulation_duration": 10,
+  "no_update_wall_seconds": 1.524402163000559,
+  "no_update_cpu_seconds": 1.517965959,
+  "no_update_wall_seconds_per_time": 0.15244021630005591,
+  "median_update_wall_seconds": 0.18383160700068402,
+  "median_update_cpu_seconds": 0.18423018599999996,
+  "K_base_relative_difference_from_historical": 0.0,
+  "K_plus_relative_difference_from_historical": 0.0,
+  "next_step_E_equals_updated_KD_relative_residual": 2.4020223135227924e-17,
+  "rows": [
+    {
+      "index": 0,
+      "epsilon": 11.49,
+      "phase": 3.141592653589793,
+      "update_wall_seconds": 0.18273418100034178,
+      "update_cpu_seconds": 0.181966858,
+      "immediate_field_continuity": {
+        "E": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "D": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "B": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        }
+      }
+    },
+    {
+      "index": 1,
+      "epsilon": 11.491909830056251,
+      "phase": 2.5132741228718345,
+      "update_wall_seconds": 0.1890348439992522,
+      "update_cpu_seconds": 0.18938129700000017,
+      "immediate_field_continuity": {
+        "E": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "D": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "B": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        }
+      }
+    },
+    {
+      "index": 2,
+      "epsilon": 11.49690983005625,
+      "phase": 1.8849555921538759,
+      "update_wall_seconds": 0.18412211100076092,
+      "update_cpu_seconds": 0.18453289699999997,
+      "immediate_field_continuity": {
+        "E": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "D": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "B": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        }
+      }
+    },
+    {
+      "index": 3,
+      "epsilon": 11.50309016994375,
+      "phase": 1.2566370614359172,
+      "update_wall_seconds": 0.1835411030006071,
+      "update_cpu_seconds": 0.18392747499999995,
+      "immediate_field_continuity": {
+        "E": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "D": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "B": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        }
+      }
+    },
+    {
+      "index": 4,
+      "epsilon": 11.508090169943749,
+      "phase": 0.6283185307179586,
+      "update_wall_seconds": 0.18325488900154596,
+      "update_cpu_seconds": 0.18365168100000018,
+      "immediate_field_continuity": {
+        "E": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "D": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "B": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        }
+      }
+    },
+    {
+      "index": 5,
+      "epsilon": 11.51,
+      "phase": 0.0,
+      "update_wall_seconds": 0.18435942899850488,
+      "update_cpu_seconds": 0.18475637500000008,
+      "immediate_field_continuity": {
+        "E": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "D": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "B": {
+          "max_absolute_change": 0.0,
+          "relative_change": 0.0
+        }
+      }
+    }
+  ],
+  "script_sha256": "1fed6e286822a3415bcf4cbd847ffbb46d98347e5091d0bb3b99e30f8a385ea2",
+  "limitations": [
+    "Short single-process probe; timing excludes subsequent field extraction and monitors.",
+    "Constitutive identity checked for one updated material on full native source-region points.",
+    "No long-time Floquet, temporal hold-stride convergence or scattering assertion."
+  ]
+}

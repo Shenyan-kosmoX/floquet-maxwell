@@ -1,0 +1,117 @@
+{
+  "status": "NATIVE_STATIC_DISPERSIVE_SPHERE",
+  "q": 0.86,
+  "loss_ratio": 0.0,
+  "resolution": 16,
+  "courant": 0.25,
+  "material": {
+    "epsilon_inf": 1.0,
+    "N0": 1.21e+29,
+    "resonance_frequency_THz": 600.0,
+    "resonance_cyclic_fa_over_c": 1.2644747720771548,
+    "plasma_angular_wa_over_c": 41.35643878620493,
+    "sigma": 27.231543365378823,
+    "gamma_cyclic_fa_over_c": 0.0,
+    "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+  },
+  "windows": [
+    [
+      [
+        {
+          "frequency": 0.2645734392614969,
+          "decay": -1.1633672397621347e-07,
+          "error": 8.535156370301436e-11,
+          "amplitude": [
+            -102.44302858914924,
+            -535.2944692618736
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2645734392466647,
+          "decay": -1.164762590110655e-07,
+          "error": 5.957022435640595e-11,
+          "amplitude": [
+            -60.775048910396734,
+            -324.62360349520645
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.26457343810837564,
+          "decay": -1.1793125677608752e-07,
+          "error": 1.7929292543079808e-10,
+          "amplitude": [
+            -19.538582193476962,
+            -100.62913365109452
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "frequency": 0.2645734393476412,
+          "decay": -1.1491166357143062e-07,
+          "error": 1.8069971407729781e-10,
+          "amplitude": [
+            -42.96713279523245,
+            543.2725519610286
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.26457343891136226,
+          "decay": -1.1605317342374482e-07,
+          "error": 7.043464610964659e-11,
+          "amplitude": [
+            -27.359050496841768,
+            329.1043411849468
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2645734421285931,
+          "decay": -1.1772408590223146e-07,
+          "error": 2.3832527462626753e-10,
+          "amplitude": [
+            -7.807000918844076,
+            102.2032231521229
+          ]
+        }
+      ]
+    ]
+  ],
+  "meep_version": "1.35.0",
+  "source_frequency": 0.26516,
+  "source_width": 0.04,
+  "static_window": 100.0,
+  "elapsed_seconds": 9.041456838021986,
+  "calibration_run": {
+    "sigma_factor": 1.005,
+    "reference_sigma": 27.096063050128183,
+    "actual_sigma": 27.231543365378823,
+    "reference_N0": 1.21e+29,
+    "parameter_change": "Only this child-process Lorentz oscillator strength SIGMA is multiplied; reference N0/FR and geometry unchanged.",
+    "static_solver_source_sha256": "94dd2b183e7b9e8096aef4d0f7834ea37fe8046db49febbb4baa26638102e8ea",
+    "driver_source_sha256": "f7765b7a943dbc06b957e92d9a51d9c776ea2d2b67f8333283f9fa50540b5304",
+    "source_parameters": {
+      "radius_over_a": 0.3333333333333333,
+      "epsilon_inf": 1.0,
+      "padding": 1.0,
+      "pml": 0.5,
+      "resolution": 16,
+      "courant": 0.25,
+      "eps_averaging": false,
+      "mirror_z_phase": 1,
+      "frequency": 0.26516,
+      "width": 0.04,
+      "window": 100.0,
+      "sample_interval": 0.25
+    }
+  }
+}

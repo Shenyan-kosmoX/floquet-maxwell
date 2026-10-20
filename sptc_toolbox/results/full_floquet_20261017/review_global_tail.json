@@ -1,0 +1,66 @@
+{
+  "status": "COMMON_EVEN_SECTOR_TWO_POLE_STATIC_EXTRAPOLATION_DIAGNOSTIC",
+  "coefficients_real_imag": [
+    [
+      -0.03340540860634302,
+      -0.027504653631831858
+    ],
+    [
+      0.5210980598301777,
+      -0.2030331120716691
+    ],
+    [
+      0.5123073487761653,
+      0.23053776570350096
+    ]
+  ],
+  "complete_source_controls": [
+    {
+      "frequency": 0.388,
+      "complex_output_difference_to_independent_driven_FDTD": 0.0003983792968924079,
+      "field_difference_to_independent_driven_FDTD": 0.0004684992220856782,
+      "earlier_three_windows_output_difference": 1.303418293953527e-07,
+      "output_power": 9.32410356648842,
+      "work": 9.324103660217146,
+      "relative_work_difference": -1.0052304170931163e-08
+    },
+    {
+      "frequency": 0.408,
+      "complex_output_difference_to_independent_driven_FDTD": 0.00033833405291694874,
+      "field_difference_to_independent_driven_FDTD": 0.000339758482933188,
+      "earlier_three_windows_output_difference": 1.1803365062999395e-07,
+      "output_power": 9.543359393811059,
+      "work": 9.543358254314718,
+      "relative_work_difference": 1.1940201493193508e-07
+    }
+  ],
+  "incident_control": {
+    "frequency": 0.398,
+    "output_difference_to_driven_FDTD": 9.66732309157127e-05,
+    "field_difference_to_driven_FDTD": 6.949427997849951e-05,
+    "raw_time_dependent_normalization_restored": true
+  },
+  "nine_column_reciprocity": [
+    {
+      "frequency": 0.378,
+      "relative_residual": 9.478864815546744e-09
+    },
+    {
+      "frequency": 0.388,
+      "relative_residual": 4.930496535440794e-10
+    },
+    {
+      "frequency": 0.398,
+      "relative_residual": 2.2242264245208453e-10
+    },
+    {
+      "frequency": 0.408,
+      "relative_residual": 3.00924591758199e-09
+    },
+    {
+      "frequency": 0.418,
+      "relative_residual": 1.2684560656351456e-08
+    }
+  ],
+  "scope": "Same fixed time combination on all even columns, not output symmetrization; odd columns retained raw; no final selection before independent CW"
+}

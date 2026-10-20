@@ -1,0 +1,231 @@
+{
+  "status": "PATTERNED_STATIC_GREEN_HYBRID_IMPLEMENTED_WITH_EXPLICIT_LIMITS",
+  "generated_utc": "2026-10-16T16:33:54.259473+00:00",
+  "tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "1025",
+    "time": "97.653",
+    "timestamp": "2026-10-17T00:12:27.272700+08:00",
+    "hostname": "ambiguous"
+  },
+  "previous_tests": 1010,
+  "new_tests": 15,
+  "installed_legume_modified": false,
+  "pure_legume_complete_scattering_certified": false,
+  "hybrid_static_green_route": "Legume mode field plus static incident-field residual; independently sampled Meep static responses",
+  "template_response_count": 6,
+  "template_time_slices": 12,
+  "time_pml_control_complete": true,
+  "spatial_grid_convergence_certified": false,
+  "harmonic_convergence_certified": false,
+  "causal_stability_certified": false,
+  "absolute_efficiency_certified": false,
+  "key_evidence": {
+    "symmetric_source_residual_rank1": 0.0850472940889962,
+    "symmetric_source_residual_rank2": 0.0007587610641239447,
+    "symmetric_born_complex_amplitude_error_rank2": [
+      0.01675144603880259,
+      0.014471000955044886
+    ],
+    "single_side_born_complex_amplitude_error_rank2": [
+      0.1904912859945324,
+      0.20314221214668177
+    ],
+    "template_Q1_lower_sideband_internal_time_change": 0.1854174706147198,
+    "static_carrier_time_control": {
+      "requested_time": 1800.0,
+      "actual_time": 1800.0,
+      "r": [
+        -0.9870033296074607,
+        -0.1617829112541243
+      ],
+      "t": [
+        -0.0036971660103355675,
+        0.021774173899640707
+      ],
+      "R": 1.0003492830300738,
+      "T": 0.00048778368551977516,
+      "R_plus_T": 1.0008370667155935,
+      "incoming_lower_relative": [
+        1.0002848046681476,
+        4.962284427075056e-05
+      ],
+      "incoming_upper_relative": [
+        1.1591103634734936e-06,
+        -6.3244768885554116e-06
+      ],
+      "field_change_from_previous": 0.0005491003694125312,
+      "complex_S_change_from_previous": 0.0007223776021369713,
+      "electric_volume_norm": 4.503466026493985,
+      "data": "carrier_t1800.npz",
+      "elapsed_seconds": 795.793477571,
+      "field_relative_to_last": 0.0,
+      "high_epsilon_field_relative_to_last": 0.0,
+      "complex_S_relative_to_last": 0.0
+    },
+    "static_carrier_pml_control": {
+      "comparison_time": 1800.0,
+      "thickness_pair": [
+        0.65,
+        0.9
+      ],
+      "pml_inner_edge": 1.75,
+      "field_relative_change": 2.0619527011291236e-06,
+      "high_epsilon_field_relative_change": 2.0626932131516807e-06,
+      "complex_S_relative_change": 2.236612348123469e-06,
+      "R_plus_T": 1.0008345378918957,
+      "time_checkpoints": [
+        {
+          "requested_time": 1500.0,
+          "actual_time": 1500.0,
+          "r": [
+            -0.9874064453070149,
+            -0.16146715374872433
+          ],
+          "t": [
+            -0.0041015790735843705,
+            0.02208554067227629
+          ],
+          "R": 1.0010431299735494,
+          "T": 0.0005045940576836355,
+          "R_plus_T": 1.001547724031233,
+          "incoming_lower_relative": [
+            1.0002836977413394,
+            4.7719892749507995e-05
+          ],
+          "incoming_upper_relative": [
+            1.2368033647272412e-06,
+            -6.317875227032731e-06
+          ],
+          "field_change_from_previous": null,
+          "complex_S_change_from_previous": null,
+          "electric_volume_norm": 4.505671173211662,
+          "data": "carrier_t1500.npz",
+          "elapsed_seconds": 623.8977283060001
+        },
+        {
+          "requested_time": 1800.0,
+          "actual_time": 1800.0,
+          "r": [
+            -0.9870023832318978,
+            -0.1617808905417846
+          ],
+          "t": [
+            -0.003697080100557257,
+            0.02177403133750958
+          ],
+          "R": 1.0003467610499388,
+          "T": 0.0004877768419567856,
+          "R_plus_T": 1.0008345378918957,
+          "incoming_lower_relative": [
+            1.0002835765362785,
+            4.778979886259361e-05
+          ],
+          "incoming_upper_relative": [
+            1.1196636262504287e-06,
+            -6.22875886105082e-06
+          ],
+          "field_change_from_previous": 0.0005490814510521159,
+          "complex_S_change_from_previous": 0.0007224395197036386,
+          "electric_volume_norm": 4.503460419153451,
+          "data": "carrier_t1800.npz",
+          "elapsed_seconds": 732.961236975
+        }
+      ]
+    }
+  },
+  "unresolved": [
+    "Odd source subspace omitted for single-side excitation",
+    "Source lift / centered-field projection / discrete power pairing not established",
+    "Q1 lower-sideband internal Green response has 18.54 percent waiting-time sensitivity",
+    "Only three real frequency samples, no harmonic or causal stability completion",
+    "Static spatial resolution and absolute dynamic efficiency not certified"
+  ],
+  "legacy_papers": {
+    "lpr_configs": 4,
+    "science_points": 22,
+    "rejections_preserved": 3,
+    "scope": "historical finite model interface regression; not fresh full spatial paper reproductions"
+  },
+  "verified_input_hash_mismatches": [],
+  "artifact_sha256": {
+    "sptc_toolbox/__init__.py": "8b4f107fb517a8c27c9d5ef550c51cf4e012ac89d236dee99db05747e8ce48e6",
+    "sptc_toolbox/docs/patterned_green_design.md": "e164ab8e9e2d4d71978ca28bfb727f2ae2aa0da3b1f09e06c094f50aadabd4ee",
+    "sptc_toolbox/docs/projected_green_usage.md": "8d001904102c6c286495f6d5214c9060f1637b15a0c4424fa6e063d8c41a0fe1",
+    "sptc_toolbox/projected_green.py": "6cb16e698c32ea24d9ed77223b60792586bca79fcd68ee948fb5d8e6adaedf58",
+    "sptc_toolbox/README.md": "659ec1fe8b956915ce8730e6bbe65cab74a784865db109f8ee98a21f9a3931e4",
+    "sptc_toolbox/results/connected_physics/ports/weak_pattern_r24_time/carrier.npz": "875da2c2cfadbfd68e26eaae905e023cbb3249419f01b48b2118a4a8195f5adc",
+    "sptc_toolbox/results/connected_physics/ports/weak_pattern_r24_time/summary.json": "d794b6836eebaad4fa6ffdf3dbe9070895384ea4e43e5d6288a47ef9c0f94415",
+    "sptc_toolbox/results/connected_physics/spatial/g6.1_v01234567/native.pkl": "8e0d97e7f1a218bae167dc0c0e05ea1da7881dc488416e818c03563286b3e45f",
+    "sptc_toolbox/results/patterned_green_20261016/basis/source_basis.npz": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+    "sptc_toolbox/results/patterned_green_20261016/basis/summary.json": "e20b27f0b77c9ce3f2a861b1fa02a7c0eb72d754cb5a61f2ebd06dcf6c7717e4",
+    "sptc_toolbox/results/patterned_green_20261016/hybrid/finite_response.npz": "a73586ed7b256ab4c04e6359a3e1d17e772e50b2ad877d87c6150f27b7f007e7",
+    "sptc_toolbox/results/patterned_green_20261016/hybrid/patterned_green.pdf": "57172dcf20b562ef5c59160e58fa3fd52063fa37105961a81de81c974cbd0615",
+    "sptc_toolbox/results/patterned_green_20261016/hybrid/patterned_green.png": "adfdfc831460834c09fb3b4906956ae5d66eecee9411db99fe7a6d0fcf6a0e4c",
+    "sptc_toolbox/results/patterned_green_20261016/hybrid/patterned_green.svg": "d105efbdd762d64029875003bf7fde7744f1e4451a8f9e588efa0bf44451710e",
+    "sptc_toolbox/results/patterned_green_20261016/hybrid/report.md": "b9d809866386fa3a5dcf7ad23725ba96758705bc6b077bfffd00caf33f0d584a",
+    "sptc_toolbox/results/patterned_green_20261016/hybrid/run.log": "a1f5099592635d571e055c54279990a20cc4b828f84de8c2e58cd536cec47fb4",
+    "sptc_toolbox/results/patterned_green_20261016/hybrid/source_audit/meep_array_slice.cpp": "e6b9a57ac51fae16dec5109b19e0c05d6b0f80624dcfe5ae2d0c92a6ecdd1bc6",
+    "sptc_toolbox/results/patterned_green_20261016/hybrid/source_audit/README.md": "d6464c69c45500a06473524355d8f74e31f5ab63d6c899b77e587b08235fd29c",
+    "sptc_toolbox/results/patterned_green_20261016/hybrid/source_audit/source_slices.npz": "36f17b68c3707e785e90cded620063ac3637edbbca2758fbcfd888df700a4fcc",
+    "sptc_toolbox/results/patterned_green_20261016/hybrid/source_audit/summary.json": "52f774e86222ead539f29c4babccedc70eb94f74ceea6ea18cdf076c0d3be934",
+    "sptc_toolbox/results/patterned_green_20261016/hybrid/summary.json": "0180f461fa9080f8fc8493ed263217d847030f6f42b9b7ceabf9d98345054a4e",
+    "sptc_toolbox/results/patterned_green_20261016/paper_regression/summary.json": "e8be20ebc5688f4b53bad1505700cbe9fb276501bc0e1a1f7ed1a6725b305ee3",
+    "sptc_toolbox/results/patterned_green_20261016/regression.xml": "d5bf82eb28cf6e105a770e41e9e821e93f8057a455c97adf509886d5193f802f",
+    "sptc_toolbox/results/patterned_green_20261016/report.md": "910ccc0a9160615c3f70eb2a2373c6e7438f485bf8a89786ce37438b72744d6a",
+    "sptc_toolbox/results/patterned_green_20261016/review.md": "e0871a5fe37314dfefd81944a2366059dcaa3c50bdad71c0f48ba25237a687c2",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/analyze.py": "0475b6a2b977a7cc0c58d46ef7083c5e23543b69d6de4996e646f465ed83be5a",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml065/carrier_t1200.npz": "7a51f987d628ff7b2e30f208c2b457819cb407cda9a3e496c1a05a9dce437e2f",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml065/carrier_t900.npz": "ac829e971b18749d795cc4383fea2e0fbf4cb06693266af00960523dc18c4f17",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml065/empty.npz": "73b74d11c3e4c3e9ae891af20d60635b3d8d4ffe7afdf762cf3831d63fc5b4a5",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml065/summary.json": "885b9f36375b8eb487709c3157b7cffca94a8bfbb1d235105c32e8672a04ef01",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml065_restart/carrier_t1200.npz": "7a51f987d628ff7b2e30f208c2b457819cb407cda9a3e496c1a05a9dce437e2f",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml065_restart/carrier_t1500.npz": "a667e35768c9aa9a71aee51575938bbc18ec96fa868ce93a87b6073826fce9f7",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml065_restart/carrier_t1800.npz": "a2f5a9444ec02caa50d8cf16ef4369b2c80a673823db9402649d997aeea54661",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml065_restart/carrier_t900.npz": "ac829e971b18749d795cc4383fea2e0fbf4cb06693266af00960523dc18c4f17",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml065_restart/empty.npz": "73b74d11c3e4c3e9ae891af20d60635b3d8d4ffe7afdf762cf3831d63fc5b4a5",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml065_restart/summary.json": "c337ccfb9336d98a58470031cd00a9172b7609876f81551008e86d2144a9517d",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml090/carrier_t1500.npz": "dc9b53e4082ca7ece5505c2c436df4bf1a654324e39e0c5e8d982ce1a618fbeb",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml090/carrier_t1800.npz": "484e28bedbee853bb53d2cd3a203acfce77817b86b7b540c56951d790f662c1d",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml090/empty.npz": "5b88856926eba0c342c3a9e0a55c7d674676c76ba9c1915cdcfc18a069ca17b4",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/r32_pml090/summary.json": "6bed3f4e743602d493c948b3f520b2344ac3ed5be5f348f4100dfda99c34e3c1",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/report.md": "f6aaa73a476f4574e6528b39fbedb8fb21fa3c3bcedd5a51aa7752c9e3f68182",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/source_hashes.json": "b01b61b8d8375a12745a82d88307dc730b754872bc8574a76068b3be1d5fea97",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/static_reference_convergence.pdf": "3601c1ff28e3e6a33dbe3ca03c12267c8c8f31a9959ebf92fb16d1ec71cf67a0",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/static_reference_convergence.png": "74b16a9f98fd891f9f8889575801005ec0d550fd412375ac08746c1c9bbab993",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/static_reference_convergence.svg": "d82da56b5d6a8861777b9161cf86b4a5840f461e33f254e4d1828c7f5d21a7cd",
+    "sptc_toolbox/results/patterned_green_20261016/static_reference/summary.json": "71f49bcb169b88e06d5930105b4eb46dd6a2a2d10cbaafd6c228a708dc6a01fc",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.388_q0/response_t1200.npz": "80d71da84f87899ab5ff70d1f49af57e552038d765ff655610f56ede74c6ec05",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.388_q0/response_t900.npz": "77a936345579bc2fc28c2ffd5362411848f999b34e80799ada7e99979865eaa1",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.388_q0/summary.json": "82c5064df4defcd74a1affc2de0aafe77e188d8f0fd472962670813cb663a92d",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.388_q1/response_t1200.npz": "9677f632c4192bfdea708b75f69c5174a6b54339cf169990818670e5842aa986",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.388_q1/response_t900.npz": "edb7f8f93b42f898158fb44753b85d4f8f877cafec5788aa86aae7ca511819c3",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.388_q1/summary.json": "4fe4a0839b8dfd1b4ef6677c787bb7a957aea41292bf6df12c08a8390e09037a",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.398_q0/response_t1200.npz": "e0c82d34522f25c324443e7bc47ed6b0c43fb7850791131c39f5607591ea7f8c",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.398_q0/response_t900.npz": "f5adc594e05241e301728fa6cea077089e7b9f0887b4481d6265c5def9e64a54",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.398_q0/summary.json": "04212b7452f75f0629e5382d19dd6b5c372356f50a1b49e051aabab858f24971",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.398_q1/response_t1200.npz": "85ede30920984df7d7f50a1f2883672e24a9cb00876bac813028674542bdf447",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.398_q1/response_t900.npz": "467fdc7c61d82b6b7ce3598de8a3b22179ab84f1a412d228c7435dd77afc09ea",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.398_q1/summary.json": "2527326dcccac6c8e5939713500d9a5b525a11b8786cfb8fa1047490b8c66588",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.408_q0/response_t1200.npz": "24b2f0c99ceda8b5366a019bc0ab780a8e64c6f1fde742db312935c9473c4182",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.408_q0/response_t900.npz": "5ebda0ef436252d877837473226d34e231c064d1f49947f8c0b80cbda842a256",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.408_q0/summary.json": "d8750815c160dfec2f3810c7d520553666b97ece4675ad0630401abddf251d43",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.408_q1/response_t1200.npz": "6ed1021b2822af2c6e55cc2fdf01165f51f3d6f7b94f775b7091f577939a8d84",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.408_q1/response_t900.npz": "8edf6e75ad2a0083fc6c929513e522108eaed8b96a1041a2017618d1b1d99bcd",
+    "sptc_toolbox/results/patterned_green_20261016/template_responses/f0.408_q1/summary.json": "4153f9bb464bf33e8e0dd7b7b461f1c9a6fb7809821ec085bc0ff344e89ed5d8",
+    "sptc_toolbox/results/targeted_resolution/ports/reciprocal_f0388_r24/carrier.npz": "872b26754913b96890e3075577f7cc37c07b8cc67bf018b1dd84c39d22d7a1f9",
+    "sptc_toolbox/results/targeted_resolution/ports/reciprocal_f0388_r24/summary.json": "801815aff799c5158a9d144a040334a864012952df618c2eb76a0e576432eb10",
+    "sptc_toolbox/results/targeted_resolution/ports/reciprocal_f0408_r24/carrier.npz": "d0912498e1b9d6d481230cd822847f5747e6aaa1249cdcee3687208b977baf91",
+    "sptc_toolbox/results/targeted_resolution/ports/reciprocal_f0408_r24/summary.json": "476b78926145a30a65f7a357856acf1baf64fa75f6d1a89765f874a29f3e6cfd",
+    "sptc_toolbox/scripts/analyze_patterned_green.py": "00e6e389fd02bb1e7b06e14de4dfe9fa5feacab2be66118ff0304dbaacebbe5b",
+    "sptc_toolbox/scripts/audit_template_source.py": "e8097df3285f93c46a835e8f690012131d6577a2d2a536a15bcf3475206c245c",
+    "sptc_toolbox/scripts/build_pattern_green_basis.py": "d71702a2e123ecfb2780a2262e5516eecbbb1d4db8cd14efece67c2d36760769",
+    "sptc_toolbox/scripts/meep_static_response.py": "ba8d22883de5b5aec7b91c45621555b41fc79e1dcfc42789bcde60dd0e313d72",
+    "sptc_toolbox/scripts/meep_template_response.py": "06b6fc9e056e3d7f97e4a9c4f74e0caf013524e043d39b7f42d18145714940f2",
+    "sptc_toolbox/tests/test_projected_green.py": "e06750587ba2b1d063f1aa25950171fdd1f646e8f89224ca04a72edd011da920"
+  },
+  "broken_local_links": []
+}

@@ -1,0 +1,105 @@
+schema_version: '0.1'
+kind: case
+id: full-floquet-scattering
+project_id: floquet-maxwell
+title: 完整有限Floquet散射与内部谐波场
+stage: results_available
+question:
+  summary: 完整有限Floquet散射与内部谐波场
+  scope: Gamma点r32和指定x入射子空间；不同空间网格一级功率仍约10%–15%敏感。
+  record:
+    path: sptc_toolbox/results/full_floquet_20261017/report.md
+capability_refs:
+- green-response
+- forced-scattering
+- field-reconstruction
+- open-response-controls
+model:
+  description: Gamma点r32和指定x入射子空间；不同空间网格一级功率仍约10%–15%敏感。
+  record:
+    path: sptc_toolbox/results/full_floquet_20261017/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/full_floquet_20261017/report.md
+execution:
+  environment_ref: meep-linux
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/full_floquet_20261017/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/build_full_floquet_basis.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/full_floquet_20261017/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/build_floquet_material_fourier.py
+  - id: workflow-3
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/full_floquet_20261017/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/meep_floquet_dataset.py
+  - id: workflow-4
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/full_floquet_20261017/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/analyze_full_floquet_dataset.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/full_floquet_20261017/validation_manifest.json
+  record:
+    path: sptc_toolbox/results/full_floquet_20261017/validation_manifest.json
+- id: output-2
+  description: sptc_toolbox/results/full_floquet_20261017/sampling_selection.json
+  record:
+    path: sptc_toolbox/results/full_floquet_20261017/sampling_selection.json
+- id: output-3
+  description: sptc_toolbox/results/floquet_spatial_20261018/report.md
+  record:
+    path: sptc_toolbox/results/floquet_spatial_20261018/report.md
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/full_floquet_20261017/report.md
+criteria:
+- id: criterion-1
+  description: 指定Gamma入射子空间的完整有限复S、内部谐波场及一级出射敏感性。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/full_floquet_20261017/report.md
+checks:
+- id: check-1
+  method: 静态采样时窗、Maxwell残差、M1/M2及r32/r40/r48比较
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/full_floquet_20261017/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/full_floquet_20261017/report.md
+  artifacts:
+  - path: sptc_toolbox/results/full_floquet_20261017/validation_manifest.json
+  - path: sptc_toolbox/results/full_floquet_20261017/sampling_selection.json
+  - path: sptc_toolbox/results/floquet_spatial_20261018/report.md
+  notes: 95条静态响应、17实源坐标、±2边带、20×10复S及所有输入列内部场；数据包可离线复算，M1到M2一级复幅差约0.003%。 Gamma点r32和指定x入射子空间；不同空间网格一级功率仍约10%–15%敏感。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/full_floquet_20261017/report.md

@@ -1,0 +1,110 @@
+{
+  "status": "FULL_SPATIAL_RECIPROCAL_FIRST_ORDER_X_CHANNEL_CONTROL",
+  "completed": true,
+  "resolution": 48,
+  "checkpoint": 2000.0,
+  "dt": 0.010416666666666666,
+  "selected_inputs": [
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_even\\response_t2000.npz",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t2000.npz"
+  ],
+  "sidebands": [
+    {
+      "harmonic": -1,
+      "complex_output_x": [
+        [
+          -0.007485639017507058,
+          0.000766238164603105
+        ],
+        [
+          -0.0075191265593603646,
+          0.0030444265960136003
+        ]
+      ],
+      "power_x": 0.00012242770993951176
+    },
+    {
+      "harmonic": 1,
+      "complex_output_x": [
+        [
+          0.007855813301843075,
+          -0.0035267913242946025
+        ],
+        [
+          0.007151348900812995,
+          -0.001409932777567042
+        ]
+      ],
+      "power_x": 0.00012728176121695143
+    }
+  ],
+  "time_windows": [
+    {
+      "checkpoint": 500.0,
+      "available": true,
+      "full_complex_relative_difference": [
+        0.2663802353177678,
+        0.2637107687358893
+      ],
+      "receiver_only_complex_relative_difference": [
+        0.17936139078434418,
+        0.16690183389201424
+      ],
+      "source_relative_difference": 0.12769433368358246
+    },
+    {
+      "checkpoint": 1000.0,
+      "available": true,
+      "full_complex_relative_difference": [
+        0.02360404847199833,
+        0.02263417584934814
+      ],
+      "receiver_only_complex_relative_difference": [
+        0.01475819304098612,
+        0.013726113045643815
+      ],
+      "source_relative_difference": 0.010504345705831102
+    },
+    {
+      "checkpoint": 1500.0,
+      "available": true,
+      "full_complex_relative_difference": [
+        0.0018415479045293234,
+        0.001759062280321646
+      ],
+      "receiver_only_complex_relative_difference": [
+        0.0011489572647645423,
+        0.001068045470443038
+      ],
+      "source_relative_difference": 0.0008212084444705513
+    }
+  ],
+  "E_equal_KD_relative_residual": 8.029173390481556e-15,
+  "polarization_E_vs_D_relative_residual": 9.351292793739188e-15,
+  "incoming_identity_relative_residual": 1.3136107957384177e-07,
+  "formula": "S_h,x=i*kappa_h/4 * E0_x(f_h).T W [(A/2)*epsilon_prime*E0_x(f0)], A=.01; no conjugation",
+  "normalization": "Gamma reciprocal static medium; unit discrete Yee air power; phase reference z=+/-0.7. Bilinear port flux between unit incident test and outgoing source solution is -4*y; J=-i*kappa*P gives +i*kappa/4. The exact saved native volume metric W is used once.",
+  "no_fit": true,
+  "source_reduction": false,
+  "limits": [
+    "Only x-polarized receiving port fields exist: y outputs are unavailable, not zero.",
+    "First-order fixed-drive derivative response; no M2 feedback, second-order sidebands or carrier depletion.",
+    "Time-window sensitivity and independent same-grid references remain necessary.",
+    "Fixed Courant grid refinement also changes dt; no separate temporal convergence claim."
+  ],
+  "provenance": {
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_even\\response_t2000.npz": "dc50db3b0633c6eb38b014247bdcbdd9beab7e8f33d09becaf26aeb50b7740ce",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t2000.npz": "79a5648b4df28e1f1299f8357e36e7d2c7589aafa06d1867f359a6121d6ad06e",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\material\\grid.npz": "e47f0bc01086c9573489ac79fa862b55dabe1e6f0e2fe012e7d56a3403591d46",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\material\\K_base.npz": "85289c583a2cdcd89b7d14417b7687c4b33692390b47cd3620dcbb49ef6247ef",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\material\\K_derivative.npz": "48274b4619f13bf3c2b83f5c16c7469ce8b7edb938ff146359e2716b1bf4b757",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\static\\weak_summary.json": "b94e7f702b10dc59e0198de07a285b6f1b38be4db00cb2f544cb72e4640322a1",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_even\\response_t500.npz": "d127521a36d67ff92f12b486f5220da3ad872361bbe2835d37975d692221e602",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t500.npz": "93b3a699efa2ed0087513682789b357fbf80bd4e46aba18e2c910be1b6351ccd",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_even\\response_t1000.npz": "48623f164098acba94725d85774fdc263796e3a524c540e0ae8394264d9e4058",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t1000.npz": "79212c95391d71913839ee838d58b1c5f40e73c4e5cdc4bb26576d76a3a13dbe",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_even\\response_t1500.npz": "7dc41797b5e91ac5d0bab643497398bfced84d2156482013f2149cd3cb3376eb",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_odd\\response_t1500.npz": "9fddc67bc6fc82880f190680067cca2af53f4dae0bdd3c906bfca0abf45c16e4"
+  },
+  "script_sha256": "e89b1c43ce361431f35371672a1311aa7cf76bff6a190f84cae81c7926d9f19e"
+}

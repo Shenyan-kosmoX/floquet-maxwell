@@ -1,0 +1,86 @@
+{
+  "status": "INTEGRATED_SCOPED_CAPABILITIES_VERIFIED",
+  "legume": {
+    "status": "NATIVE_LEGUME_PACKAGE_AND_FROZEN_MODEL_INTEGRATION_VERIFIED",
+    "basis_id": "346cadac1cfe57ddd7a3dae14aaaa0ca5a668106357118a8ebce7a60b2057abf",
+    "roundtrip_matrix_error": 0.0,
+    "static_reduced_port_unitarity_error": 3.7883798406890686e-16,
+    "scattering_N5_to_N7_relative_change": 2.0855393505304246e-15,
+    "floquet_check": {
+      "max_multiplier_error": 1.170866044961699e-12,
+      "physical_count": 4,
+      "scope": "Finite frozen-channel model only"
+    },
+    "scattering_diagnostics": {
+      "linear_solve_relative_residual": 1.1316405132413287e-18,
+      "linear_system_condition": 918.2318366791741,
+      "omitted_equation_harmonics": [
+        -15,
+        -14,
+        -13,
+        -12,
+        -11,
+        -10,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "omitted_equation_relative_residual_by_input": [
+        1.3308765593990884e-24,
+        1.3353809842521458e-24,
+        1.3308765593990884e-24,
+        1.335380984252146e-24
+      ],
+      "maximum_boundary_relative_residual": 1.335380984252146e-24,
+      "boundary_gate_passed": true,
+      "boundary_tolerance": 1e-07,
+      "state_window_halfwidth": 9,
+      "requested_halfwidth": 7,
+      "guard_harmonics": 2,
+      "output_not_cropped": true,
+      "all_output_sidebands_retained": true,
+      "stability_scope": "Algebraic harmonic response; existence of a causal steady state requires separate stability verification",
+      "singularity_scope": "Excited and dark-state resolvent poles both raise; no automatic observable-subspace reduction or pseudoinverse",
+      "convergence_scope": "Omitted-equation residual detects finite-harmonic loss; not a global truncation error bound near resonances"
+    },
+    "cache_sha256": "e9d5cb95311c353d681028a2f419c2a892310ce7f7cb36df1a1578bf74fe03a5",
+    "scope": "Actual native material/radiation package; ports use a specified -I model background, not recovered physical slab scattering"
+  },
+  "dispersion_qnm_scattering": {
+    "status": "DISPERSIVE_OPEN_SLAB_AND_ADE_MODAL_PORTS_VERIFIED",
+    "slab_pole": [
+      2.8216917748122468,
+      -1.268815772514504
+    ],
+    "slab_pole_residual": 3.0436318092266427e-13,
+    "slab_scattering_fresnel_max_error": 4.710277376051326e-16,
+    "slab_maximum_singular_value": 0.999999405028229,
+    "scattering_residue_errors": [
+      0.0007301887592591991,
+      7.30161159318016e-05,
+      7.300455822290268e-06
+    ],
+    "ade_modal_operator_error": 2.8733412781572817e-15,
+    "forced_primitive_waveform_relative_error": 4.407273975898568e-15,
+    "scope": "Exact 1D open dispersive-slab boundary reference plus separate finite ADE forced response; not a full dispersive photonic-crystal adapter"
+  },
+  "author_reference": {
+    "status": "UPSTREAM_STORED_MATRIX_CONTROL_REPRODUCED",
+    "matrix_error": 6.133173666733497e-19,
+    "modal_package_spectral_error": 4.664258210240747e-15,
+    "input_sha256": "7e05e41521ae80fda0de6c9fc578c230dedfb5b26f168805e417c81caee74e8a",
+    "scope": "Same synthetic unmodified upstream Fmatrix test as earlier; full author MAN/COMSOL simulation not run"
+  },
+  "source_sha256": {
+    "sptc_toolbox/scripts/validate_integrated_backend.py": "0a33f9e895184716b913fec8fd230496dbb9d65b5780200035d1369e8e6650d0",
+    "sptc_toolbox/mode_package.py": "76eafd3e0659458094cde90dbbd87c655654663819cb70f286718b702f84735f",
+    "sptc_toolbox/modal_adapter.py": "03b843a431102e20b909453ca73536d3b783e2b93b3b2f58a0f1aa6206f80709",
+    "sptc_toolbox/qnm.py": "7c76e011120774d2e48057e4c37c9dc0787828476fedb4dcb875854285ff4eba",
+    "sptc_toolbox/dispersive.py": "df74ba6c4b4bb499ffce0ee7e8e22b9737dbeb9196af1040db1dbf2a691fc822",
+    "sptc_toolbox/scattering.py": "772d4490669e931dd4b0810ed303de357f4b82a3487a819466c2b9d556a03da9",
+    "sptc_toolbox/slab_reference.py": "b1b9be0b49e9f199946befaec47b4f997388f5d239d6eff78c05de5e579d2bfb"
+  }
+}

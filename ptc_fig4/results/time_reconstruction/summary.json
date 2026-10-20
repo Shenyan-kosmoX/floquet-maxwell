@@ -1,0 +1,92 @@
+{
+  "status": "UNPROJECTED_TIME_EQUATION_CHECK",
+  "equation": "i*dpsi/dtau - M(tau)*psi; psi=exp(-i*w*tau)*sum_m v_m exp(-i*m*tau)",
+  "normalization": "rms(residual)/(rms(i*psi_prime)+rms(M*psi)); maximum pointwise ratio also saved",
+  "grid": "257 points offset by (3-sqrt(5))/2, distinct from all 1024 FFT material sample points",
+  "candidate_semantics": "All |mean_harmonic|<=0.75 raw candidates; replicas retained. This is not a claim of physical branch completeness.",
+  "interpretation": "A tiny projected matrix residual does not guarantee the unprojected Maxwell equation. Time residuals must converge with N.",
+  "convergence": [
+    {
+      "scenario": "weak_with_dc",
+      "sequence": [
+        {
+          "n_harmonics": 2,
+          "selection_status": "REJECTED_TRUNCATION",
+          "central_candidate_count": 4,
+          "max_time_rms_relative": 0.0004889495717843086,
+          "max_pointwise_relative": 0.0008292980068516051
+        },
+        {
+          "n_harmonics": 4,
+          "selection_status": "ACCEPTED_SELECTION",
+          "central_candidate_count": 4,
+          "max_time_rms_relative": 1.5014540309392376e-06,
+          "max_pointwise_relative": 2.5811048173868554e-06
+        },
+        {
+          "n_harmonics": 8,
+          "selection_status": "ACCEPTED_SELECTION",
+          "central_candidate_count": 4,
+          "max_time_rms_relative": 1.2906993961864922e-11,
+          "max_pointwise_relative": 2.2400133632000145e-11
+        },
+        {
+          "n_harmonics": 12,
+          "selection_status": "ACCEPTED_SELECTION",
+          "central_candidate_count": 4,
+          "max_time_rms_relative": 6.566331590563861e-15,
+          "max_pointwise_relative": 1.447832668407375e-14
+        },
+        {
+          "n_harmonics": 16,
+          "selection_status": "ACCEPTED_SELECTION",
+          "central_candidate_count": 4,
+          "max_time_rms_relative": 5.184378828590298e-15,
+          "max_pointwise_relative": 1.1964628738590937e-14
+        }
+      ]
+    },
+    {
+      "scenario": "strong_without_dc",
+      "sequence": [
+        {
+          "n_harmonics": 2,
+          "selection_status": "REJECTED_TRUNCATION",
+          "central_candidate_count": 4,
+          "max_time_rms_relative": 0.02171971804671511,
+          "max_pointwise_relative": 0.04374197801841647
+        },
+        {
+          "n_harmonics": 4,
+          "selection_status": "REJECTED_TRUNCATION",
+          "central_candidate_count": 4,
+          "max_time_rms_relative": 0.0026021931201650425,
+          "max_pointwise_relative": 0.005561146283537252
+        },
+        {
+          "n_harmonics": 8,
+          "selection_status": "ACCEPTED_SELECTION",
+          "central_candidate_count": 4,
+          "max_time_rms_relative": 3.3313660638545826e-05,
+          "max_pointwise_relative": 7.135557513224247e-05
+        },
+        {
+          "n_harmonics": 12,
+          "selection_status": "ACCEPTED_SELECTION",
+          "central_candidate_count": 4,
+          "max_time_rms_relative": 4.1624724029801984e-07,
+          "max_pointwise_relative": 8.92725122575873e-07
+        },
+        {
+          "n_harmonics": 16,
+          "selection_status": "ACCEPTED_SELECTION",
+          "central_candidate_count": 4,
+          "max_time_rms_relative": 5.16896259870373e-09,
+          "max_pointwise_relative": 1.110855907630399e-08
+        }
+      ]
+    }
+  ],
+  "floquet_source_sha256": "5b4999a723370966e444c09d288278968c02d7c18e74b05a0ebb19cc442149e2",
+  "reproduction_command": "python scripts/check_time_residual.py"
+}

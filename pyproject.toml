@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "floquet-maxwell"
+version = "0.1.0"
+description = "Legume-based Floquet-Maxwell research tools for modulated photonic slabs"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["numpy==2.2.6", "scipy==1.15.3", "matplotlib==3.10.3", "PyYAML==6.0.2"]
+
+[project.optional-dependencies]
+legume = ["legume-gme==1.0.3"]
+test = ["pytest==8.3.5"]
+sphere = ["treams==0.4.5"]
+
+[project.urls]
+Repository = "https://github.com/Shenyan-kosmoX/floquet-maxwell"
+Issues = "https://github.com/Shenyan-kosmoX/floquet-maxwell/issues"
+
+[project.scripts]
+ptc-validate = "ptc_fig4.validation:main"
+
+[tool.setuptools]
+packages = ["sptc_toolbox", "ptc_fig4", "lpor_71318", "toolbox_experiments", "toolbox_experiments.nphoton_2024_01563"]
+package-dir = {"ptc_fig4" = "ptc_fig4/src/ptc_fig4"}
+
+[tool.pytest.ini_options]
+testpaths = ["sptc_toolbox/tests", "ptc_fig4/tests", "lpor_71318/tests", "tests"]
+addopts = "-ra --import-mode=importlib"

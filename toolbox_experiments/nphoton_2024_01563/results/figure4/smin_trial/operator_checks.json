@@ -1,0 +1,3912 @@
+{
+  "status": "REAL_AXIS_I_MINUS_TG_ASSEMBLY_AND_SYMMETRY_CHECKS_PASSED",
+  "units": "omega and drive angular a/c; kpar angular k*a; native reference f cyclic f*a/c",
+  "fixed_basis": "Canonical electric regular/outgoing VSH amplitudes; harmonic-major, treams native (ell,m,parity)",
+  "algebra_checks": [
+    {
+      "lmax": 1,
+      "explicit_channel_assembly_error": 0.0,
+      "unmodulated_static_block_diagonal_error": 3.7054523936631587e-16,
+      "signed_frequency_full_operator_error": 1.061639436253355e-15,
+      "global_modulation_phase_operator_error": 8.11677398472939e-16,
+      "global_phase_smin_difference": 9.992007221626409e-16,
+      "unitary_reordering_smin_difference": 3.3306690738754696e-16
+    },
+    {
+      "lmax": 2,
+      "explicit_channel_assembly_error": 0.0,
+      "unmodulated_static_block_diagonal_error": 5.508743431623496e-16,
+      "signed_frequency_full_operator_error": 1.2002268481116306e-15,
+      "global_modulation_phase_operator_error": 8.570634121597599e-16,
+      "global_phase_smin_difference": 2.55351295663786e-15,
+      "unitary_reordering_smin_difference": 3.3306690738754696e-16
+    }
+  ],
+  "complex_frequency_guard": {
+    "rejected": true,
+    "message": "Real-frequency diagnostic only; outgoing complex continuation is not implemented"
+  },
+  "ewald_samples": [
+    {
+      "regime": "nonresonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.173,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.03636510283971837,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.03636510283971832,
+          "relative_operator_change": 3.5032365542517663e-16
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.03636510283971865,
+          "relative_operator_change": 3.6618846999607825e-16
+        }
+      ]
+    },
+    {
+      "regime": "nonresonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.5,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.035894082155941344,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.035894082155940955,
+          "relative_operator_change": 4.038942071895226e-16
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.03589408215594118,
+          "relative_operator_change": 3.920976727611516e-16
+        }
+      ]
+    },
+    {
+      "regime": "nonresonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.548,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.2770605062969806,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.2770605062969808,
+          "relative_operator_change": 2.298962719377964e-16
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.27706050629697954,
+          "relative_operator_change": 4.925265988492909e-16
+        }
+      ]
+    },
+    {
+      "regime": "nonresonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.173,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.396449493869354,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.39644949386935463,
+          "relative_operator_change": 2.166685206175493e-16
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.3964494938693543,
+          "relative_operator_change": 6.639881635705464e-16
+        }
+      ]
+    },
+    {
+      "regime": "nonresonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.5,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.9439465562285123,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.943946556228511,
+          "relative_operator_change": 1.0743833433371283e-15
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.9439465562285123,
+          "relative_operator_change": 1.0017721777467203e-15
+        }
+      ]
+    },
+    {
+      "regime": "nonresonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.548,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.9430670507124517,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.9430670507124536,
+          "relative_operator_change": 5.066625238431658e-16
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.9430670507124528,
+          "relative_operator_change": 5.0096421820711e-16
+        }
+      ]
+    },
+    {
+      "regime": "nonresonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.173,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.018363071634694417,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.018363071634694993,
+          "relative_operator_change": 2.818528425087112e-16
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.018363071634692682,
+          "relative_operator_change": 5.736511633981697e-16
+        }
+      ]
+    },
+    {
+      "regime": "nonresonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.5,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.16463867601197288,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.16463867601197282,
+          "relative_operator_change": 7.44151594829054e-17
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.16463867601197524,
+          "relative_operator_change": 7.550926901713834e-16
+        }
+      ]
+    },
+    {
+      "regime": "nonresonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.548,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.2731196937500539,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.2731196937500535,
+          "relative_operator_change": 1.6161077376782543e-16
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.273119693750055,
+          "relative_operator_change": 3.7015542563237256e-16
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.173,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.355201852832696,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.35520185283269506,
+          "relative_operator_change": 5.287951584667429e-16
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.3552018528326944,
+          "relative_operator_change": 2.799323195814575e-15
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.5,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.904804947721672,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.9048049477216834,
+          "relative_operator_change": 5.833922076105091e-15
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.9048049477216873,
+          "relative_operator_change": 6.296516421384893e-15
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.548,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.0420669130344427,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.04206691303444284,
+          "relative_operator_change": 5.7832973976347524e-15
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.04206691303444296,
+          "relative_operator_change": 1.542598115450072e-14
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.173,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.5788464549338719,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.5788464549338725,
+          "relative_operator_change": 7.951786878096113e-16
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.578846454933872,
+          "relative_operator_change": 1.7152262306805877e-15
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.5,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.1617182799817951,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.16171827998179567,
+          "relative_operator_change": 1.2764431060499639e-14
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.1617182799817941,
+          "relative_operator_change": 1.504004006917532e-14
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.548,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.39377965561168293,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.3937796556116824,
+          "relative_operator_change": 9.81686048147889e-15
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.39377965561168177,
+          "relative_operator_change": 3.6760419285614234e-14
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.173,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.5079223662108854,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.5079223662108903,
+          "relative_operator_change": 2.5318771587984632e-15
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.5079223662108892,
+          "relative_operator_change": 2.6739821182603133e-15
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.5,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.6488166218796291,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.6488166218796431,
+          "relative_operator_change": 7.14234716502345e-15
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.6488166218796327,
+          "relative_operator_change": 5.61911483138726e-15
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.548,
+      "eta_checks": [
+        {
+          "eta": 0.0,
+          "raw_smin": 0.010945451420497649,
+          "relative_operator_change": 0.0
+        },
+        {
+          "eta": 1.0,
+          "raw_smin": 0.010945451420498851,
+          "relative_operator_change": 6.853667645828866e-15
+        },
+        {
+          "eta": 2.0,
+          "raw_smin": 0.01094545142049913,
+          "relative_operator_change": 1.5480400997492916e-14
+        }
+      ]
+    }
+  ],
+  "independent_z_mirror_native_VSH_max_error": 2.7755575615628914e-17,
+  "truncation_point_diagnostics": [
+    {
+      "regime": "nonresonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.173,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.03636510283971837,
+          "signature": {
+            "harmonic_weights": [
+              9.817042278853124e-11,
+              1.4906243646175324e-06,
+              0.9999985092774649
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 2.2221810124522847e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.03635559805350089,
+          "signature": {
+            "harmonic_weights": [
+              5.161634540196341e-14,
+              9.815024506028933e-11,
+              1.49024805412692e-06,
+              0.9939076831757961,
+              0.0060908264779479995
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0000000000000002,
+            "z_odd_TM_weight": 1.5964116240427608e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.03635559244137584,
+          "signature": {
+            "harmonic_weights": [
+              4.927383898050175e-18,
+              5.161434158731957e-14,
+              9.8150218415024e-11,
+              1.4902465064943308e-06,
+              0.993952233295743,
+              0.006045773024034,
+              5.03335514542021e-07
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 7.313473121642735e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.03213405854862792,
+          "signature": {
+            "harmonic_weights": [
+              2.1165602258548106e-06,
+              0.0002751405745053229,
+              0.9997227428652689
+            ],
+            "multipole_weights": {
+              "1": 0.9996834395842612,
+              "2": 0.0003165604157388273
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 1.046057870416495e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.03210321861675354,
+          "signature": {
+            "harmonic_weights": [
+              1.103219765696716e-09,
+              2.112755496696349e-06,
+              0.00027465044977509465,
+              0.9972167524900094,
+              0.0025064832014988526
+            ],
+            "multipole_weights": {
+              "1": 0.999612673676159,
+              "2": 0.00038732632384084976
+            },
+            "z_even_TE_weight": 0.9999999999999998,
+            "z_odd_TM_weight": 3.7940421217599947e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "nonresonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.5,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.035894082155941344,
+          "signature": {
+            "harmonic_weights": [
+              0.48760330527092133,
+              0.5106253814013803,
+              0.00177131332769836
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 3.2096174497416467e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.03586619262139758,
+          "signature": {
+            "harmonic_weights": [
+              0.0017283313551106508,
+              0.4982626658159105,
+              0.4982794504412382,
+              0.001728115458708307,
+              1.436929032209162e-06
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 2.0913682601569114e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.0358661720836301,
+          "signature": {
+            "harmonic_weights": [
+              1.436903080628672e-06,
+              0.0017280842654918784,
+              0.49827047685922665,
+              0.4982704805367633,
+              0.0017280842760734657,
+              1.4371340625777195e-06,
+              2.5301533036848943e-11
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0000000000000002,
+            "z_odd_TM_weight": 1.0614400124228205e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.008538045841203887,
+          "signature": {
+            "harmonic_weights": [
+              0.49589761367918817,
+              0.5025502980858239,
+              0.0015520882349879827
+            ],
+            "multipole_weights": {
+              "1": 0.9994966136166537,
+              "2": 0.0005033863833465784
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 5.215126679580385e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.00853296852637592,
+          "signature": {
+            "harmonic_weights": [
+              0.0015394102071598684,
+              0.49845602315161464,
+              0.49846375686940153,
+              0.001539285841160695,
+              1.5239306632912301e-06
+            ],
+            "multipole_weights": {
+              "1": 0.9994397500991873,
+              "2": 0.0005602499008126463
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 4.450056925532449e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "nonresonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.548,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.2770605062969806,
+          "signature": {
+            "harmonic_weights": [
+              4.477095491818553e-11,
+              2.5132828688113562e-05,
+              0.9999748671265409
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.7609138715191124e-35,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.2768983652591441,
+          "signature": {
+            "harmonic_weights": [
+              9.63273363378441e-13,
+              4.4793407062848114e-11,
+              2.5099749337859664e-05,
+              0.9997350055325324,
+              0.00023989467237296817
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 3.5959063327545516e-36,
+            "z_odd_TM_weight": 0.9999999999999999,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.27689835063024715,
+          "signature": {
+            "harmonic_weights": [
+              3.453570919328675e-16,
+              9.628285188698816e-13,
+              4.4793400653622855e-11,
+              2.5099745555461177e-05,
+              0.9997348752619447,
+              0.00024002020494947929,
+              4.741793747635282e-09
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 3.046363777021251e-35,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.17441023597199118,
+          "signature": {
+            "harmonic_weights": [
+              7.515296985600638e-11,
+              2.2571233255273947e-05,
+              0.9999774286915917
+            ],
+            "multipole_weights": {
+              "1": 0.7100668273484998,
+              "2": 0.2899331726515001
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 1.9228539266538319e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.17430116003448817,
+          "signature": {
+            "harmonic_weights": [
+              5.747717768117038e-13,
+              7.510174020200544e-11,
+              2.254479709099965e-05,
+              0.9997093797921809,
+              0.0002680753350515092
+            ],
+            "multipole_weights": {
+              "1": 0.7100975564839295,
+              "2": 0.2899024435160704
+            },
+            "z_even_TE_weight": 0.9999999999999998,
+            "z_odd_TM_weight": 1.9673756885420005e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "nonresonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.173,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.396449493869354,
+          "signature": {
+            "harmonic_weights": [
+              6.679026920651271e-08,
+              0.0003341552450944913,
+              0.9996657779646363
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 2.349576355502828e-31,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.38809562991585056,
+          "signature": {
+            "harmonic_weights": [
+              0.9999997642483734,
+              2.3202559581005578e-07,
+              3.72051732019609e-09,
+              5.513160371770221e-12,
+              1.7459159807515977e-16
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 1.747337844316974e-29,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.38697637166235915,
+          "signature": {
+            "harmonic_weights": [
+              0.9447626394926699,
+              0.055237330125100605,
+              2.7223533614355716e-08,
+              8.194096955133624e-10,
+              2.3392659446852155e-09,
+              2.011495532354485e-14,
+              2.2639482844631263e-17
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 1.8830802423373677e-26,
+            "z_odd_TM_weight": 0.9999999999999998,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.3818185256598015,
+          "signature": {
+            "harmonic_weights": [
+              0.0027070173227735474,
+              0.14583337269162813,
+              0.8514596099855983
+            ],
+            "multipole_weights": {
+              "1": 0.823683035341136,
+              "2": 0.17631696465886415
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 5.773510011245778e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.1517601599574813,
+          "signature": {
+            "harmonic_weights": [
+              0.9999995288802024,
+              4.4977987541720297e-07,
+              2.0797708659907148e-08,
+              5.421111926017285e-10,
+              1.024684849486547e-13
+            ],
+            "multipole_weights": {
+              "1": 0.2818626560618781,
+              "2": 0.718137343938122
+            },
+            "z_even_TE_weight": 6.1418896521472436e-30,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "nonresonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.5,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.9439465562285123,
+          "signature": {
+            "harmonic_weights": [
+              0.4961779681825926,
+              0.5038161051259876,
+              5.926691419801667e-06
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 3.985098957436523e-30,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.881912074248046,
+          "signature": {
+            "harmonic_weights": [
+              2.791036734169031e-19,
+              4.0780494293451186e-14,
+              1.0444758177829402e-08,
+              8.314565372112554e-05,
+              0.99991684390148
+            ],
+            "multipole_weights": {
+              "1": 1.0000000000000002
+            },
+            "z_even_TE_weight": 1.0000000000000002,
+            "z_odd_TM_weight": 6.192188160718287e-30,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.42157151433713325,
+          "signature": {
+            "harmonic_weights": [
+              6.100191953056026e-29,
+              1.099275797497432e-25,
+              1.7402439686980057e-20,
+              7.016100043372287e-15,
+              7.353283562115037e-11,
+              9.141183285672927e-06,
+              0.9999908587431746
+            ],
+            "multipole_weights": {
+              "1": 1.0000000000000002
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 4.0109224796247715e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.07980217748296164,
+          "signature": {
+            "harmonic_weights": [
+              1.2697669111604597e-12,
+              4.539438467845165e-06,
+              0.9999954605602623
+            ],
+            "multipole_weights": {
+              "1": 0.2393006545568739,
+              "2": 0.7606993454431261
+            },
+            "z_even_TE_weight": 3.093651214440361e-32,
+            "z_odd_TM_weight": 0.9999999999999999,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.07980217747887344,
+          "signature": {
+            "harmonic_weights": [
+              0.9999954450767932,
+              4.53943892585347e-06,
+              1.868740449265861e-12,
+              1.547471345969648e-08,
+              7.69877740858072e-12
+            ],
+            "multipole_weights": {
+              "1": 0.23930065455806981,
+              "2": 0.7606993454419301
+            },
+            "z_even_TE_weight": 1.5074981048481151e-30,
+            "z_odd_TM_weight": 0.9999999999999999,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "nonresonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.548,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.9430670507124517,
+          "signature": {
+            "harmonic_weights": [
+              0.9865509899120772,
+              0.013448978871314209,
+              3.121660864648191e-08
+            ],
+            "multipole_weights": {
+              "1": 1.0000000000000002
+            },
+            "z_even_TE_weight": 7.535805173062709e-30,
+            "z_odd_TM_weight": 1.0000000000000002,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.5997945174615641,
+          "signature": {
+            "harmonic_weights": [
+              0.9999882103485838,
+              1.178959942253065e-05,
+              5.199134581638357e-11,
+              2.4268558649160294e-15,
+              8.923126817772543e-20
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 1.0436246230576597e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.23592489268314554,
+          "signature": {
+            "harmonic_weights": [
+              6.658765820601662e-30,
+              3.2354245312181013e-26,
+              6.0740008363579615e-21,
+              1.1568249724439154e-15,
+              8.653541685384592e-12,
+              2.824125069479723e-06,
+              0.9999971758662758
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 2.218085140279802e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.05956489917924239,
+          "signature": {
+            "harmonic_weights": [
+              1.41588289997025e-12,
+              1.3204271885178358e-06,
+              0.9999986795713958
+            ],
+            "multipole_weights": {
+              "1": 0.011813497576010336,
+              "2": 0.9881865024239898
+            },
+            "z_even_TE_weight": 4.122042522062941e-33,
+            "z_odd_TM_weight": 1.0000000000000002,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.058778511481886044,
+          "signature": {
+            "harmonic_weights": [
+              1.7596898946746447e-16,
+              1.3767441007283422e-12,
+              1.283113784024799e-06,
+              0.9993674574533171,
+              0.0006312594315219505
+            ],
+            "multipole_weights": {
+              "1": 0.011780891096965703,
+              "2": 0.9882191089030343
+            },
+            "z_even_TE_weight": 2.713032874010079e-29,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "nonresonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.173,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.018363071634694417,
+          "signature": {
+            "harmonic_weights": [
+              4.0561391323261015e-10,
+              3.189616553089039e-06,
+              0.999996809977833
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 9.431076849871308e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.01848859174957288,
+          "signature": {
+            "harmonic_weights": [
+              2.0341074683320175e-13,
+              4.1119617758321454e-10,
+              3.234269709966303e-06,
+              0.9996840126417686,
+              0.00031275267712186294
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 2.0047002858016035e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.01848859965280088,
+          "signature": {
+            "harmonic_weights": [
+              5.261311982501025e-18,
+              2.0342900390112816e-13,
+              4.1119652800497244e-10,
+              3.234272506078342e-06,
+              0.9996840576848205,
+              0.00031261541091069217,
+              9.222036275405641e-08
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 1.9411701831226368e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.018363071634694434,
+          "signature": {
+            "harmonic_weights": [
+              4.0561391323997444e-10,
+              3.1896165530888446e-06,
+              0.999996809977833
+            ],
+            "multipole_weights": {
+              "1": 1.0,
+              "2": 6.876833980517672e-32
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 7.776271881307526e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.01848859174957293,
+          "signature": {
+            "harmonic_weights": [
+              2.034107466129533e-13,
+              4.1119617758357737e-10,
+              3.234269709965344e-06,
+              0.9996840126417686,
+              0.00031275267712186326
+            ],
+            "multipole_weights": {
+              "1": 1.0,
+              "2": 9.980395676634915e-31
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 4.8439692344886576e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "nonresonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.5,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.16463867601197288,
+          "signature": {
+            "harmonic_weights": [
+              1.0151332702102697e-11,
+              1.5537559548463042e-06,
+              0.9999984462338938
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 7.144786328130777e-32,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.16463867600929977,
+          "signature": {
+            "harmonic_weights": [
+              0.9999984340930608,
+              1.5537568045229036e-06,
+              1.1038354416918976e-11,
+              1.2138465829656639e-08,
+              6.305446942095377e-13
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0095227336807952e-31,
+            "z_odd_TM_weight": 0.9999999999999999,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.16485911977031176,
+          "signature": {
+            "harmonic_weights": [
+              3.633703947076294e-05,
+              0.6998065861120625,
+              1.094250425389797e-06,
+              4.7139107315647887e-07,
+              0.30013991699709286,
+              1.5594195857576305e-05,
+              1.4017892766272331e-11
+            ],
+            "multipole_weights": {
+              "1": 1.0000000000000002
+            },
+            "z_even_TE_weight": 1.4109600252396837e-30,
+            "z_odd_TM_weight": 1.0000000000000002,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.1646386760119727,
+          "signature": {
+            "harmonic_weights": [
+              1.0151332702115252e-11,
+              1.553755954846142e-06,
+              0.9999984462338938
+            ],
+            "multipole_weights": {
+              "1": 1.0,
+              "2": 1.4721052827334975e-31
+            },
+            "z_even_TE_weight": 2.0294431832610485e-31,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.16463867600929988,
+          "signature": {
+            "harmonic_weights": [
+              0.9999984340930608,
+              1.5537568045228875e-06,
+              1.103835441649085e-11,
+              1.2138465829684492e-08,
+              6.305446942110306e-13
+            ],
+            "multipole_weights": {
+              "1": 1.0,
+              "2": 3.354445571103186e-31
+            },
+            "z_even_TE_weight": 4.195464030136253e-31,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "nonresonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.548,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.2731196937500539,
+          "signature": {
+            "harmonic_weights": [
+              1.6938752834208535e-11,
+              2.763174120257263e-06,
+              0.999997236808941
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 2.1036206947251464e-33,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.27288123310108586,
+          "signature": {
+            "harmonic_weights": [
+              7.879513723507862e-14,
+              1.692439850619018e-11,
+              2.7588552629773893e-06,
+              0.9999807144628944,
+              1.6526664839371643e-05
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 4.826404705672712e-32,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.19744942507335236,
+          "signature": {
+            "harmonic_weights": [
+              0.9999946430405161,
+              5.35639020554933e-06,
+              5.692771431914323e-10,
+              1.2683144940656283e-15,
+              8.67577135500167e-19,
+              8.014950294565693e-23,
+              1.5449773362495792e-28
+            ],
+            "multipole_weights": {
+              "1": 1.0000000000000002
+            },
+            "z_even_TE_weight": 1.0000000000000002,
+            "z_odd_TM_weight": 1.7194292400583203e-36,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.17025919025644645,
+          "signature": {
+            "harmonic_weights": [
+              1.0271223205187358e-10,
+              1.7153424516970764e-05,
+              0.9999828464727709
+            ],
+            "multipole_weights": {
+              "1": 0.7363192996328766,
+              "2": 0.2636807003671235
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 1.266584263019058e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.1705072213908861,
+          "signature": {
+            "harmonic_weights": [
+              1.933535300248066e-13,
+              1.0307061230066547e-10,
+              1.720379127202251e-05,
+              0.9991380496024341,
+              0.0008447465030297838
+            ],
+            "multipole_weights": {
+              "1": 0.7366002558153248,
+              "2": 0.2633997441846751
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 4.711309872656227e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "resonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.173,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.355201852832696,
+          "signature": {
+            "harmonic_weights": [
+              5.586342098677667e-08,
+              0.0004837658869925236,
+              0.9995161782495863
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 8.666849770881836e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.35519672672994573,
+          "signature": {
+            "harmonic_weights": [
+              2.8819470058736118e-12,
+              5.585519012932897e-08,
+              0.00048378229323224354,
+              0.9995082487276092,
+              7.91312108650286e-06
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 1.1048319012896225e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.35519672563321963,
+          "signature": {
+            "harmonic_weights": [
+              5.827339411488119e-16,
+              2.8802415935710525e-12,
+              5.5855189676702804e-08,
+              0.00048378229190180013,
+              0.9995082377572106,
+              7.922377072877193e-06,
+              1.7157441276639579e-09
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999998
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 2.9021910261939425e-29,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.26223484289660604,
+          "signature": {
+            "harmonic_weights": [
+              2.1889975326662453e-06,
+              0.0008248694488225554,
+              0.9991729415536448
+            ],
+            "multipole_weights": {
+              "1": 0.8226324937682546,
+              "2": 0.17736750623174535
+            },
+            "z_even_TE_weight": 9.861397253604789e-33,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.26223988815879906,
+          "signature": {
+            "harmonic_weights": [
+              2.713925174008361e-10,
+              2.1896768288627647e-06,
+              0.000825031758993521,
+              0.9991565266972916,
+              1.62515954935628e-05
+            ],
+            "multipole_weights": {
+              "1": 0.8226529145562473,
+              "2": 0.17734708544375266
+            },
+            "z_even_TE_weight": 9.58636261362407e-32,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "resonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.5,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.904804947721672,
+          "signature": {
+            "harmonic_weights": [
+              7.18739578778208e-08,
+              8.108934223344783e-05,
+              0.9999188387838086
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 7.965256698704622e-35,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.5895535883569577,
+          "signature": {
+            "harmonic_weights": [
+              2.4363315537872384e-15,
+              4.994790858474203e-12,
+              2.5986502330677204e-09,
+              3.3138754329322178e-06,
+              0.9999966835209195
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 1.3338821767342007e-38,
+            "z_odd_TM_weight": 0.9999999999999999,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.5895535883569538,
+          "signature": {
+            "harmonic_weights": [
+              0.9999966835094675,
+              3.313875433370022e-06,
+              2.59865064892261e-09,
+              4.995206722306142e-12,
+              2.948609821012339e-15,
+              1.1450339245484746e-11,
+              1.7988261034774372e-16
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.3350472470557197e-29,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.3709883666191335,
+          "signature": {
+            "harmonic_weights": [
+              5.002738924943044e-06,
+              0.0005631932703448154,
+              0.9994318039907304
+            ],
+            "multipole_weights": {
+              "1": 0.2399580236236857,
+              "2": 0.7600419763763144
+            },
+            "z_even_TE_weight": 2.598778676671283e-32,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.3658748832068164,
+          "signature": {
+            "harmonic_weights": [
+              2.7576243032496258e-15,
+              6.321105224477169e-12,
+              2.429556283180333e-09,
+              1.728642018048276e-06,
+              0.9999982689221018
+            ],
+            "multipole_weights": {
+              "1": 0.6968989203655288,
+              "2": 0.30310107963447086
+            },
+            "z_even_TE_weight": 3.153900222857572e-31,
+            "z_odd_TM_weight": 0.9999999999999998,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "resonant",
+      "location": "weak_bound",
+      "q": 0.2818,
+      "nu": 0.548,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.0420669130344427,
+          "signature": {
+            "harmonic_weights": [
+              4.253452766867999e-05,
+              0.9996629855884424,
+              0.0002944798838889146
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 7.648153956759403e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.042066906052819805,
+          "signature": {
+            "harmonic_weights": [
+              7.522634823758277e-09,
+              4.2530714610544493e-05,
+              0.999662705781434,
+              0.0002946225200609595,
+              1.334612597119439e-07
+            ],
+            "multipole_weights": {
+              "1": 1.0000000000000002
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 7.55251897986473e-33,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.04206690605242033,
+          "signature": {
+            "harmonic_weights": [
+              2.9634826868438496e-12,
+              7.521957022534445e-09,
+              4.2530714534094505e-05,
+              0.9996627057589362,
+              0.00029462252877968494,
+              1.3346535229009972e-07,
+              7.477269143335695e-12
+            ],
+            "multipole_weights": {
+              "1": 1.0000000000000002
+            },
+            "z_even_TE_weight": 1.0000000000000002,
+            "z_odd_TM_weight": 2.812930849190992e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.04067735536917868,
+          "signature": {
+            "harmonic_weights": [
+              4.190910910822396e-05,
+              0.9997166989460116,
+              0.00024139194488024217
+            ],
+            "multipole_weights": {
+              "1": 0.9997380742060495,
+              "2": 0.0002619257939504198
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 1.0824270408762942e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.04067734177163684,
+          "signature": {
+            "harmonic_weights": [
+              3.2723196517928636e-08,
+              4.19054113986789e-05,
+              0.9997162282799231,
+              0.00024142627500324087,
+              4.0731047838124e-07
+            ],
+            "multipole_weights": {
+              "1": 0.9997379052223574,
+              "2": 0.00026209477764251986
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 5.985377371495463e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "resonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.173,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.5788464549338719,
+          "signature": {
+            "harmonic_weights": [
+              0.9999957265732593,
+              4.273289062452354e-06,
+              1.3767821390396976e-10
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 4.464520758800465e-31,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.2782357937508032,
+          "signature": {
+            "harmonic_weights": [
+              0.9999189816737344,
+              8.101795786236804e-05,
+              3.683935869730296e-10,
+              9.776482060921369e-15,
+              1.643064585495238e-18
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 7.148065340022813e-31,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.2780874538400093,
+          "signature": {
+            "harmonic_weights": [
+              0.0001661014818963851,
+              0.9997528902629749,
+              8.10078869441863e-05,
+              3.6817482338409416e-10,
+              9.768434646086431e-15,
+              1.6414581516341013e-18,
+              5.076492579784621e-23
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 3.0963704260996174e-31,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.45006106570456494,
+          "signature": {
+            "harmonic_weights": [
+              0.9998578452663853,
+              0.00014207401160418377,
+              8.07220105425762e-08
+            ],
+            "multipole_weights": {
+              "1": 0.12912598917960946,
+              "2": 0.8708740108203905
+            },
+            "z_even_TE_weight": 2.083217318159734e-30,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.18207466588572815,
+          "signature": {
+            "harmonic_weights": [
+              0.9999836065749513,
+              1.6385551173470315e-05,
+              7.859397538848994e-09,
+              1.4476099278541573e-11,
+              1.5365295246968591e-15
+            ],
+            "multipole_weights": {
+              "1": 0.6708231694050036,
+              "2": 0.32917683059499636
+            },
+            "z_even_TE_weight": 3.366882205499095e-30,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "resonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.5,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.1617182799817951,
+          "signature": {
+            "harmonic_weights": [
+              0.4972861071667155,
+              0.5015498675376957,
+              0.0011640252955888244
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 2.3673662957037414e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.16149804004733645,
+          "signature": {
+            "harmonic_weights": [
+              0.0011569158630223427,
+              0.4988422064851579,
+              0.4988432057024159,
+              0.0011576674622508915,
+              4.487152854443983e-09
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 1.49045732258567e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.1614979813102023,
+          "signature": {
+            "harmonic_weights": [
+              4.487144800483304e-09,
+              0.0011576652188896193,
+              0.4988423302531493,
+              0.4988423302983315,
+              0.0011576652536546828,
+              4.488765631707859e-09,
+              6.444097775560877e-14
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 2.273881102057003e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.12656539465461536,
+          "signature": {
+            "harmonic_weights": [
+              0.5004214366622094,
+              0.499028524593445,
+              0.000550038744345604
+            ],
+            "multipole_weights": {
+              "1": 0.9854965078668213,
+              "2": 0.014503492133178808
+            },
+            "z_even_TE_weight": 7.543436173729051e-30,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.12658982154632478,
+          "signature": {
+            "harmonic_weights": [
+              0.0005505134601518942,
+              0.4994487668721479,
+              0.4994497270968927,
+              0.0005509693255862678,
+              2.324522140074166e-08
+            ],
+            "multipole_weights": {
+              "1": 0.9853185899740752,
+              "2": 0.014681410025924903
+            },
+            "z_even_TE_weight": 2.4270049107481464e-30,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "resonant",
+      "location": "resonant_region",
+      "q": 0.86,
+      "nu": 0.548,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.39377965561168293,
+          "signature": {
+            "harmonic_weights": [
+              1.0767721095710475e-05,
+              0.9999470484108726,
+              4.218386803166947e-05
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 4.6362556080401766e-33,
+            "z_odd_TM_weight": 0.9999999999999999,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.36682162648476624,
+          "signature": {
+            "harmonic_weights": [
+              0.9999582835105122,
+              4.17029130082551e-05,
+              1.3576353882827782e-08,
+              1.2562133736488228e-13,
+              9.636366492828579e-18
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 3.812740835527496e-33,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.3667785040968297,
+          "signature": {
+            "harmonic_weights": [
+              5.91853267646875e-06,
+              0.9999523753646705,
+              4.169253086797723e-05,
+              1.3571659664129188e-08,
+              1.2554196670603213e-13,
+              9.625922799742193e-18,
+              3.444843548799813e-22
+            ],
+            "multipole_weights": {
+              "1": 1.0000000000000002
+            },
+            "z_even_TE_weight": 1.0000000000000002,
+            "z_odd_TM_weight": 1.1610641621282177e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.39284698341495067,
+          "signature": {
+            "harmonic_weights": [
+              1.9873646567513133e-05,
+              0.9999411967303969,
+              3.892962303552072e-05
+            ],
+            "multipole_weights": {
+              "1": 0.9991652735671961,
+              "2": 0.0008347264328039992
+            },
+            "z_even_TE_weight": 6.474735365486492e-32,
+            "z_odd_TM_weight": 0.9999999999999999,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.12199105708012914,
+          "signature": {
+            "harmonic_weights": [
+              0.9999988138887281,
+              1.1857160574882821e-06,
+              3.952007661471189e-10,
+              1.360314691440224e-14,
+              4.835105857679209e-19
+            ],
+            "multipole_weights": {
+              "1": 0.3809139937250246,
+              "2": 0.6190860062749753
+            },
+            "z_even_TE_weight": 8.407617664492394e-31,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "resonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.173,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.5079223662108854,
+          "signature": {
+            "harmonic_weights": [
+              9.491924018116091e-09,
+              0.00019554534133361397,
+              0.9998044451667424
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 8.117493791132776e-30,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.5077978010643338,
+          "signature": {
+            "harmonic_weights": [
+              5.897316880272105e-14,
+              9.477306335204191e-09,
+              0.00019535166302429152,
+              0.9996953561902461,
+              0.00010928266936440685
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 1.2068423755479958e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.5077977858979896,
+          "signature": {
+            "harmonic_weights": [
+              8.248724626855956e-18,
+              5.888813131163977e-14,
+              9.477304258823727e-09,
+              0.00019535162816820603,
+              0.9996952866011287,
+              0.00010935099574059095,
+              1.29759924297216e-09
+            ],
+            "multipole_weights": {
+              "1": 0.9999999999999999
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 2.806471125242085e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.26400199242993466,
+          "signature": {
+            "harmonic_weights": [
+              1.274950565706705e-07,
+              0.00020004484074482388,
+              0.9997998276641985
+            ],
+            "multipole_weights": {
+              "1": 0.9376043057679149,
+              "2": 0.062395694232085075
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 5.903215413808971e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.2639230158944268,
+          "signature": {
+            "harmonic_weights": [
+              5.218733095224263e-12,
+              1.27414904190147e-07,
+              0.00019994232236309403,
+              0.9995741562110929,
+              0.0002257740464212228
+            ],
+            "multipole_weights": {
+              "1": 0.9375108641094184,
+              "2": 0.062489135890581644
+            },
+            "z_even_TE_weight": 1.0000000000000002,
+            "z_odd_TM_weight": 2.8893092590251338e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "resonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.5,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.6488166218796291,
+          "signature": {
+            "harmonic_weights": [
+              3.1185517649594643e-07,
+              7.682962707867675e-05,
+              0.9999228585177449
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 2.4186489017322733e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.6487848732666054,
+          "signature": {
+            "harmonic_weights": [
+              0.05968631662029373,
+              6.525901371564545e-06,
+              7.391106049380722e-05,
+              0.9402241145694472,
+              9.13184839371716e-06
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 1.613368912873976e-31,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.6487788883824057,
+          "signature": {
+            "harmonic_weights": [
+              4.85511224779929e-06,
+              0.4998957838269357,
+              4.204295808565164e-05,
+              4.205173001408926e-05,
+              0.5000104067155824,
+              4.8591316758411795e-06,
+              5.254585007772388e-10
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 1.7439351172936546e-30,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.45199373331257164,
+          "signature": {
+            "harmonic_weights": [
+              4.4291692803159123e-07,
+              0.00013085872805046426,
+              0.9998686983550216
+            ],
+            "multipole_weights": {
+              "1": 0.2934695979482117,
+              "2": 0.7065304020517883
+            },
+            "z_even_TE_weight": 2.1680626475007997e-31,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.4246800291251676,
+          "signature": {
+            "harmonic_weights": [
+              6.463586898540987e-19,
+              4.247579782782899e-15,
+              6.1853162327621e-10,
+              9.967567976582693e-08,
+              0.9999998997057845
+            ],
+            "multipole_weights": {
+              "1": 3.135712272054689e-29,
+              "2": 1.0
+            },
+            "z_even_TE_weight": 7.441805227619979e-31,
+            "z_odd_TM_weight": 1.0,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    },
+    {
+      "regime": "resonant",
+      "location": "Gamma",
+      "q": 0.0,
+      "nu": 0.548,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "raw_smin": 0.010945451420497649,
+          "signature": {
+            "harmonic_weights": [
+              4.4483847057966345e-05,
+              0.9996512956322033,
+              0.000304220520738603
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 2.48198227124544e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "raw_smin": 0.010945463699001687,
+          "signature": {
+            "harmonic_weights": [
+              4.416266211893638e-08,
+              4.447962031181652e-05,
+              0.9996509876245404,
+              0.00030447854115542056,
+              1.0051330232179552e-08
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 5.176290624524507e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "raw_smin": 0.010945463699178535,
+          "signature": {
+            "harmonic_weights": [
+              1.8339905687307645e-12,
+              4.4160243301500234e-08,
+              4.4479620260870455e-05,
+              0.999650987611223,
+              0.00030447855069272824,
+              1.0054837807278909e-08,
+              9.083515994994445e-13
+            ],
+            "multipole_weights": {
+              "1": 1.0
+            },
+            "z_even_TE_weight": 0.9999999999999999,
+            "z_odd_TM_weight": 9.167758033848823e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "raw_smin": 0.010945451420497677,
+          "signature": {
+            "harmonic_weights": [
+              4.448384705796602e-05,
+              0.9996512956322033,
+              0.0003042205207386031
+            ],
+            "multipole_weights": {
+              "1": 1.0,
+              "2": 1.8263073941377492e-31
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 7.466465470370121e-32,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "raw_smin": 0.010945463699001656,
+          "signature": {
+            "harmonic_weights": [
+              4.416266211885979e-08,
+              4.4479620311819684e-05,
+              0.9996509876245404,
+              0.000304478541155421,
+              1.0051330232179471e-08
+            ],
+            "multipole_weights": {
+              "1": 1.0,
+              "2": 2.661941996301322e-30
+            },
+            "z_even_TE_weight": 1.0,
+            "z_odd_TM_weight": 3.106630600262665e-30,
+            "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+          }
+        }
+      ],
+      "caution": "Changes of the least-singular vector may select a different mode; Smin magnitude alone is not a convergence certificate"
+    }
+  ],
+  "independent_static_valley_comparisons": [
+    {
+      "reference": {
+        "regime": "nonresonant",
+        "q": 0.2818,
+        "frequency": 0.1929488948555263,
+        "path": "results/nonresonant_recovery/summary.json",
+        "scope": "Meep r12 voxel pad20 bound mode, not spatially converged"
+      },
+      "results": [
+        {
+          "q": 0.2818,
+          "lmax": 1,
+          "search_interval_cyclic": [
+            0.18523093906130525,
+            0.20066685064974735
+          ],
+          "sampled_points": 61,
+          "valleys": [
+            {
+              "frequency_cyclic": 0.19334844613796223,
+              "smin": 6.35318384721806e-09,
+              "difference_from_native_reference": 0.00039955128243593374,
+              "relative_difference_from_native_reference": 0.002070762222997465,
+              "signature": {
+                "harmonic_weights": [
+                  1.0
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.2108036065842122e-33,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "frequency_cyclic": 0.19560844973710695,
+              "smin": 1.4304640343734212e-07,
+              "difference_from_native_reference": 0.0026595548815806502,
+              "relative_difference_from_native_reference": 0.013783726947863766,
+              "signature": {
+                "harmonic_weights": [
+                  1.0
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 4.131119730710619e-32,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "Real-axis local minima; not certified complex roots or automatically matched modes"
+        },
+        {
+          "q": 0.2818,
+          "lmax": 2,
+          "search_interval_cyclic": [
+            0.18523093906130525,
+            0.20066685064974735
+          ],
+          "sampled_points": 61,
+          "valleys": [
+            {
+              "frequency_cyclic": 0.1930612468596811,
+              "smin": 3.6678474755003616e-08,
+              "difference_from_native_reference": 0.00011235200415479762,
+              "relative_difference_from_native_reference": 0.0005822889228721577,
+              "signature": {
+                "harmonic_weights": [
+                  1.0
+                ],
+                "multipole_weights": {
+                  "1": 0.999783903776227,
+                  "2": 0.00021609622377293593
+                },
+                "z_even_TE_weight": 0.9999999999999999,
+                "z_odd_TM_weight": 1.4538553328862557e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "frequency_cyclic": 0.1955874927972546,
+              "smin": 1.3832824666440265e-07,
+              "difference_from_native_reference": 0.002638597941728299,
+              "relative_difference_from_native_reference": 0.013675113007016668,
+              "signature": {
+                "harmonic_weights": [
+                  1.0
+                ],
+                "multipole_weights": {
+                  "1": 0.9999718135929508,
+                  "2": 2.818640704922858e-05
+                },
+                "z_even_TE_weight": 1.0214405120517977e-31,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "Real-axis local minima; not certified complex roots or automatically matched modes"
+        }
+      ]
+    },
+    {
+      "reference": {
+        "regime": "resonant",
+        "q": 0.86,
+        "frequency": 0.40814666503388053,
+        "path": "results/array/q0.86_r40_eps11.68/summary_v2.json",
+        "scope": "Meep r40 subpixel static mode; finite grid reference"
+      },
+      "results": [
+        {
+          "q": 0.86,
+          "lmax": 1,
+          "search_interval_cyclic": [
+            0.3918207984325253,
+            0.42447253163523574
+          ],
+          "sampled_points": 61,
+          "valleys": [
+            {
+              "frequency_cyclic": 0.40928173940284673,
+              "smin": 9.299983926325771e-09,
+              "difference_from_native_reference": 0.0011350743689662046,
+              "relative_difference_from_native_reference": 0.002781045310934934,
+              "signature": {
+                "harmonic_weights": [
+                  1.0
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 3.2392961879364294e-34,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "frequency_cyclic": 0.41898637451965065,
+              "smin": 2.348343086471868e-08,
+              "difference_from_native_reference": 0.010839709485770121,
+              "relative_difference_from_native_reference": 0.026558368386693322,
+              "signature": {
+                "harmonic_weights": [
+                  1.0
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.2094840050751841e-31,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "frequency_cyclic": 0.4240467095160774,
+              "smin": 9.962120948727183e-08,
+              "difference_from_native_reference": 0.015900044482196896,
+              "relative_difference_from_native_reference": 0.03895669337608583,
+              "signature": {
+                "harmonic_weights": [
+                  1.0
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 2.794413608334077e-29,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "Real-axis local minima; not certified complex roots or automatically matched modes"
+        },
+        {
+          "q": 0.86,
+          "lmax": 2,
+          "search_interval_cyclic": [
+            0.3918207984325253,
+            0.42447253163523574
+          ],
+          "sampled_points": 61,
+          "valleys": [
+            {
+              "frequency_cyclic": 0.4092351515672196,
+              "smin": 3.744095303671782e-09,
+              "difference_from_native_reference": 0.0010884865333390947,
+              "relative_difference_from_native_reference": 0.002666900471301753,
+              "signature": {
+                "harmonic_weights": [
+                  1.0
+                ],
+                "multipole_weights": {
+                  "1": 0.9999566613892034,
+                  "2": 4.3338610796630576e-05
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 3.046303762538639e-32,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "frequency_cyclic": 0.41858031320581784,
+              "smin": 1.0948759638090673e-07,
+              "difference_from_native_reference": 0.010433648171937315,
+              "relative_difference_from_native_reference": 0.025563477704935337,
+              "signature": {
+                "harmonic_weights": [
+                  1.0000000000000002
+                ],
+                "multipole_weights": {
+                  "1": 0.9997663212483628,
+                  "2": 0.0002336787516372725
+                },
+                "z_even_TE_weight": 6.648655745897313e-32,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "frequency_cyclic": 0.42381425261913935,
+              "smin": 6.669740131347831e-08,
+              "difference_from_native_reference": 0.015667587585258824,
+              "relative_difference_from_native_reference": 0.03838715081491171,
+              "signature": {
+                "harmonic_weights": [
+                  1.0
+                ],
+                "multipole_weights": {
+                  "1": 0.9998483329412103,
+                  "2": 0.00015166705878979524
+                },
+                "z_even_TE_weight": 4.97541320659458e-32,
+                "z_odd_TM_weight": 1.0000000000000002,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "Real-axis local minima; not certified complex roots or automatically matched modes"
+        }
+      ]
+    }
+  ],
+  "dynamic_local_valley_checks": [
+    {
+      "regime": "nonresonant",
+      "q": 0.2818,
+      "window_center_nu": 0.5,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "q": 0.2818,
+          "window_nu": [
+            0.488,
+            0.512
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.4928019219728432,
+              "raw_smin": 1.3534311203504684e-07,
+              "signature": {
+                "harmonic_weights": [
+                  0.9999916000606884,
+                  8.352991012121863e-06,
+                  4.6948299449983756e-08
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.3775111965475701e-30,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.4986625078343831,
+              "raw_smin": 8.44660502282535e-08,
+              "signature": {
+                "harmonic_weights": [
+                  0.9997089110339734,
+                  0.00029026136862801347,
+                  8.275973986753661e-07
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.2430140381372848e-32,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5013376937809563,
+              "raw_smin": 2.620576851516001e-06,
+              "signature": {
+                "harmonic_weights": [
+                  0.00028919730235829697,
+                  0.996028933351025,
+                  0.0036818693466168406
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 2.521286460784036e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5071980626373477,
+              "raw_smin": 6.961550321697499e-06,
+              "signature": {
+                "harmonic_weights": [
+                  7.943789304917378e-06,
+                  0.9510060098435646,
+                  0.04898604636713035
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0976354487014448e-31,
+                "z_odd_TM_weight": 0.9999999999999999,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "q": 0.2818,
+          "window_nu": [
+            0.488,
+            0.512
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.4928019373614965,
+              "raw_smin": 6.961549406483241e-06,
+              "signature": {
+                "harmonic_weights": [
+                  0.04898604419399951,
+                  0.9510059673210481,
+                  7.943850552959378e-06,
+                  4.4623228229204464e-08,
+                  1.1171083578135177e-11
+                ],
+                "multipole_weights": {
+                  "1": 0.9999999999999999
+                },
+                "z_even_TE_weight": 5.244638200707245e-31,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.49866230617989143,
+              "raw_smin": 2.6200271538170946e-06,
+              "signature": {
+                "harmonic_weights": [
+                  0.0036818664576012987,
+                  0.9960281484877171,
+                  0.00028916005192556444,
+                  8.243068885000928e-07,
+                  6.958673947610544e-10
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.6950114655777073e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5013376938224107,
+              "raw_smin": 2.619648708648747e-06,
+              "signature": {
+                "harmonic_weights": [
+                  8.244370568311412e-07,
+                  0.0002891593553214373,
+                  0.9960257483991881,
+                  0.0036812637295893535,
+                  3.004078844249538e-06
+                ],
+                "multipole_weights": {
+                  "1": 0.9999999999999999
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.957288355452244e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5071980626273752,
+              "raw_smin": 6.952587875860905e-06,
+              "signature": {
+                "harmonic_weights": [
+                  4.465113363450357e-08,
+                  7.944106545784796e-06,
+                  0.9510366195497527,
+                  0.04894447549269142,
+                  1.0916199876342647e-05
+                ],
+                "multipole_weights": {
+                  "1": 0.9999999999999999
+                },
+                "z_even_TE_weight": 5.27576217208415e-33,
+                "z_odd_TM_weight": 0.9999999999999999,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "q": 0.2818,
+          "window_nu": [
+            0.488,
+            0.512
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.49280193737262457,
+              "raw_smin": 6.9525878709775095e-06,
+              "signature": {
+                "harmonic_weights": [
+                  1.0916199876523154e-05,
+                  0.048944475493444946,
+                  0.9510366195643813,
+                  7.944106459507648e-06,
+                  4.4624662944255656e-08,
+                  1.1174743819477062e-11,
+                  1.918689655599652e-16
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.109684123276825e-31,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.4986623061775878,
+              "raw_smin": 2.6196487983185205e-06,
+              "signature": {
+                "harmonic_weights": [
+                  3.0040788425667056e-06,
+                  0.0036812637275177194,
+                  0.9960257478385096,
+                  0.0002891593542525083,
+                  8.243048988249653e-07,
+                  6.959666002955734e-10,
+                  1.2216957596353515e-14
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0000000000000002,
+                "z_odd_TM_weight": 1.279570615240501e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5013376938224126,
+              "raw_smin": 2.619648830026788e-06,
+              "signature": {
+                "harmonic_weights": [
+                  6.958657154483911e-10,
+                  8.243048990888929e-07,
+                  0.0002891593540950755,
+                  0.9960257472964771,
+                  0.003681263716653564,
+                  3.004578863816712e-06,
+                  5.3145692910673755e-11
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0000000000000002,
+                "z_odd_TM_weight": 5.30851403185059e-32,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5071980626273824,
+              "raw_smin": 6.952587543794513e-06,
+              "signature": {
+                "harmonic_weights": [
+                  1.1171443459606481e-11,
+                  4.462466523228039e-08,
+                  7.944106457326418e-06,
+                  0.9510366193027237,
+                  0.04894447107772814,
+                  1.0920634757121336e-05,
+                  2.4249706351282247e-10
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 3.649817990611808e-32,
+                "z_odd_TM_weight": 0.9999999999999999,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "q": 0.2818,
+          "window_nu": [
+            0.488,
+            0.512
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.4928562597902759,
+              "raw_smin": 5.727580059093019e-08,
+              "signature": {
+                "harmonic_weights": [
+                  0.9999914942057858,
+                  8.455737115301363e-06,
+                  5.0057098940022746e-08
+                ],
+                "multipole_weights": {
+                  "1": 0.9999718139779148,
+                  "2": 2.8186022085207196e-05
+                },
+                "z_even_TE_weight": 2.7921372610430062e-30,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.49940815507055764,
+              "raw_smin": 4.993159134612922e-08,
+              "signature": {
+                "harmonic_weights": [
+                  0.9985268230852137,
+                  0.0014690483670060784,
+                  4.1285477803828196e-06
+                ],
+                "multipole_weights": {
+                  "1": 0.9997837501374933,
+                  "2": 0.000216249862506809
+                },
+                "z_even_TE_weight": 1.0000000000000002,
+                "z_odd_TM_weight": 3.543959213259798e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5005920359921697,
+              "raw_smin": 1.1707362032244983e-06,
+              "signature": {
+                "harmonic_weights": [
+                  0.0014644867953187252,
+                  0.9954095801062881,
+                  0.003125933098393243
+                ],
+                "multipole_weights": {
+                  "1": 0.999664255784602,
+                  "2": 0.000335744215398058
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 3.1974445555746946e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5071437607450839,
+              "raw_smin": 4.776102112490112e-06,
+              "signature": {
+                "harmonic_weights": [
+                  8.109727151078543e-06,
+                  0.9590714482569189,
+                  0.04092044201592977
+                ],
+                "multipole_weights": {
+                  "1": 0.9998094384774939,
+                  "2": 0.0001905615225059835
+                },
+                "z_even_TE_weight": 2.247667488545101e-32,
+                "z_odd_TM_weight": 0.9999999999999999,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "q": 0.2818,
+          "window_nu": [
+            0.488,
+            0.512
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.4928562390418636,
+              "raw_smin": 4.775965638838785e-06,
+              "signature": {
+                "harmonic_weights": [
+                  0.04092044032246367,
+                  0.9590714018685442,
+                  8.109797132666034e-06,
+                  4.798471057837162e-08,
+                  2.714873802179763e-11
+                ],
+                "multipole_weights": {
+                  "1": 0.9998094383987391,
+                  "2": 0.00019056160126083182
+                },
+                "z_even_TE_weight": 2.5311228574558184e-30,
+                "z_odd_TM_weight": 0.9999999999999999,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.49940796373631896,
+              "raw_smin": 1.1692263388642538e-06,
+              "signature": {
+                "harmonic_weights": [
+                  0.0031259216733233557,
+                  0.9954059212522733,
+                  0.0014640389487042395,
+                  4.113985679863249e-06,
+                  4.140019266629879e-09
+                ],
+                "multipole_weights": {
+                  "1": 0.9996641039812896,
+                  "2": 0.0003358960187105838
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.2067168357637503e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5005920362558485,
+              "raw_smin": 1.169179500872481e-06,
+              "signature": {
+                "harmonic_weights": [
+                  4.114377075435571e-06,
+                  0.0014640349370942025,
+                  0.9954031370901857,
+                  0.003125609130099247,
+                  3.1044655455866846e-06
+                ],
+                "multipole_weights": {
+                  "1": 0.999664099207475,
+                  "2": 0.00033590079252506595
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 2.58151066506767e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5071437607178596,
+              "raw_smin": 4.77156737911805e-06,
+              "signature": {
+                "harmonic_weights": [
+                  4.801001239924957e-08,
+                  8.109829821039994e-06,
+                  0.959075228584531,
+                  0.04089317892019928,
+                  2.343465543633473e-05
+                ],
+                "multipole_weights": {
+                  "1": 0.9998076505146695,
+                  "2": 0.0001923494853304554
+                },
+                "z_even_TE_weight": 6.34970073217798e-32,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        }
+      ]
+    },
+    {
+      "regime": "nonresonant",
+      "q": 0.0,
+      "window_center_nu": 0.173,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "q": 0.0,
+          "window_nu": [
+            0.16099999999999998,
+            0.185
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.17515569391154923,
+              "raw_smin": 7.001452093540282e-09,
+              "signature": {
+                "harmonic_weights": [
+                  5.270372662409472e-14,
+                  7.107382616244823e-12,
+                  0.99999999999284
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 2.063562668604261e-32,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "q": 0.0,
+          "window_nu": [
+            0.16099999999999998,
+            0.185
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.17517047614064077,
+              "raw_smin": 1.6224356396313703e-09,
+              "signature": {
+                "harmonic_weights": [
+                  3.250740296303245e-17,
+                  5.2692404461133233e-14,
+                  7.107110278620223e-12,
+                  0.9996876705315575,
+                  0.00031232946128262036
+                ],
+                "multipole_weights": {
+                  "1": 0.9999999999999999
+                },
+                "z_even_TE_weight": 0.9999999999999999,
+                "z_odd_TM_weight": 1.0745747080808149e-32,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "q": 0.0,
+          "window_nu": [
+            0.16099999999999998,
+            0.185
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.17517047705556407,
+              "raw_smin": 2.737169472480703e-09,
+              "signature": {
+                "harmonic_weights": [
+                  9.312453584027471e-22,
+                  3.250986342504708e-17,
+                  5.2692417986567e-14,
+                  7.1071045117854505e-12,
+                  0.999687724892902,
+                  0.00031218138279765916,
+                  9.371714053968775e-08
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 4.7504051767700923e-32,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "q": 0.0,
+          "window_nu": [
+            0.16099999999999998,
+            0.185
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.17515569391154925,
+              "raw_smin": 7.001452086269405e-09,
+              "signature": {
+                "harmonic_weights": [
+                  5.270372662200764e-14,
+                  7.107382616778603e-12,
+                  0.99999999999284
+                ],
+                "multipole_weights": {
+                  "1": 1.0,
+                  "2": 2.150360474283826e-32
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.3201162239624747e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "q": 0.0,
+          "window_nu": [
+            0.16099999999999998,
+            0.185
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.17517047614064077,
+              "raw_smin": 1.6224356408642326e-09,
+              "signature": {
+                "harmonic_weights": [
+                  3.250740280585303e-17,
+                  5.2692404462705604e-14,
+                  7.107110278624897e-12,
+                  0.9996876705315576,
+                  0.00031232946128262063
+                ],
+                "multipole_weights": {
+                  "1": 1.0,
+                  "2": 1.5606612527282113e-31
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.189198229908319e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "q": 0.86,
+      "window_center_nu": 0.5,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "q": 0.86,
+          "window_nu": [
+            0.488,
+            0.512
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.4928945568933063,
+              "raw_smin": 1.4853620419772174e-07,
+              "signature": {
+                "harmonic_weights": [
+                  0.995947486631978,
+                  0.004048436026969416,
+                  4.07734105261361e-06
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 5.949609663887006e-31,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.4955381200219009,
+              "raw_smin": 1.4294236628083665e-05,
+              "signature": {
+                "harmonic_weights": [
+                  0.012724271077934536,
+                  0.9854117898314894,
+                  0.001863939090576144
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.8705096586852107e-30,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5044675208950553,
+              "raw_smin": 1.7717576233308282e-07,
+              "signature": {
+                "harmonic_weights": [
+                  0.9872316010413286,
+                  0.012749862914145638,
+                  1.8536044525882584e-05
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 9.896848328310554e-32,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5071108477578511,
+              "raw_smin": 1.7446417663088568e-05,
+              "signature": {
+                "harmonic_weights": [
+                  0.0040443598953074705,
+                  0.9951446480558421,
+                  0.0008109920488503794
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 2.7259391139258535e-32,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "q": 0.86,
+          "window_nu": [
+            0.488,
+            0.512
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.49288913522325684,
+              "raw_smin": 1.7353997212671967e-05,
+              "signature": {
+                "harmonic_weights": [
+                  0.0008109908993910401,
+                  0.9951435145336882,
+                  0.004041422906100111,
+                  4.0715494495827595e-06,
+                  1.1137114668463343e-10
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 5.010459440377597e-32,
+                "z_odd_TM_weight": 0.9999999999999999,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.4955381858045416,
+              "raw_smin": 1.4166831184883856e-05,
+              "signature": {
+                "harmonic_weights": [
+                  1.8525561046398572e-05,
+                  0.012740126757795671,
+                  0.9853764710949269,
+                  0.0018648675338181159,
+                  9.052412979327347e-09
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.4139549304729945e-32,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5044618144459982,
+              "raw_smin": 1.4158964453540743e-05,
+              "signature": {
+                "harmonic_weights": [
+                  0.0018638708036923031,
+                  0.9853774523747197,
+                  0.012740139929851029,
+                  1.8536803776716805e-05,
+                  8.796036324311634e-11
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0000000000000002,
+                "z_odd_TM_weight": 3.192175770340105e-32,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5071108647003559,
+              "raw_smin": 1.735989243898059e-05,
+              "signature": {
+                "harmonic_weights": [
+                  4.070688741794456e-06,
+                  0.004041421858678269,
+                  0.9951432332040122,
+                  0.0008112527068769482,
+                  2.1541690931771452e-08
+                ],
+                "multipole_weights": {
+                  "1": 1.0000000000000002
+                },
+                "z_even_TE_weight": 9.869910230974425e-33,
+                "z_odd_TM_weight": 1.0000000000000002,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "q": 0.86,
+          "window_nu": [
+            0.488,
+            0.512
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.4928891351236025,
+              "raw_smin": 1.7359821699059947e-05,
+              "signature": {
+                "harmonic_weights": [
+                  2.1541690923068576e-08,
+                  0.0008112527065867246,
+                  0.9951432324837594,
+                  0.004041421608347142,
+                  4.071548218272513e-06,
+                  1.1139283937454651e-10,
+                  4.845846023236753e-15
+                ],
+                "multipole_weights": {
+                  "1": 1.0000000000000002
+                },
+                "z_even_TE_weight": 8.443449714140343e-32,
+                "z_odd_TM_weight": 1.0000000000000002,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.4955381858078106,
+              "raw_smin": 1.4166748173534217e-05,
+              "signature": {
+                "harmonic_weights": [
+                  8.796027850806985e-11,
+                  1.853678591374325e-05,
+                  0.012740127408843971,
+                  0.9853764591071137,
+                  0.0018648675556611153,
+                  9.054208708410776e-09,
+                  2.985092955988639e-13
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 4.521012501136563e-30,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5044618141921976,
+              "raw_smin": 1.4166747814082305e-05,
+              "signature": {
+                "harmonic_weights": [
+                  9.052412869877343e-09,
+                  0.0018648675112809964,
+                  0.9853764591524601,
+                  0.012740127409452087,
+                  1.8536786413178213e-05,
+                  8.797987505923407e-11,
+                  8.474239441478496e-16
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 0.9999999999999999,
+                "z_odd_TM_weight": 1.602106354526036e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5071108647006799,
+              "raw_smin": 1.7359872202115668e-05,
+              "signature": {
+                "harmonic_weights": [
+                  1.1137111750552059e-10,
+                  4.071548385611095e-06,
+                  0.004041421813752092,
+                  0.9951432322641449,
+                  0.000811252714594759,
+                  2.1546840351815654e-08,
+                  9.111300437918774e-13
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.355542562818185e-32,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "q": 0.86,
+          "window_nu": [
+            0.488,
+            0.512
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.493390503515047,
+              "raw_smin": 8.070915854952057e-08,
+              "signature": {
+                "harmonic_weights": [
+                  0.9953103729933827,
+                  0.0046831932119236,
+                  6.4337946937121415e-06
+                ],
+                "multipole_weights": {
+                  "1": 0.9997644617011693,
+                  "2": 0.0002355382988307748
+                },
+                "z_even_TE_weight": 1.3327847837455087e-30,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.49548013271781516,
+              "raw_smin": 1.447180019558083e-05,
+              "signature": {
+                "harmonic_weights": [
+                  0.012396319264782081,
+                  0.98561129262734,
+                  0.0019923881078778775
+                ],
+                "multipole_weights": {
+                  "1": 0.9999153390317416,
+                  "2": 8.466096825846124e-05
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 2.2129610322993937e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5045255089804711,
+              "raw_smin": 1.4289239291199344e-07,
+              "signature": {
+                "harmonic_weights": [
+                  0.9875580125714477,
+                  0.01242278778214717,
+                  1.9199646405257483e-05
+                ],
+                "multipole_weights": {
+                  "1": 0.9999560148825242,
+                  "2": 4.398511747581223e-05
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 2.7955669261407413e-32,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5066148964785421,
+              "raw_smin": 5.62399296876753e-06,
+              "signature": {
+                "harmonic_weights": [
+                  0.004678696616373759,
+                  0.9944836092825189,
+                  0.0008376941011073719
+                ],
+                "multipole_weights": {
+                  "1": 0.9995488209563198,
+                  "2": 0.0004511790436802402
+                },
+                "z_even_TE_weight": 9.088484547640926e-32,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "q": 0.86,
+          "window_nu": [
+            0.488,
+            0.512
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.4933850755793302,
+              "raw_smin": 5.593409307814717e-06,
+              "signature": {
+                "harmonic_weights": [
+                  0.0008376911077184799,
+                  0.9944809363819869,
+                  0.004674942923889055,
+                  6.429331020802336e-06,
+                  2.553846817222014e-10
+                ],
+                "multipole_weights": {
+                  "1": 0.9995465513503845,
+                  "2": 0.00045344864961549173
+                },
+                "z_even_TE_weight": 3.9544880597099884e-30,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.49548020114244296,
+              "raw_smin": 1.434610215022777e-05,
+              "signature": {
+                "harmonic_weights": [
+                  1.9186147241000614e-05,
+                  0.012411584015562646,
+                  0.985575817407388,
+                  0.0019934007381048357,
+                  1.1691703572258496e-08
+                ],
+                "multipole_weights": {
+                  "1": 0.9999149250277346,
+                  "2": 8.507497226538136e-05
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.5523472766002589e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5045197989853053,
+              "raw_smin": 1.4338105635407697e-05,
+              "signature": {
+                "harmonic_weights": [
+                  0.001992315198694823,
+                  0.9855768880844129,
+                  0.01241159855981666,
+                  1.9198048161554055e-05,
+                  1.0891409286202864e-10
+                ],
+                "multipole_weights": {
+                  "1": 0.9999149504105531,
+                  "2": 8.504958944678249e-05
+                },
+                "z_even_TE_weight": 0.9999999999999999,
+                "z_odd_TM_weight": 2.5016950965822107e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            },
+            {
+              "nu": 0.5066149246258311,
+              "raw_smin": 5.59393069271432e-06,
+              "signature": {
+                "harmonic_weights": [
+                  6.423977512515e-06,
+                  0.004674940408756977,
+                  0.9944803928732444,
+                  0.0008382062052835156,
+                  3.653520252592296e-08
+                ],
+                "multipole_weights": {
+                  "1": 0.9995462550999702,
+                  "2": 0.0004537449000298395
+                },
+                "z_even_TE_weight": 2.5911696437234684e-31,
+                "z_odd_TM_weight": 1.0,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "q": 0.0,
+      "window_center_nu": 0.548,
+      "variants": [
+        {
+          "N": 1,
+          "lmax": 1,
+          "q": 0.0,
+          "window_nu": [
+            0.536,
+            0.56
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.5486015988248071,
+              "raw_smin": 4.744939686906497e-06,
+              "signature": {
+                "harmonic_weights": [
+                  4.368040657397446e-05,
+                  0.9996638766742619,
+                  0.0002924429191640977
+                ],
+                "multipole_weights": {
+                  "1": 1.0
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.4794204829997895e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 2,
+          "lmax": 1,
+          "q": 0.0,
+          "window_nu": [
+            0.536,
+            0.56
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.548601599455956,
+              "raw_smin": 4.747912821854762e-06,
+              "signature": {
+                "harmonic_weights": [
+                  4.076740700854753e-08,
+                  4.367634531355844e-05,
+                  0.9996635793512105,
+                  0.0002926938405928403,
+                  9.695476182338322e-09
+                ],
+                "multipole_weights": {
+                  "1": 1.0000000000000002
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 2.4384906085505495e-32,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 3,
+          "lmax": 1,
+          "q": 0.0,
+          "window_nu": [
+            0.536,
+            0.56
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.5486015994559679,
+              "raw_smin": 4.7479130385466445e-06,
+              "signature": {
+                "harmonic_weights": [
+                  1.6974038495525397e-12,
+                  4.0765095652321376e-08,
+                  4.367634526395586e-05,
+                  0.999663579338316,
+                  0.00029269384988038277,
+                  9.698867342319303e-09,
+                  8.794091183305328e-13
+                ],
+                "multipole_weights": {
+                  "1": 1.0000000000000002
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.4631299536221716e-31,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 1,
+          "lmax": 2,
+          "q": 0.0,
+          "window_nu": [
+            0.536,
+            0.56
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.5486015988248071,
+              "raw_smin": 4.7449396868485486e-06,
+              "signature": {
+                "harmonic_weights": [
+                  4.368040657397712e-05,
+                  0.9996638766742619,
+                  0.00029244291916409777
+                ],
+                "multipole_weights": {
+                  "1": 1.0,
+                  "2": 3.0131223776747057e-32
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 7.898930539725386e-33,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        },
+        {
+          "N": 2,
+          "lmax": 2,
+          "q": 0.0,
+          "window_nu": [
+            0.536,
+            0.56
+          ],
+          "sample_count": 41,
+          "minima": [
+            {
+              "nu": 0.548601599455956,
+              "raw_smin": 4.747912821843357e-06,
+              "signature": {
+                "harmonic_weights": [
+                  4.076740700865999e-08,
+                  4.367634531355584e-05,
+                  0.9996635793512104,
+                  0.00029269384059284263,
+                  9.695476182337058e-09
+                ],
+                "multipole_weights": {
+                  "1": 1.0,
+                  "2": 1.1404270718292829e-29
+                },
+                "z_even_TE_weight": 1.0,
+                "z_odd_TM_weight": 1.1361219789804843e-29,
+                "note": "Euclidean canonical-coefficient composition, not a field-energy or QNM norm"
+              }
+            }
+          ],
+          "interpretation": "All locally detected real-axis valleys; no assumption that the smallest value identifies the same mode after truncation changes"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No complete complex-frequency pole, residue or radiation-sheet continuation is certified",
+    "Truncation point values alone do not establish branch convergence; multipole content is retained",
+    "Static valleys are compared to Meep references without tuning parameters or declaring unverified field identity",
+    "No native simulation was rerun and no existing map was changed"
+  ],
+  "elapsed_seconds": 113.51423009997234,
+  "source_sha256": {
+    "run_smin_trial.py": "fc58a7df3d6a268bbbff4037bdd1ded9a00bef73c8fa26fb41fdebe1ff887776",
+    "floquet_sphere_tmatrix.py": "c8f901891360eda2e45ca345671220b3086bbe6480a3cc0c46edaaa71253695e",
+    "sphere_lattice_smin.py": "62faadd8276035ebe12b698c0dd516b8be267568466a8c610f8b3fb89d65b001",
+    "audit_smin_operator.py": "5cfa667ef05943ce7dc01642a0ced7c6396468e5d63425b39708728fbb8e1987",
+    "results/nonresonant_recovery/summary.json": "ab37c75bef796e1e91d7fd1cb73889428bdffe54eaa4f51b9dd999f081937ed6",
+    "results/array/q0.86_r40_eps11.68/summary_v2.json": "76046fc3d4cd02bc1dd2554574dd59e17c3d05556fe5f44b24e77fbae14aecd4"
+  }
+}

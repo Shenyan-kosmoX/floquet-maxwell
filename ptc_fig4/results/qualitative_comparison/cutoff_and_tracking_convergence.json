@@ -1,0 +1,88 @@
+{
+  "status": "APPROXIMATE",
+  "material": "n=4, epsilon=16, constant lossless; not fitted",
+  "runs": [
+    {
+      "gmax": 4.1,
+      "vertical_modes": 8,
+      "kpoint_count": 13,
+      "vertex_frequencies_thz": {
+        "M_start": 67.46483674515244,
+        "Gamma": 69.41348629044448,
+        "X": 64.51013993938817,
+        "M_end": 67.46483674515244
+      },
+      "sampled_bandwidth_thz": 4.903346351056314,
+      "relative_sampled_bandwidth": 0.07063967844144017,
+      "minimum_neighbor_field_overlap_squared": 0.3265277102373386,
+      "ambiguous_k_indexes": [
+        12
+      ]
+    },
+    {
+      "gmax": 6.1,
+      "vertical_modes": 12,
+      "kpoint_count": 13,
+      "vertex_frequencies_thz": {
+        "M_start": 66.28990609810022,
+        "Gamma": 68.76362147101432,
+        "X": 63.717883237833156,
+        "M_end": 66.28990609810022
+      },
+      "sampled_bandwidth_thz": 5.0457382331811615,
+      "relative_sampled_bandwidth": 0.0733780176965821,
+      "minimum_neighbor_field_overlap_squared": 0.42845807972257627,
+      "ambiguous_k_indexes": [
+        12
+      ]
+    },
+    {
+      "gmax": 6.1,
+      "vertical_modes": 12,
+      "kpoint_count": 25,
+      "vertex_frequencies_thz": {
+        "M_start": 66.28990609810022,
+        "Gamma": 68.76362147101432,
+        "X": 63.717883237833156,
+        "M_end": 66.28990609810022
+      },
+      "sampled_bandwidth_thz": 5.0457382331811615,
+      "relative_sampled_bandwidth": 0.0733780176965821,
+      "minimum_neighbor_field_overlap_squared": 0.8042758204348394,
+      "ambiguous_k_indexes": []
+    }
+  ],
+  "basis_comparison_g4v8_to_g6v12": {
+    "same_k_grid": true,
+    "maximum_frequency_change_thz": 1.1749306470522214,
+    "rms_frequency_change_thz": 0.7841364906336572,
+    "maximum_change_after_Gamma_alignment_thz": 0.5250658276220577
+  },
+  "k_grid_refinement_13_to_25": {
+    "maximum_frequency_change_at_shared_k_thz": 0.0,
+    "old_ambiguous_k_indexes": [
+      12
+    ],
+    "new_ambiguous_k_indexes": []
+  },
+  "fields": {
+    "directory": "ptc_fig4\\results\\qualitative_comparison\\n4_g6_v12_k25",
+    "D_layer_quadrature_order": 32,
+    "D_checkpoints": 25,
+    "D_shape_order": [
+      "mode",
+      "z",
+      "component",
+      "G"
+    ],
+    "H_gram_window": "[-a,h+a] with 8 Gauss nodes in each of 3 intervals",
+    "max_relative_frobenius_H_gram_error": 0.09232779366271192,
+    "meaning": "Finite-window field Gram is diagnostic, not the exact full-space Legume normalization"
+  },
+  "cautions": [
+    "Neither basis is a converged outgoing Maxwell eigenproblem",
+    "The A2g seed is tracked by H fields, not closest frequency",
+    "Shared-k equality confirms tracking refinement consistency, not spatial convergence",
+    "Large radiation Q at Gamma is a numerical symmetry-protected zero-linewidth floor"
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "source": "results/nonresonant_dynamic/center_m001_r12",
+  "case": "center_m001_r12",
+  "regime": "nonresonant",
+  "role": "historical_broad_source_control",
+  "config": {
+    "q": 0.2818,
+    "resolution": 12,
+    "epsilon": 11.68,
+    "radius": 0.3333333333333333,
+    "padding": 20.0,
+    "pml": 2.0,
+    "courant": 0.5,
+    "source_frequency": 0.192948894855526,
+    "source_width": 0.04,
+    "drive_frequency": 0.385897789711053,
+    "modulation": 0.01,
+    "phase": 1.5707963267948966,
+    "periods": 1200.0,
+    "ramp_periods": 10.0,
+    "update_stride": 4,
+    "static_window": 400.0,
+    "eps_averaging": false,
+    "max_dynamic_wall_seconds": 900.0
+  },
+  "q": 0.2818,
+  "drive": 0.385897789711053,
+  "summary_sha256": "1c2e36266c7f91ceefba1e21e33d47a6a3ae7b8c48f45d7d60c854be7487b549",
+  "raw_sha256": "cfcf6124f784e34ef82a195f2b40c95aee3f8cd54befa3103c08855772e3fdf4",
+  "window_cycles": [
+    50,
+    1100
+  ],
+  "delays": [
+    64,
+    96
+  ],
+  "phases": [
+    0.25,
+    0.5
+  ],
+  "pair_accepted_for_plot": false,
+  "rejection_reasons": [
+    "SECOND_COMPONENT_NOT_SEPARATED_S3_S2",
+    "AMPLITUDE_RATE_NOT_STABLE_ACROSS_FIXED_TRIALS",
+    "REAL_QUASIFREQUENCY_NOT_STABLE_ACROSS_FIXED_TRIALS"
+  ],
+  "branches": [
+    {
+      "local_branch": 0,
+      "real_mean": 0.5003977367793846,
+      "imag_mean": -0.0001273721845233656,
+      "real_min": 0.5000786837731255,
+      "real_max": 0.5007135024295954,
+      "imag_min": -0.00016203659867781265,
+      "imag_max": -5.8560658609849114e-05,
+      "real_spread": 0.0006348186564699709,
+      "imag_spread": 0.00010347594006796353,
+      "amplitude_rate_mean": -0.00030883517359466906,
+      "amplitude_rate_spread": 0.0002508947305359184,
+      "branch_real_plot_allowed": false,
+      "branch_imag_plot_allowed": false,
+      "real_rejection_reasons": [
+        "SECOND_COMPONENT_NOT_SEPARATED_S3_S2",
+        "BRANCH_REAL_QUASIFREQUENCY_UNSTABLE"
+      ],
+      "imag_rejection_reasons": [
+        "SECOND_COMPONENT_NOT_SEPARATED_S3_S2",
+        "BRANCH_AMPLITUDE_RATE_UNSTABLE"
+      ]
+    },
+    {
+      "local_branch": 1,
+      "real_mean": 0.5000263729079398,
+      "imag_mean": 4.462994948486839e-05,
+      "real_min": 0.5000014801141298,
+      "real_max": 0.5000525109578215,
+      "imag_min": 2.1043260034816753e-05,
+      "imag_max": 6.414784031603684e-05,
+      "real_spread": 5.103084369173505e-05,
+      "imag_spread": 4.310458028122009e-05,
+      "amplitude_rate_mean": 0.0001082127801156789,
+      "amplitude_rate_spread": 0.00010451426725301957,
+      "branch_real_plot_allowed": false,
+      "branch_imag_plot_allowed": false,
+      "real_rejection_reasons": [
+        "SECOND_COMPONENT_NOT_SEPARATED_S3_S2",
+        "BRANCH_REAL_QUASIFREQUENCY_UNSTABLE"
+      ],
+      "imag_rejection_reasons": [
+        "SECOND_COMPONENT_NOT_SEPARATED_S3_S2",
+        "BRANCH_AMPLITUDE_RATE_UNSTABLE"
+      ]
+    }
+  ],
+  "range_interpretation": "Range across four fixed numerical choices, not a statistical confidence interval",
+  "branch_interpretation": "Both measured eigenvalues retained; local labels do not establish cross-q mode identity",
+  "status": "REJECTED_COMPLEX_PAIR",
+  "trials": [
+    {
+      "phase": 0.25,
+      "delay": 64,
+      "window_cycles": [
+        50,
+        1100
+      ],
+      "rank": 2,
+      "interpolation": "cubic",
+      "complex_multiplier_real": [
+        -1.0001321730074393,
+        -0.9991992419220967
+      ],
+      "complex_multiplier_imag": [
+        0.000329979699267513,
+        0.002325518331126732
+      ],
+      "quasifrequency_over_drive_real": [
+        0.5000525109578215,
+        0.500370413681126
+      ],
+      "quasifrequency_over_drive_imag": [
+        2.1043260034816753e-05,
+        -0.00012706461304611022
+      ],
+      "amplitude_rates_per_meep_time": [
+        5.102290496288232e-05,
+        -0.0003080894150844701
+      ],
+      "singular_ratio_2_1": 0.0014302801508874583,
+      "singular_ratio_3_2": 0.4034900176174089,
+      "relative_rank2_residual": 0.0005766202221682981,
+      "aligned_branch_indexes": [
+        1,
+        0
+      ]
+    },
+    {
+      "phase": 0.5,
+      "delay": 64,
+      "window_cycles": [
+        50,
+        1100
+      ],
+      "rank": 2,
+      "interpolation": "cubic",
+      "complex_multiplier_real": [
+        -1.0002928625144725,
+        -0.9989801104623088
+      ],
+      "complex_multiplier_imag": [
+        9.302554925927353e-06,
+        0.002688646621440702
+      ],
+      "quasifrequency_over_drive_real": [
+        0.5000014801141298,
+        0.5004283472336915
+      ],
+      "quasifrequency_over_drive_imag": [
+        4.660369980272009e-05,
+        -0.00016182686775969044
+      ],
+      "amplitude_rates_per_meep_time": [
+        0.00011299846801392204,
+        -0.0003923763181409317
+      ],
+      "singular_ratio_2_1": 0.0005844438055145028,
+      "singular_ratio_3_2": 0.888601400640599,
+      "relative_rank2_residual": 0.0005183830317594509,
+      "aligned_branch_indexes": [
+        1,
+        0
+      ]
+    },
+    {
+      "phase": 0.25,
+      "delay": 96,
+      "window_cycles": [
+        50,
+        1100
+      ],
+      "rank": 2,
+      "interpolation": "cubic",
+      "complex_multiplier_real": [
+        -1.000403085274396,
+        -0.9996319980514435
+      ],
+      "complex_multiplier_imag": [
+        0.00031224890492148605,
+        0.0004942028329360952
+      ],
+      "quasifrequency_over_drive_real": [
+        0.500049675931443,
+        0.5000786837731255
+      ],
+      "quasifrequency_over_drive_imag": [
+        6.414784031603684e-05,
+        -5.8560658609849114e-05
+      ],
+      "amplitude_rates_per_meep_time": [
+        0.00015553717221590188,
+        -0.00014199011530867807
+      ],
+      "singular_ratio_2_1": 0.0016536823527722377,
+      "singular_ratio_3_2": 0.3429094355279648,
+      "relative_rank2_residual": 0.0005657051018826669,
+      "aligned_branch_indexes": [
+        1,
+        0
+      ]
+    },
+    {
+      "phase": 0.5,
+      "delay": 96,
+      "window_cycles": [
+        50,
+        1100
+      ],
+      "rank": 2,
+      "interpolation": "cubic",
+      "complex_multiplier_real": [
+        -1.00029362485319,
+        -0.9989723734112469
+      ],
+      "complex_multiplier_imag": [
+        1.1467844389989601e-05,
+        0.004478491065207006
+      ],
+      "quasifrequency_over_drive_real": [
+        0.5000018246283648,
+        0.5007135024295954
+      ],
+      "quasifrequency_over_drive_imag": [
+        4.672499778589987e-05,
+        -0.00016203659867781265
+      ],
+      "amplitude_rates_per_meep_time": [
+        0.00011329257527000932,
+        -0.0003928848458445965
+      ],
+      "singular_ratio_2_1": 0.0005688989415532558,
+      "singular_ratio_3_2": 0.8656888409764475,
+      "relative_rank2_residual": 0.00049153255969973,
+      "aligned_branch_indexes": [
+        1,
+        0
+      ]
+    }
+  ],
+  "analysis_sha256": "91fa55f041416756964b08f4ff6bb432a0782bb95891f6d17ddaeaa031a84500"
+}

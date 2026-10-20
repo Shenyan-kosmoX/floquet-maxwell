@@ -1,0 +1,419 @@
+{
+  "completed": true,
+  "status": "MEASURED_COMPLETE_FLOQUET_REPLAY_AND_SEPARATE_OFFLINE_COSTS",
+  "timestamp_utc": "2026-10-18T16:04:21.031166+00:00",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": ".venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.2.6",
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "context": "Measured while four independent direct-Meep runs were active; CPU clocks and wall clocks both reported. No peak-performance claim."
+  },
+  "dataset": "sptc_toolbox\\results\\full_floquet_20261017\\analysis",
+  "resolution": 32,
+  "source_rank": 17,
+  "internal_dimension": 85,
+  "harmonics": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "material_amplitude": 0.01,
+  "material_phase_count": 16,
+  "timings": [
+    {
+      "stage": "load_portable_first_call",
+      "wall_seconds": 3.772337600001265,
+      "cpu_seconds": 3.34375,
+      "scope": "Read/decompress saved static fields, construct validated dataset and sparse material derivative. Fresh Python process; OS filesystem cache not flushed."
+    },
+    {
+      "stage": "select_single_bottom_input",
+      "wall_seconds": 0.10084379999898374,
+      "cpu_seconds": 0.109375,
+      "scope": "Make production dataset with one bottom-x input; preserves full source basis and all output ports."
+    },
+    {
+      "stage": "modulation_for_first_call",
+      "wall_seconds": 0.5051768000012089,
+      "cpu_seconds": 0.328125,
+      "scope": "Load and validate actual epsilon-phase maps and sparse LU factors; construct Fourier actions p=0..4. Projection occurs in solve, not in this loader."
+    },
+    {
+      "stage": "solve_single_bottom_carrier",
+      "wall_seconds": 27.109259000000748,
+      "cpu_seconds": 26.125,
+      "scope": "Production solve: actual Fourier projection, 85x85 solve, complex outputs, all internal fields, source coverage and residual audits. One incident column."
+    },
+    {
+      "stage": "solve_all_ten_inputs",
+      "wall_seconds": 43.248518200000035,
+      "cpu_seconds": 42.53125,
+      "scope": "Production solve with reused loaded material factors: 20x10 complex S, all ten internal fields, full source coverage and residual audits. Fourier projections recomputed by current API."
+    },
+    {
+      "stage": "solve_all_ten_inputs_warm_repeat",
+      "wall_seconds": 40.786476300001596,
+      "cpu_seconds": 40.125,
+      "scope": "One repeat of the same complete production solve and audits; all loaded native material factors reused."
+    },
+    {
+      "stage": "modulation_for_phase_pi_over_3",
+      "wall_seconds": 0.004799099999218015,
+      "cpu_seconds": 0.0,
+      "scope": "Global time-origin phase only; actual epsilon-phase map LU factors reused. No arbitrary-amplitude scaling."
+    },
+    {
+      "stage": "solve_single_bottom_carrier_phase_pi_over_3",
+      "wall_seconds": 24.77702270000009,
+      "cpu_seconds": 24.453125,
+      "scope": "Complete one-input production solve with changed global modulation phase, including fields and residual audits."
+    },
+    {
+      "stage": "material_matrices_for_small_algebra_control",
+      "wall_seconds": 9.64924560000145,
+      "cpu_seconds": 9.515625,
+      "scope": "Re-evaluate actual material actions and project them; reported separately so this cost is not hidden in microsecond algebra."
+    },
+    {
+      "stage": "small_algebra_prepare",
+      "wall_seconds": 1.18619359999866,
+      "cpu_seconds": 1.171875,
+      "scope": "Project supplied static fields into R,b and assemble finite matrix/rhs; excludes field reconstruction and coverage audits."
+    },
+    {
+      "stage": "small_algebra_linear_solve_only",
+      "wall_seconds": 0.09272170000076585,
+      "cpu_seconds": 0.0,
+      "scope": "ONLY 85x85 dense linear solve with ten RHS from already assembled coefficients; not a complete Floquet run."
+    },
+    {
+      "stage": "small_algebra_port_output_only",
+      "wall_seconds": 0.0009448999990127049,
+      "cpu_seconds": 0.0,
+      "scope": "ONLY port reconstruction from cached projected blocks, no spatial fields or coverage checks."
+    }
+  ],
+  "reference_checks": {
+    "all_ten_S_relative_difference": 0.0,
+    "all_ten_field_relative_difference": 0.0,
+    "carrier_S_relative_difference": 1.669129060838803e-18,
+    "carrier_field_relative_difference": 1.4107408996761448e-18,
+    "warm_repeat_S_relative_difference": 0.0,
+    "global_phase_covariance_S_relative_difference": 2.0444369013521082e-17,
+    "small_algebra_S_relative_difference": 0.0
+  },
+  "historical_offline_costs": {
+    "spatial_sources": 19,
+    "actual_frequency_responses": 95,
+    "source_rows": [
+      {
+        "source": "incident_even",
+        "measured_run_elapsed_seconds": 1349.1027529430012,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\incident_even\\summary.json",
+        "sha256": "fe6382960f37f6e6660f7a6d00df672573f66ed6be8cd594fccb59b97a0c0a97"
+      },
+      {
+        "source": "incident_odd",
+        "measured_run_elapsed_seconds": 1356.1965010759995,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\incident_odd\\summary.json",
+        "sha256": "e262f2d4c29507b2789b655d1e793577346a12df60d4fde1610810cce488cd49"
+      },
+      {
+        "source": "template_q0",
+        "measured_run_elapsed_seconds": 1393.3209051060003,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\template_q0\\summary.json",
+        "sha256": "e22112af3a251edbebcf2ff8d298288d7a38be8b603b84ffc6363ecfa1cc14af"
+      },
+      {
+        "source": "template_q1",
+        "measured_run_elapsed_seconds": 1396.6768754519999,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\template_q1\\summary.json",
+        "sha256": "607b6d390189a9741c6f99a38fa2d40a73dab9d58b69a4fc144f5fdd8e4cc041"
+      },
+      {
+        "source": "template_q2",
+        "measured_run_elapsed_seconds": 861.7620289839997,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\template_q2\\summary.json",
+        "sha256": "a2fb64429300b7057977ca5473b4355b918143177d5935bfd17d81f2b8fc0365"
+      },
+      {
+        "source": "template_q3",
+        "measured_run_elapsed_seconds": 848.2788187690003,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\template_q3\\summary.json",
+        "sha256": "26519fb644d546f5d99ecd6b35cb1627f2de2815a40e08a7f3f1c9126bc5faa1"
+      },
+      {
+        "source": "template_q4",
+        "measured_run_elapsed_seconds": 846.8533314190008,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\template_q4\\summary.json",
+        "sha256": "9690590a28e9c5b8b3fd128f5276c3cdd76c40b20b81bedfc902b5e2c492b21d"
+      },
+      {
+        "source": "template_q5",
+        "measured_run_elapsed_seconds": 840.2834493549999,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\template_q5\\summary.json",
+        "sha256": "8f3134adad31a240946eef61b0340978081286bf6b6c3c66a6e28a96e6ebf786"
+      },
+      {
+        "source": "template_q6",
+        "measured_run_elapsed_seconds": 1044.6102883759995,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\template_q6\\summary.json",
+        "sha256": "b23a3b470635eea37c0e672571148706733f8c0da41cf9d74b5e307bff7c0d73"
+      },
+      {
+        "source": "template_q7",
+        "measured_run_elapsed_seconds": 1074.698391820999,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\template_q7\\summary.json",
+        "sha256": "4985f446bd44178e05534c5643db126b40423f5084bd4b0fe8eb37d17aa3bcea"
+      },
+      {
+        "source": "template_q8",
+        "measured_run_elapsed_seconds": 1064.1622515560011,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\template_q8\\summary.json",
+        "sha256": "afe466f3d7638ae44be750647f0d0dd923291812a5e3b177e7c103baf26c932f"
+      },
+      {
+        "source": "extended_q9",
+        "measured_run_elapsed_seconds": 1162.2676080370002,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\extended_q9\\summary.json",
+        "sha256": "f3b1b50a5c126bcf87836f4775661afcf70dd9797bf3083c4d1015b8a8ef29fa"
+      },
+      {
+        "source": "extended_q10",
+        "measured_run_elapsed_seconds": 1160.9015514139992,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\extended_q10\\summary.json",
+        "sha256": "478026cdd40aef6892f814c9862df27d59898f2e332b7dac96765f75a506a134"
+      },
+      {
+        "source": "extended_q11",
+        "measured_run_elapsed_seconds": 1162.8343452789995,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\extended_q11\\summary.json",
+        "sha256": "c834826a99aefdabe5a7abf4c178b0a7409fbc4f735ec6bd97b5aec347a07da7"
+      },
+      {
+        "source": "extended_q12",
+        "measured_run_elapsed_seconds": 1136.4252395589992,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\extended_q12\\summary.json",
+        "sha256": "2c4a459850c3cb227842440b673372092ba4d560d6e0e9af0e1a09f1148611b5"
+      },
+      {
+        "source": "extended_q13",
+        "measured_run_elapsed_seconds": 1160.2269016560003,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\extended_q13\\summary.json",
+        "sha256": "4771aa2613aa8a668e320a079848f19142529b8fd045594529f27caeb828bab5"
+      },
+      {
+        "source": "extended_q14",
+        "measured_run_elapsed_seconds": 1138.7292424440002,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\extended_q14\\summary.json",
+        "sha256": "6b9644c904eec39c53d34c84830c95a4ac823eccc27c3dc563a74198cc8db35f"
+      },
+      {
+        "source": "extended_q15",
+        "measured_run_elapsed_seconds": 960.9261896749995,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\extended_q15\\summary.json",
+        "sha256": "f8eb3db6bbaf667c7a327dae64364f830bcb940c4c6008040c91ab168695e3ab"
+      },
+      {
+        "source": "extended_q16",
+        "measured_run_elapsed_seconds": 950.2964318190006,
+        "final_time": 2000.0,
+        "frequencies": [
+          0.378,
+          0.388,
+          0.398,
+          0.408,
+          0.418
+        ],
+        "provenance": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\extended_q16\\summary.json",
+        "sha256": "01d2cfa175b9cca2f4c3fab5accdf59d1accbd05c0e2c59d5d679745ababf0f2"
+      }
+    ],
+    "sum_measured_run_elapsed_seconds": 20908.55310474,
+    "measured_run_scope": "Sum of 19 per-process wall timers from post-initialization to final response extraction; intermediate snapshots included, final save and initialization excluded. Parallel overlap means this is not calendar time or CPU time.",
+    "batch_accounting": [
+      {
+        "file": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\batch_summary.json",
+        "source_rows": 11,
+        "sum_recorded_elapsed_seconds": 12103.929508591998,
+        "interpretation": "Process wall duration for each source, includes initialization/final output."
+      },
+      {
+        "file": "sptc_toolbox\\results\\full_floquet_20261017\\sampling\\extended_batch_summary.json",
+        "source_rows": 8,
+        "sum_recorded_elapsed_seconds": 11330.684977346,
+        "interpretation": "Coordinator per-task elapsed includes queue/adoption time; not a sum of compute durations."
+      }
+    ],
+    "verified_batch_calendar_seconds": null,
+    "calendar_reason": "No authoritative start/end timestamps stored for the combined batches; filesystem timestamps and sums of overlapping timers are not treated as calendar runtime.",
+    "original_native_material_fourier_seconds": 10.224201517999973,
+    "total_offline_preparation_seconds": null,
+    "missing_offline_costs": [
+      "Original Legume seed and basis construction timing is not fully recorded.",
+      "Initialization, all material maps, tail extraction/validation, archive/plot output and failed controls are not completely timed.",
+      "Historical stages ran with different concurrency and DFT sampling strides."
+    ]
+  },
+  "comparison_limits": [
+    "Compare complete one-input or ten-input production solve, not the separately timed small dense solve, against direct FDTD.",
+    "Saved Green data preparation is a prerequisite; full original end-to-end preparation time is unavailable.",
+    "Changing geometry, k, required real frequencies, or source-space adequacy can require new static sampling.",
+    "Only saved material amplitudes and global phase changes are replayable with these exact phase maps. Arbitrary amplitudes are not obtained by scaling.",
+    "This script times current implementation, including repeated expensive field-space audits; it does not optimize or modify the backend."
+  ],
+  "script_sha256": "d8664a49987883ea7d173d367d6c12513b41708a527e373c3e8729471559b099",
+  "reference_sha256": "2b838f0311669768f2f38572ef7ba27745ab44ec99a6d4e9f59588468a2c618d"
+}

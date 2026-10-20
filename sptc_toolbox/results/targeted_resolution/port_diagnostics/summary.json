@@ -1,0 +1,131 @@
+{
+  "status": "CARRIER_FIELD_DIAGNOSTIC_AND_UNIFORM_RECIPROCITY_CONTROL",
+  "native_source_sha256": "8e0d97e7f1a218bae167dc0c0e05ea1da7881dc488416e818c03563286b3e45f",
+  "born_control": [
+    {
+      "amplitude": 0.01,
+      "harmonic": -1,
+      "relative_complex_amplitude_error": 2.220291268794095e-06,
+      "born_power": 1.0352312722473143e-06,
+      "exact_power": 1.0352293347064993e-06
+    },
+    {
+      "amplitude": 0.01,
+      "harmonic": 1,
+      "relative_complex_amplitude_error": 2.70615140832082e-06,
+      "born_power": 1.5498909590186342e-06,
+      "exact_power": 1.5498856873997966e-06
+    },
+    {
+      "amplitude": 0.005,
+      "harmonic": -1,
+      "relative_complex_amplitude_error": 5.550729427440645e-07,
+      "born_power": 2.588078180618286e-07,
+      "exact_power": 2.588076969655807e-07
+    },
+    {
+      "amplitude": 0.005,
+      "harmonic": 1,
+      "relative_complex_amplitude_error": 6.765380195777139e-07,
+      "born_power": 3.8747273975465855e-07,
+      "exact_power": 3.8747241027807517e-07
+    }
+  ],
+  "carrier": [
+    {
+      "cache": "sptc_toolbox\\results\\connected_physics\\ports\\weak_pattern_r16_time\\carrier.npz",
+      "sha256": "b20a077c20f62426b2b6fff870db75a1b2dfa3b683b24786af65b860192b1aa0",
+      "grid": [
+        16,
+        16,
+        6
+      ],
+      "native_modal_region_E_norm2": 0.07976973973690732,
+      "fullwave_region_E_norm2_per_unit_incident_E": 2.4015478037488043,
+      "single_mode_shape_overlap2": 0.9229066121145602,
+      "single_mode_least_squares_amplitude_abs": 5.27115041397975,
+      "native_port_energy_based_amplitude_abs": 14.52858127848755,
+      "native_port_to_measured_modal_power_scale": 7.596885773944792,
+      "single_mode_residual_fraction": 0.0770933878854398,
+      "mode_plus_fixed_background_shape_residual_fraction": 0.015613821654815636,
+      "diagnostic_only": "Least-squares coefficients used only to quantify carrier-field mismatch; no sideband/model parameter fitting",
+      "grid_scope": "Common regular grid, physical high-epsilon mask, interior z planes; no interface interpolation claim"
+    },
+    {
+      "cache": "sptc_toolbox\\results\\connected_physics\\ports\\weak_pattern_r24_time\\carrier.npz",
+      "sha256": "875da2c2cfadbfd68e26eaae905e023cbb3249419f01b48b2118a4a8195f5adc",
+      "grid": [
+        24,
+        24,
+        10
+      ],
+      "native_modal_region_E_norm2": 0.08181330909339878,
+      "fullwave_region_E_norm2_per_unit_incident_E": 7.086229835847793,
+      "single_mode_shape_overlap2": 0.9689901940162632,
+      "single_mode_least_squares_amplitude_abs": 9.161262530410498,
+      "native_port_energy_based_amplitude_abs": 14.52858127848755,
+      "native_port_to_measured_modal_power_scale": 2.514987073801889,
+      "single_mode_residual_fraction": 0.0310098059837367,
+      "mode_plus_fixed_background_shape_residual_fraction": 0.0075998762191533675,
+      "diagnostic_only": "Least-squares coefficients used only to quantify carrier-field mismatch; no sideband/model parameter fitting",
+      "grid_scope": "Common regular grid, physical high-epsilon mask, interior z planes; no interface interpolation claim"
+    },
+    {
+      "cache": "sptc_toolbox\\results\\targeted_resolution\\ports\\weak_pattern_r32_t900\\carrier.npz",
+      "sha256": "f79dcf950ee2e5b56c5adc638d333c35536e4c8158edf4c9b827e065b089919b",
+      "grid": [
+        32,
+        32,
+        14
+      ],
+      "native_modal_region_E_norm2": 0.08275755425968678,
+      "fullwave_region_E_norm2_per_unit_incident_E": 14.300847194399243,
+      "single_mode_shape_overlap2": 0.9812594312415237,
+      "single_mode_least_squares_amplitude_abs": 13.02173884975682,
+      "native_port_energy_based_amplitude_abs": 14.52858127848755,
+      "native_port_to_measured_modal_power_scale": 1.2448254307142748,
+      "single_mode_residual_fraction": 0.018740568758476187,
+      "mode_plus_fixed_background_shape_residual_fraction": 0.006716883235336941,
+      "diagnostic_only": "Least-squares coefficients used only to quantify carrier-field mismatch; no sideband/model parameter fitting",
+      "grid_scope": "Common regular grid, physical high-epsilon mask, interior z planes; no interface interpolation claim"
+    }
+  ],
+  "time_unit_normalization_control": [
+    {
+      "drive_omega": 0.031415926535897934,
+      "electric_coefficient_abs": 14.528581278487543,
+      "R": 0.8901088947304061,
+      "T": 0.10989110526959403,
+      "native_decay_rate_fa_over_c": 0.0007510030716830384
+    },
+    {
+      "drive_omega": 0.06283185307179587,
+      "electric_coefficient_abs": 14.52858127848755,
+      "R": 0.8901088947304063,
+      "T": 0.1098911052695941,
+      "native_decay_rate_fa_over_c": 0.0007510030716830384
+    },
+    {
+      "drive_omega": 0.12566370614359174,
+      "electric_coefficient_abs": 14.528581278487543,
+      "R": 0.8901088947304061,
+      "T": 0.10989110526959403,
+      "native_decay_rate_fa_over_c": 0.0007510030716830384
+    }
+  ],
+  "prior_static_S_grid": {
+    "step_fa_over_c": 0.005,
+    "carrier_fa_over_c": 0.398,
+    "carrier_sampled": false,
+    "nearest_samples_fa_over_c": [
+      0.395,
+      0.4
+    ],
+    "step_over_native_HWHM": 6.657762382775253,
+    "implication": "Broad-band S norm did not resolve the actual narrow dynamic carrier working point"
+  },
+  "scope": "Read-only check. A good static far-field S does not imply correct local fields or dynamic scattering residues.",
+  "field_normalization": "Native orthonormal mode, unit incident E on unit-area air port; energy-based modal factor 1/sqrt(Omega)",
+  "reconstruction": "Physical G=-nativeG, E=Rz(pi) nativeE; native z=physical z+.21",
+  "unproven_cause": "Mismatch can contain resonance detuning, source/grid error, finite native basis, omitted background and residue error; this diagnostic does not isolate them all"
+}

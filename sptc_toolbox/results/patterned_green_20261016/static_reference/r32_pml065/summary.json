@@ -1,0 +1,153 @@
+{
+  "geometry": {
+    "lattice": [
+      1.0,
+      1.0
+    ],
+    "epsilon": 11.5,
+    "thickness": 0.42,
+    "circle": {
+      "center": [
+        -0.22,
+        0.0
+      ],
+      "radius": 0.12
+    },
+    "ellipse": {
+      "center": [
+        0.22,
+        0.0
+      ],
+      "rx": 0.12,
+      "ry": 0.09
+    },
+    "claddings": [
+      1.0,
+      1.0
+    ]
+  },
+  "geometry_sha256": "5e0cdb885192597bbc7f02e04c619fa5d460a09f59e97264b56d7106ccd8a268",
+  "frequency_fa_over_c": 0.398,
+  "resolution": 32,
+  "pml_thickness": 0.65,
+  "cell_z": 4.8,
+  "pml_inner_edge": 1.75,
+  "source_z": -1.2,
+  "reference_planes": [
+    -0.7,
+    0.7
+  ],
+  "source": "continuous Ex current plane, width=20 turn-on; complex fields",
+  "phase_convention": "exp(-i omega t), globally Cartesian E and H",
+  "field_grid": "Meep get_array regular interpolated centered grid, same physical volume 1 x 1 x .5",
+  "field_normalization": "E / empty incident E at lower reference plane; incident power = 1/2",
+  "H_sampling": "synchronize_magnetic_fields while sampling; restore_magnetic_fields before continuation",
+  "empty_records": [
+    {
+      "actual_time": 150.0,
+      "amplitudes": [
+        [
+          -0.16646971406934963,
+          -0.4709903667126989
+        ],
+        [
+          4.643729192021934e-05,
+          0.00013650139045916037
+        ],
+        [
+          -0.010158755651364787,
+          0.4994295358645873
+        ],
+        [
+          4.068284536800238e-06,
+          -0.00014363923571874607
+        ]
+      ]
+    },
+    {
+      "actual_time": 200.0,
+      "amplitudes": [
+        [
+          -0.16649414463986426,
+          -0.47105029973368007
+        ],
+        [
+          4.7003662880494924e-05,
+          0.00013658129084818753
+        ],
+        [
+          -0.010158273449184935,
+          0.4995036201980784
+        ],
+        [
+          5.057079329078397e-06,
+          -0.00014372310234352429
+        ]
+      ]
+    }
+  ],
+  "empty_150_to_200_relative_change": 0.00019691649341669612,
+  "empty_backward_power_ratio": 8.358600714303971e-08,
+  "empty_phase_error": 0.000683416832774334,
+  "meep_version": "1.35.0",
+  "checkpoints": [
+    {
+      "requested_time": 900.0,
+      "actual_time": 900.0,
+      "r": [
+        -0.9850676734455531,
+        -0.14879255017806925
+      ],
+      "t": [
+        -0.0017538901599889023,
+        0.03476438434210577
+      ],
+      "R": 0.9924975442559281,
+      "T": 0.0012116385493789548,
+      "R_plus_T": 0.9937091828053071,
+      "incoming_lower_relative": [
+        1.000283491114964,
+        4.574276543573488e-05
+      ],
+      "incoming_upper_relative": [
+        5.90475414837285e-07,
+        -1.0088368850083756e-05
+      ],
+      "field_change_from_previous": null,
+      "complex_S_change_from_previous": null,
+      "electric_volume_norm": 4.508970757007646,
+      "data": "carrier_t900.npz",
+      "elapsed_seconds": 366.486091499
+    },
+    {
+      "requested_time": 1200.0,
+      "actual_time": 1200.0,
+      "r": [
+        -0.988131457804575,
+        -0.15922160715747327
+      ],
+      "t": [
+        -0.004826533895386753,
+        0.024336327668054148
+      ],
+      "R": 1.0017552980888034,
+      "T": 0.000615552273810215,
+      "R_plus_T": 1.0023708503626136,
+      "incoming_lower_relative": [
+        1.0002848074923478,
+        4.899804013592147e-05
+      ],
+      "incoming_upper_relative": [
+        1.475455743099587e-06,
+        -7.0639801915283235e-06
+      ],
+      "field_change_from_previous": 0.011523133914403646,
+      "complex_S_change_from_previous": 0.015355081049108247,
+      "electric_volume_norm": 4.511466988817944,
+      "data": "carrier_t1200.npz",
+      "elapsed_seconds": 522.6368673310001
+    }
+  ],
+  "elapsed_seconds": 522.636890709,
+  "scope": "Independent static-reference time/PML convergence. Fixed geometry, no fitted mode amplitudes."
+}

@@ -1,0 +1,2423 @@
+{
+  "status": "HYBRID_PARITY_ENRICHED_STATIC_GREEN",
+  "basis": {
+    "status": "STATIC_PARITY_SOURCE_ENRICHMENT",
+    "rank": 4,
+    "grid_resolution": 24,
+    "spatial_samples": 5280,
+    "grid_id": "bfd646f081e3902f6511e5aa5e8398c758ab0e1ae740030618c43daabb16b051",
+    "basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+    "geometry_id": "square-circle-ellipse-eps11.5-thickness.42",
+    "gram_error": 2.1958481347094732e-14,
+    "source_template_conjugation_closed": true,
+    "no_dynamic_target_fit": true,
+    "preserved_historical_columns_exactly": true,
+    "column_sha256": [
+      "a79419f4446fb1df58bac8d5f8e4ac4ccccb880577cd998d8ea07f2ebc535447",
+      "eb0c640fdd813a96a253d03078bb620e46a15e11c923259ada22fb170d0fff05",
+      "16d6ca5fd507a8bdaaf0d944d28b1a71694c8c7a8333fc42fec42b83e1468f99",
+      "09d32fa6e92591875a586c9a1746d645402093c3543850fc973358748876ab0a"
+    ],
+    "historical_column_sha256": [
+      "a79419f4446fb1df58bac8d5f8e4ac4ccccb880577cd998d8ea07f2ebc535447",
+      "eb0c640fdd813a96a253d03078bb620e46a15e11c923259ada22fb170d0fff05"
+    ],
+    "historical_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+    "historical_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+    "odd_real_imag_singular_values": [
+      0.8238810941951842,
+      0.008978940945578722
+    ],
+    "odd_second_to_first_singular_ratio": 0.010898345657937306,
+    "static_source_relative_residual_by_rank": {
+      "1": {
+        "bottom": 0.17609601353732204,
+        "even": 0.08504729408899617,
+        "odd": 1.0
+      },
+      "2": {
+        "bottom": 0.1547596750049144,
+        "even": 0.0007587610641239465,
+        "odd": 1.0
+      },
+      "3": {
+        "bottom": 0.0018455967340389307,
+        "even": 0.0007587610641239465,
+        "odd": 0.010897698495870032
+      },
+      "4": {
+        "bottom": 0.0007496198374667215,
+        "even": 0.0007587610641239465,
+        "odd": 1.552798108323986e-14
+      }
+    },
+    "parity_eigenvalues": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "parity_residuals": [
+      1.9188559242898866e-13,
+      2.248120402912256e-12,
+      4.656068368384689e-14,
+      8.093552326669864e-15
+    ],
+    "basis_sources": [
+      "Unchanged actual Legume mode5, real Gamma gauge",
+      "Unchanged leading real static symmetric background residual",
+      "First real SVD shape of static antisymmetric carrier residual",
+      "Second real SVD shape of static antisymmetric carrier residual"
+    ],
+    "source_normalization": "Volume L2, not QNM or modal energy normalization",
+    "rank_decision": "Retain both odd real/imag shapes; rank3 still leaves 1.0898 percent of odd source norm.",
+    "source_sha256": {
+      "sptc_toolbox\\results\\patterned_green_20261016\\basis\\source_basis.npz": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "sptc_toolbox\\results\\connected_physics\\ports\\weak_pattern_r24_time\\carrier.npz": "875da2c2cfadbfd68e26eaae905e023cbb3249419f01b48b2118a4a8195f5adc",
+      "sptc_toolbox\\scripts\\build_parity_green_basis.py": "3f12d98829164887e13317957b07ecc41d4982a0ea0c855d1fccdbc1409790b2"
+    }
+  },
+  "conventions": {
+    "carrier": 0.398,
+    "drive": 0.01,
+    "epsilon_cosine_amplitude": 0.01,
+    "input_power": 1
+  },
+  "scope": "Legume mode plus static even/odd field enrichment; independent Meep response; not pure Legume complete scattering",
+  "generic_enrichment_crosscheck": {
+    "old_columns_preserved_exactly": true,
+    "principal_overlap_singular_values": [
+      1.0000000000000024,
+      1.0000000000000009,
+      0.9999999999999981,
+      0.9999999999999887
+    ],
+    "experiment_subspace_reconstruction_relative_residual": 2.3184678581837868e-14,
+    "supplied_source_transform_relative_residual": 6.154866268513181e-16,
+    "transformed_unmasked_source_extension_relative_residual": 1.6926584024912114e-14,
+    "full_unmasked_odd_source_reconstruction_relative_residual": 1.557964278098143e-14,
+    "source_relative_residual": {
+      "bottom": 0.0007496198374667212,
+      "even": 0.0007587610641239438,
+      "odd": 3.125837562700014e-14
+    },
+    "independent_basis_construction": "Historical script uses one residual projection; generic API uses residual reorthogonalization",
+    "original_experiment_columns_preserved": true,
+    "no_new_fdtd_required": true
+  },
+  "independent_source_lift_parity": {
+    "status": "ACTUAL_TOTAL_SOURCE_LIFT_HAS_Z_PARITY",
+    "relative_residual_per_column": [
+      1.604781721059263e-13,
+      1.797743047605363e-12,
+      5.0220559106096857e-14,
+      9.55039582020428e-15
+    ],
+    "source": "sptc_toolbox\\results\\discrete_green_20261017\\yee\\parity_source_probe\\source_lift.npz",
+    "measurement": "actual total source from first Maxwell step; component-native coordinates"
+  },
+  "independent_material_mirror": {
+    "status": "STATIC_DISCRETE_INVERSE_EPSILON_MIRROR_AUDIT",
+    "subpixel_tol": 0.0001,
+    "subpixel_maxeval": 100000,
+    "eps_averaging": true,
+    "native_mirror_symmetry": false,
+    "relative_tensor_mirror_residual": 0.004228767322893019,
+    "rows": [
+      {
+        "component": "x",
+        "direction": "x",
+        "coefficient_norm": 32.30942376151221,
+        "mirror_difference_norm": 0.2181293370851358,
+        "maximum_difference": 0.06296851574212889
+      },
+      {
+        "component": "x",
+        "direction": "y",
+        "coefficient_norm": 2.0149344371684115,
+        "mirror_difference_norm": 0.0,
+        "maximum_difference": 0.0
+      },
+      {
+        "component": "x",
+        "direction": "z",
+        "coefficient_norm": 5.545075976821851e-40,
+        "mirror_difference_norm": 1.1087357760615317e-39,
+        "maximum_difference": 2.2374246642104046e-40
+      },
+      {
+        "component": "y",
+        "direction": "x",
+        "coefficient_norm": 2.0149344371684115,
+        "mirror_difference_norm": 0.0,
+        "maximum_difference": 0.0
+      },
+      {
+        "component": "y",
+        "direction": "y",
+        "coefficient_norm": 32.56395378464781,
+        "mirror_difference_norm": 0.12593703148425778,
+        "maximum_difference": 0.06296851574212889
+      },
+      {
+        "component": "y",
+        "direction": "z",
+        "coefficient_norm": 6.3999451598994915e-40,
+        "mirror_difference_norm": 1.2796665353680825e-39,
+        "maximum_difference": 1.7089863455267337e-40
+      },
+      {
+        "component": "z",
+        "direction": "x",
+        "coefficient_norm": 5.545075976821851e-40,
+        "mirror_difference_norm": 1.0753386606327994e-39,
+        "maximum_difference": 2.22769673088775e-40
+      },
+      {
+        "component": "z",
+        "direction": "y",
+        "coefficient_norm": 6.3999451598994915e-40,
+        "mirror_difference_norm": 1.2411206780820616e-39,
+        "maximum_difference": 1.7015559701114002e-40
+      },
+      {
+        "component": "z",
+        "direction": "z",
+        "coefficient_norm": 37.8841427731081,
+        "mirror_difference_norm": 0.0,
+        "maximum_difference": 0.0
+      }
+    ],
+    "scope": "Same r24 symmetric physical geometry, get_chi1inv on native component positions; no time evolution or response symmetrization.",
+    "source_sha256": {
+      "sptc_toolbox/results/discrete_green_20261017/yee/parity_source_probe/source_lift.npz": "6081165c5f295c19269eeb6696bb875fd1b8fd8ce6de910a3b020d203ec9b226",
+      "sptc_toolbox/scripts/audit_meep_material_mirror.py": "ec011f551507c130724d3a5d7e2b4673fd7a03e5c142a7e6f47c00904e181268"
+    }
+  },
+  "native_mirror_control": {
+    "status": "INDEPENDENT_NATIVE_MIRROR_ODD_SOURCE_CONTROL",
+    "frequency": 0.398,
+    "template": 3,
+    "resolution": 24,
+    "source_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+    "geometry": "Same circle/ellipse epsilon11.5 thickness.42 physical slab",
+    "operator_change": "mp.Mirror(mp.Z,phase=-1) native symmetry boundary during Maxwell evolution",
+    "unchanged": "Source interpolation and physical mask, geometry, resolution, PML, CW envelope and checkpoints",
+    "distinct_operator_not_inserted_in_old_green_dataset": true,
+    "no_postprocessing_symmetrization": true,
+    "source_current": "J=-i omega Q3",
+    "checkpoints": [
+      {
+        "time": 900.0,
+        "full_field_parity_relative_residual": 3.1497621104705604e-15,
+        "supported_field_parity_relative_residual": 3.6136141701406365e-15,
+        "port_parity_relative_residual": 0.0,
+        "output_real_imag": [
+          [
+            0.011841318054382675,
+            0.0008561322117461328
+          ],
+          [
+            -0.011841318054382675,
+            -0.0008561322117461328
+          ]
+        ],
+        "field_relative_difference_from_no_mirror": 0.28365848948808714,
+        "output_relative_difference_from_no_mirror": 0.6303402333143611,
+        "field_relative_change_from_previous": null,
+        "elapsed_seconds": 47.42574638600013,
+        "data": "response_t900.npz"
+      },
+      {
+        "time": 1200.0,
+        "full_field_parity_relative_residual": 3.6397824060294174e-15,
+        "supported_field_parity_relative_residual": 4.155779381118416e-15,
+        "port_parity_relative_residual": 0.0,
+        "output_real_imag": [
+          [
+            0.011851399612525416,
+            0.0008530703384884591
+          ],
+          [
+            -0.011851399612525416,
+            -0.0008530703384884591
+          ]
+        ],
+        "field_relative_difference_from_no_mirror": 0.2830953052156301,
+        "output_relative_difference_from_no_mirror": 0.6293254965441617,
+        "field_relative_change_from_previous": 0.003140877715060419,
+        "elapsed_seconds": 62.92693994199999,
+        "data": "response_t1200.npz"
+      }
+    ],
+    "completed": true,
+    "reference_directory": "<source-checkout>/sptc_toolbox/results/discrete_green_20261017/parity/template_responses/f0.398_q3",
+    "source_sha256": {
+      "meep_parity_control.py": "8e160cca67611ff44d332be39efc5d4b2c6fa68afd5cdead42c8a04f130db4c0"
+    }
+  },
+  "column_response_provenance": [
+    {
+      "frequency": 0.388,
+      "column": 0,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "a79419f4446fb1df58bac8d5f8e4ac4ccccb880577cd998d8ea07f2ebc535447",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.388_q0\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.388,
+      "column": 1,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "eb0c640fdd813a96a253d03078bb620e46a15e11c923259ada22fb170d0fff05",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.388_q1\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.388,
+      "column": 2,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "16d6ca5fd507a8bdaaf0d944d28b1a71694c8c7a8333fc42fec42b83e1468f99",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.388_q2\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.388,
+      "column": 3,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "09d32fa6e92591875a586c9a1746d645402093c3543850fc973358748876ab0a",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.388_q3\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.398,
+      "column": 0,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "a79419f4446fb1df58bac8d5f8e4ac4ccccb880577cd998d8ea07f2ebc535447",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.398_q0\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.398,
+      "column": 1,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "eb0c640fdd813a96a253d03078bb620e46a15e11c923259ada22fb170d0fff05",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.398_q1\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.398,
+      "column": 2,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "16d6ca5fd507a8bdaaf0d944d28b1a71694c8c7a8333fc42fec42b83e1468f99",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.398_q2\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.398,
+      "column": 3,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "09d32fa6e92591875a586c9a1746d645402093c3543850fc973358748876ab0a",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.398_q3\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.408,
+      "column": 0,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "a79419f4446fb1df58bac8d5f8e4ac4ccccb880577cd998d8ea07f2ebc535447",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.408_q0\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.408,
+      "column": 1,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "eb0c640fdd813a96a253d03078bb620e46a15e11c923259ada22fb170d0fff05",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.408_q1\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.408,
+      "column": 2,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "16d6ca5fd507a8bdaaf0d944d28b1a71694c8c7a8333fc42fec42b83e1468f99",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.408_q2\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.408,
+      "column": 3,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "09d32fa6e92591875a586c9a1746d645402093c3543850fc973358748876ab0a",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.408_q3\\response_t1200.npz"
+    }
+  ],
+  "static_source_audit": [
+    {
+      "frequency": 0.38800000000000007,
+      "template_port_relative_errors": [
+        0.034101452268207065,
+        0.171229118585833,
+        0.02674754098969699,
+        0.5159804717966917
+      ],
+      "template_port_current": [
+        [
+          [
+            0.0798514198630508,
+            0.28971287193395384
+          ],
+          [
+            0.006217285142087088,
+            0.019559321023614823
+          ],
+          [
+            0.3719318238988177,
+            -0.02963114749351562
+          ],
+          [
+            0.009741028607608736,
+            0.00015003043100892942
+          ]
+        ],
+        [
+          [
+            0.08816924690316365,
+            0.28978654352512184
+          ],
+          [
+            0.005309316540180727,
+            0.019662281503260402
+          ],
+          [
+            -0.3709661006524599,
+            0.029724481358970493
+          ],
+          [
+            -0.009195615190386476,
+            0.0018509943364324348
+          ]
+        ]
+      ],
+      "template_port_reciprocity": [
+        [
+          [
+            0.07488616385895044,
+            0.29201656982133145
+          ],
+          [
+            0.006546612671552109,
+            0.023726578736295398
+          ],
+          [
+            0.36936861747398625,
+            -0.020016965254635543
+          ],
+          [
+            0.006562913062594016,
+            0.0005775506031817811
+          ]
+        ],
+        [
+          [
+            0.07488616385894875,
+            0.2920165698213322
+          ],
+          [
+            0.006546612671535254,
+            0.023726578736296414
+          ],
+          [
+            -0.3693686174739869,
+            0.020016965254633257
+          ],
+          [
+            -0.0065629130625938755,
+            -0.0005775506031813723
+          ]
+        ]
+      ],
+      "template_field_time_relative_changes": [
+        0.015961288722049483,
+        0.1854174706147198,
+        0.03767060083336973,
+        0.09504609422743067
+      ],
+      "template_output_time_relative_changes": [
+        0.009598961997726054,
+        0.012927074853750541,
+        1.7062393465667688e-05,
+        0.001438524331455897
+      ],
+      "projected_response": [
+        [
+          [
+            1.6969768929505493,
+            0.10850314250731531
+          ],
+          [
+            -0.15429865085157823,
+            0.013790065273893173
+          ],
+          [
+            0.0011646321359882442,
+            -0.0024693154207662263
+          ],
+          [
+            0.005765895166270025,
+            0.00047287431691299956
+          ]
+        ],
+        [
+          [
+            -0.1171041401748548,
+            0.015024038931605914
+          ],
+          [
+            -0.06917397441794622,
+            0.0025587513131625317
+          ],
+          [
+            -7.697974488489577e-05,
+            0.0002538361224425555
+          ],
+          [
+            -0.0005661054485471849,
+            4.0544098809673995e-05
+          ]
+        ],
+        [
+          [
+            0.00109266857902565,
+            -0.0024529025004011037
+          ],
+          [
+            -7.818592475261733e-05,
+            0.00028209287645990114
+          ],
+          [
+            -0.03869664885311515,
+            0.22690606916360484
+          ],
+          [
+            0.004532653458576773,
+            0.005888929424751294
+          ]
+        ],
+        [
+          [
+            0.005757344314496605,
+            0.000493438251070869
+          ],
+          [
+            -0.0006419518065187316,
+            2.7388918502016283e-05
+          ],
+          [
+            0.0032823997068552194,
+            0.004027598333514287
+          ],
+          [
+            0.011261171716570017,
+            0.010541365032026392
+          ]
+        ]
+      ],
+      "projected_response_reciprocity_relative_error": 0.030504153246019686,
+      "imaginary_response_eigenvalues": [
+        -0.0024325305171199775,
+        0.01042353712435769,
+        0.11344561627948065,
+        0.22707270512939076
+      ],
+      "optical_theorem_relative_residual": 0.1973921371479669,
+      "optical_theorem_source_work_eigenvalues": [
+        -0.0029651037608602448,
+        0.012705644969869416,
+        0.13828316689800618,
+        0.2767875375989192
+      ],
+      "optical_theorem_output_gram_eigenvalues": [
+        -1.7877270204054735e-18,
+        5.3003544428666166e-20,
+        0.182806386826229,
+        0.2779830581513862
+      ],
+      "static_scattering_unitarity_relative_residual": 0.004801028980860607
+    },
+    {
+      "frequency": 0.3980000000000001,
+      "template_port_relative_errors": [
+        0.056412908315622665,
+        0.26264455121136127,
+        0.037490176279410974,
+        3.4993561233734067
+      ],
+      "template_port_current": [
+        [
+          [
+            -2.0081908042691663,
+            -1.181787516421652
+          ],
+          [
+            0.21364891507536907,
+            0.1255229454599306
+          ],
+          [
+            0.3659078251543947,
+            0.030314936352682034
+          ],
+          [
+            0.0033204874094416846,
+            -0.0035843152565329466
+          ]
+        ],
+        [
+          [
+            -2.058031921790296,
+            -1.1443285033840989
+          ],
+          [
+            0.2175470374286988,
+            0.1214433232969434
+          ],
+          [
+            -0.3722891365012035,
+            -0.02650632992530931
+          ],
+          [
+            -0.017721007972657857,
+            -0.004909641643625636
+          ]
+        ]
+      ],
+      "template_port_reciprocity": [
+        [
+          [
+            -1.946738858108402,
+            -1.2560608062555305
+          ],
+          [
+            0.16657693462331435,
+            0.10656023790155568
+          ],
+          [
+            0.3620615310300353,
+            0.039506355152580025
+          ],
+          [
+            0.00043055391414283816,
+            -0.003945871714606896
+          ]
+        ],
+        [
+          [
+            -1.946738858108412,
+            -1.2560608062555296
+          ],
+          [
+            0.1665769346232996,
+            0.1065602379015547
+          ],
+          [
+            -0.3620615310300367,
+            -0.03950635515257995
+          ],
+          [
+            -0.0004305539141429759,
+            0.003945871714606771
+          ]
+        ]
+      ],
+      "template_field_time_relative_changes": [
+        0.015061408061381296,
+        0.015083370911052078,
+        0.0029783322780790266,
+        0.007899086759825254
+      ],
+      "template_output_time_relative_changes": [
+        0.015114453726980165,
+        0.013068241089302811,
+        0.00015404417948188085,
+        0.009391570776411153
+      ],
+      "projected_response": [
+        [
+          [
+            -9.654561244077408,
+            8.997410690111247
+          ],
+          [
+            0.7572877559411328,
+            -0.9468958563088529
+          ],
+          [
+            0.004878675653623876,
+            0.020411519446078524
+          ],
+          [
+            -0.03509678689036437,
+            0.03165783381921089
+          ]
+        ],
+        [
+          [
+            0.5634498568994071,
+            -0.7568100929846309
+          ],
+          [
+            -0.12047741777542047,
+            0.08174912049833703
+          ],
+          [
+            -0.0006347623399242479,
+            -0.0013120458472371328
+          ],
+          [
+            0.0018995726693990106,
+            -0.0026702936289649697
+          ]
+        ],
+        [
+          [
+            0.00520282637025467,
+            0.020102834452044364
+          ],
+          [
+            -0.0007530126784229756,
+            -0.0017184259320689827
+          ],
+          [
+            -0.06535395546893308,
+            0.21919816033712142
+          ],
+          [
+            0.004273190029476835,
+            0.006345321221772465
+          ]
+        ],
+        [
+          [
+            -0.03544512792213498,
+            0.03176741487719102
+          ],
+          [
+            0.002686976151876739,
+            -0.0033580292207813904
+          ],
+          [
+            0.003090350566951201,
+            0.004609828798599193
+          ],
+          [
+            0.021139808214841557,
+            0.009753516569261905
+          ]
+        ]
+      ],
+      "projected_response_reciprocity_relative_error": 0.028892377078144654,
+      "imaginary_response_eigenvalues": [
+        5.196923268229476e-05,
+        0.009500791797388821,
+        0.21929363636723634,
+        9.079265090118659
+      ],
+      "optical_theorem_relative_residual": 0.031157799847926524,
+      "optical_theorem_source_work_eigenvalues": [
+        6.497993152371059e-05,
+        0.011879351850157222,
+        0.2741946482421399,
+        11.352294297830198
+      ],
+      "optical_theorem_output_gram_eigenvalues": [
+        -7.311746712827184e-17,
+        9.645081132950414e-20,
+        0.2742664891922579,
+        11.098117059126755
+      ],
+      "static_scattering_unitarity_relative_residual": 0.03188955934641325
+    },
+    {
+      "frequency": 0.408,
+      "template_port_relative_errors": [
+        0.043492109375341086,
+        0.12201351091349535,
+        0.028191549696287635,
+        0.43924142840206565
+      ],
+      "template_port_current": [
+        [
+          [
+            -0.09171642807785522,
+            -0.2540466112054659
+          ],
+          [
+            0.024871730609307773,
+            0.06736128159268116
+          ],
+          [
+            0.3541888800179874,
+            0.07998723906501827
+          ],
+          [
+            0.010973589594307716,
+            0.0015858138713748732
+          ]
+        ],
+        [
+          [
+            -0.09848934136005426,
+            -0.2550804726109086
+          ],
+          [
+            0.02538775814789361,
+            0.06734752192899901
+          ],
+          [
+            -0.35495410386884063,
+            -0.08020601640609488
+          ],
+          [
+            -0.011637760250631953,
+            -0.0034129120678141594
+          ]
+        ]
+      ],
+      "template_port_reciprocity": [
+        [
+          [
+            -0.08455173814862256,
+            -0.2513995453041758
+          ],
+          [
+            0.020770961520431123,
+            0.06083829910036358
+          ],
+          [
+            0.3492545981642535,
+            0.0887439223463374
+          ],
+          [
+            0.008109743037606417,
+            0.0011613788240153813
+          ]
+        ],
+        [
+          [
+            -0.084551738148624,
+            -0.2513995453041761
+          ],
+          [
+            0.020770961520414622,
+            0.060838299100359663
+          ],
+          [
+            -0.3492545981642539,
+            -0.08874392234633956
+          ],
+          [
+            -0.008109743037606316,
+            -0.0011613788240150988
+          ]
+        ]
+      ],
+      "template_field_time_relative_changes": [
+        0.007381739255327365,
+        0.006665800303271841,
+        0.000451044675775938,
+        0.0031279323806300127
+      ],
+      "template_output_time_relative_changes": [
+        0.007402153979715014,
+        0.002551886848609091,
+        9.572457016359668e-06,
+        0.0007791136553174885
+      ],
+      "projected_response": [
+        [
+          [
+            -1.5215248823275718,
+            0.15540736932858146
+          ],
+          [
+            0.13756194737643213,
+            -0.03387377253843567
+          ],
+          [
+            -0.001226264781852508,
+            0.00204113831981207
+          ],
+          [
+            -0.005850526185759875,
+            0.0005200361134590765
+          ]
+        ],
+        [
+          [
+            0.1081693408884836,
+            -0.03028261350537272
+          ],
+          [
+            -0.08878604412741674,
+            0.009523283000211324
+          ],
+          [
+            2.9211355002047245e-05,
+            -0.00010849233981845605
+          ],
+          [
+            0.00024924671190066196,
+            -0.00010038138257095381
+          ]
+        ],
+        [
+          [
+            -0.0011895571434101368,
+            0.002050312744257713
+          ],
+          [
+            6.844587178997215e-05,
+            -0.00016801312875775438
+          ],
+          [
+            -0.0872850790398713,
+            0.2069930440404071
+          ],
+          [
+            0.004147473061027112,
+            0.006646629191022916
+          ]
+        ],
+        [
+          [
+            -0.005935944424753268,
+            0.0005128299762095337
+          ],
+          [
+            0.0004241068786878529,
+            -0.00011639492993767433
+          ],
+          [
+            0.0029117607620484484,
+            0.005075861552728943
+          ],
+          [
+            0.03680407651187839,
+            0.008078143963111965
+          ]
+        ]
+      ],
+      "projected_response_reciprocity_relative_error": 0.026915012260827237,
+      "imaginary_response_eigenvalues": [
+        0.0014366190100238566,
+        0.007902421501856232,
+        0.16339976406010556,
+        0.20726303576032634
+      ],
+      "optical_theorem_relative_residual": 0.17419731008466058,
+      "optical_theorem_source_work_eigenvalues": [
+        0.0018414148649825387,
+        0.01012908524900703,
+        0.20944088333476954,
+        0.26566350044618653
+      ],
+      "optical_theorem_output_gram_eigenvalues": [
+        -2.2464846361841875e-18,
+        7.808029121317395e-20,
+        0.15799178789718565,
+        0.2646055280005212
+      ],
+      "static_scattering_unitarity_relative_residual": 0.0013361279995688822
+    }
+  ],
+  "static_parity_audit": [
+    {
+      "frequency": 0.38800000000000007,
+      "port_parity_relative_residual_per_column": [
+        0.027569876576226674,
+        0.04469439107264427,
+        0.002603695886713906,
+        0.2168837862535016
+      ],
+      "projected_response_parity_relative_residual": 0.010504396302824764,
+      "full_field_parity_relative_residual_per_column": [
+        0.008549745282482746,
+        0.01080559044209864,
+        0.03958072349700626,
+        0.12326898553737765
+      ],
+      "supported_field_parity_relative_residual_per_column": [
+        0.007823955213849917,
+        0.009536499470073912,
+        0.04802984576942493,
+        0.1478957882910489
+      ],
+      "interpretation": "Actual geometry has z mirror; measured responses are not projected onto the corresponding parity"
+    },
+    {
+      "frequency": 0.3980000000000001,
+      "port_parity_relative_residual_per_column": [
+        0.026616365836679673,
+        0.022709069759365715,
+        0.020073694936364853,
+        1.2426875513958626
+      ],
+      "projected_response_parity_relative_residual": 0.01106545490167476,
+      "full_field_parity_relative_residual_per_column": [
+        0.008924434421307246,
+        0.008844304312390664,
+        0.1617142690924076,
+        0.5650578220829657
+      ],
+      "supported_field_parity_relative_residual_per_column": [
+        0.008223487854618147,
+        0.008082484197947527,
+        0.18254246919651462,
+        0.6401476655607836
+      ],
+      "interpretation": "Actual geometry has z mirror; measured responses are not projected onto the corresponding parity"
+    },
+    {
+      "frequency": 0.408,
+      "port_parity_relative_residual_per_column": [
+        0.025210172239838624,
+        0.007180557161549051,
+        0.00218946578871854,
+        0.1673127887127347
+      ],
+      "projected_response_parity_relative_residual": 0.011584954145916778,
+      "full_field_parity_relative_residual_per_column": [
+        0.009506507535493352,
+        0.00986266168138986,
+        0.020572063511498224,
+        0.06813184725069857
+      ],
+      "supported_field_parity_relative_residual_per_column": [
+        0.008821030698807625,
+        0.0076381296676811235,
+        0.022904788973142284,
+        0.07561992374322292
+      ],
+      "interpretation": "Actual geometry has z mirror; measured responses are not projected onto the corresponding parity"
+    }
+  ],
+  "finite_three_frequency_response": [
+    {
+      "rank": 2,
+      "ls_abcd_relative_difference": 3.0690726497492797e-16,
+      "sources": {
+        "bottom": {
+          "output_amplitudes": [
+            [
+              [
+                -0.005280986138822233,
+                -0.0016584169120485368
+              ],
+              [
+                -0.005366315775319029,
+                -0.0015283664227878902
+              ]
+            ],
+            [
+              [
+                -0.7059174797354517,
+                -0.569000832995216
+              ],
+              [
+                0.262631128467725,
+                -0.3508006842296024
+              ]
+            ],
+            [
+              [
+                0.004987185087373604,
+                0.001148116301384191
+              ],
+              [
+                0.005071730473963353,
+                0.0010523597553039159
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            6.177241017534449e-05,
+            1.0141176658414894,
+            5.3020097192337624e-05
+          ],
+          "source_representation_residual": 0.15477526302041886,
+          "sideband_relative_change_from_template_settling": 0.008698826247974792,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.00010553738930903873
+        },
+        "even": {
+          "output_amplitudes": [
+            [
+              [
+                -0.007468442220226743,
+                -0.0023453556890879424
+              ],
+              [
+                -0.007589116549432878,
+                -0.00216143652338228
+              ]
+            ],
+            [
+              [
+                -0.3134518216462575,
+                -0.6503970923126782
+              ],
+              [
+                -0.3134497483314453,
+                -0.6503986880380099
+              ]
+            ],
+            [
+              [
+                0.007052944788628607,
+                0.0016236816445991545
+              ],
+              [
+                0.007172510020979905,
+                0.0014882614384464248
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            0.00012354482035068938,
+            1.0425376203127548,
+            0.00010604019438467544
+          ],
+          "source_representation_residual": 0.0007660674029686266,
+          "sideband_relative_change_from_template_settling": 0.008698826247974764,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.00010553738930905028
+        },
+        "odd": {
+          "output_amplitudes": [
+            [
+              [
+                1.734723475976807e-17,
+                -6.5052130349130266e-18
+              ],
+              [
+                1.734723475976807e-17,
+                -6.071532165918825e-18
+              ]
+            ],
+            [
+              [
+                -0.6848662521118527,
+                -0.15429160271074474
+              ],
+              [
+                0.6848662521118527,
+                0.15429160271074477
+              ]
+            ],
+            [
+              [
+                -7.806255641895632e-18,
+                4.228388472693467e-18
+              ],
+              [
+                -6.938893903907228e-18,
+                4.662069341687669e-18
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            6.810344070924005e-34,
+            0.985695363897572,
+            1.4870003537901937e-34
+          ],
+          "source_representation_residual": 1.0,
+          "sideband_relative_change_from_template_settling": 0.05635789830953996,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.0429274138542672
+        }
+      },
+      "diagnostics": {
+        "equation_relative_residual": 1.203372051277577e-16,
+        "reconstructed_projection_relative_residual": 6.416924445486245e-15,
+        "static_incident_outside_basis": [
+          [
+            0.7884797517273671,
+            0.7884797517273684
+          ],
+          [
+            0.1547596750049141,
+            0.15475967500491408
+          ],
+          [
+            0.808000999987941,
+            0.8080009999879431
+          ]
+        ],
+        "static_polarization_response_outside_basis": [
+          [
+            0.04715735102476903,
+            0.37695337687808916
+          ],
+          [
+            0.047103795340623436,
+            0.06154606159606426
+          ],
+          [
+            0.04889154602857411,
+            0.3529313631288479
+          ]
+        ],
+        "modulation_template_outside_basis": {
+          "-1": [
+            2.4542479836134696e-15,
+            2.2511126686969575e-15
+          ],
+          "1": [
+            2.4542479836134696e-15,
+            2.2511126686969575e-15
+          ]
+        },
+        "reconstructed_field_outside_basis": [
+          [
+            0.047514048905766326,
+            0.04751404890576632
+          ],
+          [
+            0.1547753079193656,
+            0.15477501570043126
+          ],
+          [
+            0.04885063772304947,
+            0.04885063772304942
+          ]
+        ],
+        "polarization_representation_relative_residual": [
+          0.15477526302041886,
+          0.15477497080176178
+        ],
+        "polarization_representation_absolute_residual": [
+          0.004119703341005833,
+          0.004119695372027751
+        ],
+        "polarization_representation_per_harmonic": [
+          [
+            0.15477530791936528,
+            0.15477501570043092
+          ],
+          [
+            0.11342217863947336,
+            0.11342217863947253
+          ],
+          [
+            0.15477530791936528,
+            0.15477501570043092
+          ]
+        ],
+        "finite_spatial_projection": true,
+        "harmonic_convergence_checked": false,
+        "stability_checked": false,
+        "frequency_interpolation": false,
+        "scope": "Static background is reconstructed exactly from supplied data; its modulation outside Q is omitted and audited. Residual is a source-density diagnostic, not a scattering-error bound."
+      }
+    },
+    {
+      "rank": 3,
+      "ls_abcd_relative_difference": 5.688511534603048e-16,
+      "sources": {
+        "bottom": {
+          "output_amplitudes": [
+            [
+              [
+                -0.005249274221823976,
+                -0.002744770623092067
+              ],
+              [
+                -0.005397452492292372,
+                -0.000444779459189794
+              ]
+            ],
+            [
+              [
+                -0.7059153036207093,
+                -0.5689997169326373
+              ],
+              [
+                0.26262893044712665,
+                -0.3508017784160519
+              ]
+            ],
+            [
+              [
+                0.0053307098211854255,
+                0.00014777468496014138
+              ],
+              [
+                0.0047273306173996376,
+                0.0020548479047802484
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            6.441896780316525e-05,
+            1.014112936603006,
+            5.500835923318164e-05
+          ],
+          "source_representation_residual": 0.0018486588024855552,
+          "sideband_relative_change_from_template_settling": 0.008528031807153124,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.00010346438005949552
+        },
+        "even": {
+          "output_amplitudes": [
+            [
+              [
+                -0.007468442782928927,
+                -0.0023453571988761926
+              ],
+              [
+                -0.00758911599092389,
+                -0.0021614350171175146
+              ]
+            ],
+            [
+              [
+                -0.31345180310359677,
+                -0.6503970838845415
+              ],
+              [
+                -0.3134497672785309,
+                -0.6503986963866063
+              ]
+            ],
+            [
+              [
+                0.007052944705427927,
+                0.00162368007879461
+              ],
+              [
+                0.007172510107290857,
+                0.0014882630068839703
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            0.00012354482084912203,
+            1.0425376204627734,
+            0.00010604019403294713
+          ],
+          "source_representation_residual": 0.0007660659350996409,
+          "sideband_relative_change_from_template_settling": 0.008698826205683756,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.00010553734296623828
+        },
+        "odd": {
+          "output_amplitudes": [
+            [
+              [
+                4.484798580998593e-05,
+                -0.0015363346419038592
+              ],
+              [
+                -4.403452594044536e-05,
+                0.0015324218736663374
+              ]
+            ],
+            [
+              [
+                -0.6848631931635315,
+                -0.15429003278804612
+              ],
+              [
+                0.6848631625883976,
+                0.1542900636460244
+              ]
+            ],
+            [
+              [
+                0.0004858174207679573,
+                -0.0014146951151485666
+              ],
+              [
+                -0.0004870550343427124,
+                0.0014177307686701948
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            4.712591312110919e-06,
+            0.9856859827783613,
+            4.4845639740596084e-06
+          ],
+          "source_representation_residual": 0.010899109843742793,
+          "sideband_relative_change_from_template_settling": 1.3920263227854631e-05,
+          "repeated_conversion_vs_first_order_amplitude_difference": 2.5860721018456104e-06
+        }
+      },
+      "diagnostics": {
+        "equation_relative_residual": 1.4806041458221437e-16,
+        "reconstructed_projection_relative_residual": 6.3533751430978615e-15,
+        "static_incident_outside_basis": [
+          [
+            0.23641816390430997,
+            0.23641816390430984
+          ],
+          [
+            0.0018455967340389272,
+            0.0018455967340389292
+          ],
+          [
+            0.21834029739574295,
+            0.21834029739574354
+          ]
+        ],
+        "static_polarization_response_outside_basis": [
+          [
+            0.047131088461037404,
+            0.3769499899005288,
+            0.10318688714963446
+          ],
+          [
+            0.04707769961950134,
+            0.061526955576054136,
+            0.10772627931441912
+          ],
+          [
+            0.048867165155705265,
+            0.3529299075634364,
+            0.11792537470198382
+          ]
+        ],
+        "modulation_template_outside_basis": {
+          "-1": [
+            2.454247983830396e-15,
+            2.251112737430304e-15,
+            1.3895714998110577e-15
+          ],
+          "1": [
+            2.454247983830396e-15,
+            2.251112737430304e-15,
+            1.3895714998110577e-15
+          ]
+        },
+        "reconstructed_field_outside_basis": [
+          [
+            0.047489339023687696,
+            0.04756552484638513
+          ],
+          [
+            0.0018440994767926016,
+            0.001844552348084713
+          ],
+          [
+            0.048920944023665675,
+            0.04885614012410164
+          ]
+        ],
+        "polarization_representation_relative_residual": [
+          0.0018486588024855634,
+          0.0018491214797755227
+        ],
+        "polarization_representation_absolute_residual": [
+          4.920635006407336e-05,
+          4.92186618822168e-05
+        ],
+        "polarization_representation_per_harmonic": [
+          [
+            0.0018440994767926027,
+            0.001844552348084708
+          ],
+          [
+            0.11311310710951308,
+            0.1133556991150637
+          ],
+          [
+            0.0018440994767926027,
+            0.001844552348084708
+          ]
+        ],
+        "finite_spatial_projection": true,
+        "harmonic_convergence_checked": false,
+        "stability_checked": false,
+        "frequency_interpolation": false,
+        "scope": "Static background is reconstructed exactly from supplied data; its modulation outside Q is omitted and audited. Residual is a source-density diagnostic, not a scattering-error bound."
+      }
+    },
+    {
+      "rank": 4,
+      "ls_abcd_relative_difference": 4.991522622543338e-16,
+      "sources": {
+        "bottom": {
+          "output_amplitudes": [
+            [
+              [
+                -0.005249581069119951,
+                -0.0027448089370393104
+              ],
+              [
+                -0.005397155976875045,
+                -0.0004448061464881665
+              ]
+            ],
+            [
+              [
+                -0.7059153045139096,
+                -0.5689997181614561
+              ],
+              [
+                0.26262892876518223,
+                -0.3508017750873476
+              ]
+            ],
+            [
+              [
+                0.005330369054649734,
+                0.00014768680201780824
+              ],
+              [
+                0.004727686059556906,
+                0.0020549957103479745
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            6.441922264878512e-05,
+            1.0141129360435635,
+            5.5008668497535024e-05
+          ],
+          "source_representation_residual": 0.0007572860810949331,
+          "sideband_relative_change_from_template_settling": 0.00852802845814432,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.00010346444079666535
+        },
+        "even": {
+          "output_amplitudes": [
+            [
+              [
+                -0.0074684427076136,
+                -0.0023453572564122883
+              ],
+              [
+                -0.00758911604331876,
+                -0.0021614349302518346
+              ]
+            ],
+            [
+              [
+                -0.3134518037573963,
+                -0.6503970838229725
+              ],
+              [
+                -0.31344976594251117,
+                -0.6503986943067294
+              ]
+            ],
+            [
+              [
+                0.007052944794473109,
+                0.001623680006305261
+              ],
+              [
+                0.00717250999471531,
+                0.0014882630540200563
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            0.00012354482041378347,
+            1.042537617249505,
+            0.00010604019357901291
+          ],
+          "source_representation_residual": 0.0007660572432772358,
+          "sideband_relative_change_from_template_settling": 0.008698826131988727,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.00010553956134663039
+        },
+        "odd": {
+          "output_amplitudes": [
+            [
+              [
+                4.441396288711345e-05,
+                -0.0015363887684715829
+              ],
+              [
+                -4.361513742093823e-05,
+                0.0015323840452613562
+              ]
+            ],
+            [
+              [
+                -0.6848631937729079,
+                -0.15429003458742735
+              ],
+              [
+                0.6848631588737494,
+                0.15429006627364628
+              ]
+            ],
+            [
+              [
+                0.0004853354150663983,
+                -0.0014148193279081664
+              ],
+              [
+                -0.00048655225064771733,
+                0.0014179397501725812
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            4.712566190368772e-06,
+            0.9856859798910738,
+            4.484550423470031e-06
+          ],
+          "source_representation_residual": 0.00017190817260199508,
+          "sideband_relative_change_from_template_settling": 1.4202456119304726e-05,
+          "repeated_conversion_vs_first_order_amplitude_difference": 2.5863196786613567e-06
+        }
+      },
+      "diagnostics": {
+        "equation_relative_residual": 1.223067221287301e-16,
+        "reconstructed_projection_relative_residual": 8.736886796242863e-15,
+        "static_incident_outside_basis": [
+          [
+            0.23603827509930672,
+            0.2360382750993067
+          ],
+          [
+            0.0007496198374667213,
+            0.0007496198374667214
+          ],
+          [
+            0.21762280240978046,
+            0.21762280240978027
+          ]
+        ],
+        "static_polarization_response_outside_basis": [
+          [
+            0.04700928271343378,
+            0.37693367099228803,
+            0.10071505210208827,
+            0.9888237505125768
+          ],
+          [
+            0.04694035217729231,
+            0.061426463829850585,
+            0.10501405767989205,
+            0.9331506165523331
+          ],
+          [
+            0.048712850487561916,
+            0.35292135382448975,
+            0.11505372174676032,
+            0.9738045932557053
+          ]
+        ],
+        "modulation_template_outside_basis": {
+          "-1": [
+            2.2648459900973694e-14,
+            2.616876912590538e-15,
+            1.3226136467395043e-14,
+            1.7939369420743073e-14
+          ],
+          "1": [
+            2.2648459900973694e-14,
+            2.616876912590538e-15,
+            1.3226136467395043e-14,
+            1.7939369420743073e-14
+          ]
+        },
+        "reconstructed_field_outside_basis": [
+          [
+            0.047398966107546125,
+            0.04740937275158719
+          ],
+          [
+            0.0007461098395616749,
+            0.000746110464964762
+          ],
+          [
+            0.04872451419301002,
+            0.04873823008083261
+          ]
+        ],
+        "polarization_representation_relative_residual": [
+          0.0007572860810949366,
+          0.0007573015747080145
+        ],
+        "polarization_representation_absolute_residual": [
+          2.015692890870746e-05,
+          2.0157339824698543e-05
+        ],
+        "polarization_representation_per_harmonic": [
+          [
+            0.0007461098395616733,
+            0.0007461104649647594
+          ],
+          [
+            0.11298747397534105,
+            0.11316950733174216
+          ],
+          [
+            0.0007461098395616733,
+            0.0007461104649647594
+          ]
+        ],
+        "finite_spatial_projection": true,
+        "harmonic_convergence_checked": false,
+        "stability_checked": false,
+        "frequency_interpolation": false,
+        "scope": "Static background is reconstructed exactly from supplied data; its modulation outside Q is omitted and audited. Residual is a source-density diagnostic, not a scattering-error bound."
+      }
+    }
+  ],
+  "born": {
+    "bottom": [
+      {
+        "harmonic": -1,
+        "full_reciprocity_amplitude": [
+          [
+            -0.005202628015671231,
+            -0.0028333966356340556
+          ],
+          [
+            -0.005319705062271741,
+            -0.0006815247265306159
+          ]
+        ],
+        "full_current_amplitude": [
+          [
+            -0.005293160930498289,
+            -0.0027145223106906534
+          ],
+          [
+            -0.005440753783460898,
+            -0.000413269283675912
+          ]
+        ],
+        "full_reciprocity_power": 6.385921266670177e-05,
+        "full_current_power": 6.515877724446492e-05,
+        "full_reciprocity_current_amplitude_difference": 0.040889273458197206,
+        "rank2": {
+          "source_relative_residual": 0.1547596750049144,
+          "reciprocity_amplitude": [
+            [
+              -0.005261643781318679,
+              -0.0017560546018135497
+            ],
+            [
+              -0.005261643781318677,
+              -0.0017560546018135482
+            ]
+          ],
+          "reciprocity_power": 6.153724609208011e-05,
+          "same_reciprocity_source_projection_output_error": 0.1906917416509703,
+          "current_amplitude": [
+            [
+              -0.0052814879834113555,
+              -0.0016587186710913344
+            ],
+            [
+              -0.005366829570304668,
+              -0.0015286569378018158
+            ]
+          ],
+          "current_power": 6.178511461893176e-05,
+          "measured_current_vs_full_current_error": 0.1904912859945324,
+          "measured_current_power_relative_difference": -0.051776027239979316,
+          "measured_vs_reciprocal_same_projected_source_error": 0.03435772035692133
+        },
+        "rank3": {
+          "source_relative_residual": 0.001845596734038932,
+          "reciprocity_amplitude": [
+            [
+              -0.005202900134118444,
+              -0.0028319497308950366
+            ],
+            [
+              -0.0053203874285189445,
+              -0.0006801594727320789
+            ]
+          ],
+          "reciprocity_power": 6.38592483818158e-05,
+          "same_reciprocity_source_projection_output_error": 0.00026537232083017974,
+          "current_amplitude": [
+            [
+              -0.0052497739848744625,
+              -0.002745073716885356
+            ],
+            [
+              -0.00539796817327438,
+              -0.00044506882033821496
+            ]
+          ],
+          "current_power": 6.443170325791987e-05,
+          "measured_current_vs_full_current_error": 0.00931817749007585,
+          "measured_current_power_relative_difference": -0.011158496480331181,
+          "measured_vs_reciprocal_same_projected_source_error": 0.03335124278019562
+        },
+        "rank4": {
+          "source_relative_residual": 0.0007496198374667208,
+          "reciprocity_amplitude": [
+            [
+              -0.005203105258018445,
+              -0.002831990556365278
+            ],
+            [
+              -0.005320182304618905,
+              -0.0006801186472618388
+            ]
+          ],
+          "reciprocity_power": 6.38593759660947e-05,
+          "same_reciprocity_source_projection_output_error": 0.0002627784253630574,
+          "current_amplitude": [
+            [
+              -0.00525008087601782,
+              -0.0027451119943595987
+            ],
+            [
+              -0.005397671603867568,
+              -0.00044509556939019705
+            ]
+          ],
+          "current_power": 6.443195787539404e-05,
+          "measured_current_vs_full_current_error": 0.00932062467410825,
+          "measured_current_power_relative_difference": -0.011154588833734103,
+          "measured_vs_reciprocal_same_projected_source_error": 0.033342767496456295
+        }
+      },
+      {
+        "harmonic": 1,
+        "full_reciprocity_amplitude": [
+          [
+            0.005229667731588494,
+            0.0002486223557455205
+          ],
+          [
+            0.004495522982732073,
+            0.0022153260593549837
+          ]
+        ],
+        "full_current_amplitude": [
+          [
+            0.00530873768320457,
+            0.00011703810131422567
+          ],
+          [
+            0.004705095309924609,
+            0.002024600306895486
+          ]
+        ],
+        "full_reciprocity_power": 5.252863409612395e-05,
+        "full_current_power": 5.443332198439132e-05,
+        "full_reciprocity_current_amplitude_difference": 0.04368161990144073,
+        "rank2": {
+          "source_relative_residual": 0.1547596750049144,
+          "reciprocity_amplitude": [
+            [
+              0.004862295512682445,
+              0.0012332184101058491
+            ],
+            [
+              0.004862295512682446,
+              0.0012332184101058517
+            ]
+          ],
+          "reciprocity_power": 5.032549059935169e-05,
+          "same_reciprocity_source_projection_output_error": 0.20481109204476056,
+          "current_amplitude": [
+            [
+              0.004987667936571693,
+              0.0011483551746479192
+            ],
+            [
+              0.005072224359088041,
+              0.0010525908840276854
+            ]
+          ],
+          "current_power": 5.303095857071026e-05,
+          "measured_current_vs_full_current_error": 0.20314221214668177,
+          "measured_current_power_relative_difference": -0.025762958470239683,
+          "measured_vs_reciprocal_same_projected_source_error": 0.044490931000645106
+        },
+        "rank3": {
+          "source_relative_residual": 0.001845596734038932,
+          "reciprocity_amplitude": [
+            [
+              0.005229619815545232,
+              0.00024993113468715927
+            ],
+            [
+              0.004494971209819644,
+              0.0022165056855245288
+            ]
+          ],
+          "reciprocity_power": 5.2529052618299384e-05,
+          "same_reciprocity_source_projection_output_error": 0.0002548317852507624,
+          "current_amplitude": [
+            [
+              0.0053311947951984635,
+              0.0001480130612119396
+            ],
+            [
+              0.004727822211741993,
+              0.0020550797099169087
+            ]
+          ],
+          "current_power": 5.5019201290593646e-05,
+          "measured_current_vs_full_current_error": 0.007310718294371821,
+          "measured_current_power_relative_difference": 0.010763247305948465,
+          "measured_vs_reciprocal_same_projected_source_error": 0.04384536760322399
+        },
+        "rank4": {
+          "source_relative_residual": 0.0007496198374667208,
+          "reciprocity_amplitude": [
+            [
+              0.005229367887110614,
+              0.00024986655830111916
+            ],
+            [
+              0.004495223138254229,
+              0.0022165702619105616
+            ]
+          ],
+          "reciprocity_power": 5.252893658438342e-05,
+          "same_reciprocity_source_projection_output_error": 0.00024972776358288176,
+          "current_amplitude": [
+            [
+              0.005330853950904444,
+              0.00014792522895691685
+            ],
+            [
+              0.00472817772442679,
+              0.002055227488851924
+            ]
+          ],
+          "current_power": 5.501951034393375e-05,
+          "measured_current_vs_full_current_error": 0.007316608658412207,
+          "measured_current_power_relative_difference": 0.01076892495575632,
+          "measured_vs_reciprocal_same_projected_source_error": 0.04384717022424536
+        }
+      }
+    ],
+    "even": [
+      {
+        "harmonic": -1,
+        "full_reciprocity_amplitude": [
+          [
+            -0.007440413073316988,
+            -0.0024854247305240895
+          ],
+          [
+            -0.007440413073316988,
+            -0.002485424730524089
+          ]
+        ],
+        "full_current_amplitude": [
+          [
+            -0.0075900238829186015,
+            -0.0022116826465148815
+          ],
+          [
+            -0.0075900238829186015,
+            -0.0022116826465148815
+          ]
+        ],
+        "full_reciprocity_power": 0.00012307416558537417,
+        "full_current_power": 0.0001250000053443397,
+        "full_reciprocity_current_amplitude_difference": 0.03945997845849302,
+        "rank2": {
+          "source_relative_residual": 0.0007587610641239419,
+          "reciprocity_amplitude": [
+            [
+              -0.007441087995916891,
+              -0.0024834362341523857
+            ],
+            [
+              -0.007441087995916891,
+              -0.002483436234152385
+            ]
+          ],
+          "reciprocity_power": 0.0001230744921841589,
+          "same_reciprocity_source_projection_output_error": 0.00026769054603698647,
+          "current_amplitude": [
+            [
+              -0.007469151935650842,
+              -0.0023457824408188296
+            ],
+            [
+              -0.007589843165269807,
+              -0.0021618473736550415
+            ]
+          ],
+          "current_power": 0.00012357022923786267,
+          "measured_current_vs_full_current_error": 0.01675144603880259,
+          "measured_current_power_relative_difference": -0.011438208362778757,
+          "measured_vs_reciprocal_same_projected_source_error": 0.0343577203569211
+        },
+        "rank3": {
+          "source_relative_residual": 0.0007587610641239419,
+          "reciprocity_amplitude": [
+            [
+              -0.007441087995916891,
+              -0.0024834362341523857
+            ],
+            [
+              -0.007441087995916891,
+              -0.002483436234152385
+            ]
+          ],
+          "reciprocity_power": 0.0001230744921841589,
+          "same_reciprocity_source_projection_output_error": 0.00026769054603698647,
+          "current_amplitude": [
+            [
+              -0.007469151935650842,
+              -0.0023457824408188296
+            ],
+            [
+              -0.007589843165269807,
+              -0.0021618473736550415
+            ]
+          ],
+          "current_power": 0.00012357022923786267,
+          "measured_current_vs_full_current_error": 0.01675144603880259,
+          "measured_current_power_relative_difference": -0.011438208362778757,
+          "measured_vs_reciprocal_same_projected_source_error": 0.0343577203569211
+        },
+        "rank4": {
+          "source_relative_residual": 0.0007587610641239419,
+          "reciprocity_amplitude": [
+            [
+              -0.007441087995916891,
+              -0.0024834362341523857
+            ],
+            [
+              -0.007441087995916891,
+              -0.002483436234152385
+            ]
+          ],
+          "reciprocity_power": 0.0001230744921841589,
+          "same_reciprocity_source_projection_output_error": 0.00026769054603698647,
+          "current_amplitude": [
+            [
+              -0.007469151935650842,
+              -0.0023457824408188296
+            ],
+            [
+              -0.007589843165269807,
+              -0.0021618473736550415
+            ]
+          ],
+          "current_power": 0.00012357022923786267,
+          "measured_current_vs_full_current_error": 0.01675144603880259,
+          "measured_current_power_relative_difference": -0.011438208362778757,
+          "measured_vs_reciprocal_same_projected_source_error": 0.0343577203569211
+        }
+      },
+      {
+        "harmonic": 1,
+        "full_reciprocity_amplitude": [
+          [
+            0.006876748302428523,
+            0.001742274632811415
+          ],
+          [
+            0.006876748302428522,
+            0.0017422746328114135
+          ]
+        ],
+        "full_current_amplitude": [
+          [
+            0.007080849215111225,
+            0.0015143670412946504
+          ],
+          [
+            0.007080849215111225,
+            0.0015143670412946504
+          ]
+        ],
+        "full_reciprocity_power": 0.0001006503762221834,
+        "full_current_power": 0.00010486346628580153,
+        "full_reciprocity_current_amplitude_difference": 0.04225115836510971,
+        "rank2": {
+          "source_relative_residual": 0.0007587610641239419,
+          "reciprocity_amplitude": [
+            [
+              0.006876324258301341,
+              0.001744034200939857
+            ],
+            [
+              0.006876324258301341,
+              0.0017440342009398602
+            ]
+          ],
+          "reciprocity_power": 0.00010065098119870283,
+          "same_reciprocity_source_projection_output_error": 0.0002551362561434731,
+          "current_amplitude": [
+            [
+              0.00705362764051309,
+              0.0016240194624084047
+            ],
+            [
+              0.007173208480021457,
+              0.0014885883038222322
+            ]
+          ],
+          "current_power": 0.00010606191714141965,
+          "measured_current_vs_full_current_error": 0.014471000955044886,
+          "measured_current_power_relative_difference": 0.011428678624372246,
+          "measured_vs_reciprocal_same_projected_source_error": 0.044490931000642525
+        },
+        "rank3": {
+          "source_relative_residual": 0.0007587610641239419,
+          "reciprocity_amplitude": [
+            [
+              0.006876324258301341,
+              0.001744034200939857
+            ],
+            [
+              0.006876324258301341,
+              0.0017440342009398602
+            ]
+          ],
+          "reciprocity_power": 0.00010065098119870283,
+          "same_reciprocity_source_projection_output_error": 0.0002551362561434731,
+          "current_amplitude": [
+            [
+              0.00705362764051309,
+              0.001624019462408405
+            ],
+            [
+              0.007173208480021457,
+              0.001488588303822232
+            ]
+          ],
+          "current_power": 0.00010606191714141965,
+          "measured_current_vs_full_current_error": 0.014471000955044907,
+          "measured_current_power_relative_difference": 0.011428678624372246,
+          "measured_vs_reciprocal_same_projected_source_error": 0.04449093100064254
+        },
+        "rank4": {
+          "source_relative_residual": 0.0007587610641239419,
+          "reciprocity_amplitude": [
+            [
+              0.006876324258301342,
+              0.001744034200939857
+            ],
+            [
+              0.006876324258301341,
+              0.0017440342009398602
+            ]
+          ],
+          "reciprocity_power": 0.00010065098119870285,
+          "same_reciprocity_source_projection_output_error": 0.0002551362561434588,
+          "current_amplitude": [
+            [
+              0.00705362764051309,
+              0.0016240194624084047
+            ],
+            [
+              0.007173208480021457,
+              0.001488588303822232
+            ]
+          ],
+          "current_power": 0.00010606191714141965,
+          "measured_current_vs_full_current_error": 0.01447100095504489,
+          "measured_current_power_relative_difference": 0.011428678624372246,
+          "measured_vs_reciprocal_same_projected_source_error": 0.04449093100064251
+        }
+      }
+    ],
+    "odd": [
+      {
+        "harmonic": -1,
+        "full_reciprocity_amplitude": [
+          [
+            8.278597357248928e-05,
+            -0.0015216032191718916
+          ],
+          [
+            -8.278597357248927e-05,
+            0.0015216032191718916
+          ]
+        ],
+        "full_current_amplitude": [
+          [
+            0.00010436390718452965,
+            -0.0016272316206281925
+          ],
+          [
+            -0.00010436390718452965,
+            0.0016272316206281925
+          ]
+        ],
+        "full_reciprocity_power": 4.644259748029217e-06,
+        "full_current_power": 5.317549144590151e-06,
+        "full_reciprocity_current_amplitude_difference": 0.0661176993123169,
+        "rank2": {
+          "source_relative_residual": 0.9999999999999992,
+          "reciprocity_amplitude": [
+            [
+              4.751151024004576e-18,
+              -7.143971526046022e-19
+            ],
+            [
+              4.7511510240044925e-18,
+              -7.143971526029771e-19
+            ]
+          ],
+          "reciprocity_power": 4.616759868909547e-35,
+          "same_reciprocity_source_projection_output_error": 1.0,
+          "current_amplitude": [
+            [
+              4.337748815256221e-18,
+              -7.692731544443012e-19
+            ],
+            [
+              4.3460376344309124e-18,
+              -7.4915278347291635e-19
+            ]
+          ],
+          "current_power": 3.8857118983280497e-35,
+          "measured_current_vs_full_current_error": 0.9999999999999998,
+          "measured_current_power_relative_difference": -1.0,
+          "measured_vs_reciprocal_same_projected_source_error": 0.08572023072359007
+        },
+        "rank3": {
+          "source_relative_residual": 0.010897698495870075,
+          "reciprocity_amplitude": [
+            [
+              8.307606257384861e-05,
+              -0.001521545483238189
+            ],
+            [
+              -8.307606257384849e-05,
+              0.001521545483238189
+            ]
+          ],
+          "reciprocity_power": 4.6440045794706154e-06,
+          "same_reciprocity_source_projection_output_error": 0.0001940991845919644,
+          "current_amplitude": [
+            [
+              4.485036684795671e-05,
+              -0.0015363380393143694
+            ],
+            [
+              -4.403663463311073e-05,
+              0.0015324250117433728
+            ]
+          ],
+          "current_power": 4.712611768257204e-06,
+          "measured_current_vs_full_current_error": 0.06778232218075911,
+          "measured_current_power_relative_difference": -0.11376244203561037,
+          "measured_vs_reciprocal_same_projected_source_error": 0.026747540989698466
+        },
+        "rank4": {
+          "source_relative_residual": 1.5516926173910755e-14,
+          "reciprocity_amplitude": [
+            [
+              8.278597357248886e-05,
+              -0.0015216032191719042
+            ],
+            [
+              -8.278597357248889e-05,
+              0.0015216032191719044
+            ]
+          ],
+          "reciprocity_power": 4.6442597480292945e-06,
+          "same_reciprocity_source_projection_output_error": 8.328846860723543e-15,
+          "current_amplitude": [
+            [
+              4.441635723084875e-05,
+              -0.0015363921718375773
+            ],
+            [
+              -4.361722215581334e-05,
+              0.001532387182871279
+            ]
+          ],
+          "current_power": 4.71258665877021e-06,
+          "measured_current_vs_full_current_error": 0.0679208513648499,
+          "measured_current_power_relative_difference": -0.11376716403935905,
+          "measured_vs_reciprocal_same_projected_source_error": 0.026823018134374276
+        }
+      },
+      {
+        "harmonic": 1,
+        "full_reciprocity_amplitude": [
+          [
+            0.0005191187302888596,
+            -0.0013906695254069451
+          ],
+          [
+            -0.0005191187302888595,
+            0.001390669525406945
+          ]
+        ],
+        "full_current_amplitude": [
+          [
+            0.0004268396155578018,
+            -0.0013488501711016762
+          ],
+          [
+            -0.0004268396155578018,
+            0.0013488501711016762
+          ]
+        ],
+        "full_reciprocity_power": 4.40689197006459e-06,
+        "full_current_power": 4.0031776829811075e-06,
+        "full_reciprocity_current_amplitude_difference": 0.07161056386851958,
+        "rank2": {
+          "source_relative_residual": 0.9999999999999992,
+          "reciprocity_amplitude": [
+            [
+              3.88780679115141e-18,
+              -8.7386392541359e-19
+            ],
+            [
+              3.8878067911508386e-18,
+              -8.738639254120656e-19
+            ]
+          ],
+          "reciprocity_power": 3.175735961091743e-35,
+          "same_reciprocity_source_projection_output_error": 1.0,
+          "current_amplitude": [
+            [
+              4.522677025618757e-18,
+              -1.1390047753134697e-18
+            ],
+            [
+              4.512353998441303e-18,
+              -1.1343187951808546e-18
+            ]
+          ],
+          "current_power": 4.339995709259637e-35,
+          "measured_current_vs_full_current_error": 1.0,
+          "measured_current_power_relative_difference": -1.0,
+          "measured_vs_reciprocal_same_projected_source_error": 0.17124279620802368
+        },
+        "rank3": {
+          "source_relative_residual": 0.010897698495870075,
+          "reciprocity_amplitude": [
+            [
+              0.0005194750108977678,
+              -0.0013905782006060094
+            ],
+            [
+              -0.000519475010897768,
+              0.0013905782006060096
+            ]
+          ],
+          "reciprocity_power": 4.407124037895767e-06,
+          "same_reciprocity_source_projection_output_error": 0.00024777604651355105,
+          "current_amplitude": [
+            [
+              0.0004858203425094119,
+              -0.0014146973838341462
+            ],
+            [
+              -0.000487058187687196,
+              0.0014177332937000367
+            ]
+          ],
+          "current_power": 4.484583463281831e-06,
+          "measured_current_vs_full_current_error": 0.06358634779116519,
+          "measured_current_power_relative_difference": 0.1202559112845143,
+          "measured_vs_reciprocal_same_projected_source_error": 0.028191549696288194
+        },
+        "rank4": {
+          "source_relative_residual": 1.5516926173910755e-14,
+          "reciprocity_amplitude": [
+            [
+              0.0005191187302888631,
+              -0.0013906695254069586
+            ],
+            [
+              -0.0005191187302888631,
+              0.0013906695254069588
+            ]
+          ],
+          "reciprocity_power": 4.406891970064675e-06,
+          "same_reciprocity_source_projection_output_error": 9.505411047388118e-15,
+          "current_amplitude": [
+            [
+              0.000485338315886151,
+              -0.0014148215974004138
+            ],
+            [
+              -0.00048655541682675996,
+              0.0014179422846741676
+            ]
+          ],
+          "current_power": 4.484569929648324e-06,
+          "measured_current_vs_full_current_error": 0.06344531691468772,
+          "measured_current_power_relative_difference": 0.12025253056185381,
+          "measured_vs_reciprocal_same_projected_source_error": 0.028296696479004797
+        }
+      }
+    ]
+  },
+  "source_sha256": {
+    "sptc_toolbox\\green_scattering.py": "91ea0764335706178a6321fc07010f9044c339a0adf9c47e8e4996f5722af7cf",
+    "sptc_toolbox\\projected_green.py": "6351167821ce83bf7a85cd9b0cf077bf4ce81ccf96556a3f9f7b0adf79f6e622",
+    "sptc_toolbox\\results\\connected_physics\\ports\\weak_pattern_r24_time\\carrier.npz": "875da2c2cfadbfd68e26eaae905e023cbb3249419f01b48b2118a4a8195f5adc",
+    "sptc_toolbox\\results\\connected_physics\\ports\\weak_pattern_r24_time\\summary.json": "d794b6836eebaad4fa6ffdf3dbe9070895384ea4e43e5d6288a47ef9c0f94415",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\basis\\source_basis.npz": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\basis\\summary.json": "02757a6046d2257f539e2301dced6f13d6735857e8e91782b6f6b5a069a1c46c",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\native_mirror_control\\summary.json": "c0262ee0ba3a609e6ebbf256dff015439ec771f219566f318aa7286693aac8e7",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.388_q2\\response_t1200.npz": "238b2e906c5e119610e9362d5860303476202b0de77c3755266519e3d1b27dd0",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.388_q2\\response_t900.npz": "88b63a5d96c98e7802444a3f571b34ad5f011ffa001d67064667f814b50f174b",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.388_q2\\summary.json": "69e30255e3adda603753c12a31ff89255abe9e459091d0dea1681f44b3de315c",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.388_q3\\response_t1200.npz": "3bd4a7c022b396b152412c0f793d3a832eac1e833c7fbe196a17967cd7408bfc",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.388_q3\\response_t900.npz": "1afc5c9f11fca0a2c8f6666d57c21cd2d6e9efb3ff29ff23886968c58e5a31b6",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.388_q3\\summary.json": "f1e4ac3e871ffeee99c59d0175bcc3406207522af6105d699d5ead56b1e557a9",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.398_q2\\response_t1200.npz": "636f3366f4eb53c804e3d161c62a22b6d1a2043d31c642b18f2c52e5db1c47c4",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.398_q2\\response_t900.npz": "de240fb30fabe17bcd8170040bdb7d035831bab8f58480a69884be5aba578b34",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.398_q2\\summary.json": "dece5f80f8411949283a02bfdb201a38f061c568f1c7337092342f47977eb625",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.398_q3\\response_t1200.npz": "f3d2c4ae884bde43064cf52dba454827431f7d9e922e7c38d66265ed1b553153",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.398_q3\\response_t900.npz": "49abe62036534d67072ad3920c092c4a9f505484bd5b643da706bd8c81e74ab1",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.398_q3\\summary.json": "01ec755a89655781b9171d4902e2c13a66ac5d028849e93b541a8b185afead50",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.408_q2\\response_t1200.npz": "863f53604724edb2e20456577e76e06aa27418d9a94a8803f02a179ae66fd0a2",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.408_q2\\response_t900.npz": "414a8aa98b299d63c0f220ec90d0234611cb58311950e1f51a589bcbf4b9c087",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.408_q2\\summary.json": "60b2173b7acdce15517d5157c1370fd228d95ea3a222969ad3838e77b21a096e",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.408_q3\\response_t1200.npz": "5e7921ceac5c27f60e1a685b2c249536086e7066394299ca97a98aca1b6bf085",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.408_q3\\response_t900.npz": "fe9a19e2d5113db0f4ba813ba855b539183f35100fff0d2f324660a9fbf7aa44",
+    "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.408_q3\\summary.json": "d97c4d2789f9ab496dcc02052a1fddf438f3b22c8509e383478b2c93e4ee460a",
+    "sptc_toolbox\\results\\discrete_green_20261017\\yee\\material_mirror\\summary.json": "8f3f224480937b9719d8ac26a28c7fa8a92ec392e11cbfc5f2314eb9469fd90c",
+    "sptc_toolbox\\results\\discrete_green_20261017\\yee\\parity_source_probe\\source_lift.npz": "6081165c5f295c19269eeb6696bb875fd1b8fd8ce6de910a3b020d203ec9b226",
+    "sptc_toolbox\\results\\patterned_green_20261016\\basis\\source_basis.npz": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.388_q0\\response_t1200.npz": "80d71da84f87899ab5ff70d1f49af57e552038d765ff655610f56ede74c6ec05",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.388_q0\\response_t900.npz": "77a936345579bc2fc28c2ffd5362411848f999b34e80799ada7e99979865eaa1",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.388_q0\\summary.json": "82c5064df4defcd74a1affc2de0aafe77e188d8f0fd472962670813cb663a92d",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.388_q1\\response_t1200.npz": "9677f632c4192bfdea708b75f69c5174a6b54339cf169990818670e5842aa986",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.388_q1\\response_t900.npz": "edb7f8f93b42f898158fb44753b85d4f8f877cafec5788aa86aae7ca511819c3",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.388_q1\\summary.json": "4fe4a0839b8dfd1b4ef6677c787bb7a957aea41292bf6df12c08a8390e09037a",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.398_q0\\response_t1200.npz": "e0c82d34522f25c324443e7bc47ed6b0c43fb7850791131c39f5607591ea7f8c",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.398_q0\\response_t900.npz": "f5adc594e05241e301728fa6cea077089e7b9f0887b4481d6265c5def9e64a54",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.398_q0\\summary.json": "04212b7452f75f0629e5382d19dd6b5c372356f50a1b49e051aabab858f24971",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.398_q1\\response_t1200.npz": "85ede30920984df7d7f50a1f2883672e24a9cb00876bac813028674542bdf447",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.398_q1\\response_t900.npz": "467fdc7c61d82b6b7ce3598de8a3b22179ab84f1a412d228c7435dd77afc09ea",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.398_q1\\summary.json": "2527326dcccac6c8e5939713500d9a5b525a11b8786cfb8fa1047490b8c66588",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.408_q0\\response_t1200.npz": "24b2f0c99ceda8b5366a019bc0ab780a8e64c6f1fde742db312935c9473c4182",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.408_q0\\response_t900.npz": "5ebda0ef436252d877837473226d34e231c064d1f49947f8c0b80cbda842a256",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.408_q0\\summary.json": "d8750815c160dfec2f3810c7d520553666b97ece4675ad0630401abddf251d43",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.408_q1\\response_t1200.npz": "6ed1021b2822af2c6e55cc2fdf01165f51f3d6f7b94f775b7091f577939a8d84",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.408_q1\\response_t900.npz": "8edf6e75ad2a0083fc6c929513e522108eaed8b96a1041a2017618d1b1d99bcd",
+    "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.408_q1\\summary.json": "4153f9bb464bf33e8e0dd7b7b461f1c9a6fb7809821ec085bc0ff344e89ed5d8",
+    "sptc_toolbox\\results\\targeted_resolution\\ports\\reciprocal_f0388_r24\\carrier.npz": "872b26754913b96890e3075577f7cc37c07b8cc67bf018b1dd84c39d22d7a1f9",
+    "sptc_toolbox\\results\\targeted_resolution\\ports\\reciprocal_f0388_r24\\summary.json": "801815aff799c5158a9d144a040334a864012952df618c2eb76a0e576432eb10",
+    "sptc_toolbox\\results\\targeted_resolution\\ports\\reciprocal_f0408_r24\\carrier.npz": "d0912498e1b9d6d481230cd822847f5747e6aaa1249cdcee3687208b977baf91",
+    "sptc_toolbox\\results\\targeted_resolution\\ports\\reciprocal_f0408_r24\\summary.json": "476b78926145a30a65f7a357856acf1baf64fa75f6d1a89765f874a29f3e6cfd",
+    "sptc_toolbox\\scripts\\analyze_parity_green.py": "bc5b7534089b0ee4be1d4ee6a6f88e4c62e77a51d8e65218105052833ab64024",
+    "sptc_toolbox\\scripts\\analyze_patterned_green.py": "00e6e389fd02bb1e7b06e14de4dfe9fa5feacab2be66118ff0304dbaacebbe5b",
+    "sptc_toolbox\\scripts\\build_parity_green_basis.py": "3f12d98829164887e13317957b07ecc41d4982a0ea0c855d1fccdbc1409790b2",
+    "sptc_toolbox\\scripts\\meep_parity_control.py": "8e160cca67611ff44d332be39efc5d4b2c6fa68afd5cdead42c8a04f130db4c0",
+    "sptc_toolbox\\scripts\\meep_template_response.py": "06b6fc9e056e3d7f97e4a9c4f74e0caf013524e043d39b7f42d18145714940f2"
+  }
+}

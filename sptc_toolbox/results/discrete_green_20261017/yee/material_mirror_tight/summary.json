@@ -1,0 +1,78 @@
+{
+  "status": "STATIC_DISCRETE_INVERSE_EPSILON_MIRROR_AUDIT",
+  "subpixel_tol": 1e-07,
+  "subpixel_maxeval": 1000000,
+  "eps_averaging": true,
+  "native_mirror_symmetry": false,
+  "relative_tensor_mirror_residual": 0.004228766523944564,
+  "rows": [
+    {
+      "component": "x",
+      "direction": "x",
+      "coefficient_norm": 32.30943884830089,
+      "mirror_difference_norm": 0.2181293370851358,
+      "maximum_difference": 0.06296851574212889
+    },
+    {
+      "component": "x",
+      "direction": "y",
+      "coefficient_norm": 2.0149374461045984,
+      "mirror_difference_norm": 0.0,
+      "maximum_difference": 0.0
+    },
+    {
+      "component": "x",
+      "direction": "z",
+      "coefficient_norm": 5.545078586179715e-40,
+      "mirror_difference_norm": 1.1087362978016175e-39,
+      "maximum_difference": 2.2374246668959528e-40
+    },
+    {
+      "component": "y",
+      "direction": "x",
+      "coefficient_norm": 2.0149374461045984,
+      "mirror_difference_norm": 0.0,
+      "maximum_difference": 0.0
+    },
+    {
+      "component": "y",
+      "direction": "y",
+      "coefficient_norm": 32.56396151749408,
+      "mirror_difference_norm": 0.12593703148425778,
+      "maximum_difference": 0.06296851574212889
+    },
+    {
+      "component": "y",
+      "direction": "z",
+      "coefficient_norm": 6.399977584377761e-40,
+      "mirror_difference_norm": 1.2796730186298496e-39,
+      "maximum_difference": 1.7089939214164583e-40
+    },
+    {
+      "component": "z",
+      "direction": "x",
+      "coefficient_norm": 5.545078586179715e-40,
+      "mirror_difference_norm": 1.0753391666571356e-39,
+      "maximum_difference": 2.2276967335616224e-40
+    },
+    {
+      "component": "z",
+      "direction": "y",
+      "coefficient_norm": 6.399977584377761e-40,
+      "mirror_difference_norm": 1.2411269660563255e-39,
+      "maximum_difference": 1.7015635130624732e-40
+    },
+    {
+      "component": "z",
+      "direction": "z",
+      "coefficient_norm": 37.884140631801614,
+      "mirror_difference_norm": 0.0,
+      "maximum_difference": 0.0
+    }
+  ],
+  "scope": "Same r24 symmetric physical geometry, get_chi1inv on native component positions; no time evolution or response symmetrization.",
+  "source_sha256": {
+    "sptc_toolbox/results/discrete_green_20261017/yee/parity_source_probe/source_lift.npz": "6081165c5f295c19269eeb6696bb875fd1b8fd8ce6de910a3b020d203ec9b226",
+    "sptc_toolbox/scripts/audit_meep_material_mirror.py": "ec011f551507c130724d3a5d7e2b4673fd7a03e5c142a7e6f47c00904e181268"
+  }
+}

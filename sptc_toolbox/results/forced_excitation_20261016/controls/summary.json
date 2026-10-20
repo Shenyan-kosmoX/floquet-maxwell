@@ -1,0 +1,166 @@
+{
+  "scope": "Analytic finite-model controls; native spatial case is reported separately",
+  "phase_sensitive": {
+    "legacy_signed_column_power": 2.7777814812183514,
+    "phase_pi_over_4": 4.999995139187265,
+    "phase_3pi_over_4": 0.5555678232494363,
+    "stability": {
+      "status": "stable",
+      "maximum_growth_rate": -0.0025000605490389195,
+      "growth_rates": [
+        -0.007499939450960932,
+        -0.0025000605490389195
+      ],
+      "multipliers": [
+        [
+          -0.9539695661404283,
+          -2.5080288119757726e-19
+        ],
+        [
+          -0.9844143888402137,
+          2.5880699314279593e-19
+        ]
+      ],
+      "period": 6.283185307179586,
+      "growth_tolerance": 1e-09,
+      "operator_sha256": "1dd26d930ced328d38553476454d1c68f3d51acd3f5c680aaacf4284725256c7",
+      "state_dimension": 2,
+      "diagnostics": {
+        "method": "independent_two_tolerance_monodromy",
+        "temporal_integration_required": true,
+        "convergence_evidence": "Two tolerance/maximum-step period integrations; multiplier matching",
+        "coarse_rtol": 2e-09,
+        "coarse_atol": 2e-11,
+        "refined_rtol": 4.0000000000000007e-10,
+        "refined_atol": 4e-12,
+        "coarse_max_step": 0.039269908169872414,
+        "refined_max_step": 0.019634954084936207,
+        "coarse_function_evaluations": 1937,
+        "refined_function_evaluations": 3857,
+        "observed_growth_rate_change": 1.2923689896027213e-16,
+        "maximum_matched_multiplier_change": 7.771561813525215e-16,
+        "period_map_relative_change": 7.727993192817746e-16,
+        "eigenvector_condition_number": 2.0176513894306867,
+        "eigen_relative_residual": 4.401338791879388e-16,
+        "eigenvalue_roundoff_sensitivity_estimate": 7.168137690281237e-15,
+        "conditioning_warning": false,
+        "numerical_growth_uncertainty_estimate": 1.1589068171948042e-15,
+        "classification_margin": 1.0000011589068172e-09,
+        "sign_resolved": true,
+        "assessment": "Finite-model spectral decay/growth; not a full physical stability certificate",
+        "uncertainty_scope": "Convergence and diagonalizable eigenvalue-sensitivity estimates; not rigorous bounds at an EP",
+        "marginal_meaning": "Neutral or numerically unresolved sign; a unique causal steady state is not established"
+      },
+      "causal_steady_state_supported": true,
+      "scope": "Homogeneous stability of the supplied finite PeriodicStateSpace H, in its tau units"
+    }
+  },
+  "narrow_pulse": {
+    "expected_final_state": 0.01,
+    "unresolved_default_final_state": [
+      0.0,
+      0.0
+    ],
+    "breakpoint_final_state": [
+      0.009999999999999789,
+      0.0
+    ],
+    "declared_switch_times": [
+      5,
+      5.01
+    ],
+    "no_claim_of_automatic_discovery_of_arbitrary_source_features": true
+  },
+  "unstable": {
+    "stability": {
+      "status": "unstable",
+      "maximum_growth_rate": 0.2,
+      "growth_rates": [
+        0.2
+      ],
+      "multipliers": [
+        [
+          3.5135856242857333,
+          0.0
+        ]
+      ],
+      "period": 6.283185307179586,
+      "growth_tolerance": 1e-09,
+      "operator_sha256": "4cecb665519410ea4c0e11d7b926563f5cddfe38b9197906a16fb0be46983c2a",
+      "state_dimension": 1,
+      "diagnostics": {
+        "method": "static_finite_matrix_eigenproblem",
+        "temporal_integration_required": false,
+        "convergence_evidence": "No temporal discretization: static H eigenproblem",
+        "observed_growth_rate_change": 0.0,
+        "eigenvector_condition_number": 1.0,
+        "eigen_relative_residual": 0.0,
+        "eigenvalue_roundoff_sensitivity_estimate": 3.552713678800501e-15,
+        "conditioning_warning": false,
+        "numerical_growth_uncertainty_estimate": 3.552713678800501e-15,
+        "classification_margin": 1.0000035527136789e-09,
+        "sign_resolved": true,
+        "assessment": "Finite-model spectral decay/growth; not a full physical stability certificate",
+        "uncertainty_scope": "Convergence and diagonalizable eigenvalue-sensitivity estimates; not rigorous bounds at an EP",
+        "marginal_meaning": "Neutral or numerically unresolved sign; a unique causal steady state is not established"
+      },
+      "causal_steady_state_supported": false,
+      "scope": "Homogeneous stability of the supplied finite PeriodicStateSpace H, in its tau units"
+    },
+    "formal_response": [
+      0.0,
+      5.0
+    ],
+    "zero_state_output_at20": [
+      0.0,
+      -267.99075009554406
+    ],
+    "analytic_output_at20": [
+      0.0,
+      -267.9907501657212
+    ]
+  },
+  "dark": {
+    "finite_S": [
+      0.5999999999999999,
+      -0.7999999999999999
+    ],
+    "power": 0.9999999999999998,
+    "diagnostics": {
+      "linear_solve_relative_residual": 1.0446819141822231e-16,
+      "linear_system_condition": "inf",
+      "omitted_equation_harmonics": [],
+      "omitted_equation_relative_residual_by_input": [
+        0.0
+      ],
+      "maximum_boundary_relative_residual": 0.0,
+      "boundary_gate_passed": true,
+      "boundary_tolerance": 1e-07,
+      "state_window_halfwidth": 0,
+      "requested_halfwidth": 0,
+      "guard_harmonics": 0,
+      "output_not_cropped": true,
+      "all_output_sidebands_retained": true,
+      "stability_scope": "Algebraic harmonic response; existence of a causal steady state requires separate stability verification",
+      "singularity_scope": "Default raises; explicit compatible_observable requires an unforced left nullspace, an invisible right nullspace and a semisimple zero pole",
+      "convergence_scope": "Omitted-equation residual detects finite-harmonic loss; not a global truncation error bound near resonances",
+      "singular_policy": "compatible_observable",
+      "numerical_rank": 1,
+      "numerical_nullity": 1,
+      "singular_value_cutoff": 2.3832327871173817e-15,
+      "nullspace_relative_tolerance": 7.105427357601002e-15,
+      "state_response_unique": false,
+      "observable_response_unique": true,
+      "state_selection": "Minimum Euclidean norm: zero right-nullspace component; free dark-state amplitudes are unspecified, not inferred from a source or initial condition",
+      "left_null_forcing_relative_by_input": [
+        0.0
+      ],
+      "right_null_output_relative_by_output": [
+        0.0
+      ],
+      "left_right_nullspace_minimum_pairing": 1.0,
+      "zero_pole_semisimple_at_rank_tolerance": true,
+      "nullspace_scope": "Finite harmonic system at reported floating-point rank tolerance; observable uniqueness does not establish a causal steady state or stability"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "completed": true,
+  "returncode": 0,
+  "elapsed_seconds": 601.3482068979993,
+  "command": [
+    "<meep-environment>/bin/python",
+    "<source-checkout>/sptc_toolbox/scripts/meep_smooth_reference.py",
+    "response",
+    "--output",
+    "<source-checkout>/sptc_toolbox/results/full_floquet_20261017/sampling/cw_q6_f0388",
+    "--label",
+    "solve_supported",
+    "--frequency",
+    ".388",
+    "--sector",
+    "1",
+    "--polarization",
+    "<source-checkout>/sptc_toolbox/results/full_floquet_20261017/sampling/cw_q6_f0388/q6_source_supported.npz",
+    "--tolerance",
+    "1e-6",
+    "--L",
+    "10",
+    "--maxiters",
+    "500"
+  ]
+}

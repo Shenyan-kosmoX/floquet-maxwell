@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-20",
+  "platform": "Windows",
+  "python": "3.12.14",
+  "environment": "new isolated venv, package dependencies installed from PyPI",
+  "install": {
+    "command": [
+      "python",
+      "-m",
+      "pip",
+      "install",
+      "-e",
+      ".[legume,test]"
+    ],
+    "exit_code": 0
+  },
+  "wheel": {
+    "built": true,
+    "isolated_import_verified": true,
+    "modules": [
+      "sptc_toolbox",
+      "ptc_fig4",
+      "lpor_71318.field_projection",
+      "sptc_toolbox.sphere_material"
+    ],
+    "bytes": 498560
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "legume-gme": "1.0.3",
+    "matplotlib": "3.10.3",
+    "treams": "0.4.5"
+  },
+  "optional_version_note": "The release regression used PyPI treams 0.4.5. Historical sphere results keep their recorded original versions.",
+  "fresh_calculation": {
+    "command": [
+      "python",
+      "sptc_toolbox/scripts/reproduce_jin2025_tensor.py",
+      "--gmax",
+      "4.1",
+      "--grid-size",
+      "9",
+      "--output",
+      ".sors-runs/release-n9"
+    ],
+    "exit_code": 0,
+    "points": 80,
+    "seconds": 14.82044180000048,
+    "couplings_sha256": "3a8d8c45ff56391c9a18fad3d041843799e140c45ef83d737ef767c16b48b54b"
+  },
+  "plot": {
+    "command": [
+      "python",
+      "sptc_toolbox/scripts/plot_jin2025_tensor.py",
+      "--dataset",
+      ".sors-runs/release-n9/n3.47_g4.1_N9/coupling.npz",
+      "--output",
+      ".sors-runs/release-n9-plot"
+    ],
+    "exit_code": 0,
+    "publisher_image_required": false,
+    "visual_review": "Computed four-panel figure inspected; labels, masks and shared scale visible."
+  },
+  "targeted_regression": {
+    "passed": 32,
+    "scope": "28 native-field/tensor/patterned-drive tests and four public CLI tests"
+  },
+  "full_regression": {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "sptc_toolbox/tests",
+      "ptc_fig4/tests",
+      "lpor_71318/tests",
+      "tests"
+    ],
+    "passed": 1003,
+    "skipped": 13,
+    "warnings": 32,
+    "seconds": 75.649,
+    "skips": "Historical native-pickle radiation and +/-k caches are not bundled; tests explicitly skip these fixtures."
+  },
+  "validator": {
+    "command": [
+      "python",
+      "sptc_toolbox/scripts/validate_jin2025_tensor.py",
+      "--root",
+      "<historical-trusted-native-cache-root>",
+      "--output",
+      ".sors-runs/release-historical-input-validation"
+    ],
+    "exit_code": 0,
+    "scope": "Existing trusted native cache and coupling arrays read-only; new validation output, no fresh 25x25 solve.",
+    "spatial_points": 5,
+    "maximum_floquet_multiplier_error": 3.900643803712814e-11
+  },
+  "scientific_scope": "Release installation and selected execution checks supplement the historical case evidence. Historical tolerances and scientific verdicts are unchanged."
+}

@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-20",
+  "platform": "Windows",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "legume-gme": "1.0.3",
+    "matplotlib": "3.10.3"
+  },
+  "environment_type": "existing_project_environment",
+  "fresh_output": true,
+  "command": [
+    "python",
+    "sptc_toolbox/scripts/reproduce_jin2025_tensor.py",
+    "--gmax",
+    "4.1",
+    "--grid-size",
+    "9",
+    "--output",
+    ".sors-runs/jin-reader-20261020"
+  ],
+  "exit_code": 0,
+  "points": 80,
+  "elapsed_seconds": 13.583354399999735,
+  "source_script_sha256": "8c44590df56d9ad8a8eabedef64321154c582771c66366e7b6d1c287bf76591e",
+  "output_summary_sha256": "5ba6ca8267c006972149dbd71e7bf172016520eefef2df30a338642657e93649",
+  "couplings_sha256": "3a8d8c45ff56391c9a18fad3d041843799e140c45ef83d737ef767c16b48b54b",
+  "interface_tests": {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "sptc_toolbox/tests/test_tensor_projection.py",
+      "sptc_toolbox/tests/test_patterned_drive.py",
+      "sptc_toolbox/tests/test_traveling_slab.py"
+    ],
+    "passed": 28,
+    "warnings": 14,
+    "warning_type": "Matplotlib/Pyparsing deprecation",
+    "seconds": 22.07
+  },
+  "scope": "N9 actual field projection and selected interface tests; full reference validation chain not rerun."
+}

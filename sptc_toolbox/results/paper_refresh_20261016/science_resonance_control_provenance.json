@@ -1,0 +1,35 @@
+{
+  "source": "sptc_toolbox\\results\\paper_refresh_20261016\\science_adv\\near_gamma_dense\\path_narrow_summary.json",
+  "calibrated_pump": {
+    "drive_thz": 135.96247624289217,
+    "rule": "Twice the lower Gamma A2g eigenfrequency with only the fixed DC epsilon shift; computed before dynamic spectra",
+    "status": "AUXILIARY STATIC-RESONANCE CONTROL; not published fixed136 THz reproduction"
+  },
+  "locked_pole_counts": {
+    "weak": 0,
+    "weak_calibrated": 54
+  },
+  "changes": "Pump only, defined from static Gamma DC-shifted resonance",
+  "closed_gap_edges": "No interpolated or fitted boundary",
+  "radiative_model": "Blue uses frozen common-frequency bath; local memory at Gamma shown as separate markers",
+  "memory_overlays": [
+    {
+      "config": "q32",
+      "case": "weak_calibrated",
+      "selected_roots": 2,
+      "finite_window": [
+        45.0,
+        105.0
+      ]
+    },
+    {
+      "config": "eta_half",
+      "case": "weak_calibrated",
+      "selected_roots": 2,
+      "finite_window": [
+        45.0,
+        105.0
+      ]
+    }
+  ]
+}

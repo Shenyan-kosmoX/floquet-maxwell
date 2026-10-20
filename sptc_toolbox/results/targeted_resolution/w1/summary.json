@@ -1,0 +1,40 @@
+{
+  "status": "DOMINANT_W1_RMS_ALIASING_IDENTIFIED_AND_RESOLVED_FOR_STATED_FINITE_MODEL",
+  "scope": {
+    "drive": 0.001,
+    "target_T": 3.125,
+    "gmax": 3.1,
+    "gmode_inds": [
+      0,
+      3
+    ],
+    "retained_sectors": 7,
+    "observable": "Full-domain original Ex/Ey midplane line RMS; same original packet"
+  },
+  "exact_midpoint_line_error_max": 1.1041280729088205e-06,
+  "old_native_K64_exact_RMS": 9.323581909395207,
+  "dense_integration_RMS": 10.304641473099744,
+  "dense_K": 2048,
+  "relative_RMS_change_1024_to_2048": 4.6610077939712724e-05,
+  "coherent_fold_field_error": 4.4731098462065976e-11,
+  "native32_to64_heldout_field_error": 3.1119236866576673e-06,
+  "seam_residual": {
+    "native_samples": 64,
+    "coefficient": 4.1231166203270496e-07,
+    "relative_endpoint_field_jump": 0.001008631869690133,
+    "observed_variance_increment_1024_to_2048": 0.009897949508072656,
+    "predicted_jump_variance_increment": 0.009364854081124908,
+    "relative_prediction_difference": 0.053859178258381914
+  },
+  "preserved": [
+    "Original initial packet",
+    "All original coherent fields",
+    "Full-period RMS",
+    "Historical files"
+  ],
+  "not_claimed": [
+    "New spatial Maxwell solves at dense K",
+    "Infinite-domain RMS limit of unclosed 7-sector basis",
+    "Convergence at other modulation rates, later times, larger modal spaces or different geometry"
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "status": "COMPLETED_IMPLEMENTATION_AUDIT_WITH_APPROXIMATE_CYLINDER_MODEL",
+  "scope": "Legume remains the project base; no production source modified",
+  "geometry_units": {
+    "status": "VERIFIED_IMPLEMENTATION_CONVENTIONS",
+    "legume_version": "1.0.3",
+    "radius_nm": 1030.0,
+    "height_nm": 1465.149359886202,
+    "period_nm": 3296.0,
+    "radius_over_period": 0.3125,
+    "height_over_period": 0.44452347083926036,
+    "sample_points_xyz_over_a": [
+      [
+        0,
+        0,
+        0.22226173541963018
+      ],
+      [
+        0.3124999,
+        0,
+        0.22226173541963018
+      ],
+      [
+        0.3125001,
+        0,
+        0.22226173541963018
+      ],
+      [
+        0.49,
+        0,
+        0.22226173541963018
+      ],
+      [
+        0,
+        0,
+        -1e-07
+      ],
+      [
+        0,
+        0,
+        0.44452357083926036
+      ]
+    ],
+    "sampled_epsilon": [
+      16.0,
+      16.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "expected_path_vertices_ka": [
+      [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        3.141592653589793,
+        0
+      ],
+      [
+        3.141592653589793,
+        3.141592653589793
+      ]
+    ],
+    "actual_path_vertices_ka": [
+      [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        3.141592653589793,
+        0.0
+      ],
+      [
+        3.141592653589793,
+        3.141592653589793
+      ]
+    ],
+    "max_path_difference_from_saved": 0.0,
+    "max_angular_frequency_conversion_error": 1.7763568394002505e-15,
+    "eig_sigma_semantics": "legume.freqs units f*a/c; full Hermitian eigh then nearest numeig to eig_sigma, then ascending frequency",
+    "gmode_index_semantics": "even=TE, odd=TM; integer division by 2 is vertical guided-mode order, not a parity-only switch",
+    "public_api_only": true
+  },
+  "uniform_slab": {
+    "status": "VERIFIED",
+    "checks": 8,
+    "max_absolute_error": 6.827871601444713e-14,
+    "equation": "q*h=m*pi+2*atan2(factor*alpha,q); factor=1 TE, epsilon TM",
+    "no_legume_slab_solver_reused_in_reference": true,
+    "upstream_single_G_issue": "gmax=0.1 produces IndexError in Legume 1.0.3 compute_eps_inv for uniform layer; gmax=1.1 avoids it. Current cylinder runs gmax>=2.1 are unaffected."
+  },
+  "average_reference_gamma_window": {
+    "eps_eff": "average",
+    "gmax": 6.1,
+    "gmode_inds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "numeig": 80,
+    "frequency_range_thz": [
+      36.48020681581246,
+      104.99343113004987
+    ],
+    "A2g_frequencies_thz": [
+      36.48020681581246,
+      68.76362147101432,
+      87.07811610296461,
+      91.75669684210219,
+      93.53670758690005,
+      102.91373980285441
+    ],
+    "limitation": "No other nearby A2g only within this fixed average reference; not a statement about custom-reference completeness."
+  },
+  "flattest_existing_path": {
+    "gamma_seed_index": 18,
+    "gamma_seed_irrep": "A2u",
+    "gamma_frequency_thz": 77.75927422510811,
+    "bandwidth_thz": 0.33976829486255156,
+    "min_frequency_thz": 77.41950593024556,
+    "max_frequency_thz": 77.75927422510811,
+    "minimum_overlap_squared": 0.9582415679979109,
+    "ambiguous_points": 0,
+    "boundary_mode_hits": 0
+  },
+  "integration": {
+    "completed_exterior_windows_a": [
+      1,
+      4,
+      16
+    ],
+    "source_k_indexes": [
+      7,
+      8,
+      9,
+      22,
+      23,
+      24
+    ],
+    "all_tested_pair_selections_unchanged": true,
+    "max_selected_mode_norm_error_16a": 8.536772311273921e-08,
+    "max_full_gram_error_16a": 4.185197667818494e-05,
+    "k22_gram_errors": {
+      "original_window_refined_quadrature": 0.09232578078966273,
+      "tail_4a": 0.006550073325323893,
+      "tail_16a": 1.669461033777262e-07
+    },
+    "diagnosis": "Exterior tails dominate the old norm error; improved integration does not switch the tested A2g transitions."
+  },
+  "new_native_reference_evidence": {
+    "source": "../../legume_native_diagnosis/report.md",
+    "physical_epsilon": 16,
+    "reference_epsilon": 16,
+    "nearby_A2g_frequencies_thz_approx": [
+      67.9845,
+      69.7495
+    ],
+    "old_field_projection_squared_approx": [
+      0.603,
+      0.396
+    ],
+    "interpretation": "Use both same-symmetry modes and test physical-subspace convergence; average-reference 80-mode scan does not rule out a second parent."
+  },
+  "kz_symmetry": "Vertical incidence-plane reflection spanned by in-plane k and z; not horizontal z parity",
+  "reproduction_command": "python scripts/audit_static_implementation.py --stage all",
+  "report": "../../../docs/static_implementation_audit.md",
+  "limits": [
+    "Finite tested parameter sets only",
+    "No open Ge QNM proof",
+    "Radial array fields do not uniquely identify single-cylinder Mie parent order",
+    "Native reference-basis evidence suggests incomplete old basis, not a proven universal root cause"
+  ]
+}

@@ -1,0 +1,4770 @@
+{
+  "status": "ACTUAL_FIVE_FREQUENCY_NATIVE_TENSOR_FLOQUET_DATASET",
+  "completed": true,
+  "spatial_backend": "Legume-seeded + Meep static full-wave Green hybrid",
+  "resolution": 40,
+  "material_directory": "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material",
+  "rank": 17,
+  "frequencies": [
+    0.378,
+    0.388,
+    0.398,
+    0.408,
+    0.418
+  ],
+  "carrier_frequency": 0.398,
+  "drive_frequency": 0.01,
+  "cosine_epsilon_amplitude": 0.01,
+  "n_harmonics": 2,
+  "S_shape": [
+    20,
+    10
+  ],
+  "input_keys": [
+    [
+      -2,
+      "bottom x"
+    ],
+    [
+      -2,
+      "top x"
+    ],
+    [
+      -1,
+      "bottom x"
+    ],
+    [
+      -1,
+      "top x"
+    ],
+    [
+      0,
+      "bottom x"
+    ],
+    [
+      0,
+      "top x"
+    ],
+    [
+      1,
+      "bottom x"
+    ],
+    [
+      1,
+      "top x"
+    ],
+    [
+      2,
+      "bottom x"
+    ],
+    [
+      2,
+      "top x"
+    ]
+  ],
+  "output_keys": [
+    [
+      -2,
+      "bottom x"
+    ],
+    [
+      -2,
+      "top x"
+    ],
+    [
+      -2,
+      "bottom y"
+    ],
+    [
+      -2,
+      "top y"
+    ],
+    [
+      -1,
+      "bottom x"
+    ],
+    [
+      -1,
+      "top x"
+    ],
+    [
+      -1,
+      "bottom y"
+    ],
+    [
+      -1,
+      "top y"
+    ],
+    [
+      0,
+      "bottom x"
+    ],
+    [
+      0,
+      "top x"
+    ],
+    [
+      0,
+      "bottom y"
+    ],
+    [
+      0,
+      "top y"
+    ],
+    [
+      1,
+      "bottom x"
+    ],
+    [
+      1,
+      "top x"
+    ],
+    [
+      1,
+      "bottom y"
+    ],
+    [
+      1,
+      "top y"
+    ],
+    [
+      2,
+      "bottom x"
+    ],
+    [
+      2,
+      "top x"
+    ],
+    [
+      2,
+      "bottom y"
+    ],
+    [
+      2,
+      "top y"
+    ]
+  ],
+  "checkpoint": 2000,
+  "static_rows": [
+    {
+      "fa_over_c": 0.378,
+      "R_condition": 3115.8065521759463,
+      "native_constitutive_E_equals_KD_relative_residuals": [
+        7.494603528194092e-15,
+        5.850790592270381e-15,
+        9.88777676255023e-15,
+        5.506724131829274e-15,
+        9.242852199654116e-15,
+        5.8876293615237344e-15,
+        5.395394434635379e-15,
+        5.6680177357475796e-15,
+        2.182222352771088e-14,
+        4.9468683108728345e-15,
+        2.13531237412534e-14,
+        5.458572720466642e-15,
+        6.163773907590477e-15,
+        6.0901924400766055e-15,
+        3.0652336382028353e-15,
+        6.7544834531851705e-15,
+        6.261374193640292e-15,
+        6.347881412576217e-15,
+        3.3822380859807543e-15
+      ],
+      "R_transpose_relative_residual": 4.1052545916403074e-14,
+      "reciprocity_x_port_relative_residual": 1.465371852134104e-06,
+      "work_matrix_relative_residual": 5.8838706630792225e-05,
+      "net_work_matrix_relative_residual": 5.883870651445588e-05,
+      "source_work_diagonal": [
+        0.046665855542780924,
+        0.4849607358238134,
+        0.0001432181407022609,
+        0.09369663882158817,
+        0.0017031208527762522,
+        0.3729995277820473,
+        0.00021856346977287014,
+        0.07546223281869256,
+        7.933094680400071e-06,
+        0.033476842400062504,
+        0.03849665183849707,
+        0.0017768700829652747,
+        0.000803159925260433,
+        0.00016053211746230265,
+        0.046280525019788715,
+        1.6578935451623057e-05,
+        0.00810618288750912
+      ],
+      "template_output_power": [
+        0.04666585551407665,
+        0.484960701480683,
+        0.00014321796119971813,
+        0.09369664319786292,
+        0.0017031132410087043,
+        0.37298289921670713,
+        0.00021656632639483473,
+        0.0754595569387598,
+        8.425516347870793e-06,
+        0.03347684231082403,
+        0.038499610912060264,
+        0.0017768693711838063,
+        0.0008029404727305566,
+        0.00016052557274910385,
+        0.046291713180301855,
+        1.657871047040873e-05,
+        0.00810622283726974
+      ],
+      "source_work_absolute_diagonal_defects": [
+        -2.8704275067958918e-11,
+        -3.434313039507586e-08,
+        -1.7950254276683994e-10,
+        4.376274745365727e-09,
+        -7.61176754786319e-09,
+        -1.662856534018209e-05,
+        -1.9971433780354114e-06,
+        -2.6758799327591953e-06,
+        4.924216674707221e-07,
+        -8.923847077957348e-11,
+        2.9590735631940257e-06,
+        -7.117814684008683e-10,
+        -2.194525298763973e-07,
+        -6.544713198794981e-09,
+        1.1188160513139755e-05,
+        -2.2498121432591224e-10,
+        3.9949760619398256e-08
+      ],
+      "source_work_relative_diagonal_defects": [
+        6.151022998312818e-10,
+        7.08163112148377e-08,
+        1.2533506013041422e-06,
+        4.670684664896878e-08,
+        4.469305590061487e-06,
+        4.4580660568285127e-05,
+        0.009137590010402154,
+        3.545985631234012e-05,
+        0.058444093767043924,
+        2.6656776560087656e-09,
+        7.685983034875493e-05,
+        4.0058160426283607e-07,
+        0.0002732364040763582,
+        4.076887106613952e-05,
+        0.0002416881930803236,
+        1.3570305221490374e-05,
+        4.928283051351911e-06
+      ],
+      "work_hermitian_eigenvalues": [
+        -3.4028106878075826e-06,
+        -6.700674994593007e-09,
+        -3.266975407089622e-10,
+        -5.340403463412124e-12,
+        -4.661014641144037e-13,
+        2.2509475516147396e-14,
+        7.63952681134898e-14,
+        1.1239204754428458e-13,
+        2.005413521737537e-13,
+        8.08098892141239e-12,
+        1.2378859102475672e-09,
+        4.5555465333195826e-07,
+        1.537377540107543e-05,
+        0.0002261615270718212,
+        0.08394290425265191,
+        0.541635640865749,
+        0.5791580421758117
+      ],
+      "static_input_power": [
+        0.9999999999999996,
+        1.0
+      ],
+      "static_output_power": [
+        1.0000000627696026,
+        1.0000000627696024
+      ],
+      "incoming_identity_relative_residual": 1.4171228943200963e-09,
+      "static_flux_matrix_relative_residual": 8.879570163365162e-08,
+      "template_incoming_power": [
+        8.697867458596858e-14,
+        9.121242766545032e-13,
+        2.8719594937886217e-16,
+        1.779679269960003e-13,
+        4.037091308188207e-15,
+        7.243793606735791e-13,
+        1.0492146621022443e-12,
+        1.493538137768749e-13,
+        1.3130774714660125e-15,
+        6.240568525572733e-14,
+        7.501740713653301e-14,
+        3.3932316341388394e-15,
+        1.816035578010123e-15,
+        1.0194041326262205e-15,
+        8.827207422717359e-14,
+        7.709143426292725e-17,
+        1.5483515356379538e-14
+      ]
+    },
+    {
+      "fa_over_c": 0.388,
+      "R_condition": 3393.161454062911,
+      "native_constitutive_E_equals_KD_relative_residuals": [
+        6.9994976256519966e-15,
+        6.0261474944368156e-15,
+        7.65077511446614e-15,
+        5.2601541127076816e-15,
+        7.774819177418984e-15,
+        5.8171783659366144e-15,
+        5.378262284543585e-15,
+        5.7406641780122856e-15,
+        1.1178764281343379e-14,
+        5.080386674396035e-15,
+        1.1044371074927623e-14,
+        5.88647693298434e-15,
+        6.335603282309092e-15,
+        5.732317385886074e-15,
+        3.1729420189971695e-15,
+        7.846476850289822e-15,
+        6.4098827898932965e-15,
+        8.757988684858659e-15,
+        3.624444175726152e-15
+      ],
+      "R_transpose_relative_residual": 9.331386457327441e-15,
+      "reciprocity_x_port_relative_residual": 1.4182892125997773e-06,
+      "work_matrix_relative_residual": 0.0001020218793371675,
+      "net_work_matrix_relative_residual": 0.00010202187943259797,
+      "source_work_diagonal": [
+        0.22658667512224093,
+        0.4858657771556205,
+        0.004072474692307637,
+        0.08489934355254859,
+        0.005848190251071316,
+        0.37958855824484056,
+        0.05811941516837903,
+        0.06808687511419406,
+        0.004804351091723347,
+        0.037029695230798444,
+        0.03871013491997965,
+        0.002703624596885897,
+        0.0005468144253599404,
+        4.7763220299735956e-05,
+        0.046813659254382946,
+        5.6208088160101714e-06,
+        0.007197324794775532
+      ],
+      "template_output_power": [
+        0.22658667510828714,
+        0.4858657728684375,
+        0.004072474614865526,
+        0.08489934647055389,
+        0.005848187241325316,
+        0.3795817387121429,
+        0.05804283798650005,
+        0.06808581671067525,
+        0.004797809371211783,
+        0.03702969497058951,
+        0.03871240084350057,
+        0.0027036243205030824,
+        0.0005467260149648837,
+        4.7759873129913024e-05,
+        0.04682020554445851,
+        5.618963497186707e-06,
+        0.007197490814759544
+      ],
+      "source_work_absolute_diagonal_defects": [
+        -1.3953782573850049e-11,
+        -4.2871829974977516e-09,
+        -7.744211088372976e-11,
+        2.918005295726722e-09,
+        -3.009746000169622e-09,
+        -6.819532697655006e-06,
+        -7.657718187897844e-05,
+        -1.0584035188138108e-06,
+        -6.541720511564139e-06,
+        -2.602089307912614e-10,
+        2.265923520920754e-06,
+        -2.763828146380709e-10,
+        -8.841039505667284e-08,
+        -3.3471698229322537e-09,
+        6.546290075563899e-06,
+        -1.8453188234642453e-09,
+        1.6601998401206963e-07
+      ],
+      "source_work_relative_diagonal_defects": [
+        6.158253818907137e-11,
+        8.823801138240258e-09,
+        1.901598333563806e-08,
+        3.4370173823879674e-08,
+        5.146457059289878e-07,
+        1.796559076803443e-05,
+        0.0013175834900802945,
+        1.5544897853494903e-05,
+        0.0013616241583246965,
+        7.027034091677851e-09,
+        5.853223958082621e-05,
+        1.022267717775669e-07,
+        0.00016168263117505858,
+        7.007839508992985e-05,
+        0.0001398176278689724,
+        0.0003283012968183663,
+        2.306636969534168e-05
+      ],
+      "work_hermitian_eigenvalues": [
+        -2.383913522650394e-06,
+        -1.7911874976213536e-10,
+        -5.629898067007459e-13,
+        -8.444618863620015e-14,
+        -3.2793102609979004e-14,
+        5.622809663420156e-15,
+        2.4226658712492875e-14,
+        3.585230273244483e-14,
+        1.8247679261308e-11,
+        2.7989435658524534e-10,
+        1.4011513860928523e-09,
+        3.8361622281849926e-07,
+        4.703393287805611e-06,
+        0.06292440629580327,
+        0.2762930199729203,
+        0.5408000415055166,
+        0.5709061252544361
+      ],
+      "static_input_power": [
+        0.9999999999999996,
+        0.9999999999999996
+      ],
+      "static_output_power": [
+        1.0000000342095658,
+        1.0000000342095663
+      ],
+      "incoming_identity_relative_residual": 5.736326282274343e-10,
+      "static_flux_matrix_relative_residual": 4.838907886059413e-08,
+      "template_incoming_power": [
+        4.471868085196786e-13,
+        9.617688137676086e-13,
+        8.0405348125718e-15,
+        1.687920255153482e-13,
+        1.1677793053488727e-14,
+        7.560060915477772e-13,
+        1.29382203216898e-13,
+        1.3611801722142743e-13,
+        1.0429185344859627e-14,
+        7.308203392456967e-14,
+        7.724158272341836e-14,
+        5.347386807133026e-15,
+        1.1578362523821025e-15,
+        1.8992357379580682e-16,
+        9.305462056056636e-14,
+        1.3428329626216999e-17,
+        1.4307539461097106e-14
+      ]
+    },
+    {
+      "fa_over_c": 0.398,
+      "R_condition": 4757.383826364631,
+      "native_constitutive_E_equals_KD_relative_residuals": [
+        6.765983159102681e-15,
+        6.263012114936665e-15,
+        6.674916979455687e-15,
+        5.447961932792551e-15,
+        6.722253530096938e-15,
+        6.150247996254275e-15,
+        6.700828234428474e-15,
+        5.769085730278265e-15,
+        9.353452793518221e-15,
+        5.26820154106943e-15,
+        9.240431330766948e-15,
+        6.773553714221639e-15,
+        6.4513136768340965e-15,
+        6.077955851094661e-15,
+        3.2518280983468455e-15,
+        6.876669911002804e-15,
+        6.503287665913498e-15,
+        5.633655258667836e-15,
+        3.91768014934255e-15
+      ],
+      "R_transpose_relative_residual": 2.6854506902880563e-14,
+      "reciprocity_x_port_relative_residual": 1.444594234226579e-06,
+      "work_matrix_relative_residual": 5.04581384282623e-07,
+      "net_work_matrix_relative_residual": 5.045813796746037e-07,
+      "source_work_diagonal": [
+        29.4062548510681,
+        0.47090467030144556,
+        1.135083107428674,
+        0.07356211998041093,
+        0.40814462155307035,
+        0.3737897169646159,
+        0.0024350784226290913,
+        0.05813054969660686,
+        0.0002719458120848599,
+        3.0808918327864817e-09,
+        0.03780678955332217,
+        2.3795234907658035e-09,
+        0.00032648164567956666,
+        5.159710798635888e-08,
+        0.04579178253470746,
+        1.077872148367548e-07,
+        0.006020741742342974
+      ],
+      "template_output_power": [
+        29.40625484499295,
+        0.47090467676511677,
+        1.1350831071851883,
+        0.07356212249868442,
+        0.40814462028473336,
+        0.3737881125715918,
+        0.002447711271955996,
+        0.058130340418932294,
+        0.0002730697821579388,
+        3.0974754598474526e-09,
+        0.03780838168333904,
+        2.274938099647233e-09,
+        0.00032646240386043556,
+        5.0534592745258694e-08,
+        0.045795291123059065,
+        1.080596177133927e-07,
+        0.006020930830089882
+      ],
+      "source_work_absolute_diagonal_defects": [
+        -6.075147496176214e-09,
+        6.4636712093779636e-09,
+        -2.434856760658022e-10,
+        2.5182734925133232e-09,
+        -1.2683369909893827e-09,
+        -1.6043930241016469e-06,
+        1.2632849326904647e-05,
+        -2.0927767456491164e-07,
+        1.1239700730788951e-06,
+        1.6583627060970826e-11,
+        1.5921300168669772e-06,
+        -1.0458539111857058e-10,
+        -1.9241819131099458e-08,
+        -1.062515241100188e-09,
+        3.508588351602837e-06,
+        2.724028766378934e-10,
+        1.8908774690809538e-07
+      ],
+      "source_work_relative_diagonal_defects": [
+        2.0659371711714436e-10,
+        1.3726071386209628e-08,
+        2.145091178542645e-10,
+        3.42332902718836e-08,
+        3.1075675728939207e-09,
+        4.29223424638384e-06,
+        0.005161086387778728,
+        3.60013238576217e-06,
+        0.004116054380666735,
+        0.00535391717414528,
+        4.2110504231620645e-05,
+        0.04395224149895314,
+        5.893690927417344e-05,
+        0.020592534786660777,
+        7.661460961509591e-05,
+        0.002520857304533406,
+        3.140506879154309e-05
+      ],
+      "work_hermitian_eigenvalues": [
+        -2.491194322246181e-06,
+        -6.850318929053764e-10,
+        -6.181491720569393e-10,
+        -1.6135778886339165e-13,
+        -9.497940440740899e-14,
+        -4.4137856427688617e-14,
+        -8.614086049156938e-15,
+        7.949977081988073e-15,
+        8.680502099867806e-12,
+        2.2428804539861015e-11,
+        7.972099012094363e-10,
+        1.8049433709472524e-07,
+        4.47231923798569e-07,
+        0.002707007169617066,
+        0.521868008433592,
+        0.5444668878359646,
+        30.949482582052475
+      ],
+      "static_input_power": [
+        0.9999999999999998,
+        0.9999999999999993
+      ],
+      "static_output_power": [
+        1.0000000296071228,
+        1.000000029607123
+      ],
+      "incoming_identity_relative_residual": 4.383853111112805e-10,
+      "static_flux_matrix_relative_residual": 4.233543545373911e-08,
+      "template_incoming_power": [
+        6.135822540312156e-11,
+        9.773460063348066e-13,
+        2.3684318939387655e-12,
+        1.5311607028427661e-13,
+        8.516908577299439e-13,
+        7.780145137153179e-13,
+        8.692437330191541e-14,
+        1.2128369403047767e-13,
+        7.769722179131583e-16,
+        9.975878193505496e-19,
+        7.86526981677607e-14,
+        6.2479843917268594e-18,
+        6.903598362363287e-16,
+        5.795458369821399e-17,
+        9.527592317895746e-14,
+        3.773492269400562e-18,
+        1.2531164175151121e-14
+      ]
+    },
+    {
+      "fa_over_c": 0.408,
+      "R_condition": 488.48716159364074,
+      "native_constitutive_E_equals_KD_relative_residuals": [
+        7.055129923543835e-15,
+        6.419579458425099e-15,
+        7.504475229154084e-15,
+        5.4484349534756075e-15,
+        7.20905840180663e-15,
+        6.452903936667182e-15,
+        6.2829556609252745e-15,
+        5.8815071943825334e-15,
+        1.0549773560862303e-14,
+        5.623309611226625e-15,
+        1.0270805742976478e-14,
+        5.6570359479541256e-15,
+        6.682489430155964e-15,
+        5.768498615163162e-15,
+        3.4560287082741133e-15,
+        7.065101473698632e-15,
+        6.645165446423283e-15,
+        6.0216712032347995e-15,
+        4.3233369585351195e-15
+      ],
+      "R_transpose_relative_residual": 4.0318015607346387e-14,
+      "reciprocity_x_port_relative_residual": 1.4881060019916349e-06,
+      "work_matrix_relative_residual": 2.4670543042570712e-05,
+      "net_work_matrix_relative_residual": 2.4670543095540764e-05,
+      "source_work_diagonal": [
+        0.24993519909627268,
+        0.4448667886645764,
+        0.015071036340706197,
+        0.06126119177952114,
+        0.001005749094042861,
+        0.35918449104696437,
+        0.0009231110443475473,
+        0.046867854726921905,
+        0.000123585027564613,
+        0.03558087904712331,
+        0.03625085649972279,
+        0.004281306366132666,
+        0.00017532536247843233,
+        3.9036443312958856e-05,
+        0.04366769622750269,
+        4.3126097124952725e-06,
+        0.004721892140277719
+      ],
+      "template_output_power": [
+        0.24993519910047782,
+        0.4448668087686236,
+        0.015071036335918914,
+        0.061261194478580076,
+        0.0010057488877665227,
+        0.3591909969986223,
+        0.0009306608571466108,
+        0.04686895902336087,
+        0.00012417599762978892,
+        0.035580879068210516,
+        0.03625110637310649,
+        0.004281306350690263,
+        0.0001754131716536332,
+        3.90362135046651e-05,
+        0.043665941143708205,
+        4.312789953430655e-06,
+        0.004722073150780761
+      ],
+      "source_work_absolute_diagonal_defects": [
+        4.205136239221474e-12,
+        2.010404720476089e-08,
+        -4.787283416907151e-12,
+        2.699058934685361e-09,
+        -2.0627633824134295e-10,
+        6.505951657909126e-06,
+        7.549812799063438e-06,
+        1.1042964389654242e-06,
+        5.909700651759119e-07,
+        2.1087208368353316e-11,
+        2.4987338369947265e-07,
+        -1.544240343237524e-11,
+        8.78091752008715e-08,
+        -2.2980829375286683e-10,
+        -1.7550837944843578e-06,
+        1.8024093538262885e-10,
+        1.8101050304215188e-07
+      ],
+      "source_work_relative_diagonal_defects": [
+        1.6824906033088305e-11,
+        4.5191160159617697e-08,
+        3.176479247135058e-10,
+        4.4058215933564346e-08,
+        2.0509721506401106e-07,
+        1.8112791557339842e-05,
+        0.00811231367590878,
+        2.356136048199855e-05,
+        0.004759132815166065,
+        5.926556319175805e-10,
+        6.892848486545656e-06,
+        3.6069372550706923e-09,
+        0.0005005848441886534,
+        5.887019263268224e-06,
+        4.019181102068249e-05,
+        4.179218958698748e-05,
+        3.833284603230322e-05
+      ],
+      "work_hermitian_eigenvalues": [
+        -8.943652230446527e-06,
+        -3.924323541886228e-09,
+        -3.1777089698183676e-09,
+        -2.015995952429551e-12,
+        -1.9174889258673095e-13,
+        -5.678189210157924e-14,
+        -4.690018022713287e-14,
+        -3.5214720450083685e-14,
+        -1.2205992181628242e-14,
+        7.63425724050596e-12,
+        8.602380708973061e-11,
+        1.2390749356380815e-08,
+        9.294696952965668e-07,
+        0.0010467199967597873,
+        0.3059174858540708,
+        0.49069679397491334,
+        0.5063073204939568
+      ],
+      "static_input_power": [
+        1.0,
+        1.0
+      ],
+      "static_output_power": [
+        1.000000040817381,
+        1.000000040817381
+      ],
+      "incoming_identity_relative_residual": 4.889809511904464e-10,
+      "static_flux_matrix_relative_residual": 5.772334331597989e-08,
+      "template_incoming_power": [
+        5.505289493448579e-13,
+        9.667326609874625e-13,
+        3.3199401626184156e-14,
+        1.3347124950746307e-13,
+        2.3312940547788946e-15,
+        7.828807891808294e-13,
+        1.2862899463621503e-13,
+        1.0265577552340287e-13,
+        7.355766428577929e-16,
+        7.837507076304986e-14,
+        7.887002574091096e-14,
+        9.441270291217531e-15,
+        3.4820552832315003e-16,
+        1.9318740252988788e-16,
+        9.51175391955617e-14,
+        1.470729640617908e-17,
+        1.0297057885053961e-14
+      ]
+    },
+    {
+      "fa_over_c": 0.418,
+      "R_condition": 306.9435130730429,
+      "native_constitutive_E_equals_KD_relative_residuals": [
+        6.8977625711491674e-15,
+        6.508152923271774e-15,
+        9.197451111156738e-15,
+        5.63779904554461e-15,
+        8.363981107826694e-15,
+        6.6472033323265305e-15,
+        5.8541206025013064e-15,
+        6.188004298827697e-15,
+        1.9387859831828935e-14,
+        5.8934755838694894e-15,
+        1.7639095454916918e-14,
+        5.197943875281884e-15,
+        6.74311599559111e-15,
+        5.600860578508245e-15,
+        3.6829322097229265e-15,
+        7.253214735256001e-15,
+        6.828438148317408e-15,
+        5.787927053084822e-15,
+        4.896793565779429e-15
+      ],
+      "R_transpose_relative_residual": 5.697320474799958e-14,
+      "reciprocity_x_port_relative_residual": 1.5933491883738204e-06,
+      "work_matrix_relative_residual": 0.00017081077392457132,
+      "net_work_matrix_relative_residual": 0.00017081077406809963,
+      "source_work_diagonal": [
+        0.0733090229457751,
+        0.41277275123085816,
+        0.005886516972960646,
+        0.049237340401806585,
+        3.119098939062437e-07,
+        0.34011180979565336,
+        0.0006158535401265867,
+        0.0353014925193407,
+        9.363734171265696e-05,
+        0.03979564782579371,
+        0.03463202160493058,
+        0.00585536974951263,
+        0.0001187084212994435,
+        0.00018439044589095173,
+        0.04099934975628947,
+        1.8459145692573054e-05,
+        0.003415706804776714
+      ],
+      "template_output_power": [
+        0.07330902296639982,
+        0.4127728106807784,
+        0.005886517021657195,
+        0.049237340862914356,
+        3.1385437707012445e-07,
+        0.3401513872961985,
+        0.0006213755523227608,
+        0.03530784601107125,
+        9.384796742346493e-05,
+        0.039795647867199385,
+        0.03462334187276923,
+        0.005855369940693072,
+        0.00011922711824769746,
+        0.00018439224768926438,
+        0.04096976674958549,
+        1.8459340494730017e-05,
+        0.003415355374158901
+      ],
+      "source_work_absolute_diagonal_defects": [
+        2.0624724150763996e-11,
+        5.944992026440943e-08,
+        4.86965493970426e-11,
+        4.611077700222843e-10,
+        1.9444831638807442e-09,
+        3.9577500545118216e-05,
+        5.522012196174184e-06,
+        6.353491730552718e-06,
+        2.1062571080796824e-07,
+        4.140567749777446e-11,
+        -8.679732161349929e-06,
+        1.911804421370067e-10,
+        5.186969482539618e-07,
+        1.801798312655624e-09,
+        -2.9583006703984283e-05,
+        1.9480215696283422e-10,
+        -3.5143061781310603e-07
+      ],
+      "source_work_relative_diagonal_defects": [
+        2.8133950387276417e-10,
+        1.4402576605363078e-07,
+        8.272557306448315e-09,
+        9.36500147938719e-09,
+        0.006195494808875292,
+        0.00011635260658412294,
+        0.008886754838571261,
+        0.00017994560553369625,
+        0.002244328956615263,
+        1.040457429816141e-09,
+        0.000250627360434373,
+        3.265044635495355e-08,
+        0.0043504947186289895,
+        9.771551327320403e-06,
+        0.0007215481923453219,
+        1.0553039910523812e-05,
+        0.00010288664627820103
+      ],
+      "work_hermitian_eigenvalues": [
+        -3.690565943183738e-05,
+        -4.2962873696399156e-07,
+        -3.8656665306512824e-08,
+        -3.330554113668315e-10,
+        -3.1871231862697325e-12,
+        -1.251776983879167e-12,
+        -1.2054703048023067e-13,
+        -1.093868556678206e-13,
+        -7.978776052247687e-14,
+        3.855527732268274e-14,
+        5.847414097172002e-13,
+        2.447172262933715e-10,
+        1.3478510230127671e-05,
+        0.0007099967617348478,
+        0.12504964308145988,
+        0.4537375059890091,
+        0.46287514010717745
+      ],
+      "static_input_power": [
+        0.9999999999999996,
+        0.9999999999999993
+      ],
+      "static_output_power": [
+        1.0000000725004563,
+        1.0000000725004565
+      ],
+      "incoming_identity_relative_residual": 1.1535154400527103e-09,
+      "static_flux_matrix_relative_residual": 1.0252164375701625e-07,
+      "template_incoming_power": [
+        1.7021670466175875e-13,
+        9.398218888395942e-13,
+        1.3684060444645614e-14,
+        1.1225770183931053e-13,
+        7.045557197978766e-16,
+        7.859444118075439e-13,
+        8.305798953365977e-13,
+        8.501425867953944e-14,
+        1.998576332852088e-15,
+        9.240995437787839e-14,
+        7.982250066079335e-14,
+        1.366199364759403e-14,
+        2.2357089130869573e-16,
+        1.0684013582436792e-15,
+        9.405889423425071e-14,
+        7.68555858820034e-17,
+        7.910265425277363e-15
+      ]
+    }
+  ],
+  "rank_rows": [
+    {
+      "rank": 5,
+      "carrier_output_relative_difference_to_full": 1.8282709620330663e-06,
+      "static_material_source_relative_residual_by_frequency_and_input": [
+        [
+          0.282172777659674,
+          0.282172777659674
+        ],
+        [
+          0.24643746718781095,
+          0.24643746718781095
+        ],
+        [
+          4.576075693781259e-05,
+          4.5760756937812684e-05
+        ],
+        [
+          0.2397484943336749,
+          0.2397484943336749
+        ],
+        [
+          0.2967286376707622,
+          0.2967286376707622
+        ]
+      ],
+      "maximum_static_material_source_relative_residual": 0.2967286376707622,
+      "sidebands": [
+        {
+          "harmonic": -2,
+          "power_bottom_input": 1.62563069741992e-09,
+          "complex_output_relative_difference_to_full": 0.031068288390820015
+        },
+        {
+          "harmonic": -1,
+          "power_bottom_input": 0.0001093308478860739,
+          "complex_output_relative_difference_to_full": 1.0180514952423287e-05
+        },
+        {
+          "harmonic": 0,
+          "power_bottom_input": 0.9997826596738772,
+          "complex_output_relative_difference_to_full": 2.3756049942604306e-09
+        },
+        {
+          "harmonic": 1,
+          "power_bottom_input": 0.00010786111340440988,
+          "complex_output_relative_difference_to_full": 8.560798565979415e-06
+        },
+        {
+          "harmonic": 2,
+          "power_bottom_input": 1.9999859264605513e-09,
+          "complex_output_relative_difference_to_full": 0.029616395157749144
+        }
+      ],
+      "material_source_relative_residual": [
+        0.0003118243175373028,
+        0.00031182431753730313
+      ]
+    },
+    {
+      "rank": 9,
+      "carrier_output_relative_difference_to_full": 1.827522588550282e-06,
+      "static_material_source_relative_residual_by_frequency_and_input": [
+        [
+          0.2821182156310638,
+          0.2821182156310637
+        ],
+        [
+          0.2464198084618366,
+          0.24641980846183645
+        ],
+        [
+          4.4145545476301496e-05,
+          4.414554547630147e-05
+        ],
+        [
+          0.23971759422839842,
+          0.2397175942283988
+        ],
+        [
+          0.2965188759392369,
+          0.2965188759392367
+        ]
+      ],
+      "maximum_static_material_source_relative_residual": 0.2965188759392369,
+      "sidebands": [
+        {
+          "harmonic": -2,
+          "power_bottom_input": 1.6256323821309496e-09,
+          "complex_output_relative_difference_to_full": 0.031084799505881916
+        },
+        {
+          "harmonic": -1,
+          "power_bottom_input": 0.0001093308524677127,
+          "complex_output_relative_difference_to_full": 2.4014878253675394e-06
+        },
+        {
+          "harmonic": 0,
+          "power_bottom_input": 0.999782659667364,
+          "complex_output_relative_difference_to_full": 1.0097246578575078e-07
+        },
+        {
+          "harmonic": 1,
+          "power_bottom_input": 0.00010786111538021871,
+          "complex_output_relative_difference_to_full": 2.2643766257684805e-06
+        },
+        {
+          "harmonic": 2,
+          "power_bottom_input": 1.999988439201112e-09,
+          "complex_output_relative_difference_to_full": 0.02964596607265602
+        }
+      ],
+      "material_source_relative_residual": [
+        0.00031150447583195174,
+        0.00031150447583195196
+      ]
+    },
+    {
+      "rank": 13,
+      "carrier_output_relative_difference_to_full": 1.7712540747182675e-08,
+      "static_material_source_relative_residual_by_frequency_and_input": [
+        [
+          0.016377650113310573,
+          0.016377650113310625
+        ],
+        [
+          0.006592700263318945,
+          0.006592700263318885
+        ],
+        [
+          4.365747734023356e-05,
+          4.3657477340233156e-05
+        ],
+        [
+          0.009322638313614798,
+          0.009322638313614821
+        ],
+        [
+          0.021757673363172678,
+          0.021757673363172764
+        ]
+      ],
+      "maximum_static_material_source_relative_residual": 0.021757673363172764,
+      "sidebands": [
+        {
+          "harmonic": -2,
+          "power_bottom_input": 1.6742375120588712e-09,
+          "complex_output_relative_difference_to_full": 0.00021047352789820651
+        },
+        {
+          "harmonic": -1,
+          "power_bottom_input": 0.00010933111253883749,
+          "complex_output_relative_difference_to_full": 7.453772880193027e-07
+        },
+        {
+          "harmonic": 0,
+          "power_bottom_input": 0.9997826596290088,
+          "complex_output_relative_difference_to_full": 1.0100842100595482e-08
+        },
+        {
+          "harmonic": 1,
+          "power_bottom_input": 0.00010786088111064425,
+          "complex_output_relative_difference_to_full": 7.560726092325999e-07
+        },
+        {
+          "harmonic": 2,
+          "power_bottom_input": 1.9465020807012908e-09,
+          "complex_output_relative_difference_to_full": 8.82539192127239e-05
+        }
+      ],
+      "material_source_relative_residual": [
+        5.32959893188575e-05,
+        5.329598931885813e-05
+      ]
+    },
+    {
+      "rank": 17,
+      "carrier_output_relative_difference_to_full": 0.0,
+      "static_material_source_relative_residual_by_frequency_and_input": [
+        [
+          0.00023336950964279496,
+          0.00023336950964279239
+        ],
+        [
+          0.0003593280169224475,
+          0.0003593280169224481
+        ],
+        [
+          4.345502925844812e-05,
+          4.345502925844784e-05
+        ],
+        [
+          0.00043066282772063824,
+          0.00043066282772064507
+        ],
+        [
+          0.00018911462347127118,
+          0.00018911462347125817
+        ]
+      ],
+      "maximum_static_material_source_relative_residual": 0.00043066282772064507,
+      "sidebands": [
+        {
+          "harmonic": -2,
+          "power_bottom_input": 1.6742475117916314e-09,
+          "complex_output_relative_difference_to_full": 0.0
+        },
+        {
+          "harmonic": -1,
+          "power_bottom_input": 0.00010933111023136211,
+          "complex_output_relative_difference_to_full": 0.0
+        },
+        {
+          "harmonic": 0,
+          "power_bottom_input": 0.9997826596345735,
+          "complex_output_relative_difference_to_full": 0.0
+        },
+        {
+          "harmonic": 1,
+          "power_bottom_input": 0.00010786087786931718,
+          "complex_output_relative_difference_to_full": 0.0
+        },
+        {
+          "harmonic": 2,
+          "power_bottom_input": 1.946441753695053e-09,
+          "complex_output_relative_difference_to_full": 0.0
+        }
+      ],
+      "material_source_relative_residual": [
+        5.1015130756402374e-05,
+        5.101513075640299e-05
+      ]
+    }
+  ],
+  "dft_decimation_by_source": {
+    "incident_even": 8,
+    "incident_odd": 8,
+    "template_q0": 8,
+    "template_q1": 8,
+    "template_q2": 8,
+    "template_q3": 8,
+    "template_q4": 8,
+    "template_q5": 8,
+    "template_q6": 8,
+    "template_q7": 8,
+    "template_q8": 8,
+    "extended_q9": 8,
+    "extended_q10": 8,
+    "extended_q11": 8,
+    "extended_q12": 8,
+    "extended_q13": 8,
+    "extended_q14": 8,
+    "extended_q15": 8,
+    "extended_q16": 8
+  },
+  "validated_pole_tail_selections": {
+    "incident_even": {
+      "path": "tail_diagnostics\\rank2\\incident_even\\response_t2000.npz",
+      "validation_file": "tail_diagnostics\\rank2\\incident_even\\summary.json",
+      "independent_validated": false,
+      "window_validated": true,
+      "accepted_for_finite_forced_response": true,
+      "selected_for_scattering": true,
+      "heldout_time_validated": true,
+      "maxwell_equation_validated": true,
+      "continuous_wave_solver_validated": false,
+      "cw_reference_valid": false,
+      "validation_methods": [
+        "Same-grid pole frequency law",
+        "Held-out fourth time window",
+        "Native interior Maxwell and constitutive residual",
+        "Source work and port power"
+      ],
+      "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+      "raw_checkpoint": 2000
+    },
+    "template_q0": {
+      "path": "tail_diagnostics\\rank2\\template_q0\\response_t2000.npz",
+      "validation_file": "tail_diagnostics\\rank2\\template_q0\\summary.json",
+      "independent_validated": false,
+      "window_validated": true,
+      "accepted_for_finite_forced_response": true,
+      "selected_for_scattering": true,
+      "heldout_time_validated": true,
+      "maxwell_equation_validated": true,
+      "continuous_wave_solver_validated": false,
+      "cw_reference_valid": false,
+      "validation_methods": [
+        "Same-grid pole frequency law",
+        "Held-out fourth time window",
+        "Native interior Maxwell and constitutive residual",
+        "Source work and port power"
+      ],
+      "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+      "raw_checkpoint": 2000
+    },
+    "template_q2": {
+      "path": "tail_diagnostics\\rank2\\template_q2\\response_t2000.npz",
+      "validation_file": "tail_diagnostics\\rank2\\template_q2\\summary.json",
+      "independent_validated": false,
+      "window_validated": true,
+      "accepted_for_finite_forced_response": true,
+      "selected_for_scattering": true,
+      "heldout_time_validated": true,
+      "maxwell_equation_validated": true,
+      "continuous_wave_solver_validated": false,
+      "cw_reference_valid": false,
+      "validation_methods": [
+        "Same-grid pole frequency law",
+        "Held-out fourth time window",
+        "Native interior Maxwell and constitutive residual",
+        "Source work and port power"
+      ],
+      "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+      "raw_checkpoint": 2000
+    },
+    "template_q4": {
+      "path": "tail_diagnostics\\rank2\\template_q4\\response_t2000.npz",
+      "validation_file": "tail_diagnostics\\rank2\\template_q4\\summary.json",
+      "independent_validated": false,
+      "window_validated": true,
+      "accepted_for_finite_forced_response": true,
+      "selected_for_scattering": true,
+      "heldout_time_validated": true,
+      "maxwell_equation_validated": true,
+      "continuous_wave_solver_validated": false,
+      "cw_reference_valid": false,
+      "validation_methods": [
+        "Same-grid pole frequency law",
+        "Held-out fourth time window",
+        "Native interior Maxwell and constitutive residual",
+        "Source work and port power"
+      ],
+      "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+      "raw_checkpoint": 2000
+    },
+    "template_q6": {
+      "path": "tail_diagnostics\\rank2\\template_q6\\response_t2000.npz",
+      "validation_file": "tail_diagnostics\\rank2\\template_q6\\summary.json",
+      "independent_validated": false,
+      "window_validated": true,
+      "accepted_for_finite_forced_response": true,
+      "selected_for_scattering": true,
+      "heldout_time_validated": true,
+      "maxwell_equation_validated": true,
+      "continuous_wave_solver_validated": false,
+      "cw_reference_valid": false,
+      "validation_methods": [
+        "Same-grid pole frequency law",
+        "Held-out fourth time window",
+        "Native interior Maxwell and constitutive residual",
+        "Source work and port power"
+      ],
+      "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+      "raw_checkpoint": 2000
+    },
+    "template_q8": {
+      "path": "tail_diagnostics\\rank2\\template_q8\\response_t2000.npz",
+      "validation_file": "tail_diagnostics\\rank2\\template_q8\\summary.json",
+      "independent_validated": false,
+      "window_validated": true,
+      "accepted_for_finite_forced_response": true,
+      "selected_for_scattering": true,
+      "heldout_time_validated": true,
+      "maxwell_equation_validated": true,
+      "continuous_wave_solver_validated": false,
+      "cw_reference_valid": false,
+      "validation_methods": [
+        "Same-grid pole frequency law",
+        "Held-out fourth time window",
+        "Native interior Maxwell and constitutive residual",
+        "Source work and port power"
+      ],
+      "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+      "raw_checkpoint": 2000
+    },
+    "extended_q9": {
+      "path": "tail_diagnostics\\rank2\\extended_q9\\response_t2000.npz",
+      "validation_file": "tail_diagnostics\\rank2\\extended_q9\\summary.json",
+      "independent_validated": false,
+      "window_validated": true,
+      "accepted_for_finite_forced_response": true,
+      "selected_for_scattering": true,
+      "heldout_time_validated": true,
+      "maxwell_equation_validated": true,
+      "continuous_wave_solver_validated": false,
+      "cw_reference_valid": false,
+      "validation_methods": [
+        "Same-grid pole frequency law",
+        "Held-out fourth time window",
+        "Native interior Maxwell and constitutive residual",
+        "Source work and port power"
+      ],
+      "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+      "raw_checkpoint": 2000
+    },
+    "extended_q11": {
+      "path": "tail_diagnostics\\rank2\\extended_q11\\response_t2000.npz",
+      "validation_file": "tail_diagnostics\\rank2\\extended_q11\\summary.json",
+      "independent_validated": false,
+      "window_validated": true,
+      "accepted_for_finite_forced_response": true,
+      "selected_for_scattering": true,
+      "heldout_time_validated": true,
+      "maxwell_equation_validated": true,
+      "continuous_wave_solver_validated": false,
+      "cw_reference_valid": false,
+      "validation_methods": [
+        "Same-grid pole frequency law",
+        "Held-out fourth time window",
+        "Native interior Maxwell and constitutive residual",
+        "Source work and port power"
+      ],
+      "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+      "raw_checkpoint": 2000
+    },
+    "extended_q13": {
+      "path": "tail_diagnostics\\rank2\\extended_q13\\response_t2000.npz",
+      "validation_file": "tail_diagnostics\\rank2\\extended_q13\\summary.json",
+      "independent_validated": false,
+      "window_validated": true,
+      "accepted_for_finite_forced_response": true,
+      "selected_for_scattering": true,
+      "heldout_time_validated": true,
+      "maxwell_equation_validated": true,
+      "continuous_wave_solver_validated": false,
+      "cw_reference_valid": false,
+      "validation_methods": [
+        "Same-grid pole frequency law",
+        "Held-out fourth time window",
+        "Native interior Maxwell and constitutive residual",
+        "Source work and port power"
+      ],
+      "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+      "raw_checkpoint": 2000
+    },
+    "extended_q15": {
+      "path": "tail_diagnostics\\rank2\\extended_q15\\response_t2000.npz",
+      "validation_file": "tail_diagnostics\\rank2\\extended_q15\\summary.json",
+      "independent_validated": false,
+      "window_validated": true,
+      "accepted_for_finite_forced_response": true,
+      "selected_for_scattering": true,
+      "heldout_time_validated": true,
+      "maxwell_equation_validated": true,
+      "continuous_wave_solver_validated": false,
+      "cw_reference_valid": false,
+      "validation_methods": [
+        "Same-grid pole frequency law",
+        "Held-out fourth time window",
+        "Native interior Maxwell and constitutive residual",
+        "Source work and port power"
+      ],
+      "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+      "raw_checkpoint": 2000
+    }
+  },
+  "steady_response_status": "FINITE_FORCED_SCOPE_ACCEPTED_POLE_COMPLETION",
+  "harmonic_rows": [
+    {
+      "harmonic": -1,
+      "M1_to_M2_complex_output_relative_difference": 3.205467054352819e-05,
+      "M1_power": 0.00010932425647450107,
+      "M2_power": 0.00010933111023136211
+    },
+    {
+      "harmonic": 0,
+      "M1_to_M2_complex_output_relative_difference": 1.2947280171567132e-08,
+      "M1_power": 0.9997826774777678,
+      "M2_power": 0.9997826596345735
+    },
+    {
+      "harmonic": 1,
+      "M1_to_M2_complex_output_relative_difference": 3.492114777707159e-05,
+      "M1_power": 0.00010785350041093206,
+      "M2_power": 0.00010786087786931718
+    }
+  ],
+  "amplitude_scaling": [
+    {
+      "harmonic": -2,
+      "power_full": 1.6742475117916314e-09,
+      "power_half": 1.046525321972678e-10,
+      "half_power_over_full": 0.06250720485484128,
+      "expected_leading_ratio": 0.0625
+    },
+    {
+      "harmonic": -1,
+      "power_full": 0.00010933111023136211,
+      "power_half": 2.7335867955112756e-05,
+      "half_power_over_full": 0.25002826640345727,
+      "expected_leading_ratio": 0.25
+    },
+    {
+      "harmonic": 1,
+      "power_full": 0.00010786087786931718,
+      "power_half": 2.6968149940080337e-05,
+      "half_power_over_full": 0.25002716900519384,
+      "expected_leading_ratio": 0.25
+    },
+    {
+      "harmonic": 2,
+      "power_full": 1.946441753695053e-09,
+      "power_half": 1.2166604517770408e-10,
+      "half_power_over_full": 0.06250690263232268,
+      "expected_leading_ratio": 0.0625
+    }
+  ],
+  "weak_reference": [
+    {
+      "harmonic": -1,
+      "independent_full_current_power": 0.0001093295964098872,
+      "projected_Born_power": 0.00010934759280700526,
+      "finite_Floquet_power": 0.00010933111023136207,
+      "projected_Born_complex_difference": 0.00039153649939392113,
+      "finite_complex_difference": 0.00033566657935433597,
+      "finite_power_relative_difference": 1.3846401382355822e-05,
+      "finite_vs_projected_Born_complex_difference": 8.9531274675349e-05,
+      "reference_source": "sptc_toolbox\\results\\spatial_repair_20261017\\static\\weak_summary.json"
+    },
+    {
+      "harmonic": 1,
+      "independent_full_current_power": 0.00010779417078778102,
+      "projected_Born_power": 0.00010787650766480881,
+      "finite_Floquet_power": 0.00010786087786931721,
+      "projected_Born_complex_difference": 0.0003944025985009162,
+      "finite_complex_difference": 0.0003396068204443004,
+      "finite_power_relative_difference": 0.0006188375591063,
+      "finite_vs_projected_Born_complex_difference": 8.999324077631374e-05,
+      "reference_source": "sptc_toolbox\\results\\spatial_repair_20261017\\static\\weak_summary.json"
+    }
+  ],
+  "weak_reference_status": "SAME_RESOLUTION_FULL_CURRENT_REFERENCE",
+  "zero_modulation_relative_error": 0.0,
+  "time_origin_covariance_relative_error": 1.6854086300159552e-16,
+  "inverse_Green_ABCD": {
+    "available": true,
+    "LS_ABCD_S_relative_difference": 1.4956989182821154e-15
+  },
+  "time_refinement": [
+    {
+      "checkpoint": 1000,
+      "reference_checkpoint": 2000,
+      "comparison_source_selection": {},
+      "reference_source_selection": {
+        "incident_even": {
+          "path": "tail_diagnostics\\rank2\\incident_even\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\incident_even\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q0": {
+          "path": "tail_diagnostics\\rank2\\template_q0\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q0\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q2": {
+          "path": "tail_diagnostics\\rank2\\template_q2\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q2\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q4": {
+          "path": "tail_diagnostics\\rank2\\template_q4\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q4\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q6": {
+          "path": "tail_diagnostics\\rank2\\template_q6\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q6\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q8": {
+          "path": "tail_diagnostics\\rank2\\template_q8\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q8\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q9": {
+          "path": "tail_diagnostics\\rank2\\extended_q9\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q9\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q11": {
+          "path": "tail_diagnostics\\rank2\\extended_q11\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q11\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q13": {
+          "path": "tail_diagnostics\\rank2\\extended_q13\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q13\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q15": {
+          "path": "tail_diagnostics\\rank2\\extended_q15\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q15\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        }
+      },
+      "static_projection_changes": [
+        {
+          "fa_over_c": 0.378,
+          "R_relative_difference": 2.1659856494835488,
+          "R_column_relative_differences": [
+            0.038129489064700914,
+            4.207666736258425e-06,
+            0.038712834232244274,
+            7.072251657092191e-06,
+            0.022174690135138946,
+            5.370375077840915e-05,
+            2.766211920927109,
+            3.0181851235395575e-05,
+            2.768761604320688,
+            0.0713205905701019,
+            0.0001960925448484708,
+            0.017445016737232814,
+            5.270591910206133e-05,
+            0.1849123175901373,
+            0.000220925067192974,
+            0.4818925459306811,
+            0.0001549196630102904
+          ],
+          "T_relative_difference": 0.07205366183850964,
+          "T_column_relative_differences": [
+            0.041787646646882476,
+            1.5278755691973014e-07,
+            0.14649719619150556,
+            2.701582891483085e-07,
+            0.026412752280446577,
+            1.9910205482592235e-06,
+            5.119774942975468,
+            1.1565204746429209e-06,
+            7.65050867764336,
+            0.0018773116833683621,
+            1.1109970252770613e-05,
+            0.0024933132648454477,
+            6.334586436598758e-06,
+            0.018168009786900145,
+            1.2943051321100474e-05,
+            0.08957530055067428,
+            9.596845589915008e-06
+          ],
+          "b_relative_difference": 0.01115656669606274,
+          "S0_relative_difference": 0.0022496151861677795
+        },
+        {
+          "fa_over_c": 0.38800000000000007,
+          "R_relative_difference": 1.0424987803143888,
+          "R_column_relative_differences": [
+            0.014528125689345604,
+            1.914782735868448e-06,
+            0.018699662600673222,
+            3.270556038813313e-06,
+            0.05723408862240093,
+            2.3919604175835168e-05,
+            1.0546875819971098,
+            1.384817049225147e-05,
+            1.0542677856107212,
+            0.20383509623552787,
+            7.832821486317326e-05,
+            0.06074153593666998,
+            2.5188157606270174e-05,
+            0.5584978631321561,
+            8.735549007060136e-05,
+            0.9091381664007863,
+            7.084259494725047e-05
+          ],
+          "T_relative_difference": 0.23142423569737106,
+          "T_column_relative_differences": [
+            0.015133374485312576,
+            6.899806754966411e-08,
+            0.021955527383484545,
+            1.2830530828785e-07,
+            0.012601406446587254,
+            8.91092250872738e-07,
+            1.1094486249719764,
+            5.48677552752299e-07,
+            1.1369703180419952,
+            0.00274391265746424,
+            5.0092697702444705e-06,
+            0.0030071374704102234,
+            3.4673269259084542e-06,
+            0.11844356499337395,
+            5.819383980105916e-06,
+            0.545891181076352,
+            4.604365946633992e-06
+          ],
+          "b_relative_difference": 0.008117584179163709,
+          "S0_relative_difference": 0.0017337686988876343
+        },
+        {
+          "fa_over_c": 0.3980000000000001,
+          "R_relative_difference": 0.06913048257054118,
+          "R_column_relative_differences": [
+            0.010219753713814233,
+            1.6821463292840368e-06,
+            0.010212639238640556,
+            2.920659717173823e-06,
+            0.010169217561194627,
+            2.031989842277808e-05,
+            0.7465745894789753,
+            1.2251937451333174e-05,
+            0.7513201695028767,
+            0.010953559245556372,
+            5.7743488916282845e-05,
+            0.009541384944346597,
+            2.3026060385686844e-05,
+            0.06707524782630508,
+            6.367769770615241e-05,
+            0.17710726739861957,
+            5.944940338733845e-05
+          ],
+          "T_relative_difference": 0.011272382982160175,
+          "T_column_relative_differences": [
+            0.010239237968481566,
+            6.020183094443437e-08,
+            0.01012130910475602,
+            1.1842296552585778e-07,
+            0.010426494369202196,
+            7.701214081794939e-07,
+            0.5554120156396851,
+            5.079412440591653e-07,
+            0.48987815031771614,
+            35.178593530111726,
+            4.355415500014022e-06,
+            12.622638147922327,
+            3.850267002026964e-06,
+            0.37607087666982775,
+            5.056748632459388e-06,
+            0.40476194771658003,
+            4.325180175971284e-06
+          ],
+          "b_relative_difference": 0.010198035651751997,
+          "S0_relative_difference": 0.012896454280755422
+        },
+        {
+          "fa_over_c": 0.408,
+          "R_relative_difference": 0.4103415925984819,
+          "R_column_relative_differences": [
+            0.01337875653290529,
+            2.8707883751988875e-06,
+            0.01300292949481499,
+            5.066730876989859e-06,
+            0.008562013129720342,
+            3.271773396662757e-05,
+            0.981127512721425,
+            2.089573083560221e-05,
+            1.0018191887185286,
+            0.01653600250268799,
+            7.826362795013421e-05,
+            0.00458287969888972,
+            4.039298440435268e-05,
+            0.04159959385974836,
+            8.528120756967628e-05,
+            0.11469271176050053,
+            8.896224547136458e-05
+          ],
+          "T_relative_difference": 0.0167995128959714,
+          "T_column_relative_differences": [
+            0.012931222497829593,
+            1.0213039074622953e-07,
+            0.010226859031735423,
+            2.1403591712269464e-07,
+            0.024472825317302636,
+            1.2924208724468414e-06,
+            0.565964002970397,
+            9.270819176370102e-07,
+            0.45641935628972574,
+            0.001217866461929341,
+            7.337777476537601e-06,
+            0.0010798995992378814,
+            8.648060425250611e-06,
+            0.00847565678937799,
+            8.544845117294598e-06,
+            0.040251286287737734,
+            8.05566754071317e-06
+          ],
+          "b_relative_difference": 0.007480843663295876,
+          "S0_relative_difference": 0.001448413753865905
+        },
+        {
+          "fa_over_c": 0.41800000000000004,
+          "R_relative_difference": 1.045370418629771,
+          "R_column_relative_differences": [
+            0.032504360977773816,
+            9.652359978372843e-06,
+            0.030465587264482417,
+            1.7305945680967635e-05,
+            0.01350579554445162,
+            9.858423661566565e-05,
+            2.3938661499624794,
+            6.821026804628117e-05,
+            2.496984189438267,
+            0.02855835387496152,
+            0.00019490498293550014,
+            0.007206093156957064,
+            0.00013445230497046137,
+            0.06647270543051843,
+            0.00020980236330066435,
+            0.18890953164514,
+            0.00023081441534866036
+          ],
+          "T_relative_difference": 0.029863169689079462,
+          "T_column_relative_differences": [
+            0.03046186135225213,
+            3.4170105921329055e-07,
+            0.020876947800835963,
+            7.697608450246661e-07,
+            1.7682010059780424,
+            4.264476508595931e-06,
+            1.1271235796394827,
+            3.4089057068689023e-06,
+            0.8543090330212525,
+            0.0014767528523499222,
+            2.4215983364640864e-05,
+            0.0011839383745173699,
+            3.3726892501999553e-05,
+            0.006347677119052675,
+            2.8461018125634834e-05,
+            0.03166052500827467,
+            3.0542367414098765e-05
+          ],
+          "b_relative_difference": 0.011344026340249638,
+          "S0_relative_difference": 0.0017819242823084787
+        }
+      ],
+      "full_S_relative_difference": 0.006003201860670172,
+      "full_S_column_relative_differences": [
+        0.0022498999981206756,
+        0.002249899998120784,
+        0.001749664110882973,
+        0.0017496641108829148,
+        0.012912853859798464,
+        0.012912853859798422,
+        0.001466562786550198,
+        0.001466562786549958,
+        0.0017821955270080425,
+        0.001782195527008001
+      ],
+      "conversion_blocks": [
+        {
+          "input_harmonic": -2,
+          "output_harmonic": -1,
+          "complex_block_relative_difference": 0.013071244376758996,
+          "complex_block_absolute_difference": 3.337884121246019e-05
+        },
+        {
+          "input_harmonic": -2,
+          "output_harmonic": 0,
+          "complex_block_relative_difference": 0.05388504747170016,
+          "complex_block_absolute_difference": 3.283095907509036e-06
+        },
+        {
+          "input_harmonic": -2,
+          "output_harmonic": 1,
+          "complex_block_relative_difference": 0.052418602006859126,
+          "complex_block_absolute_difference": 2.5971598053010253e-08
+        },
+        {
+          "input_harmonic": -2,
+          "output_harmonic": 2,
+          "complex_block_relative_difference": 0.038149466502588374,
+          "complex_block_absolute_difference": 8.160945342028504e-11
+        },
+        {
+          "input_harmonic": -1,
+          "output_harmonic": -2,
+          "complex_block_relative_difference": 0.01305157729327216,
+          "complex_block_absolute_difference": 3.2469698700945974e-05
+        },
+        {
+          "input_harmonic": -1,
+          "output_harmonic": 0,
+          "complex_block_relative_difference": 0.0231390903259224,
+          "complex_block_absolute_difference": 0.00035098180690365885
+        },
+        {
+          "input_harmonic": -1,
+          "output_harmonic": 1,
+          "complex_block_relative_difference": 0.03107385281558378,
+          "complex_block_absolute_difference": 3.824295517048115e-06
+        },
+        {
+          "input_harmonic": -1,
+          "output_harmonic": 2,
+          "complex_block_relative_difference": 0.04667104159808016,
+          "complex_block_absolute_difference": 2.4804371440244396e-08
+        },
+        {
+          "input_harmonic": 0,
+          "output_harmonic": -2,
+          "complex_block_relative_difference": 0.05372577526407078,
+          "complex_block_absolute_difference": 3.1089054915301182e-06
+        },
+        {
+          "input_harmonic": 0,
+          "output_harmonic": -1,
+          "complex_block_relative_difference": 0.02313923150977757,
+          "complex_block_absolute_difference": 0.0003421651770012152
+        },
+        {
+          "input_harmonic": 0,
+          "output_harmonic": 1,
+          "complex_block_relative_difference": 0.021748464262541317,
+          "complex_block_absolute_difference": 0.0003194299021408522
+        },
+        {
+          "input_harmonic": 0,
+          "output_harmonic": 2,
+          "complex_block_relative_difference": 0.047753603369888896,
+          "complex_block_absolute_difference": 2.9794894493502792e-06
+        },
+        {
+          "input_harmonic": 1,
+          "output_harmonic": -2,
+          "complex_block_relative_difference": 0.052010687110364044,
+          "complex_block_absolute_difference": 2.387482583758056e-08
+        },
+        {
+          "input_harmonic": 1,
+          "output_harmonic": -1,
+          "complex_block_relative_difference": 0.03127999622319013,
+          "complex_block_absolute_difference": 3.660972050101889e-06
+        },
+        {
+          "input_harmonic": 1,
+          "output_harmonic": 0,
+          "complex_block_relative_difference": 0.02202819436916427,
+          "complex_block_absolute_difference": 0.0003156099662932692
+        },
+        {
+          "input_harmonic": 1,
+          "output_harmonic": 2,
+          "complex_block_relative_difference": 0.012658589318623847,
+          "complex_block_absolute_difference": 2.878609807391959e-05
+        },
+        {
+          "input_harmonic": 2,
+          "output_harmonic": -2,
+          "complex_block_relative_difference": 0.037884640962756275,
+          "complex_block_absolute_difference": 7.3288250667453e-11
+        },
+        {
+          "input_harmonic": 2,
+          "output_harmonic": -1,
+          "complex_block_relative_difference": 0.04820483576724074,
+          "complex_block_absolute_difference": 2.3780967460034422e-08
+        },
+        {
+          "input_harmonic": 2,
+          "output_harmonic": 0,
+          "complex_block_relative_difference": 0.04934783150660977,
+          "complex_block_absolute_difference": 2.9316588333647695e-06
+        },
+        {
+          "input_harmonic": 2,
+          "output_harmonic": 1,
+          "complex_block_relative_difference": 0.01303993134333637,
+          "complex_block_absolute_difference": 2.8943950747249535e-05
+        }
+      ],
+      "sidebands": [
+        {
+          "harmonic": -2,
+          "complex_output_relative_difference": 0.053725775264071025
+        },
+        {
+          "harmonic": -1,
+          "complex_output_relative_difference": 0.023139231509778
+        },
+        {
+          "harmonic": 0,
+          "complex_output_relative_difference": 0.012910012739656333
+        },
+        {
+          "harmonic": 1,
+          "complex_output_relative_difference": 0.021748464262541796
+        },
+        {
+          "harmonic": 2,
+          "complex_output_relative_difference": 0.04775360336988919
+        }
+      ]
+    },
+    {
+      "checkpoint": 1500,
+      "reference_checkpoint": 2000,
+      "comparison_source_selection": {},
+      "reference_source_selection": {
+        "incident_even": {
+          "path": "tail_diagnostics\\rank2\\incident_even\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\incident_even\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q0": {
+          "path": "tail_diagnostics\\rank2\\template_q0\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q0\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q2": {
+          "path": "tail_diagnostics\\rank2\\template_q2\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q2\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q4": {
+          "path": "tail_diagnostics\\rank2\\template_q4\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q4\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q6": {
+          "path": "tail_diagnostics\\rank2\\template_q6\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q6\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q8": {
+          "path": "tail_diagnostics\\rank2\\template_q8\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q8\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q9": {
+          "path": "tail_diagnostics\\rank2\\extended_q9\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q9\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q11": {
+          "path": "tail_diagnostics\\rank2\\extended_q11\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q11\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q13": {
+          "path": "tail_diagnostics\\rank2\\extended_q13\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q13\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q15": {
+          "path": "tail_diagnostics\\rank2\\extended_q15\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q15\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        }
+      },
+      "static_projection_changes": [
+        {
+          "fa_over_c": 0.378,
+          "R_relative_difference": 2.1385120171524927,
+          "R_column_relative_differences": [
+            0.00315691110837814,
+            4.071512231609823e-06,
+            0.007375026984496481,
+            6.607910583810553e-06,
+            0.018140544019676966,
+            0.0001365291181204738,
+            2.7312302982398275,
+            0.00016822759484902617,
+            2.7337479863336593,
+            0.06929174377169388,
+            0.0001783324336578029,
+            0.01691765185184871,
+            8.460572729781486e-05,
+            0.18257360577415757,
+            0.00020524613751496612,
+            0.4757986312805751,
+            0.00014121234778409215
+          ],
+          "T_relative_difference": 0.07066602592174703,
+          "T_column_relative_differences": [
+            0.003392465602129433,
+            9.291067403537883e-08,
+            0.012048413881481014,
+            1.3006143785287463e-07,
+            0.0035647596250546025,
+            5.036126178642472e-06,
+            5.055800147663828,
+            6.594525527782535e-06,
+            7.553949658317487,
+            0.0007193507226840373,
+            3.565540860224056e-06,
+            0.0009103942989492936,
+            9.731492958040735e-06,
+            0.017952334209452456,
+            3.521573424717414e-06,
+            0.08846319952766131,
+            3.735557524641095e-06
+          ],
+          "b_relative_difference": 0.001023965135046126,
+          "S0_relative_difference": 0.0001827493366705165
+        },
+        {
+          "fa_over_c": 0.38800000000000007,
+          "R_relative_difference": 1.0293129981013611,
+          "R_column_relative_differences": [
+            0.001579141712155544,
+            1.8486124280236605e-06,
+            0.011511612717548594,
+            3.0519587782319637e-06,
+            0.05586625100956658,
+            6.0744005787623297e-05,
+            1.0413496668043452,
+            7.732722699238938e-05,
+            1.0409351867104906,
+            0.2010907091574761,
+            7.125431659010833e-05,
+            0.059917784764400385,
+            4.0313236529109895e-05,
+            0.5514348614294473,
+            8.126646182362077e-05,
+            0.8976409287613577,
+            6.454315433438392e-05
+          ],
+          "T_relative_difference": 0.22841970116759377,
+          "T_column_relative_differences": [
+            0.0012313123326259982,
+            4.1561055214235575e-08,
+            0.002192581691498852,
+            6.11137282740786e-08,
+            0.005534630965685242,
+            2.251398451922792e-06,
+            1.0954283376922422,
+            3.1350500009308856e-06,
+            1.1225937118507194,
+            0.002383399999357528,
+            1.5898028468107754e-06,
+            0.002569234183057566,
+            5.3073748903778084e-06,
+            0.11695138194344049,
+            1.5807117412364394e-06,
+            0.5389953935864683,
+            1.7705516415029134e-06
+          ],
+          "b_relative_difference": 0.0016552699988971742,
+          "S0_relative_difference": 0.000142871230585511
+        },
+        {
+          "fa_over_c": 0.3980000000000001,
+          "R_relative_difference": 0.06751846963235893,
+          "R_column_relative_differences": [
+            0.0008296099666858482,
+            1.6190495162344148e-06,
+            0.0008357165870810033,
+            2.720923042373566e-06,
+            0.0011991077453157948,
+            5.152564115785466e-05,
+            0.7371330902391167,
+            6.858534388648076e-05,
+            0.7418186248574761,
+            0.0034571580038541094,
+            5.255320686732336e-05,
+            0.0028759994376736132,
+            3.67029297278276e-05,
+            0.06622549719103245,
+            5.935346308358957e-05,
+            0.17486737654234752,
+            5.413148602892547e-05
+          ],
+          "T_relative_difference": 0.005064792748680528,
+          "T_column_relative_differences": [
+            0.0008311365902313406,
+            3.5790568542408063e-08,
+            0.0008216360814703484,
+            5.5585679521649786e-08,
+            0.0008486471653167597,
+            1.9427422278913565e-06,
+            0.5483632494370659,
+            2.910549527839551e-06,
+            0.4836788516279568,
+            2.978703943618017,
+            1.3617928252385742e-06,
+            1.0635997392368652,
+            5.864220938454012e-06,
+            0.3698656215920715,
+            1.3716797069493048e-06,
+            0.39955287676116535,
+            1.635764650932717e-06
+          ],
+          "b_relative_difference": 0.0008281774749285594,
+          "S0_relative_difference": 0.001046815834211053
+        },
+        {
+          "fa_over_c": 0.408,
+          "R_relative_difference": 0.4049993834339988,
+          "R_column_relative_differences": [
+            0.001088214691091799,
+            2.751143421464019e-06,
+            0.00128140343635029,
+            4.709532498855877e-06,
+            0.0036552395640802155,
+            8.27826454698992e-05,
+            0.9687197025508395,
+            0.00011740224206696448,
+            0.9891496319352845,
+            0.014209363688033721,
+            7.128872890950276e-05,
+            0.003884269289238161,
+            6.400364202082784e-05,
+            0.04107351662130124,
+            7.972343437474988e-05,
+            0.11324223468262802,
+            8.094908974465088e-05
+          ],
+          "T_relative_difference": 0.015569334338008736,
+          "T_column_relative_differences": [
+            0.001049671177754294,
+            5.95600840470563e-08,
+            0.0008313121287330452,
+            9.833678298167892e-08,
+            0.0021577914359109285,
+            3.2529498561422298e-06,
+            0.5587658804726284,
+            5.334421811864802e-06,
+            0.45064079942756013,
+            0.00018476474180762273,
+            2.246681991799798e-06,
+            0.00015823913936369657,
+            1.3075941440140288e-05,
+            0.008364530341400727,
+            2.3176035500248524e-06,
+            0.039737639867798574,
+            2.974168146700573e-06
+          ],
+          "b_relative_difference": 0.0006158316989489851,
+          "S0_relative_difference": 0.0001175802650326425
+        },
+        {
+          "fa_over_c": 0.41800000000000004,
+          "R_relative_difference": 1.0319106743028046,
+          "R_column_relative_differences": [
+            0.002647276470110989,
+            9.18920769028724e-06,
+            0.0032893154288496816,
+            1.6033882165926914e-05,
+            0.006928044908309229,
+            0.0002485716442751214,
+            2.363592085306815,
+            0.00038550191283639096,
+            2.4654058185586747,
+            0.025771899383985483,
+            0.00017783982001936548,
+            0.006442199449755924,
+            0.00021103137442996203,
+            0.06563211122564318,
+            0.00019710524414792772,
+            0.18652045098101397,
+            0.00020988133397729824
+          ],
+          "T_relative_difference": 0.028331790416706033,
+          "T_column_relative_differences": [
+            0.0024727174872871596,
+            1.9317599328529918e-07,
+            0.0016984587129687473,
+            3.4176569215252153e-07,
+            0.1631975138023779,
+            1.0694729590249638e-05,
+            1.112769100010734,
+            1.9746474569831814e-05,
+            0.8434897860270805,
+            0.00026851698088107824,
+            7.186886952433901e-06,
+            0.0002069678990419637,
+            5.04032691919706e-05,
+            0.006264192431030023,
+            7.753082625632937e-06,
+            0.03125572135643888,
+            1.0857574267994799e-05
+          ],
+          "b_relative_difference": 0.0009419960029065381,
+          "S0_relative_difference": 0.00014466615450181534
+        }
+      ],
+      "full_S_relative_difference": 0.0004874082918176035,
+      "full_S_column_relative_differences": [
+        0.0001827734885851274,
+        0.00018277348858504819,
+        0.00014412379388753553,
+        0.0001441237938875105,
+        0.0010481183134812974,
+        0.0010481183134811397,
+        0.000119038160289786,
+        0.00011903816028968676,
+        0.00014468772005428373,
+        0.00014468772005394977
+      ],
+      "conversion_blocks": [
+        {
+          "input_harmonic": -2,
+          "output_harmonic": -1,
+          "complex_block_relative_difference": 0.001123860490789618,
+          "complex_block_absolute_difference": 2.8698997421946744e-06
+        },
+        {
+          "input_harmonic": -2,
+          "output_harmonic": 0,
+          "complex_block_relative_difference": 0.004375088957474064,
+          "complex_block_absolute_difference": 2.6656442418121283e-07
+        },
+        {
+          "input_harmonic": -2,
+          "output_harmonic": 1,
+          "complex_block_relative_difference": 0.004222152309556611,
+          "complex_block_absolute_difference": 2.091929935255511e-09
+        },
+        {
+          "input_harmonic": -2,
+          "output_harmonic": 2,
+          "complex_block_relative_difference": 0.0030435505731238677,
+          "complex_block_absolute_difference": 6.510772534991592e-12
+        },
+        {
+          "input_harmonic": -1,
+          "output_harmonic": -2,
+          "complex_block_relative_difference": 0.0011224508725610571,
+          "complex_block_absolute_difference": 2.792431965863503e-06
+        },
+        {
+          "input_harmonic": -1,
+          "output_harmonic": 0,
+          "complex_block_relative_difference": 0.0018736235647601458,
+          "complex_block_absolute_difference": 2.84197768777488e-05
+        },
+        {
+          "input_harmonic": -1,
+          "output_harmonic": 1,
+          "complex_block_relative_difference": 0.0025003183581652983,
+          "complex_block_absolute_difference": 3.077171133258782e-07
+        },
+        {
+          "input_harmonic": -1,
+          "output_harmonic": 2,
+          "complex_block_relative_difference": 0.0037115868956734874,
+          "complex_block_absolute_difference": 1.972606070930628e-09
+        },
+        {
+          "input_harmonic": 0,
+          "output_harmonic": -2,
+          "complex_block_relative_difference": 0.004360422228980757,
+          "complex_block_absolute_difference": 2.5232098646204123e-07
+        },
+        {
+          "input_harmonic": 0,
+          "output_harmonic": -1,
+          "complex_block_relative_difference": 0.001873522323309932,
+          "complex_block_absolute_difference": 2.7704208633730593e-05
+        },
+        {
+          "input_harmonic": 0,
+          "output_harmonic": 1,
+          "complex_block_relative_difference": 0.0017557181317312462,
+          "complex_block_absolute_difference": 2.5787056236967542e-05
+        },
+        {
+          "input_harmonic": 0,
+          "output_harmonic": 2,
+          "complex_block_relative_difference": 0.0038145989757987493,
+          "complex_block_absolute_difference": 2.3800418397455057e-07
+        },
+        {
+          "input_harmonic": 1,
+          "output_harmonic": -2,
+          "complex_block_relative_difference": 0.004186282899296594,
+          "complex_block_absolute_difference": 1.921658425997449e-09
+        },
+        {
+          "input_harmonic": 1,
+          "output_harmonic": -1,
+          "complex_block_relative_difference": 0.002516907935092637,
+          "complex_block_absolute_difference": 2.945757901410024e-07
+        },
+        {
+          "input_harmonic": 1,
+          "output_harmonic": 0,
+          "complex_block_relative_difference": 0.001778404561654387,
+          "complex_block_absolute_difference": 2.548017301614321e-05
+        },
+        {
+          "input_harmonic": 1,
+          "output_harmonic": 2,
+          "complex_block_relative_difference": 0.0010176304486144,
+          "complex_block_absolute_difference": 2.3141290991819226e-06
+        },
+        {
+          "input_harmonic": 2,
+          "output_harmonic": -2,
+          "complex_block_relative_difference": 0.0030114231391797437,
+          "complex_block_absolute_difference": 5.8256308699597145e-12
+        },
+        {
+          "input_harmonic": 2,
+          "output_harmonic": -1,
+          "complex_block_relative_difference": 0.0038340563451678,
+          "complex_block_absolute_difference": 1.891461048112041e-09
+        },
+        {
+          "input_harmonic": 2,
+          "output_harmonic": 0,
+          "complex_block_relative_difference": 0.003942301874528343,
+          "complex_block_absolute_difference": 2.3420449817948875e-07
+        },
+        {
+          "input_harmonic": 2,
+          "output_harmonic": 1,
+          "complex_block_relative_difference": 0.0010485525893044795,
+          "complex_block_absolute_difference": 2.3274090715392317e-06
+        }
+      ],
+      "sidebands": [
+        {
+          "harmonic": -2,
+          "complex_output_relative_difference": 0.004360422228981064
+        },
+        {
+          "harmonic": -1,
+          "complex_output_relative_difference": 0.0018735223233103796
+        },
+        {
+          "harmonic": 0,
+          "complex_output_relative_difference": 0.001047890351133572
+        },
+        {
+          "harmonic": 1,
+          "complex_output_relative_difference": 0.0017557181317314182
+        },
+        {
+          "harmonic": 2,
+          "complex_output_relative_difference": 0.0038145989757985724
+        }
+      ]
+    }
+  ],
+  "dynamic_diagnostics": {
+    "equation_relative_residual": 1.838344101451254e-16,
+    "reconstructed_projection_relative_residual": 1.1900716095373797e-14,
+    "static_incident_outside_basis": [
+      [
+        0.5017412090148081,
+        0.5070663226219106
+      ],
+      [
+        0.4512501655907106,
+        0.46039518873914304
+      ],
+      [
+        0.19161528365997602,
+        0.18811843230457787
+      ],
+      [
+        0.37954019622790736,
+        0.402812540458895
+      ],
+      [
+        0.411186292226323,
+        0.4390375670338175
+      ]
+    ],
+    "static_polarization_response_outside_basis": [
+      [
+        0.19668410893709576,
+        0.5367830077487137,
+        0.5333143716677246,
+        0.5410263965131479,
+        0.7154831334614333,
+        0.6195582298413524,
+        0.22202438439531852,
+        0.7597928212539792,
+        0.3483559075191986,
+        0.553783776657397,
+        0.6362277422985668,
+        0.6999291534890628,
+        0.9305909200457135,
+        0.6033547263025569,
+        0.6486816884685138,
+        0.8182360053313052,
+        0.9270961900114256
+      ],
+      [
+        0.19170736904412294,
+        0.5344825427361377,
+        0.3322836774224197,
+        0.5281261521668754,
+        0.6639038392075514,
+        0.6247700968319702,
+        0.22219356419862415,
+        0.76186138505032,
+        0.22743986167556185,
+        0.49571950086580024,
+        0.6047359243990522,
+        0.696791299163841,
+        0.9365590077214055,
+        0.5581508132548569,
+        0.6184148304927657,
+        0.6163718698739568,
+        0.9284917764530489
+      ],
+      [
+        0.18957439781299548,
+        0.5320925874871337,
+        0.19037568322365778,
+        0.5146493372848936,
+        0.2248041791754628,
+        0.631594200663214,
+        0.22464404042018493,
+        0.7715664692648055,
+        0.2719609487548301,
+        0.17644044841375903,
+        0.5673409562032284,
+        0.41390533461965395,
+        0.9431726976871491,
+        0.622845969422936,
+        0.5830723430339624,
+        0.8155894685488541,
+        0.9260685956487342
+      ],
+      [
+        0.18979374020795073,
+        0.5295791937597601,
+        0.3072092514151956,
+        0.5003748497603508,
+        0.6519293350902851,
+        0.6389200402600593,
+        0.22920513907307158,
+        0.7890701384094305,
+        0.4172142458297902,
+        0.5122812946569603,
+        0.524100394938192,
+        0.6921050415114787,
+        0.9497091635771324,
+        0.6379105855747836,
+        0.542817610079547,
+        0.8224325583368807,
+        0.9143555999147138
+      ],
+      [
+        0.19191528015463932,
+        0.5268698797810444,
+        0.463888585725583,
+        0.4849438496293174,
+        0.7045110331677608,
+        0.6436185131081638,
+        0.236169846597724,
+        0.8122857927732462,
+        0.5627239029047892,
+        0.5646690646636586,
+        0.4771576780355068,
+        0.6976935912092259,
+        0.953979228489176,
+        0.6584033156708801,
+        0.49953916445904584,
+        0.8247820389959474,
+        0.8822554440336869
+      ]
+    ],
+    "modulation_template_outside_basis": {
+      "-4": [
+        0.9546430569715969,
+        0.9794551858511962,
+        0.9759104014543584,
+        0.9894961088742266,
+        0.9643671814233433,
+        0.9827671674361474,
+        0.9703371690757329,
+        0.9898174497747402,
+        0.9864047110924749,
+        0.9543621164341942,
+        0.9848023123111609,
+        0.9747384935284594,
+        0.9878325631590282,
+        0.9846627266066091,
+        0.986394868935868,
+        0.9830245367574667,
+        0.9797673613306055
+      ],
+      "-3": [
+        0.9678524566939994,
+        0.9853134694149907,
+        0.9658103406592782,
+        0.9849823332569995,
+        0.9623723650961752,
+        0.995046006162365,
+        0.9865730957015186,
+        0.9939602840745582,
+        0.9803736798733167,
+        0.9700488842853434,
+        0.9826456043857734,
+        0.9656052050259796,
+        0.9930022469859364,
+        0.9852880550283357,
+        0.9873516316452509,
+        0.9729255579604924,
+        0.992197931210429
+      ],
+      "-2": [
+        0.96244058032237,
+        0.9835611814953287,
+        0.9686786530013741,
+        0.9854875610321547,
+        0.9803385220955292,
+        0.99454583608448,
+        0.9835601376487066,
+        0.994996953964627,
+        0.9877992307963065,
+        0.9661592170574811,
+        0.9820864095182968,
+        0.9710413595599742,
+        0.993744409728699,
+        0.9830394670715854,
+        0.987154166727872,
+        0.9739551436167868,
+        0.99633048896531
+      ],
+      "-1": [
+        0.044388945875635966,
+        0.03625507631522932,
+        0.3492383868576293,
+        0.22252617119508133,
+        0.9177365945094906,
+        0.03657251467523716,
+        0.04464890978264072,
+        0.23251772149859937,
+        0.4846125495225064,
+        0.043223180479253526,
+        0.1158633026604697,
+        0.33427608853671414,
+        0.1409763948680535,
+        0.06565333412091441,
+        0.08777050155845402,
+        0.27760477577481074,
+        0.15967060156584473
+      ],
+      "0": [
+        0.9624405804764044,
+        0.9835611814240782,
+        0.9686786528325226,
+        0.9854875609206205,
+        0.9803385221589405,
+        0.9945458362059584,
+        0.9835601378447926,
+        0.9949969540045183,
+        0.9877992307316172,
+        0.9661592172131686,
+        0.9820864094367563,
+        0.9710413593556867,
+        0.9937444097241979,
+        0.9830394670231878,
+        0.9871541666334512,
+        0.9739551434092512,
+        0.9963304891770196
+      ],
+      "1": [
+        0.044388945875635966,
+        0.03625507631522932,
+        0.3492383868576293,
+        0.22252617119508133,
+        0.9177365945094906,
+        0.03657251467523716,
+        0.04464890978264072,
+        0.23251772149859937,
+        0.4846125495225064,
+        0.043223180479253526,
+        0.1158633026604697,
+        0.33427608853671414,
+        0.1409763948680535,
+        0.06565333412091441,
+        0.08777050155845402,
+        0.27760477577481074,
+        0.15967060156584473
+      ],
+      "2": [
+        0.96244058032237,
+        0.9835611814953287,
+        0.9686786530013741,
+        0.9854875610321547,
+        0.9803385220955292,
+        0.99454583608448,
+        0.9835601376487066,
+        0.994996953964627,
+        0.9877992307963065,
+        0.9661592170574811,
+        0.9820864095182968,
+        0.9710413595599742,
+        0.993744409728699,
+        0.9830394670715854,
+        0.987154166727872,
+        0.9739551436167868,
+        0.99633048896531
+      ],
+      "3": [
+        0.9678524566939994,
+        0.9853134694149907,
+        0.9658103406592782,
+        0.9849823332569995,
+        0.9623723650961752,
+        0.995046006162365,
+        0.9865730957015186,
+        0.9939602840745582,
+        0.9803736798733167,
+        0.9700488842853434,
+        0.9826456043857734,
+        0.9656052050259796,
+        0.9930022469859364,
+        0.9852880550283357,
+        0.9873516316452509,
+        0.9729255579604924,
+        0.992197931210429
+      ],
+      "4": [
+        0.9546430569715969,
+        0.9794551858511962,
+        0.9759104014543584,
+        0.9894961088742266,
+        0.9643671814233433,
+        0.9827671674361474,
+        0.9703371690757329,
+        0.9898174497747402,
+        0.9864047110924749,
+        0.9543621164341942,
+        0.9848023123111609,
+        0.9747384935284594,
+        0.9878325631590282,
+        0.9846627266066091,
+        0.986394868935868,
+        0.9830245367574667,
+        0.9797673613306055
+      ]
+    },
+    "reconstructed_field_outside_basis": [
+      [
+        0.5017406382998189,
+        0.5070656262765967,
+        0.3010447682519596,
+        0.31971135986492905,
+        0.18835599820785387,
+        0.1888079996407843,
+        0.18850309874405677,
+        0.188540554247949,
+        0.18852290817453188,
+        0.18851650703170805
+      ],
+      [
+        0.3003895999759065,
+        0.3189105433740359,
+        0.45127815983965214,
+        0.46042079780448936,
+        0.18909136026935358,
+        0.189291598368911,
+        0.189123958700074,
+        0.1889494988655428,
+        0.1890655123598181,
+        0.1890142810972846
+      ],
+      [
+        0.18950501907566938,
+        0.18994354023251045,
+        0.18971201914761418,
+        0.1899113295569386,
+        0.19161724925357346,
+        0.18812004267393795,
+        0.1905650078752087,
+        0.18984590380995195,
+        0.1896174424535911,
+        0.18980069587097456
+      ],
+      [
+        0.19039238945113623,
+        0.1904284024150481,
+        0.19048867769511327,
+        0.19031993431796876,
+        0.1912967251544399,
+        0.19058673605347223,
+        0.3795062705240995,
+        0.40277311225644974,
+        0.28944733756619306,
+        0.29589514497238995
+      ],
+      [
+        0.1912369723564385,
+        0.1912310307931371,
+        0.1912574903701999,
+        0.19120854027509354,
+        0.19118965034887114,
+        0.1913660328927099,
+        0.2892626887768507,
+        0.2956356870906651,
+        0.41118476299658785,
+        0.43903589679711347
+      ]
+    ],
+    "polarization_representation_relative_residual": [
+      0.00023429418428807917,
+      0.0002342941842880734,
+      0.00035870144996068265,
+      0.00035870144996068303,
+      5.1015130756402374e-05,
+      5.101513075640299e-05,
+      0.00043044461841981616,
+      0.00043044461841982575,
+      0.00019104306211299848,
+      0.00019104306211298555
+    ],
+    "polarization_representation_absolute_residual": [
+      8.121992110206886e-07,
+      8.121992110206687e-07,
+      2.0321285682249748e-06,
+      2.0321285682249773e-06,
+      1.8447225445041757e-06,
+      1.8447225445041976e-06,
+      2.28060602647554e-06,
+      2.2806060264755902e-06,
+      5.927848182352737e-07,
+      5.927848182352336e-07
+    ],
+    "polarization_representation_per_harmonic": [
+      [
+        0.008519445748154155,
+        0.008519445748152762,
+        0.00035824086757337123,
+        0.0003582408675733708,
+        0.003481115141086324,
+        0.003481115141086425,
+        0.0034508224512571255,
+        0.003450822451257082,
+        0.0034513627336021815,
+        0.0034513627335083395
+      ],
+      [
+        0.00023236792186404664,
+        0.00023236792186404198,
+        0.0006649557341118273,
+        0.0006649557341118324,
+        8.791515670567471e-06,
+        8.791515670567637e-06,
+        0.0004220787703115894,
+        0.0004220787703115752,
+        0.0003186552253996624,
+        0.0003186552254004675
+      ],
+      [
+        0.005415208029685683,
+        0.005415208029683667,
+        0.0003580193751054347,
+        0.00035801937510543776,
+        0.04329861054918589,
+        0.0432986105491861,
+        0.00042956992865029103,
+        0.0004295699286503014,
+        0.006750744008929389,
+        0.00675074400892918
+      ],
+      [
+        0.0003338242231737251,
+        0.00033382422317338654,
+        0.0003215441911667314,
+        0.00032154419116672497,
+        8.853892914004674e-06,
+        8.853892914004693e-06,
+        0.0008687880115144111,
+        0.0008687880115143907,
+        0.0001867050498812784,
+        0.0001867050498812653
+      ],
+      [
+        0.003572896257911432,
+        0.0035728962578753212,
+        0.0035749220390402644,
+        0.0035749220390401317,
+        0.0036105857019381403,
+        0.003610585701938133,
+        0.00042930875929799697,
+        0.00042930875929800375,
+        0.010769262687225785,
+        0.01076926268722569
+      ]
+    ],
+    "finite_spatial_projection": true,
+    "harmonic_convergence_checked": false,
+    "stability_checked": false,
+    "frequency_interpolation": false,
+    "scope": "Static background is reconstructed exactly from supplied data; its modulation outside Q is omitted and audited. Residual is a source-density diagnostic, not a scattering-error bound."
+  },
+  "represented_dynamic_energy_balance": {
+    "output_power_by_input": [
+      1.0000001468838418,
+      1.0000001468838418,
+      1.00000284308847,
+      1.0000028430884706,
+      0.9999998552433634,
+      0.9999998552433637,
+      0.9999975238139908,
+      0.9999975238139907,
+      1.0000000120411783,
+      1.0000000120411785
+    ],
+    "represented_modulation_source_work_by_input": [
+      8.411944962190689e-08,
+      8.411944962190689e-08,
+      2.8087214111370484e-06,
+      2.8087214111370755e-06,
+      -1.74150017097829e-07,
+      -1.7415001709784254e-07,
+      -2.5171599757339168e-06,
+      -2.517159975733903e-06,
+      -6.046077543335498e-08,
+      -6.046077543335456e-08
+    ],
+    "output_minus_unit_input_minus_source_work": [
+      6.276439213429994e-08,
+      6.276439213429994e-08,
+      3.436705884666383e-08,
+      3.436705951277054e-08,
+      2.9393380531394675e-08,
+      2.9393380753452806e-08,
+      4.097396649686986e-08,
+      4.0973966385834005e-08,
+      7.250195371004436e-08,
+      7.250195393208854e-08
+    ],
+    "represented_source_work_by_harmonic": [
+      [
+        -3.1781950624850233e-06,
+        -3.178195062485024e-06,
+        3.094571747365992e-06,
+        3.0945717473659924e-06,
+        1.6742475117632252e-09,
+        1.6742475117632268e-09,
+        1.0535744887605082e-13,
+        1.0535744887605076e-13,
+        1.8711661996229613e-18,
+        1.871166199622952e-18
+      ],
+      [
+        3.2604582926371994e-06,
+        3.2604582926372003e-06,
+        -0.00011533283549799024,
+        -0.00011533283549799035,
+        0.00010933111027402864,
+        0.00010933111027402881,
+        6.849035968036632e-09,
+        6.849035968036625e-09,
+        1.2168802050582333e-13,
+        1.2168802050582333e-13
+      ],
+      [
+        1.8560967245139268e-09,
+        1.856096724513929e-09,
+        0.0001150394117637126,
+        0.00011503941176371272,
+        -0.0002173697586810156,
+        -0.000217369758681016,
+        0.00010263928596820606,
+        0.00010263928596820593,
+        1.7646586744586665e-09,
+        1.7646586744586653e-09
+      ],
+      [
+        1.2274292876425404e-13,
+        1.2274292876425427e-13,
+        7.57325681723433e-09,
+        7.573256817234335e-09,
+        0.0001078608777006242,
+        0.00010786087770062442,
+        -0.00010774891617882803,
+        -0.0001077489161788279,
+        2.4634001858081526e-06,
+        2.4634001858081517e-06
+      ],
+      [
+        2.2880947502700435e-18,
+        2.288094750269975e-18,
+        1.4123146680594346e-13,
+        1.4123146680594372e-13,
+        1.9464417531752183e-09,
+        1.9464417531752216e-09,
+        2.5856210935625697e-06,
+        2.5856210935625697e-06,
+        -2.5256257416058578e-06,
+        -2.5256257416058565e-06
+      ]
+    ],
+    "scope": "Finite represented modulation current, including its interference with incident fields; not an assertion of unitary Floquet scattering or a full unprojected-material energy certificate."
+  },
+  "weighted_conversion_reciprocity": {
+    "phase": 0,
+    "normalization": "Divide each output harmonic row by its native kappa_l",
+    "full_relative_residual": 2.3534180569090456e-08,
+    "conversion_only_relative_residual": 2.49395891454736e-06,
+    "harmonic_pairs": [
+      {
+        "output_harmonic": -1,
+        "input_harmonic": -2,
+        "absolute_weighted_block_difference": 6.524225085176273e-10,
+        "relative_weighted_block_difference": 6.228298242074214e-07,
+        "weighted_block_norm_forward": 0.001047513248210251,
+        "weighted_block_norm_reverse": 0.0010475132743488383
+      },
+      {
+        "output_harmonic": 0,
+        "input_harmonic": -2,
+        "absolute_weighted_block_difference": 5.368969629859632e-11,
+        "relative_weighted_block_difference": 2.2035398432522074e-06,
+        "weighted_block_norm_forward": 2.4365203317293155e-05,
+        "weighted_block_norm_reverse": 2.436515111476298e-05
+      },
+      {
+        "output_harmonic": 0,
+        "input_harmonic": -1,
+        "absolute_weighted_block_difference": 1.4870910214133447e-08,
+        "relative_weighted_block_difference": 2.4515710650945894e-06,
+        "weighted_block_norm_forward": 0.006065869525817592,
+        "weighted_block_norm_reverse": 0.006065855867215577
+      },
+      {
+        "output_harmonic": 1,
+        "input_harmonic": -2,
+        "absolute_weighted_block_difference": 1.2017887153349455e-13,
+        "relative_weighted_block_difference": 6.217792436507732e-07,
+        "weighted_block_norm_forward": 1.9328216775655386e-07,
+        "weighted_block_norm_reverse": 1.9328221834467326e-07
+      },
+      {
+        "output_harmonic": 1,
+        "input_harmonic": -1,
+        "absolute_weighted_block_difference": 9.56638990822204e-12,
+        "relative_weighted_block_difference": 1.992567978605736e-07,
+        "weighted_block_norm_forward": 4.801035193207125e-05,
+        "weighted_block_norm_reverse": 4.801035653958442e-05
+      },
+      {
+        "output_harmonic": 1,
+        "input_harmonic": 0,
+        "absolute_weighted_block_difference": 1.4924145396300926e-08,
+        "relative_weighted_block_difference": 2.6047312570845724e-06,
+        "weighted_block_norm_forward": 0.00572961608216332,
+        "weighted_block_norm_reverse": 0.005729629632887827
+      },
+      {
+        "output_harmonic": 2,
+        "input_harmonic": -2,
+        "absolute_weighted_block_difference": 8.487496301883311e-16,
+        "relative_weighted_block_difference": 1.0419914074450777e-06,
+        "weighted_block_norm_forward": 8.145455075914052e-10,
+        "weighted_block_norm_reverse": 8.145457094213781e-10
+      },
+      {
+        "output_harmonic": 2,
+        "input_harmonic": -1,
+        "absolute_weighted_block_difference": 1.2674570057611043e-13,
+        "relative_weighted_block_difference": 6.263096673493788e-07,
+        "weighted_block_norm_forward": 2.0236904653312575e-07,
+        "weighted_block_norm_reverse": 2.0236906307468342e-07
+      },
+      {
+        "output_harmonic": 2,
+        "input_harmonic": 0,
+        "absolute_weighted_block_difference": 6.724985039994168e-11,
+        "relative_weighted_block_difference": 2.8306829318978823e-06,
+        "weighted_block_norm_forward": 2.3757408037605186e-05,
+        "weighted_block_norm_reverse": 2.375746490082971e-05
+      },
+      {
+        "output_harmonic": 2,
+        "input_harmonic": 1,
+        "absolute_weighted_block_difference": 4.975613534009372e-10,
+        "relative_weighted_block_difference": 5.746264173695057e-07,
+        "weighted_block_norm_forward": 0.0008658862454192736,
+        "weighted_block_norm_reverse": 0.0008658866671648114
+      }
+    ],
+    "derivation": "T_l,x=i*kappa_l*b_l.T/4; R_l.T=R_l and the phase-zero cosine material block M.T=M imply M@(I-R@M)^-1 is transpose symmetric. Therefore S_x[l,m]/kappa_l=(S_x[m,l]/kappa_m).T.",
+    "scope": "Auxiliary control for this real globally phased cosine at Gamma; not imposed or generalized to traveling/phase-patterned modulation. Static R/T sampling residuals remain relevant."
+  },
+  "old_small_singular_direction_removal_control": {
+    "retained_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "scope": "Diagnostic only; this subset misses the predeclared five-frequency static material-source tolerance and does not replace the full dataset.",
+    "full_S_relative_difference": 4.244427126463429e-06,
+    "S_column_relative_differences": [
+      4.421546349364391e-06,
+      4.421546349369046e-06,
+      3.4320500799920437e-06,
+      3.4320500800012556e-06,
+      8.895691828083412e-08,
+      8.895691833081495e-08,
+      3.932856471544096e-06,
+      3.932856471501624e-06,
+      6.578107874941182e-06,
+      6.578107874909991e-06
+    ],
+    "carrier_sidebands": [
+      {
+        "harmonic": -2,
+        "complex_output_relative_difference": 0.00048795145046398185,
+        "complex_output_absolute_difference": 1.9965787494338506e-08
+      },
+      {
+        "harmonic": -1,
+        "complex_output_relative_difference": 6.263704857123227e-06,
+        "complex_output_absolute_difference": 6.549424874660482e-08
+      },
+      {
+        "harmonic": 0,
+        "complex_output_relative_difference": 4.4017476473256157e-08,
+        "complex_output_absolute_difference": 4.4012692826111207e-08
+      },
+      {
+        "harmonic": 1,
+        "complex_output_relative_difference": 2.7004983910921364e-06,
+        "complex_output_absolute_difference": 2.8046320858949954e-08
+      },
+      {
+        "harmonic": 2,
+        "complex_output_relative_difference": 0.0005075867457655399,
+        "complex_output_absolute_difference": 2.2393964183133447e-08
+      }
+    ],
+    "material_source_relative_residual": [
+      0.002396860391383408,
+      0.0023968603913845864,
+      0.0016602159063120094,
+      0.001660215906313054,
+      5.225964771583612e-05,
+      5.2259647715935136e-05,
+      0.0017180285655692248,
+      0.0017180285655627673,
+      0.00458616937908979,
+      0.004586169379081452
+    ]
+  },
+  "scopes": [
+    "The complete matrix is complete only in this finite +/-2 window and the retained rank17 basis.",
+    "M1/M2 comparison applies to carrier input; outer-frequency input columns have no exterior harmonic convergence certificate.",
+    "Real-frequency forced scattering does not establish pole locations, causal stability, topology or a full QNM basis.",
+    "Periodic modulation uses independently initialized native material maps at 16 phases, including DC and +/-1..4 Fourier contrast; the derivative-only model is a separate control.",
+    "Source-density residual is not a scattering-error upper bound; native mesh sensitivity remains independent."
+  ],
+  "source_sha256": {
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material\\grid.npz": "f72731952c9c804fa474b75d6b1e5c6e3d87e8e8edc95e7930a5f3617d01db84",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material\\K_base.npz": "453cb8df590a670a3978d2c4a5a2ca7b629d6269b8c29bb2999ce3320c7005ab",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material\\K_derivative.npz": "4153c425cf269e2b55066fb19f464c9f8d43a0cc1663b4897448c23b56cd2dc4",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\basis\\basis_multifrequency.npz": "6f0c8ba39442c8208490363f3c039a23aaf1a1da68fa1b5e9e70d1ba2cbad190",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\basis\\basis.npz": "d482460792ec43ad4a750048dd4e6ad4e7ae01e93f89049bc43e43ff47d6cf27",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling_selection.json": "aa07390ca08978f448b81a4b92d5b629687330e7fc92ea726ab2c0d9ae5d3978",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\incident_even\\summary.json": "57a92a7f63a120577f88cd05ce2b30d2d23a33420eb0ca3356df87a602fe049e",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\incident_even\\response_t2000.npz": "1525814829421afbe9518508350d1964561c145ec8e7f814e48d77d5e0bb9859",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\incident_odd\\response_t2000.npz": "1e9289d0360ffa3ccc3bcade1d65238db9827054ebade8c35cc3d3495559dcba",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\incident_odd\\summary.json": "cf840168aa556deba46933b7598901a948f19c925fd21ec46eb92d09a5b0f19f",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\template_q0\\summary.json": "8347af61e7a7e8a26d809f33438c8bb8c1b4500f48c13d0df8323687b25f0152",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\template_q0\\response_t2000.npz": "bd33b2d51001fb4e6767856ab2072f8d913ed69ffda3465a28b29a8419d1e8ab",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q1\\response_t2000.npz": "6623d55e5c6632fb37e289ece4cb1765fcb6fadee1618401668c33dcab91c7d4",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q1\\summary.json": "4ac63feff664ebf2cf6f0544289ee5134097ab858496be1d0f3909dfb7f9581f",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\template_q2\\summary.json": "2c6d43266d33a23af8cee73990e3ee034d77093fad4654b354d5afc5ccd46d38",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\template_q2\\response_t2000.npz": "05160119ac04c7978508a5fa2613defdfa1887cb31261bec73ab4b51b7bc59a9",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q3\\response_t2000.npz": "558902c1ca03720beb3583e88a78269bd7764d62057b65b76f2a103236f8e577",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q3\\summary.json": "894520bfb15a87a670d2f928cf46bd939d0dd52946dc9d16d7242c9676998fe3",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\template_q4\\summary.json": "81ee755ac0968134a11d19c72f56265e9f90d2ee0124abfe5f7739a2ad5778ba",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\template_q4\\response_t2000.npz": "d716940a51a1580f540f0cb54ba69dc736235949afd14d037504c74ec20b9785",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q5\\response_t2000.npz": "b64dff7b3164f0b4b86acf60bce895a05924c7c6fe6f63d22db309b95dbca659",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q5\\summary.json": "f982c540c49822066a63573fe7c7c37a269728e4bb9250bf41b31c04eb58f245",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\template_q6\\summary.json": "7d09aec4bff26c735b06ca580ae1d4795c46e88d175ece4f4caaff198a94c2fe",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\template_q6\\response_t2000.npz": "e3da6581a12e59ab5c1223a5c8d89ae3507fcf9244ce76708d3f4b7b9f04f07a",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q7\\response_t2000.npz": "52c217466d70264631b33f3b2931dd1f30e174749738e12a61e99b9e94cbc5b7",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q7\\summary.json": "8cc0d1892499d019386e00456376948bce4f81cfb256eb868dd99bd03f52552e",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\template_q8\\summary.json": "fc89daba6819617f9c718f26b688d620def75d88c805b9a076186fddfdc43c18",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\template_q8\\response_t2000.npz": "4a10d82ec10a8f7e78c642d2133fc86b93967f0a4a4929d3fcc66c8b6b0d78b6",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\extended_q9\\summary.json": "30ac1c4de28902baa602c52b049857ca4d1008bd6333c30e226e83b40e67d04d",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\extended_q9\\response_t2000.npz": "c4dbd9e68b9fe5276ecd11ee7f274efb1bd965f5636f1294e9811aaa98051309",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q10\\response_t2000.npz": "b92d3f47bc204aeaffc0e9f496291fd4f9a09fbacbf0b0d080cf5530962d3ec5",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q10\\summary.json": "1a152374ddcbc0d534b211d1420d901c15cd1cb73298df1ecbc8bc88f21c81c6",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\extended_q11\\summary.json": "c00f772f978cd853fc0d4ff05e7939c81db88e4e992247cdda2f1be70eeb773c",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\extended_q11\\response_t2000.npz": "b7a47212a064ff515334c02fcab9f9b06425d841ef53224415bca5e61b897886",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q12\\response_t2000.npz": "92bb9eac2b9d039f81f19478c89af776e96920b1550e964b05aa96881db56faa",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q12\\summary.json": "f40408fd3cc081cd81684be584a4bd36077c157a60ee8f805fcde5da3342ccea",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\extended_q13\\summary.json": "e1f6d04683b6f2d8780b2e7fc9e55718c6631e2476e348a39795e82e181c4d25",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\extended_q13\\response_t2000.npz": "3d809aab809333baac5029721a4fdcec2ec9cc3691bf5c76259a49de5436f6be",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q14\\response_t2000.npz": "4dd8879a15fac574d2421eb91e6a57aa1f1b23498c5ead0d892b5a8ecb4605af",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q14\\summary.json": "f666d2c1888ab9f1528b51f0d5b9fb7bf035e4d397c1e70561debf7a3e947857",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\extended_q15\\summary.json": "5512e906c2fe30144fe031296ff582e0c68998ee0126b669f56b4e3572f156b9",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\tail_diagnostics\\rank2\\extended_q15\\response_t2000.npz": "e43ca8f6d03eeb151086d5f08bb57e05a4e9387d838894a529c597130f375615",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q16\\response_t2000.npz": "e07296cb690dd76f60b5f26d170758d094cb1b3b6092312346b73da5c53fe19a",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q16\\summary.json": "5a019babcb4573cfd9ee1647166c6b3677507f1f5ea2a6b1b16979f09bab0a26",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\static\\weak_summary.json": "b94e7f702b10dc59e0198de07a285b6f1b38be4db00cb2f544cb72e4640322a1",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\incident_even\\response_t1000.npz": "bd5f188f7179229f3e66a740425d182b220aed5af3b2b38a3af97ff902350612",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\incident_even\\summary.json": "c02dd156532bc03c28fc2ae096dcb73e02add0adbde5b4189531ab656d1e596c",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\incident_odd\\response_t1000.npz": "bee7350a3e1bd6b93b6312b116eb50b2c99cb9084520d3f6d2171dddfe786ac2",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q0\\response_t1000.npz": "e55973ce91f2d1e0e5c4b6565fb844640a20934ca7350221bf6070d1ca0ecb92",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q0\\summary.json": "b670e8d324341def89dd7cab10bdb03fff78fc5335971513058ff2b9e47aa833",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q1\\response_t1000.npz": "7271de01877cb0adace8faddd0880abcab3527f0d401c375d0534079a6efd92b",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q2\\response_t1000.npz": "885d2bbd05b123d8c98d623af3a919a2b652821e5e5e724804c069b7446c4b4e",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q2\\summary.json": "33cbf1cc26041bed8732252550556649767c991d3766306f7221211ffdbaf642",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q3\\response_t1000.npz": "315b5fa4c8be01a6822b86cf34c8672d3ee1d3b5b7c7dcc28cf242b257dac66f",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q4\\response_t1000.npz": "f12eefe2cad34ea89bb513a453e034627122f78ecd8de18f74d7f07ec192dd1d",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q4\\summary.json": "ede0f01b69980246b28262b88a08ad98d5af07dd871e4c1596b7e43c7c64c6af",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q5\\response_t1000.npz": "aa9862c601df41ed521c40c480c7e56cb3ef811c953dea91ea9296fb06784fa4",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q6\\response_t1000.npz": "cce1cfa1f21fd1ce57e97e0bbf71ab3c50e6634030e6391112ef171a2d830794",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q6\\summary.json": "dbf8d2c44d814864112a9afd23f39b4a1bbbf79d8b3297919c20ce9699c61651",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q7\\response_t1000.npz": "5259214f3ea4d7f5b947065dd60f4a6c065a38e343d84db40a907ec01170afef",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q8\\response_t1000.npz": "3878a82d6c0104ee9322d7176ef56a07bad9ffc10fbfd08d2ae77c7edf5ec58b",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q8\\summary.json": "daef4b855e58f9678d393a600650a6c55aeeaf3277cf2159f94e7a301a812531",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q9\\response_t1000.npz": "fc88166be8da65be12d7b439e2e54e39dbbb6b1404c9a7ad30d0c3c493e3eda2",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q9\\summary.json": "b0caf01a6dd90823c0bb492fc19a8acceb195789b8d155d031a5667c9fbbcd26",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q10\\response_t1000.npz": "7be941422afaa0e42f771ba086ff4076e7176ae0b5d68f37158f70c9ab273dcc",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q11\\response_t1000.npz": "4227801a991050e0dee20c6b7d5e62552d9eb0b77e60fa77d28526235381dbfd",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q11\\summary.json": "5cb9d3f9e741f6c182edec73167415efb0196b25ff2675fef4fc02bf66e3425b",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q12\\response_t1000.npz": "16c39604d4f079cebf9497051e9f133b5e41ea88cfb566642ffb591fb8c22f9a",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q13\\response_t1000.npz": "6837c9d6427e0fe4580a1533cc63e1a6ed896546a80b6dd0949129eab42bfb82",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q13\\summary.json": "de22cdb6b1b9caee5ee63a3ff6e4f6cc7d2212f4a30c498b4fbe2126a7c07be0",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q14\\response_t1000.npz": "e1937494bde148a2916730c7fff9e815133745f997165c9809de3c4ebc42e6be",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q15\\response_t1000.npz": "49f86b37c4e370a7f6d5027a1e9495dc653bd16d927afaa7fc0d782b80a2f8c7",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q15\\summary.json": "f4663ca9226a80da958a2caaf42ca73c6b60083a2b441df5246779a72d6324ae",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q16\\response_t1000.npz": "9d9c40d9b422d382d5018c681da044ffa2c69db8f8df666b1f12e493bb4fc424",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\incident_even\\response_t1500.npz": "7ffb22bc4b9251c9ac450f582296b4319bb6de9d6d3d4f7463964a4a1f156f99",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\incident_odd\\response_t1500.npz": "2c1e99c14530e86994b4c55573fa1f7cb135a7d21065b3ecb5e0d2ba72e86c9e",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q0\\response_t1500.npz": "10b089b8871220d236b7b8e4ce4950c33b57ce74d09c8fb28681b1647e21cc4a",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q1\\response_t1500.npz": "02f5ef81c4e9fa489a762cc3beba5e8ab1f7de0ca7ed8f66af5589393604c1d0",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q2\\response_t1500.npz": "69d9c8aa07549a375ab2ebdcbeaa2190300563fc3215da70bc1104f5946fc902",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q3\\response_t1500.npz": "a6b1d3fde35aa9b15b3ee082ef50e146e05c21fff051189c4ed112d254b796fb",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q4\\response_t1500.npz": "b9900b63f374c5b354410e7ea45ac8bb3cd678929ac1a09ffe3801fd1b558470",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q5\\response_t1500.npz": "6a7772eb0a4bec8233333f1e84ff5e2e89d8d5882e210e5e04163901c91c353b",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q6\\response_t1500.npz": "aee3c6d5bb94d71fb1d7d6c3fcdfc130771ecb2eae861f1ab8144687ec126793",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q7\\response_t1500.npz": "dc3351c1559b1a729e347ac2ea7499acf75e022d9f65c4289893bc1729aebda3",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q8\\response_t1500.npz": "d3697d9c36335909db466722c911fb51b83dd0fa57138c737cbe4a508cce4295",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q9\\response_t1500.npz": "e074627db43bd5771b7a82f50b3ff4a7581913a581c0189d7d9a00eea5276229",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q10\\response_t1500.npz": "2c9219f7963f8c88c251fb619b3562273c8253e5affae4e46a83cbae3d38b08f",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q11\\response_t1500.npz": "002b4e64c644d96305fffb6c7a610e7dbc154281074d68437253b9f994d0c080",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q12\\response_t1500.npz": "65e5bd33d62e424b9f8b0dca7c7e3a6e8d14144ac6a75d22bfa01a88e0a81288",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q13\\response_t1500.npz": "bdb73ad310564b17e4180df763055e30f68608e664ff667d941aa242dbe1780e",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q14\\response_t1500.npz": "c170c8766e47fb1b3d1e0b8f1aba498edb5c1c68952c9ee36f790ffc2fa67188",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q15\\response_t1500.npz": "0eb7ecda7a73087c6cc13f62c986ca5846926e228533988f2c1dd9883b4eb2b6",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q16\\response_t1500.npz": "241c609e2f2fb12fbb9bad3afe46152403ff8d6617652b36160cce9431486633",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\incident_even\\response_t2000.npz": "e442392f4580d4eba575baf2802a39a8017f259d7545cebc6669dc9751435de3",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q0\\response_t2000.npz": "3eeeca68b6b90c3856e420f7c4a7b5ae66e1c66c6636bd2598753472f3ba31a8",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q2\\response_t2000.npz": "8599c50b080328494cd617226e8863d07e1425ac88a49ae14e9e4e209c21ceb9",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q4\\response_t2000.npz": "79be6c33ec0bb929fd5e1b52368a6f32e32e9c89a0b2dc33e79d1eb1b9bd42b3",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q6\\response_t2000.npz": "cb04f1286d4257dbe2d568d429fb5b29f3d4246f391b29d1dede2c4ba54e2f11",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\template_q8\\response_t2000.npz": "e62d801ca869deb586461df56472e7a81844dfefa1c6e227cd17b81991e183e5",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q9\\response_t2000.npz": "364cf41a49df10b76dd7566a7c5d30b5586a1b1d99d3ae92caa8e09a7b078e3d",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q11\\response_t2000.npz": "deac4da06a79a2667d598e2c5df4477ec419c0125f82e4a4b726f9020533345f",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q13\\response_t2000.npz": "250793c8d4bb0f6fd20559ee253307ba968e27d65ac4df4b7de93914ffb3e822",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\sampling\\extended_q15\\response_t2000.npz": "2cafb8e052b698de47dc47b1d6bed09dc2e052de77966fb9d6e450f3c8af757b",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\fourier_blocks.npz": "63c5382283b1cf7d288ad6bfb5e6f01c117e161051f4d2e23d92c26084227d0c",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\K_phase000.npz": "dc7e009574f0592b542fcd0a728aec683ddc889c9c339382fe5f2e9799994c1f",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\K_phase001.npz": "ce916bdc1a39361c6d525806c3a9be08d172598cc6fedb64df251740e6b2b6e4",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\K_phase002.npz": "e013e87a096022d5427b6af8872c1f47d89f33d32b3dee9e3c1683e110d08362",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\K_phase003.npz": "4d672e2c153a055985118dc217e75e2773d687c2519e5270a5beb5ec5be11429",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\K_phase004.npz": "7725967c92ad3648343b31b40484f71e897ef11807766b546de83bde3f44a206",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\K_phase005.npz": "e3a7e2ed37183e71f6d0969f5941f498aaeb546f93d65b2dc79dd706aa9e8946",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\K_phase006.npz": "8c99d7d1b643e910ce6f89dfd0759516fbe0eb4cc76bc27418ef9a4104798e98",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\K_phase007.npz": "fa19ea54dde16a20a894c6d550f11998f0ccab3fc01cd3636adb32166ab08066",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\K_phase008.npz": "40974d82057d816a0769732d0c0c1fd8b15aa3e422ce9bd58d9549c87bb96412",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\summary.json": "b69b075c4609eb12856c61365878eac6d83f7afc4ae189aa23e9d9f2318b8be8",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\half_amplitude\\fourier_blocks.npz": "dd2260cf0003eae471b0ab08dbede223dc4212df742c36c64512abe64cf0aac9",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\half_amplitude\\K_phase000.npz": "fe6578fae73d1ef22f880af56b47e1cb66b3c068e9fc5ee834b3f9aa889c62ca",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\half_amplitude\\K_phase001.npz": "8f0330af09eb76daf392cf1c494f28d5582c739d9d8d6c3696818e7c8bb6b52f",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\half_amplitude\\K_phase002.npz": "77832d26b89f2836368001ca03dad38ea661f198962cc4d3ca05d0d2c127e29f",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\half_amplitude\\K_phase003.npz": "a5b445461ac046409443b4dbcf1c2a2f654b1c7feb6bf0f7b64c7de5eb392db7",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\half_amplitude\\K_phase004.npz": "7725967c92ad3648343b31b40484f71e897ef11807766b546de83bde3f44a206",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\half_amplitude\\K_phase005.npz": "ff3df984a740b5e39179a9de591271af6ec50ed2c114ba854034ffe4e58f08f9",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\half_amplitude\\K_phase006.npz": "ec479d771403a4ff18c96eecb3a9abe3dda7ce9ce70be1fd801748ca629363ee",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\half_amplitude\\K_phase007.npz": "cb1a63b4bc6e475045d88eea5dbc66ed9201c3c0b80caa265987643dee0ede84",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\half_amplitude\\K_phase008.npz": "158841f232288ea1ec3e6701c9679ecd30e1ca3b36dee24a81135254f8868b67",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\material_fourier\\half_amplitude\\summary.json": "727572a82768190e67455d99b2097c5313de79aa5ee3d0a9c5d6722d65776751"
+  },
+  "periodic_material_vs_linearized": [
+    {
+      "harmonic": -2,
+      "exact_power": 1.6742475117916314e-09,
+      "linearized_power": 1.6737122122338214e-09,
+      "exact_vs_linearized_complex_difference": 0.00016375683300408434
+    },
+    {
+      "harmonic": -1,
+      "exact_power": 0.00010933111023136211,
+      "linearized_power": 0.00010933132002576117,
+      "exact_vs_linearized_complex_difference": 1.066239784568513e-06
+    },
+    {
+      "harmonic": 0,
+      "exact_power": 0.9997826596345735,
+      "linearized_power": 0.9997826592061109,
+      "exact_vs_linearized_complex_difference": 6.581488842954762e-07
+    },
+    {
+      "harmonic": 1,
+      "exact_power": 0.00010786087786931718,
+      "linearized_power": 0.00010786109616861841,
+      "exact_vs_linearized_complex_difference": 1.1157671114660087e-06
+    },
+    {
+      "harmonic": 2,
+      "exact_power": 1.946441753695053e-09,
+      "linearized_power": 1.9484486881011833e-09,
+      "exact_vs_linearized_complex_difference": 0.0005187306686887084
+    }
+  ],
+  "material_phase_8_to_16_carrier_S_relative_difference": 2.570315296159454e-15,
+  "material_phase_8_nyquist_convention": "The real even p=4 Nyquist coefficient is split equally between +/-4 in the N8 cosine interpolant.",
+  "raw_window_comparison": {
+    "raw_checkpoint": 2000,
+    "full_S_relative_difference": 4.119481158974549e-05,
+    "raw_static_rows": [
+      {
+        "fa_over_c": 0.378,
+        "R_condition": 11481.049002066973,
+        "native_constitutive_E_equals_KD_relative_residuals": [
+          7.988075965394982e-15,
+          5.850790592270381e-15,
+          1.0403443496244432e-14,
+          5.506724131829274e-15,
+          9.795784779163456e-15,
+          5.8876293615237344e-15,
+          5.8598962824482814e-15,
+          5.6680177357475796e-15,
+          6.467548724223635e-15,
+          4.9468683108728345e-15,
+          6.5416631124117214e-15,
+          5.907786423527888e-15,
+          6.163773907590477e-15,
+          6.600781134305513e-15,
+          3.0652336382028353e-15,
+          7.2790801371078e-15,
+          6.261374193640292e-15,
+          6.5934166432008784e-15,
+          3.3822380859807543e-15
+        ],
+        "R_transpose_relative_residual": 1.8027987835080536e-14,
+        "reciprocity_x_port_relative_residual": 1.8772876956693392e-05,
+        "work_matrix_relative_residual": 0.06664293181548851,
+        "net_work_matrix_relative_residual": 0.06664458029857978,
+        "source_work_diagonal": [
+          0.04679782903916519,
+          0.4849607358238134,
+          0.00014767472995177135,
+          0.09369663882158817,
+          0.0017053688050190148,
+          0.3729995277820473,
+          0.05667918502790543,
+          0.07546223281869256,
+          0.004841236093478538,
+          0.03347748878676368,
+          0.03849665183849707,
+          0.0017768861639743234,
+          0.000803159925260433,
+          0.0001612593815458995,
+          0.046280525019788715,
+          1.7843916660279537e-05,
+          0.00810618288750912
+        ],
+        "template_output_power": [
+          0.04668900263416593,
+          0.484960701480683,
+          0.00014347343379061893,
+          0.09369664319786292,
+          0.0017036224737750599,
+          0.37298289921670713,
+          0.0077715364539460334,
+          0.0754595569387598,
+          0.0006023215056929666,
+          0.03347713625115305,
+          0.038499610912060264,
+          0.0017768559275231543,
+          0.0008029404727305566,
+          0.00016077920524209486,
+          0.046291713180301855,
+          1.669787797893669e-05,
+          0.00810622283726974
+        ],
+        "source_work_absolute_diagonal_defects": [
+          -0.00010882640499926266,
+          -3.434313039507586e-08,
+          -4.201296161152415e-06,
+          4.376274745365727e-09,
+          -1.7463312439549607e-06,
+          -1.662856534018209e-05,
+          -0.04890764857395939,
+          -2.6758799327591953e-06,
+          -0.004238914587785571,
+          -3.5253561063430805e-07,
+          2.9590735631940257e-06,
+          -3.0236451169013065e-08,
+          -2.194525298763973e-07,
+          -4.8017630380464e-07,
+          1.1188160513139755e-05,
+          -1.1460386813428465e-06,
+          3.9949760619398256e-08
+        ],
+        "source_work_relative_diagonal_defects": [
+          0.0023254584076578774,
+          7.08163112148377e-08,
+          0.028449662054736813,
+          4.670684664896878e-08,
+          0.0010240196952209931,
+          4.4580660568285127e-05,
+          0.8628855293152187,
+          3.545985631234012e-05,
+          0.8755851823660628,
+          1.053052733076244e-05,
+          7.685983034875493e-05,
+          1.7016538133981435e-05,
+          0.0002732364040763582,
+          0.0029776643020794835,
+          0.0002416881930803236,
+          0.06422573603999858,
+          4.928283051351911e-06
+        ],
+        "work_hermitian_eigenvalues": [
+          -3.4028106878199653e-06,
+          -9.216080590226718e-09,
+          -3.2669755607996777e-10,
+          -2.0013823170755974e-11,
+          -4.661074020248319e-13,
+          5.930208604564955e-14,
+          2.0053634818922375e-13,
+          9.365015248456904e-10,
+          1.2378859169574115e-09,
+          5.1934393004137164e-08,
+          6.384888293772742e-06,
+          1.5373775401061637e-05,
+          4.7680936101102914e-05,
+          0.061513797562585765,
+          0.08403686492262405,
+          0.5416356408657496,
+          0.5791580421758118
+        ],
+        "static_input_power": [
+          1.0000000000000109,
+          1.0000000000000115
+        ],
+        "static_output_power": [
+          0.9999891696956061,
+          0.9999891696956066
+        ],
+        "incoming_identity_relative_residual": 1.062615836758471e-07,
+        "static_flux_matrix_relative_residual": 1.5405414980112237e-05,
+        "template_incoming_power": [
+          3.372917655890358e-12,
+          9.121242766545032e-13,
+          2.1796867743552484e-13,
+          1.779679269960003e-13,
+          3.1536159302289876e-12,
+          7.243793606735791e-13,
+          1.2094252319486078e-06,
+          1.493538137768749e-13,
+          1.0511663125410975e-07,
+          3.7219279820132526e-12,
+          7.501740713653301e-14,
+          3.0668844875100664e-13,
+          1.816035578010123e-15,
+          1.1263865131393569e-11,
+          8.827207422717359e-14,
+          2.8326591599413973e-11,
+          1.5483515356379538e-14
+        ]
+      },
+      {
+        "fa_over_c": 0.388,
+        "R_condition": 6339.88220091461,
+        "native_constitutive_E_equals_KD_relative_residuals": [
+          7.612965833339158e-15,
+          6.0261474944368156e-15,
+          8.34959580940041e-15,
+          5.2601541127076816e-15,
+          8.470085277762315e-15,
+          5.8171783659366144e-15,
+          5.925201818742717e-15,
+          5.7406641780122856e-15,
+          6.2555929803578405e-15,
+          5.080386674396035e-15,
+          6.197267929702409e-15,
+          6.1595648004189484e-15,
+          6.335603282309092e-15,
+          6.2054048148081665e-15,
+          3.1729420189971695e-15,
+          6.9044648067977904e-15,
+          6.4098827898932965e-15,
+          6.234033672371691e-15,
+          3.624444175726152e-15
+        ],
+        "R_transpose_relative_residual": 2.0186211526049876e-14,
+        "reciprocity_x_port_relative_residual": 6.4959134349497824e-06,
+        "work_matrix_relative_residual": 18.039469300570858,
+        "net_work_matrix_relative_residual": 18.039469528421755,
+        "source_work_diagonal": [
+          0.22685063142072845,
+          0.4858657771556205,
+          0.0040836768831170635,
+          0.08489934355254859,
+          0.005888140256938514,
+          0.37958855824484056,
+          14.569507684663092,
+          0.06808687511419406,
+          1.2643197538485784,
+          0.03707399958614414,
+          0.03871013491997965,
+          0.002707272092706119,
+          0.0005468144253599404,
+          0.0001843404717197397,
+          0.046813659254382946,
+          0.0003455803854972635,
+          0.007197324794775532
+        ],
+        "template_output_power": [
+          0.22660331263539527,
+          0.4858657728684375,
+          0.004072981528718886,
+          0.08489934647055389,
+          0.005848684930383786,
+          0.3795817387121429,
+          0.21299620425833826,
+          0.06808581671067525,
+          0.01806654514660753,
+          0.037030366726027636,
+          0.03871240084350057,
+          0.002703576912802422,
+          0.0005467260149648837,
+          4.9649263510478376e-05,
+          0.04682020554445851,
+          9.102004468617215e-06,
+          0.007197490814759544
+        ],
+        "source_work_absolute_diagonal_defects": [
+          -0.00024731878533318374,
+          -4.2871829974977516e-09,
+          -1.0695354398177273e-05,
+          2.918005295726722e-09,
+          -3.9455326554727575e-05,
+          -6.819532697655006e-06,
+          -14.356511480404754,
+          -1.0584035188138108e-06,
+          -1.2462532087019709,
+          -4.363286011650064e-05,
+          2.265923520920754e-06,
+          -3.695179903697148e-06,
+          -8.841039505667284e-08,
+          -0.00013469120820926132,
+          6.546290075563899e-06,
+          -0.0003364783810286463,
+          1.6601998401206963e-07
+        ],
+        "source_work_relative_diagonal_defects": [
+          0.0010902274495965323,
+          8.823801138240258e-09,
+          0.002619050112019031,
+          3.4370173823879674e-08,
+          0.006700812961823369,
+          1.796559076803443e-05,
+          0.9853806862339931,
+          1.5544897853494903e-05,
+          0.9857104620159473,
+          0.0011769126774443775,
+          5.853223958082621e-05,
+          0.0013649089478861883,
+          0.00016168263117505858,
+          0.7306654200930863,
+          0.0001398176278689724,
+          0.973661686685371,
+          2.306636969534168e-05
+        ],
+        "work_hermitian_eigenvalues": [
+          -2.3839135226629285e-06,
+          -6.136788138055567e-10,
+          -1.791187563664472e-10,
+          -8.444354146847933e-14,
+          -5.072696622039674e-14,
+          -4.09886613244137e-15,
+          3.5850413313565465e-14,
+          2.5447860314709095e-10,
+          1.401151391402385e-09,
+          2.8220652908831485e-08,
+          4.203969525633193e-06,
+          4.7033932878013495e-06,
+          3.549728926517613e-05,
+          0.27653202330953236,
+          0.5408000415055161,
+          0.5709061252544361,
+          15.834389327178798
+        ],
+        "static_input_power": [
+          1.0000000000000013,
+          1.0000000000000016
+        ],
+        "static_output_power": [
+          0.9999849578219173,
+          0.9999849578219185
+        ],
+        "incoming_identity_relative_residual": 4.008838075063602e-08,
+        "static_flux_matrix_relative_residual": 2.1321296241141892e-05,
+        "template_incoming_power": [
+          1.3928250937220031e-12,
+          9.617688137676086e-13,
+          5.491022111747497e-14,
+          1.687920255153482e-13,
+          4.912995878350677e-13,
+          7.560060915477772e-13,
+          1.8131511375704734e-07,
+          1.3611801722142743e-13,
+          1.5758526071672146e-08,
+          6.187643217979091e-13,
+          7.724158272341836e-14,
+          5.039484291715531e-14,
+          1.1578362523821025e-15,
+          1.6894902960297181e-12,
+          9.305462056056636e-14,
+          4.24641165568079e-12,
+          1.4307539461097106e-14
+        ]
+      },
+      {
+        "fa_over_c": 0.398,
+        "R_condition": 4757.2666918107425,
+        "native_constitutive_E_equals_KD_relative_residuals": [
+          7.486001691924969e-15,
+          6.263012114936665e-15,
+          7.437856950446406e-15,
+          5.447961932792551e-15,
+          7.467585217616773e-15,
+          6.150247996254275e-15,
+          7.44159614973704e-15,
+          5.769085730278265e-15,
+          8.39267020531465e-15,
+          5.26820154106943e-15,
+          8.342931582736023e-15,
+          7.510168483249675e-15,
+          6.4513136768340965e-15,
+          6.734525325651645e-15,
+          3.2518280983468455e-15,
+          7.550263989672512e-15,
+          6.503287665913498e-15,
+          6.1357341036368965e-15,
+          3.91768014934255e-15
+        ],
+        "R_transpose_relative_residual": 2.742459785868388e-14,
+        "reciprocity_x_port_relative_residual": 1.6041266489209422e-06,
+        "work_matrix_relative_residual": 0.07565717808332896,
+        "net_work_matrix_relative_residual": 0.07565717482216214,
+        "source_work_diagonal": [
+          29.40456642249665,
+          0.47090467030144556,
+          1.135021830039285,
+          0.07356211998041093,
+          0.4081136326620651,
+          0.3737897169646159,
+          -2.151753459303713,
+          0.05813054969660686,
+          -0.18672816614577759,
+          -6.803095849044022e-06,
+          0.03780678955332217,
+          -5.831559472279074e-07,
+          0.00032648164567956666,
+          -2.015401978236889e-05,
+          0.04579178253470746,
+          -5.0381200401632915e-05,
+          0.006020741742342974
+        ],
+        "template_output_power": [
+          29.404821740712833,
+          0.47090467676511677,
+          1.1350316139172079,
+          0.07356212249868442,
+          0.40812295528414905,
+          0.3737881125715918,
+          0.00322471079645414,
+          0.058130340418932294,
+          0.0003412523234223325,
+          5.174537778373417e-09,
+          0.03780838168333904,
+          2.487459864815853e-09,
+          0.00032646240386043556,
+          5.6481296423350445e-08,
+          0.045795291123059065,
+          1.2681188182152095e-07,
+          0.006020930830089882
+        ],
+        "source_work_absolute_diagonal_defects": [
+          0.00025531821618329786,
+          6.4636712093779636e-09,
+          9.783877922941997e-06,
+          2.5182734925133232e-09,
+          9.32262208397372e-06,
+          -1.6043930241016469e-06,
+          2.154978170100167,
+          -2.0927767456491164e-07,
+          0.18706941846919992,
+          6.808270386822395e-06,
+          1.5921300168669772e-06,
+          5.856434070927233e-07,
+          -1.9241819131099458e-08,
+          2.021050107879224e-05,
+          3.508588351602837e-06,
+          5.050801228345444e-05,
+          1.8908774690809538e-07
+        ],
+        "source_work_relative_diagonal_defects": [
+          8.682869035379788e-06,
+          1.3726071386209628e-08,
+          8.619916663973783e-06,
+          3.42332902718836e-08,
+          2.284268003862462e-05,
+          4.29223424638384e-06,
+          1.0014986432495372,
+          3.60013238576217e-06,
+          1.0018275353443782,
+          1.0007606151512771,
+          4.2110504231620645e-05,
+          1.0042655140132588,
+          5.893690927417344e-05,
+          1.0028024829306141,
+          7.661460961509591e-05,
+          1.0025170476449667,
+          3.140506879154309e-05
+        ],
+        "work_hermitian_eigenvalues": [
+          -2.338568953516514,
+          -2.491194322181345e-06,
+          -3.5923558660225356e-07,
+          -6.850318890926524e-10,
+          -1.6133671313272445e-13,
+          -5.290853760072078e-14,
+          -4.4136884909928494e-14,
+          -7.795530780917731e-18,
+          7.078882855880664e-11,
+          3.364341935150033e-10,
+          7.972099083678012e-10,
+          1.0384811632261977e-08,
+          4.47231923808551e-07,
+          4.105762776861133e-06,
+          0.5218680084335926,
+          0.5444668878359655,
+          30.947707534473864
+        ],
+        "static_input_power": [
+          1.0000000000000004,
+          1.0000000000000002
+        ],
+        "static_output_power": [
+          1.000014014474119,
+          1.0000140144741199
+        ],
+        "incoming_identity_relative_residual": 2.800649280228539e-08,
+        "static_flux_matrix_relative_residual": 1.977717176258457e-05,
+        "template_incoming_power": [
+          6.695415671790543e-11,
+          9.773460063348066e-13,
+          2.588247364854069e-12,
+          1.5311607028427661e-13,
+          1.1675332357426986e-12,
+          7.780145137153179e-13,
+          9.28804041928229e-08,
+          1.2128369403047767e-13,
+          8.07250086643308e-09,
+          2.800363008106813e-13,
+          7.86526981677607e-14,
+          2.3273685524154404e-14,
+          6.903598362363287e-16,
+          8.652389996668388e-13,
+          9.527592317895746e-14,
+          2.175295588819154e-12,
+          1.2531164175151121e-14
+        ]
+      },
+      {
+        "fa_over_c": 0.408,
+        "R_condition": 488.44769721582327,
+        "native_constitutive_E_equals_KD_relative_residuals": [
+          7.679993361481637e-15,
+          6.419579458425099e-15,
+          8.192515030481238e-15,
+          5.4484349534756075e-15,
+          7.837644007295152e-15,
+          6.452903936667182e-15,
+          6.96743759542494e-15,
+          5.8815071943825334e-15,
+          1.58350272075742e-14,
+          5.623309611226625e-15,
+          1.4333816850969494e-14,
+          6.181052671782823e-15,
+          6.682489430155964e-15,
+          6.329293707826176e-15,
+          3.4560287082741133e-15,
+          7.748483875906847e-15,
+          6.645165446423283e-15,
+          6.616479619690812e-15,
+          4.3233369585351195e-15
+        ],
+        "R_transpose_relative_residual": 4.2299285772891467e-14,
+        "reciprocity_x_port_relative_residual": 6.700675216260619e-06,
+        "work_matrix_relative_residual": 1.3743869272848674,
+        "net_work_matrix_relative_residual": 1.3743866950148051,
+        "source_work_diagonal": [
+          0.24980834063768223,
+          0.4448667886645764,
+          0.0150657541590074,
+          0.06126119177952114,
+          0.0010017000665128867,
+          0.35918449104696437,
+          -0.9713630277083398,
+          0.046867854726921905,
+          -0.08429181982443364,
+          0.035578327476232345,
+          0.03625085649972279,
+          0.004281085447560888,
+          0.00017532536247843233,
+          2.9945497555458343e-05,
+          0.04366769622750269,
+          -1.8486099344163838e-05,
+          0.004721892140277719
+        ],
+        "template_output_power": [
+          0.24989697338926048,
+          0.4448668087686236,
+          0.015069229866859914,
+          0.061261194478580076,
+          0.0010054616431016173,
+          0.3591909969986223,
+          0.0005359319421165708,
+          0.04686895902336087,
+          7.581369413557099e-05,
+          0.035581381725644914,
+          0.03625110637310649,
+          0.00428135076259623,
+          0.0001754131716536332,
+          3.905659445363326e-05,
+          0.043665941143708205,
+          4.293659678573182e-06,
+          0.004722073150780761
+        ],
+        "source_work_absolute_diagonal_defects": [
+          8.863275157824924e-05,
+          2.010404720476089e-08,
+          3.4757078525137625e-06,
+          2.699058934685361e-09,
+          3.7615765887306658e-06,
+          6.505951657909126e-06,
+          0.9718989596504564,
+          1.1042964389654242e-06,
+          0.08436763351856921,
+          3.054249412569321e-06,
+          2.4987338369947265e-07,
+          2.653150353417247e-07,
+          8.78091752008715e-08,
+          9.111096898174913e-06,
+          -1.7550837944843578e-06,
+          2.277975902273702e-05,
+          1.8101050304215188e-07
+        ],
+        "source_work_relative_diagonal_defects": [
+          0.00035467717106036105,
+          4.5191160159617697e-08,
+          0.000230649335315901,
+          4.4058215933564346e-08,
+          0.0037411437965222316,
+          1.8112791557339842e-05,
+          1.0005517318724606,
+          2.356136048199855e-05,
+          1.000899419354019,
+          8.583841504862084e-05,
+          6.892848486545656e-06,
+          6.196993660496915e-05,
+          0.0005005848441886534,
+          0.23327934822866642,
+          4.019181102068249e-05,
+          1.2322642326342748,
+          3.833284603230322e-05
+        ],
+        "work_hermitian_eigenvalues": [
+          -1.0556967216942459,
+          -1.3733205778186058e-05,
+          -8.943652230476492e-06,
+          -3.924323544158045e-09,
+          -1.9424171285077048e-09,
+          -1.7891308981266494e-11,
+          -5.678426778263647e-14,
+          -5.3347860646543205e-14,
+          -1.2218624444594514e-14,
+          1.0358230593113923e-12,
+          8.60237800285189e-11,
+          2.197764427318022e-09,
+          9.294696952733115e-07,
+          4.3406169449307605e-06,
+          0.30579793369707464,
+          0.4906967939749129,
+          0.5063073204939563
+        ],
+        "static_input_power": [
+          1.0000000000000013,
+          1.0000000000000013
+        ],
+        "static_output_power": [
+          1.00000590858186,
+          1.00000590858186
+        ],
+        "incoming_identity_relative_residual": 3.6275575407784624e-08,
+        "static_flux_matrix_relative_residual": 8.298474017214389e-06,
+        "template_incoming_power": [
+          1.314853772965449e-12,
+          9.667326609874625e-13,
+          8.166057474060102e-14,
+          1.3347124950746307e-13,
+          4.3078090641495107e-13,
+          7.828807891808294e-13,
+          1.6423352039089058e-07,
+          1.0265577552340287e-13,
+          1.4274513074067672e-08,
+          5.6181223426213e-13,
+          7.887002574091096e-14,
+          4.945336082434414e-14,
+          3.4820552832315003e-16,
+          1.5290375851710333e-12,
+          9.51175391955617e-14,
+          3.846796848358938e-12,
+          1.0297057885053961e-14
+        ]
+      },
+      {
+        "fa_over_c": 0.418,
+        "R_condition": 306.88261374240443,
+        "native_constitutive_E_equals_KD_relative_residuals": [
+          7.394453425391824e-15,
+          6.508152923271774e-15,
+          9.753914090034058e-15,
+          5.63779904554461e-15,
+          8.914295069467632e-15,
+          6.6472033323265305e-15,
+          6.268361658786976e-15,
+          6.188004298827697e-15,
+          1.5946398051479418e-14,
+          5.8934755838694894e-15,
+          1.4217606793121985e-14,
+          5.651648083149686e-15,
+          6.74311599559111e-15,
+          6.1211888542537255e-15,
+          3.6829322097229265e-15,
+          7.935780176479471e-15,
+          6.828438148317408e-15,
+          6.320185877196113e-15,
+          4.896793565779429e-15
+        ],
+        "R_transpose_relative_residual": 5.2700095818203837e-14,
+        "reciprocity_x_port_relative_residual": 1.9266629894265695e-05,
+        "work_matrix_relative_residual": 0.09430063184484055,
+        "net_work_matrix_relative_residual": 0.09430227542199374,
+        "source_work_diagonal": [
+          0.07342700092787854,
+          0.41277275123085816,
+          0.005890389803754769,
+          0.049237340401806585,
+          2.420299864591902e-06,
+          0.34011180979565336,
+          0.05728197466279173,
+          0.0353014925193407,
+          0.004980049193246106,
+          0.03979618935266033,
+          0.03463202160493058,
+          0.005855400301355812,
+          0.0001187084212994435,
+          0.00018498716747190902,
+          0.04099934975628947,
+          1.9761917067002984e-05,
+          0.003415706804776714
+        ],
+        "template_output_power": [
+          0.07328078902964974,
+          0.4127728106807784,
+          0.005884947122507342,
+          0.049237340862914356,
+          3.244529406580999e-07,
+          0.3401513872961985,
+          1.3797432708751333e-05,
+          0.03530784601107125,
+          3.505901299700403e-06,
+          0.039795897070975236,
+          0.03462334187276923,
+          0.0058553768289349275,
+          0.00011922711824769746,
+          0.00018444280079177894,
+          0.04096976674958549,
+          1.8419280110381075e-05,
+          0.003415355374158901
+        ],
+        "source_work_absolute_diagonal_defects": [
+          -0.0001462118982288041,
+          5.944992026440943e-08,
+          -5.442681247426993e-06,
+          4.611077700222843e-10,
+          -2.0958469239338017e-06,
+          3.9577500545118216e-05,
+          -0.05726817723008298,
+          6.353491730552718e-06,
+          -0.004976543291946405,
+          -2.9228168509087826e-07,
+          -8.679732161349929e-06,
+          -2.3472420884566858e-08,
+          5.186969482539618e-07,
+          -5.443666801300802e-07,
+          -2.9583006703984283e-05,
+          -1.3426369566219088e-06,
+          -3.5143061781310603e-07
+        ],
+        "source_work_relative_diagonal_defects": [
+          0.00199125521104173,
+          1.4402576605363078e-07,
+          0.0009239933907188301,
+          9.36500147938719e-09,
+          0.8659451477873765,
+          0.00011635260658412294,
+          0.9997591313359923,
+          0.00017994560553369625,
+          0.9992960107092004,
+          7.344464126973996e-06,
+          0.000250627360434373,
+          4.008679112704189e-06,
+          0.0043504947186289895,
+          0.0029427267175856633,
+          0.0007215481923453219,
+          0.06794062297041752,
+          0.00010288664627820103
+        ],
+        "work_hermitian_eigenvalues": [
+          -3.690565943185567e-05,
+          -4.003301483175891e-08,
+          -3.865666530802295e-08,
+          -6.827779957465207e-09,
+          -1.9637759924355414e-10,
+          -2.0617844786289057e-11,
+          -1.2054524414020817e-13,
+          -9.918463359344998e-14,
+          3.855311896929199e-14,
+          2.4471723368828076e-10,
+          3.897875634826704e-06,
+          1.3478510230146779e-05,
+          6.0133731305547005e-05,
+          0.06226058598317202,
+          0.12511360311386782,
+          0.4537375059890093,
+          0.4628751401071773
+        ],
+        "static_input_power": [
+          1.000000000000007,
+          1.0000000000000069
+        ],
+        "static_output_power": [
+          0.9999970191055269,
+          0.9999970191055273
+        ],
+        "incoming_identity_relative_residual": 8.728758801046747e-08,
+        "static_flux_matrix_relative_residual": 4.31935991147482e-06,
+        "template_incoming_power": [
+          3.1836564541936508e-12,
+          9.398218888395942e-13,
+          2.4211390950546654e-13,
+          1.1225770183931053e-13,
+          2.583391367255471e-12,
+          7.859444118075439e-13,
+          9.981584501925377e-07,
+          8.501425867953944e-14,
+          8.675685234252553e-08,
+          3.0734353770392785e-12,
+          7.982250066079335e-14,
+          2.6138100426928605e-13,
+          2.2357089130869573e-16,
+          9.291479480412806e-12,
+          9.405889423425071e-14,
+          2.3380268742593104e-11,
+          7.910265425277363e-15
+        ]
+      }
+    ],
+    "raw_diagnostics": {
+      "equation_relative_residual": 2.1360930103647602e-16,
+      "reconstructed_projection_relative_residual": 6.806314551007442e-15,
+      "static_incident_outside_basis": [
+        [
+          0.5017367185526018,
+          0.5070610063599705
+        ],
+        [
+          0.4512467895387724,
+          0.46039108984634114
+        ],
+        [
+          0.19161488880510757,
+          0.18811821910040508
+        ],
+        [
+          0.3795482075607145,
+          0.40282112442390283
+        ],
+        [
+          0.41119642309955207,
+          0.4390477872759644
+        ]
+      ],
+      "static_polarization_response_outside_basis": [
+        [
+          0.19668153633852647,
+          0.5367830077487137,
+          0.5332424889760267,
+          0.5410263965131479,
+          0.7153810918321497,
+          0.6195582298413524,
+          0.22210244968680554,
+          0.7597928212539792,
+          0.24055338818570482,
+          0.5524259718222047,
+          0.6362277422985668,
+          0.6998604039878019,
+          0.9305909200457135,
+          0.5945174240117295,
+          0.6486816884685138,
+          0.7742498737945508,
+          0.9270961900114256
+        ],
+        [
+          0.19170743245813443,
+          0.5344825427361377,
+          0.3322679894107359,
+          0.5281261521668754,
+          0.6626557135631762,
+          0.6247700968319702,
+          0.22228085198611897,
+          0.76186138505032,
+          0.22454069671727103,
+          0.48196780013334245,
+          0.6047359243990522,
+          0.695431188557836,
+          0.9365590077214055,
+          0.47425856712216424,
+          0.6184148304927657,
+          0.44889743834245444,
+          0.9284917764530489
+        ],
+        [
+          0.18957439291718187,
+          0.5320925874871337,
+          0.19037563985345846,
+          0.5146493372848936,
+          0.2248055524094792,
+          0.631594200663214,
+          0.2239980356670103,
+          0.7715664692648055,
+          0.25685944501997615,
+          0.1764411162041685,
+          0.5673409562032284,
+          0.41390987580200916,
+          0.9431726976871491,
+          0.6221396121381265,
+          0.5830723430339624,
+          0.811862352234675,
+          0.9260685956487342
+        ],
+        [
+          0.1897938992824294,
+          0.5295791937597601,
+          0.3072253677364715,
+          0.5003748497603508,
+          0.6519403710604961,
+          0.6389200402600593,
+          0.22985885019451108,
+          0.7890701384094305,
+          0.5231029761707602,
+          0.5123065270241874,
+          0.524100394938192,
+          0.6921093242451388,
+          0.9497091635771324,
+          0.6382581549497949,
+          0.542817610079547,
+          0.8237966012815473,
+          0.9143555999147138
+        ],
+        [
+          0.19191665874495328,
+          0.5268698797810444,
+          0.46395293476354155,
+          0.4849438496293174,
+          0.7045192242238882,
+          0.6436185131081638,
+          0.21895399637381882,
+          0.8122857927732462,
+          0.47786748758245523,
+          0.5646528135746279,
+          0.4771576780355068,
+          0.697697458334434,
+          0.953979228489176,
+          0.6588238574988168,
+          0.49953916445904584,
+          0.8255612221624498,
+          0.8822554440336869
+        ]
+      ],
+      "modulation_template_outside_basis": {
+        "-4": [
+          0.9546430569715969,
+          0.9794551858511962,
+          0.9759104014543584,
+          0.9894961088742266,
+          0.9643671814233433,
+          0.9827671674361474,
+          0.9703371690757329,
+          0.9898174497747402,
+          0.9864047110924749,
+          0.9543621164341942,
+          0.9848023123111609,
+          0.9747384935284594,
+          0.9878325631590282,
+          0.9846627266066091,
+          0.986394868935868,
+          0.9830245367574667,
+          0.9797673613306055
+        ],
+        "-3": [
+          0.9678524566939994,
+          0.9853134694149907,
+          0.9658103406592782,
+          0.9849823332569995,
+          0.9623723650961752,
+          0.995046006162365,
+          0.9865730957015186,
+          0.9939602840745582,
+          0.9803736798733167,
+          0.9700488842853434,
+          0.9826456043857734,
+          0.9656052050259796,
+          0.9930022469859364,
+          0.9852880550283357,
+          0.9873516316452509,
+          0.9729255579604924,
+          0.992197931210429
+        ],
+        "-2": [
+          0.96244058032237,
+          0.9835611814953287,
+          0.9686786530013741,
+          0.9854875610321547,
+          0.9803385220955292,
+          0.99454583608448,
+          0.9835601376487066,
+          0.994996953964627,
+          0.9877992307963065,
+          0.9661592170574811,
+          0.9820864095182968,
+          0.9710413595599742,
+          0.993744409728699,
+          0.9830394670715854,
+          0.987154166727872,
+          0.9739551436167868,
+          0.99633048896531
+        ],
+        "-1": [
+          0.044388945875635966,
+          0.03625507631522932,
+          0.3492383868576293,
+          0.22252617119508133,
+          0.9177365945094906,
+          0.03657251467523716,
+          0.04464890978264072,
+          0.23251772149859937,
+          0.4846125495225064,
+          0.043223180479253526,
+          0.1158633026604697,
+          0.33427608853671414,
+          0.1409763948680535,
+          0.06565333412091441,
+          0.08777050155845402,
+          0.27760477577481074,
+          0.15967060156584473
+        ],
+        "0": [
+          0.9624405804764044,
+          0.9835611814240782,
+          0.9686786528325226,
+          0.9854875609206205,
+          0.9803385221589405,
+          0.9945458362059584,
+          0.9835601378447926,
+          0.9949969540045183,
+          0.9877992307316172,
+          0.9661592172131686,
+          0.9820864094367563,
+          0.9710413593556867,
+          0.9937444097241979,
+          0.9830394670231878,
+          0.9871541666334512,
+          0.9739551434092512,
+          0.9963304891770196
+        ],
+        "1": [
+          0.044388945875635966,
+          0.03625507631522932,
+          0.3492383868576293,
+          0.22252617119508133,
+          0.9177365945094906,
+          0.03657251467523716,
+          0.04464890978264072,
+          0.23251772149859937,
+          0.4846125495225064,
+          0.043223180479253526,
+          0.1158633026604697,
+          0.33427608853671414,
+          0.1409763948680535,
+          0.06565333412091441,
+          0.08777050155845402,
+          0.27760477577481074,
+          0.15967060156584473
+        ],
+        "2": [
+          0.96244058032237,
+          0.9835611814953287,
+          0.9686786530013741,
+          0.9854875610321547,
+          0.9803385220955292,
+          0.99454583608448,
+          0.9835601376487066,
+          0.994996953964627,
+          0.9877992307963065,
+          0.9661592170574811,
+          0.9820864095182968,
+          0.9710413595599742,
+          0.993744409728699,
+          0.9830394670715854,
+          0.987154166727872,
+          0.9739551436167868,
+          0.99633048896531
+        ],
+        "3": [
+          0.9678524566939994,
+          0.9853134694149907,
+          0.9658103406592782,
+          0.9849823332569995,
+          0.9623723650961752,
+          0.995046006162365,
+          0.9865730957015186,
+          0.9939602840745582,
+          0.9803736798733167,
+          0.9700488842853434,
+          0.9826456043857734,
+          0.9656052050259796,
+          0.9930022469859364,
+          0.9852880550283357,
+          0.9873516316452509,
+          0.9729255579604924,
+          0.992197931210429
+        ],
+        "4": [
+          0.9546430569715969,
+          0.9794551858511962,
+          0.9759104014543584,
+          0.9894961088742266,
+          0.9643671814233433,
+          0.9827671674361474,
+          0.9703371690757329,
+          0.9898174497747402,
+          0.9864047110924749,
+          0.9543621164341942,
+          0.9848023123111609,
+          0.9747384935284594,
+          0.9878325631590282,
+          0.9846627266066091,
+          0.986394868935868,
+          0.9830245367574667,
+          0.9797673613306055
+        ]
+      },
+      "reconstructed_field_outside_basis": [
+        [
+          0.5017361469365199,
+          0.5070603090373673,
+          0.300953809724529,
+          0.31961005937394965,
+          0.1883570210945182,
+          0.18880891137240846,
+          0.1885035733927932,
+          0.1885410071536319,
+          0.18852304468356834,
+          0.18851663976975433
+        ],
+        [
+          0.30029833467291167,
+          0.31880847406167556,
+          0.45127478645981206,
+          0.46041670241164173,
+          0.18909143943690213,
+          0.18929145402604813,
+          0.18912398992509905,
+          0.1889494954502383,
+          0.18906551105897088,
+          0.18901426833885293
+        ],
+        [
+          0.18950572438056706,
+          0.18994414820187572,
+          0.18971208601978934,
+          0.18991117508934283,
+          0.1916168546901974,
+          0.18811982983164388,
+          0.19056512236308484,
+          0.18984607444610807,
+          0.18961743383855048,
+          0.18980075997653142
+        ],
+        [
+          0.19039255208600503,
+          0.1904285441432625,
+          0.19048876587672586,
+          0.1903199877940981,
+          0.19129691376190155,
+          0.19058697409291653,
+          0.37951428155300604,
+          0.4027816970251643,
+          0.28948540704142806,
+          0.29593380093357924
+        ],
+        [
+          0.19123751389978333,
+          0.19123156875934402,
+          0.19125780605647935,
+          0.1912088452122017,
+          0.19118992320828332,
+          0.19136636579670419,
+          0.2892989577089895,
+          0.2956722644901759,
+          0.41119489487414657,
+          0.4390461180716
+        ]
+      ],
+      "polarization_representation_relative_residual": [
+        0.00018398616540970408,
+        0.0001839861654097005,
+        0.0004875299016390559,
+        0.00048752990163906007,
+        5.1109590385109196e-05,
+        5.110959038511036e-05,
+        0.0004308872990969338,
+        0.00043088729909694006,
+        0.00018198121426270646,
+        0.00018198121426269318
+      ],
+      "polarization_representation_absolute_residual": [
+        6.378177619380086e-07,
+        6.378177619379962e-07,
+        2.7620114850153216e-06,
+        2.7620114850153453e-06,
+        1.8480930601192315e-06,
+        1.848093060119274e-06,
+        2.282888063238464e-06,
+        2.282888063238497e-06,
+        5.646505716127652e-07,
+        5.64650571612724e-07
+      ],
+      "polarization_representation_per_harmonic": [
+        [
+          0.00975565044878988,
+          0.00975565044878564,
+          0.000487470074557704,
+          0.0004874700745577078,
+          0.0034803205054429564,
+          0.0034803205054430688,
+          0.003449829788269652,
+          0.003449829788269809,
+          0.003451995982034891,
+          0.0034519959819704544
+        ],
+        [
+          0.00018042197447251627,
+          0.00018042197447251657,
+          0.0006882770426520667,
+          0.0006882770426521404,
+          9.361449072264857e-06,
+          9.36144907226703e-06,
+          0.00042220966557597855,
+          0.00042220966557594293,
+          0.00031866288499363116,
+          0.0003186628849941265
+        ],
+        [
+          0.0071944208015588245,
+          0.007194420801553672,
+          0.00048728352862794386,
+          0.00048728352862794397,
+          0.043276705148786,
+          0.043276705148787245,
+          0.00043001413304365036,
+          0.00043001413304365996,
+          0.0067542882162638955,
+          0.006754288216263659
+        ],
+        [
+          0.0007109207180620893,
+          0.0007109207180619845,
+          0.00033214276686007187,
+          0.00033214276686017536,
+          9.418124112338442e-06,
+          9.41812411233962e-06,
+          0.0008690589191591093,
+          0.0008690589191590729,
+          0.00017742004848823962,
+          0.0001774200484882263
+        ],
+        [
+          0.00359245174673714,
+          0.003592451746785578,
+          0.0035770867528434292,
+          0.003577086752843229,
+          0.0036110026176315833,
+          0.003611002617631588,
+          0.00042975289185950355,
+          0.00042975289185950984,
+          0.010773014554818702,
+          0.01077301455481854
+        ]
+      ],
+      "finite_spatial_projection": true,
+      "harmonic_convergence_checked": false,
+      "stability_checked": false,
+      "frequency_interpolation": false,
+      "scope": "Static background is reconstructed exactly from supplied data; its modulation outside Q is omitted and audited. Residual is a source-density diagnostic, not a scattering-error bound."
+    },
+    "carrier_sidebands": [
+      {
+        "harmonic": -2,
+        "raw_power": 1.6750605087473237e-09,
+        "selected_power": 1.6742475117916314e-09,
+        "complex_output_relative_difference": 0.0004452669604270737
+      },
+      {
+        "harmonic": -1,
+        "raw_power": 0.00010933308126874933,
+        "selected_power": 0.00010933111023136211,
+        "complex_output_relative_difference": 0.00015748279171578217
+      },
+      {
+        "harmonic": 0,
+        "raw_power": 0.9997965862701205,
+        "selected_power": 0.9997826596345735,
+        "complex_output_relative_difference": 8.510039399193754e-05
+      },
+      {
+        "harmonic": 1,
+        "raw_power": 0.00010783931271775343,
+        "selected_power": 0.00010786087786931718,
+        "complex_output_relative_difference": 0.00014249441084157117
+      },
+      {
+        "harmonic": 2,
+        "raw_power": 1.945244511353003e-09,
+        "selected_power": 1.946441753695053e-09,
+        "complex_output_relative_difference": 0.00030951046058792813
+      }
+    ]
+  },
+  "portable_reload_carrier_S_relative_error": 0.0
+}

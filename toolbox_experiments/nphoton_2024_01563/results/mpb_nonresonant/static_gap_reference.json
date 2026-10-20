@@ -1,0 +1,87 @@
+{
+  "scope": "Static weak-modulation counterpart crossing; not a direct dynamic Floquet gap",
+  "reference_backend": "Native MPB EVEN_Z periodic-z supercell",
+  "resolution": 12,
+  "lz": 64,
+  "m": 0.01,
+  "chi0": 10.68,
+  "target_frequency": 0.1928324027417661,
+  "target_half_drive_THz": 91.5,
+  "roots": [
+    {
+      "epsilon": 11.6266,
+      "q": 0.2815633803423797,
+      "frequency": 0.19283240274576946,
+      "frequency_residual": 4.003353204495852e-12,
+      "evaluations": [
+        {
+          "q": 0.2818,
+          "frequency": 0.1929848251104901
+        },
+        {
+          "q": 0.281563294662342,
+          "frequency": 0.19283234754958792
+        },
+        {
+          "q": 0.2815633803423797,
+          "frequency": 0.19283240274576946
+        }
+      ]
+    },
+    {
+      "epsilon": 11.68,
+      "q": 0.2815904695384823,
+      "frequency": 0.19283240274233127,
+      "frequency_residual": 5.651590306854359e-13,
+      "evaluations": [
+        {
+          "q": 0.2818,
+          "frequency": 0.19296733507876032
+        },
+        {
+          "q": 0.2815904559241758,
+          "frequency": 0.1928323939744958
+        },
+        {
+          "q": 0.2815904695384823,
+          "frequency": 0.19283240274233127
+        }
+      ]
+    },
+    {
+      "epsilon": 11.7334,
+      "q": 0.28161746012901007,
+      "frequency": 0.1928324027402335,
+      "frequency_residual": -1.5326073743437973e-12,
+      "evaluations": [
+        {
+          "q": 0.2818,
+          "frequency": 0.1929499189902381
+        },
+        {
+          "q": 0.28161750235541055,
+          "frequency": 0.19283242992644714
+        },
+        {
+          "q": 0.28161746012901007,
+          "frequency": 0.1928324027402335
+        }
+      ]
+    }
+  ],
+  "delta_q": 5.407978663035662e-05,
+  "relative_momentum_width_percent": 0.019205119661539555,
+  "local_q": 0.2818,
+  "local_carrier": 0.19296733507876032,
+  "local_df_dq": 0.643932959991822,
+  "local_df_depsilon": -0.0003268363319473432,
+  "local_width_from_secants": 5.420769306857591e-05,
+  "local_relative_width_percent": 0.01923622891006952,
+  "local_predicted_gain_per_meep_time": 0.00010966081094893052,
+  "local_predicted_amplitude_efold_pump_periods": 3519.3490438188715,
+  "limitations": [
+    "Spatial resolution 12 has not yet been refined",
+    "Static counterparts approximate the first parametric tongue to leading modulation order",
+    "MPB and Meep have different spatial discretizations; do not use this drive without Meep calibration"
+  ]
+}

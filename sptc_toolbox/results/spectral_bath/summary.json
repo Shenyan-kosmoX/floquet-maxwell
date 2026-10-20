@@ -1,0 +1,104 @@
+{
+  "status": "VERIFIED_SPECIFIED_FINITE_WINDOW_REALIZATION",
+  "scope": "Synthetic spectral-density and Schur-Floquet controls; not a unique native Maxwell self-energy",
+  "checks": {
+    "resolved_constant_density_log_integral": true,
+    "two_over_pi_normalization": true,
+    "resolved_broadening_tends_to_two_gamma": true,
+    "window_reactive_shift_matches_analytic_integral": true,
+    "full_augmented_state_count": true,
+    "all_augmented_multipliers_independent_ode": true,
+    "complex_liouville_determinant": true,
+    "schur_reconstructed_augmented_vectors": true,
+    "schur_eigenpair_residual": true,
+    "schur_complex_derivative": true
+  },
+  "quadrature": [
+    {
+      "order": 16,
+      "error": 0.004209702427740423
+    },
+    {
+      "order": 32,
+      "error": 0.0001686903244004231
+    },
+    {
+      "order": 64,
+      "error": 2.6206924283394075e-07
+    },
+    {
+      "order": 128,
+      "error": 6.336718350190801e-13
+    }
+  ],
+  "broadening": [
+    {
+      "eta": 0.2,
+      "kernel_real": 0.05619293790833402,
+      "analytic_error": 4.510691848919454e-16,
+      "relative_error_to_two_gamma": 0.06345103486109968
+    },
+    {
+      "eta": 0.1,
+      "kernel_real": 0.05809172984925934,
+      "analytic_error": 5.065393282921907e-16,
+      "relative_error_to_two_gamma": 0.03180450251234433
+    },
+    {
+      "eta": 0.05,
+      "kernel_real": 0.05904526921055746,
+      "analytic_error": 5.553502159317107e-16,
+      "relative_error_to_two_gamma": 0.015912179824042333
+    }
+  ],
+  "windows": [
+    {
+      "half_width": 2.0,
+      "quadrature_order": 768,
+      "kernel": [
+        0.05804799547152425,
+        0.005758188441871663
+      ],
+      "analytic_error": 5.742019868768541e-16
+    },
+    {
+      "half_width": 4.0,
+      "quadrature_order": 768,
+      "kernel": [
+        0.059039874149051375,
+        0.0028683689997840312
+      ],
+      "analytic_error": 5.803032483466263e-16
+    },
+    {
+      "half_width": 8.0,
+      "quadrature_order": 1024,
+      "kernel": [
+        0.059521887866308076,
+        0.001432842081727307
+      ],
+      "analytic_error": 8.879660463418739e-13
+    }
+  ],
+  "full_floquet": {
+    "state_count": 4,
+    "multiplier_error": 2.4603884603581055e-13,
+    "determinant_error": 1.0809411027812401e-13
+  },
+  "schur": {
+    "max_reconstruction_relative_error": 1.0829203941924854e-13,
+    "max_reduced_residual": 1.1547548682412796e-15,
+    "cauchy_derivative_error": 2.611078392804895e-14
+  },
+  "source_sha256": {
+    "spectral_bath.py": "23cd7028354371e957e380c9713cb1b258cf3a7e845909949e97690c845ce4d7",
+    "memory_pencil.py": "a104c03afa7f427e1df8486054a2eba76e0f1269de96cb5369627b488760202a"
+  },
+  "elapsed_seconds": 0.6089999999967404,
+  "limits": [
+    "Window and broadening are explicit input-model choices, not fitted loss or frequency shifts",
+    "Finite upper-half-plane causal completion does not identify the physical resonance sheet of a continuum",
+    "Negative-frequency samples and their modal-coordinate map must be supplied separately",
+    "No new spatial solver or native radiation fit is part of this control"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "status": "LOCAL_COMPLEX_FLOQUET_POLE_AND_SCATTERING_RESIDUE_VALIDATED_FOR_PHYSICAL_SLAB",
+  "slab_parameters": {
+    "epsilon_inf": 2.7,
+    "epsilon_cosine_amplitude": 0.22,
+    "thickness": 0.72,
+    "wp": 0.6,
+    "wr": 1.7,
+    "gamma": 0.08,
+    "strength_cosine_amplitude": 0.07,
+    "drive": 1.0
+  },
+  "static_seed": [
+    2.691758115097847,
+    -1.183016154929362
+  ],
+  "zero_modulation_folded_pole_error": 0.0,
+  "results": [
+    {
+      "N": 1,
+      "status": "DIFFERENT_TRUNCATION_ROOT_TARGET_STATIC_HARMONIC_NOT_RETAINED",
+      "frequency": [
+        0.9968367811021653,
+        -1.1534044464024882
+      ],
+      "residual": 6.914505948219589e-16,
+      "relative_derivative_pairing": 0.2878621582765132,
+      "residue_errors": [
+        0.0023615834333638366,
+        0.00023608175645143168,
+        2.3607428189099635e-05
+      ],
+      "pole_change_from_previous": null,
+      "channel_amplitude_overlap_squared": null,
+      "identity_metric": "Common outgoing air-channel coefficient vector, for branch comparison only; QNM normalization uses A derivative"
+    },
+    {
+      "N": 2,
+      "status": "LOCAL_OUTGOING_FLOQUET_POLE",
+      "frequency": [
+        0.6936104110875696,
+        -1.1795736367712084
+      ],
+      "residual": 5.844172051293499e-16,
+      "relative_derivative_pairing": 0.2715357536143222,
+      "residue_errors": [
+        0.004343401186497451,
+        0.00043364985436803236,
+        4.3358125671890226e-05
+      ],
+      "pole_change_from_previous": null,
+      "channel_amplitude_overlap_squared": null,
+      "identity_metric": "Common outgoing air-channel coefficient vector, for branch comparison only; QNM normalization uses A derivative",
+      "common_channel_residue_relative_difference_from_N6": 0.007588558193303142
+    },
+    {
+      "N": 3,
+      "status": "LOCAL_OUTGOING_FLOQUET_POLE",
+      "frequency": [
+        0.6950643791785988,
+        -1.188629294801837
+      ],
+      "residual": 1.6986702873468405e-15,
+      "relative_derivative_pairing": 0.26287711978893186,
+      "residue_errors": [
+        0.005230352499578487,
+        0.0005227692379707688,
+        5.227430869661077e-05
+      ],
+      "pole_change_from_previous": 0.009171639197952611,
+      "channel_amplitude_overlap_squared": 0.9868744590068564,
+      "identity_metric": "Common outgoing air-channel coefficient vector, for branch comparison only; QNM normalization uses A derivative",
+      "common_channel_residue_relative_difference_from_N6": 0.00012492555289143293
+    },
+    {
+      "N": 4,
+      "status": "LOCAL_OUTGOING_FLOQUET_POLE",
+      "frequency": [
+        0.6950001248000873,
+        -1.1886818597070483
+      ],
+      "residual": 9.974019689979988e-16,
+      "relative_derivative_pairing": 0.2621734182042738,
+      "residue_errors": [
+        0.005832305793623899,
+        0.0005828734525981496,
+        5.8283802669093556e-05
+      ],
+      "pole_change_from_previous": 8.301622984546046e-05,
+      "channel_amplitude_overlap_squared": 0.9999189585699634,
+      "identity_metric": "Common outgoing air-channel coefficient vector, for branch comparison only; QNM normalization uses A derivative",
+      "common_channel_residue_relative_difference_from_N6": 8.142479219690389e-07
+    },
+    {
+      "N": 5,
+      "status": "LOCAL_OUTGOING_FLOQUET_POLE",
+      "frequency": [
+        0.694999700494838,
+        -1.1886818058716444
+      ],
+      "residual": 9.696762352004379e-14,
+      "relative_derivative_pairing": 0.2620209046315587,
+      "residue_errors": [
+        0.006585745373154972,
+        0.0006585179874451546,
+        6.585249614341225e-05
+      ],
+      "pole_change_from_previous": 4.277069035753583e-07,
+      "channel_amplitude_overlap_squared": 0.9999996514653944,
+      "identity_metric": "Common outgoing air-channel coefficient vector, for branch comparison only; QNM normalization uses A derivative",
+      "common_channel_residue_relative_difference_from_N6": 3.6840816435225365e-09
+    },
+    {
+      "N": 6,
+      "status": "LOCAL_OUTGOING_FLOQUET_POLE",
+      "frequency": [
+        0.6949996992682331,
+        -1.1886818047006966
+      ],
+      "residual": 1.3309445696843078e-15,
+      "relative_derivative_pairing": 0.26195017498950385,
+      "residue_errors": [
+        0.05911944809517536,
+        0.006236905516991324,
+        0.0006271370365784364
+      ],
+      "pole_change_from_previous": 1.69578244175962e-09,
+      "channel_amplitude_overlap_squared": 0.9999999987684125,
+      "identity_metric": "Common outgoing air-channel coefficient vector, for branch comparison only; QNM normalization uses A derivative",
+      "common_channel_residue_relative_difference_from_N6": 0.0
+    }
+  ],
+  "scope": "Local tracked pole and Laurent residue in an analytic 1D Maxwell Floquet slab; not a global spectrum or arbitrary photonic-crystal QNM adapter",
+  "limitations": [
+    "N1 does not retain the static parent at harmonic +2 and locates a different pole",
+    "No claim that every physical pole was found",
+    "Residue validity is local; a finite pole sum needs an explicit analytic background",
+    "Bulk material and temporal harmonic assumptions are the specified scalar slab fixture"
+  ],
+  "source_sha256": {
+    "sptc_toolbox/scripts/validate_floquet_slab_qnm.py": "c8fe9e2a337907f4ecef723b1a6746b4ad361100867bfe58d5eddd7cf3c8874f",
+    "sptc_toolbox/floquet_slab.py": "6b1fd30eb592b4614d78eda39dbb9c8bf9288731195ff93e1a43e3792cd2761e",
+    "sptc_toolbox/qnm.py": "7c76e011120774d2e48057e4c37c9dc0787828476fedb4dcb875854285ff4eba",
+    "ptc_fig4/src/ptc_fig4/static_modes.py": "c30149ed9eb48a7d607f865e358ec6c0647647f9fb373da766d01f15549ee873"
+  }
+}

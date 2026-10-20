@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "sptc_toolbox\scripts\comsol_zhang2018_unitcell.py", line 146, in main
+    if args.solve:solve(model,args)
+                  ~~~~~^^^^^^^^^^^^
+  File "sptc_toolbox\scripts\comsol_zhang2018_unitcell.py", line 118, in solve
+    save_json(OUT/f'sweep_mesh{args.mesh}.json',dict(rows=rows,completed=False,mesh=args.mesh))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "sptc_toolbox\scripts\comsol_zhang2018_unitcell.py", line 28, in save_json
+    Path(path).write_text(json.dumps(plain(data),indent=2,ensure_ascii=False,allow_nan=False)+'\n',encoding='utf8')
+                          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "D:\Anaconda\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Anaconda\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Anaconda\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type complex is not JSON serializable

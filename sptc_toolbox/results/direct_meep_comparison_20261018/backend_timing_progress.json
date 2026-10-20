@@ -1,0 +1,77 @@
+{
+  "completed": false,
+  "timings": [
+    {
+      "stage": "load_portable_first_call",
+      "wall_seconds": 3.772337600001265,
+      "cpu_seconds": 3.34375,
+      "scope": "Read/decompress saved static fields, construct validated dataset and sparse material derivative. Fresh Python process; OS filesystem cache not flushed."
+    },
+    {
+      "stage": "select_single_bottom_input",
+      "wall_seconds": 0.10084379999898374,
+      "cpu_seconds": 0.109375,
+      "scope": "Make production dataset with one bottom-x input; preserves full source basis and all output ports."
+    },
+    {
+      "stage": "modulation_for_first_call",
+      "wall_seconds": 0.5051768000012089,
+      "cpu_seconds": 0.328125,
+      "scope": "Load and validate actual epsilon-phase maps and sparse LU factors; construct Fourier actions p=0..4. Projection occurs in solve, not in this loader."
+    },
+    {
+      "stage": "solve_single_bottom_carrier",
+      "wall_seconds": 27.109259000000748,
+      "cpu_seconds": 26.125,
+      "scope": "Production solve: actual Fourier projection, 85x85 solve, complex outputs, all internal fields, source coverage and residual audits. One incident column."
+    },
+    {
+      "stage": "solve_all_ten_inputs",
+      "wall_seconds": 43.248518200000035,
+      "cpu_seconds": 42.53125,
+      "scope": "Production solve with reused loaded material factors: 20x10 complex S, all ten internal fields, full source coverage and residual audits. Fourier projections recomputed by current API."
+    },
+    {
+      "stage": "solve_all_ten_inputs_warm_repeat",
+      "wall_seconds": 40.786476300001596,
+      "cpu_seconds": 40.125,
+      "scope": "One repeat of the same complete production solve and audits; all loaded native material factors reused."
+    },
+    {
+      "stage": "modulation_for_phase_pi_over_3",
+      "wall_seconds": 0.004799099999218015,
+      "cpu_seconds": 0.0,
+      "scope": "Global time-origin phase only; actual epsilon-phase map LU factors reused. No arbitrary-amplitude scaling."
+    },
+    {
+      "stage": "solve_single_bottom_carrier_phase_pi_over_3",
+      "wall_seconds": 24.77702270000009,
+      "cpu_seconds": 24.453125,
+      "scope": "Complete one-input production solve with changed global modulation phase, including fields and residual audits."
+    },
+    {
+      "stage": "material_matrices_for_small_algebra_control",
+      "wall_seconds": 9.64924560000145,
+      "cpu_seconds": 9.515625,
+      "scope": "Re-evaluate actual material actions and project them; reported separately so this cost is not hidden in microsecond algebra."
+    },
+    {
+      "stage": "small_algebra_prepare",
+      "wall_seconds": 1.18619359999866,
+      "cpu_seconds": 1.171875,
+      "scope": "Project supplied static fields into R,b and assemble finite matrix/rhs; excludes field reconstruction and coverage audits."
+    },
+    {
+      "stage": "small_algebra_linear_solve_only",
+      "wall_seconds": 0.09272170000076585,
+      "cpu_seconds": 0.0,
+      "scope": "ONLY 85x85 dense linear solve with ten RHS from already assembled coefficients; not a complete Floquet run."
+    },
+    {
+      "stage": "small_algebra_port_output_only",
+      "wall_seconds": 0.0009448999990127049,
+      "cpu_seconds": 0.0,
+      "scope": "ONLY port reconstruction from cached projected blocks, no spatial fields or coverage checks."
+    }
+  ]
+}

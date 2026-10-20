@@ -1,0 +1,473 @@
+{
+  "fixture": "Nonpaper cylinder B",
+  "physical_geometry": {
+    "radius_over_a": 0.23,
+    "height_over_a": 0.36,
+    "epsilon": 12.0
+  },
+  "reference_epsilon": 12.0,
+  "metadata": {
+    "config": {
+      "gmax": 5.1,
+      "gmode_inds": [
+        0,
+        3,
+        4,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16,
+        19,
+        20,
+        23
+      ],
+      "reference_eps": [
+        12.0
+      ],
+      "numeig": 60,
+      "eps_eff": "custom",
+      "gmode_compute": "exact",
+      "gmode_step": 0.001,
+      "gmode_tol": 1e-10,
+      "compute_im": false,
+      "truncate_g": "abs",
+      "eig_solver": "eigh",
+      "eig_sigma": 0.6,
+      "verbose": false,
+      "kz_symmetry": null,
+      "angles": null
+    },
+    "kpoints_ka": [
+      [
+        0.9808196121824588,
+        0.0
+      ],
+      [
+        1.060819612182459,
+        0.0
+      ]
+    ],
+    "physical_signature": "77e76e814b7e8ee6cd84af8d26b5125f416b418e69df143d50d3ce90cbb9e533",
+    "z_nodes": [
+      -0.994700467495825,
+      -0.9722875115366163,
+      -0.9328156011939159,
+      -0.8777022041775016,
+      -0.8089381222013219,
+      -0.7290083888286136,
+      -0.6408017753896295,
+      -0.5475062549188188,
+      -0.4524937450811813,
+      -0.35919822461037054,
+      -0.2709916111713863,
+      -0.19106187779867811,
+      -0.1222977958224985,
+      -0.06718439880608412,
+      -0.0277124884633837,
+      -0.005299532504175031,
+      0.001907831701503021,
+      0.009976495846818145,
+      0.02418638357019029,
+      0.04402720649609945,
+      0.06878227600752412,
+      0.09755698002169907,
+      0.12931136085973338,
+      0.16289774822922526,
+      0.19710225177077473,
+      0.2306886391402666,
+      0.2624430199783009,
+      0.29121772399247586,
+      0.3159727935039005,
+      0.33581361642980967,
+      0.35002350415318184,
+      0.358092168298497,
+      0.36529953250417496,
+      0.38771248846338363,
+      0.42718439880608405,
+      0.48229779582249843,
+      0.551061877798678,
+      0.6309916111713862,
+      0.7191982246103704,
+      0.8124937450811811,
+      0.9075062549188186,
+      1.0008017753896292,
+      1.0890083888286135,
+      1.1689381222013218,
+      1.2377022041775012,
+      1.2928156011939156,
+      1.3322875115366162,
+      1.3547004674958247
+    ],
+    "z_weights": [
+      0.013576229705877019,
+      0.031126761969323853,
+      0.047579255841246296,
+      0.062314485627767015,
+      0.07479799440828838,
+      0.08457825969750131,
+      0.0913017075224618,
+      0.09472530522753429,
+      0.09472530522753429,
+      0.0913017075224618,
+      0.08457825969750131,
+      0.07479799440828838,
+      0.062314485627767015,
+      0.047579255841246296,
+      0.031126761969323853,
+      0.013576229705877019,
+      0.004887442694115726,
+      0.011205634308956587,
+      0.017128532102848665,
+      0.022433214825996126,
+      0.026927277986983817,
+      0.03044817349110047,
+      0.03286861470808625,
+      0.034101109881912346,
+      0.034101109881912346,
+      0.03286861470808625,
+      0.03044817349110047,
+      0.026927277986983817,
+      0.022433214825996126,
+      0.017128532102848665,
+      0.011205634308956587,
+      0.004887442694115726,
+      0.013576229705877017,
+      0.03112676196932385,
+      0.04757925584124629,
+      0.06231448562776701,
+      0.07479799440828837,
+      0.0845782596975013,
+      0.09130170752246179,
+      0.09472530522753428,
+      0.09472530522753428,
+      0.09130170752246179,
+      0.0845782596975013,
+      0.07479799440828837,
+      0.06231448562776701,
+      0.04757925584124629,
+      0.03112676196932385,
+      0.013576229705877017
+    ]
+  },
+  "analytic_reference12_TE2_cutoff": 5.262365694997127,
+  "kpoints_ka": [
+    [
+      0.9808196121824588,
+      0.0
+    ],
+    [
+      1.060819612182459,
+      0.0
+    ]
+  ],
+  "cutoff_point_generated_not_hardcoded": true,
+  "seed": {
+    "selection": "Maximum physical-H Fourier norm fraction on the analytically crossing G at left point; no frequency target",
+    "modes": [
+      6
+    ],
+    "H_crossing_G_fraction": [
+      0.32484121721457
+    ],
+    "critical_G": [
+      -6.283185307179586,
+      0.0
+    ]
+  },
+  "same_left_field_correspondence": {
+    "modes": [
+      6
+    ],
+    "minimum_overlap_squared": 1.0,
+    "mean_overlap_squared": 1.0,
+    "competitor_margin": 0.9982206195176152,
+    "alternatives": [
+      {
+        "modes": [
+          26
+        ],
+        "minimum_overlap_squared": 0.001779380482384789
+      },
+      {
+        "modes": [
+          8
+        ],
+        "minimum_overlap_squared": 0.0015711047460307403
+      },
+      {
+        "modes": [
+          49
+        ],
+        "minimum_overlap_squared": 0.0008883418434791297
+      }
+    ],
+    "method": "exhaustive target-local principal-angle selection; no endpoint information",
+    "candidate_count": 60
+  },
+  "right_target_choice": {
+    "modes": [
+      7
+    ],
+    "minimum_overlap_squared": 0.5474976013366726,
+    "mean_overlap_squared": 0.5474976013366726,
+    "competitor_margin": 0.4355445019003415,
+    "alternatives": [
+      {
+        "modes": [
+          15
+        ],
+        "minimum_overlap_squared": 0.11195309943633108
+      },
+      {
+        "modes": [
+          11
+        ],
+        "minimum_overlap_squared": 0.04189055020118689
+      },
+      {
+        "modes": [
+          19
+        ],
+        "minimum_overlap_squared": 0.037125092970219355
+      }
+    ],
+    "method": "exhaustive target-local principal-angle selection; no endpoint information",
+    "candidate_count": 60
+  },
+  "edge": {
+    "edge_local_indexes": [
+      0,
+      1
+    ],
+    "selected_modes": [
+      [
+        6
+      ],
+      [
+        7
+      ]
+    ],
+    "two_plane": {
+      "principal_overlaps_squared": [
+        0.5474976013366724
+      ],
+      "directional_capture_squared": [
+        0.5474976013366724
+      ],
+      "minimum_overlap_squared": 0.5474976013366724,
+      "dimension_previous": 1,
+      "dimension_current": 1,
+      "lost_previous_dimension": 0,
+      "gained_current_dimension": 0
+    },
+    "source_to_entire_next": {
+      "principal_overlaps_squared": [
+        0.8943962712124313
+      ],
+      "directional_capture_squared": [
+        0.8943962712124313
+      ],
+      "minimum_overlap_squared": 0.8943962712124313,
+      "dimension_previous": 1,
+      "dimension_current": 60,
+      "lost_previous_dimension": 0,
+      "gained_current_dimension": 59
+    },
+    "destination_to_entire_previous": {
+      "principal_overlaps_squared": [
+        0.999817246794289
+      ],
+      "directional_capture_squared": [
+        0.999817246794289
+      ],
+      "minimum_overlap_squared": 0.999817246794289,
+      "dimension_previous": 1,
+      "dimension_current": 60,
+      "lost_previous_dimension": 0,
+      "gained_current_dimension": 59
+    },
+    "guided_dimension_before": 789,
+    "guided_dimension_after": 786,
+    "lost_guided_labels": [
+      [
+        4,
+        33,
+        -6.283185307179586,
+        0.0
+      ],
+      [
+        11,
+        22,
+        -12.566370614359172,
+        -6.283185307179586
+      ],
+      [
+        11,
+        24,
+        -12.566370614359172,
+        6.283185307179586
+      ]
+    ],
+    "gained_guided_labels": [],
+    "source_lost_weights": [
+      0.14114351778901266
+    ],
+    "destination_gained_weights": [
+      0.0
+    ]
+  },
+  "selected_frequencies_fa_over_c": [
+    [
+      1.031911877288813
+    ],
+    [
+      1.0523229259227784
+    ]
+  ],
+  "generic_transition": {
+    "k_previous": [
+      0.9808196121824588,
+      0.0
+    ],
+    "k_current": [
+      1.060819612182459,
+      0.0
+    ],
+    "previous_modes": [
+      6
+    ],
+    "current_modes": [
+      7
+    ],
+    "selected": {
+      "principal_overlaps_squared": [
+        0.5474976013366724
+      ],
+      "directional_capture_squared": [
+        0.5474976013366724
+      ],
+      "minimum_overlap_squared": 0.5474976013366724,
+      "dimension_previous": 1,
+      "dimension_current": 1,
+      "lost_previous_dimension": 0,
+      "gained_current_dimension": 0
+    },
+    "source_in_all_current": {
+      "principal_overlaps_squared": [
+        0.8943962712124313
+      ],
+      "directional_capture_squared": [
+        0.8943962712124313
+      ],
+      "minimum_overlap_squared": 0.8943962712124313,
+      "dimension_previous": 1,
+      "dimension_current": 60,
+      "lost_previous_dimension": 0,
+      "gained_current_dimension": 59
+    },
+    "current_in_all_source": {
+      "principal_overlaps_squared": [
+        0.999817246794289
+      ],
+      "directional_capture_squared": [
+        0.999817246794289
+      ],
+      "minimum_overlap_squared": 0.999817246794289,
+      "dimension_previous": 1,
+      "dimension_current": 60,
+      "lost_previous_dimension": 0,
+      "gained_current_dimension": 59
+    },
+    "native_dimension_previous": 789,
+    "native_dimension_current": 786,
+    "field_diagnostics_previous": {
+      "column_norms": [
+        0.9766286728614233
+      ],
+      "singular_value_ratio": 1.0,
+      "raw_gram_error_from_identity": 0.046196435344935116,
+      "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+    },
+    "field_diagnostics_current": {
+      "column_norms": [
+        0.9994231906240751
+      ],
+      "singular_value_ratio": 1.0,
+      "raw_gram_error_from_identity": 0.001153286042793411,
+      "interpretation": "Raw finite-window H metric; norms are not forced to unity or a QNM residue metric"
+    },
+    "row_comparison": "SAME_REFERENCE_LABEL_SUPPORT_ONLY",
+    "lost_rows": [
+      [
+        4,
+        -6.283185307179586,
+        0.0
+      ],
+      [
+        11,
+        -12.566370614359172,
+        -6.283185307179586
+      ],
+      [
+        11,
+        -12.566370614359172,
+        6.283185307179586
+      ]
+    ],
+    "gained_rows": [],
+    "lost": {
+      "worst_weight": 0.14114351778901257,
+      "mean_weight": 0.14114351778901257,
+      "eigenvalues": [
+        0.14114351778901257
+      ],
+      "raw_column_gram_error": 4.440892098500626e-16,
+      "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+    },
+    "gained": {
+      "worst_weight": 0.0,
+      "mean_weight": 0.0,
+      "eigenvalues": [
+        0.0
+      ],
+      "raw_column_gram_error": 3.3306690738754696e-16,
+      "interpretation": "Coefficient-space support diagnostic, not an exact physical-field error bound"
+    }
+  },
+  "acceptance": {
+    "status": "UNVERIFIED_CONFIGURATION",
+    "accepted": false,
+    "sampled_stability_passed": false,
+    "reasons": [
+      "sampled_path_stability_failed",
+      "independent_refinement_missing",
+      "independent_field_refinement_missing"
+    ],
+    "bad_edges": [
+      {
+        "edge_index": 0,
+        "reasons": [
+          "selected_field_discontinuity",
+          "output_window_or_reference_space_incomplete",
+          "lost_influential_guided_rows"
+        ]
+      }
+    ],
+    "anchor_capture": 1.0,
+    "convergence_relative_frequency": null,
+    "convergence_field_capture": null,
+    "policy": {
+      "minimum_selected_capture": 0.9,
+      "minimum_full_window_capture": 0.98,
+      "maximum_changed_row_weight": 0.02,
+      "minimum_anchor_capture": 0.85,
+      "maximum_convergence_relative_frequency": 0.005,
+      "minimum_convergence_field_capture": 0.98
+    },
+    "scope": "Only supplied geometry, sampled edges, field metric and refinement pair"
+  },
+  "accepted_as_physical_baseline": false,
+  "scope": "General cutoff-detection regression; neither this seed nor its old reference is a physical ground truth"
+}

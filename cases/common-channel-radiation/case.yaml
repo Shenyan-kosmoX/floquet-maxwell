@@ -1,0 +1,109 @@
+schema_version: '0.1'
+kind: case
+id: common-channel-radiation
+project_id: floquet-maxwell
+title: 共同辐射、正负频映射与因果记忆
+stage: results_available
+question:
+  summary: 共同辐射、正负频映射与因果记忆
+  scope: 冻结浴使用弱辐射窄带条件；记忆模型记录有限谱窗与阈值处理；复频自能范围随空间适配。
+  record:
+    path: sptc_toolbox/results/frequency_radiation/report.md
+capability_refs:
+- common-channel-radiation
+- frequency-memory
+- finite-floquet-dynamics
+model:
+  description: 冻结浴使用弱辐射窄带条件；记忆模型记录有限谱窗与阈值处理；复频自能范围随空间适配。
+  record:
+    path: sptc_toolbox/results/frequency_radiation/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/frequency_radiation/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/frequency_radiation/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_open_backend.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/frequency_radiation/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_frequency_radiation.py
+  - id: workflow-3
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/frequency_radiation/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_native_reality.py
+  - id: workflow-4
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/frequency_radiation/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_spectral_bath.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/frequency_radiation/summary.json
+  record:
+    path: sptc_toolbox/results/frequency_radiation/summary.json
+- id: output-2
+  description: sptc_toolbox/results/native_reality/report.md
+  record:
+    path: sptc_toolbox/results/native_reality/report.md
+- id: output-3
+  description: sptc_toolbox/results/spectral_bath/report.md
+  record:
+    path: sptc_toolbox/results/spectral_bath/report.md
+- id: output-4
+  description: sptc_toolbox/results/connected_physics/report.md
+  record:
+    path: sptc_toolbox/results/connected_physics/report.md
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/frequency_radiation/report.md
+criteria:
+- id: criterion-1
+  description: 已采样原生通道、共同阻尼干涉及有限谱窗浴的被动性和动力学一致性。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/frequency_radiation/report.md
+checks:
+- id: check-1
+  method: 原生线宽重建、共同频率回归、实际±k共轭映射和因果辅助态控制
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/frequency_radiation/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/frequency_radiation/report.md
+  artifacts:
+  - path: sptc_toolbox/results/frequency_radiation/summary.json
+  - path: sptc_toolbox/results/native_reality/report.md
+  - path: sptc_toolbox/results/spectral_bath/report.md
+  - path: sptc_toolbox/results/connected_physics/report.md
+  notes: 原生线宽重建、共同通道干涉、±k映射、有限窗被动因果实现及材料/行波联合动态。 冻结浴使用弱辐射窄带条件；记忆模型记录有限谱窗与阈值处理；复频自能范围随空间适配。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/frequency_radiation/report.md

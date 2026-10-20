@@ -1,0 +1,40 @@
+schema_version: 1
+doi: 10.1126/sciadv.aed4055
+publication_version: Science Advances 12 eaed4055 (2026)
+geometry:
+  material: Ge
+  background_epsilon: 1.0
+  radius_nm: 1030.0
+  radius_over_height_approximate: 0.703
+  period_nm: 3296.0
+  lattice: square
+  path: [M, Gamma, X, M]
+  frequency_normalization: omega*a/c0
+material:
+  status: UNVERIFIED
+  source_doi: 10.1364/AO.59.000A40
+  model: Drude-Lorentz
+  epsilon_infinity: null
+  oscillators: null
+  explanation: Published main/SI do not list coefficients; cited public data are non-parametric nk tables. Never substitute an arbitrary fit as the author model.
+modulation:
+  instantaneous_background: epsilon_infinity*(1+m*(1+cos(Omega*t)))
+  keep_dc_shift: true
+  panel_d_e: {m: 0.0001, frequency_thz: 136.0}
+  panel_f: {m: 0.03, frequency_thz: 134.0}
+author_truncation:
+  l_cut_internal: 10
+  l_max_external: 6
+  J_static_total_frequency_channels: 1
+  J_dynamic_total_frequency_channels: 7
+strict_ge_static_gate:
+  status: UNVERIFIED
+  required: [causal_material_parameters, outgoing_complex_pole_operator, target_mode_symmetry, basis_convergence, linewidth_convergence]
+  do_not_start_ge_floquet_until_passed: true
+legume_reference:
+  status: APPROXIMATE
+  version: 1.0.3
+  actual_geometry: finite_cylinders_in_air
+  frozen_material_frequency_thz: 68.0
+  radiation: perturbative
+  absorption: omitted

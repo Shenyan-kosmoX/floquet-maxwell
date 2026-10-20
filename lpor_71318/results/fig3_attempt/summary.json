@@ -1,0 +1,179 @@
+{
+  "status": "PARTIAL_MECHANISM_REPRODUCTION_NOT_OPEN_QNM_VALIDATION",
+  "source": "results\\static_probe\\custom_g7.1_v8",
+  "geometry": {
+    "radius_nm": 150.0,
+    "height_nm": 50.0,
+    "period_nm": 400.0,
+    "epsilon": 16.0,
+    "modulation_angular_frequency_per_second": 100000000000000.0
+  },
+  "assumptions": [
+    "square lattice",
+    "Gamma Bloch vector",
+    "air upper/lower claddings"
+  ],
+  "target_mode_indices": [
+    2,
+    7,
+    14
+  ],
+  "target_irrep": "A2g",
+  "target_frequency_thz": 377.44757024639006,
+  "target_omega_over_Omega": 23.715730276027525,
+  "decay": "No resolved radiative decay for this symmetry-protected Gamma candidate; no finite Q inferred",
+  "model": "Native Legume inverse-epsilon projection; Hermitian fixed modal subspace",
+  "dielectric_reconstruction_error": 7.463670957684184e-14,
+  "z_quadrature_relative_error": 4.675611943291274e-16,
+  "static_derivative": {
+    "direct": -0.014787395886173282,
+    "field": -0.01478739584009267,
+    "relative_error": 3.1162086890394887e-09
+  },
+  "quadratic_slope": 1.9999108114769697,
+  "second_order_coefficient": 0.016572021035120107,
+  "max_shift_vs_second_order_relative_error": 0.00036246660886685156,
+  "temporal_convergence": [
+    {
+      "half_harmonics": 1,
+      "shift": 1.6571956251709707e-08
+    },
+    {
+      "half_harmonics": 2,
+      "shift": 1.657203796412432e-08
+    },
+    {
+      "half_harmonics": 3,
+      "shift": 1.6572041516838e-08
+    },
+    {
+      "half_harmonics": 5,
+      "shift": 1.6572055727692714e-08
+    }
+  ],
+  "modal_convergence": [
+    {
+      "mode_count": 1,
+      "coefficient": 0.016578727519388048
+    },
+    {
+      "mode_count": 2,
+      "coefficient": 0.016572439085383594
+    },
+    {
+      "mode_count": 3,
+      "coefficient": 0.016572021035120107
+    }
+  ],
+  "spatial_convergence": [
+    {
+      "reference": "average",
+      "gmax": 3.1,
+      "vertical_modes": 4,
+      "frequency_thz": 386.21976074670107,
+      "coefficient": 0.014729353891976783,
+      "mode_count": 3
+    },
+    {
+      "reference": "average",
+      "gmax": 5.1,
+      "vertical_modes": 6,
+      "frequency_thz": 385.62914256789645,
+      "coefficient": 0.014759050856802887,
+      "mode_count": 4
+    },
+    {
+      "reference": "average",
+      "gmax": 7.1,
+      "vertical_modes": 8,
+      "frequency_thz": 385.6060528814167,
+      "coefficient": 0.014769653304755196,
+      "mode_count": 4
+    },
+    {
+      "reference": "custom",
+      "gmax": 3.1,
+      "vertical_modes": 4,
+      "frequency_thz": 378.50031961687716,
+      "coefficient": 0.016521089665121613,
+      "mode_count": 3
+    },
+    {
+      "reference": "custom",
+      "gmax": 5.1,
+      "vertical_modes": 6,
+      "frequency_thz": 377.5118411637753,
+      "coefficient": 0.016560384294102965,
+      "mode_count": 3
+    },
+    {
+      "reference": "custom",
+      "gmax": 7.1,
+      "vertical_modes": 8,
+      "frequency_thz": 377.44757024639006,
+      "coefficient": 0.016572021035120107,
+      "mode_count": 3
+    }
+  ],
+  "max_monodromy_multiplier_error": 2.1623929285123753e-11,
+  "electric_mass_comparison_shift": 1.5330453351225515e-08,
+  "metrics": [
+    {
+      "residual": 4.836560397526248e-17,
+      "edge_weight": 9.18800198768158e-29,
+      "central_target_weight": 0.9999999975743495
+    },
+    {
+      "residual": 5.612845361069257e-17,
+      "edge_weight": 7.812294599704026e-28,
+      "central_target_weight": 0.9999999956865155
+    },
+    {
+      "residual": 7.233560678790898e-17,
+      "edge_weight": 3.206979809498915e-27,
+      "central_target_weight": 0.9999999923294195
+    },
+    {
+      "residual": 3.237124740770067e-17,
+      "edge_weight": 1.9684079574907732e-26,
+      "central_target_weight": 0.9999999863595647
+    },
+    {
+      "residual": 4.451416659310004e-17,
+      "edge_weight": 1.1034004576592038e-25,
+      "central_target_weight": 0.999999975743495
+    },
+    {
+      "residual": 4.7493654297440235e-17,
+      "edge_weight": 6.182727073445412e-25,
+      "central_target_weight": 0.9999999568651566
+    },
+    {
+      "residual": 3.6636914078053894e-17,
+      "edge_weight": 3.490845345488313e-24,
+      "central_target_weight": 0.9999999232941973
+    },
+    {
+      "residual": 4.1077778249958636e-17,
+      "edge_weight": 1.9600069709345723e-23,
+      "central_target_weight": 0.9999998635956533
+    },
+    {
+      "residual": 2.805517242874851e-17,
+      "edge_weight": 1.1014472282455725e-22,
+      "central_target_weight": 0.999999757434968
+    }
+  ],
+  "limitations": [
+    "Square/Gamma/air assumed; author static pole identity is not specified",
+    "Guided-mode reference basis is not complete for general open poles",
+    "The displayed field resemblance does not establish modal identity",
+    "No sideband-resolved outgoing QNM calculation or imaginary-frequency reproduction"
+  ],
+  "paper_comparison": {
+    "paper_coefficient_approximate": 0.2720566656436988,
+    "paper_reading_relative_uncertainty": 0.2,
+    "paper_over_computed_coefficient": 16.416625652788223,
+    "source": "Published Fig. 3 green markers; approximate image reading, not author raw data"
+  }
+}

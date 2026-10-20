@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "purpose": "Place actual published panels alongside new Legume-derived results with the same physical observables and explicit unmatched scope.",
+  "rules": [
+    "Published figures are original crops, never synthesized from digitized or fitted data.",
+    "Computed curves use native physical values; do not vertically shift, rescale the modulation, or retune a frequency to make a paper overlay unless a separate physically identified control explicitly says so.",
+    "Preserve paper panel identity. Additional convergence, sensitivity, or auxiliary analytical controls go in separate figures.",
+    "For unavailable panels, display an explicit not-recomputed label rather than filling them with another observable.",
+    "Paper windows can conceal valid computed results outside their range; retain the same-window comparison and add a separate full-range view.",
+    "A visually matched branch does not establish cross-k mode identity or physical equivalence."
+  ],
+  "science_advances": {
+    "doi": "10.1126/sciadv.aed4055",
+    "figure": 4,
+    "version": "published version of record, 12 August 2026",
+    "source_pdf": "ptc_fig4/literature/published_main.pdf",
+    "source_page_1based": 6,
+    "source_url": "https://publikationen.bibliothek.kit.edu/1000196234/187616299",
+    "full_original_crop": "science_fig4.png",
+    "full_original_with_caption": "science_fig4_with_caption.png",
+    "geometry": {"lattice": "square", "background": "air", "radius_nm": 1030, "radius_over_height": 0.703, "height_is_derived_approximation": true, "period_nm": 3296},
+    "palette": {"mode_curve": "blue, approximate raster dominant #2577b0", "static_reference": "red dotted lines", "finite_gap_title": "green", "full_gap_title": "dark red", "gap_region": "light gray"},
+    "panels": {
+      "A": {"crop": "science_fig4_A.png", "role": "Geometry and oblique pump/signal schematic", "not_a_numerical_result": true},
+      "B": {
+        "crop": "science_fig4_B.png", "observable": "static eigenfrequency real part",
+        "x": {"label": "k_parallel", "path": ["M", "Gamma", "X", "M"], "k_in_pi_over_a": [[1,1],[0,0],[1,0],[1,1]], "display_segment_lengths": "equal in published panel; label path convention explicitly"},
+        "y": {"label": "Re(omega) Lambda / c0", "range": [4.6,4.8], "major_ticks": [4.6,4.7,4.8], "unit": "dimensionless angular frequency", "from_legume_fa_over_c": "multiply by 2*pi"},
+        "parameters": {"m": 0}, "references": "Red dotted horizontal lines at Gamma and X static band frequencies.",
+        "warning": "Caption says all shown modes are above the light lines. Do not use isolated-cylinder Q=500 as array damping."
+      },
+      "C": {
+        "crop": "science_fig4_C.png", "observable": "isolated-cylinder rotationally averaged normalized scattering cross section",
+        "x": {"label": "sigma_sca", "visible_ticks": [3,4], "exact_plot_limits": null},
+        "y": {"label": "Re(omega) Lambda / c0", "range": [4.6,4.8], "shared_with": "B"},
+        "annotation": "Q approximately 500", "scope": "isolated particle, not periodic Legume array; mark unavailable if no isolated scattering computation"
+      },
+      "D": {
+        "crop": "science_fig4_DE.png", "observable": "weak-modulation real quasifrequency near half drive",
+        "x": {"label": "k_parallel", "path_local": "M-Gamma-X near Gamma", "numeric_limits_published": null},
+        "y": {"label": "Re(omega_tilde)/omega_m", "visible_ticks": [0.5], "numeric_limits_published": null, "range_note": "No other numeric tick labels; do not invent exact plotted y-limits."},
+        "parameters": {"m": 0.0001, "omega_m_rad_per_s": 854513201776423.8, "drive_frequency_THz": 136},
+        "annotation": "Finite bandgap; light gray fill only between actual reproduced gap edges.",
+        "gap_definition": "pair is locked to Re(omega_tilde)/omega_m = 0.5; exact degeneracy needs numerical tolerance stated"
+      },
+      "E": {
+        "crop": "science_fig4_DE.png", "observable": "imaginary quasifrequencies inside weak momentum gap",
+        "x": {"shared_with": "D", "numeric_limits_published": null},
+        "y": {"label": "Im(omega_tilde)/omega_m", "multiplier": 1e-5, "major_tick_values_in_multiplier_units": [-1,0,1], "approx_visible_range": [-1.3e-5,1.3e-5], "range_status": "visual estimate from labeled tick spacing"},
+        "constraint": "Re(omega_tilde)/omega_m = 0.5", "annotation": "Delta theta = 4 degrees is the paper value; do not add it as a measured reproduction result unless computed.",
+        "time_convention": "exp(-i*omega*t), positive imaginary part means growth"
+      },
+      "F": {
+        "crop": "science_fig4_F.png", "observable": "imaginary quasifrequencies inside strong momentum gap",
+        "x": {"label": "k_parallel", "path": ["M","Gamma","X","M"], "display_segment_lengths": "equal"},
+        "y": {"label": "Im(omega_tilde)/omega_m", "multiplier": 0.001, "major_tick_values_in_multiplier_units": [-4,-2,0,2], "approx_visible_range": [-0.004,0.003], "range_status": "lower exact labeled bound; upper from tick-spacing visual reading"},
+        "parameters": {"m": 0.03, "omega_m_rad_per_s": 841946831162064.5, "drive_frequency_THz": 134},
+        "constraint": "Re(omega_tilde)/omega_m = 0.5", "annotation": "Full bandgap is a paper claim; only use that title for a demonstrated computed complete path, and do not infer full 2D BZ gap from boundary alone."
+      }
+    },
+    "material_contract": {
+      "paper_material": "lossy dispersive Ge, Drude-Lorentz claimed",
+      "reference_doi": "10.1364/AO.59.000A40",
+      "known_source_locations": "main p5, SI S1 pp3-4; ref59 public author data description",
+      "epsilon_infinity": null,
+      "lorentz_coefficients": null,
+      "chosen_ge_sample": null,
+      "available_data": ["ptc_fig4/literature/ge_amotchkina.yml", "ptc_fig4/literature/ge_film.yml", "ptc_fig4/literature/ge_substrate_nk.xlsx"],
+      "author_data_description": "Ge substrate and Ge film both tabulated nk, non-parametric. No unique causal continuation or instantaneous epsilon_infinity is specified by these finite real-axis tables.",
+      "modulated_component": "epsilon_infinity only",
+      "increment": "epsilon_infinity*m*(1+cos(omega_m*t))",
+      "dc_component": "epsilon_infinity*m",
+      "plus_minus_one_coefficients": "epsilon_infinity*m/2",
+      "static_dispersion_kernel_modulated": false,
+      "fallback_scope": "A transparent stated constant dielectric or independently fitted tabulated material is an approximate model, not recovered paper coefficients. A material-data fit must not target the paper gap/curve."
+    }
+  },
+  "lpr": {
+    "doi": "10.1002/lpor.71318",
+    "figure": 3,
+    "version": "published Wiley figure and caption",
+    "source_png": "lpor_71318/literature/published_fig3.png",
+    "source_url": "https://onlinelibrary.wiley.com/cms/asset/4b38b208-3a95-482b-8f6f-c7a27af57c08/lpor71318-fig-0003-m.png",
+    "full_original_crop": "lpr_fig3_published.png",
+    "native_image_size_pixels": [480,424],
+    "higher_resolution_attempt": {"url": "https://onlinelibrary.wiley.com/cms/asset/4d80fd42-7cd0-473f-a66d-a57384e46e04/lpor71318-fig-0003-m.jpg", "status": "HTTP 403 on 2026-10-16"},
+    "version_warning": "arXiv v1 figure_3.pdf is the slab example corresponding to published (c,d), not a higher-resolution version of published (a,b). arXiv figure_2.pdf is another scattering figure. Do not substitute either for the metasurface paper panel.",
+    "primary_reproduction_scope": "periodic metasurface green-circle branch of (a) and its static eigenfield row in (b)",
+    "parameters": {"radius_nm": 150, "height_nm": 50, "period_nm": 400, "epsilon_u": 16, "Omega_rad_per_s": 100000000000000.0, "epsilon_t": "epsilon_u + delta_epsilon*sin(Omega*t)", "amplitude": "absolute relative-permittivity increment, not divided by epsilon_u", "dc_component": 0},
+    "baseline_assumptions_not_paper_facts": ["square lattice", "Gamma Bloch wavevector", "air background"],
+    "selected_mode_not_published": ["complex frequency", "Q", "irrep", "specific Bloch k", "normalized QNM field array"],
+    "panels": {
+      "a": {
+        "crop": "lpr_fig3_a.png", "observable": "real eigenfrequency shift relative to same unmodulated resonance",
+        "x": {"label": "Modulation amplitude", "scale": "log", "major_ticks": [0.0001,0.001], "approx_visible_range": [0.0000525,0.001], "range_status": "lower inferred from raster log-tick positions; upper labeled"},
+        "y": {"label": "Changes in Re(omega_tilde)/Omega", "definition": "(Re omega_tilde(delta_epsilon)-Re omega_tilde(0))/Omega", "scale": "log", "major_ticks": [1e-9,1e-8,1e-7,1e-6], "approx_visible_range": [8e-10,1e-6]},
+        "parameter_colors": {"metasurface": {"color": "green", "marker": "unfilled circle"}, "nanorod": {"color": "blue", "marker": "unfilled square", "outside_primary_periodic_scope": true}, "bowtie": {"color": "purple", "marker": "unfilled right triangle", "outside_primary_periodic_scope": true}},
+        "reference": "black dashed quadratic scaling guide; its intercept is not a measured prediction",
+        "paper_digitization": "lpor_71318/literature/fig3_green_digitized.csv",
+        "digitization_precision": "rough raster read, approximately 15-20 percent; not author numerical data",
+        "coefficient_context": "green digitized ratio shift/amplitude^2 approximately 0.27, no amplitude correction factor authorized"
+      },
+      "b": {
+        "crop": "lpr_fig3_b.png", "metasurface_crop": "lpr_fig3_b_metasurface.png", "observable": "magnitude of static eigenmode electric field",
+        "rows": ["nanorod blue square", "bowtie purple triangle", "metasurface green circle"],
+        "columns": [{"plane": "xy", "horizontal": "x", "vertical": "y"}, {"plane": "xz", "horizontal": "x", "vertical": "z"}],
+        "colorbar": {"label": "|E| (arb. units)", "numeric_limits": null, "palette_description": "dark blue-purple through magenta/orange to yellow-white"},
+        "normalization": "arbitrary field magnitude, no absolute normalization inferred from image",
+        "comparison_rule": "Use total |E|, not |E|^2 or one component. Show physical geometry outline. Preserve x-z aspect ratio; annotate any expanded plot domain. Field appearance alone does not prove mode identity."
+      },
+      "c": {
+        "crop": "lpr_fig3_cd.png", "observable": "real frequency changes of slab first FP resonance and replicas",
+        "outside_primary_periodic_scope": true,
+        "x": {"label": "Modulation amplitude", "range": [0,0.001], "multiplier": 0.001},
+        "y": {"label": "Changes in Re(omega_tilde)/Omega", "range": [0,8e-8], "multiplier": 1e-8},
+        "vertical_offset": "caption says 2e-9 for visual separation; values cannot be treated as unoffset shifts",
+        "parameters": {"Ln": 0.5, "Omega_rad_per_s": 300000000000000.0, "epsilon_u": 5.25, "time_harmonics": 11}
+      },
+      "d": {
+        "crop": "lpr_fig3_cd.png", "observable": "imaginary frequency changes of slab first FP resonance and replicas",
+        "outside_primary_periodic_scope": true,
+        "x": {"same_as": "c"},
+        "y": {"label": "Changes in Im(omega_tilde)/Omega", "range": [0,8e-8], "multiplier": 1e-8},
+        "warning": "Published panel labels changes in Im; do not substitute decay rate or silently change sign from the arXiv version.",
+        "parameter_colors": {"m=-2": "pale red", "m=-1": "red", "FP": "green", "m=1": "blue", "m=2": "pale blue"},
+        "vertical_offset": "caption 2e-9; preserve source statement, do not infer offset from desired curve matching"
+      }
+    }
+  }
+}

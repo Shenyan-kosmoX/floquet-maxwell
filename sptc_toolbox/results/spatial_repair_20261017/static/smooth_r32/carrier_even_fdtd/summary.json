@@ -1,0 +1,60 @@
+{
+  "status": "SMOOTH_NATIVE_YEE_FDTD_RESPONSE",
+  "completed": true,
+  "identity": {
+    "resolution": 32,
+    "frequency": 0.398,
+    "sector": 1,
+    "y_mirror": true,
+    "eps_averaging": true,
+    "epsilon": 11.5,
+    "empty": false,
+    "grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+    "polarization_sha256": null,
+    "polarization_key": "polarization",
+    "method": "FDTD ContinuousSource width20",
+    "checkpoints": [
+      1500,
+      2000
+    ]
+  },
+  "rows": [
+    {
+      "time": 1500.0,
+      "elapsed_seconds": 113.93106757199985,
+      "output_power": 1.002324130786262,
+      "incoming_power": 1.0000000000000004,
+      "source_factor": [
+        0.9997455622668607,
+        -0.01953429380454829
+      ],
+      "normalization": [
+        -0.16655218403710895,
+        -0.471226618193098
+      ],
+      "work": null,
+      "field_change": null,
+      "complex_output_change": null
+    },
+    {
+      "time": 2000.0,
+      "elapsed_seconds": 145.6869139569999,
+      "output_power": 1.000024631351927,
+      "incoming_power": 0.9999999999999998,
+      "source_factor": [
+        0.9997455622552314,
+        -0.01953429380409268
+      ],
+      "normalization": [
+        -0.16655166462545962,
+        -0.47122630408465804
+      ],
+      "work": null,
+      "field_change": 0.0006421955372284575,
+      "complex_output_change": 0.0011497983978338998
+    }
+  ],
+  "source_lift_relative_residual": null,
+  "fields_normalization": "measured incoming parity channel amplitude; unit power",
+  "phasor_convention": "exp(-i omega t); native E,D times exp(i omega t); J=-i kappa P"
+}

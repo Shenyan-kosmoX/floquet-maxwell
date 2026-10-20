@@ -1,0 +1,272 @@
+{
+  "status": "LOCAL_NATIVE_EXTENDED_CHART_COMPARISON",
+  "new_native_q_count": 6,
+  "q": [
+    3.1405926535897932,
+    3.142592653589793,
+    -3.1405926535897932,
+    3.141492653589793,
+    3.1416926535897933,
+    -3.141492653589793
+  ],
+  "native_sha256": "74e8a1bbe5342ab3907975e5a850179024ab6716e94523f9cd799ead03c91d2e",
+  "rows": [
+    {
+      "q": 3.1405926535897932,
+      "mode": 14,
+      "omega": 1.6091504161661183,
+      "gamma": 0.0,
+      "ik": 0,
+      "kx": 3.1405926535897932,
+      "cross_k_identity": "not_assessed",
+      "central_fraction": 0.9979210881086498,
+      "mirror_y_real": -1.0000000000000002,
+      "mirror_y_imag": 1.3603997985140205e-19,
+      "omega_window": [
+        1.55,
+        1.91
+      ],
+      "selection": "Unique confined odd xz-mirror native E-field branch in source gap window"
+    },
+    {
+      "q": 3.142592653589793,
+      "mode": 14,
+      "omega": 1.6091521759178387,
+      "gamma": 0.0,
+      "ik": 1,
+      "kx": 3.142592653589793,
+      "cross_k_identity": "not_assessed",
+      "central_fraction": 0.9979182545732554,
+      "mirror_y_real": -1.0000000000000002,
+      "mirror_y_imag": -1.0543045650257412e-18,
+      "omega_window": [
+        1.55,
+        1.91
+      ],
+      "selection": "Unique confined odd xz-mirror native E-field branch in source gap window"
+    },
+    {
+      "q": -3.1405926535897932,
+      "mode": 14,
+      "omega": 1.6091504161661183,
+      "gamma": 0.0,
+      "ik": 2,
+      "kx": -3.1405926535897932,
+      "cross_k_identity": "not_assessed",
+      "central_fraction": 0.9979210881086487,
+      "mirror_y_real": -1.0,
+      "mirror_y_imag": -2.6187696121394844e-18,
+      "omega_window": [
+        1.55,
+        1.91
+      ],
+      "selection": "Unique confined odd xz-mirror native E-field branch in source gap window"
+    },
+    {
+      "q": 3.141492653589793,
+      "mode": 14,
+      "omega": 1.609151181363871,
+      "gamma": 0.0,
+      "ik": 3,
+      "kx": 3.141492653589793,
+      "cross_k_identity": "not_assessed",
+      "central_fraction": 0.9979198023702961,
+      "mirror_y_real": -1.0,
+      "mirror_y_imag": -4.897427896043712e-18,
+      "omega_window": [
+        1.55,
+        1.91
+      ],
+      "selection": "Unique confined odd xz-mirror native E-field branch in source gap window"
+    },
+    {
+      "q": 3.1416926535897933,
+      "mode": 14,
+      "omega": 1.6091513573392835,
+      "gamma": 0.0,
+      "ik": 4,
+      "kx": 3.1416926535897933,
+      "cross_k_identity": "not_assessed",
+      "central_fraction": 0.9979195190163395,
+      "mirror_y_real": -1.0000000000000002,
+      "mirror_y_imag": -3.673069082958024e-18,
+      "omega_window": [
+        1.55,
+        1.91
+      ],
+      "selection": "Unique confined odd xz-mirror native E-field branch in source gap window"
+    },
+    {
+      "q": -3.141492653589793,
+      "mode": 14,
+      "omega": 1.6091511813638575,
+      "gamma": 0.0,
+      "ik": 5,
+      "kx": -3.141492653589793,
+      "cross_k_identity": "not_assessed",
+      "central_fraction": 0.9979198023702952,
+      "mirror_y_real": -1.0,
+      "mirror_y_imag": 4.081189913369685e-19,
+      "omega_window": [
+        1.55,
+        1.91
+      ],
+      "selection": "Unique confined odd xz-mirror native E-field branch in source gap window"
+    }
+  ],
+  "gmax": 3.1,
+  "gmode_inds": [
+    0,
+    3
+  ],
+  "compute_im": "Static compute_im=False then native compute_rad on the selected target at every q",
+  "H_metric": "Analytic x/y physical Bloch integral over full primitive cell; shared z Gauss integration across slab and 5a of both claddings. Uses exp(i(G+q)x), not coefficient-vector overlap.",
+  "E_metric": "Same physical x/y primitive-cell metric at slab midplane z=.275a",
+  "limitations": [
+    "Local chart crossing only, not full BZ closure or spatial convergence certificate",
+    "Finite z integration checked separately below; H normalization is not a radiating QNM normalization",
+    "No modification to installed Legume"
+  ],
+  "comparisons": [
+    {
+      "epsilon": 0.001,
+      "comparison": "crossing_unwrapped",
+      "omega_difference": 1.759751720342706e-06,
+      "maximum_gamma": 0.0,
+      "H": {
+        "left_norm": 0.9999999997090732,
+        "right_norm": 0.9999999997086857,
+        "overlap_squared": 0.9999958073944546,
+        "phase_aligned_relative_distance": 0.002047586369335942,
+        "raw_normalized_distance": 0.002047586369335942,
+        "phase_difference": 4.3926514241759876e-17
+      },
+      "E": {
+        "left_norm": 0.21472831020413774,
+        "right_norm": 0.214729384561799,
+        "overlap_squared": 0.9999953732392459,
+        "phase_aligned_relative_distance": 0.0021509918888265216,
+        "raw_normalized_distance": 0.0021509918888265216,
+        "phase_difference": 4.3970522749095885e-17
+      }
+    },
+    {
+      "epsilon": 0.001,
+      "comparison": "crossing_wrapped",
+      "omega_difference": 0.0,
+      "maximum_gamma": 0.0,
+      "H": {
+        "left_norm": 0.9999999997090732,
+        "right_norm": 0.9999999997090723,
+        "overlap_squared": 0.9996914634185152,
+        "phase_aligned_relative_distance": 0.017565886936400325,
+        "raw_normalized_distance": 0.017565886936400325,
+        "phase_difference": -9.770983530783827e-15
+      },
+      "E": {
+        "left_norm": 0.21472831020413774,
+        "right_norm": 0.2147283102041383,
+        "overlap_squared": 0.9967127475517388,
+        "phase_aligned_relative_distance": 0.0573581590084409,
+        "raw_normalized_distance": 0.0573581590084409,
+        "phase_difference": -9.770331606280883e-15
+      }
+    },
+    {
+      "epsilon": 0.001,
+      "comparison": "same_physical_k_different_chart",
+      "omega_difference": -1.759751720342706e-06,
+      "maximum_gamma": 0.0,
+      "H": {
+        "left_norm": 0.9999999997086857,
+        "right_norm": 0.9999999997090723,
+        "overlap_squared": 0.9996709498541271,
+        "phase_aligned_relative_distance": 0.018140485628199483,
+        "raw_normalized_distance": 0.018140485628199483,
+        "phase_difference": -9.814910134027043e-15
+      },
+      "E": {
+        "left_norm": 0.214729384561799,
+        "right_norm": 0.2147283102041383,
+        "overlap_squared": 0.9966899942899643,
+        "phase_aligned_relative_distance": 0.057556487792388096,
+        "raw_normalized_distance": 0.057556487792388096,
+        "phase_difference": -9.814302735811123e-15
+      }
+    },
+    {
+      "epsilon": 0.0001,
+      "comparison": "crossing_unwrapped",
+      "omega_difference": 1.759754124641688e-07,
+      "maximum_gamma": 0.0,
+      "H": {
+        "left_norm": 0.9999999997089253,
+        "right_norm": 0.9999999997088871,
+        "overlap_squared": 0.999999958073835,
+        "phase_aligned_relative_distance": 0.00020475879817069553,
+        "raw_normalized_distance": 0.00020475879817069553,
+        "phase_difference": 4.392354121686273e-18
+      },
+      "E": {
+        "left_norm": 0.21472880875378042,
+        "right_norm": 0.21472891618962237,
+        "overlap_squared": 0.9999999537322667,
+        "phase_aligned_relative_distance": 0.00021509935812642682,
+        "raw_normalized_distance": 0.00021509935812642682,
+        "phase_difference": 4.396754969158531e-18
+      }
+    },
+    {
+      "epsilon": 0.0001,
+      "comparison": "crossing_wrapped",
+      "omega_difference": -1.354472090042691e-14,
+      "maximum_gamma": 0.0,
+      "H": {
+        "left_norm": 0.9999999997089253,
+        "right_norm": 0.9999999997089261,
+        "overlap_squared": 0.9996733780443663,
+        "phase_aligned_relative_distance": 0.018073423318940136,
+        "raw_normalized_distance": 1.9999183361751385,
+        "phase_difference": 3.1415926535897833
+      },
+      "E": {
+        "left_norm": 0.21472880875378042,
+        "right_norm": 0.21472880875378442,
+        "overlap_squared": 0.9966926822866998,
+        "phase_aligned_relative_distance": 0.05753309336684862,
+        "raw_normalized_distance": 1.9991723145260996,
+        "phase_difference": 3.1415926535897833
+      }
+    },
+    {
+      "epsilon": 0.0001,
+      "comparison": "same_physical_k_different_chart",
+      "omega_difference": -1.759754260088897e-07,
+      "maximum_gamma": 0.0,
+      "H": {
+        "left_norm": 0.9999999997088871,
+        "right_norm": 0.9999999997089261,
+        "overlap_squared": 0.999670949558518,
+        "phase_aligned_relative_distance": 0.018140493777310265,
+        "raw_normalized_distance": 1.9999177289292467,
+        "phase_difference": 3.1415926535897833
+      },
+      "E": {
+        "left_norm": 0.21472891618962237,
+        "right_norm": 0.21472880875378442,
+        "overlap_squared": 0.9966899921658398,
+        "phase_aligned_relative_distance": 0.057556506275520614,
+        "raw_normalized_distance": 1.9991716406015156,
+        "phase_difference": 3.1415926535897833
+      }
+    }
+  ],
+  "native_H_norms": [
+    0.9999999997090732,
+    0.9999999997086857,
+    0.9999999997090723,
+    0.9999999997089253,
+    0.9999999997088871,
+    0.9999999997089261
+  ]
+}

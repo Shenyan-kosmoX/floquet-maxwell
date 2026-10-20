@@ -1,0 +1,62 @@
+{
+  "status": "SMOOTH_NATIVE_YEE_FDTD_RESPONSE",
+  "completed": true,
+  "identity": {
+    "resolution": 40,
+    "frequency": 0.388,
+    "sector": 1,
+    "y_mirror": false,
+    "eps_averaging": true,
+    "epsilon": 11.5,
+    "empty": false,
+    "grid_sha256": "ddecd289c2ea5c24d04029742f6ee199f316735fc5179d84af27f2b561b474db",
+    "polarization_sha256": "626503aa889ced67727dc18ca1909e68a76637ffb081cfb5e644cf77e136efed",
+    "polarization_key": "polarization",
+    "method": "FDTD ContinuousSource width20",
+    "checkpoints": [
+      1200.0,
+      1500.0
+    ]
+  },
+  "rows": [
+    {
+      "time": 1200.0,
+      "elapsed_seconds": 1006.3686460429999,
+      "output_power": 8.510663036241302,
+      "incoming_power": 4.83457908452474e-09,
+      "source_factor": [
+        0.9998452353436942,
+        -0.015235545298545483
+      ],
+      "normalization": [
+        0.9998452353436942,
+        -0.015235545298545483
+      ],
+      "work": 8.408271729662806,
+      "output_work_relative_residual": 0.012030943551927699,
+      "field_change": null,
+      "complex_output_change": null
+    },
+    {
+      "time": 1500.0,
+      "elapsed_seconds": 1169.1903574490007,
+      "output_power": 8.537153420625753,
+      "incoming_power": 1.7111072065515178e-10,
+      "source_factor": [
+        0.9998452353436942,
+        -0.015235545298546429
+      ],
+      "normalization": [
+        0.9998452353436942,
+        -0.015235545298546429
+      ],
+      "work": 8.492666471201959,
+      "output_work_relative_residual": 0.0052109816038111035,
+      "field_change": 0.0017109778818846305,
+      "complex_output_change": 0.0017303975716597762
+    }
+  ],
+  "source_lift_relative_residual": 8.621956670457173e-17,
+  "fields_normalization": "absolute intended material current; divided by exact source temporal factor",
+  "phasor_convention": "exp(-i omega t); native E,D times exp(i omega t); J=-i kappa P"
+}

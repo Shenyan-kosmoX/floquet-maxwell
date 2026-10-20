@@ -1,0 +1,125 @@
+{
+  "status": "TWO_POLE_STATIC_DFT_TAIL_CANDIDATE",
+  "template": 8,
+  "bright_pole_cycles": [
+    0.3976873686592922,
+    -0.0008104008325021853
+  ],
+  "bright_pole_source": "results\\spatial_repair_20261017\\static\\pulse_smooth_noY_r32\\summary.json",
+  "bright_pole_source_sha256": "139c861f137a4c86da50bb07c1078ea39662b6149e6bd2c1d2a037832101c14a",
+  "slow_pole_cycles": [
+    0.38922796789382186,
+    -5.630067159141851e-06
+  ],
+  "independent_validated": false,
+  "formula": "d1=As+Af; d2=rs*As+rf*Af; Finf=F2000+rs^2/(1-rs)*As+rf^2/(1-rf)*Af",
+  "slow_increment_single_spatial_energy_fraction": 0.9999999977485213,
+  "fast_increment_single_spatial_energy_fraction": 0.5007590254189659,
+  "slow_increment_singular_values": [
+    37.35746974617343,
+    0.001772572994120801,
+    1.0234349046582398e-05,
+    8.622713645805041e-10,
+    3.857157876160133e-13
+  ],
+  "fast_increment_singular_values": [
+    0.0009652783372136073,
+    0.0008449464572561484,
+    0.0004634568630909238,
+    1.4520732640794142e-05,
+    2.8388683257247586e-13
+  ],
+  "differences": [
+    {
+      "quantity": "electric",
+      "one_to_two_pole_relative_difference": 4.289743576591823e-06,
+      "per_frequency_one_to_two_pole_relative_difference": [
+        3.262569283926739e-05,
+        1.7915701642909718e-06,
+        1.0097321554344893e-05,
+        6.6207521835053865e-06,
+        1.8084380747103105e-05
+      ]
+    },
+    {
+      "quantity": "displacement",
+      "one_to_two_pole_relative_difference": 4.516305624743148e-06,
+      "per_frequency_one_to_two_pole_relative_difference": [
+        3.590125347947558e-05,
+        1.8214250669808774e-06,
+        9.496799523698219e-06,
+        6.872300607646843e-06,
+        1.8839524090511895e-05
+      ]
+    },
+    {
+      "quantity": "output",
+      "one_to_two_pole_relative_difference": 1.774780990828014e-05,
+      "per_frequency_one_to_two_pole_relative_difference": [
+        0.00010920632374264284,
+        2.820687871847449e-06,
+        5.264440738015404e-05,
+        7.739764232352288e-06,
+        1.083040463983565e-05
+      ]
+    },
+    {
+      "quantity": "incoming",
+      "one_to_two_pole_relative_difference": 0.0191956052556157,
+      "per_frequency_one_to_two_pole_relative_difference": [
+        0.01870471343272727,
+        0.03432169680337988,
+        0.012013735767840521,
+        0.016778147792575835,
+        0.020635932979050257
+      ]
+    },
+    {
+      "quantity": "native_port_fields",
+      "one_to_two_pole_relative_difference": 1.7774222826701348e-05,
+      "per_frequency_one_to_two_pole_relative_difference": [
+        0.00010984266017799754,
+        2.800247539451982e-06,
+        5.2666305951866056e-05,
+        7.852406174099863e-06,
+        1.1143218690557496e-05
+      ]
+    }
+  ],
+  "source_work": [
+    1.389677788299466e-05,
+    0.005775938549168314,
+    0.0007286857495621517,
+    0.0004667208296100419,
+    0.00042652845052752394
+  ],
+  "output_power": [
+    1.5561635514706793e-05,
+    0.0057669724276192165,
+    0.0007301780172743991,
+    0.00046755676992036416,
+    0.00042715063551975694
+  ],
+  "incoming_power": [
+    2.206528466285092e-13,
+    9.811795398057004e-15,
+    4.112086698885926e-14,
+    3.7392978940716736e-14,
+    1.5044820284328578e-13
+  ],
+  "source_work_outgoing_relative_residual": [
+    0.10698473238792192,
+    -0.0015523228792314327,
+    0.0020437039130496823,
+    0.0017878904268066563,
+    0.0014565935060069455
+  ],
+  "source_hashes": {
+    "sampling\\template_q8\\response_t1000.npz": "59e7f1d9a482be5dbb93d432edc0458cd35ed1f181e39667ef73aa18d27454ec",
+    "sampling\\template_q8\\response_t1500.npz": "4b7b734dbad0e173cb22639d1e5c90a0fc5628adeb300f13ed5c6e462e90e888",
+    "sampling\\template_q8\\response_t2000.npz": "cfc903c1f327692d08a71c3bcdadf4441323c255f0add924f9735d8764753611"
+  },
+  "script_sha256": "81a483b634c1b62b125e0dc4d33d73952ea1260121d164fb126c303bd4fb6d34",
+  "caution": "Two increments determine two residues exactly; only independent pole provenance and future CW comparison can validate that model",
+  "candidate_sha256": "5fcd753eabfe5040915fafd3a7022767b34367d0080c5871cc336c22f6e29c5d"
+}

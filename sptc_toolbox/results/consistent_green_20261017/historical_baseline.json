@@ -1,0 +1,265 @@
+{
+  "status": "HISTORICAL_CONTRACT_WITH_CURRENT_NATIVE_RETEST_AND_NEW_SCALAR_R32_COMPARISON",
+  "date": "2026-10-17",
+  "old_artifacts_modified": false,
+  "interpretation": "14-17 percent is a historical power-ratio discrepancy. It is not confirmed for the latest pipeline and is not replaced by r24 hybrid complex-amplitude errors.",
+  "values": [
+    {
+      "harmonic": -1,
+      "fa_over_c": 0.388,
+      "old_native_power_ratio": 0.0001317392578255223,
+      "old_r32_born_power_ratio": 0.00011220728109203111,
+      "old_relative_power_difference": 0.1740704929608916,
+      "reference_lower_amplitude": [
+        -0.007227568318284197,
+        0.0005793393421386059
+      ],
+      "reference_upper_amplitude": [
+        -0.007240965267389918,
+        0.0026837148171273625
+      ]
+    },
+    {
+      "harmonic": 1,
+      "fa_over_c": 0.40800000000000003,
+      "old_native_power_ratio": 0.0001359786533442951,
+      "old_r32_born_power_ratio": 0.00011877672025167711,
+      "old_relative_power_difference": 0.14482579630224368,
+      "reference_lower_amplitude": [
+        0.00762437553949112,
+        -0.003196980533037208
+      ],
+      "reference_upper_amplitude": [
+        0.006992211060258247,
+        -0.0012385143699893042
+      ]
+    }
+  ],
+  "physical_contract": {
+    "lattice": "square",
+    "period_a": 1.0,
+    "k_times_a": [
+      0.0,
+      0.0
+    ],
+    "slab_thickness_over_a": 0.42,
+    "background_epsilon": 11.5,
+    "cladding_epsilon": [
+      1.0,
+      1.0
+    ],
+    "absorption": 0.0,
+    "dispersion": false,
+    "holes": [
+      {
+        "type": "circle",
+        "center_over_a": [
+          -0.22,
+          0.0
+        ],
+        "radius_over_a": 0.12,
+        "epsilon": 1.0
+      },
+      {
+        "type": "ellipse",
+        "center_over_a": [
+          0.22,
+          0.0
+        ],
+        "semiaxes_over_a": [
+          0.12,
+          0.09
+        ],
+        "epsilon": 1.0
+      }
+    ],
+    "legume_z_interval_over_a": [
+      0.0,
+      0.42
+    ],
+    "meep_z_interval_over_a": [
+      -0.21,
+      0.21
+    ],
+    "carrier_fa_over_c": 0.398,
+    "drive_fa_over_c": 0.01,
+    "angular_frequency_convention": "omega a/c = 2 pi f a/c",
+    "modulation_cosine_absolute_epsilon_amplitude": 0.01,
+    "modulation_fourier_coefficients": {
+      "-1": 0.005,
+      "1": 0.005
+    },
+    "modulation_region": "high-epsilon slab excluding both holes",
+    "incident_flux_vector": [
+      1.0,
+      0.0
+    ],
+    "polarization": "Cartesian Ex at normal incidence",
+    "port_z_over_a": [
+      -0.7,
+      0.7
+    ],
+    "phase": "exp(-i omega t)",
+    "observable": "sum over lower and upper outgoing zeroth-order x-polarized sideband powers divided by incident power"
+  },
+  "old_native": {
+    "gmax": 6.1,
+    "gmode_inds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "reference_epsilon": [
+      10.0
+    ],
+    "exported_numeig": 16,
+    "retained_mode_indices": [
+      5
+    ],
+    "native_mode_frequency_fa_over_c": 0.3979539246410964,
+    "z_order": 16,
+    "radiation": "native common-frequency couplings frozen at native mode frequency",
+    "background": "homogeneous area-average slab, no fit",
+    "background_epsilon": 10.668734583860141,
+    "background_thickness": 0.42,
+    "reference_distance": 0.49,
+    "n_harmonics": 3,
+    "n_samples": 96,
+    "refined_harmonics": 4,
+    "refined_samples": 128,
+    "limits": [
+      "single native radiative mode",
+      "homogeneous background omits exact patterned continuum",
+      "frozen radiation bath"
+    ]
+  },
+  "old_reference": {
+    "solver": "Meep FDTD continuous-source time evolution",
+    "method_metadata": "time",
+    "resolution": 32,
+    "cell_size": [
+      1.0,
+      1.0,
+      4.8
+    ],
+    "pml_thickness": 0.65,
+    "pml_inner_edge_abs_z": 1.75,
+    "eps_averaging": true,
+    "mirror_boundary": false,
+    "source_z": -1.2,
+    "source_width": 20.0,
+    "empty_settling_time": 150.0,
+    "carrier_and_sideband_settling_time": 900.0,
+    "synchronize_H_before_sampling": true,
+    "source_equation": "J_l=-i omega_l delta_epsilon_l E_carrier",
+    "carrier_readout": "centered E on volume(1,1,.5), interpolated to Yee source points then sharp physical mask",
+    "source_volume": [
+      1.0,
+      1.0,
+      0.42
+    ],
+    "order": "first-order Born, no carrier depletion or repeated conversion",
+    "carrier_npz_field_normalization": "raw E; divide by incident for unit incoming E; multiply additionally by sqrt(2) for unit incoming power",
+    "amplitude_normalization": "out_E / incident_E; sum(abs(amplitudes)^2) is output/input power",
+    "carrier_power_balance": 0.9939664018470322
+  },
+  "cw_return_audit": {
+    "historical_reference_uses_solve_cw": false,
+    "time_branch_calls": "sim.run then return True",
+    "misleading_fields": [
+      "empty_cw_return",
+      "carrier_cw_return",
+      "solve_cw_return"
+    ],
+    "historical_hash_checks": {
+      "reference_script": true,
+      "reference_summary": true
+    },
+    "conclusion": "New solve_cw return-value compatibility issue does not invalidate old FDTD r32 reference. Source-time current normalization is a separate issue."
+  },
+  "reuse": [
+    "physical geometry/material/modulation/ports contract",
+    "native Legume cache, with new field sampling if needed",
+    "old predictions/reference as historical columns",
+    "old time/PML controls as scoped numerical evidence"
+  ],
+  "recompute_or_reproject": [
+    "material operator and Gram in the new consistent source/test coordinates",
+    "all new-operator static carrier/background/template Green fields and outputs",
+    "same-operator complete Born current reference",
+    "projected Born and finite Floquet output with matching observable"
+  ],
+  "comparison_required": [
+    "one-sided bottom incidence",
+    "same r32 or explicit changed-grid label",
+    "both parity sectors if symmetry decomposition is used",
+    "separate complex amplitude and summed sideband power errors",
+    "do not mix discrete static operators",
+    "do not replace native end-to-end retest with only hybrid-vs-Meep comparison",
+    "do not label new three-frequency Born validation as complete sideband/stability convergence"
+  ],
+  "sources": {
+    "native_prediction": {
+      "path": "sptc_toolbox/results/connected_physics/ports/summary.json",
+      "sha256": "0e110d4fc3f07abea1fb06d57912cb33b96a8fe82db14f818229493e6b54df59"
+    },
+    "native_amplitudes": {
+      "path": "sptc_toolbox/results/connected_physics/ports/modal_dynamic.npz",
+      "sha256": "19db4231ef62a95a1ae4541e1c57c122ebf857eb68d2230e20fd2a7a86bd69a4"
+    },
+    "native_cache": {
+      "path": "sptc_toolbox/results/connected_physics/spatial/g6.1_v01234567/native.pkl",
+      "sha256": "8e0d97e7f1a218bae167dc0c0e05ea1da7881dc488416e818c03563286b3e45f"
+    },
+    "native_cache_contract": {
+      "path": "sptc_toolbox/results/connected_physics/spatial/g6.1_v01234567/cache.json",
+      "sha256": "7f8267d2a3dee265fb34d3d319f34c5a3b0a7940b75cdf6db356721f6947144d"
+    },
+    "reference_summary": {
+      "path": "sptc_toolbox/results/targeted_resolution/ports/weak_pattern_r32_t900/summary.json",
+      "sha256": "5d2ef17bbaa889b1d241fe638de988f0266644fb9543ea8453f6850efb3a8992"
+    },
+    "reference_carrier": {
+      "path": "sptc_toolbox/results/targeted_resolution/ports/weak_pattern_r32_t900/carrier.npz",
+      "sha256": "f79dcf950ee2e5b56c5adc638d333c35536e4c8158edf4c9b827e065b089919b"
+    },
+    "comparison_summary": {
+      "path": "sptc_toolbox/results/targeted_resolution/ports/summary.json",
+      "sha256": "404d49251d311c76ebe6a35d210f5c4835d1be28141cd65f658e890bc516de9b"
+    },
+    "native_script": {
+      "path": "sptc_toolbox/scripts/validate_slab_ports.py",
+      "sha256": "4f8f4b6c9372425aa49f2f96144c8c89f38becc9efcf17d1fefde1629850ec74"
+    },
+    "reference_script": {
+      "path": "sptc_toolbox/scripts/meep_weak_sideband.py",
+      "sha256": "f01fdb04f4a97f463c478fdd57a73476490559e2b18e2de716d1f279f60e0a13"
+    },
+    "comparison_script": {
+      "path": "sptc_toolbox/scripts/summarize_targeted_ports.py",
+      "sha256": "63f49fd00a871e3afaed3735d413796241079d19eddc2182eaa8f73b95864f3b"
+    },
+    "historical_manifest": {
+      "path": "sptc_toolbox/results/targeted_resolution/validation_manifest.json",
+      "sha256": "45bd6ddcbf415c598ea5dd094214f442553b16da03c55b11d7429dd87e0644d5"
+    },
+    "static_time_pml_control": {
+      "path": "sptc_toolbox/results/patterned_green_20261016/static_reference/summary.json",
+      "sha256": "71f49bcb169b88e06d5930105b4eb46dd6a2a2d10cbaafd6c228a708dc6a01fc"
+    }
+  },
+  "status_at_intake": "HISTORICAL_COMPARISON_CONTRACT_AWAITING_NEW_SAME_CONDITION_END_TO_END_RETEST",
+  "new_maxwell_simulation_run_at_intake": false,
+  "followup": {
+    "current_native_retest": "native_retest/summary.json",
+    "scalar_r32_weak_comparison": "analysis_r32/summary.json",
+    "same_physical_inputs": true,
+    "historical_subpixel_discretization_replaced_by_declared_new_scalar_model": true,
+    "spatial_convergence_certified": false
+  }
+}

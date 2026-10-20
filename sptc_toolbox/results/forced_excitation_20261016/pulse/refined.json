@@ -1,0 +1,69 @@
+{
+  "label": "refined",
+  "amplitude": 0.01,
+  "max_step": 0.11,
+  "elapsed_seconds": 82.4539999999979,
+  "native_sha256": "8e0d97e7f1a218bae167dc0c0e05ea1da7881dc488416e818c03563286b3e45f",
+  "projection_sha256": "64c523d2d17c77c245f1d4e11867f09bfd1d20e33bc392a602d75fb30b086d88",
+  "stiffness_fourier_cache_max_relative_error": 2.873519511851822e-16,
+  "input_energy": 44.99999999999995,
+  "analytic_input_energy": 45.0,
+  "output_energy_at_400": 44.15385642756963,
+  "pump_work_at_400": 0.0023600002948760915,
+  "total_stored_at_400": 0.8485035713032267,
+  "modal_stored_at_400": 0.8445888776270969,
+  "tail_stored_fraction_of_input": 0.018855634917849504,
+  "output_fraction_by_400": 0.9811968095015484,
+  "stored_at_source_end_140": 9.87667762995776,
+  "energy_emitted_after_source_end": 9.02497003885869,
+  "outgoing_power_at_400": 0.008007658593451282,
+  "diagnostics": {
+    "function_evaluations": 64750,
+    "integration_intervals": 470,
+    "max_step": 0.11,
+    "rtol": 2e-09,
+    "atol": 2e-11,
+    "t_span": [
+      0.0,
+      400.0
+    ],
+    "echo_taps": 277,
+    "echo_horizon": 380.0,
+    "echo_truncation": "All causal paths within the requested horizon; only exact floating-point-zero coefficients terminate early",
+    "maximum_energy_balance_residual": 1.4890836341763247e-09,
+    "relative_energy_balance_residual": 3.3090747426140585e-11,
+    "budget_scope": "Independent modal and background storage; finite observation time retains all delayed and modal energy",
+    "source_resolution_scope": "Caller max_step and declared source breakpoints must resolve every source feature"
+  },
+  "metadata": {
+    "status": "NATIVE_TWO_PORT_WITH_DECLARED_HOMOGENEOUS_BACKGROUND_APPROXIMATION",
+    "basis_id": "18d306a1945804bca39db3923a1912a2a364005e6a63eb8518ff008ad9dc0bae",
+    "polarization": "tm",
+    "background_epsilon": 10.668734583860141,
+    "thickness": 0.42,
+    "reference_distance": 0.49,
+    "background_source": "Explicit geometry/reference choice, not measured total S",
+    "normalization": "Declared complex flux signals: P=sum(abs(s)**2)",
+    "loss_ownership": "Only native common-frequency c c^H; no additional Q",
+    "physical_accuracy": "Must compare static S and dynamic outputs against independent full-wave reference",
+    "complete_physical_scattering_certified": false,
+    "time_units": "ct/a; tau=drive*t",
+    "state_coordinates": "q and v=dq/dtau",
+    "port_order": [
+      "bottom",
+      "top"
+    ],
+    "modal_energy": "Native tau-model energy divided by drive",
+    "background": "Exact causal homogeneous Fresnel echo series in the declared reference model",
+    "background_energy": "n integral_(t-n*d)^t (abs(A0)**2+abs(Bd)**2) du",
+    "source_start": 20.0,
+    "initial_state": "Zero native state and empty background/delay histories",
+    "spatial_fields": "Returned modal coordinates are not certified complete physical scattering fields",
+    "real_signal_scope": "Real callables are algebraically accepted; native +/-frequency reality and optical time averaging are separate contracts",
+    "limitations": [
+      "Native radiation bath and modal input/output residues remain the existing frozen two-port approximation",
+      "Broadband background is exact for the declared homogeneous slab, not the complete patterned structure",
+      "No arbitrary-angle, new diffraction-order, or pump-dependent radiation-channel completion"
+    ]
+  }
+}

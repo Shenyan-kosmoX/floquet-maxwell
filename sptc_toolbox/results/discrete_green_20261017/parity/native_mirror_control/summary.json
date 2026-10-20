@@ -1,0 +1,62 @@
+{
+  "status": "INDEPENDENT_NATIVE_MIRROR_ODD_SOURCE_CONTROL",
+  "frequency": 0.398,
+  "template": 3,
+  "resolution": 24,
+  "source_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+  "geometry": "Same circle/ellipse epsilon11.5 thickness.42 physical slab",
+  "operator_change": "mp.Mirror(mp.Z,phase=-1) native symmetry boundary during Maxwell evolution",
+  "unchanged": "Source interpolation and physical mask, geometry, resolution, PML, CW envelope and checkpoints",
+  "distinct_operator_not_inserted_in_old_green_dataset": true,
+  "no_postprocessing_symmetrization": true,
+  "source_current": "J=-i omega Q3",
+  "checkpoints": [
+    {
+      "time": 900.0,
+      "full_field_parity_relative_residual": 3.1497621104705604e-15,
+      "supported_field_parity_relative_residual": 3.6136141701406365e-15,
+      "port_parity_relative_residual": 0.0,
+      "output_real_imag": [
+        [
+          0.011841318054382675,
+          0.0008561322117461328
+        ],
+        [
+          -0.011841318054382675,
+          -0.0008561322117461328
+        ]
+      ],
+      "field_relative_difference_from_no_mirror": 0.28365848948808714,
+      "output_relative_difference_from_no_mirror": 0.6303402333143611,
+      "field_relative_change_from_previous": null,
+      "elapsed_seconds": 47.42574638600013,
+      "data": "response_t900.npz"
+    },
+    {
+      "time": 1200.0,
+      "full_field_parity_relative_residual": 3.6397824060294174e-15,
+      "supported_field_parity_relative_residual": 4.155779381118416e-15,
+      "port_parity_relative_residual": 0.0,
+      "output_real_imag": [
+        [
+          0.011851399612525416,
+          0.0008530703384884591
+        ],
+        [
+          -0.011851399612525416,
+          -0.0008530703384884591
+        ]
+      ],
+      "field_relative_difference_from_no_mirror": 0.2830953052156301,
+      "output_relative_difference_from_no_mirror": 0.6293254965441617,
+      "field_relative_change_from_previous": 0.003140877715060419,
+      "elapsed_seconds": 62.92693994199999,
+      "data": "response_t1200.npz"
+    }
+  ],
+  "completed": true,
+  "reference_directory": "<source-checkout>/sptc_toolbox/results/discrete_green_20261017/parity/template_responses/f0.398_q3",
+  "source_sha256": {
+    "meep_parity_control.py": "8e160cca67611ff44d332be39efc5d4b2c6fa68afd5cdead42c8a04f130db4c0"
+  }
+}

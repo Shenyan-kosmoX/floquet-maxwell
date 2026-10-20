@@ -1,0 +1,89 @@
+{
+  "status": "APPROXIMATE_NATIVE_LEGUME_DIAGNOSTIC",
+  "case": "xy_even_kz_odd_ref16_v24",
+  "options": {
+    "gmax": 6.1,
+    "max_guided_index": 24,
+    "numeig": 24,
+    "gmode_step": 0.001,
+    "horizontal": "even",
+    "vertical": "odd",
+    "reference_epsilon": 16.0
+  },
+  "epsilon_physical": 16.0,
+  "epsilon_reference": 16.0,
+  "guided_indices": [
+    0,
+    3,
+    4,
+    7,
+    8,
+    11,
+    12,
+    15,
+    16,
+    19,
+    20,
+    23
+  ],
+  "basis_dimensions": [
+    1309,
+    1314,
+    1319,
+    1321,
+    1320,
+    1318,
+    1319,
+    1319,
+    1322
+  ],
+  "A2g_candidates": [
+    {
+      "mode": 0,
+      "overlap_to_original_seed": 1.603428695306631e-05,
+      "frequency_thz": 36.13628784824627
+    },
+    {
+      "mode": 4,
+      "overlap_to_original_seed": 0.6027787668550819,
+      "frequency_thz": 67.9845049840848
+    },
+    {
+      "mode": 5,
+      "overlap_to_original_seed": 0.3962626936062194,
+      "frequency_thz": 69.74946128170644
+    },
+    {
+      "mode": 12,
+      "overlap_to_original_seed": 1.415903457349201e-05,
+      "frequency_thz": 86.88822521019726
+    },
+    {
+      "mode": 14,
+      "overlap_to_original_seed": 1.4358511345177075e-06,
+      "frequency_thz": 91.30727051087439
+    },
+    {
+      "mode": 15,
+      "overlap_to_original_seed": 0.0005195332682265073,
+      "frequency_thz": 94.80876006586197
+    },
+    {
+      "mode": 21,
+      "overlap_to_original_seed": 3.791020988952751e-05,
+      "frequency_thz": 103.1564026671
+    }
+  ],
+  "seed_overlap": 0.6027787668550819,
+  "Gamma_thz": 67.9845049840848,
+  "X_thz": 64.06017686580662,
+  "Gamma_X_bandwidth_thz": 3.9243281182781686,
+  "minimum_adjacent_overlap_squared": 0.507456867874962,
+  "ambiguous_points": [
+    3,
+    4,
+    7
+  ],
+  "selective_radiation_API": "GuidedModeExp.compute_rad(kind, minds)",
+  "elapsed_seconds": 29.61237530002836
+}

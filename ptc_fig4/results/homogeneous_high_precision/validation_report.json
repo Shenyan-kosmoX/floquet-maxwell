@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "VERIFIED",
+  "scope": "Homogeneous transverse Maxwell, specified smooth periodic media; not Ge Fig.4",
+  "checks": {
+    "full_two_mode_spectrum_at_every_k": true,
+    "monodromy_spectral_error_below_3e-9": true,
+    "left_and_right_residual_below_2e-14": true,
+    "edge_weight_below_1e-6": true,
+    "harmonic_convergence_below_2e-10": true,
+    "exact_mathieu_gap_edges_error_below_2e-9": true,
+    "weak_mathieu_relative_error_below_2e-5": true,
+    "four_mode_lorentz_spectral_error_below_2e-9": true,
+    "growth_and_decay_both_present": true
+  },
+  "signature": "3630a51f006e198902dd8c2bf650e179ebb815fe1d3ee3dbe81992e6257bcad4",
+  "k_points": 401,
+  "max_spectral_error": 3.7324379806931146e-14,
+  "max_eigen_residual": 6.088616584951767e-15,
+  "max_edge_weight": 2.429337124100048e-24,
+  "max_eigenvector_condition_number": 21.937671771722822,
+  "ambiguous_tracking_points": 0,
+  "first_gap_kappa": [
+    1.0278119367048035,
+    1.084596063753713
+  ],
+  "first_gap_width": 0.05678412704890956,
+  "max_growth": 0.013442951099796945,
+  "mathieu_exact_gap_kappa": [
+    0.9710928697187059,
+    1.0311567427187722
+  ],
+  "mathieu_ode_gap_kappa": [
+    0.9710928697187194,
+    1.0311567427187738
+  ],
+  "lorentz_spectral_error": 1.0791757972627225e-13,
+  "elapsed_seconds": 7.905694999994012,
+  "created_utc": "2026-10-13T11:36:11.716815+00:00",
+  "limits": [
+    "Finite test campaign, not a universal proof",
+    "Exact defective degeneracies require invariant-subspace analysis",
+    "No spatial radiation, Ge coefficients, or Fig.4 reproduction validated"
+  ]
+}

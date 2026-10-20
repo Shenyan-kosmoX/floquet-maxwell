@@ -1,0 +1,30 @@
+{
+  "status": "PHYSICAL_STATIC_PORT_REFERENCE_NOT_FLOQUET_MODAL_PORT_COMPLETION",
+  "geometry": "same square circle/ellipse slab",
+  "epsilon_background": 11.5,
+  "thickness": 0.42,
+  "resolution": 32,
+  "after_sources_time": 900.0,
+  "meep_version": "1.35.0",
+  "reference_planes_z": [
+    -0.7,
+    0.7
+  ],
+  "frequency_units": "f*a/c; multiply by 2pi for angular frequency",
+  "amplitude_normalization": "Native diffracted-planewave coefficients divided by measured empty-cell forward mode",
+  "port_order": [
+    "bottom_x",
+    "top_x"
+  ],
+  "symmetry_completion": "Reciprocity and actual z mirror: S=[[r,t],[t,r]]; y mirror forbids cross polarization",
+  "max_flux_balance_error": 0.006852239294715012,
+  "max_amplitude_flux_error": 0.0010240316490190415,
+  "max_vacuum_phase_error": 0.0007848806454453045,
+  "uniform_amplitude_error": null,
+  "elapsed_seconds": 159.815175868,
+  "limitations": [
+    "Finite grid and observation time; high-Q resonances may not decay within this record",
+    "Only one polarization/zeroth order at normal incidence below first diffraction threshold",
+    "Measured total S includes direct background; no dynamic Floquet excitation/residue fit inferred"
+  ]
+}

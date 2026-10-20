@@ -1,0 +1,78 @@
+{
+  "k_index": 31,
+  "kpoint": [
+    2.945243112740431,
+    0.0
+  ],
+  "path_coordinate": 1.9375,
+  "all_window_modes": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "all_window_frequencies_thz": [
+    62.802354488385404,
+    64.13461377964948,
+    66.73405290008603,
+    68.35048486736841,
+    73.44085090884444,
+    74.06313827228337,
+    74.65215996876576,
+    75.24673794770554,
+    77.30805545940409
+  ],
+  "modes": [
+    8,
+    10,
+    11,
+    13,
+    14
+  ],
+  "seed_tracking": {
+    "k_index": 31,
+    "modes": [
+      8,
+      10
+    ],
+    "overlap": 0.9916295523391723,
+    "ambiguous": false
+  },
+  "forbidden_modulation_relative_max": 5.663386438833017e-14,
+  "selection": "Connected component of actual field-derived modulation overlap, threshold1e-6; no radiation-loss cuts",
+  "cases": {
+    "static": {
+      "m": 0.0,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0,
+      "projection_fast_generic_error": 3.2229925602452104e-16,
+      "common_sample_collective_loss_ratio": 0.08910884327482611,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "weak": {
+      "m": 0.0001,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0016,
+      "projection_fast_generic_error": 5.591854291317566e-16,
+      "common_sample_collective_loss_ratio": 0.08910884327482611,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "strong": {
+      "m": 0.03,
+      "drive_thz": 134.0,
+      "absolute_epsilon_amplitude": 0.48,
+      "projection_fast_generic_error": 5.982861332143749e-16,
+      "common_sample_collective_loss_ratio": 0.08943514056083628,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    }
+  },
+  "elapsed_seconds": 3.263961399999971
+}

@@ -1,0 +1,220 @@
+{
+  "first": "toolbox_experiments\\results\\meep_cutoff\\ref12_left_r40",
+  "second": "toolbox_experiments\\results\\meep_cutoff\\ref12_left_r48",
+  "first_kpoint": [
+    1.9814268748919925,
+    0.0
+  ],
+  "second_kpoint": [
+    1.9814268748919925,
+    0.0
+  ],
+  "first_config": {
+    "radius": 0.3125,
+    "height": 0.4445234708392603,
+    "epsilon": 16.0,
+    "kx_ka": 1.9814268748919925,
+    "ky_ka": 0.0,
+    "resolution": 40,
+    "padding": 1.0,
+    "pml": 0.5,
+    "frequency": 0.747,
+    "width": 0.3,
+    "warmup": 12.0,
+    "window": 100.0,
+    "sample_dt": 0.5,
+    "source_variant": 0,
+    "xy_samples": 12,
+    "z_order": 4,
+    "field_extent": 0.7
+  },
+  "second_config": {
+    "radius": 0.3125,
+    "height": 0.4445234708392603,
+    "epsilon": 16.0,
+    "kx_ka": 1.9814268748919925,
+    "ky_ka": 0.0,
+    "resolution": 48,
+    "padding": 1.0,
+    "pml": 0.5,
+    "frequency": 0.747,
+    "width": 0.3,
+    "warmup": 12.0,
+    "window": 100.0,
+    "sample_dt": 0.5,
+    "source_variant": 0,
+    "xy_samples": 12,
+    "z_order": 4,
+    "field_extent": 0.7
+  },
+  "all_accepted_pole_matches": [
+    {
+      "first_pole": 2,
+      "second_pole": 2,
+      "first_frequency": 0.6821309355147431,
+      "second_frequency": 0.682612670088939,
+      "frequency_difference": 0.00048173457419586896,
+      "first_decay": -0.0012619222957485701,
+      "second_decay": -0.0015366166133282976,
+      "field_overlap_squared": 0.9984627143584456,
+      "field_match_accepted": true,
+      "row_competitor_margin": 0.9849647247272026,
+      "column_competitor_margin": 0.9887989251662278,
+      "field_match_ambiguous": false,
+      "competitors_second": [
+        {
+          "pole": 2,
+          "overlap": 0.9984627143584456
+        },
+        {
+          "pole": 0,
+          "overlap": 0.01349798963124291
+        },
+        {
+          "pole": 3,
+          "overlap": 0.006761968671926872
+        }
+      ]
+    },
+    {
+      "first_pole": 4,
+      "second_pole": 3,
+      "first_frequency": 0.7380493629003904,
+      "second_frequency": 0.7387990336180541,
+      "frequency_difference": 0.0007496707176637418,
+      "first_decay": -0.0010073481725360561,
+      "second_decay": -0.0009970894707318372,
+      "field_overlap_squared": 0.9996331339125888,
+      "field_match_accepted": true,
+      "row_competitor_margin": 0.989969344720371,
+      "column_competitor_margin": 0.9928711652406619,
+      "field_match_ambiguous": false,
+      "competitors_second": [
+        {
+          "pole": 3,
+          "overlap": 0.9996331339125888
+        },
+        {
+          "pole": 2,
+          "overlap": 0.009663789192217763
+        },
+        {
+          "pole": 4,
+          "overlap": 0.003435150069771109
+        }
+      ]
+    },
+    {
+      "first_pole": 5,
+      "second_pole": 4,
+      "first_frequency": 0.7576950528601631,
+      "second_frequency": 0.7581621451566629,
+      "frequency_difference": 0.00046709229649977146,
+      "first_decay": -0.0004541067313181038,
+      "second_decay": -0.00036986305171991286,
+      "field_overlap_squared": 0.9989317188280123,
+      "field_match_accepted": true,
+      "row_competitor_margin": 0.9954491867056239,
+      "column_competitor_margin": 0.9954965687582412,
+      "field_match_ambiguous": false,
+      "competitors_second": [
+        {
+          "pole": 4,
+          "overlap": 0.9989317188280123
+        },
+        {
+          "pole": 3,
+          "overlap": 0.00348253212238849
+        },
+        {
+          "pole": 2,
+          "overlap": 0.002663657856563014
+        }
+      ]
+    }
+  ],
+  "first_accepted_count": 3,
+  "second_accepted_count": 4,
+  "extraction_sources": [
+    "summary_v2.json",
+    "summary_v2.json"
+  ],
+  "extraction_summary_sha256": [
+    "147eb862412f6473e2436eb56215610bb12de8b174262409c6b869c8b3b6c641",
+    "2bd94200637623d49cda1972eb3ebe953cb372edfadec3b2d0980a48d30ba479"
+  ],
+  "unequal_counts_mean_unobserved_modes_not_zero_modes": true,
+  "field_metric": "periodic H envelope; same physical weighted xy-z sample grid",
+  "scope": "All supported Meep poles matched by field; frequency is only reported afterward",
+  "matched_pair_subspaces": [
+    {
+      "first_poles": [
+        2,
+        4
+      ],
+      "second_poles": [
+        2,
+        3
+      ],
+      "principal_overlaps_squared": [
+        0.9996972651049565,
+        0.9987007561145282
+      ],
+      "directional_capture_squared": [
+        0.9996972651049565,
+        0.9987007561145282
+      ],
+      "minimum_overlap_squared": 0.9987007561145282,
+      "dimension_previous": 2,
+      "dimension_current": 2,
+      "lost_previous_dimension": 0,
+      "gained_current_dimension": 0
+    },
+    {
+      "first_poles": [
+        2,
+        5
+      ],
+      "second_poles": [
+        2,
+        4
+      ],
+      "principal_overlaps_squared": [
+        0.9991298538670129,
+        0.9982425669953517
+      ],
+      "directional_capture_squared": [
+        0.9991298538670129,
+        0.9982425669953517
+      ],
+      "minimum_overlap_squared": 0.9982425669953517,
+      "dimension_previous": 2,
+      "dimension_current": 2,
+      "lost_previous_dimension": 0,
+      "gained_current_dimension": 0
+    },
+    {
+      "first_poles": [
+        4,
+        5
+      ],
+      "second_poles": [
+        3,
+        4
+      ],
+      "principal_overlaps_squared": [
+        0.9996982873300809,
+        0.998915681422953
+      ],
+      "directional_capture_squared": [
+        0.9996982873300809,
+        0.998915681422953
+      ],
+      "minimum_overlap_squared": 0.998915681422953,
+      "dimension_previous": 2,
+      "dimension_current": 2,
+      "lost_previous_dimension": 0,
+      "gained_current_dimension": 0
+    }
+  ]
+}

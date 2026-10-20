@@ -1,0 +1,87 @@
+{
+  "config": {
+    "radius": 0.375,
+    "height": 0.125,
+    "epsilon": 15.9,
+    "period_nm": 400.0,
+    "resolution": 32,
+    "kx": 0.0,
+    "ky": 0.0,
+    "center_frequency": 0.51,
+    "frequency_width": 0.2,
+    "pml": 0.5,
+    "padding": 1.0,
+    "window_time": 100.0,
+    "warmup": 25.0,
+    "courant": 0.5,
+    "source_component": "Hz",
+    "mirror_z": true,
+    "epsilon_averaging": true,
+    "save_volume": false
+  },
+  "meep_version": "1.35.0",
+  "status": "MEEP_STATIC_PULSED_PROBE_NOT_FLOQUET",
+  "windows": [
+    {
+      "start": 75.0,
+      "end": 175.0,
+      "probes": [
+        [
+          {
+            "frequency": 0.5037473795132306,
+            "decay": -5.22895629269571e-09,
+            "Q": 48169017.99474893,
+            "amplitude_real": -68.72316367725234,
+            "amplitude_imag": 165.5272629089095,
+            "error": 2.987671986620757e-11
+          }
+        ],
+        [
+          {
+            "frequency": 0.5037473798665366,
+            "decay": -5.710463434698738e-09,
+            "Q": 44107399.13030477,
+            "amplitude_real": -52.09579435382413,
+            "amplitude_imag": 125.47837558488978,
+            "error": 2.651537796222516e-12
+          }
+        ]
+      ]
+    },
+    {
+      "start": 175.0,
+      "end": 275.0,
+      "probes": [
+        [
+          {
+            "frequency": 0.503747379870871,
+            "decay": -6.3236461060499566e-09,
+            "Q": 39830453.14545085,
+            "amplitude_real": 165.7519969284955,
+            "amplitude_imag": -68.17781137918718,
+            "error": 2.6425734249942757e-11
+          }
+        ],
+        [
+          {
+            "frequency": 0.5037473798791592,
+            "decay": -5.753077778566837e-09,
+            "Q": 43780685.68409385,
+            "amplitude_real": 125.64870252458348,
+            "amplitude_imag": -51.68235622677441,
+            "error": 1.2800143425132182e-12
+          }
+        ]
+      ]
+    }
+  ],
+  "elapsed_seconds": 55.78683876802097,
+  "frequency_unit": "cyclic f*a/c; decay in same units; negative decay is passive",
+  "k_unit": "Meep k_point components in 2*pi/a",
+  "field_status": "Final source-free ringdown snapshot; may contain several modes",
+  "assumptions": [
+    "real nondispersive epsilon",
+    "PML only in z",
+    "Bloch periodic xy"
+  ]
+}

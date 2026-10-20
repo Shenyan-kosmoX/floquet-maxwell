@@ -1,0 +1,78 @@
+{
+  "k_index": 32,
+  "kpoint": [
+    3.141592653589793,
+    0.0
+  ],
+  "path_coordinate": 2.0,
+  "all_window_modes": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "all_window_frequencies_thz": [
+    62.722441975258185,
+    64.06017686580616,
+    66.73605472528199,
+    68.34796323453175,
+    73.43931943183541,
+    74.06896620666328,
+    74.63831101602257,
+    75.23034295329676,
+    77.40550834226998
+  ],
+  "modes": [
+    8,
+    10,
+    11,
+    13,
+    14
+  ],
+  "seed_tracking": {
+    "k_index": 32,
+    "modes": [
+      8,
+      10
+    ],
+    "overlap": 0.992599795158046,
+    "ambiguous": false
+  },
+  "forbidden_modulation_relative_max": 1.3695473929935133e-13,
+  "selection": "Connected component of actual field-derived modulation overlap, threshold1e-6; no radiation-loss cuts",
+  "cases": {
+    "static": {
+      "m": 0.0,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0,
+      "projection_fast_generic_error": 3.493786820162101e-16,
+      "common_sample_collective_loss_ratio": 0.08873987041667329,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "weak": {
+      "m": 0.0001,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0016,
+      "projection_fast_generic_error": 4.564726619116806e-16,
+      "common_sample_collective_loss_ratio": 0.08873987041667329,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "strong": {
+      "m": 0.03,
+      "drive_thz": 134.0,
+      "absolute_epsilon_amplitude": 0.48,
+      "projection_fast_generic_error": 5.569869591009386e-16,
+      "common_sample_collective_loss_ratio": 0.08904006176547292,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    }
+  },
+  "elapsed_seconds": 3.320758099995146
+}

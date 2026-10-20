@@ -1,0 +1,89 @@
+schema_version: '0.1'
+kind: case
+id: jin2025-modal-dynamics
+project_id: floquet-maxwell
+title: Jin 2025 主文Fig.4与补充Fig.7两模动态
+stage: results_available
+question:
+  summary: Jin 2025 主文Fig.4与补充Fig.7两模动态
+  scope: 作者测量与C(P)标定作为输入；与真实Legume张量案例分别索引；短脉冲峰位和高度仍有差异。
+  record:
+    path: sptc_toolbox/results/sptc_baselines/jin2025/report.md
+capability_refs:
+- forced-scattering
+- finite-floquet-dynamics
+model:
+  description: 作者测量与C(P)标定作为输入；与真实Legume张量案例分别索引；短脉冲峰位和高度仍有差异。
+  record:
+    path: sptc_toolbox/results/sptc_baselines/jin2025/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/sptc_baselines/jin2025/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/sptc_baselines/jin2025/report.md
+    entrypoint:
+      path: sptc_toolbox/baselines/jin2025_sfg.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/sptc_baselines/jin2025/report.md
+    entrypoint:
+      path: sptc_toolbox/baselines/plot_jin2025.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/sptc_baselines/jin2025/cw_summary.json
+  record:
+    path: sptc_toolbox/results/sptc_baselines/jin2025/cw_summary.json
+- id: output-2
+  description: sptc_toolbox/results/sptc_baselines/jin2025/pulse_summary.json
+  record:
+    path: sptc_toolbox/results/sptc_baselines/jin2025/pulse_summary.json
+- id: output-3
+  description: sptc_toolbox/results/sptc_baselines/jin2025/independent_pulse_audit.json
+  record:
+    path: sptc_toolbox/results/sptc_baselines/jin2025/independent_pulse_audit.json
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/sptc_baselines/jin2025/report.md
+criteria:
+- id: criterion-1
+  description: 作者给定模态/标定下的CW转换、劈裂和1.5/6ps脉冲响应。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/sptc_baselines/jin2025/report.md
+checks:
+- id: check-1
+  method: 独立两模解析响应与原始有限脉冲ODE比较
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/sptc_baselines/jin2025/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/sptc_baselines/jin2025/report.md
+  artifacts:
+  - path: sptc_toolbox/results/sptc_baselines/jin2025/cw_summary.json
+  - path: sptc_toolbox/results/sptc_baselines/jin2025/pulse_summary.json
+  - path: sptc_toolbox/results/sptc_baselines/jin2025/independent_pulse_audit.json
+  notes: 频率转换的泵功率峰、Rabi劈裂及1.5/6ps有限脉冲，具有独立时间积分检查。 作者测量与C(P)标定作为输入；与真实Legume张量案例分别索引；短脉冲峰位和高度仍有差异。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/sptc_baselines/jin2025/report.md

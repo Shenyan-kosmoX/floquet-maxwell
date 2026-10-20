@@ -1,0 +1,77 @@
+{
+  "status": "STATIC_PARITY_SOURCE_ENRICHMENT",
+  "rank": 4,
+  "grid_resolution": 24,
+  "spatial_samples": 5280,
+  "grid_id": "bfd646f081e3902f6511e5aa5e8398c758ab0e1ae740030618c43daabb16b051",
+  "basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+  "geometry_id": "square-circle-ellipse-eps11.5-thickness.42",
+  "gram_error": 2.1958481347094732e-14,
+  "source_template_conjugation_closed": true,
+  "no_dynamic_target_fit": true,
+  "preserved_historical_columns_exactly": true,
+  "column_sha256": [
+    "a79419f4446fb1df58bac8d5f8e4ac4ccccb880577cd998d8ea07f2ebc535447",
+    "eb0c640fdd813a96a253d03078bb620e46a15e11c923259ada22fb170d0fff05",
+    "16d6ca5fd507a8bdaaf0d944d28b1a71694c8c7a8333fc42fec42b83e1468f99",
+    "09d32fa6e92591875a586c9a1746d645402093c3543850fc973358748876ab0a"
+  ],
+  "historical_column_sha256": [
+    "a79419f4446fb1df58bac8d5f8e4ac4ccccb880577cd998d8ea07f2ebc535447",
+    "eb0c640fdd813a96a253d03078bb620e46a15e11c923259ada22fb170d0fff05"
+  ],
+  "historical_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+  "historical_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+  "odd_real_imag_singular_values": [
+    0.8238810941951842,
+    0.008978940945578722
+  ],
+  "odd_second_to_first_singular_ratio": 0.010898345657937306,
+  "static_source_relative_residual_by_rank": {
+    "1": {
+      "bottom": 0.17609601353732204,
+      "even": 0.08504729408899617,
+      "odd": 1.0
+    },
+    "2": {
+      "bottom": 0.1547596750049144,
+      "even": 0.0007587610641239465,
+      "odd": 1.0
+    },
+    "3": {
+      "bottom": 0.0018455967340389307,
+      "even": 0.0007587610641239465,
+      "odd": 0.010897698495870032
+    },
+    "4": {
+      "bottom": 0.0007496198374667215,
+      "even": 0.0007587610641239465,
+      "odd": 1.552798108323986e-14
+    }
+  },
+  "parity_eigenvalues": [
+    1,
+    1,
+    -1,
+    -1
+  ],
+  "parity_residuals": [
+    1.9188559242898866e-13,
+    2.248120402912256e-12,
+    4.656068368384689e-14,
+    8.093552326669864e-15
+  ],
+  "basis_sources": [
+    "Unchanged actual Legume mode5, real Gamma gauge",
+    "Unchanged leading real static symmetric background residual",
+    "First real SVD shape of static antisymmetric carrier residual",
+    "Second real SVD shape of static antisymmetric carrier residual"
+  ],
+  "source_normalization": "Volume L2, not QNM or modal energy normalization",
+  "rank_decision": "Retain both odd real/imag shapes; rank3 still leaves 1.0898 percent of odd source norm.",
+  "source_sha256": {
+    "sptc_toolbox\\results\\patterned_green_20261016\\basis\\source_basis.npz": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+    "sptc_toolbox\\results\\connected_physics\\ports\\weak_pattern_r24_time\\carrier.npz": "875da2c2cfadbfd68e26eaae905e023cbb3249419f01b48b2118a4a8195f5adc",
+    "sptc_toolbox\\scripts\\build_parity_green_basis.py": "3f12d98829164887e13317957b07ecc41d4982a0ea0c855d1fccdbc1409790b2"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "ACTUAL_LEGUME_MODE_RESAMPLED_ON_FRESH_MEEP_METADATA_AXES",
+  "resolution": 32,
+  "native_mode": 5,
+  "native_frequency_fa_over_c": 0.3979539246410964,
+  "axes_shape": [
+    34,
+    34,
+    18
+  ],
+  "Q_full_shape": [
+    34,
+    34,
+    18,
+    3,
+    1
+  ],
+  "spacing": [
+    0.03125,
+    0.03125,
+    0.03125
+  ],
+  "axes_source": "Fresh initialized Meep get_array_metadata, fixed physical volume",
+  "field_evaluation": "Direct native Legume Fourier field at each supplied z and x/y sample; no interpolation of an old seed",
+  "coordinate_shift": "z_Legume=z_Meep+0.21",
+  "field_chart": "physical G=-native G and E=Rz(pi) E_native, exp(-i omega t)",
+  "real_Gamma_phase_residual": 4.1810808646704945e-14,
+  "even_vector_mirror_residual": 1.9690523157616772e-13,
+  "seed_normalization": "Volume L2 over unique physical dielectric center samples; downstream native-grid normalization is independent",
+  "unmasked_field": true,
+  "no_dynamic_response_input": true,
+  "no_response_fit": true,
+  "source_sha256": {
+    "sptc_toolbox\\results\\consistent_green_20261017\\native_r32\\axes.npz": "71ced9b20013ac51dd93f6ced23ce7ca54ade947e1c708884792dd981bf871ae",
+    "sptc_toolbox\\results\\connected_physics\\spatial\\g6.1_v01234567\\native.pkl": "8e0d97e7f1a218bae167dc0c0e05ea1da7881dc488416e818c03563286b3e45f",
+    "sptc_toolbox\\scripts\\build_consistent_native_seed.py": "b466c98b96ecbc28c42aa3be156faf29aa461c318f81344ca5d8b35e93ad4d57"
+  },
+  "seed_sha256": "90c9fd436d44e830912c38aca8d47fb861678d279f2daa06fdd808e6d34a119e"
+}

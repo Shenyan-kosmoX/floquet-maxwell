@@ -1,0 +1,111 @@
+{
+  "doi": "10.1038/s41467-018-06802-0",
+  "panels": "Supplementary Figure 3a,b; all m=-3..4",
+  "scope": "Original paper ideal reflection-array physical-optics calculation; auxiliary reference, not Legume or full Maxwell.",
+  "equations": {
+    "temporal": "Gamma=sum_m a_m exp(+i m Omega t); Eq.6",
+    "spatial": "F_m=sum_yx a_myx exp(+i*pi*(x*u+y*v)); Eq.7",
+    "observable": "20log10|F_m|, no per-panel normalization"
+  },
+  "inputs": {
+    "spacing_over_lambda": [
+      0.5,
+      0.5
+    ],
+    "spacing_source": "SI Note4 explicit dy=lambda_c/2; square prototype 15mm at10GHz in main text; fixed half-wavelength array assumption also used for SI3.",
+    "element_pattern": 1.0,
+    "element_pattern_source": "Main text following Eq.7: throughout paper Epq=1; mutual coupling ignored.",
+    "normalization": "Raw Eq7 sum of unit-modulus reflection coefficients; unity is a single isotropic element's amplitude. Not absolute calibrated RCS dBsm.",
+    "harmonic_wavenumber": "Carrier wavelength lambda_c used for every m, as Eq7. Adiabatic f_mod << f_c approximation of source.",
+    "code": "Exact archived SI1f64x8 bits; no DC removal or material mapping",
+    "phase": "No pi correction; a common pi shift cancels in intensity, independently checked."
+  },
+  "peak_comparison": [
+    {
+      "m": -3,
+      "u": -0.5528137257130175,
+      "v": 0.4319495341922483,
+      "computed_max_dB": 14.293023012458503,
+      "paper_printed_max_dB": 14.2929,
+      "difference_dB": 0.00012301245850387943
+    },
+    {
+      "m": -2,
+      "u": 0.33515759765228276,
+      "v": 0.629139593463305,
+      "computed_max_dB": 15.84186115156715,
+      "paper_printed_max_dB": 15.8418,
+      "difference_dB": 6.115156715047476e-05
+    },
+    {
+      "m": -1,
+      "u": 0.7022485406896745,
+      "v": 0.2134014434566008,
+      "computed_max_dB": 16.312340632383137,
+      "paper_printed_max_dB": 16.2849,
+      "difference_dB": 0.027440632383136432
+    },
+    {
+      "m": 0,
+      "u": -0.678890182489483,
+      "v": -0.6146199450057456,
+      "computed_max_dB": 17.137524276980763,
+      "paper_printed_max_dB": 17.1361,
+      "difference_dB": 0.00142427698076375
+    },
+    {
+      "m": 1,
+      "u": -0.7022485533974414,
+      "v": -0.21340145808496538,
+      "computed_max_dB": 16.312340632383165,
+      "paper_printed_max_dB": 16.2849,
+      "difference_dB": 0.027440632383164854
+    },
+    {
+      "m": 2,
+      "u": -0.3351576100407353,
+      "v": -0.6291396037241331,
+      "computed_max_dB": 15.84186115156714,
+      "paper_printed_max_dB": 15.8418,
+      "difference_dB": 6.115156714159298e-05
+    },
+    {
+      "m": 3,
+      "u": 0.5528137145036452,
+      "v": -0.4319495440180863,
+      "computed_max_dB": 14.29302301245851,
+      "paper_printed_max_dB": 14.2929,
+      "difference_dB": 0.00012301245851098486
+    },
+    {
+      "m": 4,
+      "u": -0.6077418292847762,
+      "v": 0.3338650622260056,
+      "computed_max_dB": 13.978071891689815,
+      "paper_printed_max_dB": 13.9619,
+      "difference_dB": 0.016171891689815254
+    }
+  ],
+  "max_abs_peak_difference_dB": 0.027440632383164854,
+  "checks": {
+    "direct_time_spatial_sum": {
+      "samples": 8192,
+      "directions": 23,
+      "max_complex_amplitude_error": 1.32069107484795e-06,
+      "relative_to_max_amplitude": 2.513446907862533e-07
+    },
+    "spatial_Parseval_full_reciprocal_square_max_error": 1.7763568394002505e-15,
+    "spatial_Parseval_scope": "Full reciprocal square orthogonality, not emitted hemispherical power.",
+    "temporal_Parseval_m4096_min_retained_energy": 0.999703160666497,
+    "temporal_Parseval_exact_time_domain_energy_per_cell": 1.0,
+    "uniform_unmodulated_broadside_max_error": 2.963556325463441e-14,
+    "opposite_harmonic_conjugation_max_error": 0.0,
+    "common_pi_phase_intensity_max_error": 0.0
+  },
+  "coordinate_caveat": "Paper calls the image a uv plane, but its rendered texture is not identical to straightforward Eq7 using source table X/Y. Angular-radius plus exchanged display axes resembles it. This is explicitly a display hypothesis; primary data and plots keep physical u,v and source X/Y. No cause attributed without source plotting code.",
+  "source_hashes": {
+    "pdf": "33c07e616e2ae741aa5460bc625b68ddf537b44cdadcfcea9a266307db1a2d0d",
+    "code": "8a27b888a7dcae66c4d2a2d75d22cfeb248f65c52be8c7381ae3bede585b23c7",
+    "script": "348a53abf88b1324d82d447e31502d50a58ebb41a71c3c8013987f524d990322"
+  }
+}

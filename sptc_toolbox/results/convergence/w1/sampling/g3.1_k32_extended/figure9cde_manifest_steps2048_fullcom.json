@@ -1,0 +1,69 @@
+{
+  "figure": "Fig.9(c-e)",
+  "source_version": "author manuscript; not verified publisher layout",
+  "source_image": "sptc_toolbox\\literature\\sptc_baselines\\sources\\next_candidates\\minkov2018_figure9cde_author.png",
+  "source_sha256": "0cab6e280d257a58ec205950e40d8c6a9b694efe598f947359f8d03bba5eb72b",
+  "steps_per_period": 2048,
+  "simulation_status": "ACTUAL_CONVERGENCE_RUN_WITH_SEPARATE_ASSESSMENT",
+  "input_summary": "summary_steps2048_fullcom.json",
+  "display_x_over_a": [
+    -50,
+    120
+  ],
+  "display_y_over_a": [
+    -1.5,
+    1.5
+  ],
+  "colormap": "Spectral_r",
+  "normalization": "one maximum across all three saved times and full saved x/y grid for each c/d/e block",
+  "no_rowwise_normalization": true,
+  "complete_period_com": true,
+  "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+  "source_ambiguities": [
+    "source y extent not numerically labeled",
+    "source row/panel normalization not specified",
+    "source across-k initial phase convention not specified"
+  ],
+  "cases": [
+    {
+      "drive": 0.01,
+      "file": "drive0.01_steps2048_fullcom.npz",
+      "sha256": "ed03d7713b3cbc35886bbd3a47d7afc83e1735a874ba4b3e26cca0d94ba54bc5",
+      "vmax": 1.180555270012867,
+      "centers": [
+        -2.4737331942271877e-12,
+        18.960423732808437,
+        39.17723000714509
+      ]
+    },
+    {
+      "drive": 0.001,
+      "file": "drive0.001_steps2048_fullcom.npz",
+      "sha256": "c95750896182c03349ab0540c830c73dbf922ee1b1318f75cf0dfb10b5b233af",
+      "vmax": 1.180555270012867,
+      "centers": [
+        -2.4737331942271877e-12,
+        24.980141314857214,
+        49.98716816343792
+      ]
+    },
+    {
+      "drive": 0.0001,
+      "file": "drive0.0001_steps2048_fullcom.npz",
+      "sha256": "f0c4d8e6c3284fb4e05e2f8b080ae35037a33e4b89b8cd131081504b6062cfdd",
+      "vmax": 1.180555270012867,
+      "centers": [
+        -2.4737331942271877e-12,
+        24.99936861251785,
+        50.001748250580455
+      ]
+    }
+  ],
+  "outputs": [
+    "figure9cde_calculated_steps2048_fullcom.png",
+    "figure9cde_calculated_steps2048_fullcom.pdf",
+    "figure9cde_calculated_steps2048_fullcom.svg",
+    "figure9cde_paper_vs_legume_steps2048_fullcom.png",
+    "figure9cde_paper_vs_legume_steps2048_fullcom.pdf"
+  ]
+}

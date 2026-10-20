@@ -1,0 +1,501 @@
+{
+  "status": "VERIFIED_BOUNDED_HOMOGENEOUS_NATIVE_TIME_UPDATE_GATE",
+  "meep_version": "1.35.0",
+  "model": "epsilon=4*(1+0.2*cos(Omega*t+0.31)); k/Omega=1",
+  "convention": "Dx(t), By(t-dt/2); exp(+ikz-iwt); exact continuum initial half-step",
+  "epsilon_timing": "set epsilon(t+dt) before step; Ex at t remains unchanged until next constitutive update",
+  "cases": [
+    {
+      "case": "res20_courant0.5_initial0_mod0_offset1",
+      "resolution": 20,
+      "courant": 0.5,
+      "dt": 0.025,
+      "initial_index": 0,
+      "modulation": 0.0,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": [
+        1.0,
+        0.0
+      ],
+      "b_initial_interpolation_factor": [
+        0.999229036240723,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.001739467566544938,
+      "raw_B_relative_l2": 0.001870130392669165,
+      "raw_D_max_error": 0.0026628582000244178,
+      "raw_B_max_error": 0.001508877985716083,
+      "synchronized_continuum_relative_l2": 0.001741437599440916,
+      "synchronized_discrete_spatial_relative_l2": 0.00011870270602053978,
+      "constitutive_relative_error": 0.0,
+      "archive": "res20_courant0.5_initial0_mod0_offset1.npz"
+    },
+    {
+      "case": "res20_courant0.5_initial1_mod0_offset1",
+      "resolution": 20,
+      "courant": 0.5,
+      "dt": 0.025,
+      "initial_index": 1,
+      "modulation": 0.0,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": null,
+      "b_initial_interpolation_factor": [
+        0.999229036240723,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.0017601780934311617,
+      "raw_B_relative_l2": 0.0019482803120920834,
+      "raw_D_max_error": 0.00605569966248614,
+      "raw_B_max_error": 0.0028316033288027787,
+      "synchronized_continuum_relative_l2": 0.0017588410908152689,
+      "synchronized_discrete_spatial_relative_l2": 0.00012211541435891955,
+      "constitutive_relative_error": 0.0,
+      "archive": "res20_courant0.5_initial1_mod0_offset1.npz"
+    },
+    {
+      "case": "res20_courant0.5_initial0_mod0.2_offset1",
+      "resolution": 20,
+      "courant": 0.5,
+      "dt": 0.025,
+      "initial_index": 0,
+      "modulation": 0.2,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": [
+        1.0,
+        0.0
+      ],
+      "b_initial_interpolation_factor": [
+        0.9992290362407228,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.0014194703369865356,
+      "raw_B_relative_l2": 0.0014264056727831007,
+      "raw_D_max_error": 0.0026602627462496975,
+      "raw_B_max_error": 0.001355425102626595,
+      "synchronized_continuum_relative_l2": 0.0014432801077508188,
+      "synchronized_discrete_spatial_relative_l2": 9.162530334881837e-05,
+      "constitutive_relative_error": 1.7989103570054547e-16,
+      "archive": "res20_courant0.5_initial0_mod0.2_offset1.npz"
+    },
+    {
+      "case": "res20_courant0.5_initial1_mod0.2_offset1",
+      "resolution": 20,
+      "courant": 0.5,
+      "dt": 0.025,
+      "initial_index": 1,
+      "modulation": 0.2,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": null,
+      "b_initial_interpolation_factor": [
+        0.9992290362407229,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.001944266274733496,
+      "raw_B_relative_l2": 0.002047490046611688,
+      "raw_D_max_error": 0.006743688997444153,
+      "raw_B_max_error": 0.0035618930013191497,
+      "synchronized_continuum_relative_l2": 0.0018625189570018574,
+      "synchronized_discrete_spatial_relative_l2": 0.00015938309179577343,
+      "constitutive_relative_error": 1.8426771059032639e-16,
+      "archive": "res20_courant0.5_initial1_mod0.2_offset1.npz"
+    },
+    {
+      "case": "res40_courant0.5_initial0_mod0_offset1",
+      "resolution": 40,
+      "courant": 0.5,
+      "dt": 0.0125,
+      "initial_index": 0,
+      "modulation": 0.0,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": [
+        1.0,
+        0.0
+      ],
+      "b_initial_interpolation_factor": [
+        0.9998072404820648,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.00043490090709161493,
+      "raw_B_relative_l2": 0.0004674799710656192,
+      "raw_D_max_error": 0.0006653920497234761,
+      "raw_B_max_error": 0.0003779400378983444,
+      "synchronized_continuum_relative_l2": 0.0004355056796473436,
+      "synchronized_discrete_spatial_relative_l2": 2.9697018942162645e-05,
+      "constitutive_relative_error": 0.0,
+      "archive": "res40_courant0.5_initial0_mod0_offset1.npz"
+    },
+    {
+      "case": "res40_courant0.5_initial1_mod0_offset1",
+      "resolution": 40,
+      "courant": 0.5,
+      "dt": 0.0125,
+      "initial_index": 1,
+      "modulation": 0.0,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": null,
+      "b_initial_interpolation_factor": [
+        0.9998072404820648,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.00043960505585796927,
+      "raw_B_relative_l2": 0.00048747082164222875,
+      "raw_D_max_error": 0.0015139654340080265,
+      "raw_B_max_error": 0.0007080655370861888,
+      "synchronized_continuum_relative_l2": 0.00043941143821477877,
+      "synchronized_discrete_spatial_relative_l2": 3.0529425898433164e-05,
+      "constitutive_relative_error": 0.0,
+      "archive": "res40_courant0.5_initial1_mod0_offset1.npz"
+    },
+    {
+      "case": "res40_courant0.5_initial0_mod0.2_offset1",
+      "resolution": 40,
+      "courant": 0.5,
+      "dt": 0.0125,
+      "initial_index": 0,
+      "modulation": 0.2,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": [
+        1.0,
+        0.0
+      ],
+      "b_initial_interpolation_factor": [
+        0.9998072404820648,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.0003549732810093253,
+      "raw_B_relative_l2": 0.00035662124946816997,
+      "raw_D_max_error": 0.0006648664802635373,
+      "raw_B_max_error": 0.0003395967576401704,
+      "synchronized_continuum_relative_l2": 0.0003609881492896491,
+      "synchronized_discrete_spatial_relative_l2": 2.293211838349998e-05,
+      "constitutive_relative_error": 2.2357434884763417e-16,
+      "archive": "res40_courant0.5_initial0_mod0.2_offset1.npz"
+    },
+    {
+      "case": "res40_courant0.5_initial1_mod0.2_offset1",
+      "resolution": 40,
+      "courant": 0.5,
+      "dt": 0.0125,
+      "initial_index": 1,
+      "modulation": 0.2,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": null,
+      "b_initial_interpolation_factor": [
+        0.9998072404820648,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.000485634897061758,
+      "raw_B_relative_l2": 0.000512177503001119,
+      "raw_D_max_error": 0.00168543217793804,
+      "raw_B_max_error": 0.0008905645379923,
+      "synchronized_continuum_relative_l2": 0.00046532374693748557,
+      "synchronized_discrete_spatial_relative_l2": 3.9820158720414505e-05,
+      "constitutive_relative_error": 2.4224457072545225e-16,
+      "archive": "res40_courant0.5_initial1_mod0.2_offset1.npz"
+    },
+    {
+      "case": "res40_courant0.25_initial0_mod0_offset1",
+      "resolution": 40,
+      "courant": 0.25,
+      "dt": 0.00625,
+      "initial_index": 0,
+      "modulation": 0.0,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": [
+        1.0,
+        0.0
+      ],
+      "b_initial_interpolation_factor": [
+        0.9998072404820648,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.0004566864154249072,
+      "raw_B_relative_l2": 0.00048745366846682784,
+      "raw_D_max_error": 0.0006985023556427133,
+      "raw_B_max_error": 0.00039709795076503496,
+      "synchronized_continuum_relative_l2": 0.000457467326534682,
+      "synchronized_discrete_spatial_relative_l2": 7.425695245531087e-06,
+      "constitutive_relative_error": 0.0,
+      "archive": "res40_courant0.25_initial0_mod0_offset1.npz"
+    },
+    {
+      "case": "res40_courant0.25_initial1_mod0_offset1",
+      "resolution": 40,
+      "courant": 0.25,
+      "dt": 0.00625,
+      "initial_index": 1,
+      "modulation": 0.0,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": null,
+      "b_initial_interpolation_factor": [
+        0.9998072404820648,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.0004613131132859396,
+      "raw_B_relative_l2": 0.0005076774625307695,
+      "raw_D_max_error": 0.0015896507652501113,
+      "raw_B_max_error": 0.0007401744506831398,
+      "synchronized_continuum_relative_l2": 0.00046053802730212587,
+      "synchronized_discrete_spatial_relative_l2": 7.629592053226975e-06,
+      "constitutive_relative_error": 0.0,
+      "archive": "res40_courant0.25_initial1_mod0_offset1.npz"
+    },
+    {
+      "case": "res40_courant0.25_initial0_mod0.2_offset1",
+      "resolution": 40,
+      "courant": 0.25,
+      "dt": 0.00625,
+      "initial_index": 0,
+      "modulation": 0.2,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": [
+        1.0,
+        0.0
+      ],
+      "b_initial_interpolation_factor": [
+        0.9998072404820649,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.0003713989808490844,
+      "raw_B_relative_l2": 0.00037247629145222916,
+      "raw_D_max_error": 0.0006949829803286622,
+      "raw_B_max_error": 0.0003575810539170887,
+      "synchronized_continuum_relative_l2": 0.000377840480546426,
+      "synchronized_discrete_spatial_relative_l2": 5.734051653568136e-06,
+      "constitutive_relative_error": 1.7793692206412164e-16,
+      "archive": "res40_courant0.25_initial0_mod0.2_offset1.npz"
+    },
+    {
+      "case": "res40_courant0.25_initial1_mod0.2_offset1",
+      "resolution": 40,
+      "courant": 0.25,
+      "dt": 0.00625,
+      "initial_index": 1,
+      "modulation": 0.2,
+      "phase": 0.31,
+      "periods": 4,
+      "material_time_offset_steps": 1.0,
+      "set_materials_immediate_E_change": 0.0,
+      "d_initial_interpolation_factor": null,
+      "b_initial_interpolation_factor": [
+        0.9998072404820649,
+        0.0
+      ],
+      "raw_D_relative_l2": 0.0005134368442361926,
+      "raw_B_relative_l2": 0.0005351183314783786,
+      "raw_D_max_error": 0.0017826655968984362,
+      "raw_B_max_error": 0.0009348047154975614,
+      "synchronized_continuum_relative_l2": 0.000493926937274304,
+      "synchronized_discrete_spatial_relative_l2": 9.95174551377386e-06,
+      "constitutive_relative_error": 1.881370638974144e-16,
+      "archive": "res40_courant0.25_initial1_mod0.2_offset1.npz"
+    }
+  ],
+  "elapsed_seconds": 2.4612138569937088,
+  "checks": {
+    "mod0.0_initial0_spatial_second_order": true,
+    "mod0.0_initial0_temporal_second_order": true,
+    "mod0.0_initial1_spatial_second_order": true,
+    "mod0.0_initial1_temporal_second_order": true,
+    "mod0.2_initial0_spatial_second_order": true,
+    "mod0.2_initial0_temporal_second_order": true,
+    "mod0.2_initial1_spatial_second_order": true,
+    "mod0.2_initial1_temporal_second_order": true,
+    "constitutive_D_equals_epsilon_E": true,
+    "material_updates_do_not_instantly_recompute_E": true,
+    "determinant_res20_courant0.5_mod0.0": true,
+    "static_stability_res20_courant0.5": true,
+    "determinant_res20_courant0.5_mod0.2": true,
+    "gain_and_decay_res20_courant0.5": true,
+    "determinant_res40_courant0.5_mod0.0": true,
+    "static_stability_res40_courant0.5": true,
+    "determinant_res40_courant0.5_mod0.2": true,
+    "gain_and_decay_res40_courant0.5": true,
+    "determinant_res40_courant0.25_mod0.0": true,
+    "static_stability_res40_courant0.25": true,
+    "determinant_res40_courant0.25_mod0.2": true,
+    "gain_and_decay_res40_courant0.25": true
+  },
+  "four_period_propagation": [
+    {
+      "resolution": 20,
+      "courant": 0.5,
+      "modulation": 0.0,
+      "four_period_trace": [
+        1.9999908321039515,
+        -6.3783313544959735e-16
+      ],
+      "reference_trace": [
+        1.999999999999743,
+        0.0
+      ],
+      "determinant_error": 1.4767389750149872e-15,
+      "multiplier_error": 0.0030278533714201356,
+      "growth_per_Omega": [
+        1.7669748230352868e-17,
+        2.65046223455293e-17
+      ],
+      "reference_growth_per_Omega": [
+        -5.106557238572307e-15,
+        -5.106557238572307e-15
+      ]
+    },
+    {
+      "resolution": 20,
+      "courant": 0.5,
+      "modulation": 0.2,
+      "four_period_trace": [
+        2.4117555760771765,
+        -1.6751363937011507e-15
+      ],
+      "reference_trace": [
+        2.411162293937587,
+        0.0
+      ],
+      "determinant_error": 1.6334796951384795e-15,
+      "multiplier_error": 0.0008275949555249795,
+      "growth_per_Omega": [
+        -0.025112803174830712,
+        0.025112803174830695
+      ],
+      "reference_growth_per_Omega": [
+        -0.025095281844558028,
+        0.02509528184457001
+      ]
+    },
+    {
+      "resolution": 40,
+      "courant": 0.5,
+      "modulation": 0.0,
+      "four_period_trace": [
+        1.9999994269770807,
+        6.571025908993655e-16
+      ],
+      "reference_trace": [
+        1.9999999999997446,
+        0.0
+      ],
+      "determinant_error": 1.1043792904295227e-15,
+      "multiplier_error": 0.0007569827723087032,
+      "growth_per_Omega": [
+        -4.417437057588218e-18,
+        4.4174370575882155e-17
+      ],
+      "reference_growth_per_Omega": [
+        -5.080052616226775e-15,
+        -5.071217742111598e-15
+      ]
+    },
+    {
+      "resolution": 40,
+      "courant": 0.5,
+      "modulation": 0.2,
+      "four_period_trace": [
+        2.4113124728398025,
+        8.467900549870131e-17
+      ],
+      "reference_trace": [
+        2.411162293937589,
+        0.0
+      ],
+      "determinant_error": 8.037800742664247e-16,
+      "multiplier_error": 0.00020951827280857316,
+      "growth_per_Omega": [
+        -0.025099718365757234,
+        0.025099718365757216
+      ],
+      "reference_growth_per_Omega": [
+        -0.02509528184455819,
+        0.02509528184457008
+      ]
+    },
+    {
+      "resolution": 40,
+      "courant": 0.25,
+      "modulation": 0.0,
+      "four_period_trace": [
+        1.9999993682525083,
+        -1.2920696652064553e-15
+      ],
+      "reference_trace": [
+        1.9999999999997444,
+        0.0
+      ],
+      "determinant_error": 1.311075203442935e-15,
+      "multiplier_error": 0.0007948254456772625,
+      "growth_per_Omega": [
+        0.0,
+        8.834874115176434e-18
+      ],
+      "reference_growth_per_Omega": [
+        -5.0888874903419525e-15,
+        -5.0888874903419525e-15
+      ]
+    },
+    {
+      "resolution": 40,
+      "courant": 0.25,
+      "modulation": 0.2,
+      "four_period_trace": [
+        2.411314447468796,
+        -1.3642159312746267e-15
+      ],
+      "reference_trace": [
+        2.4111622939375907,
+        0.0
+      ],
+      "determinant_error": 3.440808655130095e-15,
+      "multiplier_error": 0.00021227300322856912,
+      "growth_per_Omega": [
+        -0.02509977669350791,
+        0.02509977669350792
+      ],
+      "reference_growth_per_Omega": [
+        -0.025095281844557928,
+        0.025095281844570074
+      ]
+    }
+  ],
+  "limits": [
+    "Instantaneous nondispersive epsilon and constant mu only",
+    "Uniform periodic medium, one prescribed Bloch spatial Fourier mode",
+    "No PML, open-resonator, dispersive-history, or structured dynamic validation",
+    "Spatial interpolation corrected by known Yee plane-wave factor, not a fitted scale",
+    "Four-period run at one nonzero modulation and phase plus static control"
+  ],
+  "magnetic_sampling": "Raw B at t-dt/2 archived; synchronized B averaged by official Meep helper then divided by analytically known cos(k*dz/2) point-interpolation factor",
+  "independent_reference": "Continuum Maxwell ODE with measured synchronized initial DB; second reference uses exact Yee spatial symbol to isolate temporal error"
+}

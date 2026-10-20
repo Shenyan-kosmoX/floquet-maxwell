@@ -1,0 +1,757 @@
+{
+  "status": "REPRODUCED_EXACT_PERIODIC_RESONATOR_CMT_BASELINE",
+  "citation": {
+    "title": "Exact solution to the steady-state dynamics of a periodically modulated resonator",
+    "authors": [
+      "Momchil Minkov",
+      "Yu Shi",
+      "Shanhui Fan"
+    ],
+    "year": 2017,
+    "journal": "APL Photonics",
+    "volume": "2",
+    "article": "076101",
+    "doi": "10.1063/1.4985381"
+  },
+  "reproduced_targets": [
+    "Figure3 all six coupled-mode panels, extended to show signed n=\u00b11,\u00b12",
+    "Figure5a one-port near-carrier cancellation at the stated rounded parameters"
+  ],
+  "figure3_parameters": {
+    "gamma_over_Omega": 0.05,
+    "A0_over_Omega": 1.0,
+    "detuning_range": [
+      -3.0,
+      3.0
+    ],
+    "samples": 1201
+  },
+  "figure5a_parameters": {
+    "gamma_over_Omega": 1.5,
+    "A0_over_Omega": 1.5,
+    "detuning_range": [
+      -4.0,
+      4.0
+    ],
+    "samples": 801
+  },
+  "checks": {
+    "two_port_complex_bessel": true,
+    "one_port_complex_bessel": true,
+    "bessel_sum_convergence": true,
+    "model_port_power_conservation": true,
+    "primitive_time_complex_reference": true,
+    "primitive_time_waveform": true,
+    "selected_N16_boundary_gate": true,
+    "ring_carrier_near_cancellation": true,
+    "metric_total_power": true
+  },
+  "figure3_diagnostics": {
+    "maximum_amplitude_error": 5.17075646815394e-16,
+    "maximum_power_error": 3.885780586188048e-16,
+    "maximum_power_balance_error": 5.551115123125783e-16,
+    "maximum_omitted_equation_residual": 4.4736320546177165e-18,
+    "maximum_linear_residual": 1.278157123454556e-17,
+    "bessel48_to64_error": 0.0
+  },
+  "figure5a_diagnostics": {
+    "maximum_amplitude_error": 6.753223014464258e-16,
+    "maximum_power_error": 8.881784197001252e-16,
+    "maximum_power_balance_error": 8.881784197001252e-16,
+    "maximum_omitted_equation_residual": 1.1325777103327101e-15,
+    "maximum_linear_residual": 2.54601561711552e-17,
+    "bessel48_to64_error": 0.0
+  },
+  "figure5a_carrier_power_at_zero_detuning": 1.1953139502761062e-07,
+  "figure5a_converted_sideband_power_at_zero": 0.9999998804686049,
+  "harmonic_convergence": [
+    {
+      "configuration": "two_port",
+      "N": 4,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 9.304505305440594e-07,
+      "omitted_residual": 0.001086500659784268,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 4,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 9.650873451144258e-08,
+      "omitted_residual": 0.00022498862747367113,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 4,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 4.4148374689791484e-08,
+      "omitted_residual": 6.498489437397957e-05,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 4,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 9.30450530544124e-07,
+      "omitted_residual": 0.0010865006597842678,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 6,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 2.9703270119033688e-09,
+      "omitted_residual": 6.5612114072575255e-06,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 6,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 2.5189890887423907e-10,
+      "omitted_residual": 1.0149907825708274e-06,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 6,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 1.2393084000380973e-10,
+      "omitted_residual": 3.2416554774294627e-07,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 6,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 2.970327011903021e-09,
+      "omitted_residual": 6.5612114072575306e-06,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 8,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 6.433584551471105e-12,
+      "omitted_residual": 2.296395343278032e-08,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 8,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 4.591227619582e-13,
+      "omitted_residual": 2.8371147860722805e-09,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 8,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 2.404046374429531e-13,
+      "omitted_residual": 9.805284222206273e-10,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 8,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 6.433584551468458e-12,
+      "omitted_residual": 2.2963953432780345e-08,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 10,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 9.992140323999228e-15,
+      "omitted_residual": 5.245495294192227e-11,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 10,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 6.144205739355697e-16,
+      "omitted_residual": 5.3957363877527264e-12,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 10,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 3.395325961910986e-16,
+      "omitted_residual": 1.9900879521070613e-12,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 10,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 9.992140323997226e-15,
+      "omitted_residual": 5.245495294192229e-11,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "two_port",
+      "N": 12,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 1.0007415106216804e-16,
+      "omitted_residual": 8.435632318516873e-14,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 12,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 2.6329351265783726e-16,
+      "omitted_residual": 7.433769689946993e-15,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 12,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 5.575456304969596e-17,
+      "omitted_residual": 2.8976391640626234e-15,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 12,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 1.3985787785349405e-16,
+      "omitted_residual": 8.435632318516876e-14,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 14,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 1.0007415106216804e-16,
+      "omitted_residual": 1.00681335102203e-16,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 14,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 2.6329351265783726e-16,
+      "omitted_residual": 7.760764542968812e-18,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 14,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 5.575456304969596e-17,
+      "omitted_residual": 3.17417156369602e-18,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 14,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 1.3985787785349405e-16,
+      "omitted_residual": 1.0068133510220307e-16,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 16,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 1.0007415106216804e-16,
+      "omitted_residual": 9.271903645834296e-20,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 16,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 2.6329351265783726e-16,
+      "omitted_residual": 6.351474692991135e-21,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 16,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 5.575456304969596e-17,
+      "omitted_residual": 2.7107397621385286e-21,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "two_port",
+      "N": 16,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 1.3985787785349405e-16,
+      "omitted_residual": 9.271903645834306e-20,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 4,
+      "guard": 2,
+      "detuning": -4.0,
+      "maximum_amplitude_error": 0.00027188980333115744,
+      "omitted_residual": 0.0013921556698624912,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 4,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 2.2715652916090156e-05,
+      "omitted_residual": 0.0005824539928078732,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 4,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 3.074107141016031e-06,
+      "omitted_residual": 0.0001578237881133633,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 4,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 6.876833899430828e-06,
+      "omitted_residual": 0.00022727663929421896,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 4,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 2.271565291608823e-05,
+      "omitted_residual": 0.0005824539928078739,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 4,
+      "guard": 2,
+      "detuning": 4.0,
+      "maximum_amplitude_error": 0.000271889803331158,
+      "omitted_residual": 0.0013921556698624903,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 6,
+      "guard": 2,
+      "detuning": -4.0,
+      "maximum_amplitude_error": 4.125310368142514e-06,
+      "omitted_residual": 6.90952324099315e-05,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 6,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 1.628232126243557e-07,
+      "omitted_residual": 7.939705856091046e-06,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 6,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 1.8031143915941725e-08,
+      "omitted_residual": 1.606021924553593e-06,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 6,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 4.33689581066094e-08,
+      "omitted_residual": 2.541275193274915e-06,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 6,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 1.6282321262435704e-07,
+      "omitted_residual": 7.939705856091045e-06,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 6,
+      "guard": 2,
+      "detuning": 4.0,
+      "maximum_amplitude_error": 4.125310368142608e-06,
+      "omitted_residual": 6.909523240993147e-05,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 8,
+      "guard": 2,
+      "detuning": -4.0,
+      "maximum_amplitude_error": 3.664358776063969e-08,
+      "omitted_residual": 1.3302600123202115e-06,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 8,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 7.929294665823587e-10,
+      "omitted_residual": 6.263431116461244e-08,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 8,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 7.391371331418959e-11,
+      "omitted_residual": 1.0114887727783206e-08,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 8,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 1.891914617286811e-10,
+      "omitted_residual": 1.725857492894441e-08,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 8,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 7.929294665824381e-10,
+      "omitted_residual": 6.263431116461242e-08,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 8,
+      "guard": 2,
+      "detuning": 4.0,
+      "maximum_amplitude_error": 3.664358776064079e-08,
+      "omitted_residual": 1.330260012320211e-06,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 10,
+      "guard": 2,
+      "detuning": -4.0,
+      "maximum_amplitude_error": 2.1493262842280786e-10,
+      "omitted_residual": 1.3536785333753318e-08,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 10,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 2.7702320933929817e-12,
+      "omitted_residual": 3.2225405851686696e-10,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 10,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 2.225282039089543e-13,
+      "omitted_residual": 4.332132575796668e-11,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 10,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 6.011023463128144e-13,
+      "omitted_residual": 7.87083779618258e-11,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 10,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 2.77023209339372e-12,
+      "omitted_residual": 3.2225405851686665e-10,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 10,
+      "guard": 2,
+      "detuning": 4.0,
+      "maximum_amplitude_error": 2.1493262842282812e-10,
+      "omitted_residual": 1.3536785333753315e-08,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 12,
+      "guard": 2,
+      "detuning": -4.0,
+      "maximum_amplitude_error": 8.810571727104287e-13,
+      "omitted_residual": 8.525603651645541e-11,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 12,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 7.257792039283574e-15,
+      "omitted_residual": 1.1668617879373656e-12,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 12,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 5.117642564194296e-16,
+      "omitted_residual": 1.3437050150453743e-13,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 12,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 1.449322735505305e-15,
+      "omitted_residual": 2.5762383570135994e-13,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 12,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 7.257792039291553e-15,
+      "omitted_residual": 1.1668617879373644e-12,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 12,
+      "guard": 2,
+      "detuning": 4.0,
+      "maximum_amplitude_error": 8.810571727104748e-13,
+      "omitted_residual": 8.525603651645542e-11,
+      "boundary_gate_passed": false
+    },
+    {
+      "configuration": "one_port",
+      "N": 14,
+      "guard": 2,
+      "detuning": -4.0,
+      "maximum_amplitude_error": 2.652553381241622e-15,
+      "omitted_residual": 3.651453807655738e-13,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 14,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 2.252838735524579e-16,
+      "omitted_residual": 3.135091434568295e-15,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 14,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 1.7772239894833365e-16,
+      "omitted_residual": 3.1576938599414935e-16,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 14,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 2.237726045655905e-16,
+      "omitted_residual": 6.345688177058811e-16,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 14,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 1.5700924586837752e-16,
+      "omitted_residual": 3.1350914345682915e-15,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 14,
+      "guard": 2,
+      "detuning": 4.0,
+      "maximum_amplitude_error": 2.6525533812420476e-15,
+      "omitted_residual": 3.6514538076557354e-13,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 16,
+      "guard": 2,
+      "detuning": -4.0,
+      "maximum_amplitude_error": 6.628369094757308e-17,
+      "omitted_residual": 1.1325777103327101e-15,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 16,
+      "guard": 2,
+      "detuning": -1.0,
+      "maximum_amplitude_error": 1.7253305394310741e-16,
+      "omitted_residual": 6.498501170104479e-18,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 16,
+      "guard": 2,
+      "detuning": 0.0,
+      "maximum_amplitude_error": 1.7772239894833365e-16,
+      "omitted_residual": 5.816531228198493e-19,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 16,
+      "guard": 2,
+      "detuning": 0.37,
+      "maximum_amplitude_error": 2.237726045655905e-16,
+      "omitted_residual": 1.2187522773033796e-18,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 16,
+      "guard": 2,
+      "detuning": 1.0,
+      "maximum_amplitude_error": 1.5700924586837752e-16,
+      "omitted_residual": 6.498501170104474e-18,
+      "boundary_gate_passed": true
+    },
+    {
+      "configuration": "one_port",
+      "N": 16,
+      "guard": 2,
+      "detuning": 4.0,
+      "maximum_amplitude_error": 1.6653345369377348e-16,
+      "omitted_residual": 1.1325777103327098e-15,
+      "boundary_gate_passed": true
+    }
+  ],
+  "primitive_time_checks": [
+    {
+      "configuration": "two_port",
+      "detuning": -1.0,
+      "complex_amplitude_max_error": 5.5652244718523235e-12,
+      "complex_waveform_max_error": 1.7281274829392648e-11,
+      "periods": 104,
+      "nfev": 73499,
+      "elapsed_amplitude_lifetimes": 32.672563597333856
+    },
+    {
+      "configuration": "two_port",
+      "detuning": 0.0,
+      "complex_amplitude_max_error": 6.300204645075694e-12,
+      "complex_waveform_max_error": 2.499419893647367e-11,
+      "periods": 104,
+      "nfev": 56384,
+      "elapsed_amplitude_lifetimes": 32.672563597333856
+    },
+    {
+      "configuration": "two_port",
+      "detuning": 0.37,
+      "complex_amplitude_max_error": 3.2626240201744423e-13,
+      "complex_waveform_max_error": 3.6861370543028185e-12,
+      "periods": 104,
+      "nfev": 61712,
+      "elapsed_amplitude_lifetimes": 32.672563597333856
+    },
+    {
+      "configuration": "one_port",
+      "detuning": 0.0,
+      "complex_amplitude_max_error": 2.787156765617782e-12,
+      "complex_waveform_max_error": 8.84348309398326e-11,
+      "periods": 9,
+      "nfev": 6197,
+      "elapsed_amplitude_lifetimes": 42.411500823462205
+    }
+  ],
+  "sign_and_background_contract": "Article+it amplitudes are conjugated completely. Same physical sideband n remains omega_p+nOmega. Two-port H0=-i gamma,B=i sqrt(gamma)[1,1],C=sqrt(gamma)[1;1],D=-I. Ring H0=-i gamma/2,B=sqrt(gamma),C=-i sqrt(gamma),D=1.",
+  "independent_reference": "Article Eq13/15 Bessel sums, orders48 and64; primitive driven ODE from empty cavity, no common Floquet assembler or forcedinitialstate",
+  "normalization": "Paper CMT amplitude-squared power. Equality of all-output power is a property of this model, not a general pump-energy conservation law for full Maxwell sidebands.",
+  "source_locations": {
+    "two_port": "arXiv PDFpages1\u20132 Eqs1,2,13,14; page4 Figure3",
+    "one_port": "pages1\u20132 Eqs3,4,15; page6 Figure5a"
+  },
+  "sources_sha256": {
+    "sptc_toolbox\\literature\\baseline_candidates\\dynamic_sources\\periodic_resonator_arxiv.pdf": "47f2b407dab030ebdc9a0c784e013e0e1737c737d91072526f291660bd26fee1",
+    "sptc_toolbox\\baselines\\periodic_resonator_2017.py": "e977a8655b0653c7b75a9dc6f3fd49b95626ebdaabcb760ce497e96bf37eb93e",
+    "sptc_toolbox\\scattering.py": "772d4490669e931dd4b0810ed303de357f4b82a3487a819466c2b9d556a03da9",
+    "sptc_toolbox\\tests\\test_periodic_resonator_2017.py": "24b0dbe839f6f886fe45fcf35f0574b049ad56af2042ca4e566e3fe981aac154"
+  },
+  "limitations": [
+    "Auxiliary analytical temporal-CMT method baseline; not a2D PC slab or open SPTC spatial reproduction.",
+    "No MF-FDFD/full-wave DBR or ring result from the article has been rerun.",
+    "The reduced positive optical-carrier envelope model does not resolve independent negative physical-frequency Maxwell partners.",
+    "Gamma values are taken from the analytical Figure3/5a specification, not fitted to our spectra or spatial data.",
+    "At rounded Fig5a gamma=1.5,A=1.5, near-zero carrier is reported numerically rather than forced to exact zero."
+  ]
+}

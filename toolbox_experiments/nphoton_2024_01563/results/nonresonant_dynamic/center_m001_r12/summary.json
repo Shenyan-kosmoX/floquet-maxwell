@@ -1,0 +1,107 @@
+{
+  "status": "COMPLETED_DIRECT_MEEP_DYNAMIC_PROBE",
+  "error": null,
+  "config": {
+    "q": 0.2818,
+    "resolution": 12,
+    "epsilon": 11.68,
+    "radius": 0.3333333333333333,
+    "padding": 20.0,
+    "pml": 2.0,
+    "courant": 0.5,
+    "source_frequency": 0.192948894855526,
+    "source_width": 0.04,
+    "drive_frequency": 0.385897789711053,
+    "modulation": 0.01,
+    "phase": 1.5707963267948966,
+    "periods": 1200.0,
+    "ramp_periods": 10.0,
+    "update_stride": 4,
+    "static_window": 400.0,
+    "eps_averaging": false,
+    "max_dynamic_wall_seconds": 900.0
+  },
+  "meep_version": "1.35.0",
+  "static_poles": [
+    {
+      "frequency": 0.1929488548261389,
+      "decay": 3.3652789925329006e-08,
+      "amplitude": [
+        -12.261708743698554,
+        -2.4880261018438787
+      ],
+      "error": 4.283784834887923e-10
+    },
+    {
+      "frequency": 0.19932069209936387,
+      "decay": -7.627697848990985e-05,
+      "amplitude": [
+        -0.02981548792180938,
+        0.025610146444398248
+      ],
+      "error": 5.310838603219584e-07
+    }
+  ],
+  "dt": 0.041666666666666664,
+  "material_update_interval": 0.16666666666666666,
+  "updates_per_pump_period": 15.54815850200281,
+  "modulation_start": 670.0,
+  "source_free": true,
+  "completed_cycles": 1199.498963018523,
+  "material_reset_DB_relative_change": {
+    "Dx": 0.0,
+    "Dy": 0.0,
+    "Dz": 0.0,
+    "Bx": 0.0,
+    "By": 0.0,
+    "Bz": 0.0
+  },
+  "growth_fits": [
+    {
+      "fraction_window": [
+        0.35,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": 4.672319396859179e-05,
+      "growth_cyclic_fa_over_c": 7.436227277142815e-06,
+      "log_amplitude_fit_rms": 0.007320554830383578,
+      "cycles": [
+        420.4999581884774,
+        1139.4918567184543
+      ]
+    },
+    {
+      "fraction_window": [
+        0.35,
+        0.65
+      ],
+      "amplitude_growth_per_meep_time": 3.6869275011960364e-05,
+      "growth_cyclic_fa_over_c": 5.867927366367991e-06,
+      "log_amplitude_fit_rms": 0.0053456511010306915,
+      "cycles": [
+        420.4999581884774,
+        779.513535216327
+      ]
+    },
+    {
+      "fraction_window": [
+        0.65,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": 5.630212005138617e-05,
+      "growth_cyclic_fa_over_c": 8.960760712731424e-06,
+      "log_amplitude_fit_rms": 0.008056535716386901,
+      "cycles": [
+        780.5104378397472,
+        1139.4918567184543
+      ]
+    }
+  ],
+  "elapsed_seconds": 393.4922066880099,
+  "dynamic_seconds": 372.81317810399923,
+  "units": "length a=631.8nm, time a/c, cyclic frequency f*a/c; amplitude exp(lambda*time)",
+  "material": "epsilon_sphere(t)=11.68+10.68*m*ramp(t)*cos(2*pi*fm*t+phase); air=1",
+  "method": "Native 3D Meep D/B stepping; sphere coefficients rebuilt with public set_materials and sample-and-hold time updates",
+  "interface_representation": "native voxelized sphere; eps_averaging=False",
+  "scope": "Measured source-free growth in a specified time-step/material-update approximation; not a full Floquet spectrum or QNM residue normalization"
+}

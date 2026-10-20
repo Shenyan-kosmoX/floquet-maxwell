@@ -1,0 +1,9 @@
+# Finite periodic state-space scattering
+
+Implemented `i x'=H(tau)x+B(tau)s_in`, `s_out=D(tau)s_in+C(tau)x` with explicit Fourier dictionaries in exp(−ip tau). The Floquet state matrix reuses the established assembler; B/C/D use rectangular convolution on their actual harmonic domains. All computed output sidebands and the direct background are retained. Guard harmonics and the residual of omitted state equations prevent silent removal of conversion paths.
+
+15 targeted tests pass (`tests.xml`): static multichannel TCMT unitarity at four frequencies; internal absorption contractivity; arbitrary direct background; B/C/D frequency-conversion paths beyond the nominal output window; omitted forcing and H coupling rejection; global time-phase covariance; model photon-flux conservation distinguished from energy weighting; independent driven ODE comparison; verified open-channel metrics and explicit NaN for closed-channel flux; input harmonic frequency; invalid input contracts; and a dark-state resolvent singularity.
+
+An unconverged diagnostic solve cannot produce a flux report. A singular full state resolvent can arise from a coupled resonance or an uncoupled dark state; the current implementation raises explicitly and does not silently substitute a pseudoinverse. The returned algebraic response does not prove existence of a stable causal steady state. Modal normalization, physical port mapping, sideband outgoing conditions, and SI power metrics remain adapter responsibilities.
+
+`ChannelFluxMetric` distinguishes power, photon flux and model norm. The caller must supply a validated harmonic/channel mask, positive open-channel weights, normalization provenance and reference planes. Closed-channel amplitudes remain in the scattering output; their flux entries are NaN rather than fabricated zero radiation.

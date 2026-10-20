@@ -1,0 +1,98 @@
+{
+  "meep_version": "1.35.0",
+  "module_path": "<meep-environment>/lib/python3.11/site-packages/meep/__init__.py",
+  "inspection_kind": "Read-only Python API and installed source inspection; no Simulation constructed or stepped",
+  "methods": {
+    "Simulation.set_materials": {
+      "file": "<meep-environment>/lib/python3.11/site-packages/meep/simulation.py",
+      "first_line": 2367,
+      "source_sha256": "53212b72f83a9d6fd651e5be220a69fbf0f9f2f4f44ea25dade65d82332a054a"
+    },
+    "Simulation.phase_in_material": {
+      "file": "<meep-environment>/lib/python3.11/site-packages/meep/simulation.py",
+      "first_line": 2792,
+      "source_sha256": "8ffef1c721d49d5e371ba2290e0a9b8bb0d899ddcfd077243fea3153ab22d8cb"
+    },
+    "MaterialGrid.update_weights": {
+      "file": "<meep-environment>/lib/python3.11/site-packages/meep/geom.py",
+      "first_line": 709,
+      "source_sha256": "dd18b20bb8823ffebfe5a0a89d4ae5312e66eb21fce3ea36d2260088d545b5a7"
+    },
+    "LorentzianSusceptibility": {
+      "file": "<meep-environment>/lib/python3.11/site-packages/meep/geom.py",
+      "first_line": 751,
+      "source_sha256": "d926b130128c3d157cba8cf24ed2ae3c6f0516f881a9320d294e807321e33406"
+    }
+  },
+  "fields_material_methods": [
+    "phase_in_material",
+    "remove_susceptibilities"
+  ],
+  "structure_material_methods": [
+    "add_susceptibility",
+    "remove_susceptibilities",
+    "set_materials"
+  ],
+  "structure_chunk_material_methods": [
+    "__setattr__",
+    "add_susceptibility",
+    "chiP",
+    "has_chisigma",
+    "mix_with",
+    "remove_susceptibilities",
+    "set_chi1inv",
+    "set_chi2",
+    "set_chi3",
+    "set_conductivity"
+  ],
+  "low_level_susceptibility_members": [
+    "chi1",
+    "cinternal_notowned_ptr",
+    "clone",
+    "copy_internal_data",
+    "delete_internal_data",
+    "dump_params",
+    "get_id",
+    "get_num_params",
+    "has_nonlinearities",
+    "init_internal_data",
+    "internal_notowned_ptr",
+    "needs_P",
+    "needs_W_notowned",
+    "needs_W_prev",
+    "new_internal_data",
+    "next",
+    "ntot",
+    "num_cinternal_notowned_needed",
+    "num_internal_notowned_needed",
+    "set_id",
+    "sigma",
+    "subtract_P",
+    "thisown",
+    "trivial_sigma",
+    "update_P"
+  ],
+  "python_array_access_helpers": [],
+  "source_files": {
+    "fields.cpp": {
+      "sha256": "2ced02c5f6b1bece7d18f4a45f385585ed3345f4f3e8dd85143af2ce1add0ce9",
+      "url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/fields.cpp"
+    },
+    "step.cpp": {
+      "sha256": "3ae31255b91dd9a6e8946da66856dd1f8107ea7741d19a23303ed73e8889b4ba",
+      "url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/step.cpp"
+    },
+    "structure.cpp": {
+      "sha256": "87eccaa14c3f075af739a7d9c76a263c39c874853c0d471ec90e7a03342cccb3",
+      "url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/structure.cpp"
+    },
+    "susceptibility.cpp": {
+      "sha256": "c4e522978dee81a4468b280b72939b1b97475528e2a107a3a0dbcef265257283",
+      "url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/susceptibility.cpp"
+    },
+    "update_eh.cpp": {
+      "sha256": "3964a7baf59ed6bb9c4e830542257c130ed3ad14a5e0587bf2a3357d6c226bb0",
+      "url": "https://raw.githubusercontent.com/NanoComp/meep/v1.35.0/src/update_eh.cpp"
+    }
+  }
+}

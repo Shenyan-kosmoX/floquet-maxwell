@@ -1,0 +1,42 @@
+{
+  "status": "PROCESSING_AND_REPEATABILITY_CHECKS_PASS",
+  "native_meep_version": "1.35.0",
+  "all_25_points_same_physical_and_numerical_parameters": true,
+  "all_raw_and_spectrum_hashes_match": true,
+  "repeated_M_field_relative_difference": 0.0,
+  "exact_synthetic_negative_time_phase_sign_checks": [
+    {
+      "input_frequency": 0.193,
+      "peak_bin": 0.193359375,
+      "error": 0.0003593749999999951
+    },
+    {
+      "input_frequency": 0.413,
+      "peak_bin": 0.4130859375,
+      "error": 8.593750000002176e-05
+    },
+    {
+      "input_frequency": 0.59,
+      "peak_bin": 0.58984375,
+      "error": -0.00015624999999996891
+    }
+  ],
+  "spectral_shape": [
+    25,
+    573
+  ],
+  "actual_f_range": [
+    0.1005859375,
+    0.6591796875
+  ],
+  "raw_time_samples": 2401,
+  "raw_sample_interval": 0.125,
+  "source_free_duration": 300.0,
+  "native_frequency_resolution": 0.003331945022907122,
+  "zero_padded_frequency_grid_spacing": 0.0009765625,
+  "source_free_time_units": "a/c, not pump periods",
+  "physical_validation_limit": "These checks verify processing consistency and repeated input, not spatial/PML convergence or spectral completeness.",
+  "spectrum_source_sha256": "541ca198b83b2c3a12261b9ab2a0698adf5d4a6b4779b541a7123522ade45140",
+  "summary_sha256": "09ad60a7ee7b877ff65af080cb799cc0e49e8e294d2f3f1b66418ea1f32e8825",
+  "map_sha256": "b51709ea82838b7cf3a5f3e7b5edabda14cf6ab1ac45f0ea15d9a54a60c129d8"
+}

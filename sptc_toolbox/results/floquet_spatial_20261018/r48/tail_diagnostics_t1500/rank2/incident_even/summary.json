@@ -1,0 +1,108 @@
+{
+  "status": "UNSELECTED_SAME_GRID_SECTOR_TAIL_CANDIDATE",
+  "source": "incident_even",
+  "sector": 1,
+  "anchor_source": "incident_even",
+  "pole_rank": 2,
+  "applied_coefficients": [
+    [
+      -0.05079113006659852,
+      -0.014551949516305507
+    ],
+    [
+      0.5423081973736368,
+      -0.3928522011619163
+    ],
+    [
+      0.5084829326929617,
+      0.40740415067822183
+    ]
+  ],
+  "anchor_poles": [
+    [
+      0.3893921567557267,
+      -4.480597487437203e-06
+    ],
+    [
+      0.3977340372434592,
+      -0.0007951793142338743
+    ]
+  ],
+  "anchor_window_validated": true,
+  "own_window_model_validated": true,
+  "window_validated": false,
+  "independent_validated": false,
+  "selected_for_scattering": false,
+  "normalization": "Incident raw DFT restored, common time operator applied to E/D/output/incoming/native ports, corrected incoming normalization reapplied",
+  "raw_checkpoint": 1500.0,
+  "source_hashes": {
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_even\\response_t500.npz": "d127521a36d67ff92f12b486f5220da3ad872361bbe2835d37975d692221e602",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_even\\response_t1000.npz": "48623f164098acba94725d85774fdc263796e3a524c540e0ae8394264d9e4058",
+    "sptc_toolbox\\results\\floquet_spatial_20261018\\r48\\sampling\\incident_even\\response_t1500.npz": "7dc41797b5e91ac5d0bab643497398bfced84d2156482013f2149cd3cb3376eb"
+  },
+  "shared_pole_heldout_increment_predictions": {
+    "electric": [],
+    "displacement": [],
+    "output": [],
+    "incoming": [],
+    "native_port_fields": []
+  },
+  "differences": {
+    "electric": {
+      "raw_to_candidate": 0.0009826174100630554,
+      "shifted_time_window_candidate": null,
+      "per_frequency_raw_to_candidate": [
+        0.003078302247075653,
+        0.004349544344625824,
+        0.0008699074826341281,
+        0.0010309672898975732,
+        0.0019275435303777071
+      ]
+    },
+    "displacement": {
+      "raw_to_candidate": 0.000996041533843141,
+      "shifted_time_window_candidate": null,
+      "per_frequency_raw_to_candidate": [
+        0.0034677869417423924,
+        0.0047899329298605395,
+        0.000869816981761112,
+        0.0011115300181906542,
+        0.0023433670996985405
+      ]
+    },
+    "output": {
+      "raw_to_candidate": 0.0007636248909943642,
+      "shifted_time_window_candidate": null,
+      "per_frequency_raw_to_candidate": [
+        0.0002656888730507288,
+        0.00021148074854522448,
+        0.001650605163044845,
+        0.0001744396194875195,
+        0.00021301080743545402
+      ]
+    },
+    "incoming": {
+      "raw_to_candidate": 1.8709023180065592e-07,
+      "shifted_time_window_candidate": null,
+      "per_frequency_raw_to_candidate": [
+        2.9577790803979726e-07,
+        1.1141029470118206e-07,
+        7.781254574931045e-08,
+        1.0088316722598213e-07,
+        2.426617889589931e-07
+      ]
+    },
+    "native_port_fields": {
+      "raw_to_candidate": 0.0004482132793014907,
+      "shifted_time_window_candidate": null,
+      "per_frequency_raw_to_candidate": [
+        0.00014194451909946566,
+        0.00011022959848148834,
+        0.005146343083126463,
+        9.28014138650836e-05,
+        0.00011083344188797867
+      ]
+    }
+  },
+  "scope": "Shared static sector tail candidate only. Review all-source residuals and observables before selecting; no CW/QNM/spatial convergence certificate."
+}

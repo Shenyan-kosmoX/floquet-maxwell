@@ -1,0 +1,64 @@
+{
+  "status": "SAME_K_FIELD_MATCHING_DIAGNOSTIC",
+  "meep_source": "toolbox_experiments\\results\\meep_cutoff\\path1.2_r32_narrow",
+  "meep_summary_file": "summary_v2.json",
+  "meep_summary_sha256": "634b12dba99664040f44606dfbcbeda39a65b4dc96bc8e5a41bf9715bd6b78b0",
+  "kpoint_ka": [
+    1.2,
+    0.0
+  ],
+  "meep_config": {
+    "radius": 0.3125,
+    "height": 0.4445234708392603,
+    "epsilon": 16.0,
+    "kx_ka": 1.2,
+    "ky_ka": 0.0,
+    "resolution": 32,
+    "padding": 1.0,
+    "pml": 0.5,
+    "frequency": 0.747,
+    "width": 0.18,
+    "warmup": 12.0,
+    "window": 150.0,
+    "sample_dt": 0.5,
+    "source_variant": 0,
+    "xy_samples": 12,
+    "z_order": 4,
+    "field_extent": 0.7
+  },
+  "meep_fit": {
+    "relative_time_space_fit_residual": 0.002319300391382419,
+    "temporal_fit_rank": 6,
+    "temporal_fit_columns": 6,
+    "normalized_temporal_condition": 1.951681290914818,
+    "mode_to_residual_ratio": [
+      376.11138769033164,
+      160.35803837746755,
+      135.10896192500832,
+      8.126527500022718,
+      17.42707081405196,
+      0.11511801684396365
+    ],
+    "norm_per_pole": [
+      26.366633391356935,
+      7.12332323324648,
+      5.573329955855172,
+      1.3836769395197293,
+      1.0975467289209015,
+      2.1761628104325584e-05
+    ]
+  },
+  "accepted_meep_pole_indexes": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "comparisons": [],
+  "selection": "One-to-one assignment maximizes common-grid complex magnetic-field overlaps over every accepted Meep pole and60native modes; no nearest-frequency or strongest-two selection",
+  "limits": [
+    "Finite sampling metric and Meep pole fit need convergence checks",
+    "A missed lossy pole cannot be excluded by non-observation",
+    "Native GME radiation is approximate; this compares fields and real frequencies, not equal QNM norms"
+  ]
+}

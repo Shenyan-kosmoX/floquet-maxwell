@@ -1,0 +1,70 @@
+{
+  "status": "SAME_STATIC_MAXWELL_TRAJECTORY_DFT_DECIMATION_CONTROL",
+  "resolution": 8,
+  "dt": 0.0625,
+  "frequencies": [
+    0.378,
+    0.388,
+    0.398,
+    0.408,
+    0.418,
+    0.438
+  ],
+  "decimations": [
+    1,
+    8
+  ],
+  "source": {
+    "center": 0.398,
+    "fwidth": 0.08,
+    "cutoff": 7
+  },
+  "rows": [
+    {
+      "time": 500.0,
+      "relative_difference": 0.000901902920178978,
+      "per_frequency_output_relative_difference": [
+        0.0007098579424266415,
+        0.00027685243209969274,
+        0.0001945987436649322,
+        0.0002607008400989439,
+        0.0006533887307969527,
+        0.024004798803682198
+      ]
+    },
+    {
+      "time": 1000.0,
+      "relative_difference": 4.636447647341454e-05,
+      "per_frequency_output_relative_difference": [
+        3.6981191288694436e-05,
+        1.4388963849284018e-05,
+        1.0336488936642398e-05,
+        1.3861589253210646e-05,
+        3.452764294372326e-05,
+        0.0014018004882647708
+      ]
+    },
+    {
+      "time": 1500.0,
+      "relative_difference": 1.482948758201754e-05,
+      "per_frequency_output_relative_difference": [
+        2.6562467503152488e-06,
+        1.0316572185826854e-06,
+        7.444991826209378e-07,
+        9.980945858626018e-07,
+        2.4857120770671403e-06,
+        9.89008232982264e-05
+      ]
+    }
+  ],
+  "eight_step_sampling_nyquist": 1.0,
+  "source_integrated_current_abs": 9.31797751577903e-12,
+  "per_frequency_source_fft_relative_difference": [
+    7.27241242158263e-12,
+    2.614330819127045e-12,
+    2.0849944783029477e-12,
+    2.931815937166432e-12,
+    6.559026920297125e-12,
+    2.6344566012425836e-10
+  ]
+}

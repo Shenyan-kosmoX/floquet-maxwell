@@ -1,0 +1,196 @@
+{
+  "status": "SUPERSEDED_INTERPRETATION_DRAFT_NOT_AN_ACCEPTANCE_VERDICT",
+  "heldout_time_validated": true,
+  "maxwell_equation_validated": true,
+  "continuous_wave_solver_validated": false,
+  "selected_for_scattering": false,
+  "validation_methods": [
+    {
+      "method": "Held-out static time windows",
+      "passed": true,
+      "scope": "q6 early-window discrete pole predicts separate late window; P32 complete-source extrapolations from two three-window sets agree to about 1.3e-7"
+    },
+    {
+      "method": "Native discrete Maxwell residual",
+      "passed": true,
+      "scope": "All 95 actual responses; interior only, analytic discrete plane-wave stencil control, maximum residual/forcing .001421 and residual/sum-of-terms 7.58e-5"
+    },
+    {
+      "method": "Independent monochromatic time-domain controls",
+      "passed": true,
+      "scope": "P32 complete-source sideband amplitude differences .0398%/.0338%; carrier incident amplitude difference .00967%, all without phase/amplitude fitting"
+    },
+    {
+      "method": "Bounded frequency-domain CW iteration",
+      "passed": false,
+      "scope": "Both L10 and L2 max500 attempts returned false and are retained as failed solver diagnostics, not reference truth"
+    }
+  ],
+  "physical_acceptance_scale": "Interior forcing residual below .2% is assessed relative to the present weak-scattering question and independently retained roughly 10% spatial-grid sensitivity; it is not a universal QNM accuracy certificate",
+  "current_interior_residual_limits": {
+    "relative_to_terms": 0.0001,
+    "relative_to_forcing": 0.002
+  },
+  "source_rows": {
+    "template_q0": {
+      "maximum_relative_to_terms": 5.507991403138252e-07,
+      "maximum_relative_to_forcing": 1.2863966543113778e-05,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "template_q1": {
+      "maximum_relative_to_terms": 1.202593284787053e-06,
+      "maximum_relative_to_forcing": 9.962082651657393e-06,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "template_q2": {
+      "maximum_relative_to_terms": 5.221187926298197e-06,
+      "maximum_relative_to_forcing": 2.8365873194650904e-05,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "template_q3": {
+      "maximum_relative_to_terms": 1.7853427259326825e-06,
+      "maximum_relative_to_forcing": 8.954763410627373e-06,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "template_q4": {
+      "maximum_relative_to_terms": 3.277186139263366e-05,
+      "maximum_relative_to_forcing": 0.0001382474092622699,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "template_q5": {
+      "maximum_relative_to_terms": 1.5984145259533112e-05,
+      "maximum_relative_to_forcing": 0.00013531176227303044,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "template_q6": {
+      "maximum_relative_to_terms": 7.579085255496062e-05,
+      "maximum_relative_to_forcing": 0.0014205821523035236,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "template_q7": {
+      "maximum_relative_to_terms": 7.909465433343152e-06,
+      "maximum_relative_to_forcing": 4.0417010452403384e-05,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "template_q8": {
+      "maximum_relative_to_terms": 4.761154502334008e-05,
+      "maximum_relative_to_forcing": 0.00037128189075483437,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "extended_q9": {
+      "maximum_relative_to_terms": 1.8697743234684163e-05,
+      "maximum_relative_to_forcing": 6.281758784044995e-05,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "extended_q10": {
+      "maximum_relative_to_terms": 4.195828009180471e-05,
+      "maximum_relative_to_forcing": 0.00022734371892770293,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "extended_q11": {
+      "maximum_relative_to_terms": 1.4421064394486816e-05,
+      "maximum_relative_to_forcing": 4.340750956351621e-05,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "extended_q12": {
+      "maximum_relative_to_terms": 8.189199136076715e-06,
+      "maximum_relative_to_forcing": 2.1293247688309415e-05,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "extended_q13": {
+      "maximum_relative_to_terms": 5.8100694759919425e-05,
+      "maximum_relative_to_forcing": 0.00018849081316706635,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "extended_q14": {
+      "maximum_relative_to_terms": 4.5278689858740624e-05,
+      "maximum_relative_to_forcing": 0.0002630140094108371,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "extended_q15": {
+      "maximum_relative_to_terms": 8.292888245483862e-06,
+      "maximum_relative_to_forcing": 2.123112992846041e-05,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "extended_q16": {
+      "maximum_relative_to_terms": 2.3600773126052162e-05,
+      "maximum_relative_to_forcing": 7.620466357053311e-05,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "incident_even": {
+      "maximum_relative_to_terms": 1.0844480045426563e-06,
+      "maximum_relative_to_forcing": null,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    },
+    "incident_odd": {
+      "maximum_relative_to_terms": 1.548128997676231e-06,
+      "maximum_relative_to_forcing": null,
+      "maxwell_equation_validated": true,
+      "scope": "Interior native discrete Maxwell equation only; z-edge layers and PML excluded"
+    }
+  },
+  "references": [
+    {
+      "path": "review_maxwell_residual.json",
+      "sha256": "8e9df46c88c30c473ac942e0f41faa637dae9a57a38e8d7ed25051efe362763d"
+    },
+    {
+      "path": "review_global_tail.json",
+      "sha256": "b2a04ea3784c82db729fd61a022efa107106bb5f668604961c3b7ae2b97d5790"
+    },
+    {
+      "path": "review_source_tail.json",
+      "sha256": "99211bc4cd33c81647232e0e783a76eae21b9f811bd8c3826a341bfb65a46021"
+    },
+    {
+      "path": "review_native_mode4.json",
+      "sha256": "e8f4bef5204e0e3baae72a6f9033ddc793281c24a8d67d25457314bb4361a30b"
+    },
+    {
+      "path": "tail_cw_validation.json",
+      "sha256": "d4b18f3b4ebd033093061865cc62af2ff245099d0c158ab9d93f6431fcbb5dd9"
+    },
+    {
+      "path": "sampling_tail/template_q6/summary.json",
+      "sha256": "1ceea35bcc2a8b9406511c5eb48102eeeb8af41da871224332bb8edaf8acf37c"
+    },
+    {
+      "path": "sampling_tail/template_q6/summary_twopole.json",
+      "sha256": "5daf5521ea0db8c2fe3888ebadb19bb1e0da3fece9ea08d32afcc2d08699583d"
+    },
+    {
+      "path": "sampling/cw_q6_f0388/source_support_adapter.json",
+      "sha256": "96b8dd39dfa2f457c7bdde9c92475be3add4a261c95b5a1fdf2243d6b3955370"
+    }
+  ],
+  "bright_pole_reference": {
+    "path": "../spatial_repair_20261017/static/pulse_smooth_noY_r32/summary.json",
+    "sha256": "139c861f137a4c86da50bb07c1078ea39662b6149e6bd2c1d2a037832101c14a"
+  },
+  "limits": [
+    "No CW convergence certificate",
+    "No full complex-frequency poles or causal stability proof",
+    "No certification of arbitrarily small dark-channel powers; q6@.378 source-power difference about7.5e-6 remains explicit",
+    "Field-source density residual, Floquet harmonic truncation and native spatial refinement remain separate"
+  ],
+  "not_used_for_selection": true,
+  "superseded_reason": "The numerical PDE diagnostic had no predeclared pass tolerance. Root review rejected retrospective pass-threshold wording; actual residual values are unchanged and the current report assesses physical scope directly."
+}

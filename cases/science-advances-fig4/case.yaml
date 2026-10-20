@@ -1,0 +1,86 @@
+schema_version: '0.1'
+kind: case
+id: science-advances-fig4
+project_id: floquet-maxwell
+title: Science Advances Fig.4 柱阵列局部参量增长
+stage: results_available
+question:
+  summary: Science Advances Fig.4 柱阵列局部参量增长
+  scope: 采用明确常数介质控制；固定原泵的弱隙、完整路径增长及Ge色散输入尚有差异；未计算孤立圆柱C面板。
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/science_adv/report.md
+capability_refs:
+- native-field-projection
+- finite-floquet-dynamics
+- common-channel-radiation
+- frequency-memory
+model:
+  description: 采用明确常数介质控制；固定原泵的弱隙、完整路径增长及Ge色散输入尚有差异；未计算孤立圆柱C面板。
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/science_adv/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/science_adv/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/paper_refresh_20261016/science_adv/report.md
+    entrypoint:
+      path: sptc_toolbox/baselines/science_latest.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/paper_refresh_20261016/science_adv/report.md
+    entrypoint:
+      path: sptc_toolbox/baselines/science_memory_controls.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/paper_refresh_20261016/science_adv/run_manifest.json
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/science_adv/run_manifest.json
+- id: output-2
+  description: sptc_toolbox/results/paper_refresh_20261016/science_adv/summary.json
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/science_adv/summary.json
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/science_adv/report.md
+criteria:
+- id: criterion-1
+  description: Gamma和路径采样点的局部参量增长、固定泵失谐及共同辐射适用频窗。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/science_adv/report.md
+checks:
+- id: check-1
+  method: 局部H场子空间匹配、gmax/垂向细化、谐波截断与独立周期积分
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/science_adv/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/paper_refresh_20261016/science_adv/report.md
+  artifacts:
+  - path: sptc_toolbox/results/paper_refresh_20261016/science_adv/run_manifest.json
+  - path: sptc_toolbox/results/paper_refresh_20261016/science_adv/summary.json
+  notes: 49点路径与近Gamma加密；强调制局部锁频及增长，Gamma增长率的空间敏感性约0.30%。 采用明确常数介质控制；固定原泵的弱隙、完整路径增长及Ge色散输入尚有差异；未计算孤立圆柱C面板。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/paper_refresh_20261016/science_adv/report.md

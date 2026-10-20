@@ -1,0 +1,296 @@
+{
+  "status": "ACTUAL_STATIC_PARITY_SEPARATED_NATIVE_BASIS",
+  "completed": true,
+  "rank": 9,
+  "parities": [
+    1,
+    -1,
+    1,
+    -1,
+    1,
+    -1,
+    1,
+    -1,
+    1
+  ],
+  "resolution": 32,
+  "rcond": 1e-07,
+  "source_half_width": 0.3125,
+  "seed_real_gauge_residual": 4.0777636290334924e-14,
+  "native_legume_frequency": 0.3979539246410964,
+  "grid_id": "645d9bea5eee64e462e98675ee5cba3b11d4fa8ff9c81256d047e6dce5128a7e",
+  "basis_id": "939d329168d8b2b021a3336fcc5f17eefc558597db0697b153ee6c2846685554",
+  "material_operator_id": "492bc3d7af1c1e77c05970f646e2e07b2308e199f0368d17ff9f88f5a2dca741",
+  "parity_blocks": [
+    {
+      "sector": "even",
+      "parity": 1,
+      "rank": 5,
+      "singular_values": [
+        1.6527037202698989,
+        0.4920823300839548,
+        0.1625588784452416,
+        6.436119704635982e-05,
+        1.792911648825877e-05,
+        2.1132813935143507e-21
+      ],
+      "input_column_norms": [
+        0.3560242233375495,
+        9.362614679500028,
+        7.500472978030978
+      ],
+      "parity_projection_relative_changes": [
+        9.024599786428546e-14,
+        1.3297163305152638e-16,
+        1.2419904009336913e-16
+      ],
+      "input": "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r32\\carrier_even_fdtd\\response_t2000.npz",
+      "source_sha256": "1902d45525500e2f0e71ddd65750f2cb68d749d4dd06e8b95112d8ac2ce41ea9"
+    },
+    {
+      "sector": "odd",
+      "parity": -1,
+      "rank": 4,
+      "singular_values": [
+        1.3117505941135141,
+        0.5284981729980611,
+        0.00022782491328651237,
+        8.986860565877796e-05
+      ],
+      "input_column_norms": [
+        1.2095581663056512,
+        0.8332160952828336
+      ],
+      "parity_projection_relative_changes": [
+        3.25124845894218e-15,
+        3.5204537707672165e-15
+      ],
+      "input": "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r32\\carrier_odd_fdtd\\response_t2000.npz",
+      "source_sha256": "781f384f7408481eca8363e2ad754fa5bd976ede92a9b362ce53312e98faec26"
+    }
+  ],
+  "clamp_checks": [
+    {
+      "sector": "even",
+      "epsilon_prime_E_clamp_relative_difference": 0.0,
+      "polarization_outside_support_relative_norm": 0.0
+    },
+    {
+      "sector": "odd",
+      "epsilon_prime_E_clamp_relative_difference": 0.0,
+      "polarization_outside_support_relative_norm": 0.0
+    }
+  ],
+  "rank_rows": [
+    {
+      "rank": 1,
+      "parities": [
+        1
+      ],
+      "material_source_relative_residual": [
+        0.4210202039816513,
+        0.9999999999999969
+      ],
+      "full_field_coverage_relative_residual": [
+        0.27623003347087294,
+        1.0
+      ],
+      "polarization_coverage_relative_residual": [
+        0.41037120474915917,
+        0.9999999999999969
+      ]
+    },
+    {
+      "rank": 2,
+      "parities": [
+        1,
+        -1
+      ],
+      "material_source_relative_residual": [
+        0.4210202039816507,
+        0.42142686344351993
+      ],
+      "full_field_coverage_relative_residual": [
+        0.27623003347087294,
+        0.5285220179673533
+      ],
+      "polarization_coverage_relative_residual": [
+        0.410371204749159,
+        0.37370468289022973
+      ]
+    },
+    {
+      "rank": 3,
+      "parities": [
+        1,
+        -1,
+        1
+      ],
+      "material_source_relative_residual": [
+        0.0018448600185131025,
+        0.42142686344351993
+      ],
+      "full_field_coverage_relative_residual": [
+        0.19750590078458743,
+        0.5285220179673533
+      ],
+      "polarization_coverage_relative_residual": [
+        0.001502298090209219,
+        0.37370468289022973
+      ]
+    },
+    {
+      "rank": 4,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "material_source_relative_residual": [
+        0.0018448600185131028,
+        0.00017460454194889312
+      ],
+      "full_field_coverage_relative_residual": [
+        0.19750590078458743,
+        0.4029316614341827
+      ],
+      "polarization_coverage_relative_residual": [
+        0.001502298090209219,
+        0.00017460454175101931
+      ]
+    },
+    {
+      "rank": 5,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "material_source_relative_residual": [
+        4.858999548936253e-05,
+        0.00017460454194889315
+      ],
+      "full_field_coverage_relative_residual": [
+        0.1621236662791767,
+        0.4029316614341827
+      ],
+      "polarization_coverage_relative_residual": [
+        4.8589981484189446e-05,
+        0.00017460454175101931
+      ]
+    },
+    {
+      "rank": 6,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "material_source_relative_residual": [
+        4.8589995489362525e-05,
+        7.072949371898751e-05
+      ],
+      "full_field_coverage_relative_residual": [
+        0.1621236662791767,
+        0.40293163506968976
+      ],
+      "polarization_coverage_relative_residual": [
+        4.858998148418944e-05,
+        6.282274030204281e-05
+      ]
+    },
+    {
+      "rank": 7,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "material_source_relative_residual": [
+        1.2949497701368499e-05,
+        7.072949371898755e-05
+      ],
+      "full_field_coverage_relative_residual": [
+        0.16212366047964025,
+        0.40293163506968976
+      ],
+      "polarization_coverage_relative_residual": [
+        1.224202960699808e-05,
+        6.282274030204275e-05
+      ]
+    },
+    {
+      "rank": 8,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "material_source_relative_residual": [
+        1.2949497701368485e-05,
+        1.0272988984477522e-14
+      ],
+      "full_field_coverage_relative_residual": [
+        0.16212366047964025,
+        0.40293163077715155
+      ],
+      "polarization_coverage_relative_residual": [
+        1.224202960699808e-05,
+        7.392439341745318e-15
+      ]
+    },
+    {
+      "rank": 9,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "material_source_relative_residual": [
+        1.6956495400456202e-14,
+        1.0450904417241892e-14
+      ],
+      "full_field_coverage_relative_residual": [
+        0.16212365996437209,
+        0.40293163077715155
+      ],
+      "polarization_coverage_relative_residual": [
+        1.4105381370184175e-14,
+        7.392433779953305e-15
+      ]
+    }
+  ],
+  "source_sha256": {
+    "sptc_toolbox\\results\\connected_physics\\spatial\\g6.1_v01234567\\native.pkl": "8e0d97e7f1a218bae167dc0c0e05ea1da7881dc488416e818c03563286b3e45f",
+    "sptc_toolbox\\scripts\\build_full_floquet_basis.py": "99a44831d9acbf2f9f3aaa35e0257e1a1402ea855aad9a7d3d8895c7488e1f46",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r32_noY\\grid.npz": "cd365c007328a08962b37304d00a2cb29e1af177998e8cf13ba74a5baf4c0fd7",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r32_noY\\K_base.npz": "f4d3159417a0958b0557ca5f27ba0b54da7fa874f054f2665f59ce4050c49335",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r32_noY\\K_derivative.npz": "ea7aa6f51aea87b4f05359e7fbc4240dc164dc77015992f65e6ab493f02419a9",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r32\\carrier_even_fdtd\\response_t2000.npz": "1902d45525500e2f0e71ddd65750f2cb68d749d4dd06e8b95112d8ac2ce41ea9",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r32\\carrier_odd_fdtd\\response_t2000.npz": "781f384f7408481eca8363e2ad754fa5bd976ede92a9b362ce53312e98faec26"
+  },
+  "no_dynamic_output_fit": true,
+  "scope": "Basis construction only; complete static Green responses still required",
+  "basis_sha256": "e38f74eae93e80403f33c62278f98b64f93ec4a78cacd86c84179447d864a34e"
+}

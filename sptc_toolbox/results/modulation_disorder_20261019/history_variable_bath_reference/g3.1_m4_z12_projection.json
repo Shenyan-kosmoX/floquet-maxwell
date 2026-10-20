@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "schema": "native-cellwise-electric-mass-v1",
+    "basis_id": "2ebafd65507b670dbd69489e94374783c7dd1db4853a1860809e13c51818a181",
+    "sector_basis_ids": [
+      "117f881d78a19ec6a66b90ea2c80aecbbd321ed0b4c4ad0335c4e321834e1508",
+      "51b3f0b1a3014a33d1a86c85f3ebe7a522cd3d8ccbfd8e8d8252b5e864cdbb6d",
+      "cc512d6fb0b747a1247c76e573024a98540d5c17d3da136828ef222022b9aec8",
+      "898bb1d0aa57489a336b796eb9f47bc6598142bffce0d7b48e689a891c19214b"
+    ],
+    "selections": [
+      {
+        "kind": 0,
+        "modes": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "kind": 1,
+        "modes": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "kind": 2,
+        "modes": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "kind": 3,
+        "modes": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "physical_signature": "a465765b1524009dbae1f23a5fcac7cf96d133e4a06045f0be2772da09df2d2a",
+    "regions": [
+      {
+        "layer": 0,
+        "shape_index": null,
+        "kind": "background",
+        "name": "bulk"
+      }
+    ],
+    "supercell": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "n_primitive_cells": 4,
+    "lattice_columns": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "z_order": 12,
+    "native_state_sha256": "caef88d91ab9aa35acfc0cfc535a5af03dc05c6ac8893d5a41bc9116b5abf281",
+    "native_kpoints": [
+      [
+        -0.25,
+        -0.17
+      ],
+      [
+        2.891592653589793,
+        -0.17
+      ],
+      [
+        -0.25,
+        2.971592653589793
+      ],
+      [
+        2.891592653589793,
+        2.971592653589793
+      ]
+    ],
+    "physical_kpoints": [
+      [
+        0.25,
+        0.17
+      ],
+      [
+        -2.891592653589793,
+        0.17
+      ],
+      [
+        0.25,
+        -2.971592653589793
+      ],
+      [
+        -2.891592653589793,
+        -2.971592653589793
+      ]
+    ],
+    "field_chart": "physical G=-native G; physical k=-native k; E/D=diag(-1,-1,1) raw, H=-diag(-1,-1,1) raw for exp(-i omega t); native display ftinv is not used",
+    "adjoint_error": 1.3850102431373721e-17,
+    "layer_geometry_reports": [
+      {
+        "layer": 0,
+        "disjointness": "Conservative periodic Cartesian enclosures; exact circle separation where applicable",
+        "checked_shape_image_pairs": 68,
+        "native_point_sample_count": 1681,
+        "native_pointwise_additive_error": 0.0,
+        "limitation": "Noncircular shapes whose bounding rectangles intersect are conservatively rejected even if the shapes may be disjoint"
+      }
+    ],
+    "atom_epsilon": [
+      11.5,
+      1.0,
+      1.0
+    ],
+    "atom_region_weights": [
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    "normalization": "Each primitive Bloch field /sqrt(N_cells); finite-cell overlap times cell phase sum /N_cells.",
+    "convention": "E=sum E_G exp(+i(G+k).r); delta epsilon in cell j=sum_p delta[p,j,r] chi_r(local r) exp(-ip tau)",
+    "loss_ownership": "Material projection only. Export native sector radiation separately; no radiation, absorption, gain or QNM metric is inserted.",
+    "scope": "Finite native electric material projection. No full dynamic radiation, QNM metric, stochastic temporal noise or infinite-disorder convergence.",
+    "region_labels": [
+      "bulk"
+    ],
+    "cell_shape": [
+      2,
+      2
+    ],
+    "cell_indices": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "cell_translations": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "supercell_bloch_k": [
+      0.25,
+      0.17
+    ],
+    "retained_sector_count": 4,
+    "all_supercell_sector_count": 4,
+    "complete_sector_cosets": true,
+    "modulation": "arbitrary temporal harmonic maps; constant on each translated primitive region",
+    "spatial_boundaries": "supercell Bloch periodic; static geometry primitive periodic; random cell pattern repeats as a supercell"
+  },
+  "radiation": [
+    {
+      "kind": 0,
+      "modes": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reference_omega": 2.365555883836271,
+      "channel_count": 4,
+      "gamma": [
+        [
+          [
+            0.00012008287975473276,
+            0.0
+          ],
+          [
+            -1.1059000585447437e-05,
+            -9.236790007153682e-06
+          ],
+          [
+            3.492287871436913e-05,
+            -8.64759687525344e-05
+          ],
+          [
+            -0.00011500179205552237,
+            0.0001080324030604052
+          ]
+        ],
+        [
+          [
+            -1.1059000585447437e-05,
+            9.236790007153682e-06
+          ],
+          [
+            0.00022688815170122692,
+            0.0
+          ],
+          [
+            -2.213489718589121e-05,
+            6.403362245498929e-05
+          ],
+          [
+            -0.0005989066108450156,
+            0.0006755101948057614
+          ]
+        ],
+        [
+          [
+            3.492287871436913e-05,
+            8.64759687525344e-05
+          ],
+          [
+            -2.213489718589121e-05,
+            -6.403362245498929e-05
+          ],
+          [
+            8.799149690305603e-05,
+            0.0
+          ],
+          [
+            0.00012164534643346195,
+            1.2288574701914823e-05
+          ]
+        ],
+        [
+          [
+            -0.00011500179205552237,
+            -0.0001080324030604052
+          ],
+          [
+            -0.0005989066108450156,
+            -0.0006755101948057614
+          ],
+          [
+            0.00012164534643346195,
+            -1.2288574701914823e-05
+          ],
+          [
+            0.003953506425458521,
+            0.0
+          ]
+        ]
+      ],
+      "linewidths_native": [
+        1.911178386905093e-05,
+        3.61103707061381e-05,
+        1.4004281672488307e-05,
+        0.0006292192114000143
+      ],
+      "frequency_window_passed": false,
+      "collective_loss_ratio": 0.001845915621760643
+    },
+    {
+      "kind": 1,
+      "modes": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reference_omega": 2.333628694306399,
+      "channel_count": 0,
+      "gamma": [
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "linewidths_native": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "frequency_window_passed": false,
+      "collective_loss_ratio": 0.0
+    },
+    {
+      "kind": 2,
+      "modes": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reference_omega": 2.32054768636491,
+      "channel_count": 0,
+      "gamma": [
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "linewidths_native": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "frequency_window_passed": false,
+      "collective_loss_ratio": 0.0
+    },
+    {
+      "kind": 3,
+      "modes": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reference_omega": 2.14831855285394,
+      "channel_count": 0,
+      "gamma": [
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "linewidths_native": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "frequency_window_passed": false,
+      "collective_loss_ratio": 0.0
+    }
+  ],
+  "drive_omega": 0.17581955123278004,
+  "projection_seconds": 0.5758810000006633,
+  "approximation": "Native common-channel, positive-frequency frozen Markov bath; no physical dynamic S or QNM claim."
+}

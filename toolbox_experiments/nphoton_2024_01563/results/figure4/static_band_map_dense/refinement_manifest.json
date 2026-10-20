@@ -1,0 +1,109 @@
+{
+  "status": "COMPLETE_DENSE_NATIVE_STATIC_SPECTRAL_MAP",
+  "total_points": 97,
+  "reused_points": 25,
+  "reused_indices": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    64,
+    68,
+    72,
+    76,
+    80,
+    84,
+    88,
+    92,
+    96
+  ],
+  "new_points_required": 72,
+  "intervals_per_segment": 32,
+  "worker_processes": 2,
+  "threads_per_worker": 2,
+  "maximum_native_cpu_threads": 4,
+  "source_directory": "<source-checkout>/toolbox_experiments/nphoton_2024_01563/results/figure4/static_band_map",
+  "original_aggregate_sha256": "09ad60a7ee7b877ff65af080cb799cc0e49e8e294d2f3f1b66418ea1f32e8825",
+  "original_map_sha256": "b51709ea82838b7cf3a5f3e7b5edabda14cf6ab1ac45f0ea15d9a54a60c129d8",
+  "native_solver_sha256": "541ca198b83b2c3a12261b9ab2a0698adf5d4a6b4779b541a7123522ade45140",
+  "refinement_source_sha256": "c505f9b2ff00fc04e2047247acdc122ab954b0fe25bf7ea6775963b708010cc4",
+  "native_parameters": {
+    "radius": 0.3333333333333333,
+    "epsilon": 11.68,
+    "resolution": 16,
+    "padding": 3.0,
+    "pml": 1.0,
+    "courant": 0.5,
+    "eps_averaging": false,
+    "symmetries": [],
+    "cell_size": [
+      1.0,
+      1.0,
+      8.666666666666666
+    ],
+    "frequency_center": 0.38,
+    "source_fwidth": 0.6,
+    "source_cutoff": 4.0,
+    "warmup_after_sources": 0.0,
+    "source_free_duration": 300.0,
+    "sample_interval": 0.125,
+    "sources": [
+      {
+        "component": "Hz",
+        "position": [
+          0.13,
+          -0.17,
+          0.11
+        ],
+        "amplitude": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "component": "Ez",
+        "position": [
+          -0.21,
+          0.09,
+          -0.13
+        ],
+        "amplitude": [
+          0.73,
+          0.19
+        ]
+      }
+    ],
+    "probes": [
+      [
+        0.07,
+        0.11,
+        0.04
+      ],
+      [
+        -0.19,
+        0.17,
+        0.21
+      ],
+      [
+        0.23,
+        -0.07,
+        -0.19
+      ]
+    ]
+  },
+  "reuse_rule": "Exact coordinates, all fixed inputs, raw coordinates, shapes, timing, and SHA-256 checked before reuse; old index i maps to new 4*i",
+  "wall_seconds": 435.9782153199776,
+  "complete_points": 97
+}

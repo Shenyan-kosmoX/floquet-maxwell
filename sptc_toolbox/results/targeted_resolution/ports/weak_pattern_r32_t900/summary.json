@@ -1,0 +1,56 @@
+{
+  "status": "ACTUAL_FULLWAVE_FIRST_ORDER_POLARIZATION_CURRENT_SIDEBANDS",
+  "geometry": "same circle/ellipse slab",
+  "resolution": 32,
+  "carrier_fa_over_c": 0.398,
+  "drive_fa_over_c": 0.01,
+  "absolute_epsilon_cosine_amplitude": 0.01,
+  "modulation_region": "High-epsilon slab background excluding both air holes",
+  "port_reference_planes": [
+    -0.7,
+    0.7
+  ],
+  "carrier_power_balance": 0.9939664018470322,
+  "empty_backward_power_ratio": 8.330813033877596e-08,
+  "vacuum_phase_error": 0.0006816130636285822,
+  "empty_cw_return": true,
+  "carrier_cw_return": true,
+  "sidebands": [
+    {
+      "harmonic": -1,
+      "frequency_fa_over_c": 0.388,
+      "lower_amplitude": [
+        -0.007227568318284197,
+        0.0005793393421386059
+      ],
+      "upper_amplitude": [
+        -0.007240965267389918,
+        0.0026837148171273625
+      ],
+      "output_incident_power_ratio": 0.00011220728109203111,
+      "incoming_spurious_power_ratio": 8.50829269836363e-12,
+      "solve_cw_return": true
+    },
+    {
+      "harmonic": 1,
+      "frequency_fa_over_c": 0.40800000000000003,
+      "lower_amplitude": [
+        0.00762437553949112,
+        -0.003196980533037208
+      ],
+      "upper_amplitude": [
+        0.006992211060258247,
+        -0.0012385143699893042
+      ],
+      "output_incident_power_ratio": 0.00011877672025167711,
+      "incoming_spurious_power_ratio": 1.0969772410346745e-11,
+      "solve_cw_return": true
+    }
+  ],
+  "approximation": "First order in delta_epsilon; no carrier depletion, repeated conversion or instability",
+  "source_equation": "J_l=-i*omega_l*delta_epsilon_l*E_carrier from static full-wave field",
+  "source_sampling": "Regular-grid native E interpolated to source Yee samples, physical mask applied there",
+  "static_green_solver": "time",
+  "settling_time": 900.0,
+  "elapsed_seconds": 1107.503634998
+}

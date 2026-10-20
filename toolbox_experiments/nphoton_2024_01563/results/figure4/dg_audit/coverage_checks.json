@@ -1,0 +1,45 @@
+{
+  "status": "RESPONSE_COVERAGE_INADEQUATE_FOR_PAPER_DG_REPRODUCTION",
+  "diagnostics": [
+    {
+      "regime": "nonresonant",
+      "zero_control_M": {
+        "positive_peak_frequency": 0.41455078125002354,
+        "negative_partner_frequency": -0.41455078125002354,
+        "partner_to_peak_power": 1.1764651491692358e-10,
+        "ratio_definition": "Signed Hann FFT power at the opposite-frequency bin divided by dominant positive-frequency peak"
+      },
+      "dynamic_Gamma": {
+        "dominant_folded_bin": 0.173828125,
+        "counterpart_target": 0.826171875,
+        "counterpart_window_halfwidth": 0.015,
+        "counterpart_window_max_power": 1.818235394327107e-09,
+        "caveat": "A visibility diagnostic, not an equal-intensity requirement or a mode-frequency certification"
+      }
+    },
+    {
+      "regime": "resonant",
+      "zero_control_M": {
+        "positive_peak_frequency": 0.41455078124995287,
+        "negative_partner_frequency": -0.41455078124995287,
+        "partner_to_peak_power": 1.2969443046499393e-10,
+        "ratio_definition": "Signed Hann FFT power at the opposite-frequency bin divided by dominant positive-frequency peak"
+      },
+      "dynamic_Gamma": {
+        "dominant_folded_bin": 0.548828125,
+        "counterpart_target": 0.451171875,
+        "counterpart_window_halfwidth": 0.015,
+        "counterpart_window_max_power": 2.055635641869557e-05,
+        "caveat": "A visibility diagnostic, not an equal-intensity requirement or a mode-frequency certification"
+      }
+    }
+  ],
+  "source_sha256": {
+    "literature/published_main.pdf": "365b3fd03c22178e10d12c3a848818dd5504bb210f56f5f62b3e242884bc5a7c",
+    "audit_figure4_dg.py": "a392f152180de26f89d85bb0d2637f4f99a99a5c6b63d81e65c63c58505fddb3",
+    "results/figure4/full_dynamic_maps/zero_controls/nonresonant/k00/dynamic_spectrum.npz": "a56dc89f2023641aac119fb1bbac3a432b210aa32adab2869ccb6345a47e86a3",
+    "results/figure4/full_dynamic_maps/nonresonant/dynamic_map.npz": "acfe0e9597f752927db49efb52116f6e488facd0661a99e93c155be7a1f18f90",
+    "results/figure4/full_dynamic_maps/zero_controls/resonant/k00/dynamic_spectrum.npz": "79b8de59bb7f9a478bf122e18374f82d1416aed00430d71ae35ad66d32dcd16b",
+    "results/figure4/full_dynamic_maps/resonant/dynamic_map.npz": "632bfe872c5731f8284cec8313ce94a2b023b22998798afb481f0584ffe8190a"
+  }
+}

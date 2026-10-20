@@ -1,0 +1,632 @@
+{
+  "schema": "original-metal-baseline-alignment-v1",
+  "doi": "10.1038/s41467-018-06802-0",
+  "figures": [
+    "SI3(a,b)",
+    "Main6(f,g)"
+  ],
+  "solver": "Actual COMSOL6.4 6.4.0.293 via installed MPh/D:/Anaconda; original farfield Eq6/7 evaluated using local NumPy",
+  "scope": "Actual static metal/PIN unit cell and explicitly adiabatic array-factor connection; source C ambiguity and plotting-coordinate ambiguity retained; no full dynamic array claim",
+  "files": [
+    {
+      "path": "sptc_toolbox/docs/zhang2018_original_alignment_design.md",
+      "bytes": 2317,
+      "sha256": "0003d98af303a6257dd18724a4af15f7bddbf1f72128d4552f89561301367425"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/__pycache__/rf_cell_api_example.cpython-313.pyc",
+      "bytes": 3046,
+      "sha256": "897ace98b5098fb09a2286cc44fdcda5a7f759098d5913fe1533f38d5d489b42"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/API_NOTES.md",
+      "bytes": 5666,
+      "sha256": "edd28f35f8e37fad3838041231a42b9cae18f57ffa8df03f9c10e5fddb2cc912"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/feature_probe.log",
+      "bytes": 31,
+      "sha256": "866ab02f7bd568f609e91abd4c681882c38a5ab4346b76d486cfc88a8105fe35"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/feature_properties.json",
+      "bytes": 58506,
+      "sha256": "f9f1a7ab6f1f866f50754c016bd435e5817c42f1a6387db81a2fffcfd16b1da2"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/frequency_selective_surface_csrr.java",
+      "bytes": 52729,
+      "sha256": "5e6a25d18adad4acfadf38e94495afc929c73e0614a2f061107948da1a87b81d"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/inspect_root_built.py",
+      "bytes": 1353,
+      "sha256": "9ab78d789650470c5ecefa7f8e88c9543b4cee3c142c77b7f69cb2252878f6b2"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/model_review.md",
+      "bytes": 6584,
+      "sha256": "06b402f34d9315dae0af12ce9a518db674c57af7eb73fb51644b92b51c327b10"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/official_model_probe.json",
+      "bytes": 7772,
+      "sha256": "2eb2c9486389cac2c00121d703e7d31f589d00e13c1d5918c7fb6628147a7582"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/probe.log",
+      "bytes": 4400,
+      "sha256": "328d889fe71c0847340a6982bf6d9564483f657c0d55a7fc4c0eec5176dc6eec"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/probe_features.py",
+      "bytes": 1853,
+      "sha256": "cc2880188390cfb5cc2946f0a62147c4dd8184686d603c2ad2f6377ca3770222"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/probe_official.py",
+      "bytes": 1721,
+      "sha256": "56a1342bac348dc2d7512392886a3a6d2206cf740f19257af79c1cf0724caf28"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/rf_cell_api_example.py",
+      "bytes": 1769,
+      "sha256": "6df87bdb6ae344226ed7f919472ef2ef99b0ea4f1ee295be091df2b7c1b893a1"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/rf_ug_radio_frequency.07.015.txt",
+      "bytes": 8952,
+      "sha256": "1a8b8045661cac299622ac48d9d913157a0392adff3fb1bfc713ca57b8acae4e"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/rf_ug_radio_frequency.07.029.txt",
+      "bytes": 1115,
+      "sha256": "58df27d54c98438b1da7cbffea9d5c2d55089db7e068de32c0530bae58b60c4a"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/rf_ug_radio_frequency.07.031.txt",
+      "bytes": 2144,
+      "sha256": "51ea8305d3349a08c6632de27501fdf9f77d6679bb7ddd50fb8c5cea19e6fbdb"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/rf_ug_radio_frequency.07.047.txt",
+      "bytes": 1201,
+      "sha256": "565ee76e54dcd489605ad3d1d12f396c77474e687d9cb920a1668af439c99d94"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/root_built_readonly_inspection.json",
+      "bytes": 16368,
+      "sha256": "20c4bacadaef3daf3bf52e0d16cccaf461c3fd80c90c21997bea2dc0ed90e47f"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/comsol_api/wilkinson_power_divider.java",
+      "bytes": 51473,
+      "sha256": "19db164bbfd7eeaeda2bbb46f2b3801ff45229539d873a033986a32753518ab0"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/brief.md",
+      "bytes": 4321,
+      "sha256": "a0d7c455431e6eb84b73ab4e002535e5345c7c49ee00a5733815c26578dbd895"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/build_evidence.py",
+      "bytes": 8115,
+      "sha256": "00088e96822d52be8e11f579b50fdd9d2391d85a213ed6667775d21fe5b04e08"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/datasheet_electrical.png",
+      "bytes": 151712,
+      "sha256": "219ccbaa8042e00707cbe7033c2e8fba7810687a0569bfacb2a9566969d01934"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/Fig6abc_geometry_circuit.png",
+      "bytes": 450546,
+      "sha256": "72aa6c74648d3258c28ce58bb3842a7823c156edfeb2420473867bb1d745b697"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/Fig6fg_static_reflection.png",
+      "bytes": 239050,
+      "sha256": "ceb90b6dd4cd993e5888638a0672d7add936130db674a08ab2a341c371e4a448"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/paper_capacitance_28pF.png",
+      "bytes": 99783,
+      "sha256": "cdca5674ec05bf59a3c8fb1f6badf9d53bb98b55fc039d21ff2601b46c49d43c"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/SI3_complete.png",
+      "bytes": 3752202,
+      "sha256": "dc9fb9815a4048329e397f7a84765ac8e792833da986ddff3895d94426f256e6"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/SI3a_random_farfields.png",
+      "bytes": 2714632,
+      "sha256": "bc396cbd1414554f98d6c42065e08449724dfd0b06926a4c27ea29c98dc30470"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/SI3b_random_farfields.png",
+      "bytes": 985588,
+      "sha256": "28ea29b396bf7b13a723fc7453e22b2f56da77ca1de76ddb0099c4d13691a1b0"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/SI9a_geometry.png",
+      "bytes": 760081,
+      "sha256": "448a7eac0e3bf4468e0e7d312d4ebb3a988f7ccb011c5523afb662e35e26e39f"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/SI9bc_fields.png",
+      "bytes": 703280,
+      "sha256": "7180f3c06a17d95d910d1fe5b598f354f81579c82396adb573db9bc94d81f3f5"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/source_0.pdf",
+      "bytes": 383000,
+      "sha256": "7425cf1e753b39d1779ef95a378014b08c7a0e8a8d253a1509e6c11e84425b3c"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/source_0.txt",
+      "bytes": 9441,
+      "sha256": "1526a877e7099e6c784122928a630c86d088602870a86c2904ebcd93a8ca4440"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/source_1.html",
+      "bytes": 617,
+      "sha256": "b2aed1d80b5596bf15ae9d85d677ab71e811aa572c34640bfe081b0179b5bf29"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/source_3.html",
+      "bytes": 102931,
+      "sha256": "17a48cdeb70a8eae483764e8b5321862a06ae1852d1461dc76938514ed15dda9"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/source_4.html",
+      "bytes": 14294,
+      "sha256": "9b53a2ce3a269b76156fa8452b73b2ac686fe79613ef392297d7958a570e3d8f"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/source_contract.json",
+      "bytes": 9599,
+      "sha256": "8cd7bc847982afb3c9cc5392a21c29ab911ac846e476f7a2e2bb034c8bccf29a"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/zhang2018_main_p10.png",
+      "bytes": 743400,
+      "sha256": "20be0d207a07939e708e19e11af0b3178cc01375cff0272d357d1c32d6c29837"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/zhang2018_main_p7.png",
+      "bytes": 1054069,
+      "sha256": "535757129655fad85fc04c11dff2c56eba65867cbe06a75ebf4f2044cccc6699"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/zhang2018_main_p9.png",
+      "bytes": 1426550,
+      "sha256": "d2740ea3b3a3d0429fa51fa9e0c87a6023c465301c3fcd71aed4a3d667573e1e"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/zhang2018_SI_p15.png",
+      "bytes": 1013916,
+      "sha256": "0de95966df23cbf269198730210fbb278e867d85a2a9743040dcdb4d86e1dde6"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/zhang2018_SI_p3.png",
+      "bytes": 1565522,
+      "sha256": "1df2cdefdeec3624b32cf3d8e44fa08395c776faaa078fb60b2fd6a2afeec898"
+    },
+    {
+      "path": "sptc_toolbox/literature/zhang2018_original_alignment_20261019/parameters/zhang2018_SI_p5.png",
+      "bytes": 1660907,
+      "sha256": "161ad8aeece6a63c0a7913e1a7ddb00e77657782d91457f1905926936d0d0bb8"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/computed_3d_radiation.pdf",
+      "bytes": 5514953,
+      "sha256": "03b74b723f538a27b530f28de6e3e7b35e5fcc6b9c002d88234e7e2cdc988fc4"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/computed_3d_radiation.png",
+      "bytes": 746301,
+      "sha256": "2fbd421ec7ef8c334e2a5c5ae3f43339e4b80dbe33ca799ae214a7c489d34eba"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/computed_3d_uv.pdf",
+      "bytes": 1598415,
+      "sha256": "8bb795281d04cc6c934abadca047baedd9fef8289d93c365ff46011c8c059a5a"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/computed_3d_uv.png",
+      "bytes": 1208858,
+      "sha256": "fd8fd24c9c9305aa8512ba8d74c27c69e52edc38e70ceff437bffd6605de8e0c"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/computed_angle_diagnostic.pdf",
+      "bytes": 2136596,
+      "sha256": "1a4be82651f5ae876ac46678f2a6e5e89681a13b3cce9a98c4779a3076dd022a"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/computed_angle_diagnostic.png",
+      "bytes": 2604655,
+      "sha256": "090c32d9b92d75d469e40c79de06cf8454a4d92fc24f12ad5bff68db67d596cd"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/computed_angle_diagnostic.svg",
+      "bytes": 3222113,
+      "sha256": "90ef90643a6f86a00aa8e67bc7cf137b6e56bdf3b587bca8b6256bc549eed3ec"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/computed_uv.pdf",
+      "bytes": 2162586,
+      "sha256": "001d921a8265045ffb337a4fadf70ffb3e0b27a66631693e842bb83529d6ce5e"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/computed_uv.png",
+      "bytes": 2620916,
+      "sha256": "4346060090942c4883886843ef8ffbc8a84710a6ae6f909b2b1cda33c2c1b547"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/computed_uv.svg",
+      "bytes": 3253546,
+      "sha256": "06f741cb624b487f4142226b7a3bb1fa64dec8ea018f63967b98173f08b14819"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/farfield_data.npz",
+      "bytes": 140720711,
+      "sha256": "4232b3ffa427dc86a2cd3f1413b669b47f5fa897b1022b0111503e546ef11a87"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/manifest.json",
+      "bytes": 1525,
+      "sha256": "abc3143392117bb854a80cea42a2805c5b0418971ae84f05a279bc6cc4d6fc81"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/metrics.json",
+      "bytes": 4541,
+      "sha256": "bc8aba8ec5afcdc3b3b5d9c94c15e17065a6a749894fc6f92dc36ec9eeb05e97"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/paper_SFig3a.png",
+      "bytes": 2712049,
+      "sha256": "cfb6113138410758dda2558aba2f95fbe54e50617260363cdb5d894311b593d3"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/paper_SFig3b.png",
+      "bytes": 987766,
+      "sha256": "fab59805351fdd4feb5a83cd5b69b0636dbe69eea65c9f372a4fc0ef5559e482"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/paper_vs_farfield_3d.pdf",
+      "bytes": 485907,
+      "sha256": "f97466c02c6e306f37102fc5a52ba38bc692896de5991dbb7904ce6bbe24f6b7"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/paper_vs_farfield_3d.png",
+      "bytes": 1715095,
+      "sha256": "cd97c2d6344d2452a02137a35d041688fa65753b0cea324670a8fbef3a7bd3e2"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/paper_vs_farfield_display_diagnostic.pdf",
+      "bytes": 2819946,
+      "sha256": "f2676779422ebdb56f0fdbd6a7519e5c4cecf7ba4015e7743bbc45819db1561d"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/paper_vs_farfield_display_diagnostic.png",
+      "bytes": 3312584,
+      "sha256": "8ddb8c1a707f345e0e40e40e4cf5f2e7d0c063bc5eb9c62c7ea2902568d98975"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/paper_vs_farfield_radiation3d.pdf",
+      "bytes": 389621,
+      "sha256": "2bddb5cc60cf059b1e5c2604dbe95051844fcbbfa551856618d0140339023f62"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/paper_vs_farfield_radiation3d.png",
+      "bytes": 1379571,
+      "sha256": "fd878ebc77b85a7d034b84e240c7596d2245fc23bb959de4a92abe3058dbe0bd"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/paper_vs_farfield_uv.pdf",
+      "bytes": 2818424,
+      "sha256": "1b941478283b827998185e93431b5c6c95e89f5b1e40195286d4f74c31fe2d5f"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/paper_vs_farfield_uv.png",
+      "bytes": 3310058,
+      "sha256": "89a462121254fda76be86d8cb8699a50f195016a33f5738289eefe231cedc46d"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/report.md",
+      "bytes": 4415,
+      "sha256": "09f91a53cd0ee3cb00eb9f8641d1d9fcf4f1204d66188b16b0f140aceee5334e"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/source_colorbar.png",
+      "bytes": 108248,
+      "sha256": "d7546b8157051345882c9c4b7ceb39b91c969e2bbf13ba1ebb5de38aa998eadf"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/knowledge/assumptions.jsonl",
+      "bytes": 968,
+      "sha256": "d0e54ecb75d017ba1f0ea1b3a30a77f790bb01ee5fd3231ce7f3b304a8d349f1"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/knowledge/edges.jsonl",
+      "bytes": 1241,
+      "sha256": "7af0d05c0e192f269ba345693b350f6100f7707104863cba230e738b59902526"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/knowledge/evidence.jsonl",
+      "bytes": 1143,
+      "sha256": "d4d1d52d9f5b2c3802989d02790d5cb084e32e4b7ac40eb5fb76c390d20febc3"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/knowledge/models.jsonl",
+      "bytes": 1617,
+      "sha256": "8332b5cc000277355803d511c1e283937d93308d16f80520726ebe99e72f356c"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/knowledge/nodes.jsonl",
+      "bytes": 1091,
+      "sha256": "cffdd5c8bfb3cb4c149d16258c48b87ebc7d1bf0941dc68281b73e28c0ed28a6"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/knowledge/validations.jsonl",
+      "bytes": 845,
+      "sha256": "aa23947572280ec742e63544a79a42c51b6318c855f259f6c3b91c585e8af4c5"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md",
+      "bytes": 8027,
+      "sha256": "2abebf036acd1d99a4513ffb143438c10edad1ee749776cf9b3270b7a3d6fb27"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/SI_page15.png",
+      "bytes": 683081,
+      "sha256": "347e00b5adfcbe69f1f52cc42ac63bc0b8c23123dc0a84252c1f35daaa6b0722"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/SI_page16.png",
+      "bytes": 169164,
+      "sha256": "e8a5a7dbd403337ac52b41bf6b2d95935ca2bbeb8d898fa13ba6903a5c1a99ba"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/bias_line/geometry_mesh4.json",
+      "bytes": 1418,
+      "sha256": "32e63332024a93f39a706b93304dba0edd7907c7142f575e0f17e3eec5aa1450"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/bias_line/grounded_slab_null_mesh4.json",
+      "bytes": 346,
+      "sha256": "41a2051fb5ee1d33fd82df25e25d2dc29e6eec81ff1f801e5dd33423f111f4f1"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/bias_line/run_mesh4.json",
+      "bytes": 386,
+      "sha256": "6a43182680704529207e1b5448ff34258d548b9042710c50c7a58e08b65740dc"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/bias_line/sweep_mesh4.json",
+      "bytes": 1663,
+      "sha256": "dd8174ca975f8263a20090c0fafd6ed16cae36aa533b7da6d1011cfb48a33f68"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/failure_mesh6.txt",
+      "bytes": 539,
+      "sha256": "0e6c88bc5d33820ecbd94c5ec076cc17ffa8dde59949c5455b9d15a8a33a0dbf"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/failure_mesh6_1792350041225220500.txt",
+      "bytes": 1424,
+      "sha256": "44028b55ccc0ca42c003f35476eb7f83601bd02a514275319151f27c358f7372"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/geometry_mesh2.json",
+      "bytes": 1336,
+      "sha256": "7e893caa49d3296d4e82ec5a495b442427421dcbcf0da2b6501dbb42e2f013c6"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/geometry_mesh4.json",
+      "bytes": 1336,
+      "sha256": "6810bd7ada66a6805aed701beac5573198ba07e376b4cbc7a491399423892ade"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/geometry_mesh6.json",
+      "bytes": 1336,
+      "sha256": "aeb2526ea4d01e94bcb9bfdc2c0c396d2b1d64554751ca068c6cafef64ad7a9b"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/grounded_slab_null_mesh2.json",
+      "bytes": 347,
+      "sha256": "58b89e898cf385cf9766ddfdc9ff0011084d518b573bfd91c647ed7bf5f7af8b"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/grounded_slab_null_mesh4.json",
+      "bytes": 346,
+      "sha256": "211c233b771d25be0bd3d10d98f443e2a29ee98f0d38746f07d1499de0501fe3"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/grounded_slab_null_mesh6.json",
+      "bytes": 347,
+      "sha256": "7f0f367cdec97c375c63fb077d6d629c141c6a733cbc6148e5b6290371dad15c"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/reopened_model_inspection.json",
+      "bytes": 3518,
+      "sha256": "a5c493417587abe24681177fc003a6fbc86629aec5e2c8dc32eea7b45f5e2259"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/run_mesh2.json",
+      "bytes": 375,
+      "sha256": "9c9261a74e1b85ddfb634b505a9462aebe49dca802d99825021210dfee0dd5b3"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/run_mesh4.json",
+      "bytes": 375,
+      "sha256": "e84ff80da8b2a4da77728cc1d5ca5a528bc56ea9c4fb3851666dea47cec72b8d"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/run_mesh6.json",
+      "bytes": 375,
+      "sha256": "920c0e43e21766d9c560cf9d59e765eaee3d51604d5914b262dc85f5c82d5943"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/sweep_mesh2.json",
+      "bytes": 4889,
+      "sha256": "794885b84647ecc6912838b9fa62754722102ec200831d050f21383959db3ad8"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/sweep_mesh4.json",
+      "bytes": 19363,
+      "sha256": "4c4df0079e05b52517e3bfc6c1befca417c86ccba1d2203796d31e02c8a4c181"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell/sweep_mesh6.json",
+      "bytes": 9716,
+      "sha256": "d30e1b0da2e7d26b8e30b3b328561559de3179af4ee31a06d7d6cdfbc25d8685"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/actual_state_array_data.npz",
+      "bytes": 118865957,
+      "sha256": "00c2865769352ac7d1d78247869bc4d04a0f593cd60151c0948f36de34adb676"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/harmonic_peak_comparison.pdf",
+      "bytes": 21283,
+      "sha256": "0ac7a63e86646dc80beaeca8d69ab2355364f9bd011cf3a483583282f15f7551"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/harmonic_peak_comparison.png",
+      "bytes": 153064,
+      "sha256": "d87557c5d867cacba7778d5c0faceea2379ea24c37ef5812b77dce3f14ee762b"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/metrics.json",
+      "bytes": 15859,
+      "sha256": "9dff0e2461726bacbe50f4731c9c60a1957ebe72226d5dfbdc6a20566daeb75f"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/paper_Fig6fg.png",
+      "bytes": 205948,
+      "sha256": "c06f946d0671eebc99ae2c5a0411e2fc9b0034d782e337351b0fcbc04b7f8ca1"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/paper_Fig6fg_original_crop.png",
+      "bytes": 239050,
+      "sha256": "ceb90b6dd4cd993e5888638a0672d7add936130db674a08ab2a341c371e4a448"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/paper_ideal_actual_scattering.pdf",
+      "bytes": 2466594,
+      "sha256": "2e1162d2cee5e1f8dd78e701cedde52e49fab9b6972c4b2c928322891c7ef4c5"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/paper_ideal_actual_scattering.png",
+      "bytes": 3144344,
+      "sha256": "cb4c8e62b0bce07f2d4b1350d00bd12297a12a0725d51b31c57761ac4f34317b"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/paper_ideal_actual_scattering.svg",
+      "bytes": 3775174,
+      "sha256": "0cf80fb5f133d7fd54502cb810db07b3ece4339d81c1ce18b2eec407ab6858ce"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/paper_vs_static_reflection.pdf",
+      "bytes": 353658,
+      "sha256": "94e4670862be80766669c6e19e240ce9a571067f785f1900350a5658a4f0ea45"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/paper_vs_static_reflection.png",
+      "bytes": 633707,
+      "sha256": "4f243c7c7365c2313f1b172109914f61f7d2580588e4a360f515c7f66063a507"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/paper_vs_static_reflection.svg",
+      "bytes": 509856,
+      "sha256": "e9225f3aeebd44bd31ff4539e0e2860643b24f27c30094dd73c22eba321487a2"
+    },
+    {
+      "path": "sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/report.md",
+      "bytes": 5732,
+      "sha256": "be70b12ebf6ab22aaecff6d187d06cf86bd3f5c067805b72f535f2ff226c7b18"
+    },
+    {
+      "path": "sptc_toolbox/scripts/comsol_zhang2018_unitcell.py",
+      "bytes": 10849,
+      "sha256": "3d1adac14118a51feffecf46570c8a8d0ba859f77d93bec4f23945445319317f"
+    },
+    {
+      "path": "sptc_toolbox/scripts/inspect_zhang2018_comsol.py",
+      "bytes": 1516,
+      "sha256": "ccbd958d64448fbd252047601679fa2fa3862fa60842ba3236c8c299c3690fd7"
+    },
+    {
+      "path": "sptc_toolbox/scripts/plot_zhang2018_unitcell_scattering.py",
+      "bytes": 24056,
+      "sha256": "0dc29b2c23b7a5ad1fa4fc3e4a36478710275aa49b06a0f6289c63e1c0f0533a"
+    },
+    {
+      "path": "sptc_toolbox/scripts/reproduce_zhang2018_original_farfield.py",
+      "bytes": 22064,
+      "sha256": "348a53abf88b1324d82d447e31502d50a58ebb41a71c3c8013987f524d990322"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\bias_line\\zhang2018_grounded_slab_control_mesh4.mph",
+      "bytes": 8923462,
+      "sha256": "5e85faf8e54e9fd659ea51f2fa39638b8beffb53afb4008bef79a143d4e5e2da"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\bias_line\\zhang2018_unitcell_mesh4_built.mph",
+      "bytes": 1047638,
+      "sha256": "078dad83f713b7f3c45378b409e92f327103620409fe398421da7d35ccc62105"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\bias_line\\zhang2018_unitcell_mesh4_solved.mph",
+      "bytes": 8801256,
+      "sha256": "373ea8dff6ddaac97c7d33c3ac1d840d075e13bbde273d0afe1b1277ff145c6e"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\zhang2018_grounded_slab_control_mesh2.mph",
+      "bytes": 22811156,
+      "sha256": "ad0321213967b147ea19cd0b9c20419837cbf530d91afedc3c8ff6131af7a9c7"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\zhang2018_grounded_slab_control_mesh4.mph",
+      "bytes": 7269865,
+      "sha256": "a00593fe4a25159216f84d93583c63f3c99d22702675a5287790b611629444c4"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\zhang2018_grounded_slab_control_mesh6.mph",
+      "bytes": 5961528,
+      "sha256": "4d75caad3274229d485fd4d4439f4d4602aaad39875cfe2da1b436ac9f0d2677"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\zhang2018_unitcell_mesh2_built.mph",
+      "bytes": 2139011,
+      "sha256": "bc46f0bdf8bbb51f1fdd46c895dc670b5f3b27af04f3017ef0275939401f1c21"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\zhang2018_unitcell_mesh2_solved.mph",
+      "bytes": 20197559,
+      "sha256": "5f4f1d46d83d2058485da8a15839ce8b51e52a99e2181b6ca65b3dfbedf2e63a"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\zhang2018_unitcell_mesh4_built.mph",
+      "bytes": 833296,
+      "sha256": "82f02f74c170dda67bca686a6a98b0cce40adc85b1174318e8207763f27374be"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\zhang2018_unitcell_mesh4_solved.mph",
+      "bytes": 7981804,
+      "sha256": "82259ee7e57ab7962e5e39d6d4dcfcd91167f8be7abba9f943b5d44b5e6c9fb9"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\zhang2018_unitcell_mesh6_built.mph",
+      "bytes": 612859,
+      "sha256": "cdf1e3e041d7d7b0c5d16eda70c07f5d2d1590fe4df5f1bbbd1da0ff64c3a3eb"
+    },
+    {
+      "path": "<local-simulation-directory>\\zhang2018_original\\zhang2018_unitcell_mesh6_solved.mph",
+      "bytes": 6041819,
+      "sha256": "bc74af3954d270d6feb78350516ada380599dfa3c9e2ded66eefb09692000896"
+    }
+  ]
+}

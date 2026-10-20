@@ -1,0 +1,1890 @@
+{
+  "status": "ACTUAL_2D_LEGUME_SLAB_FREQUENCY_DEPENDENT_FLOQUET_CONNECTED",
+  "native_cache": "sptc_toolbox\\results\\pc_slab_pipeline\\native_g2.1.pkl",
+  "native_cache_sha256": "66b9fa8a59da2973687d2e07b6cc152c06f29fa828ee3b80e1b0ce9cece41745",
+  "geometry": "square a=1; slab d=.42 eps11.5; air circle(-.22,0)r=.12 and ellipse(.22,0)rx=.12 ry=.09",
+  "static_native_modes": [
+    2,
+    3
+  ],
+  "kpoint_ka": [
+    0.0,
+    0.0
+  ],
+  "native_omega_a_over_c": [
+    2.2807326859305546,
+    2.290726595289836
+  ],
+  "drive_omega_a_over_c": 4.581453190579672,
+  "modulation": "Absolute epsilon sinusoidal amplitude .3 in both air holes, relative phase pi/2, repeated in every cell",
+  "purpose": "Test whether shared frequency-dependent radiation feedback changes the parametric-growth conclusion",
+  "frozen": [
+    {
+      "amplitude_absolute_epsilon": 0.0,
+      "independent_primitive_period": {
+        "max_multiplier_error": 6.822123187997947e-12,
+        "physical_count": 4,
+        "scope": "Finite frozen-channel model only"
+      },
+      "all_finite_states": 4,
+      "electromagnetic_candidates": [
+        {
+          "index": 12,
+          "frequency": [
+            -0.49781861598745647,
+            -1.0987164709915257e-08
+          ],
+          "material_energy_fraction": 1.0,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 13,
+          "frequency": [
+            0.497818615987457,
+            -1.0987164711406035e-08
+          ],
+          "material_energy_fraction": 1.0,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 14,
+          "frequency": [
+            0.49999999915142085,
+            -2.671561194871297e-05
+          ],
+          "material_energy_fraction": 1.0,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 15,
+          "frequency": [
+            -0.4999999991514209,
+            -2.671561194869261e-05
+          ],
+          "material_energy_fraction": 1.0,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        }
+      ],
+      "minimum_candidate_material_energy_fraction": 1.0,
+      "maximum_candidate_growth_over_drive": -1.0987164709915257e-08,
+      "all_state_maximum_growth_over_drive": -1.0987164709915257e-08,
+      "classification": "Energy participation within this finite realization; does not certify QNM completeness"
+    },
+    {
+      "amplitude_absolute_epsilon": 0.3,
+      "independent_primitive_period": {
+        "max_multiplier_error": 6.53158789299282e-12,
+        "physical_count": 4,
+        "scope": "Finite frozen-channel model only"
+      },
+      "all_finite_states": 4,
+      "electromagnetic_candidates": [
+        {
+          "index": 16,
+          "frequency": [
+            -0.4978190537720973,
+            -1.097569616416726e-08
+          ],
+          "material_energy_fraction": 1.0,
+          "material_coordinate_sideband_weight_outside_window": 1.0018993665690278e-09
+        },
+        {
+          "index": 13,
+          "frequency": [
+            0.49781905377209523,
+            -1.0975696282993884e-08
+          ],
+          "material_energy_fraction": 1.0,
+          "material_coordinate_sideband_weight_outside_window": 1.0018993665579297e-09
+        },
+        {
+          "index": 18,
+          "frequency": [
+            -0.4999999999999999,
+            3.8640644116885916e-05
+          ],
+          "material_energy_fraction": 1.0,
+          "material_coordinate_sideband_weight_outside_window": 2.7788514133956852e-09
+        },
+        {
+          "index": 14,
+          "frequency": [
+            0.5000000000000008,
+            -9.207189095158677e-05
+          ],
+          "material_energy_fraction": 1.0,
+          "material_coordinate_sideband_weight_outside_window": 2.781757588428879e-09
+        }
+      ],
+      "minimum_candidate_material_energy_fraction": 1.0,
+      "maximum_candidate_growth_over_drive": 3.8640644116885916e-05,
+      "all_state_maximum_growth_over_drive": 3.8640644116885916e-05,
+      "classification": "Energy participation within this finite realization; does not certify QNM completeness"
+    }
+  ],
+  "memory": [
+    {
+      "configuration": "base",
+      "amplitude_absolute_epsilon": 0.0,
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "019615986f5712e39d2a76ed330a8b4e3fcb415b0e94abf726be4c8e8e08e492",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "drive_omega_a_over_c": 4.581453190579672,
+        "native_omega_a_over_c": [
+          2.2807326859305546,
+          2.290726595289836
+        ],
+        "positive_window_omega_a_over_c": [
+          0.5714324101525488,
+          4.1143133530983516
+        ],
+        "positive_window_over_drive": [
+          0.12472732698164878,
+          0.8980367542678712
+        ],
+        "quadrature_order_positive": 16,
+        "broadening_over_drive": 0.04,
+        "channel_counts": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native Gamma-point H(-k)^* = H(k) T; Gamma(-nu)=T Gamma(nu)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.8319816403640665,
+                -0.5548031633805983
+              ],
+              [
+                -1.2903526799501855e-14,
+                -1.7190812623043747e-14
+              ]
+            ],
+            [
+              [
+                -1.3054568758117454e-14,
+                -1.756523644727486e-14
+              ],
+              [
+                0.7649874192298698,
+                -0.6440452223408084
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.461135195451766e-14,
+          "unitary_field_residual": 7.460635417205452e-14,
+          "raw_map_unitarity_residual": 2.151070568260827e-15,
+          "polar_map_relative_change": 9.623461548044684e-16,
+          "metric_isometry_residual": 1.8359594507664885e-15,
+          "frequency_intertwining_relative_residual": 9.568829408756011e-17,
+          "principal_overlaps_squared": [
+            1.0,
+            0.9999999999999991
+          ],
+          "field_rank_ratios": [
+            0.9999999986051155,
+            0.9999999986051153
+          ],
+          "field_Gram_condition_numbers": [
+            1.0000000027897689,
+            1.0000000027897693
+          ],
+          "plus_finite_window_Gram_identity_error": 2.2130230506538105e-06,
+          "minus_finite_window_Gram_identity_error": 2.2130230507647786e-06,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 0,
+          "minus_kind": 0,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1e-15,
+          6.283185307179585,
+          6.283185307179586,
+          6.283185307179587,
+          8.885765876316732,
+          12.56637061435917,
+          12.566370614359172,
+          12.566370614359174
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 36,
+        "memory_states": 32,
+        "material_reality_relative_error": 2.5965854825321275e-16
+      },
+      "all_finite_states": 36,
+      "electromagnetic_candidates": [
+        {
+          "index": 120,
+          "frequency": [
+            -0.4978186353751493,
+            -1.1248282934547255e-08
+          ],
+          "material_energy_fraction": 0.9999997187929255,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 122,
+          "frequency": [
+            0.4978186353751493,
+            -1.1248282402936756e-08
+          ],
+          "material_energy_fraction": 0.9999997187929255,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 138,
+          "frequency": [
+            0.5000483641429065,
+            -2.809325208020987e-05
+          ],
+          "material_energy_fraction": 0.9992976686979976,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 137,
+          "frequency": [
+            -0.500048364142905,
+            -2.8093252080127287e-05
+          ],
+          "material_energy_fraction": 0.9992976686979974,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        }
+      ],
+      "minimum_candidate_material_energy_fraction": 0.9992976686979974,
+      "maximum_candidate_growth_over_drive": -1.1248282402936756e-08,
+      "all_state_maximum_growth_over_drive": -1.1248282402936756e-08,
+      "classification": "Energy participation within this finite realization; does not certify QNM completeness",
+      "independent_primitive_period": {
+        "max_multiplier_error": 8.590300604658772e-10,
+        "augmented_state_count": 36,
+        "selected_floquet_state_count": 36,
+        "scope": "All states of the declared finite-window auxiliary model, not full Maxwell continuum"
+      }
+    },
+    {
+      "configuration": "base",
+      "amplitude_absolute_epsilon": 0.3,
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "019615986f5712e39d2a76ed330a8b4e3fcb415b0e94abf726be4c8e8e08e492",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "drive_omega_a_over_c": 4.581453190579672,
+        "native_omega_a_over_c": [
+          2.2807326859305546,
+          2.290726595289836
+        ],
+        "positive_window_omega_a_over_c": [
+          0.5714324101525488,
+          4.1143133530983516
+        ],
+        "positive_window_over_drive": [
+          0.12472732698164878,
+          0.8980367542678712
+        ],
+        "quadrature_order_positive": 16,
+        "broadening_over_drive": 0.04,
+        "channel_counts": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native Gamma-point H(-k)^* = H(k) T; Gamma(-nu)=T Gamma(nu)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.8319816403640665,
+                -0.5548031633805983
+              ],
+              [
+                -1.2903526799501855e-14,
+                -1.7190812623043747e-14
+              ]
+            ],
+            [
+              [
+                -1.3054568758117454e-14,
+                -1.756523644727486e-14
+              ],
+              [
+                0.7649874192298698,
+                -0.6440452223408084
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.461135195451766e-14,
+          "unitary_field_residual": 7.460635417205452e-14,
+          "raw_map_unitarity_residual": 2.151070568260827e-15,
+          "polar_map_relative_change": 9.623461548044684e-16,
+          "metric_isometry_residual": 1.8359594507664885e-15,
+          "frequency_intertwining_relative_residual": 9.568829408756011e-17,
+          "principal_overlaps_squared": [
+            1.0,
+            0.9999999999999991
+          ],
+          "field_rank_ratios": [
+            0.9999999986051155,
+            0.9999999986051153
+          ],
+          "field_Gram_condition_numbers": [
+            1.0000000027897689,
+            1.0000000027897693
+          ],
+          "plus_finite_window_Gram_identity_error": 2.2130230506538105e-06,
+          "minus_finite_window_Gram_identity_error": 2.2130230507647786e-06,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 0,
+          "minus_kind": 0,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1e-15,
+          6.283185307179585,
+          6.283185307179586,
+          6.283185307179587,
+          8.885765876316732,
+          12.56637061435917,
+          12.566370614359172,
+          12.566370614359174
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 36,
+        "memory_states": 32,
+        "material_reality_relative_error": 2.6502821788389715e-16
+      },
+      "all_finite_states": 36,
+      "electromagnetic_candidates": [
+        {
+          "index": 232,
+          "frequency": [
+            -0.4978190732369244,
+            -1.1235418624882482e-08
+          ],
+          "material_energy_fraction": 0.9999997176759353,
+          "material_coordinate_sideband_weight_outside_window": 1.0019584943762795e-09
+        },
+        {
+          "index": 216,
+          "frequency": [
+            0.49781907323692615,
+            -1.1235418730185876e-08
+          ],
+          "material_energy_fraction": 0.9999997176759352,
+          "material_coordinate_sideband_weight_outside_window": 1.0019584943981307e-09
+        },
+        {
+          "index": 235,
+          "frequency": [
+            0.5000000000000028,
+            1.5236382425435328e-05
+          ],
+          "material_energy_fraction": 0.9992980027679721,
+          "material_coordinate_sideband_weight_outside_window": 2.7779951949566958e-09
+        },
+        {
+          "index": 246,
+          "frequency": [
+            -0.4999999999999995,
+            -7.142263332382028e-05
+          ],
+          "material_energy_fraction": 0.9992967844604613,
+          "material_coordinate_sideband_weight_outside_window": 2.7799288984239695e-09
+        }
+      ],
+      "minimum_candidate_material_energy_fraction": 0.9992967844604613,
+      "maximum_candidate_growth_over_drive": 1.5236382425435328e-05,
+      "all_state_maximum_growth_over_drive": 1.5236382425435328e-05,
+      "classification": "Energy participation within this finite realization; does not certify QNM completeness",
+      "independent_primitive_period": {
+        "max_multiplier_error": 8.590166159892393e-10,
+        "augmented_state_count": 36,
+        "selected_floquet_state_count": 36,
+        "scope": "All states of the declared finite-window auxiliary model, not full Maxwell continuum"
+      }
+    },
+    {
+      "configuration": "quadrature",
+      "amplitude_absolute_epsilon": 0.0,
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "019615986f5712e39d2a76ed330a8b4e3fcb415b0e94abf726be4c8e8e08e492",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "drive_omega_a_over_c": 4.581453190579672,
+        "native_omega_a_over_c": [
+          2.2807326859305546,
+          2.290726595289836
+        ],
+        "positive_window_omega_a_over_c": [
+          0.5714324101525488,
+          4.1143133530983516
+        ],
+        "positive_window_over_drive": [
+          0.12472732698164878,
+          0.8980367542678712
+        ],
+        "quadrature_order_positive": 24,
+        "broadening_over_drive": 0.04,
+        "channel_counts": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native Gamma-point H(-k)^* = H(k) T; Gamma(-nu)=T Gamma(nu)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.8319816403640665,
+                -0.5548031633805983
+              ],
+              [
+                -1.2903526799501855e-14,
+                -1.7190812623043747e-14
+              ]
+            ],
+            [
+              [
+                -1.3054568758117454e-14,
+                -1.756523644727486e-14
+              ],
+              [
+                0.7649874192298698,
+                -0.6440452223408084
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.461135195451766e-14,
+          "unitary_field_residual": 7.460635417205452e-14,
+          "raw_map_unitarity_residual": 2.151070568260827e-15,
+          "polar_map_relative_change": 9.623461548044684e-16,
+          "metric_isometry_residual": 1.8359594507664885e-15,
+          "frequency_intertwining_relative_residual": 9.568829408756011e-17,
+          "principal_overlaps_squared": [
+            1.0,
+            0.9999999999999991
+          ],
+          "field_rank_ratios": [
+            0.9999999986051155,
+            0.9999999986051153
+          ],
+          "field_Gram_condition_numbers": [
+            1.0000000027897689,
+            1.0000000027897693
+          ],
+          "plus_finite_window_Gram_identity_error": 2.2130230506538105e-06,
+          "minus_finite_window_Gram_identity_error": 2.2130230507647786e-06,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 0,
+          "minus_kind": 0,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1e-15,
+          6.283185307179585,
+          6.283185307179586,
+          6.283185307179587,
+          8.885765876316732,
+          12.56637061435917,
+          12.566370614359172,
+          12.566370614359174
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 52,
+        "memory_states": 48,
+        "material_reality_relative_error": 2.5965854825321275e-16
+      },
+      "all_finite_states": 52,
+      "electromagnetic_candidates": [
+        {
+          "index": 185,
+          "frequency": [
+            0.49781863485742506,
+            -1.1502981550193814e-08
+          ],
+          "material_energy_fraction": 0.9999997124254622,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 178,
+          "frequency": [
+            -0.4978186348574245,
+            -1.1502981908627801e-08
+          ],
+          "material_energy_fraction": 0.999999712425462,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 192,
+          "frequency": [
+            0.500047184256375,
+            -2.8900348818941323e-05
+          ],
+          "material_energy_fraction": 0.9992774912795275,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 193,
+          "frequency": [
+            -0.5000471842563738,
+            -2.8900348819012992e-05
+          ],
+          "material_energy_fraction": 0.9992774912795274,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        }
+      ],
+      "minimum_candidate_material_energy_fraction": 0.9992774912795274,
+      "maximum_candidate_growth_over_drive": -1.1502981550193814e-08,
+      "all_state_maximum_growth_over_drive": -1.1502981550193814e-08,
+      "classification": "Energy participation within this finite realization; does not certify QNM completeness"
+    },
+    {
+      "configuration": "quadrature",
+      "amplitude_absolute_epsilon": 0.3,
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "019615986f5712e39d2a76ed330a8b4e3fcb415b0e94abf726be4c8e8e08e492",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "drive_omega_a_over_c": 4.581453190579672,
+        "native_omega_a_over_c": [
+          2.2807326859305546,
+          2.290726595289836
+        ],
+        "positive_window_omega_a_over_c": [
+          0.5714324101525488,
+          4.1143133530983516
+        ],
+        "positive_window_over_drive": [
+          0.12472732698164878,
+          0.8980367542678712
+        ],
+        "quadrature_order_positive": 24,
+        "broadening_over_drive": 0.04,
+        "channel_counts": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native Gamma-point H(-k)^* = H(k) T; Gamma(-nu)=T Gamma(nu)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.8319816403640665,
+                -0.5548031633805983
+              ],
+              [
+                -1.2903526799501855e-14,
+                -1.7190812623043747e-14
+              ]
+            ],
+            [
+              [
+                -1.3054568758117454e-14,
+                -1.756523644727486e-14
+              ],
+              [
+                0.7649874192298698,
+                -0.6440452223408084
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.461135195451766e-14,
+          "unitary_field_residual": 7.460635417205452e-14,
+          "raw_map_unitarity_residual": 2.151070568260827e-15,
+          "polar_map_relative_change": 9.623461548044684e-16,
+          "metric_isometry_residual": 1.8359594507664885e-15,
+          "frequency_intertwining_relative_residual": 9.568829408756011e-17,
+          "principal_overlaps_squared": [
+            1.0,
+            0.9999999999999991
+          ],
+          "field_rank_ratios": [
+            0.9999999986051155,
+            0.9999999986051153
+          ],
+          "field_Gram_condition_numbers": [
+            1.0000000027897689,
+            1.0000000027897693
+          ],
+          "plus_finite_window_Gram_identity_error": 2.2130230506538105e-06,
+          "minus_finite_window_Gram_identity_error": 2.2130230507647786e-06,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 0,
+          "minus_kind": 0,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1e-15,
+          6.283185307179585,
+          6.283185307179586,
+          6.283185307179587,
+          8.885765876316732,
+          12.56637061435917,
+          12.566370614359172,
+          12.566370614359174
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 52,
+        "memory_states": 48,
+        "material_reality_relative_error": 2.6502821788389715e-16
+      },
+      "all_finite_states": 52,
+      "electromagnetic_candidates": [
+        {
+          "index": 320,
+          "frequency": [
+            -0.4978190727173702,
+            -1.148950674153745e-08
+          ],
+          "material_energy_fraction": 0.9999997112743761,
+          "material_coordinate_sideband_weight_outside_window": 1.0019563589506081e-09
+        },
+        {
+          "index": 296,
+          "frequency": [
+            0.4978190727173681,
+            -1.1489507215664793e-08
+          ],
+          "material_energy_fraction": 0.9999997112743759,
+          "material_coordinate_sideband_weight_outside_window": 1.0019563589297931e-09
+        },
+        {
+          "index": 300,
+          "frequency": [
+            0.5000000000000028,
+            1.573298786496216e-05
+          ],
+          "material_energy_fraction": 0.9992780490365344,
+          "material_coordinate_sideband_weight_outside_window": 2.778001882768091e-09
+        },
+        {
+          "index": 301,
+          "frequency": [
+            0.5000000000000011,
+            -7.353355104173388e-05
+          ],
+          "material_energy_fraction": 0.9992765845591174,
+          "material_coordinate_sideband_weight_outside_window": 2.7799935691310244e-09
+        }
+      ],
+      "minimum_candidate_material_energy_fraction": 0.9992765845591174,
+      "maximum_candidate_growth_over_drive": 1.573298786496216e-05,
+      "all_state_maximum_growth_over_drive": 1.573298786496216e-05,
+      "classification": "Energy participation within this finite realization; does not certify QNM completeness"
+    },
+    {
+      "configuration": "broadening",
+      "amplitude_absolute_epsilon": 0.0,
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "019615986f5712e39d2a76ed330a8b4e3fcb415b0e94abf726be4c8e8e08e492",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "drive_omega_a_over_c": 4.581453190579672,
+        "native_omega_a_over_c": [
+          2.2807326859305546,
+          2.290726595289836
+        ],
+        "positive_window_omega_a_over_c": [
+          0.5714324101525488,
+          4.1143133530983516
+        ],
+        "positive_window_over_drive": [
+          0.12472732698164878,
+          0.8980367542678712
+        ],
+        "quadrature_order_positive": 24,
+        "broadening_over_drive": 0.025,
+        "channel_counts": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native Gamma-point H(-k)^* = H(k) T; Gamma(-nu)=T Gamma(nu)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.8319816403640665,
+                -0.5548031633805983
+              ],
+              [
+                -1.2903526799501855e-14,
+                -1.7190812623043747e-14
+              ]
+            ],
+            [
+              [
+                -1.3054568758117454e-14,
+                -1.756523644727486e-14
+              ],
+              [
+                0.7649874192298698,
+                -0.6440452223408084
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.461135195451766e-14,
+          "unitary_field_residual": 7.460635417205452e-14,
+          "raw_map_unitarity_residual": 2.151070568260827e-15,
+          "polar_map_relative_change": 9.623461548044684e-16,
+          "metric_isometry_residual": 1.8359594507664885e-15,
+          "frequency_intertwining_relative_residual": 9.568829408756011e-17,
+          "principal_overlaps_squared": [
+            1.0,
+            0.9999999999999991
+          ],
+          "field_rank_ratios": [
+            0.9999999986051155,
+            0.9999999986051153
+          ],
+          "field_Gram_condition_numbers": [
+            1.0000000027897689,
+            1.0000000027897693
+          ],
+          "plus_finite_window_Gram_identity_error": 2.2130230506538105e-06,
+          "minus_finite_window_Gram_identity_error": 2.2130230507647786e-06,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 0,
+          "minus_kind": 0,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1e-15,
+          6.283185307179585,
+          6.283185307179586,
+          6.283185307179587,
+          8.885765876316732,
+          12.56637061435917,
+          12.566370614359172,
+          12.566370614359174
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 52,
+        "memory_states": 48,
+        "material_reality_relative_error": 2.5965854825321275e-16
+      },
+      "all_finite_states": 52,
+      "electromagnetic_candidates": [
+        {
+          "index": 185,
+          "frequency": [
+            -0.49781863618673655,
+            -1.1307191544030486e-08
+          ],
+          "material_energy_fraction": 0.9999995477123428,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 178,
+          "frequency": [
+            0.497818636186734,
+            -1.130719127893452e-08
+          ],
+          "material_energy_fraction": 0.9999995477123425,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 193,
+          "frequency": [
+            0.5000505622707089,
+            -2.7944426976961e-05
+          ],
+          "material_energy_fraction": 0.9988822229209195,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 192,
+          "frequency": [
+            -0.5000505622707114,
+            -2.794442697695006e-05
+          ],
+          "material_energy_fraction": 0.9988822229209192,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        }
+      ],
+      "minimum_candidate_material_energy_fraction": 0.9988822229209192,
+      "maximum_candidate_growth_over_drive": -1.130719127893452e-08,
+      "all_state_maximum_growth_over_drive": -1.130719127893452e-08,
+      "classification": "Energy participation within this finite realization; does not certify QNM completeness"
+    },
+    {
+      "configuration": "broadening",
+      "amplitude_absolute_epsilon": 0.3,
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "019615986f5712e39d2a76ed330a8b4e3fcb415b0e94abf726be4c8e8e08e492",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "drive_omega_a_over_c": 4.581453190579672,
+        "native_omega_a_over_c": [
+          2.2807326859305546,
+          2.290726595289836
+        ],
+        "positive_window_omega_a_over_c": [
+          0.5714324101525488,
+          4.1143133530983516
+        ],
+        "positive_window_over_drive": [
+          0.12472732698164878,
+          0.8980367542678712
+        ],
+        "quadrature_order_positive": 24,
+        "broadening_over_drive": 0.025,
+        "channel_counts": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native Gamma-point H(-k)^* = H(k) T; Gamma(-nu)=T Gamma(nu)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.8319816403640665,
+                -0.5548031633805983
+              ],
+              [
+                -1.2903526799501855e-14,
+                -1.7190812623043747e-14
+              ]
+            ],
+            [
+              [
+                -1.3054568758117454e-14,
+                -1.756523644727486e-14
+              ],
+              [
+                0.7649874192298698,
+                -0.6440452223408084
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.461135195451766e-14,
+          "unitary_field_residual": 7.460635417205452e-14,
+          "raw_map_unitarity_residual": 2.151070568260827e-15,
+          "polar_map_relative_change": 9.623461548044684e-16,
+          "metric_isometry_residual": 1.8359594507664885e-15,
+          "frequency_intertwining_relative_residual": 9.568829408756011e-17,
+          "principal_overlaps_squared": [
+            1.0,
+            0.9999999999999991
+          ],
+          "field_rank_ratios": [
+            0.9999999986051155,
+            0.9999999986051153
+          ],
+          "field_Gram_condition_numbers": [
+            1.0000000027897689,
+            1.0000000027897693
+          ],
+          "plus_finite_window_Gram_identity_error": 2.2130230506538105e-06,
+          "minus_finite_window_Gram_identity_error": 2.2130230507647786e-06,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 0,
+          "minus_kind": 0,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1e-15,
+          6.283185307179585,
+          6.283185307179586,
+          6.283185307179587,
+          8.885765876316732,
+          12.56637061435917,
+          12.566370614359172,
+          12.566370614359174
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 52,
+        "memory_states": 48,
+        "material_reality_relative_error": 2.6502821788389715e-16
+      },
+      "all_finite_states": 52,
+      "electromagnetic_candidates": [
+        {
+          "index": 305,
+          "frequency": [
+            0.497819074052037,
+            -1.12948388584984e-08
+          ],
+          "material_energy_fraction": 0.9999995459398671,
+          "material_coordinate_sideband_weight_outside_window": 1.0019608814384163e-09
+        },
+        {
+          "index": 328,
+          "frequency": [
+            -0.49781907405203263,
+            -1.1294838436100403e-08
+          ],
+          "material_energy_fraction": 0.9999995459398671,
+          "material_coordinate_sideband_weight_outside_window": 1.0019608814393744e-09
+        },
+        {
+          "index": 307,
+          "frequency": [
+            0.5000000000000022,
+            1.2771359073876339e-05
+          ],
+          "material_energy_fraction": 0.9988830841051749,
+          "material_coordinate_sideband_weight_outside_window": 2.7779862782430686e-09
+        },
+        {
+          "index": 347,
+          "frequency": [
+            -0.5000000000000023,
+            -6.865977883250025e-05
+          ],
+          "material_energy_fraction": 0.998879813499128,
+          "material_coordinate_sideband_weight_outside_window": 2.7798032248214692e-09
+        }
+      ],
+      "minimum_candidate_material_energy_fraction": 0.998879813499128,
+      "maximum_candidate_growth_over_drive": 1.2771359073876339e-05,
+      "all_state_maximum_growth_over_drive": 1.2771359073876339e-05,
+      "classification": "Energy participation within this finite realization; does not certify QNM completeness"
+    },
+    {
+      "configuration": "window",
+      "amplitude_absolute_epsilon": 0.0,
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "019615986f5712e39d2a76ed330a8b4e3fcb415b0e94abf726be4c8e8e08e492",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "drive_omega_a_over_c": 4.581453190579672,
+        "native_omega_a_over_c": [
+          2.2807326859305546,
+          2.290726595289836
+        ],
+        "positive_window_omega_a_over_c": [
+          0.34285944609152924,
+          5.028605209342429
+        ],
+        "positive_window_over_drive": [
+          0.07483639618898925,
+          1.0976004774385093
+        ],
+        "quadrature_order_positive": 24,
+        "broadening_over_drive": 0.04,
+        "channel_counts": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native Gamma-point H(-k)^* = H(k) T; Gamma(-nu)=T Gamma(nu)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.8319816403640665,
+                -0.5548031633805983
+              ],
+              [
+                -1.2903526799501855e-14,
+                -1.7190812623043747e-14
+              ]
+            ],
+            [
+              [
+                -1.3054568758117454e-14,
+                -1.756523644727486e-14
+              ],
+              [
+                0.7649874192298698,
+                -0.6440452223408084
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.461135195451766e-14,
+          "unitary_field_residual": 7.460635417205452e-14,
+          "raw_map_unitarity_residual": 2.151070568260827e-15,
+          "polar_map_relative_change": 9.623461548044684e-16,
+          "metric_isometry_residual": 1.8359594507664885e-15,
+          "frequency_intertwining_relative_residual": 9.568829408756011e-17,
+          "principal_overlaps_squared": [
+            1.0,
+            0.9999999999999991
+          ],
+          "field_rank_ratios": [
+            0.9999999986051155,
+            0.9999999986051153
+          ],
+          "field_Gram_condition_numbers": [
+            1.0000000027897689,
+            1.0000000027897693
+          ],
+          "plus_finite_window_Gram_identity_error": 2.2130230506538105e-06,
+          "minus_finite_window_Gram_identity_error": 2.2130230507647786e-06,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 0,
+          "minus_kind": 0,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1e-15,
+          6.283185307179585,
+          6.283185307179586,
+          6.283185307179587,
+          8.885765876316732,
+          12.56637061435917,
+          12.566370614359172,
+          12.566370614359174
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 52,
+        "memory_states": 48,
+        "material_reality_relative_error": 2.5965854825321275e-16
+      },
+      "all_finite_states": 52,
+      "electromagnetic_candidates": [
+        {
+          "index": 179,
+          "frequency": [
+            0.49781864287917066,
+            -1.226320773662428e-08
+          ],
+          "material_energy_fraction": 0.9999996934198031,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 181,
+          "frequency": [
+            -0.497818642879172,
+            -1.2263208083867259e-08
+          ],
+          "material_energy_fraction": 0.999999693419803,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 191,
+          "frequency": [
+            0.5000679208902405,
+            -3.129432503449433e-05
+          ],
+          "material_energy_fraction": 0.9992176418741366,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        },
+        {
+          "index": 190,
+          "frequency": [
+            -0.5000679208902385,
+            -3.1294325034367364e-05
+          ],
+          "material_energy_fraction": 0.9992176418741365,
+          "material_coordinate_sideband_weight_outside_window": 0.0
+        }
+      ],
+      "minimum_candidate_material_energy_fraction": 0.9992176418741365,
+      "maximum_candidate_growth_over_drive": -1.226320773662428e-08,
+      "all_state_maximum_growth_over_drive": -1.226320773662428e-08,
+      "classification": "Energy participation within this finite realization; does not certify QNM completeness"
+    },
+    {
+      "configuration": "window",
+      "amplitude_absolute_epsilon": 0.3,
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "019615986f5712e39d2a76ed330a8b4e3fcb415b0e94abf726be4c8e8e08e492",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "drive_omega_a_over_c": 4.581453190579672,
+        "native_omega_a_over_c": [
+          2.2807326859305546,
+          2.290726595289836
+        ],
+        "positive_window_omega_a_over_c": [
+          0.34285944609152924,
+          5.028605209342429
+        ],
+        "positive_window_over_drive": [
+          0.07483639618898925,
+          1.0976004774385093
+        ],
+        "quadrature_order_positive": 24,
+        "broadening_over_drive": 0.04,
+        "channel_counts": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native Gamma-point H(-k)^* = H(k) T; Gamma(-nu)=T Gamma(nu)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.8319816403640665,
+                -0.5548031633805983
+              ],
+              [
+                -1.2903526799501855e-14,
+                -1.7190812623043747e-14
+              ]
+            ],
+            [
+              [
+                -1.3054568758117454e-14,
+                -1.756523644727486e-14
+              ],
+              [
+                0.7649874192298698,
+                -0.6440452223408084
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.461135195451766e-14,
+          "unitary_field_residual": 7.460635417205452e-14,
+          "raw_map_unitarity_residual": 2.151070568260827e-15,
+          "polar_map_relative_change": 9.623461548044684e-16,
+          "metric_isometry_residual": 1.8359594507664885e-15,
+          "frequency_intertwining_relative_residual": 9.568829408756011e-17,
+          "principal_overlaps_squared": [
+            1.0,
+            0.9999999999999991
+          ],
+          "field_rank_ratios": [
+            0.9999999986051155,
+            0.9999999986051153
+          ],
+          "field_Gram_condition_numbers": [
+            1.0000000027897689,
+            1.0000000027897693
+          ],
+          "plus_finite_window_Gram_identity_error": 2.2130230506538105e-06,
+          "minus_finite_window_Gram_identity_error": 2.2130230507647786e-06,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 0,
+          "minus_kind": 0,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1e-15,
+          6.283185307179585,
+          6.283185307179586,
+          6.283185307179587,
+          8.885765876316732,
+          12.56637061435917,
+          12.566370614359172,
+          12.566370614359174
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 52,
+        "memory_states": 48,
+        "material_reality_relative_error": 2.6502821788389715e-16
+      },
+      "all_finite_states": 52,
+      "electromagnetic_candidates": [
+        {
+          "index": 264,
+          "frequency": [
+            -0.4978190807729054,
+            -1.2248024675476369e-08
+          ],
+          "material_energy_fraction": 0.9999996921556084,
+          "material_coordinate_sideband_weight_outside_window": 1.001979652480188e-09
+        },
+        {
+          "index": 251,
+          "frequency": [
+            0.49781908077290293,
+            -1.224802514297549e-08
+          ],
+          "material_energy_fraction": 0.9999996921556084,
+          "material_coordinate_sideband_weight_outside_window": 1.0019796524977436e-09
+        },
+        {
+          "index": 278,
+          "frequency": [
+            -0.5000204399138258,
+            -3.129423674163914e-05
+          ],
+          "material_energy_fraction": 0.9992173208265602,
+          "material_coordinate_sideband_weight_outside_window": 2.7785514152278914e-09
+        },
+        {
+          "index": 253,
+          "frequency": [
+            0.5000204399138237,
+            -3.129423673810762e-05
+          ],
+          "material_energy_fraction": 0.9992173208265599,
+          "material_coordinate_sideband_weight_outside_window": 2.7785514152305206e-09
+        }
+      ],
+      "minimum_candidate_material_energy_fraction": 0.9992173208265599,
+      "maximum_candidate_growth_over_drive": -1.2248024675476369e-08,
+      "all_state_maximum_growth_over_drive": -1.2248024675476369e-08,
+      "classification": "Energy participation within this finite realization; does not certify QNM completeness"
+    }
+  ],
+  "independent_ode_drive_scan": [
+    {
+      "model": "Frozen",
+      "relative_drive_offset": -0.00015,
+      "drive_omega_a_over_c": 4.5807659726010845,
+      "maximum_growth_over_drive": -1.0974262973324503e-08
+    },
+    {
+      "model": "Frozen",
+      "relative_drive_offset": -9.999999999999999e-05,
+      "drive_omega_a_over_c": 4.580995045260614,
+      "maximum_growth_over_drive": 1.4709555630962616e-05
+    },
+    {
+      "model": "Frozen",
+      "relative_drive_offset": -4.9999999999999996e-05,
+      "drive_omega_a_over_c": 4.581224117920143,
+      "maximum_growth_over_drive": 3.344156239464292e-05
+    },
+    {
+      "model": "Frozen",
+      "relative_drive_offset": 0.0,
+      "drive_omega_a_over_c": 4.581453190579672,
+      "maximum_growth_over_drive": 3.864064401064146e-05
+    },
+    {
+      "model": "Frozen",
+      "relative_drive_offset": 4.9999999999999996e-05,
+      "drive_omega_a_over_c": 4.581682263239201,
+      "maximum_growth_over_drive": 3.3897791436972495e-05
+    },
+    {
+      "model": "Frozen",
+      "relative_drive_offset": 0.00010000000000000002,
+      "drive_omega_a_over_c": 4.58191133589873,
+      "maximum_growth_over_drive": 1.6025442168415773e-05
+    },
+    {
+      "model": "Frozen",
+      "relative_drive_offset": 0.00015,
+      "drive_omega_a_over_c": 4.582140408558259,
+      "maximum_growth_over_drive": -1.0976640226075854e-08
+    },
+    {
+      "model": "Frozen",
+      "relative_drive_offset": 0.00019999999999999996,
+      "drive_omega_a_over_c": 4.582369481217787,
+      "maximum_growth_over_drive": -1.0976797910919937e-08
+    },
+    {
+      "model": "Frozen",
+      "relative_drive_offset": 0.00025,
+      "drive_omega_a_over_c": 4.582598553877317,
+      "maximum_growth_over_drive": -1.0976903116608157e-08
+    },
+    {
+      "model": "Frozen",
+      "relative_drive_offset": 0.0003,
+      "drive_omega_a_over_c": 4.5828276265368455,
+      "maximum_growth_over_drive": -1.0976960879019105e-08
+    },
+    {
+      "model": "base",
+      "relative_drive_offset": -0.00015,
+      "drive_omega_a_over_c": 4.5807659726010845,
+      "maximum_growth_over_drive": -1.1233558878024736e-08
+    },
+    {
+      "model": "base",
+      "relative_drive_offset": -9.999999999999999e-05,
+      "drive_omega_a_over_c": 4.580995045260614,
+      "maximum_growth_over_drive": -1.1234312104105466e-08
+    },
+    {
+      "model": "base",
+      "relative_drive_offset": -4.9999999999999996e-05,
+      "drive_omega_a_over_c": 4.581224117920143,
+      "maximum_growth_over_drive": -1.123495676724541e-08
+    },
+    {
+      "model": "base",
+      "relative_drive_offset": 0.0,
+      "drive_omega_a_over_c": 4.581453190579672,
+      "maximum_growth_over_drive": 1.5236383377656445e-05
+    },
+    {
+      "model": "base",
+      "relative_drive_offset": 4.9999999999999996e-05,
+      "drive_omega_a_over_c": 4.581682263239201,
+      "maximum_growth_over_drive": 3.272012346590049e-05
+    },
+    {
+      "model": "base",
+      "relative_drive_offset": 0.00010000000000000002,
+      "drive_omega_a_over_c": 4.58191133589873,
+      "maximum_growth_over_drive": 3.724416332224983e-05
+    },
+    {
+      "model": "base",
+      "relative_drive_offset": 0.00015,
+      "drive_omega_a_over_c": 4.582140408558259,
+      "maximum_growth_over_drive": 3.1822381634463677e-05
+    },
+    {
+      "model": "base",
+      "relative_drive_offset": 0.00019999999999999996,
+      "drive_omega_a_over_c": 4.582369481217787,
+      "maximum_growth_over_drive": 1.2664941775506819e-05
+    },
+    {
+      "model": "base",
+      "relative_drive_offset": 0.00025,
+      "drive_omega_a_over_c": 4.582598553877317,
+      "maximum_growth_over_drive": -1.123705773579782e-08
+    },
+    {
+      "model": "base",
+      "relative_drive_offset": 0.0003,
+      "drive_omega_a_over_c": 4.5828276265368455,
+      "maximum_growth_over_drive": -1.1237181141328172e-08
+    },
+    {
+      "model": "window",
+      "relative_drive_offset": -0.00015,
+      "drive_omega_a_over_c": 4.5807659726010845,
+      "maximum_growth_over_drive": -1.2245660485872548e-08
+    },
+    {
+      "model": "window",
+      "relative_drive_offset": -9.999999999999999e-05,
+      "drive_omega_a_over_c": 4.580995045260614,
+      "maximum_growth_over_drive": -1.2246577581215765e-08
+    },
+    {
+      "model": "window",
+      "relative_drive_offset": -4.9999999999999996e-05,
+      "drive_omega_a_over_c": 4.581224117920143,
+      "maximum_growth_over_drive": -1.2247366694562707e-08
+    },
+    {
+      "model": "window",
+      "relative_drive_offset": 0.0,
+      "drive_omega_a_over_c": 4.581453190579672,
+      "maximum_growth_over_drive": -1.2248043092577017e-08
+    },
+    {
+      "model": "window",
+      "relative_drive_offset": 4.9999999999999996e-05,
+      "drive_omega_a_over_c": 4.581682263239201,
+      "maximum_growth_over_drive": 1.7500967025271106e-05
+    },
+    {
+      "model": "window",
+      "relative_drive_offset": 0.00010000000000000002,
+      "drive_omega_a_over_c": 4.58191133589873,
+      "maximum_growth_over_drive": 3.139152557253388e-05
+    },
+    {
+      "model": "window",
+      "relative_drive_offset": 0.00015,
+      "drive_omega_a_over_c": 4.582140408558259,
+      "maximum_growth_over_drive": 3.3729416486627536e-05
+    },
+    {
+      "model": "window",
+      "relative_drive_offset": 0.00019999999999999996,
+      "drive_omega_a_over_c": 4.582369481217787,
+      "maximum_growth_over_drive": 2.5950576933018267e-05
+    },
+    {
+      "model": "window",
+      "relative_drive_offset": 0.00025,
+      "drive_omega_a_over_c": 4.582598553877317,
+      "maximum_growth_over_drive": 1.5137221027591064e-06
+    },
+    {
+      "model": "window",
+      "relative_drive_offset": 0.0003,
+      "drive_omega_a_over_c": 4.5828276265368455,
+      "maximum_growth_over_drive": -1.2250233823470718e-08
+    }
+  ],
+  "harmonic3_to4_growth_change_over_drive": 5.912832072921259e-16,
+  "limitations": [
+    "Legume gmax2.1 finite spatial basis at Gamma; no full-space convergence claimed",
+    "Finite spectral window, zero unspecified tails and eta define a causal approximation",
+    "Static bath coupling is not modulated with the permittivity; no actual far-field scattering ports",
+    "Reactive shift is not fitted away; window/eta sensitivity limits precise threshold claims",
+    "Tiny material sidebands outside the sampled window are recorded; no assertion the true density vanishes there"
+  ],
+  "elapsed_seconds": 42.599815300000046
+}

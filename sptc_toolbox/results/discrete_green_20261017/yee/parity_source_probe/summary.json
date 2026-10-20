@@ -1,0 +1,60 @@
+{
+  "status": "NATIVE_YEE_SOURCE_AND_WORK_DIAGNOSTIC",
+  "frequency": 0.398,
+  "resolution": 24,
+  "dt": 0.020833333333333332,
+  "omega": 2.5007077522574757,
+  "omega_discrete": 2.500424951629019,
+  "first_step_uniform_control": {
+    "maximum_interior_error": 2.220446049250313e-16,
+    "get_source_last_slice_relative_difference": 0.1884051108863171,
+    "extraction_seconds": 0.4051779679999754,
+    "formula": "D(first step)/(-dt*src.current(dt/2,dt)); initial H=0 and D=0, no PML in sampled support"
+  },
+  "source_extractions": [
+    {
+      "template": 0,
+      "initial_current_real_imag": [
+        0.0024792718746726606,
+        -3.0344434594885977e-05
+      ],
+      "get_source_last_slice_relative_difference": 0.24542869014031413,
+      "extraction_seconds": 1.4962528279999106
+    },
+    {
+      "template": 1,
+      "initial_current_real_imag": [
+        0.0024792718746726606,
+        -3.0344434594885977e-05
+      ],
+      "get_source_last_slice_relative_difference": 0.09974379501724527,
+      "extraction_seconds": 1.5139708200000541
+    },
+    {
+      "template": 2,
+      "initial_current_real_imag": [
+        0.0024792718746726606,
+        -3.0344434594885977e-05
+      ],
+      "get_source_last_slice_relative_difference": 0.221515842131445,
+      "extraction_seconds": 1.4995648589999746
+    },
+    {
+      "template": 3,
+      "initial_current_real_imag": [
+        0.0024792718746726606,
+        -3.0344434594885977e-05
+      ],
+      "get_source_last_slice_relative_difference": 0.13065267001556358,
+      "extraction_seconds": 1.4382462070000201
+    }
+  ],
+  "basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+  "source_coordinate_method": "Component offset independently established with initialized linear source probes; get_field_point at native grid positions",
+  "source_lift_method": "First zero-field Maxwell update recovers sum of all source-volume contributions, unlike get_source slice overwrite",
+  "projection": "Native E paired with measured total current lift using dv once per unique periodic Yee site",
+  "source_frequency_factor": "src.swigobj.current(t,dt)*exp(i omega t), directly evaluated; no response amplitude fit",
+  "material_derivative_scope": "Same old masked interpolated current fixture; not derivative of Meep subpixel epsilon inverse tensor",
+  "rows": [],
+  "completed": true
+}

@@ -1,0 +1,17 @@
+# Reproduction protocol
+
+Run `scripts/meep_smooth_reference.py` with the local WSL Meep Python. The current defaults are native subpixel averaging and **no Y mirror**; Z parity is selected by `--sector 1` or `--sector -1`. Existing completed outputs are protected by their recorded identities. Use a fresh output directory for a changed experiment.
+
+The physical inputs are a=1, epsilon=11.5, slab thickness .42, circular hole at (-.22,0) with radius .12, elliptical hole at (.22,0) with semi-axes .12/.09, carrier .398, side frequencies .388/.408, and ports at z=±.7. The empty claddings extend to the PML's inner edge z=±1.75. No physical frequency or geometry is adjusted between grids.
+
+1. `pulse --resolution R --output NEW/pulse_R --window 250` extracts two post-source windows and two probe poles. Historical numerical Y+Z controls used `--y-mirror --window 400`; staircase controls also used `--no-averaging`. They are preserved separately.
+2. `grid --resolution R --output NEW/rR` constructs component-native points for the .75-high source/field halo and measures the exact source-volume lift using the first zero-field Maxwell update.
+3. `fdtd --resolution R --output NEW/rR --sector 1 --label carrier_even_fdtd --checkpoints 1500 2000` exports native E and D at the fixed carrier. Repeat with sector -1 and label `carrier_odd_fdtd`. Each field is normalized by the measured incoming parity-channel complex amplitude, retaining the same reference-plane phase convention.
+4. `meep_tensor_material_probe.py --resolution R --no-y-mirror --output NEW/material_R` exports the native full inverse material operator and its bulk-epsilon derivative. Use its `--carrier .../response_t2000.npz --output NEW/material_R --label carrier_even_t2000` action to verify E=KD and generate the polarization. Repeat for the odd sector. These polarization arrays are per unit bulk epsilon and do not contain the modulation Fourier amplitude.
+5. `fdtd --resolution R --output NEW/rR --sector 1 --frequency .388 --checkpoints 1200 1500 --label born_minus_even_fdtd --polarization NEW/material_R/carrier_even_t2000_polarization.npz` supplies the exact native material current. Repeat for frequency .408 and label `born_plus_even_fdtd`. The even-sector runs use independent time windows because the CW linear solver did not reach its requested residual in the bounded trial.
+6. Odd-sector sideband controls use `response` with sector -1, the corresponding odd polarization, frequencies .388/.408, labels `born_minus_odd`/`born_plus_odd`, tolerance 1e-6, L=10, maxiters=500. Their individual solver status and work balance are retained.
+7. Combine the raw parity outputs as `y_bottom=.005*(y_even+y_odd)/sqrt(2)`. The factor .005 is the Fourier amplitude of the physical cosine modulation with amplitude .01, applied once. `static/analyze.py` performs the combination, saves all four complex outgoing channel amplitudes, and reports the grid and time-window sensitivities.
+
+In the completed experiment, r40 odd source sampling at t=1500 was selected before its independent t=2000 control finished. The source difference is recorded explicitly; the t=2000 array does not silently replace the actual source. This input-polarization sensitivity is not asserted to be a rigorous bound on scattering error.
+
+The two failed Y+Z-mirror CW attempts and the nonsteady r24 Y+Z time-domain data are historical numerical controls, not inputs to the new reference. No failed status is converted into a successful convergence certificate.

@@ -1,0 +1,157 @@
+{
+  "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+  "q": 0.69,
+  "loss_ratio": 0.0,
+  "resolution": 16,
+  "courant": 0.25,
+  "material": {
+    "epsilon_inf": 1.0,
+    "N0": 1.21e+29,
+    "resonance_frequency_THz": 600.0,
+    "resonance_cyclic_fa_over_c": 1.2644747720771548,
+    "plasma_angular_wa_over_c": 41.35643878620493,
+    "sigma": 27.096063050128183,
+    "gamma_cyclic_fa_over_c": 0.0,
+    "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+  },
+  "windows": [
+    [
+      [
+        {
+          "frequency": 0.2646638144226546,
+          "decay": 3.7655548317528227e-06,
+          "error": 1.010111741150084e-10,
+          "amplitude": [
+            -130.5316115991672,
+            -520.4970778150904
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2646638149462503,
+          "decay": 3.7647690965061175e-06,
+          "error": 1.0389423458765123e-10,
+          "amplitude": [
+            -73.58293522173393,
+            -317.1040876639487
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.264663813178504,
+          "decay": 3.7655814364467866e-06,
+          "error": 1.7321067297940895e-10,
+          "amplitude": [
+            -26.190087603359625,
+            -99.73722492913599
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "frequency": 0.2646638141988693,
+          "decay": 3.7683849985209615e-06,
+          "error": 7.22373835975626e-11,
+          "amplitude": [
+            18.54458934132946,
+            537.5661877514838
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2646638135848673,
+          "decay": 3.767767646583199e-06,
+          "error": 3.155976374713014e-11,
+          "amplitude": [
+            5.475127626192744,
+            326.2545160930776
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2646638153172202,
+          "decay": 3.7636820788757013e-06,
+          "error": 1.7391633577351747e-10,
+          "amplitude": [
+            4.707707357463385,
+            103.25566329912859
+          ]
+        }
+      ]
+    ]
+  ],
+  "meep_version": "1.35.0",
+  "source_frequency": 0.26516,
+  "source_width": 0.04,
+  "static_window": 100.0,
+  "modulation": 0.01,
+  "drive": 0.530319751,
+  "periods": 500.0,
+  "native_adapter": {
+    "array_count": 3,
+    "state_count": 2,
+    "realnum_bytes": 8,
+    "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+  },
+  "instantaneous_field_change_on_sigma_update": {
+    "Dx": 0.0,
+    "Dy": 0.0,
+    "Dz": 0.0,
+    "Bx": 0.0,
+    "By": 0.0,
+    "Bz": 0.0,
+    "Ex": 0.0,
+    "Ey": 0.0,
+    "Ez": 0.0
+  },
+  "growth_fits": [
+    {
+      "fraction_window": [
+        0.35,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": 0.0022260008999691414,
+      "growth_cyclic_fa_over_c": 0.00035427904655709654,
+      "log_amplitude_fit_rms": 0.014191317958741238,
+      "cycles": [
+        175.5026925965625,
+        474.50359720725
+      ]
+    },
+    {
+      "fraction_window": [
+        0.35,
+        0.65
+      ],
+      "amplitude_growth_per_meep_time": 0.0023930578242298,
+      "growth_cyclic_fa_over_c": 0.00038086698183090867,
+      "log_amplitude_fit_rms": 0.00752985292332639,
+      "cycles": [
+        175.5026925965625,
+        324.48939764312496
+      ]
+    },
+    {
+      "fraction_window": [
+        0.65,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": 0.0020860043784800076,
+      "growth_cyclic_fa_over_c": 0.0003319979081464301,
+      "log_amplitude_fit_rms": 0.005344927460321265,
+      "cycles": [
+        325.48374717624995,
+        474.50359720725
+      ]
+    }
+  ],
+  "timing": "Sigma(t+dt) is updated before native step; polarization state is retained",
+  "constitutive_equation": "Pddot+gamma*Pdot+wr^2*P=wp0^2*[1+m*cos(Omega*t+phase)]*E; D=E+P",
+  "elapsed_seconds": 21.6093676550081
+}

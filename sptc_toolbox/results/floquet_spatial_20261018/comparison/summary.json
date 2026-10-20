@@ -1,0 +1,749 @@
+{
+  "status": "ACTUAL_FINITE_FLOQUET_GRID_COMPARISON",
+  "completed": true,
+  "cases": [
+    {
+      "label": "r32_selected",
+      "directory": "sptc_toolbox\\results\\full_floquet_20261017\\analysis",
+      "resolution": 32,
+      "rank": 17,
+      "geometry_id": "square-circle-ellipse-eps11.5-thickness.42",
+      "cosine_amplitude": 0.01,
+      "carrier_frequency": 0.398,
+      "drive_frequency": 0.01,
+      "source_sha256": {
+        "sptc_toolbox\\results\\full_floquet_20261017\\analysis\\floquet_M2.npz": "2b838f0311669768f2f38572ef7ba27745ab44ec99a6d4e9f59588468a2c618d",
+        "sptc_toolbox\\results\\full_floquet_20261017\\analysis\\static_green_dataset.npz": "e9988fb11ea7dc0d5f25f583bc378335591546cf1786e43cc5fc0b335a6b44dd",
+        "sptc_toolbox\\results\\full_floquet_20261017\\analysis\\material_fourier\\summary.json": "3fc523f71dacdcf75a9c9fcd4b736daaba249e842e75bddc83e14928dc5d55fa"
+      },
+      "interpolation_periodic_plane_wave_relative_errors": [
+        0.00720745648998798,
+        0.00720745648998798,
+        0.007207456489988042
+      ],
+      "material_identity": {
+        "amplitude": 0.01,
+        "epsilon_base": 11.5,
+        "phase_count": 16,
+        "resolution": 32,
+        "sector": 1,
+        "y_mirror": false,
+        "eps_averaging": true,
+        "volume_z": 0.75,
+        "geometry": "a1,h.42,circle(-.22,0)r.12,ellipse(.22,0)rx.12ry.09",
+        "material_operator_id": "492bc3d7af1c1e77c05970f646e2e07b2308e199f0368d17ff9f88f5a2dca741",
+        "base_sha256": "f4d3159417a0958b0557ca5f27ba0b54da7fa874f054f2665f59ce4050c49335",
+        "basis_sha256": "e38f74eae93e80403f33c62278f98b64f93ec4a78cacd86c84179447d864a34e"
+      },
+      "carrier_sideband_powers": [
+        1.7977432904649611e-09,
+        0.00011912473913141549,
+        0.9997590335295463,
+        0.00012175359130159654,
+        2.2305780446131957e-09
+      ],
+      "native_time_step": 0.015625,
+      "tail_selections": {
+        "incident_even": {
+          "path": "sampling_tail\\uniform_even\\incident_even\\response_t2000.npz",
+          "validation_file": "sampling_tail\\uniform_even\\incident_even\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Held-out static time windows",
+            "Native discrete Maxwell residual",
+            "Independent monochromatic time-domain controls",
+            "Bounded frequency-domain CW iteration"
+          ],
+          "acceptance_scope": null,
+          "raw_checkpoint": 2000
+        },
+        "template_q0": {
+          "path": "sampling_tail\\uniform_even\\template_q0\\response_t2000.npz",
+          "validation_file": "sampling_tail\\uniform_even\\template_q0\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Held-out static time windows",
+            "Native discrete Maxwell residual",
+            "Independent monochromatic time-domain controls",
+            "Bounded frequency-domain CW iteration"
+          ],
+          "acceptance_scope": null,
+          "raw_checkpoint": 2000
+        },
+        "template_q2": {
+          "path": "sampling_tail\\uniform_even\\template_q2\\response_t2000.npz",
+          "validation_file": "sampling_tail\\uniform_even\\template_q2\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Held-out static time windows",
+            "Native discrete Maxwell residual",
+            "Independent monochromatic time-domain controls",
+            "Bounded frequency-domain CW iteration"
+          ],
+          "acceptance_scope": null,
+          "raw_checkpoint": 2000
+        },
+        "template_q4": {
+          "path": "sampling_tail\\uniform_even\\template_q4\\response_t2000.npz",
+          "validation_file": "sampling_tail\\uniform_even\\template_q4\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Held-out static time windows",
+            "Native discrete Maxwell residual",
+            "Independent monochromatic time-domain controls",
+            "Bounded frequency-domain CW iteration"
+          ],
+          "acceptance_scope": null,
+          "raw_checkpoint": 2000
+        },
+        "template_q6": {
+          "path": "sampling_tail\\uniform_even\\template_q6\\response_t2000.npz",
+          "validation_file": "sampling_tail\\uniform_even\\template_q6\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Held-out static time windows",
+            "Native discrete Maxwell residual",
+            "Independent monochromatic time-domain controls",
+            "Bounded frequency-domain CW iteration"
+          ],
+          "acceptance_scope": null,
+          "raw_checkpoint": 2000
+        },
+        "template_q8": {
+          "path": "sampling_tail\\uniform_even\\template_q8\\response_t2000.npz",
+          "validation_file": "sampling_tail\\uniform_even\\template_q8\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Held-out static time windows",
+            "Native discrete Maxwell residual",
+            "Independent monochromatic time-domain controls",
+            "Bounded frequency-domain CW iteration"
+          ],
+          "acceptance_scope": null,
+          "raw_checkpoint": 2000
+        },
+        "extended_q9": {
+          "path": "sampling_tail\\uniform_even\\extended_q9\\response_t2000.npz",
+          "validation_file": "sampling_tail\\uniform_even\\extended_q9\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Held-out static time windows",
+            "Native discrete Maxwell residual",
+            "Independent monochromatic time-domain controls",
+            "Bounded frequency-domain CW iteration"
+          ],
+          "acceptance_scope": null,
+          "raw_checkpoint": 2000
+        },
+        "extended_q11": {
+          "path": "sampling_tail\\uniform_even\\extended_q11\\response_t2000.npz",
+          "validation_file": "sampling_tail\\uniform_even\\extended_q11\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Held-out static time windows",
+            "Native discrete Maxwell residual",
+            "Independent monochromatic time-domain controls",
+            "Bounded frequency-domain CW iteration"
+          ],
+          "acceptance_scope": null,
+          "raw_checkpoint": 2000
+        },
+        "extended_q13": {
+          "path": "sampling_tail\\uniform_even\\extended_q13\\response_t2000.npz",
+          "validation_file": "sampling_tail\\uniform_even\\extended_q13\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Held-out static time windows",
+            "Native discrete Maxwell residual",
+            "Independent monochromatic time-domain controls",
+            "Bounded frequency-domain CW iteration"
+          ],
+          "acceptance_scope": null,
+          "raw_checkpoint": 2000
+        },
+        "extended_q15": {
+          "path": "sampling_tail\\uniform_even\\extended_q15\\response_t2000.npz",
+          "validation_file": "sampling_tail\\uniform_even\\extended_q15\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Held-out static time windows",
+            "Native discrete Maxwell residual",
+            "Independent monochromatic time-domain controls",
+            "Bounded frequency-domain CW iteration"
+          ],
+          "acceptance_scope": null,
+          "raw_checkpoint": 2000
+        }
+      },
+      "checkpoint": 2000
+    },
+    {
+      "label": "r40_selected",
+      "directory": "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\analysis",
+      "resolution": 40,
+      "rank": 17,
+      "geometry_id": "square-circle-ellipse-eps11.5-thickness.42",
+      "cosine_amplitude": 0.01,
+      "carrier_frequency": 0.398,
+      "drive_frequency": 0.01,
+      "source_sha256": {
+        "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\analysis\\floquet_M2.npz": "0d254dac05271a0e5ce609131697d73a66cfd1f3edae159b99720635293f2f3b",
+        "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\analysis\\static_green_dataset.npz": "86d2b751b9cfa3d72c0ea486057cfbd50fe4095e50b4191dec455babc141837f",
+        "sptc_toolbox\\results\\floquet_spatial_20261018\\r40\\analysis\\material_fourier\\summary.json": "b69b075c4609eb12856c61365878eac6d83f7afc4ae189aa23e9d9f2318b8be8"
+      },
+      "interpolation_periodic_plane_wave_relative_errors": [
+        0.004320888283770746,
+        0.004320888283770747,
+        0.004320888283770747
+      ],
+      "material_identity": {
+        "amplitude": 0.01,
+        "epsilon_base": 11.5,
+        "phase_count": 16,
+        "resolution": 40,
+        "sector": 1,
+        "y_mirror": false,
+        "eps_averaging": true,
+        "volume_z": 0.75,
+        "geometry": "a1,h.42,circle(-.22,0)r.12,ellipse(.22,0)rx.12ry.09",
+        "material_operator_id": "c64ae3d47057a0a13a69d2824a9c8ad7cf52f4cda43ef26bdb6ddce7d4a9c41f",
+        "base_sha256": "453cb8df590a670a3978d2c4a5a2ca7b629d6269b8c29bb2999ce3320c7005ab",
+        "basis_sha256": "d482460792ec43ad4a750048dd4e6ad4e7ae01e93f89049bc43e43ff47d6cf27"
+      },
+      "carrier_sideband_powers": [
+        1.6742475117916314e-09,
+        0.00010933111023136211,
+        0.9997826596345735,
+        0.00010786087786931718,
+        1.946441753695053e-09
+      ],
+      "native_time_step": 0.0125,
+      "tail_selections": {
+        "incident_even": {
+          "path": "tail_diagnostics\\rank2\\incident_even\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\incident_even\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q0": {
+          "path": "tail_diagnostics\\rank2\\template_q0\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q0\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q2": {
+          "path": "tail_diagnostics\\rank2\\template_q2\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q2\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q4": {
+          "path": "tail_diagnostics\\rank2\\template_q4\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q4\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q6": {
+          "path": "tail_diagnostics\\rank2\\template_q6\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q6\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "template_q8": {
+          "path": "tail_diagnostics\\rank2\\template_q8\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\template_q8\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q9": {
+          "path": "tail_diagnostics\\rank2\\extended_q9\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q9\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q11": {
+          "path": "tail_diagnostics\\rank2\\extended_q11\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q11\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q13": {
+          "path": "tail_diagnostics\\rank2\\extended_q13\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q13\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        },
+        "extended_q15": {
+          "path": "tail_diagnostics\\rank2\\extended_q15\\response_t2000.npz",
+          "validation_file": "tail_diagnostics\\rank2\\extended_q15\\summary.json",
+          "independent_validated": false,
+          "window_validated": true,
+          "accepted_for_finite_forced_response": true,
+          "selected_for_scattering": true,
+          "heldout_time_validated": true,
+          "maxwell_equation_validated": true,
+          "continuous_wave_solver_validated": false,
+          "cw_reference_valid": false,
+          "validation_methods": [
+            "Same-grid pole frequency law",
+            "Held-out fourth time window",
+            "Native interior Maxwell and constitutive residual",
+            "Source work and port power"
+          ],
+          "acceptance_scope": "This r40 finite five-frequency weak-forced dataset only. Shared even-sector completion; individual failed model checks remain in tail_validation.json. No CW/QNM/internal-pole certificate.",
+          "raw_checkpoint": 2000
+        }
+      },
+      "checkpoint": 2000
+    }
+  ],
+  "pairs": [
+    {
+      "previous": "r32_selected",
+      "current": "r40_selected",
+      "previous_resolution": 32,
+      "current_resolution": 40,
+      "comparison_kind": "NATIVE_YEE_GRID_REFINEMENT",
+      "carrier_sidebands": [
+        {
+          "harmonic": -2,
+          "previous_power": 1.7977432904649613e-09,
+          "current_power": 1.6742475117916312e-09,
+          "power_absolute_change": 1.2349577867333016e-10,
+          "power_relative_change": 0.0737619604052306,
+          "complex_output_absolute_difference": 5.0753587619425685e-06,
+          "complex_output_relative_difference": 0.12403861707018565,
+          "dominant_channel": "top x",
+          "dominant_channel_phase_change_degrees": 6.404991837423243,
+          "previous_port_powers": [
+            8.199054726795067e-10,
+            9.778377530873734e-10,
+            3.165602716280792e-17,
+            3.304205382771475e-17
+          ],
+          "current_port_powers": [
+            7.591423701672897e-10,
+            9.151051362789368e-10,
+            2.726663900246561e-18,
+            2.6187408795477177e-18
+          ]
+        },
+        {
+          "harmonic": -1,
+          "previous_power": 0.00011912473913141549,
+          "current_power": 0.00010933111023136207,
+          "power_absolute_change": 9.793628900053419e-06,
+          "power_relative_change": 0.08957769549150775,
+          "complex_output_absolute_difference": 0.0013244842111790123,
+          "complex_output_relative_difference": 0.12667033129645713,
+          "dominant_channel": "top x",
+          "dominant_channel_phase_change_degrees": 6.052963242365212,
+          "previous_port_powers": [
+            5.5680366723201084e-05,
+            6.344436851014223e-05,
+            3.0149342251402e-12,
+            8.831379588145245e-13
+          ],
+          "current_port_powers": [
+            5.290179471510121e-05,
+            5.6429315210450357e-05,
+            2.5597547634607504e-13,
+            4.983506526238653e-14
+          ]
+        },
+        {
+          "harmonic": 0,
+          "previous_power": 0.9997590335295461,
+          "current_power": 0.9997826596345736,
+          "power_absolute_change": 2.3626105027485522e-05,
+          "power_relative_change": 2.363124105005082e-05,
+          "complex_output_absolute_difference": 0.16707782400684315,
+          "complex_output_relative_difference": 0.16709598334462675,
+          "dominant_channel": "bottom x",
+          "dominant_channel_phase_change_degrees": 6.751703241660962,
+          "previous_port_powers": [
+            0.9990213699475063,
+            0.0007375740974724532,
+            6.3299191585414e-08,
+            2.618537598710794e-08
+          ],
+          "current_port_powers": [
+            0.9913681358447203,
+            0.008414515827593817,
+            5.087036478044532e-09,
+            2.8752229536625275e-09
+          ]
+        },
+        {
+          "harmonic": 1,
+          "previous_power": 0.00012175359130159654,
+          "current_power": 0.00010786087786931721,
+          "power_absolute_change": 1.3892713432279326e-05,
+          "power_relative_change": 0.12880215428166225,
+          "complex_output_absolute_difference": 0.001423101042405304,
+          "complex_output_relative_difference": 0.13702624649787842,
+          "dominant_channel": "bottom x",
+          "dominant_channel_phase_change_degrees": 5.855572422180064,
+          "previous_port_powers": [
+            7.066028891827813e-05,
+            5.109329957997178e-05,
+            1.0982296755166487e-12,
+            1.7051169438757797e-12
+          ],
+          "current_port_powers": [
+            6.147739068482148e-05,
+            4.6383486999290835e-05,
+            6.098791372470367e-14,
+            1.2421695426687753e-13
+          ]
+        },
+        {
+          "harmonic": 2,
+          "previous_power": 2.2305780446131953e-09,
+          "current_power": 1.946441753695053e-09,
+          "power_absolute_change": 2.841362909181424e-10,
+          "power_relative_change": 0.14597728926578388,
+          "complex_output_absolute_difference": 6.288976826090332e-06,
+          "complex_output_relative_difference": 0.14254739604140157,
+          "dominant_channel": "top x",
+          "dominant_channel_phase_change_degrees": 6.882671271337134,
+          "previous_port_powers": [
+            1.0821738628292783e-09,
+            1.1484041420080843e-09,
+            1.1879419194775924e-17,
+            2.7896413781838185e-17
+          ],
+          "current_port_powers": [
+            9.335975909161662e-10,
+            1.0128441599021912e-09,
+            7.769262425530092e-19,
+            2.099769534072241e-18
+          ]
+        }
+      ],
+      "field_rows": [
+        {
+          "region": "air_holes",
+          "harmonic": -2,
+          "sample_count": 48,
+          "complex_vector_field_relative_difference": 0.12058223913836989,
+          "rms_absolute_field_difference": 6.911240298004495e-05,
+          "current_rms_field": 0.00057315574394615,
+          "normalized_overlap_magnitude": 0.999943239984268
+        },
+        {
+          "region": "air_holes",
+          "harmonic": -1,
+          "sample_count": 48,
+          "complex_vector_field_relative_difference": 0.1227102596208942,
+          "rms_absolute_field_difference": 0.018013942754563007,
+          "current_rms_field": 0.14680062457871065,
+          "normalized_overlap_magnitude": 0.999951820330585
+        },
+        {
+          "region": "air_holes",
+          "harmonic": 0,
+          "sample_count": 48,
+          "complex_vector_field_relative_difference": 0.1257164949539834,
+          "rms_absolute_field_difference": 2.258693058518172,
+          "current_rms_field": 17.966560866534916,
+          "normalized_overlap_magnitude": 0.9999580657564323
+        },
+        {
+          "region": "air_holes",
+          "harmonic": 1,
+          "sample_count": 48,
+          "complex_vector_field_relative_difference": 0.13268059989000056,
+          "rms_absolute_field_difference": 0.01933862001550488,
+          "current_rms_field": 0.14575318495347206,
+          "normalized_overlap_magnitude": 0.9999648698737192
+        },
+        {
+          "region": "air_holes",
+          "harmonic": 2,
+          "sample_count": 48,
+          "complex_vector_field_relative_difference": 0.135763751193959,
+          "rms_absolute_field_difference": 8.591038290803293e-05,
+          "current_rms_field": 0.0006327932320115184,
+          "normalized_overlap_magnitude": 0.999969423650909
+        },
+        {
+          "region": "bulk",
+          "harmonic": -2,
+          "sample_count": 3238,
+          "complex_vector_field_relative_difference": 0.12261380201424975,
+          "rms_absolute_field_difference": 3.537356628682631e-05,
+          "current_rms_field": 0.00028849579497351626,
+          "normalized_overlap_magnitude": 0.9999816837016079
+        },
+        {
+          "region": "bulk",
+          "harmonic": -1,
+          "sample_count": 3238,
+          "complex_vector_field_relative_difference": 0.12502258023262772,
+          "rms_absolute_field_difference": 0.009253004674718747,
+          "current_rms_field": 0.07401066797295183,
+          "normalized_overlap_magnitude": 0.9999837942374746
+        },
+        {
+          "region": "bulk",
+          "harmonic": 0,
+          "sample_count": 3238,
+          "complex_vector_field_relative_difference": 0.13113232992802756,
+          "rms_absolute_field_difference": 1.1651212330863312,
+          "current_rms_field": 8.88507993204889,
+          "normalized_overlap_magnitude": 0.9999711898114135
+        },
+        {
+          "region": "bulk",
+          "harmonic": 1,
+          "sample_count": 3238,
+          "complex_vector_field_relative_difference": 0.13655512778083295,
+          "rms_absolute_field_difference": 0.010004941117345165,
+          "current_rms_field": 0.07326668196160906,
+          "normalized_overlap_magnitude": 0.9999866583252367
+        },
+        {
+          "region": "bulk",
+          "harmonic": 2,
+          "sample_count": 3238,
+          "complex_vector_field_relative_difference": 0.13955305822712322,
+          "rms_absolute_field_difference": 4.4397130044495926e-05,
+          "current_rms_field": 0.0003181379943120947,
+          "normalized_overlap_magnitude": 0.9999878661626447
+        }
+      ],
+      "full_S_relative_difference": 0.07474380201163619,
+      "conversion_blocks_relative_difference": 0.13009531320087273,
+      "primary_first_sideband_power_target": 0.05,
+      "primary_first_sideband_power_target_met": false,
+      "target_meaning": "Adjacent-grid first-sideband total-power change only; not an exact continuum error bound"
+    }
+  ],
+  "harmonics": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "input_channel": "bottom x",
+  "input_harmonic": 0,
+  "adjacent_power_target": 0.05,
+  "target_scope": "Predeclared 5% target concerns adjacent-grid total first-sideband powers; no Richardson fit or continuum-error estimate.",
+  "field_sampling": {
+    "z": 0.0,
+    "xy_samples_per_axis": 64,
+    "interface_margin": 0.065,
+    "region_counts": {
+      "air_holes": 48,
+      "bulk": 3238
+    },
+    "method": "Component-native trilinear interpolation; periodic xy; each interpolation corner verified within the same homogeneous region; common masks across all grids",
+    "limitations": "Interior z=0 comparison only; excludes interface fields, near-surface fields, and exterior radiation patterns. No complex phase alignment applied."
+  },
+  "limits": [
+    "Fixed Courant means dt also changes under native Yee grid refinement; time-step error is not isolated.",
+    "Two spatial grids show sensitivity, not an asymptotic convergence rate.",
+    "Finite-window/tail-selection and retained-source differences must be assessed separately.",
+    "Full S norm can hide weak conversion changes; first-sideband powers and complex amplitudes are reported explicitly.",
+    "Linear interpolation has its own discretization error; periodic plane-wave controls are recorded, not treated as a bound for the physical field."
+  ],
+  "generator_sha256": "90dccd74be5180c5379d0ead8a3dd74b56fdd84338e1462dc93567a0bd2a68f1"
+}

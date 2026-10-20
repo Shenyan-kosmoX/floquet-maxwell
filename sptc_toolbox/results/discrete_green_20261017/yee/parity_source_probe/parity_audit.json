@@ -1,0 +1,28 @@
+{
+  "status": "ACTUAL_TOTAL_SOURCE_PRESERVES_DECLARED_Z_PARITY",
+  "parity": [
+    1,
+    1,
+    -1,
+    -1
+  ],
+  "native_source_parity_residual": [
+    1.6047817210592687e-13,
+    1.797743047605327e-12,
+    5.022055910609678e-14,
+    9.550395820204196e-15
+  ],
+  "total_lift_vs_pointwise_mask_relative_difference": [
+    0.14434743715193646,
+    0.18195325342147217,
+    0.2593075548725632,
+    0.2707285650307794
+  ],
+  "interpretation": "Measured total current includes source-volume and periodic-boundary weights. It preserves the declared mirror despite differing from naive pointwise source samples.",
+  "scope": "Fixed symmetric circle/ellipse slab at Gamma only; does not prove material operator or output sampling mirror symmetry.",
+  "sources": {
+    "sptc_toolbox/results/discrete_green_20261017/yee/parity_source_probe/source_lift.npz": "6081165c5f295c19269eeb6696bb875fd1b8fd8ce6de910a3b020d203ec9b226",
+    "sptc_toolbox/results/discrete_green_20261017/parity/basis/source_basis.npz": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+    "sptc_toolbox/scripts/audit_yee_source_parity.py": "b94e92eb30b76f02f53d64c2cfdc4702885681b122870a20144022a941a52b3e"
+  }
+}

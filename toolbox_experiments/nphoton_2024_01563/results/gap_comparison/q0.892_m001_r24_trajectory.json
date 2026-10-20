@@ -1,0 +1,105 @@
+{
+  "case": "q0.892_m001_r24",
+  "path": "results/gap_edges/q0.892_m001_r24",
+  "status": "COMPLETED_DIRECT_MEEP_DYNAMIC_PROBE",
+  "config": {
+    "q": 0.892,
+    "resolution": 24,
+    "epsilon": 11.68,
+    "radius": 0.3333333333333333,
+    "padding": 1.0,
+    "pml": 0.5,
+    "courant": 0.5,
+    "source_frequency": 0.412763594333521,
+    "source_width": 0.1,
+    "drive_frequency": 0.825527188667043,
+    "modulation": 0.01,
+    "phase": 1.5707963267948966,
+    "periods": 700.0,
+    "ramp_periods": 10.0,
+    "update_stride": 4,
+    "static_window": 100.0,
+    "eps_averaging": false,
+    "max_dynamic_wall_seconds": 900.0
+  },
+  "summary_sha256": "3b6b4cc969dfb7612a581e0112932eea3b79f67c1ac7f8d7703473091726d4ce",
+  "growth_fits": [
+    {
+      "fraction_window": [
+        0.35,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": 0.0012772963944495711,
+      "growth_cyclic_fa_over_c": 0.0002032880349701046,
+      "log_amplitude_fit_rms": 0.038819035585784624,
+      "cycles": [
+        245.49114772986192,
+        664.5149899107751
+      ]
+    },
+    {
+      "fraction_window": [
+        0.35,
+        0.65
+      ],
+      "amplitude_growth_per_meep_time": 0.0018070253386297012,
+      "growth_cyclic_fa_over_c": 0.000287597014935223,
+      "log_amplitude_fit_rms": 0.014279602975261037,
+      "cycles": [
+        245.49114772986192,
+        454.4871143274016
+      ]
+    },
+    {
+      "fraction_window": [
+        0.65,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": 0.0008009424872042904,
+      "growth_cyclic_fa_over_c": 0.00012747395597087995,
+      "log_amplitude_fit_rms": 0.008400462196108006,
+      "cycles": [
+        455.484626347041,
+        664.5149899107751
+      ]
+    }
+  ],
+  "raw_sha256": "1468c7176972e3579d9bff95d9637a96ebf31eacf45b06ee57d159e69c0d5a4c",
+  "actual_cycles": 700.0126590234579,
+  "amplitude_ratio_last10_to_10_20": 4.4444783881648275,
+  "rank2_trials": [
+    {
+      "amplitude_rates_per_meep_time": [
+        -1.3535192574937e-06,
+        -2.1062779774720575e-07
+      ],
+      "singular_ratio_2_1": 0.012406055069705553,
+      "singular_ratio_3_2": 0.0012827301031779407,
+      "relative_rank2_residual": 2.2947068735233927e-05,
+      "phase": 0.25,
+      "window_cycles": [
+        50,
+        650
+      ],
+      "delay": 32,
+      "interpolation": "cubic"
+    },
+    {
+      "amplitude_rates_per_meep_time": [
+        -3.0875593186358692e-06,
+        -1.4191750121643524e-06
+      ],
+      "singular_ratio_2_1": 0.009791201713526947,
+      "singular_ratio_3_2": 0.0019234084009438796,
+      "relative_rank2_residual": 2.7431938952179976e-05,
+      "phase": 0.5,
+      "window_cycles": [
+        50,
+        650
+      ],
+      "delay": 32,
+      "interpolation": "cubic"
+    }
+  ],
+  "scope": "Observed trajectory components only; finite hold/rank-two hypothesis, no complete Floquet spectrum"
+}

@@ -1,0 +1,731 @@
+{
+  "status": "COMPLETE_DECLARED_DIRECT_MEEP_COMPARISON",
+  "completed": true,
+  "generated_utc": "2026-10-18T16:24:08.891735+00:00",
+  "cases": [
+    {
+      "name": "direct_h2_even",
+      "identity": {
+        "resolution": 32,
+        "sector": 1,
+        "carrier": 0.398,
+        "drive": 0.01,
+        "amplitude": 0.01,
+        "phase": 0.0,
+        "source_ramp": 500.0,
+        "source": "smooth raised-cosine ramp * exp(-i*2*pi*.398*t), actual midpoint electric current",
+        "material_interval": 2.0,
+        "material_stride": 128,
+        "material_timing": "t+(stride+1)*dt/2 before step; no immediate E recomputation",
+        "epsilon_law": "11.5+A*cos(2*pi*.01*t+phase); material held at interval midpoint",
+        "eps_averaging": true,
+        "y_mirror": false,
+        "reference_planes": [
+          -0.7,
+          0.7
+        ],
+        "pml": 0.65,
+        "cell_z_requested": 4.8,
+        "Courant": 0.5,
+        "dt": 0.015625,
+        "geometry": "a1,h.42,circle(-.22,0)r.12,ellipse(.22,0)rx.12ry.09",
+        "grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+        "script_sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6",
+        "dft_stride": 8,
+        "checkpoint_times": [
+          500,
+          1000,
+          1500,
+          2000,
+          2500
+        ],
+        "meep_version": "1.35.0"
+      },
+      "timing": {
+        "time": 2500.0,
+        "window": [
+          2000,
+          2500
+        ],
+        "output_power": [
+          3.6426087725455993e-09,
+          0.0002327986878851296,
+          0.9997310743826449,
+          0.00023824830652372615,
+          4.386620742751523e-09
+        ],
+        "incoming_power": [
+          1.509923419656522e-14,
+          5.785248306087882e-14,
+          0.9999999999999993,
+          7.082860886120145e-15,
+          1.4507957695083315e-14
+        ],
+        "carrier_normalization": [
+          -0.15732461145119855,
+          -0.47442114196036084
+        ],
+        "wall_seconds": 1258.4268137769996,
+        "cpu_seconds": 1255.023847963,
+        "material_update_wall_seconds": 289.2674427240254,
+        "material_update_cpu_seconds": 289.1906426030023,
+        "updates": 1250
+      }
+    },
+    {
+      "name": "direct_h2_odd",
+      "identity": {
+        "resolution": 32,
+        "sector": -1,
+        "carrier": 0.398,
+        "drive": 0.01,
+        "amplitude": 0.01,
+        "phase": 0.0,
+        "source_ramp": 500.0,
+        "source": "smooth raised-cosine ramp * exp(-i*2*pi*.398*t), actual midpoint electric current",
+        "material_interval": 2.0,
+        "material_stride": 128,
+        "material_timing": "t+(stride+1)*dt/2 before step; no immediate E recomputation",
+        "epsilon_law": "11.5+A*cos(2*pi*.01*t+phase); material held at interval midpoint",
+        "eps_averaging": true,
+        "y_mirror": false,
+        "reference_planes": [
+          -0.7,
+          0.7
+        ],
+        "pml": 0.65,
+        "cell_z_requested": 4.8,
+        "Courant": 0.5,
+        "dt": 0.015625,
+        "geometry": "a1,h.42,circle(-.22,0)r.12,ellipse(.22,0)rx.12ry.09",
+        "grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+        "script_sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6",
+        "dft_stride": 8,
+        "checkpoint_times": [
+          500,
+          1000,
+          1500,
+          2000,
+          2500
+        ],
+        "meep_version": "1.35.0"
+      },
+      "timing": {
+        "time": 2500.0,
+        "window": [
+          2000,
+          2500
+        ],
+        "output_power": [
+          7.263585040957589e-12,
+          5.201512778506766e-06,
+          0.9999898157614331,
+          4.970221404145638e-06,
+          6.415918090522961e-12
+        ],
+        "incoming_power": [
+          2.6471790193990764e-18,
+          8.198359210435547e-13,
+          1.0000000000000009,
+          7.733581042105615e-13,
+          1.4296618845160844e-17
+        ],
+        "carrier_normalization": [
+          -0.15732443262789106,
+          -0.47442110745065635
+        ],
+        "wall_seconds": 1254.6658993389992,
+        "cpu_seconds": 1250.810470363,
+        "material_update_wall_seconds": 288.3238392169915,
+        "material_update_cpu_seconds": 288.20755202200314,
+        "updates": 1250
+      }
+    },
+    {
+      "name": "direct_h1_even",
+      "identity": {
+        "resolution": 32,
+        "sector": 1,
+        "carrier": 0.398,
+        "drive": 0.01,
+        "amplitude": 0.01,
+        "phase": 0.0,
+        "source_ramp": 500.0,
+        "source": "smooth raised-cosine ramp * exp(-i*2*pi*.398*t), actual midpoint electric current",
+        "material_interval": 1.0,
+        "material_stride": 64,
+        "material_timing": "t+(stride+1)*dt/2 before step; no immediate E recomputation",
+        "epsilon_law": "11.5+A*cos(2*pi*.01*t+phase); material held at interval midpoint",
+        "eps_averaging": true,
+        "y_mirror": false,
+        "reference_planes": [
+          -0.7,
+          0.7
+        ],
+        "pml": 0.65,
+        "cell_z_requested": 4.8,
+        "Courant": 0.5,
+        "dt": 0.015625,
+        "geometry": "a1,h.42,circle(-.22,0)r.12,ellipse(.22,0)rx.12ry.09",
+        "grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+        "script_sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6",
+        "dft_stride": 8,
+        "checkpoint_times": [
+          500,
+          1000,
+          1500,
+          2000,
+          2500
+        ],
+        "meep_version": "1.35.0"
+      },
+      "timing": {
+        "time": 2500.0,
+        "window": [
+          2000,
+          2500
+        ],
+        "output_power": [
+          3.6494382309868326e-09,
+          0.00023302852760544128,
+          0.9997306085782144,
+          0.0002384835565742952,
+          4.39558817837924e-09
+        ],
+        "incoming_power": [
+          1.4944725314223533e-14,
+          5.758847744856516e-14,
+          1.0000000000000004,
+          7.056689549839795e-15,
+          1.4358897044014467e-14
+        ],
+        "carrier_normalization": [
+          -0.1573246110984365,
+          -0.47442114205181046
+        ],
+        "wall_seconds": 1491.6190212370002,
+        "cpu_seconds": 1490.458277632,
+        "material_update_wall_seconds": 562.7491945029924,
+        "material_update_cpu_seconds": 562.5920903140018,
+        "updates": 2500
+      }
+    },
+    {
+      "name": "direct_h1_odd",
+      "identity": {
+        "resolution": 32,
+        "sector": -1,
+        "carrier": 0.398,
+        "drive": 0.01,
+        "amplitude": 0.01,
+        "phase": 0.0,
+        "source_ramp": 500.0,
+        "source": "smooth raised-cosine ramp * exp(-i*2*pi*.398*t), actual midpoint electric current",
+        "material_interval": 1.0,
+        "material_stride": 64,
+        "material_timing": "t+(stride+1)*dt/2 before step; no immediate E recomputation",
+        "epsilon_law": "11.5+A*cos(2*pi*.01*t+phase); material held at interval midpoint",
+        "eps_averaging": true,
+        "y_mirror": false,
+        "reference_planes": [
+          -0.7,
+          0.7
+        ],
+        "pml": 0.65,
+        "cell_z_requested": 4.8,
+        "Courant": 0.5,
+        "dt": 0.015625,
+        "geometry": "a1,h.42,circle(-.22,0)r.12,ellipse(.22,0)rx.12ry.09",
+        "grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+        "script_sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6",
+        "dft_stride": 8,
+        "checkpoint_times": [
+          500,
+          1000,
+          1500,
+          2000,
+          2500
+        ],
+        "meep_version": "1.35.0"
+      },
+      "timing": {
+        "time": 2500.0,
+        "window": [
+          2000,
+          2500
+        ],
+        "output_power": [
+          7.278618669919823e-12,
+          5.2066498031753915e-06,
+          0.9999898059210541,
+          4.975130018375158e-06,
+          6.430259541808592e-12
+        ],
+        "incoming_power": [
+          2.621211290553244e-18,
+          8.206606590908155e-13,
+          1.0000000000000013,
+          7.74109442261359e-13,
+          1.4319009629813767e-17
+        ],
+        "carrier_normalization": [
+          -0.15732443261654505,
+          -0.4744211074395968
+        ],
+        "wall_seconds": 1500.0629482259992,
+        "cpu_seconds": 1499.116878835,
+        "material_update_wall_seconds": 564.8147799250473,
+        "material_update_cpu_seconds": 564.6562906270037,
+        "updates": 2500
+      }
+    },
+    {
+      "name": "zero_even",
+      "identity": {
+        "resolution": 32,
+        "sector": 1,
+        "carrier": 0.398,
+        "drive": 0.01,
+        "amplitude": 0.0,
+        "phase": 0.0,
+        "source_ramp": 500.0,
+        "source": "smooth raised-cosine ramp * exp(-i*2*pi*.398*t), actual midpoint electric current",
+        "material_interval": 1.0,
+        "material_stride": 64,
+        "material_timing": "t+(stride+1)*dt/2 before step; no immediate E recomputation",
+        "epsilon_law": "11.5+A*cos(2*pi*.01*t+phase); material held at interval midpoint",
+        "eps_averaging": true,
+        "y_mirror": false,
+        "reference_planes": [
+          -0.7,
+          0.7
+        ],
+        "pml": 0.65,
+        "cell_z_requested": 4.8,
+        "Courant": 0.5,
+        "dt": 0.015625,
+        "geometry": "a1,h.42,circle(-.22,0)r.12,ellipse(.22,0)rx.12ry.09",
+        "grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+        "script_sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6",
+        "dft_stride": 8,
+        "checkpoint_times": [
+          500,
+          1000,
+          1500,
+          2000,
+          2500
+        ],
+        "meep_version": "1.35.0"
+      },
+      "timing": {
+        "time": 2500.0,
+        "window": [
+          2000,
+          2500
+        ],
+        "output_power": [
+          2.1084216186307725e-11,
+          8.448888699841726e-11,
+          1.0002021603809625,
+          7.122239402793644e-11,
+          1.8044353592459876e-11
+        ],
+        "incoming_power": [
+          1.4605741766860455e-14,
+          1.3915401094506739e-14,
+          0.9999999999999981,
+          1.2666888318945233e-14,
+          1.2117266794817288e-14
+        ],
+        "carrier_normalization": [
+          -0.1573246169717528,
+          -0.47442114870746416
+        ],
+        "wall_seconds": 979.6188380500007,
+        "cpu_seconds": 979.0175556219999,
+        "material_update_wall_seconds": 0.0,
+        "material_update_cpu_seconds": 0.0,
+        "updates": 0
+      }
+    },
+    {
+      "name": "zero_odd",
+      "identity": {
+        "resolution": 32,
+        "sector": -1,
+        "carrier": 0.398,
+        "drive": 0.01,
+        "amplitude": 0.0,
+        "phase": 0.0,
+        "source_ramp": 500.0,
+        "source": "smooth raised-cosine ramp * exp(-i*2*pi*.398*t), actual midpoint electric current",
+        "material_interval": 1.0,
+        "material_stride": 64,
+        "material_timing": "t+(stride+1)*dt/2 before step; no immediate E recomputation",
+        "epsilon_law": "11.5+A*cos(2*pi*.01*t+phase); material held at interval midpoint",
+        "eps_averaging": true,
+        "y_mirror": false,
+        "reference_planes": [
+          -0.7,
+          0.7
+        ],
+        "pml": 0.65,
+        "cell_z_requested": 4.8,
+        "Courant": 0.5,
+        "dt": 0.015625,
+        "geometry": "a1,h.42,circle(-.22,0)r.12,ellipse(.22,0)rx.12ry.09",
+        "grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+        "script_sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6",
+        "dft_stride": 8,
+        "checkpoint_times": [
+          500,
+          1000,
+          1500,
+          2000,
+          2500
+        ],
+        "meep_version": "1.35.0"
+      },
+      "timing": {
+        "time": 2500.0,
+        "window": [
+          2000,
+          2500
+        ],
+        "output_power": [
+          1.5903245387754217e-18,
+          2.05791540141347e-18,
+          1.0000000002492035,
+          4.0555459219071965e-18,
+          6.5001846040638e-18
+        ],
+        "incoming_power": [
+          1.4026323083472786e-20,
+          1.3361444608615615e-20,
+          0.9999999999999997,
+          1.2175187653529315e-20,
+          1.1645372588146308e-20
+        ],
+        "carrier_normalization": [
+          -0.1573244312908085,
+          -0.4744211068944545
+        ],
+        "wall_seconds": 977.5197137800005,
+        "cpu_seconds": 976.388615392,
+        "material_update_wall_seconds": 0.0,
+        "material_update_cpu_seconds": 0.0,
+        "updates": 0
+      }
+    }
+  ],
+  "files": {
+    "backend_timing.json": {
+      "bytes": 16381,
+      "sha256": "c056c5ac33fa479a957765152ed8a36eaecdf81678d4d257f2aafbb567b0b638"
+    },
+    "backend_timing_progress.json": {
+      "bytes": 3430,
+      "sha256": "6d4ca3ec6c9103a3c1c4d3723e76d380d5cdafe796a934447e176b37a6f5fc46"
+    },
+    "comparison_arrays.npz": {
+      "bytes": 18026,
+      "sha256": "d2eb695e9fa3f190b3ea7282640a93c98b045859c140a3b6181de47860ab587d"
+    },
+    "comparison_summary.json": {
+      "bytes": 852834,
+      "sha256": "d84aea948a928278caa75f7ad18273e7db8997fd5f306ef5058c1d77c160d5eb"
+    },
+    "direct_comparison.pdf": {
+      "bytes": 27772,
+      "sha256": "9f96e8f7ec68c4a4d6a3c5cf769b1a74c445a102654ffce7de7a03ee14e7076b"
+    },
+    "direct_comparison.png": {
+      "bytes": 345675,
+      "sha256": "f9acf92eb40b962662645550fe0a4a450d37e89ccf85fa74eb1b522cced69cfc"
+    },
+    "direct_comparison.svg": {
+      "bytes": 145680,
+      "sha256": "7d68c8df7435ba95532c96d3da2cbfa380b176d5bc2839e8b88bfb16b842bfa1"
+    },
+    "direct_h1_even\\response_t1000.npz": {
+      "bytes": 214801,
+      "sha256": "f5ceb8339ee779ac860b9aabf4211a1033587e384805444fbc77e1c307a479bf"
+    },
+    "direct_h1_even\\response_t1500.npz": {
+      "bytes": 318931,
+      "sha256": "e7ff8c88a1bb112e86a1fb533bc494c3d4187a13e8b3b26a1eefb606162a0f08"
+    },
+    "direct_h1_even\\response_t2000.npz": {
+      "bytes": 422918,
+      "sha256": "aaa22ac042da9d23f815650b4350aa7360d257e979d89bbe803b77bcdc566318"
+    },
+    "direct_h1_even\\response_t2500.npz": {
+      "bytes": 526877,
+      "sha256": "ad516f801bd0e9c0ba439c9356dc70ae48bf3febbeb1df16615f78ef17f2de82"
+    },
+    "direct_h1_even\\response_t500.npz": {
+      "bytes": 110590,
+      "sha256": "7764551ce19f5d82220af8c8c50feea8e2fb4a6722a9418fab2eb7a1b81a3793"
+    },
+    "direct_h1_even\\sampler_source.py": {
+      "bytes": 10269,
+      "sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6"
+    },
+    "direct_h1_even\\summary.json": {
+      "bytes": 5506,
+      "sha256": "88021ff4af33258306c6922eec4538521382fe546fc157222b632a672f4311d2"
+    },
+    "direct_h1_even.log": {
+      "bytes": 6555,
+      "sha256": "2b0dd814526158d2c95a4c634b216f6d04c4cad0a8a548d1907cccfc89510635"
+    },
+    "direct_h1_odd\\response_t1000.npz": {
+      "bytes": 213530,
+      "sha256": "8f42e5b92cbac66187e87c4cec9893981dd13e058bdeb7f5cc2956a21693ab7c"
+    },
+    "direct_h1_odd\\response_t1500.npz": {
+      "bytes": 316558,
+      "sha256": "bcad995c58fb2baeb7873eea62b766b2eb015ce17a03b46a679aecce46afee6b"
+    },
+    "direct_h1_odd\\response_t2000.npz": {
+      "bytes": 419385,
+      "sha256": "31cba820a51ca89fccd5ae6abaf4e798b66708f28220d2987282274b9316fd6b"
+    },
+    "direct_h1_odd\\response_t2500.npz": {
+      "bytes": 522233,
+      "sha256": "601b3f99bf22263bcfea4b513d0728d81a0116adcea4cbc3374c7724438db0e7"
+    },
+    "direct_h1_odd\\response_t500.npz": {
+      "bytes": 110447,
+      "sha256": "bed6b3cab7084a5ee14ff80ca2555650cf0fe9ef26a7e8dcc38ee10ad0b9a954"
+    },
+    "direct_h1_odd\\sampler_source.py": {
+      "bytes": 10269,
+      "sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6"
+    },
+    "direct_h1_odd\\summary.json": {
+      "bytes": 5494,
+      "sha256": "617324bcb633c244e06450185901282e8b0c45585bf564592573acffdef6e449"
+    },
+    "direct_h1_odd.log": {
+      "bytes": 6581,
+      "sha256": "6c17e9ee8da3b5f82e2bf2839a8c82cfcd4974a136874cf91d460ce17b67d5c0"
+    },
+    "direct_h2_even\\response_t1000.npz": {
+      "bytes": 204667,
+      "sha256": "c677b217a24cc1510f0a978d44766cd13799e5b88010cb3fb297e41d5eba92a0"
+    },
+    "direct_h2_even\\response_t1500.npz": {
+      "bytes": 304075,
+      "sha256": "c3b32fe7b2dff2df457e812e2187f3195b00fafdc67c3b61ab4579d849d84860"
+    },
+    "direct_h2_even\\response_t2000.npz": {
+      "bytes": 403365,
+      "sha256": "9789239b3027d6fd4a442550561a8cdbdb0cd8a2d70c31250e3c5f1e13bc2ebe"
+    },
+    "direct_h2_even\\response_t2500.npz": {
+      "bytes": 502775,
+      "sha256": "167165ea2ae0c8e2e57ad3b1cef10af93cdb8dc7224ba2ce7630e13cd9e12e7d"
+    },
+    "direct_h2_even\\response_t500.npz": {
+      "bytes": 105383,
+      "sha256": "e76a5cd5432b5c475105d0df38a9d72963578d232f73031c7705e9a46bc426fc"
+    },
+    "direct_h2_even\\sampler_source.py": {
+      "bytes": 10269,
+      "sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6"
+    },
+    "direct_h2_even\\summary.json": {
+      "bytes": 5487,
+      "sha256": "b5b3076b526be36facbcb49c71f58821ce43f33482fd740546465204dff8cec9"
+    },
+    "direct_h2_even.log": {
+      "bytes": 5889,
+      "sha256": "ec114c295095b1dd6afc194572abe73a7015faf592cd556baaa84cec3c83a28e"
+    },
+    "direct_h2_odd\\response_t1000.npz": {
+      "bytes": 203459,
+      "sha256": "21b72fa5941a18e293fce6ede60e63019bd387dbcf300107d1482369f8fc1230"
+    },
+    "direct_h2_odd\\response_t1500.npz": {
+      "bytes": 301720,
+      "sha256": "0317a325a8d5bd6ebeca16ebb0d89407583b8a94ecdb0b08abc4391aee2d6854"
+    },
+    "direct_h2_odd\\response_t2000.npz": {
+      "bytes": 399875,
+      "sha256": "55f6ebf88fa2d7259a4f5fa55bc03784e3772d17ab05f59f6ebad49d91944326"
+    },
+    "direct_h2_odd\\response_t2500.npz": {
+      "bytes": 498108,
+      "sha256": "0e0c190009c03423ba9dc91980772747abb93a6a1068dba7f37f18b72a01e6ea"
+    },
+    "direct_h2_odd\\response_t500.npz": {
+      "bytes": 105210,
+      "sha256": "dd1a5e4a751d25c29a535ef6879240db02a4b3333192f86d8a844b0003846d1f"
+    },
+    "direct_h2_odd\\sampler_source.py": {
+      "bytes": 10269,
+      "sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6"
+    },
+    "direct_h2_odd\\summary.json": {
+      "bytes": 5478,
+      "sha256": "cc34d2ffd1e4343ebcc9f27f3f77ecbcc2ea9b8548f016d48e7084ae5379e139"
+    },
+    "direct_h2_odd.log": {
+      "bytes": 5917,
+      "sha256": "9acdd70edf08006425f1d98d21ee83fdb378ebcab2c1678da0af22a37205ead5"
+    },
+    "finalize_manifest.py": {
+      "bytes": 2689,
+      "sha256": "433c02b5b648112b4381280eab826cae11616ee6a76ae6378a6b7589f9ac610d"
+    },
+    "paper_provenance.md": {
+      "bytes": 6496,
+      "sha256": "ebdeba2f41d50373b04f6b30bb401939317506d3c73dc025d6e6e407daea74db"
+    },
+    "report.md": {
+      "bytes": 8641,
+      "sha256": "7f5d1e5fdbd32b089455a4fee7842a951c687d2bed7ce1bd54dff37c9c4fe69c"
+    },
+    "smoke\\response_t4.npz": {
+      "bytes": 7206,
+      "sha256": "1978e13d4b3f265e39ccaa1a6d412899199cd68854f7f9944a7d766c84584791"
+    },
+    "smoke\\response_t8.npz": {
+      "bytes": 7893,
+      "sha256": "49ec987b9590e744bc752eb3482ffd9f7ce5332165ce4f6f8c463b2c82356987"
+    },
+    "smoke\\sampler_source.py": {
+      "bytes": 10269,
+      "sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6"
+    },
+    "smoke\\summary.json": {
+      "bytes": 3100,
+      "sha256": "eebe1de5f9bb12aea7c2c07c33210a56a9421fa5cb66373642c605bb39b3d7c2"
+    },
+    "update_probe\\cost_progress.json": {
+      "bytes": 3407,
+      "sha256": "2bc14c6a0f3e199736113d2f767d8d7e2b648b13fe1729137596e293bc888c07"
+    },
+    "update_probe\\summary.json": {
+      "bytes": 4558,
+      "sha256": "bd74bdf971cd2e4337889be26501b7c531f15a9dd76b279ce6dd8a600b0a76c6"
+    },
+    "zero_even\\response_t1000.npz": {
+      "bytes": 194694,
+      "sha256": "731d00f64d624e07b03bb5ca8221d8f6fc2face9856e793029c5a9c4d85464dd"
+    },
+    "zero_even\\response_t1500.npz": {
+      "bytes": 289258,
+      "sha256": "e21ee7e502839079186f0b698e9c140b03267099481f46784b5400d4daa783a0"
+    },
+    "zero_even\\response_t2000.npz": {
+      "bytes": 383804,
+      "sha256": "546f90883c71ce454e4278af81e7c9e3fdd47ad506dff17f42b25d7cb4d69f4a"
+    },
+    "zero_even\\response_t2500.npz": {
+      "bytes": 478446,
+      "sha256": "c64653b876d901341c2937c6ac57a2f2e6eab6c61bbd2886a2ec319883bbd616"
+    },
+    "zero_even\\response_t500.npz": {
+      "bytes": 100211,
+      "sha256": "b978b3ab2c97693478c4417722c9335609b736925685253c13de0c5dba676798"
+    },
+    "zero_even\\sampler_source.py": {
+      "bytes": 10269,
+      "sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6"
+    },
+    "zero_even\\summary.json": {
+      "bytes": 5344,
+      "sha256": "dea94933f10d1de7780495ca99b3589e679c2265725dcba3e839cae774147133"
+    },
+    "zero_even.log": {
+      "bytes": 4747,
+      "sha256": "ce1324e28beb2879e0f2b05d48a032443dc5b25afe0643bf5cccd3516bbc1c4c"
+    },
+    "zero_odd\\response_t1000.npz": {
+      "bytes": 193438,
+      "sha256": "02790d54579370160120be5c0bf14448e1b38b95524edef535813bb139e6b6ac"
+    },
+    "zero_odd\\response_t1500.npz": {
+      "bytes": 286994,
+      "sha256": "162bc1ce4a2acc981468dd953173e52210ac9009105283a210783f39abb133c7"
+    },
+    "zero_odd\\response_t2000.npz": {
+      "bytes": 380372,
+      "sha256": "099b42e3498336c7ea41d6cddc982593cab3740712fbc886fad3ccfd67f3e156"
+    },
+    "zero_odd\\response_t2500.npz": {
+      "bytes": 473833,
+      "sha256": "c94cc9009c5dd2e89784a539cd4f5581c16d1d13c6e5522e344c7b8a7ce7e6f0"
+    },
+    "zero_odd\\response_t500.npz": {
+      "bytes": 100008,
+      "sha256": "e1d12a708e0fd24c449aa799726444fab6e8c49df39ba5d5fd5d9afacfb410d3"
+    },
+    "zero_odd\\sampler_source.py": {
+      "bytes": 10269,
+      "sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6"
+    },
+    "zero_odd\\summary.json": {
+      "bytes": 5338,
+      "sha256": "096b3762ffd8a406d1c5f2ab3d85ac4907f3ed9e7f390232cb35103bd117b5f8"
+    },
+    "zero_odd.log": {
+      "bytes": 4732,
+      "sha256": "7b16f69dd0c115ea873f89824c859ffc98dbb58d15a7bd3ed619e4ada2c4b9c5"
+    }
+  },
+  "checked_comparison_inputs": {
+    "sptc_toolbox\\results\\full_floquet_20261017\\analysis\\floquet_M2.npz": "2b838f0311669768f2f38572ef7ba27745ab44ec99a6d4e9f59588468a2c618d",
+    "sptc_toolbox\\results\\full_floquet_20261017\\analysis\\static_green_dataset.npz": "e9988fb11ea7dc0d5f25f583bc378335591546cf1786e43cc5fc0b335a6b44dd",
+    "direct_h2_even\\summary.json": "b5b3076b526be36facbcb49c71f58821ce43f33482fd740546465204dff8cec9",
+    "direct_h2_odd\\summary.json": "cc34d2ffd1e4343ebcc9f27f3f77ecbcc2ea9b8548f016d48e7084ae5379e139",
+    "direct_h2_even\\response_t500.npz": "e76a5cd5432b5c475105d0df38a9d72963578d232f73031c7705e9a46bc426fc",
+    "direct_h2_odd\\response_t500.npz": "dd1a5e4a751d25c29a535ef6879240db02a4b3333192f86d8a844b0003846d1f",
+    "direct_h2_even\\response_t1000.npz": "c677b217a24cc1510f0a978d44766cd13799e5b88010cb3fb297e41d5eba92a0",
+    "direct_h2_odd\\response_t1000.npz": "21b72fa5941a18e293fce6ede60e63019bd387dbcf300107d1482369f8fc1230",
+    "direct_h2_even\\response_t1500.npz": "c3b32fe7b2dff2df457e812e2187f3195b00fafdc67c3b61ab4579d849d84860",
+    "direct_h2_odd\\response_t1500.npz": "0317a325a8d5bd6ebeca16ebb0d89407583b8a94ecdb0b08abc4391aee2d6854",
+    "direct_h2_even\\response_t2000.npz": "9789239b3027d6fd4a442550561a8cdbdb0cd8a2d70c31250e3c5f1e13bc2ebe",
+    "direct_h2_odd\\response_t2000.npz": "55f6ebf88fa2d7259a4f5fa55bc03784e3772d17ab05f59f6ebad49d91944326",
+    "direct_h2_even\\response_t2500.npz": "167165ea2ae0c8e2e57ad3b1cef10af93cdb8dc7224ba2ce7630e13cd9e12e7d",
+    "direct_h2_odd\\response_t2500.npz": "0e0c190009c03423ba9dc91980772747abb93a6a1068dba7f37f18b72a01e6ea",
+    "direct_h1_even\\summary.json": "88021ff4af33258306c6922eec4538521382fe546fc157222b632a672f4311d2",
+    "direct_h1_odd\\summary.json": "617324bcb633c244e06450185901282e8b0c45585bf564592573acffdef6e449",
+    "direct_h1_even\\response_t500.npz": "7764551ce19f5d82220af8c8c50feea8e2fb4a6722a9418fab2eb7a1b81a3793",
+    "direct_h1_odd\\response_t500.npz": "bed6b3cab7084a5ee14ff80ca2555650cf0fe9ef26a7e8dcc38ee10ad0b9a954",
+    "direct_h1_even\\response_t1000.npz": "f5ceb8339ee779ac860b9aabf4211a1033587e384805444fbc77e1c307a479bf",
+    "direct_h1_odd\\response_t1000.npz": "8f42e5b92cbac66187e87c4cec9893981dd13e058bdeb7f5cc2956a21693ab7c",
+    "direct_h1_even\\response_t1500.npz": "e7ff8c88a1bb112e86a1fb533bc494c3d4187a13e8b3b26a1eefb606162a0f08",
+    "direct_h1_odd\\response_t1500.npz": "bcad995c58fb2baeb7873eea62b766b2eb015ce17a03b46a679aecce46afee6b",
+    "direct_h1_even\\response_t2000.npz": "aaa22ac042da9d23f815650b4350aa7360d257e979d89bbe803b77bcdc566318",
+    "direct_h1_odd\\response_t2000.npz": "31cba820a51ca89fccd5ae6abaf4e798b66708f28220d2987282274b9316fd6b",
+    "direct_h1_even\\response_t2500.npz": "ad516f801bd0e9c0ba439c9356dc70ae48bf3febbeb1df16615f78ef17f2de82",
+    "direct_h1_odd\\response_t2500.npz": "601b3f99bf22263bcfea4b513d0728d81a0116adcea4cbc3374c7724438db0e7",
+    "zero_even\\summary.json": "dea94933f10d1de7780495ca99b3589e679c2265725dcba3e839cae774147133",
+    "zero_odd\\summary.json": "096b3762ffd8a406d1c5f2ab3d85ac4907f3ed9e7f390232cb35103bd117b5f8",
+    "zero_even\\response_t500.npz": "b978b3ab2c97693478c4417722c9335609b736925685253c13de0c5dba676798",
+    "zero_odd\\response_t500.npz": "e1d12a708e0fd24c449aa799726444fab6e8c49df39ba5d5fd5d9afacfb410d3",
+    "zero_even\\response_t1000.npz": "731d00f64d624e07b03bb5ca8221d8f6fc2face9856e793029c5a9c4d85464dd",
+    "zero_odd\\response_t1000.npz": "02790d54579370160120be5c0bf14448e1b38b95524edef535813bb139e6b6ac",
+    "zero_even\\response_t1500.npz": "e21ee7e502839079186f0b698e9c140b03267099481f46784b5400d4daa783a0",
+    "zero_odd\\response_t1500.npz": "162bc1ce4a2acc981468dd953173e52210ac9009105283a210783f39abb133c7",
+    "zero_even\\response_t2000.npz": "546f90883c71ce454e4278af81e7c9e3fdd47ad506dff17f42b25d7cb4d69f4a",
+    "zero_odd\\response_t2000.npz": "099b42e3498336c7ea41d6cddc982593cab3740712fbc886fad3ccfd67f3e156",
+    "zero_even\\response_t2500.npz": "c64653b876d901341c2937c6ac57a2f2e6eab6c61bbd2886a2ec319883bbd616",
+    "zero_odd\\response_t2500.npz": "c94cc9009c5dd2e89784a539cd4f5581c16d1d13c6e5522e344c7b8a7ce7e6f0",
+    "backend_timing.json": "c056c5ac33fa479a957765152ed8a36eaecdf81678d4d257f2aafbb567b0b638"
+  },
+  "current_script_sha256": {
+    "sptc_toolbox\\scripts\\meep_direct_slab_floquet.py": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6",
+    "sptc_toolbox\\scripts\\analyze_direct_meep_comparison.py": "60e41946a27d29a0cf3bbda373baacc7b3dc1009ff7756fe712791eb743e322e",
+    "sptc_toolbox\\scripts\\report_direct_meep_comparison.py": "fb067880803433d51f94ccfcaec6ba68b96aa541baaef6ea24bbdecf59bfc16c",
+    "sptc_toolbox\\scripts\\probe_direct_slab_update.py": "1fed6e286822a3415bcf4cbd847ffbb46d98347e5091d0bb3b99e30f8a385ea2",
+    "sptc_toolbox\\scripts\\benchmark_floquet_replay.py": "d8664a49987883ea7d173d367d6c12513b41708a527e373c3e8729471559b099"
+  },
+  "fit_to_reference": false,
+  "static_spatial_error_removed": false,
+  "scope": "Matched r32 fixed-geometry weak forced response, two material hold intervals, zero modulation, and measured runtime.",
+  "qualification": "Completed computation does not certify arbitrary pump stability, all Floquet eigenmodes, or weak-second-sideband convergence."
+}

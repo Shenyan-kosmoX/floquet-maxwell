@@ -1,0 +1,77 @@
+schema_version: '0.1'
+kind: case
+id: analytic-guided-slab
+project_id: floquet-maxwell
+title: 解析导模薄膜与Legume空间身份
+stage: results_available
+question:
+  summary: 解析导模薄膜与Legume空间身份
+  scope: 无损均匀薄膜束缚导模，验证空间运行、场度量和身份基础设施。
+  record:
+    path: sptc_toolbox/results/reference_infrastructure/report.md
+capability_refs:
+- patterned-slab
+- identity-convergence
+model:
+  description: 无损均匀薄膜束缚导模，验证空间运行、场度量和身份基础设施。
+  record:
+    path: sptc_toolbox/results/reference_infrastructure/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/reference_infrastructure/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/reference_infrastructure/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_reference_infrastructure.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/reference_infrastructure/summary.json
+  record:
+    path: sptc_toolbox/results/reference_infrastructure/summary.json
+- id: output-2
+  description: sptc_toolbox/results/reference_infrastructure/frequencies.npz
+  record:
+    path: sptc_toolbox/results/reference_infrastructure/frequencies.npz
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/reference_infrastructure/report.md
+criteria:
+- id: criterion-1
+  description: 给定三个k点的无损均匀薄膜TE0频率和物理场身份。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/reference_infrastructure/report.md
+checks:
+- id: check-1
+  method: 独立TE0边界色散、原生空间加密、共同G并集场捕获与z求积
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/reference_infrastructure/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/reference_infrastructure/report.md
+  artifacts:
+  - path: sptc_toolbox/results/reference_infrastructure/summary.json
+  - path: sptc_toolbox/results/reference_infrastructure/frequencies.npz
+  notes: 解析频率最大差2.2843e-14 fa/c；共同G并集场捕获率、z积分及空间加密。 无损均匀薄膜束缚导模，验证空间运行、场度量和身份基础设施。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/reference_infrastructure/report.md

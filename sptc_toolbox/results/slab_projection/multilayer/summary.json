@@ -1,0 +1,187 @@
+{
+  "geometry": "two-layer Circle/Ellipse holes plus Poly inclusion",
+  "gmax": 2.1,
+  "guided_reference_permittivity": [
+    10.0,
+    5.5
+  ],
+  "guided_mode_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "kpoint_ka": [
+    0.41,
+    0.19
+  ],
+  "selected_modes": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "native_guided_basis_dimension": 50,
+  "retained_modal_dimension": 4,
+  "native_basis_id": "a2fec5a4c9045ec3121b325bcf8b3d42a9b7493999787b0edc256a3278d1c563",
+  "physical_signature": "0ad9b5ed36f0f6eb480c083e8514763eff726a4605e63cb296b892c7eff2bc19",
+  "dielectric_reconstruction": [
+    2.2390813445925075e-16,
+    2.1426781027955061e-16
+  ],
+  "region_derivatives": [
+    {
+      "region": "circle",
+      "step": 0.002,
+      "native_frequency_derivative": [
+        -0.0005104545180295572,
+        -0.00031555572140018473,
+        -0.0015037498558856388,
+        -0.0008327803372176756
+      ],
+      "projected_frequency_derivative": [
+        -0.0005104545183310683,
+        -0.000315555720946679,
+        -0.001503749859266705,
+        -0.0008327803349575687
+      ],
+      "relative_error": 2.2536476115270998e-09,
+      "minimum_sampled_H_overlap_squared": 0.9999999942980523
+    },
+    {
+      "region": "ellipse",
+      "step": 0.002,
+      "native_frequency_derivative": [
+        -0.0003638091127661225,
+        -0.00018918983402116396,
+        -0.0011637942229636433,
+        -0.0005443047723791006
+      ],
+      "projected_frequency_derivative": [
+        -0.00036380911296471607,
+        -0.00018918983391239485,
+        -0.0011637942245149781,
+        -0.0005443047712377778
+      ],
+      "relative_error": 1.4378970471541557e-09,
+      "minimum_sampled_H_overlap_squared": 0.9999999970306837
+    },
+    {
+      "region": "background",
+      "step": 0.002,
+      "native_frequency_derivative": [
+        -0.01346039252654585,
+        -0.013867510417125972,
+        -0.014936360208106514,
+        -0.015216980285920334
+      ],
+      "projected_frequency_derivative": [
+        -0.013460392281636438,
+        -0.01386751016302992,
+        -0.014936359939944775,
+        -0.01521698000881952
+      ],
+      "relative_error": 1.8164385020196475e-08,
+      "minimum_sampled_H_overlap_squared": 0.9999999988571002
+    },
+    {
+      "region": "whole layer",
+      "step": 0.002,
+      "native_frequency_derivative": [
+        -0.01433465620087615,
+        -0.01437225599325298,
+        -0.0176039044773868,
+        -0.016594065477590347
+      ],
+      "projected_frequency_derivative": [
+        -0.014334655912932237,
+        -0.014372255717889004,
+        -0.017603904023726465,
+        -0.01659406511501486
+      ],
+      "relative_error": 2.2301261418493588e-08,
+      "minimum_sampled_H_overlap_squared": 0.9999999898893002
+    },
+    {
+      "region": "polygon",
+      "step": 0.002,
+      "native_frequency_derivative": [
+        -0.00026255544316455826,
+        -6.729199671096087e-05,
+        -0.0002752123492572034,
+        -0.00013775852855668624
+      ],
+      "projected_frequency_derivative": [
+        -0.0002625554377192371,
+        -6.729199568117526e-05,
+        -0.0002752123434641301,
+        -0.00013775852639240837
+      ],
+      "relative_error": 2.0248577160329803e-08,
+      "minimum_sampled_H_overlap_squared": 0.9999999990771025
+    },
+    {
+      "region": "upper background",
+      "step": 0.002,
+      "native_frequency_derivative": [
+        -0.002278861239893293,
+        -0.0023161347765809914,
+        -0.0023506104927240035,
+        -0.0023251799978474263
+      ],
+      "projected_frequency_derivative": [
+        -0.0022788611882317384,
+        -0.0023161347218436,
+        -0.0023506104337309677,
+        -0.002325179941062457
+      ],
+      "relative_error": 2.3992093085124827e-08,
+      "minimum_sampled_H_overlap_squared": 0.999999996013289
+    }
+  ],
+  "finite_delta": [
+    0.08,
+    -0.04,
+    0.025,
+    0.015,
+    0.05,
+    -0.03
+  ],
+  "finite_projected_operator_relative_error": 2.6867703446972916e-15,
+  "finite_native_inverse_dielectric_absolute_error": 2.414038309018561e-16,
+  "reduced_vs_full_finite_native_frequency_difference": [
+    5.554702806609413e-07,
+    5.367238556930332e-07,
+    1.1905953247182133e-06,
+    7.806902550533401e-07
+  ],
+  "retained_mode_truncation_diagnostic": [
+    {
+      "perturbation_factor": 1.0,
+      "reduced_vs_full_native_max_absolute_frequency_error": 1.1905953247182133e-06
+    },
+    {
+      "perturbation_factor": 0.5,
+      "reduced_vs_full_native_max_absolute_frequency_error": 2.989342375303572e-07
+    },
+    {
+      "perturbation_factor": 0.25,
+      "reduced_vs_full_native_max_absolute_frequency_error": 7.489589909370764e-08
+    }
+  ],
+  "z16_to_z24_relative_stiffness_change": 8.858534856136573e-19,
+  "time_derivative_finite_difference_relative_error": 1.1359509719634794e-08,
+  "unmodulated_stiffness_error": 2.6021102257511928e-15,
+  "serialization_roundtrip_error": 0.0,
+  "checks": {
+    "native_dielectric": true,
+    "region_static_derivatives": true,
+    "sampled_field_identity": true,
+    "finite_native_operator": true,
+    "finite_native_dielectric": true,
+    "quadrature": true,
+    "time_derivative": true,
+    "zero_perturbation": true,
+    "serialization": true
+  }
+}

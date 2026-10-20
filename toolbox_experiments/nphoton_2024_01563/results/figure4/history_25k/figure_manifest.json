@@ -1,0 +1,436 @@
+{
+  "figure": "Core counterparts to paper Fig4a,b,c,e,f,h,i; no full dynamic band map or material-loss panel",
+  "physical_canvas_inches": [
+    7.48,
+    8.35
+  ],
+  "static_map_status": "COMPLETE_NATIVE_STATIC_SPECTRAL_MAP",
+  "static_k_points": 25,
+  "static_response_window": "Hann; finite-window probe response, not Smin or a complete mode set",
+  "panels": [
+    {
+      "regime": "nonresonant",
+      "quantity": "real",
+      "plotted_components": 10,
+      "rejected_components": 0,
+      "static_gap_edges": [
+        0.2817720188092701,
+        0.2818278586302193
+      ],
+      "static_gap_width_percent": 0.019815412736740593,
+      "width_definition": "200*(q_plus-q_minus)/(q_plus+q_minus), following the paper midpoint normalization",
+      "plotted": [
+        {
+          "case": "center_m001_r12_narrow_long",
+          "branch": 0,
+          "q": 0.2818,
+          "value": 3.526592573521725e-09,
+          "min": -6.521619799748635e-09,
+          "max": 1.3270271548293522e-08
+        },
+        {
+          "case": "center_m001_r12_narrow_long",
+          "branch": 1,
+          "q": 0.2818,
+          "value": 8.977756316141949e-10,
+          "min": 1.0277223516652612e-11,
+          "max": 2.925909736717358e-09
+        },
+        {
+          "case": "q0.28176",
+          "branch": 0,
+          "q": 0.28176,
+          "value": 4.752048950895649e-05,
+          "min": 4.7124704834700104e-05,
+          "max": 4.796076806456995e-05
+        },
+        {
+          "case": "q0.28176",
+          "branch": 1,
+          "q": 0.28176,
+          "value": -4.7533797462862015e-05,
+          "min": -4.764885821922915e-05,
+          "max": -4.731572253174887e-05
+        },
+        {
+          "case": "q0.28178",
+          "branch": 0,
+          "q": 0.28178,
+          "value": -1.3890880684597207e-07,
+          "min": -6.847344549698597e-07,
+          "max": 1.1571632507756391e-07
+        },
+        {
+          "case": "q0.28178",
+          "branch": 1,
+          "q": 0.28178,
+          "value": -7.217165687301019e-08,
+          "min": -2.619508258083769e-07,
+          "max": 3.7947302300445074e-08
+        },
+        {
+          "case": "q0.28182",
+          "branch": 0,
+          "q": 0.28182,
+          "value": 3.755717010722748e-07,
+          "min": 1.33951936431842e-07,
+          "max": 5.800227820262904e-07
+        },
+        {
+          "case": "q0.28182",
+          "branch": 1,
+          "q": 0.28182,
+          "value": -2.518113131344535e-07,
+          "min": -7.867424267615775e-07,
+          "max": -1.840763641514087e-08
+        },
+        {
+          "case": "q0.28184",
+          "branch": 0,
+          "q": 0.28184,
+          "value": 4.8570673850001356e-05,
+          "min": 4.842200507715333e-05,
+          "max": 4.8804284141334975e-05
+        },
+        {
+          "case": "q0.28184",
+          "branch": 1,
+          "q": 0.28184,
+          "value": -4.843612968680189e-05,
+          "min": -4.889322708451216e-05,
+          "max": -4.8031662252590035e-05
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "quantity": "real",
+      "plotted_components": 19,
+      "rejected_components": 1,
+      "static_gap_edges": [
+        0.8380967935044837,
+        0.89016188953885
+      ],
+      "static_gap_width_percent": 6.025150811646268,
+      "width_definition": "200*(q_plus-q_minus)/(q_plus+q_minus), following the paper midpoint normalization",
+      "plotted": [
+        {
+          "case": "q0.8_m001_r24_s4",
+          "branch": 0,
+          "q": 0.8,
+          "value": 0.003317415299453619,
+          "min": 0.0033169634304495155,
+          "max": 0.0033180381934756475
+        },
+        {
+          "case": "q0.8_m001_r24_s4",
+          "branch": 1,
+          "q": 0.8,
+          "value": -0.0033167880146320883,
+          "min": -0.0033169018739540035,
+          "max": -0.0033166627391356673
+        },
+        {
+          "case": "q0.82_m001_r24_s4",
+          "branch": 0,
+          "q": 0.82,
+          "value": 0.001769845550290583,
+          "min": 0.0017694331753179693,
+          "max": 0.0017703500584056453
+        },
+        {
+          "case": "q0.82_m001_r24_s4",
+          "branch": 1,
+          "q": 0.82,
+          "value": -0.0017694992524525666,
+          "min": -0.0017695263908398262,
+          "max": -0.0017694667683961218
+        },
+        {
+          "case": "q0.84_m001_r24_s4",
+          "branch": 0,
+          "q": 0.84,
+          "value": 5.619127703249127e-06,
+          "min": 3.3946233426451755e-06,
+          "max": 9.059082910600758e-06
+        },
+        {
+          "case": "q0.84_m001_r24_s4",
+          "branch": 1,
+          "q": 0.84,
+          "value": 1.3565386384195577e-06,
+          "min": -6.581187304566249e-07,
+          "max": 4.158668297504775e-06
+        },
+        {
+          "case": "center_m001_r24_s4",
+          "branch": 1,
+          "q": 0.86,
+          "value": 3.956725758147428e-08,
+          "min": -9.797372302333685e-09,
+          "max": 1.3296747347624205e-07
+        },
+        {
+          "case": "q0.88_m001_r24_s4",
+          "branch": 0,
+          "q": 0.88,
+          "value": -7.067502224566979e-07,
+          "min": -3.111451776283136e-06,
+          "max": 1.492267715397233e-06
+        },
+        {
+          "case": "q0.88_m001_r24_s4",
+          "branch": 1,
+          "q": 0.88,
+          "value": 5.776496225795569e-08,
+          "min": -2.9082329378038452e-08,
+          "max": 1.0275214412658329e-07
+        },
+        {
+          "case": "q0.9_m001_r24_s4",
+          "branch": 0,
+          "q": 0.9,
+          "value": 0.0007329036659613486,
+          "min": 0.0007327069003939535,
+          "max": 0.0007331243064698789
+        },
+        {
+          "case": "q0.9_m001_r24_s4",
+          "branch": 1,
+          "q": 0.9,
+          "value": -0.0007332256627159972,
+          "min": -0.0007339090967403705,
+          "max": -0.0007324526317155633
+        },
+        {
+          "case": "q0.92_m001_r24_s4",
+          "branch": 0,
+          "q": 0.92,
+          "value": -0.0012975523179030723,
+          "min": -0.0012979449985123792,
+          "max": -0.0012971596803427743
+        },
+        {
+          "case": "q0.92_m001_r24_s4",
+          "branch": 1,
+          "q": 0.92,
+          "value": 0.0012974831509905416,
+          "min": 0.0012974159922597428,
+          "max": 0.0012975775342924933
+        },
+        {
+          "case": "q0.836_m001_r24",
+          "branch": 0,
+          "q": 0.836,
+          "value": -0.0005046395852306151,
+          "min": -0.0005052354576087215,
+          "max": -0.0005042569775068895
+        },
+        {
+          "case": "q0.836_m001_r24",
+          "branch": 1,
+          "q": 0.836,
+          "value": 0.0005044068857771311,
+          "min": 0.0005031679275186995,
+          "max": 0.0005060004146585362
+        },
+        {
+          "case": "q0.888_m001_r24",
+          "branch": 0,
+          "q": 0.888,
+          "value": -2.6142360942671417e-08,
+          "min": -1.1117628276324787e-06,
+          "max": 7.51678350563445e-07
+        },
+        {
+          "case": "q0.888_m001_r24",
+          "branch": 1,
+          "q": 0.888,
+          "value": 1.0461583821452791e-08,
+          "min": -1.0787186621730172e-07,
+          "max": 1.6614455988772647e-07
+        },
+        {
+          "case": "q0.892_m001_r24",
+          "branch": 0,
+          "q": 0.892,
+          "value": 0.0003126147919908506,
+          "min": 0.0003122988532329174,
+          "max": 0.00031285570157446596
+        },
+        {
+          "case": "q0.892_m001_r24",
+          "branch": 1,
+          "q": 0.892,
+          "value": -0.000312700828918544,
+          "min": -0.0003130820157396519,
+          "max": -0.0003123808586956711
+        }
+      ]
+    },
+    {
+      "regime": "nonresonant",
+      "quantity": "imag",
+      "plotted_components": 6,
+      "rejected_components": 4,
+      "static_gap_edges": [
+        0.2817720188092701,
+        0.2818278586302193
+      ],
+      "static_gap_width_percent": 0.019815412736740593,
+      "width_definition": "200*(q_plus-q_minus)/(q_plus+q_minus), following the paper midpoint normalization",
+      "plotted": [
+        {
+          "case": "center_m001_r12_narrow_long",
+          "branch": 0,
+          "q": 0.2818,
+          "value": -4.642147784090643e-05,
+          "min": -4.642617330350594e-05,
+          "max": -4.641855697622189e-05
+        },
+        {
+          "case": "center_m001_r12_narrow_long",
+          "branch": 1,
+          "q": 0.2818,
+          "value": 4.610251831576303e-05,
+          "min": 4.6100306548280035e-05,
+          "max": 4.610464020703582e-05
+        },
+        {
+          "case": "q0.28178",
+          "branch": 0,
+          "q": 0.28178,
+          "value": -3.296528027654199e-05,
+          "min": -3.376810106529654e-05,
+          "max": -3.2411093311441885e-05
+        },
+        {
+          "case": "q0.28178",
+          "branch": 1,
+          "q": 0.28178,
+          "value": 3.234678838881702e-05,
+          "min": 3.2229730917327984e-05,
+          "max": 3.246897048685801e-05
+        },
+        {
+          "case": "q0.28182",
+          "branch": 0,
+          "q": 0.28182,
+          "value": -3.172688450592443e-05,
+          "min": -3.239601980737329e-05,
+          "max": -3.092846224892736e-05
+        },
+        {
+          "case": "q0.28182",
+          "branch": 1,
+          "q": 0.28182,
+          "value": 3.1610053795361304e-05,
+          "min": 3.136014277989713e-05,
+          "max": 3.182201110909185e-05
+        }
+      ]
+    },
+    {
+      "regime": "resonant",
+      "quantity": "imag",
+      "plotted_components": 10,
+      "rejected_components": 10,
+      "static_gap_edges": [
+        0.8380967935044837,
+        0.89016188953885
+      ],
+      "static_gap_width_percent": 6.025150811646268,
+      "width_definition": "200*(q_plus-q_minus)/(q_plus+q_minus), following the paper midpoint normalization",
+      "plotted": [
+        {
+          "case": "q0.8_m001_r24_s4",
+          "branch": 1,
+          "q": 0.8,
+          "value": 1.7518005198769878e-06,
+          "min": 1.6121600728621508e-06,
+          "max": 1.884099203515872e-06
+        },
+        {
+          "case": "q0.82_m001_r24_s4",
+          "branch": 1,
+          "q": 0.82,
+          "value": 4.0295145095123585e-06,
+          "min": 3.817439276864454e-06,
+          "max": 4.236795612965037e-06
+        },
+        {
+          "case": "q0.84_m001_r24_s4",
+          "branch": 0,
+          "q": 0.84,
+          "value": -0.0003883454050167775,
+          "min": -0.0003907667346319498,
+          "max": -0.00038628291541369634
+        },
+        {
+          "case": "q0.84_m001_r24_s4",
+          "branch": 1,
+          "q": 0.84,
+          "value": 0.0003882355469060617,
+          "min": 0.0003869507347131845,
+          "max": 0.00038964896435698487
+        },
+        {
+          "case": "center_m001_r24_s4",
+          "branch": 0,
+          "q": 0.86,
+          "value": -0.0009773905339569308,
+          "min": -0.000983115093303064,
+          "max": -0.0009739357203380845
+        },
+        {
+          "case": "center_m001_r24_s4",
+          "branch": 1,
+          "q": 0.86,
+          "value": 0.0009685021549446643,
+          "min": 0.0009683840699606211,
+          "max": 0.0009686479091796848
+        },
+        {
+          "case": "q0.88_m001_r24_s4",
+          "branch": 0,
+          "q": 0.88,
+          "value": -0.0006912801386760919,
+          "min": -0.0006922140690786643,
+          "max": -0.0006898861917597413
+        },
+        {
+          "case": "q0.88_m001_r24_s4",
+          "branch": 1,
+          "q": 0.88,
+          "value": 0.0006889243687579206,
+          "min": 0.000688660815234492,
+          "max": 0.0006891649305395046
+        },
+        {
+          "case": "q0.888_m001_r24",
+          "branch": 0,
+          "q": 0.888,
+          "value": -0.00032969041092337757,
+          "min": -0.0003300897104782312,
+          "max": -0.00032906773006594503
+        },
+        {
+          "case": "q0.888_m001_r24",
+          "branch": 1,
+          "q": 0.888,
+          "value": 0.0003283786347212614,
+          "min": 0.00032834319990921053,
+          "max": 0.00032844751377907646
+        }
+      ]
+    }
+  ],
+  "inputs": {
+    "results\\figure4\\dispersion_data.json": "15565dfb13dccfba40250cbd78d6500dca95809a928b3c368ec59f5b203c9c53",
+    "results\\figure4\\static_band_map\\band_map.npz": "b51709ea82838b7cf3a5f3e7b5edabda14cf6ab1ac45f0ea15d9a54a60c129d8",
+    "results\\figure4\\static_band_map\\summary.json": "09ad60a7ee7b877ff65af080cb799cc0e49e8e294d2f3f1b66418ea1f32e8825",
+    "mie_reference.py": "05966087f956cc7886726e185e9da934d3ac03a835a324c88800180314ad9062",
+    "plot_figure4_reproduction.py": "f68755aee099d2bec67a21a83f539101a9c1ae0348d7ffa88678488db03ee2a3"
+  },
+  "semantics": "Static spectral intensity is native-Meep probe response, not Smin; dashed local curves are calibrated single-mode approximation; dots show individually supported components only"
+}

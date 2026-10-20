@@ -1,0 +1,115 @@
+{
+  "status": "BOUNDED_CW_ATTEMPT_AUDIT",
+  "attempts": [
+    {
+      "attempt": "solve_supported",
+      "solver_success": false,
+      "reference_npz": "sampling/cw_q6_f0388/solve_supported/response.npz",
+      "reference_npz_sha256": "96a25c2775d40cf197927bfcd7e6a109519d9d8cadea4f057823fdf3e8ef4458",
+      "reference_summary": "sampling/cw_q6_f0388/solve_supported/summary.json",
+      "reference_summary_sha256": "2f01955909703a644aca7699f8e3cc4d8815f9cb02bf258929f65ad4ac606fb0",
+      "field_hash_matches_summary": true,
+      "source_lift_relative_residual": 4.613670393838405e-13,
+      "reference_work": -0.4081744582446175,
+      "reference_output_power": 0.07934178966250384,
+      "reference_work_relative_residual": 1.1943820541925105,
+      "comparisons": [
+        {
+          "candidate": "raw",
+          "path": "sampling/template_q6/response_t2000.npz",
+          "sha256": "75f7dcc3631c8313ee5281b3a9dd74c72acfd44a28238a27229f14ca8804ace6",
+          "E_relative_difference_to_CW": 1.0265697816171517,
+          "D_relative_difference_to_CW": 1.0266355553364745,
+          "output_relative_difference_to_CW": 1.0817439879159012,
+          "candidate_power": 0.2727238022608639
+        },
+        {
+          "candidate": "single_pole",
+          "path": "sampling_tail/template_q6/response_t2000.npz",
+          "sha256": "4c624b9e10574f6137ed39ae2af9e72c74d1bcb8d4a833b9d35c34c1ccf13eed",
+          "E_relative_difference_to_CW": 0.03620369929410492,
+          "D_relative_difference_to_CW": 0.037418491008116554,
+          "output_relative_difference_to_CW": 0.0962260576322455,
+          "candidate_power": 0.07964802761087605
+        },
+        {
+          "candidate": "individual_two_pole",
+          "path": "sampling_tail/template_q6/response_t2000_twopole.npz",
+          "sha256": "947e4d9da4d57104de7580090b4df3eee047421845da2193e61fb72517b3d4ca",
+          "E_relative_difference_to_CW": 0.036204465153799,
+          "D_relative_difference_to_CW": 0.037419266139878976,
+          "output_relative_difference_to_CW": 0.0962269745367595,
+          "candidate_power": 0.07964787541216911
+        },
+        {
+          "candidate": "uniform_even_two_pole",
+          "path": "sampling_tail/uniform_even/template_q6/response_t2000.npz",
+          "sha256": "7f5ceb2bb25909571e9c140ae91c88835a1b4df406084514c034df8e2cf2f5c4",
+          "E_relative_difference_to_CW": 0.036204465153799006,
+          "D_relative_difference_to_CW": 0.03741926613987898,
+          "output_relative_difference_to_CW": 0.0962269745367595,
+          "candidate_power": 0.0796478754121691
+        }
+      ],
+      "can_be_used_as_independent_reference": false
+    },
+    {
+      "attempt": "solve_supported_L2",
+      "solver_success": false,
+      "reference_npz": "sampling/cw_q6_f0388/solve_supported_L2/response.npz",
+      "reference_npz_sha256": "239f996972267861ae4c7bd63529cb3f3f3088962d13262b8d44b0f7d5c386eb",
+      "reference_summary": "sampling/cw_q6_f0388/solve_supported_L2/summary.json",
+      "reference_summary_sha256": "747c080d913d5dff21c30fdd95c060cb4cf80f18d227e528134b7a09e8577537",
+      "field_hash_matches_summary": true,
+      "source_lift_relative_residual": 4.613670393838405e-13,
+      "reference_work": 98.45488652092824,
+      "reference_output_power": 5.025529014426137,
+      "reference_work_relative_residual": -0.9489560224788043,
+      "comparisons": [
+        {
+          "candidate": "raw",
+          "path": "sampling/template_q6/response_t2000.npz",
+          "sha256": "75f7dcc3631c8313ee5281b3a9dd74c72acfd44a28238a27229f14ca8804ace6",
+          "E_relative_difference_to_CW": 0.8675121919054273,
+          "D_relative_difference_to_CW": 0.8723672993386845,
+          "output_relative_difference_to_CW": 0.8537949578990229,
+          "candidate_power": 0.2727238022608639
+        },
+        {
+          "candidate": "single_pole",
+          "path": "sampling_tail/template_q6/response_t2000.npz",
+          "sha256": "4c624b9e10574f6137ed39ae2af9e72c74d1bcb8d4a833b9d35c34c1ccf13eed",
+          "E_relative_difference_to_CW": 1.0058398800191857,
+          "D_relative_difference_to_CW": 1.007339833296341,
+          "output_relative_difference_to_CW": 0.9731211208261712,
+          "candidate_power": 0.07964802761087605
+        },
+        {
+          "candidate": "individual_two_pole",
+          "path": "sampling_tail/template_q6/response_t2000_twopole.npz",
+          "sha256": "947e4d9da4d57104de7580090b4df3eee047421845da2193e61fb72517b3d4ca",
+          "E_relative_difference_to_CW": 1.0058397338630873,
+          "D_relative_difference_to_CW": 1.007339690235546,
+          "output_relative_difference_to_CW": 0.9731211728305066,
+          "candidate_power": 0.07964787541216911
+        },
+        {
+          "candidate": "uniform_even_two_pole",
+          "path": "sampling_tail/uniform_even/template_q6/response_t2000.npz",
+          "sha256": "7f5ceb2bb25909571e9c140ae91c88835a1b4df406084514c034df8e2cf2f5c4",
+          "E_relative_difference_to_CW": 1.0058397338630873,
+          "D_relative_difference_to_CW": 1.007339690235546,
+          "output_relative_difference_to_CW": 0.9731211728305066,
+          "candidate_power": 0.0796478754121691
+        }
+      ],
+      "can_be_used_as_independent_reference": false
+    }
+  ],
+  "continuous_wave_solver_validated": false,
+  "source_support_adapter": "sampling/cw_q6_f0388/source_support_adapter.json",
+  "source_support_adapter_sha256": "96b8dd39dfa2f457c7bdde9c92475be3add4a261c95b5a1fdf2243d6b3955370",
+  "actual_source_npz": "sampling/cw_q6_f0388/q6_source_supported.npz",
+  "actual_source_npz_sha256": "03b77c999bbd7c0c1abc53d43d2bec60efe22ac8db0a8610ee4df38444ba5cad",
+  "interpretation": "Failed CW iterates are preserved diagnostics. Their disagreement cannot validate or refute the DFT tail candidate; actual PDE, time holdout and complete-source controls are separate evidence."
+}

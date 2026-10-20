@@ -1,0 +1,47 @@
+{
+  "status": "CONFIRMED_FINITE_G_PRIMITIVE_REPRESENTATION_MISMATCH",
+  "additional_native_q_count": 1,
+  "positive_q": 3.141592653589793,
+  "cached_negative_q": -3.141592653589793,
+  "source": "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\rejected_g3.1_k1_f4",
+  "geometry_unchanged": true,
+  "gmax": 3.1,
+  "gmode_inds": [
+    0,
+    3
+  ],
+  "native_angular_frequency_difference": -2.220446049250313e-16,
+  "maximum_selected_gamma": 0.0,
+  "native_physical_field_difference": {
+    "normalized_raw_distance": 1.9992320521702203,
+    "phase_aligned_distance": 0.0554184227063036,
+    "overlap_squared": 0.9969311564945273,
+    "relative_phase": 3.1415926535897833,
+    "norm_ratio": 0.9999999999999969
+  },
+  "initial_packet_Bloch_field_difference": {
+    "normalized_raw_distance": 0.044982750754488744,
+    "phase_aligned_distance": 0.04498275075448875,
+    "overlap_squared": 0.9979775757198783,
+    "relative_phase": -3.5755681933976106e-17,
+    "norm_ratio": 0.9999999999999978
+  },
+  "initial_packet_line_ExEy_difference": {
+    "normalized_raw_distance": 0.007054743903361187,
+    "phase_aligned_distance": 0.007054743903361186,
+    "overlap_squared": 0.9999502312077068,
+    "relative_phase": -3.2479317088109374e-17,
+    "norm_ratio": 1.0000000000000064
+  },
+  "instantaneous_omega": [
+    1.6131704160039868,
+    1.613170416003987
+  ],
+  "physical_reason": "q=+pi and q=-pi are equivalent modulo a primitive reciprocal vector, but a fixed finite native G set is not invariant under that reciprocal shift. This audit compares actual fields with full exp(i(G+q)x) phases.",
+  "selection": "Original seven guided sectors only; outer radiating n=±4 fields in the cache remain excluded exactly as in the original baseline, and the nine-sector radiation rejection is not reclassified.",
+  "limitations": [
+    "Specific finite gmax and gmode basis, not a claim about converged Legume fields",
+    "No physical field smoothing or endpoint averaging performed",
+    "A confirmed representation mismatch does not by itself quantify its contribution to every final packet-width discrepancy"
+  ]
+}

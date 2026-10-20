@@ -1,0 +1,117 @@
+{
+  "schema": "native-2d-traveling-validation-v1",
+  "physical_geometry": "Square 2D slab, eps_b=11, d=.45, off-centre Circle/Ellipse/Poly inclusions in air; no fitted paper inputs",
+  "physical_drive_omega": 0.29509688610500695,
+  "physical_Q": [
+    0.6283185307179586,
+    0.6283185307179586
+  ],
+  "native_kpoints": [
+    [
+      -0.8716814692820414,
+      -0.5716814692820413
+    ],
+    [
+      -1.5,
+      -1.2
+    ],
+    [
+      -2.1283185307179586,
+      -1.8283185307179586
+    ]
+  ],
+  "physical_kpoints": [
+    [
+      0.8716814692820414,
+      0.5716814692820413
+    ],
+    [
+      1.5,
+      1.2
+    ],
+    [
+      2.1283185307179586,
+      1.8283185307179586
+    ]
+  ],
+  "gmax": 1.6,
+  "gmode_inds": [
+    0,
+    1
+  ],
+  "modes_per_sector": [
+    0,
+    1
+  ],
+  "modulation": "sum_r 2*amplitude_r chi_r cos(Q.r-Omega*t), amplitudes=[.12,.10,.08,.60] absolute epsilon",
+  "omega_a_over_c": [
+    0.6572206511394457,
+    1.012444665349588,
+    0.9910992885209773,
+    1.6529261398132744,
+    1.2861961746259842,
+    1.823173045367335
+  ],
+  "native_cyclic_gamma": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "max_transfer_to_higher_k_positive_Q": 0.912374953569329,
+  "max_transfer_to_higher_k_negative_Q": 0.009256292697492511,
+  "action_norm_error_positive_Q": 9.304477921467935e-08,
+  "action_norm_error_negative_Q": 3.18458496240126e-08,
+  "time_refinement_max_population_change": 1.2111560232508367e-07,
+  "spatial_refinement": {
+    "gmax": 2.1,
+    "max_frequency_change": 0.0016600365883767676,
+    "max_transfer_to_higher_k": 0.9156770859415632,
+    "same_drive": true,
+    "max_population_change": 0.08159973143725907
+  },
+  "momentum_window_control": {
+    "sectors": 5,
+    "max_target_sector_weight": 0.6549426765126393,
+    "max_upper_edge_weight": 0.8134640681741183,
+    "max_total_higher_k_positive_Q": 0.9004672015404445,
+    "max_total_higher_k_negative_Q": 0.009275669369450837,
+    "note": "Directional transfer persists, but the precise 3-sector oscillation and transfer weight are not momentum-window converged; appreciable weight reaches the added sector."
+  },
+  "static_derivative_native": [
+    -0.001530666890874966,
+    -0.0009284844339449012
+  ],
+  "static_derivative_registered": [
+    -0.0015306668898600868,
+    -0.0009284844325518027
+  ],
+  "static_derivative_relative_error": 1.5004004705332363e-09,
+  "static_derivative_unregistered_display": [
+    -0.0015058275706238803,
+    -0.0008419928239099127
+  ],
+  "static_zero_modulation_error": 0.0,
+  "finite_edges": [
+    {
+      "harmonic": -1,
+      "source_sector": 0,
+      "target_k": [
+        0.24336293856408275,
+        -0.05663706143591729
+      ]
+    },
+    {
+      "harmonic": 1,
+      "source_sector": 2,
+      "target_k": [
+        2.7566370614359172,
+        2.4566370614359174
+      ]
+    }
+  ],
+  "scope": "Actual native Legume material projection and full signed finite Maxwell dynamics. Guided-sector fixture: measured gamma is zero, no dynamic radiation claim. Finite sectors/modes and spatial sensitivity are explicit; this is not a converged scattering or topology calculation.",
+  "coordinate_correction": "Physical chart G=-G_native, k=-k_native and Rz(pi) vector components. Verified against native shape-translation covariance, projected D=epsilon E, real-space overlap and independent static eigensolve derivative. Raw native display orientation retained as failure control."
+}

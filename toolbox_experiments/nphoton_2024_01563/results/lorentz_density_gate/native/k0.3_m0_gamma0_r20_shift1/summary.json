@@ -1,0 +1,27 @@
+{
+  "case": "k0.3_m0_gamma0_r20_shift1",
+  "resolution": 20,
+  "dt": 0.0125,
+  "modulation": 0.0,
+  "damping_ratio": 0.0,
+  "k_cyclic": 0.3,
+  "drive_cyclic": 0.8,
+  "phase": 0.37,
+  "sample_shift_dt": 1.0,
+  "E_relative_L2_error": 0.3656808550564764,
+  "D_relative_L2_error": 0.0005353463183662687,
+  "max_immediate_DBE_change": 0.0,
+  "adapter": {
+    "array_count": 1,
+    "state_count": 1,
+    "realnum_bytes": 8,
+    "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+  },
+  "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+  "initial_P_time1": [
+    0.0,
+    0.0
+  ],
+  "discrete_k0_recurrence": null,
+  "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+}

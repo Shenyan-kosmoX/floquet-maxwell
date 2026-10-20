@@ -1,0 +1,45 @@
+{
+  "status": "STATIC_POLARIZATION_TEMPLATE_GREEN_RESPONSE",
+  "frequency": 0.388,
+  "template": 0,
+  "resolution": 24,
+  "basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+  "checkpoints": [
+    {
+      "time": 900.0,
+      "data": "response_t900.npz",
+      "field_change_from_previous": null,
+      "output_real_imag": [
+        [
+          0.08255664762825606,
+          0.290742652884679
+        ],
+        [
+          0.09092563083451986,
+          0.2907830367859018
+        ]
+      ],
+      "elapsed_seconds": 156.31293492600003
+    },
+    {
+      "time": 1200.0,
+      "data": "response_t1200.npz",
+      "field_change_from_previous": 0.016048121517164865,
+      "output_real_imag": [
+        [
+          0.0798514198630508,
+          0.28971287193395384
+        ],
+        [
+          0.08816924690316365,
+          0.28978654352512184
+        ]
+      ],
+      "elapsed_seconds": 207.61216945800004
+    }
+  ],
+  "current": "J=-i omega Q_j; same physical mask at Yee source sites",
+  "normalization": "Absolute E; outgoing E/sqrt(2) for unit-area time-averaged-power air ports; no plane-source rescale",
+  "source_sampling": "Regular-grid unmasked Q interpolated then sharp physical material mask, distinct from subpixel material tensor derivative",
+  "completed": true
+}

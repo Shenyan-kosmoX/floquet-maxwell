@@ -1,0 +1,292 @@
+{
+  "status": "EXECUTED_COUNTEREXAMPLES_AND_EXPORT_AUDIT",
+  "versions": {
+    "legume-gme": "1.0.3",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "shared_channel_counterexample": {
+    "description": "Two degenerate passive modes; equal isolated linewidths, shared versus independent radiation baths",
+    "frequency_center": 2.0,
+    "diagonal_loss": [
+      0.1,
+      0.1
+    ],
+    "shared_channel_C": [
+      [
+        [
+          0.31622776601683794,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.31622776601683794,
+          0.0
+        ]
+      ]
+    ],
+    "independent_channel_C": [
+      [
+        [
+          0.31622776601683794,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.31622776601683794,
+          0.0
+        ]
+      ]
+    ],
+    "shared_loss_matrix": [
+      [
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ]
+      ]
+    ],
+    "independent_loss_matrix": [
+      [
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ]
+      ]
+    ],
+    "shared_poles": [
+      [
+        2.0000000000000004,
+        0.0
+      ],
+      [
+        2.0,
+        -0.2000000000000003
+      ]
+    ],
+    "independent_poles": [
+      [
+        2.0,
+        -0.1
+      ],
+      [
+        2.0,
+        -0.1
+      ]
+    ],
+    "time": 10.0,
+    "dark_state_energy_shared": 0.9999999999999996,
+    "dark_state_energy_diagonal_closure": 0.13533528323661265,
+    "bright_state_energy_shared": 0.0183156388887342,
+    "minimum_loss_eigenvalue_shared": 0.0,
+    "modal_gauge_covariance_residual": 1.5515838457795457e-17,
+    "outgoing_amplitude_gauge_invariance_residual": 4.163336342344337e-17,
+    "result": "PASS: diagonal linewidths alone cannot determine coherent multimode radiation or dark states"
+  },
+  "cached_legume": {
+    "cached_file": "lpor_71318\\results\\static_probe\\custom_g7.1_v8\\gme_native.pkl",
+    "sha256": "e9d5cb95311c353d681028a2f419c2a892310ce7f7cb36df1a1578bf74fe03a5",
+    "modes": [
+      3,
+      4
+    ],
+    "irrep": "Eu",
+    "freqs_fa_over_c": [
+      0.6150365805722097,
+      0.6150365805722116
+    ],
+    "frequency_thz": [
+      460.95832062414445,
+      460.95832062414587
+    ],
+    "channel_labels": [
+      [
+        "l",
+        "te",
+        0.0,
+        0.0
+      ],
+      [
+        "l",
+        "tm",
+        0.0,
+        0.0
+      ],
+      [
+        "u",
+        "te",
+        0.0,
+        0.0
+      ],
+      [
+        "u",
+        "tm",
+        0.0,
+        0.0
+      ]
+    ],
+    "complex_channel_rows": [
+      [
+        [
+          0.015612003506622806,
+          -0.0026971985251220926
+        ],
+        [
+          -0.3929808179460698,
+          0.0678930979049116
+        ],
+        [
+          0.015612003506608092,
+          -0.0026971985251274845
+        ],
+        [
+          0.3929808179460703,
+          -0.06789309790491171
+        ]
+      ],
+      [
+        [
+          -0.3929808179460852,
+          0.06789309790491367
+        ],
+        [
+          -0.01561200350666337,
+          0.0026971985251331558
+        ],
+        [
+          -0.3929808179460854,
+          0.0678930979049135
+        ],
+        [
+          0.01561200350666399,
+          -0.002697198525132997
+        ]
+      ]
+    ],
+    "squared_frequency_radiation_matrix": [
+      [
+        [
+          0.3185888111001254,
+          0.0
+        ],
+        [
+          3.854726265493025e-14,
+          1.2525272569368377e-17
+        ]
+      ],
+      [
+        [
+          3.854726265493025e-14,
+          -1.2525272569368377e-17
+        ],
+        [
+          0.3185888111001529,
+          0.0
+        ]
+      ]
+    ],
+    "native_positive_freqs_im": [
+      0.006560170641338264,
+      0.006560170641338811
+    ],
+    "reconstructed_positive_freqs_im": [
+      0.006560170641338264,
+      0.006560170641338811
+    ],
+    "reconstruction_max_absolute_error": 0.0,
+    "Q": [
+      46.87656878135286,
+      46.8765687813491
+    ],
+    "modal_phase_transform_relative_residual": 3.4582594779740986e-16,
+    "degenerate_unitary_transform_relative_residual": 1.2816804827144702e-15,
+    "minimum_R_eigenvalue": 0.3185888111000981,
+    "total_bath_off_diagonal_normalized": 1.2099378053095011e-13,
+    "selected_channel_label": [
+      "l",
+      "te",
+      0.0,
+      0.0
+    ],
+    "selected_channel_R_eigenvalues": [
+      0.0,
+      0.15929440555007507
+    ],
+    "selected_channel_dark_power": 5.8316031414401005e-37,
+    "selected_channel_bright_power": 0.15929440555007504,
+    "caution": "The full Eu doublet R is nearly scalar by symmetry; this actual doublet does not demonstrate total bright/dark linewidth splitting. It verifies channels, gauge and channel-resolved interference. The synthetic shared-bath example supplies the total-linewidth counterexample.",
+    "result": "PASS: native linewidth, complex-channel normalization and phase/unitary covariance verified"
+  },
+  "retarded_branch": {
+    "positive_frequency": [
+      1.0,
+      -0.02
+    ],
+    "negative_reality_partner": [
+      -1.0,
+      -0.02
+    ],
+    "positive_outgoing_kz": [
+      0.9165566798145615,
+      -0.021820800001202782
+    ],
+    "negative_retarded_kz": [
+      -0.9165566798145615,
+      -0.021820800001202782
+    ],
+    "negative_naive_principal_kz": [
+      0.9165566798145615,
+      0.021820800001202782
+    ],
+    "passive_pole_pair": [
+      [
+        2.0,
+        -0.1
+      ],
+      [
+        -2.0,
+        -0.1
+      ]
+    ],
+    "result": "PASS: negative-frequency outgoing branch and passive pole partner require explicit convention"
+  },
+  "scope": "No core changes, no new spatial solve, no full open Floquet validation"
+}

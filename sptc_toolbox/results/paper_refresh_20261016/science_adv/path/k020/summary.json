@@ -1,0 +1,80 @@
+{
+  "k_index": 20,
+  "kpoint": [
+    0.7853981633974483,
+    0.0
+  ],
+  "path_coordinate": 1.25,
+  "all_window_modes": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "all_window_frequencies_thz": [
+    60.77486511362768,
+    65.33645075915699,
+    67.09134338782819,
+    67.5279493203573,
+    67.73595484827061,
+    69.51147586910827,
+    73.6795769386102,
+    73.75737574261669,
+    74.98399753977341,
+    75.07029004619842
+  ],
+  "modes": [
+    7,
+    8,
+    9,
+    10,
+    12
+  ],
+  "seed_tracking": {
+    "k_index": 20,
+    "modes": [
+      8,
+      9
+    ],
+    "overlap": 0.9948446132633189,
+    "ambiguous": false
+  },
+  "forbidden_modulation_relative_max": 9.481659299614972e-14,
+  "selection": "Connected component of actual field-derived modulation overlap, threshold1e-6; no radiation-loss cuts",
+  "cases": {
+    "static": {
+      "m": 0.0,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0,
+      "projection_fast_generic_error": 3.1702640430855913e-16,
+      "common_sample_collective_loss_ratio": 0.09677499756277985,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "weak": {
+      "m": 0.0001,
+      "drive_thz": 136.0,
+      "absolute_epsilon_amplitude": 0.0016,
+      "projection_fast_generic_error": 4.461552111210847e-16,
+      "common_sample_collective_loss_ratio": 0.09677499756277985,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    },
+    "strong": {
+      "m": 0.03,
+      "drive_thz": 134.0,
+      "absolute_epsilon_amplitude": 0.48,
+      "projection_fast_generic_error": 5.917570375869101e-16,
+      "common_sample_collective_loss_ratio": 0.10990147103278597,
+      "status": "FROZEN_APPROXIMATION_OUTSIDE_SCOPE",
+      "reason": "Collective common-frequency radiation is too strong for the weak-radiation bath"
+    }
+  },
+  "elapsed_seconds": 3.585436599998502
+}

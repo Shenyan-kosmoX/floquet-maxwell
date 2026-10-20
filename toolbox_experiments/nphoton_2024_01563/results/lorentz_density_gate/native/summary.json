@@ -1,0 +1,556 @@
+{
+  "cases": [
+    {
+      "case": "k0_m0_gamma0_r20_shift1",
+      "resolution": 20,
+      "dt": 0.0125,
+      "modulation": 0.0,
+      "damping_ratio": 0.0,
+      "k_cyclic": 0.0,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.3649146845451503,
+      "D_relative_L2_error": 0.0,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": {
+        "max_absolute_P_error_by_material_time_offset_dt": {
+          "0": 1.590876378314355e-14,
+          "-1": 1.590876378314355e-14,
+          "1": 1.590876378314355e-14
+        },
+        "meaning": "Offset zero is the intended centered forcing time; +/-1 are deliberately wrong material-phase controls"
+      },
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0_m0_gamma0_r40_shift1",
+      "resolution": 40,
+      "dt": 0.00625,
+      "modulation": 0.0,
+      "damping_ratio": 0.0,
+      "k_cyclic": 0.0,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.09034167150795634,
+      "D_relative_L2_error": 0.0,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": {
+        "max_absolute_P_error_by_material_time_offset_dt": {
+          "0": 2.055352380244069e-14,
+          "-1": 2.055352380244069e-14,
+          "1": 2.055352380244069e-14
+        },
+        "meaning": "Offset zero is the intended centered forcing time; +/-1 are deliberately wrong material-phase controls"
+      },
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0_m0.01_gamma0_r20_shift1",
+      "resolution": 20,
+      "dt": 0.0125,
+      "modulation": 0.01,
+      "damping_ratio": 0.0,
+      "k_cyclic": 0.0,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.3638811469838443,
+      "D_relative_L2_error": 0.0,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": {
+        "max_absolute_P_error_by_material_time_offset_dt": {
+          "0": 1.278493037728882e-14,
+          "-1": 0.005298675825251694,
+          "1": 0.005228776163784161
+        },
+        "meaning": "Offset zero is the intended centered forcing time; +/-1 are deliberately wrong material-phase controls"
+      },
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0_m0.01_gamma0_r40_shift1",
+      "resolution": 40,
+      "dt": 0.00625,
+      "modulation": 0.01,
+      "damping_ratio": 0.0,
+      "k_cyclic": 0.0,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.0900721203802885,
+      "D_relative_L2_error": 0.0,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": {
+        "max_absolute_P_error_by_material_time_offset_dt": {
+          "0": 1.678787909004144e-14,
+          "-1": 0.0025233563636332906,
+          "1": 0.0025064421768278954
+        },
+        "meaning": "Offset zero is the intended centered forcing time; +/-1 are deliberately wrong material-phase controls"
+      },
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0_m0_gamma0.05_r20_shift1",
+      "resolution": 20,
+      "dt": 0.0125,
+      "modulation": 0.0,
+      "damping_ratio": 0.05,
+      "k_cyclic": 0.0,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.34302466379070917,
+      "D_relative_L2_error": 0.0,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": {
+        "max_absolute_P_error_by_material_time_offset_dt": {
+          "0": 1.1362442475453383e-14,
+          "-1": 1.1362442475453383e-14,
+          "1": 1.1362442475453383e-14
+        },
+        "meaning": "Offset zero is the intended centered forcing time; +/-1 are deliberately wrong material-phase controls"
+      },
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0_m0_gamma0.05_r40_shift1",
+      "resolution": 40,
+      "dt": 0.00625,
+      "modulation": 0.0,
+      "damping_ratio": 0.05,
+      "k_cyclic": 0.0,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.0846481175331918,
+      "D_relative_L2_error": 0.0,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": {
+        "max_absolute_P_error_by_material_time_offset_dt": {
+          "0": 1.459901062968546e-14,
+          "-1": 1.459901062968546e-14,
+          "1": 1.459901062968546e-14
+        },
+        "meaning": "Offset zero is the intended centered forcing time; +/-1 are deliberately wrong material-phase controls"
+      },
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0_m0.01_gamma0.05_r20_shift1",
+      "resolution": 20,
+      "dt": 0.0125,
+      "modulation": 0.01,
+      "damping_ratio": 0.05,
+      "k_cyclic": 0.0,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.3420925929369475,
+      "D_relative_L2_error": 0.0,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": {
+        "max_absolute_P_error_by_material_time_offset_dt": {
+          "0": 1.5537173583032202e-14,
+          "-1": 0.004747571324456331,
+          "1": 0.004684973636363759
+        },
+        "meaning": "Offset zero is the intended centered forcing time; +/-1 are deliberately wrong material-phase controls"
+      },
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0_m0.01_gamma0.05_r40_shift1",
+      "resolution": 40,
+      "dt": 0.00625,
+      "modulation": 0.01,
+      "damping_ratio": 0.05,
+      "k_cyclic": 0.0,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.08440732385150469,
+      "D_relative_L2_error": 0.0,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": {
+        "max_absolute_P_error_by_material_time_offset_dt": {
+          "0": 1.0005721400334663e-14,
+          "-1": 0.00225867122419114,
+          "1": 0.0022435399748817492
+        },
+        "meaning": "Offset zero is the intended centered forcing time; +/-1 are deliberately wrong material-phase controls"
+      },
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0.3_m0_gamma0_r20_shift1",
+      "resolution": 20,
+      "dt": 0.0125,
+      "modulation": 0.0,
+      "damping_ratio": 0.0,
+      "k_cyclic": 0.3,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.3656808550564764,
+      "D_relative_L2_error": 0.0005353463183662687,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": null,
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0.3_m0_gamma0_r40_shift1",
+      "resolution": 40,
+      "dt": 0.00625,
+      "modulation": 0.0,
+      "damping_ratio": 0.0,
+      "k_cyclic": 0.3,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.09044868188009951,
+      "D_relative_L2_error": 0.0001283259831248559,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": null,
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0.3_m0.01_gamma0_r20_shift1",
+      "resolution": 20,
+      "dt": 0.0125,
+      "modulation": 0.01,
+      "damping_ratio": 0.0,
+      "k_cyclic": 0.3,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.36465334044926717,
+      "D_relative_L2_error": 0.0005336239404810326,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": null,
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0.3_m0.01_gamma0_r40_shift1",
+      "resolution": 40,
+      "dt": 0.00625,
+      "modulation": 0.01,
+      "damping_ratio": 0.0,
+      "k_cyclic": 0.3,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.09017937720449096,
+      "D_relative_L2_error": 0.00012786308199951878,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": null,
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0.3_m0_gamma0.05_r20_shift1",
+      "resolution": 20,
+      "dt": 0.0125,
+      "modulation": 0.0,
+      "damping_ratio": 0.05,
+      "k_cyclic": 0.3,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.34384192686572485,
+      "D_relative_L2_error": 0.00044670905706663944,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": null,
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0.3_m0_gamma0.05_r40_shift1",
+      "resolution": 40,
+      "dt": 0.00625,
+      "modulation": 0.0,
+      "damping_ratio": 0.05,
+      "k_cyclic": 0.3,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.08478569543979857,
+      "D_relative_L2_error": 0.00010715702216427793,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": null,
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0.3_m0.01_gamma0.05_r20_shift1",
+      "resolution": 20,
+      "dt": 0.0125,
+      "modulation": 0.01,
+      "damping_ratio": 0.05,
+      "k_cyclic": 0.3,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.34291416245024275,
+      "D_relative_L2_error": 0.00044567512152824524,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": null,
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    },
+    {
+      "case": "k0.3_m0.01_gamma0.05_r40_shift1",
+      "resolution": 40,
+      "dt": 0.00625,
+      "modulation": 0.01,
+      "damping_ratio": 0.05,
+      "k_cyclic": 0.3,
+      "drive_cyclic": 0.8,
+      "phase": 0.37,
+      "sample_shift_dt": 1.0,
+      "E_relative_L2_error": 0.08454494335289381,
+      "D_relative_L2_error": 0.00010686964796598527,
+      "max_immediate_DBE_change": 0.0,
+      "adapter": {
+        "array_count": 1,
+        "state_count": 1,
+        "realnum_bytes": 8,
+        "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+      },
+      "initial_state_policy": "Integer-time D,P; centered P difference for J, centered staggered B; O(dt^2) initialization uncertainty",
+      "initial_P_time1": [
+        0.0,
+        0.0
+      ],
+      "discrete_k0_recurrence": null,
+      "scope": "One-period homogeneous native ADE trajectory versus primitive continuum ODE; no sphere or full open-spectrum certificate"
+    }
+  ],
+  "convergence": [
+    {
+      "k_cyclic": 0.0,
+      "modulation": 0.0,
+      "damping_ratio": 0.0,
+      "E_error_reduction": 4.039273111224342,
+      "D_error_reduction": null
+    },
+    {
+      "k_cyclic": 0.0,
+      "modulation": 0.01,
+      "damping_ratio": 0.0,
+      "E_error_reduction": 4.0398865425563635,
+      "D_error_reduction": null
+    },
+    {
+      "k_cyclic": 0.0,
+      "modulation": 0.0,
+      "damping_ratio": 0.05,
+      "E_error_reduction": 4.052360215290127,
+      "D_error_reduction": null
+    },
+    {
+      "k_cyclic": 0.0,
+      "modulation": 0.01,
+      "damping_ratio": 0.05,
+      "E_error_reduction": 4.05287808364569,
+      "D_error_reduction": null
+    },
+    {
+      "k_cyclic": 0.3,
+      "modulation": 0.0,
+      "damping_ratio": 0.0,
+      "E_error_reduction": 4.0429649991055685,
+      "D_error_reduction": 4.17176868885079
+    },
+    {
+      "k_cyclic": 0.3,
+      "modulation": 0.01,
+      "damping_ratio": 0.0,
+      "E_error_reduction": 4.043644475636358,
+      "D_error_reduction": 4.173401204915747
+    },
+    {
+      "k_cyclic": 0.3,
+      "modulation": 0.0,
+      "damping_ratio": 0.05,
+      "E_error_reduction": 4.055423796221229,
+      "D_error_reduction": 4.168733397441827
+    },
+    {
+      "k_cyclic": 0.3,
+      "modulation": 0.01,
+      "damping_ratio": 0.05,
+      "E_error_reduction": 4.0559984885069476,
+      "D_error_reduction": 4.170268453303933
+    }
+  ],
+  "checks": {
+    "all_finite": true,
+    "all_immediate_changes_zero": true,
+    "all_E_refinements_second_order": true,
+    "all_exact_k0_recurrences": true
+  }
+}

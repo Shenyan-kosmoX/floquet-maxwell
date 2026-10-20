@@ -1,0 +1,117 @@
+{
+  "config": {
+    "radius": 0.3333333333333333,
+    "height": 0.6666666666666666,
+    "epsilon": 11.68,
+    "kx_ka": 2.57610597594363,
+    "ky_ka": 2.57610597594363,
+    "resolution": 24,
+    "padding": 1.0,
+    "pml": 0.5,
+    "frequency": 0.413,
+    "width": 0.16,
+    "warmup": 15.0,
+    "window": 160.0,
+    "sample_dt": 0.5,
+    "source_variant": 0,
+    "xy_samples": 12,
+    "z_order": 5,
+    "field_extent": 0.9
+  },
+  "windows": [
+    {
+      "start": 77.5,
+      "end": 237.5,
+      "probes": [
+        [
+          {
+            "frequency": 0.4053957491860082,
+            "decay": 1.1131666622325397e-06,
+            "Q": -182091.21910503338,
+            "amplitude": [
+              1.9335316255955672,
+              -121.75199037352304
+            ],
+            "error": 1.2030806913836008e-12
+          }
+        ],
+        [
+          {
+            "frequency": 0.4053957498474774,
+            "decay": 1.111330337449007e-06,
+            "Q": -182392.1007942784,
+            "amplitude": [
+              6.2314868444258895,
+              -77.33173009336824
+            ],
+            "error": 3.733151551144934e-11
+          }
+        ],
+        [
+          {
+            "frequency": 0.40539574917988125,
+            "decay": 1.113186485142722e-06,
+            "Q": -182087.97653876714,
+            "amplitude": [
+              -0.7136703286370106,
+              -29.66045875632404
+            ],
+            "error": 2.7974074632269092e-12
+          }
+        ]
+      ]
+    },
+    {
+      "start": 237.5,
+      "end": 397.5,
+      "probes": [
+        [
+          {
+            "frequency": 0.40539574919079613,
+            "decay": 1.1131420625524773e-06,
+            "Q": -182095.24319888162,
+            "amplitude": [
+              93.54028762414227,
+              -78.1711090313952
+            ],
+            "error": 1.3509528428668634e-12
+          }
+        ],
+        [
+          {
+            "frequency": 0.40539574762028163,
+            "decay": 1.112493982647213e-06,
+            "Q": -182201.32150990618,
+            "amplitude": [
+              62.68541396958672,
+              -45.858975032150525
+            ],
+            "error": 3.277531786375348e-11
+          }
+        ],
+        [
+          {
+            "frequency": 0.4053957491808287,
+            "decay": 1.113127727158506e-06,
+            "Q": -182097.58830448287,
+            "amplitude": [
+              22.012798858640746,
+              -19.941442953546378
+            ],
+            "error": 1.742839588770045e-12
+          }
+        ]
+      ]
+    }
+  ],
+  "meep_version": "1.35.0",
+  "elapsed_seconds": 23.29928174999077,
+  "geometry_type": "Sphere",
+  "radius_nm": 210.6,
+  "period_nm": 631.8,
+  "epsilon": 11.68,
+  "q_definition": "q=kx*a/pi=ky*a/pi along Gamma-M",
+  "polarization": "Hz excitation, z-even vector symmetry; TE surface-wave candidate, check physical field identity",
+  "figure_mapping": "Fig4b static branch; epsilon perturbations are static weak-modulation counterparts only",
+  "status": "STATIC_ARRAY_MODE_PROBE_NOT_DYNAMIC_FLOQUET"
+}

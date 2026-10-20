@@ -1,0 +1,267 @@
+{
+  "status": "VERIFIED_FINITE_PENCIL_AND_EXACT_ONE_DIMENSIONAL_OUTGOING_SLAB_INFRASTRUCTURE",
+  "all_checks_passed": true,
+  "checks": {
+    "generalized_biorthogonality": true,
+    "nonnormal_spectral_inverse": true,
+    "linear_residue_minus_sign": true,
+    "explicit_background_expansion": true,
+    "semisimple_degenerate_full_metric": true,
+    "complex_delta_H_delta_M_projection": true,
+    "defective_EP_rejected": true,
+    "analytic_outgoing_slab_poles": true,
+    "analytic_slab_adjugate_residues": true,
+    "independent_slab_contour_residues": true,
+    "slab_inverse_Laurent_limit": true
+  },
+  "generalized_basis_diagnostics": {
+    "status": "VERIFIED_COMPLETE_DIAGONALIZABLE_FINITE_PENCIL",
+    "right_relative_residuals": [
+      2.6548549306693493e-16,
+      2.3076337520156576e-16,
+      4.0640389712574713e-16
+    ],
+    "left_relative_residuals": [
+      2.6987264593640753e-16,
+      1.5333322151413134e-16,
+      3.927518624541679e-16
+    ],
+    "biorthogonality_error": 6.293220721943133e-16,
+    "right_basis_condition": 2.0656747730449925,
+    "left_basis_condition": 2.3597979479935227,
+    "mass_condition": 1.506298030016444,
+    "clusters": [
+      {
+        "indices": [
+          0
+        ],
+        "singular_values": [
+          0.9090578674177728
+        ],
+        "minimum_relative_metric_overlap": 0.700034380709763
+      },
+      {
+        "indices": [
+          1
+        ],
+        "singular_values": [
+          0.7840472693736749
+        ],
+        "minimum_relative_metric_overlap": 0.6037679935846628
+      },
+      {
+        "indices": [
+          2
+        ],
+        "singular_values": [
+          0.9143468447359802
+        ],
+        "minimum_relative_metric_overlap": 0.7041072412989973
+      }
+    ],
+    "residual_tolerance": 1e-10,
+    "max_condition": 100000000.0,
+    "scope": "Algebraic completeness for this supplied finite pencil only; no spatial Maxwell/QNM completeness assertion"
+  },
+  "generalized_inverse_absolute_errors": [
+    7.506023196148973e-15,
+    1.980264525139273e-14,
+    8.486752329084527e-16
+  ],
+  "perturbation_spectrum_error": 6.667118051786499e-16,
+  "repeated_eigenspace_diagnostics": {
+    "status": "VERIFIED_COMPLETE_DIAGONALIZABLE_FINITE_PENCIL",
+    "right_relative_residuals": [
+      4.7913329555154565e-17,
+      1.162473900662074e-16,
+      1.6178217746751933e-16
+    ],
+    "left_relative_residuals": [
+      2.1212535735302141e-16,
+      9.76680610486221e-17,
+      1.465364447046935e-16
+    ],
+    "biorthogonality_error": 1.006073146083913e-15,
+    "right_basis_condition": 1.8978165364845354,
+    "left_basis_condition": 1.8104153558421316,
+    "mass_condition": 1.506298030016444,
+    "clusters": [
+      {
+        "indices": [
+          0,
+          1
+        ],
+        "singular_values": [
+          1.2128751676124756,
+          0.7658497257441559
+        ],
+        "minimum_relative_metric_overlap": 0.589754687455632
+      },
+      {
+        "indices": [
+          2
+        ],
+        "singular_values": [
+          0.9143468447359798
+        ],
+        "minimum_relative_metric_overlap": 0.704107241298997
+      }
+    ],
+    "residual_tolerance": 1e-10,
+    "max_condition": 100000000.0,
+    "scope": "Algebraic completeness for this supplied finite pencil only; no spatial Maxwell/QNM completeness assertion"
+  },
+  "defective_rejection": {
+    "message": "Defective or unresolved eigenbasis: EP/Jordan treatment required",
+    "diagnostics": {
+      "right_basis_condition": 4503599627370495.5,
+      "left_basis_condition": 4503599627370495.5,
+      "maximum_allowed_condition": 100000000.0
+    }
+  },
+  "exact_slab_reference": {
+    "refractive_index": 2.3,
+    "thickness": 0.7,
+    "pole_formula": "(m*pi-i*log((n+1)/(n-1)))/(n*L)",
+    "modes": [
+      {
+        "order": 0,
+        "analytic_pole": {
+          "real": 0.0,
+          "imag": -0.5786075801272942
+        },
+        "calculated_pole": {
+          "real": 3.336136539201098e-17,
+          "imag": -0.5786075801272942
+        },
+        "pole_error": 3.336136539201098e-17,
+        "analytic_residue_error": 2.1683745879172535e-16,
+        "contour_residue_error": 2.0131634612832812e-16,
+        "laurent_distances": [
+          0.001,
+          0.0001,
+          1e-05
+        ],
+        "laurent_errors": [
+          0.00047847800578084434,
+          4.785240375937875e-05,
+          4.7852859932958255e-06
+        ],
+        "residue_diagnostics": {
+          "right_relative_residual": 1.368374684523224e-16,
+          "left_relative_residual": 3.5960612636032905e-16,
+          "nullity": 1,
+          "singular_values": [
+            9.676923076923075,
+            1.2454340551277192e-15
+          ],
+          "residual_scale": 10.0,
+          "directional_derivative_disagreement": 3.8094576226591924e-12,
+          "numerical_derivative_roundoff_scale": 6.877433521890539e-09,
+          "supplied_derivative_relative_error": 1.9050580871325582e-12,
+          "derivative_source": "checked supplied derivative",
+          "relative_derivative_pairing": 0.13434022257551687,
+          "status": "VERIFIED_LOCAL_SIMPLE_POLE_INVERSE_RESIDUE",
+          "scope": "Local algebraic residue of the supplied analytic matrix only; no all-mode or spatial completeness claim"
+        }
+      },
+      {
+        "order": 1,
+        "analytic_pole": {
+          "real": 1.951299784838381,
+          "imag": -0.5786075801272942
+        },
+        "calculated_pole": {
+          "real": 1.951299784838381,
+          "imag": -0.5786075801272942
+        },
+        "pole_error": 0.0,
+        "analytic_residue_error": 2.0984108165474498e-16,
+        "contour_residue_error": 3.651855210211449e-16,
+        "laurent_distances": [
+          0.001,
+          0.0001,
+          1e-05
+        ],
+        "laurent_errors": [
+          0.00047847800576815235,
+          4.785240361343869e-05,
+          4.785286945569681e-06
+        ],
+        "residue_diagnostics": {
+          "right_relative_residual": 1.538890394059729e-16,
+          "left_relative_residual": 2.2459732211981177e-16,
+          "nullity": 1,
+          "singular_values": [
+            9.676923076923075,
+            1.2698288191921818e-15
+          ],
+          "residual_scale": 10.0,
+          "directional_derivative_disagreement": 1.10726232883302e-11,
+          "numerical_derivative_roundoff_scale": 3.3811866485092404e-09,
+          "supplied_derivative_relative_error": 8.070813355318069e-12,
+          "derivative_source": "checked supplied derivative",
+          "relative_derivative_pairing": 0.13434022257551678,
+          "status": "VERIFIED_LOCAL_SIMPLE_POLE_INVERSE_RESIDUE",
+          "scope": "Local algebraic residue of the supplied analytic matrix only; no all-mode or spatial completeness claim"
+        }
+      },
+      {
+        "order": 3,
+        "analytic_pole": {
+          "real": 5.853899354515143,
+          "imag": -0.5786075801272942
+        },
+        "calculated_pole": {
+          "real": 5.853899354515144,
+          "imag": -0.5786075801272942
+        },
+        "pole_error": 8.881784197001252e-16,
+        "analytic_residue_error": 2.7621982149125355e-16,
+        "contour_residue_error": 1.4863310665928647e-16,
+        "laurent_distances": [
+          0.001,
+          0.0001,
+          1e-05
+        ],
+        "laurent_errors": [
+          0.00047847800573051395,
+          4.7852402750316e-05,
+          4.785273450770055e-06
+        ],
+        "residue_diagnostics": {
+          "right_relative_residual": 2.6432108602171527e-16,
+          "left_relative_residual": 3.272804909966992e-16,
+          "nullity": 1,
+          "singular_values": [
+            9.676923076923075,
+            1.4900517672464072e-15
+          ],
+          "residual_scale": 10.0,
+          "directional_derivative_disagreement": 6.198551181583212e-12,
+          "numerical_derivative_roundoff_scale": 1.1764756375809916e-09,
+          "supplied_derivative_relative_error": 2.5724343103133644e-12,
+          "derivative_source": "checked supplied derivative",
+          "relative_derivative_pairing": 0.13434022257551687,
+          "status": "VERIFIED_LOCAL_SIMPLE_POLE_INVERSE_RESIDUE",
+          "scope": "Local algebraic residue of the supplied analytic matrix only; no all-mode or spatial completeness claim"
+        }
+      }
+    ]
+  },
+  "conventions": "exp(-i*z*t); A=H-z*M; L^dagger*M*R=I; residue(A^-1)=-r*l^dagger for a normalized linear pencil",
+  "limitations": [
+    "No spatial solver or Legume eigenbasis is replaced or silently converted to a QNM basis",
+    "Finite-pencil completeness is not completeness of Maxwell fields or open radiation channels",
+    "The nonlinear helper assumes the supplied operator's outgoing analytic branch; local derivative checks do not certify a global radiation sheet",
+    "Defective/Jordan poles, singular descriptor masses and unresolved derivative pairings are rejected",
+    "A pole expansion has an explicit caller-supplied analytic background and validity scope"
+  ],
+  "source_sha256": {
+    "sptc_toolbox/qnm.py": "7c76e011120774d2e48057e4c37c9dc0787828476fedb4dcb875854285ff4eba",
+    "sptc_toolbox/tests/test_qnm.py": "0fcb8254b7302ff90be516de6370b2c04bcf93508e4caababd6bc7336da8560b",
+    "ptc_fig4/src/ptc_fig4/static_modes.py": "c30149ed9eb48a7d607f865e358ec6c0647647f9fb373da766d01f15549ee873",
+    "sptc_toolbox/scripts/validate_qnm.py": "b1bf2c9ea01e7f67bfebed32329c31fdcb7a2e1054d2c1f0bad8b7f0f07e199a"
+  },
+  "raw_reference_sha256": "32159637fafe5df2b1cbff41ee2e20d25ccd6af51f3105520f032e9aa2ad60aa"
+}

@@ -1,0 +1,1102 @@
+[
+  {
+    "k_index": 16,
+    "kpoint": [
+      0.0,
+      0.0
+    ],
+    "modes": [
+      8,
+      9
+    ],
+    "window_thz": [
+      45.0,
+      105.0
+    ],
+    "quadrature_order": 16,
+    "broadening_over_drive": 0.02,
+    "config": "q16",
+    "status": "FINITE_WINDOW_PAIRED_K_CAUSAL_MODEL",
+    "reality": {
+      "verified_from_physical_fields": true,
+      "least_squares_map": [
+        [
+          [
+            -1.0000000000000013,
+            6.246182225966926e-23
+          ],
+          [
+            -1.4317641389743586e-16,
+            -5.597147276571109e-23
+          ]
+        ],
+        [
+          [
+            -8.951039836253695e-17,
+            -5.475750561429816e-23
+          ],
+          [
+            -1.0000000000000027,
+            8.831194693254753e-23
+          ]
+        ]
+      ],
+      "least_squares_field_residual": 2.1343713292611875e-13,
+      "unitary_field_residual": 2.1342669175082663e-13,
+      "raw_map_unitarity_residual": 5.34923779996681e-15,
+      "polar_map_relative_change": 2.1129160343392796e-15,
+      "metric_isometry_residual": 4.435730062143263e-15,
+      "frequency_intertwining_relative_residual": 2.2938273902559632e-18,
+      "principal_overlaps_squared": [
+        1.0,
+        1.0
+      ],
+      "field_rank_ratios": [
+        0.9998803533127436,
+        0.9998803533127442
+      ],
+      "field_Gram_condition_numbers": [
+        1.000239336327354,
+        1.0002393363273532
+      ],
+      "plus_finite_window_Gram_identity_error": 0.00011969478819070687,
+      "minus_finite_window_Gram_identity_error": 0.00011969478819083355,
+      "field_tolerance": 1e-06,
+      "unitary_tolerance": 1e-06,
+      "spectral_tolerance": 1e-07,
+      "rank_tolerance": 1e-09,
+      "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+      "not_a_whitened_coordinate_map": true,
+      "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+      "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+      "minus_G_index_for_each_plus_G": [
+        120,
+        119,
+        118,
+        117,
+        116,
+        115,
+        114,
+        113,
+        112,
+        111,
+        110,
+        109,
+        108,
+        107,
+        106,
+        105,
+        104,
+        103,
+        102,
+        101,
+        100,
+        99,
+        98,
+        97,
+        96,
+        95,
+        94,
+        93,
+        92,
+        91,
+        90,
+        89,
+        88,
+        87,
+        86,
+        85,
+        84,
+        83,
+        82,
+        81,
+        80,
+        79,
+        78,
+        77,
+        76,
+        75,
+        74,
+        73,
+        72,
+        71,
+        70,
+        69,
+        68,
+        67,
+        66,
+        65,
+        64,
+        63,
+        62,
+        61,
+        60,
+        59,
+        58,
+        57,
+        56,
+        55,
+        54,
+        53,
+        52,
+        51,
+        50,
+        49,
+        48,
+        47,
+        46,
+        45,
+        44,
+        43,
+        42,
+        41,
+        40,
+        39,
+        38,
+        37,
+        36,
+        35,
+        34,
+        33,
+        32,
+        31,
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22,
+        21,
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "plus_kind": 16,
+      "minus_kind": 16,
+      "plus_modes": [
+        8,
+        9
+      ],
+      "minus_modes": [
+        8,
+        9
+      ],
+      "plus_native_state_hash": "31c7e039cbc02a9fa2d973e440ead9cb81acfb95fabb6dfd45d1ef284170e7e5",
+      "minus_native_state_hash": "31c7e039cbc02a9fa2d973e440ead9cb81acfb95fabb6dfd45d1ef284170e7e5",
+      "physical_geometry_sha256": "06ce71b9b4070b2e6271ffb3b156efad7d32d4457226776f63b684e60d97e730"
+    },
+    "augmented_dimension": 100,
+    "positive_quadrature_count": 32,
+    "threshold_handling": "resolve",
+    "cases": {
+      "static": {
+        "half_harmonics": 3,
+        "pencil_dimension": 14,
+        "roots": [
+          {
+            "frequency_over_drive": [
+              0.4998188122325037,
+              -7.952282501957799e-06
+            ],
+            "residual": 1.0371095345550415e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14288771853221846
+          },
+          {
+            "frequency_over_drive": [
+              -0.4998188122325037,
+              -7.952282501957799e-06
+            ],
+            "residual": 1.0371542968074499e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.1428877185322184
+          },
+          {
+            "frequency_over_drive": [
+              0.5127834303694943,
+              -8.501471904233665e-06
+            ],
+            "residual": 2.1044233500333044e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14606032930264418
+          },
+          {
+            "frequency_over_drive": [
+              -0.5127834303694943,
+              -8.501471904233665e-06
+            ],
+            "residual": 2.1042913295984123e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14606032930264418
+          }
+        ],
+        "failed_seeds": [],
+        "located_modulo_replica_count": 4,
+        "bare_material_dimension": 4,
+        "completeness": "Local seeded searches only; auxiliary bath roots are not enumerated",
+        "m": 0.0,
+        "drive_thz": 136.0,
+        "absolute_epsilon_amplitude": 0.0,
+        "sampled_carrier_onshell_density_error": 3.439598548096946e+22,
+        "frozen_reference_status": "COMMON_FREQUENCY_FROZEN_APPROXIMATION",
+        "frozen_max_growth": -2.2193711173755226e-28,
+        "located_max_growth": -7.952282501957799e-06
+      },
+      "weak": {
+        "half_harmonics": 3,
+        "pencil_dimension": 14,
+        "roots": [
+          {
+            "frequency_over_drive": [
+              -0.5127586366603842,
+              -8.499800292221774e-06
+            ],
+            "residual": 2.4440383556470424e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.1460542135826338
+          },
+          {
+            "frequency_over_drive": [
+              0.5127586366603842,
+              -8.49980029222177e-06
+            ],
+            "residual": 2.443949656458396e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14605421358263365
+          },
+          {
+            "frequency_over_drive": [
+              -0.4997951530766622,
+              -7.95055142410642e-06
+            ],
+            "residual": 3.5634344337504196e-17,
+            "iterations": 3,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.1426372739123632
+          },
+          {
+            "frequency_over_drive": [
+              0.4997951530766622,
+              -7.95055142410642e-06
+            ],
+            "residual": 3.563451792181243e-17,
+            "iterations": 3,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14263727391236325
+          }
+        ],
+        "failed_seeds": [],
+        "located_modulo_replica_count": 4,
+        "bare_material_dimension": 4,
+        "completeness": "Local seeded searches only; auxiliary bath roots are not enumerated",
+        "m": 0.0001,
+        "drive_thz": 136.0,
+        "absolute_epsilon_amplitude": 0.0016,
+        "sampled_carrier_onshell_density_error": 3.439598548096946e+22,
+        "frozen_reference_status": "COMMON_FREQUENCY_FROZEN_APPROXIMATION",
+        "frozen_max_growth": 7.434438263602543e-17,
+        "located_max_growth": -7.95055142410642e-06
+      },
+      "strong": {
+        "half_harmonics": 3,
+        "pencil_dimension": 14,
+        "roots": [
+          {
+            "frequency_over_drive": [
+              0.5126477031595127,
+              -8.034159089300649e-06
+            ],
+            "residual": 7.291723198007561e-14,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.1402757597974551
+          },
+          {
+            "frequency_over_drive": [
+              -0.5126477031595127,
+              -8.034159089300727e-06
+            ],
+            "residual": 7.291680030864848e-14,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14027575979745524
+          },
+          {
+            "frequency_over_drive": [
+              -0.5000000000000306,
+              0.0034834820409770395
+            ],
+            "residual": 4.890304830025143e-17,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14263977780734524
+          },
+          {
+            "frequency_over_drive": [
+              -0.5000000000000305,
+              -0.0034984274456867745
+            ],
+            "residual": 6.442322202624975e-17,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14264076052079275
+          }
+        ],
+        "failed_seeds": [],
+        "located_modulo_replica_count": 4,
+        "bare_material_dimension": 4,
+        "completeness": "Local seeded searches only; auxiliary bath roots are not enumerated",
+        "m": 0.03,
+        "drive_thz": 134.0,
+        "absolute_epsilon_amplitude": 0.48,
+        "sampled_carrier_onshell_density_error": 2.812196783110619e+22,
+        "frozen_reference_status": "COMMON_FREQUENCY_FROZEN_APPROXIMATION",
+        "frozen_max_growth": 0.0034874044917597396,
+        "located_max_growth": 0.0034834820409770395
+      },
+      "weak_calibrated": {
+        "half_harmonics": 3,
+        "pencil_dimension": 14,
+        "roots": [
+          {
+            "frequency_over_drive": [
+              0.5000661817698996,
+              -7.950590240824781e-06
+            ],
+            "residual": 7.023789621925303e-17,
+            "iterations": 4,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14061487448469137,
+            "independent_cycle": {
+              "cycle_relative_state_error": 2.4136727923513544e-11,
+              "material_augmented_weight": 0.9998409588655267,
+              "augmented_dimension": 100,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              0.5129001506250555,
+              -8.499831300320198e-06
+            ],
+            "residual": 6.25788080166791e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.1460886393595476,
+            "independent_cycle": {
+              "cycle_relative_state_error": 2.15567714325247e-11,
+              "material_augmented_weight": 0.9998228972937857,
+              "augmented_dimension": 100,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              -0.5000661817698996,
+              -7.950590240824786e-06
+            ],
+            "residual": 7.02370757980944e-17,
+            "iterations": 4,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14061487448469448,
+            "independent_cycle": {
+              "cycle_relative_state_error": 2.4136695186459853e-11,
+              "material_augmented_weight": 0.9998409588655268,
+              "augmented_dimension": 100,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              -0.5129001506250555,
+              -8.4998313003202e-06
+            ],
+            "residual": 6.257827985018309e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14608863935954763,
+            "independent_cycle": {
+              "cycle_relative_state_error": 2.1557700958849744e-11,
+              "material_augmented_weight": 0.9998228972937856,
+              "augmented_dimension": 100,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          }
+        ],
+        "failed_seeds": [],
+        "located_modulo_replica_count": 4,
+        "bare_material_dimension": 4,
+        "completeness": "Local seeded searches only; auxiliary bath roots are not enumerated",
+        "m": 0.0001,
+        "drive_thz": 135.96247624289217,
+        "absolute_epsilon_amplitude": 0.0016,
+        "drive_rule": "2 times lowest Gamma eigenfrequency with weak DC offset, fixed once in the native static model before this memory calculation",
+        "scope": "Auxiliary static-calibrated pump; different from paper 136 THz, no memory-pole retuning",
+        "located_max_growth": -7.950590240824781e-06
+      }
+    },
+    "elapsed_seconds": 15.17960789999779
+  },
+  {
+    "k_index": 16,
+    "kpoint": [
+      0.0,
+      0.0
+    ],
+    "modes": [
+      8,
+      9
+    ],
+    "window_thz": [
+      45.0,
+      105.0
+    ],
+    "quadrature_order": 32,
+    "broadening_over_drive": 0.02,
+    "config": "q32",
+    "status": "FINITE_WINDOW_PAIRED_K_CAUSAL_MODEL",
+    "reality": {
+      "verified_from_physical_fields": true,
+      "least_squares_map": [
+        [
+          [
+            -1.0000000000000013,
+            6.246182225966926e-23
+          ],
+          [
+            -1.4317641389743586e-16,
+            -5.597147276571109e-23
+          ]
+        ],
+        [
+          [
+            -8.951039836253695e-17,
+            -5.475750561429816e-23
+          ],
+          [
+            -1.0000000000000027,
+            8.831194693254753e-23
+          ]
+        ]
+      ],
+      "least_squares_field_residual": 2.1343713292611875e-13,
+      "unitary_field_residual": 2.1342669175082663e-13,
+      "raw_map_unitarity_residual": 5.34923779996681e-15,
+      "polar_map_relative_change": 2.1129160343392796e-15,
+      "metric_isometry_residual": 4.435730062143263e-15,
+      "frequency_intertwining_relative_residual": 2.2938273902559632e-18,
+      "principal_overlaps_squared": [
+        1.0,
+        1.0
+      ],
+      "field_rank_ratios": [
+        0.9998803533127436,
+        0.9998803533127442
+      ],
+      "field_Gram_condition_numbers": [
+        1.000239336327354,
+        1.0002393363273532
+      ],
+      "plus_finite_window_Gram_identity_error": 0.00011969478819070687,
+      "minus_finite_window_Gram_identity_error": 0.00011969478819083355,
+      "field_tolerance": 1e-06,
+      "unitary_tolerance": 1e-06,
+      "spectral_tolerance": 1e-07,
+      "rank_tolerance": 1e-09,
+      "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+      "not_a_whitened_coordinate_map": true,
+      "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+      "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+      "minus_G_index_for_each_plus_G": [
+        120,
+        119,
+        118,
+        117,
+        116,
+        115,
+        114,
+        113,
+        112,
+        111,
+        110,
+        109,
+        108,
+        107,
+        106,
+        105,
+        104,
+        103,
+        102,
+        101,
+        100,
+        99,
+        98,
+        97,
+        96,
+        95,
+        94,
+        93,
+        92,
+        91,
+        90,
+        89,
+        88,
+        87,
+        86,
+        85,
+        84,
+        83,
+        82,
+        81,
+        80,
+        79,
+        78,
+        77,
+        76,
+        75,
+        74,
+        73,
+        72,
+        71,
+        70,
+        69,
+        68,
+        67,
+        66,
+        65,
+        64,
+        63,
+        62,
+        61,
+        60,
+        59,
+        58,
+        57,
+        56,
+        55,
+        54,
+        53,
+        52,
+        51,
+        50,
+        49,
+        48,
+        47,
+        46,
+        45,
+        44,
+        43,
+        42,
+        41,
+        40,
+        39,
+        38,
+        37,
+        36,
+        35,
+        34,
+        33,
+        32,
+        31,
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22,
+        21,
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "plus_kind": 16,
+      "minus_kind": 16,
+      "plus_modes": [
+        8,
+        9
+      ],
+      "minus_modes": [
+        8,
+        9
+      ],
+      "plus_native_state_hash": "31c7e039cbc02a9fa2d973e440ead9cb81acfb95fabb6dfd45d1ef284170e7e5",
+      "minus_native_state_hash": "31c7e039cbc02a9fa2d973e440ead9cb81acfb95fabb6dfd45d1ef284170e7e5",
+      "physical_geometry_sha256": "06ce71b9b4070b2e6271ffb3b156efad7d32d4457226776f63b684e60d97e730"
+    },
+    "augmented_dimension": 196,
+    "positive_quadrature_count": 64,
+    "threshold_handling": "resolve",
+    "cases": {
+      "static": {
+        "half_harmonics": 3,
+        "pencil_dimension": 14,
+        "roots": [
+          {
+            "frequency_over_drive": [
+              0.49981881249616106,
+              -7.95225580910186e-06
+            ],
+            "residual": 1.1252533499761451e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14288771833191088,
+            "independent_cycle": {
+              "cycle_relative_state_error": 2.725606468728711e-11,
+              "material_augmented_weight": 0.9998409877157581,
+              "augmented_dimension": 196,
+              "ode_evaluations": 134,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              -0.49981881249616106,
+              -7.952255809101864e-06
+            ],
+            "residual": 1.1252714249026972e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14288771833191083,
+            "independent_cycle": {
+              "cycle_relative_state_error": 2.7256883745014703e-11,
+              "material_augmented_weight": 0.9998409877157581,
+              "augmented_dimension": 196,
+              "ode_evaluations": 134,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              0.5127834291571252,
+              -8.501600928988027e-06
+            ],
+            "residual": 2.1019572409328056e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14606033027951412,
+            "independent_cycle": {
+              "cycle_relative_state_error": 3.0217145045473084e-11,
+              "material_augmented_weight": 0.9998229242121338,
+              "augmented_dimension": 196,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              -0.5127834291571252,
+              -8.50160092898803e-06
+            ],
+            "residual": 2.1017823587808607e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14606033027951415,
+            "independent_cycle": {
+              "cycle_relative_state_error": 3.0216980235098774e-11,
+              "material_augmented_weight": 0.9998229242121338,
+              "augmented_dimension": 196,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          }
+        ],
+        "failed_seeds": [],
+        "located_modulo_replica_count": 4,
+        "bare_material_dimension": 4,
+        "completeness": "Local seeded searches only; auxiliary bath roots are not enumerated",
+        "m": 0.0,
+        "drive_thz": 136.0,
+        "absolute_epsilon_amplitude": 0.0,
+        "sampled_carrier_onshell_density_error": 3.439626134595259e+22,
+        "frozen_reference_status": "COMMON_FREQUENCY_FROZEN_APPROXIMATION",
+        "frozen_max_growth": -2.2193711173755226e-28,
+        "located_max_growth": -7.95225580910186e-06
+      },
+      "weak": {
+        "half_harmonics": 3,
+        "pencil_dimension": 14,
+        "roots": [
+          {
+            "frequency_over_drive": [
+              -0.5127586354481742,
+              -8.499929291655332e-06
+            ],
+            "residual": 2.29080047698941e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.1460542145592643,
+            "independent_cycle": {
+              "cycle_relative_state_error": 3.024261404069705e-11,
+              "material_augmented_weight": 0.9998229726115917,
+              "augmented_dimension": 196,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              0.5127586354481742,
+              -8.499929291655335e-06
+            ],
+            "residual": 2.290681739472818e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.1460542145592644,
+            "independent_cycle": {
+              "cycle_relative_state_error": 3.024147696688362e-11,
+              "material_augmented_weight": 0.9998229726115914,
+              "augmented_dimension": 196,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              -0.4997951533407397,
+              -7.95052473606723e-06
+            ],
+            "residual": 3.2748798882401554e-17,
+            "iterations": 3,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.1426372730826245,
+            "independent_cycle": {
+              "cycle_relative_state_error": 2.8398939142627094e-11,
+              "material_augmented_weight": 0.9998410331861955,
+              "augmented_dimension": 196,
+              "ode_evaluations": 134,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              0.4997951533407397,
+              -7.950524736067228e-06
+            ],
+            "residual": 3.274910750452915e-17,
+            "iterations": 3,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.1426372730826246,
+            "independent_cycle": {
+              "cycle_relative_state_error": 2.8398923918471928e-11,
+              "material_augmented_weight": 0.9998410331861959,
+              "augmented_dimension": 196,
+              "ode_evaluations": 134,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          }
+        ],
+        "failed_seeds": [],
+        "located_modulo_replica_count": 4,
+        "bare_material_dimension": 4,
+        "completeness": "Local seeded searches only; auxiliary bath roots are not enumerated",
+        "m": 0.0001,
+        "drive_thz": 136.0,
+        "absolute_epsilon_amplitude": 0.0016,
+        "sampled_carrier_onshell_density_error": 3.439626134595259e+22,
+        "frozen_reference_status": "COMMON_FREQUENCY_FROZEN_APPROXIMATION",
+        "frozen_max_growth": 7.434438263602543e-17,
+        "located_max_growth": -7.950524736067228e-06
+      },
+      "strong": {
+        "half_harmonics": 3,
+        "pencil_dimension": 14,
+        "roots": [
+          {
+            "frequency_over_drive": [
+              0.5126477019332284,
+              -8.034281032467122e-06
+            ],
+            "residual": 7.290219390975369e-14,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14027575969928913,
+            "independent_cycle": {
+              "cycle_relative_state_error": 7.485622032315725e-09,
+              "material_augmented_weight": 0.9998340311516862,
+              "augmented_dimension": 196,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              -0.5126477019332284,
+              -8.034281032467185e-06
+            ],
+            "residual": 7.290271756127314e-14,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14027575969928938,
+            "independent_cycle": {
+              "cycle_relative_state_error": 7.485621558214239e-09,
+              "material_augmented_weight": 0.9998340311516862,
+              "augmented_dimension": 196,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              -0.5000000000000305,
+              0.003483482054486485
+            ],
+            "residual": 3.4643181514189783e-17,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14263977688082527,
+            "independent_cycle": {
+              "cycle_relative_state_error": 9.067103543504975e-09,
+              "material_augmented_weight": 0.9998511504496786,
+              "augmented_dimension": 196,
+              "ode_evaluations": 170,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              -0.5000000000000306,
+              -0.003498427408545852
+            ],
+            "residual": 7.715806627733774e-17,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14264075959218994,
+            "independent_cycle": {
+              "cycle_relative_state_error": 9.431196419248595e-09,
+              "material_augmented_weight": 0.9998502533054614,
+              "augmented_dimension": 196,
+              "ode_evaluations": 182,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          }
+        ],
+        "failed_seeds": [],
+        "located_modulo_replica_count": 4,
+        "bare_material_dimension": 4,
+        "completeness": "Local seeded searches only; auxiliary bath roots are not enumerated",
+        "m": 0.03,
+        "drive_thz": 134.0,
+        "absolute_epsilon_amplitude": 0.48,
+        "sampled_carrier_onshell_density_error": 2.8122196487052557e+22,
+        "frozen_reference_status": "COMMON_FREQUENCY_FROZEN_APPROXIMATION",
+        "frozen_max_growth": 0.0034874044917597396,
+        "located_max_growth": 0.003483482054486485,
+        "harmonic4_control": {
+          "half_harmonics": 4,
+          "pencil_dimension": 18,
+          "roots": [
+            {
+              "frequency_over_drive": [
+                0.5126477019332284,
+                -8.034281032467122e-06
+              ],
+              "residual": 2.0805836823544952e-14,
+              "iterations": 0,
+              "simple_pole_compatible": true,
+              "derivative_pairing_relative": 0.10919077657494462,
+              "independent_cycle": {
+                "cycle_relative_state_error": 7.33347010406749e-11,
+                "material_augmented_weight": 0.9998340311516862,
+                "augmented_dimension": 196,
+                "ode_evaluations": 146,
+                "scope": "This located augmented Floquet state; not complete bath spectrum"
+              }
+            },
+            {
+              "frequency_over_drive": [
+                -0.5126477019332284,
+                -8.034281032467185e-06
+              ],
+              "residual": 2.0627103793493826e-14,
+              "iterations": 0,
+              "simple_pole_compatible": true,
+              "derivative_pairing_relative": 0.10919077657494461,
+              "independent_cycle": {
+                "cycle_relative_state_error": 7.333676695251698e-11,
+                "material_augmented_weight": 0.9998340311516868,
+                "augmented_dimension": 196,
+                "ode_evaluations": 146,
+                "scope": "This located augmented Floquet state; not complete bath spectrum"
+              }
+            },
+            {
+              "frequency_over_drive": [
+                -0.5000000000000305,
+                0.003483482054486485
+              ],
+              "residual": 3.053052587162667e-14,
+              "iterations": 0,
+              "simple_pole_compatible": true,
+              "derivative_pairing_relative": 0.11094211207128755,
+              "independent_cycle": {
+                "cycle_relative_state_error": 1.1093087412648857e-10,
+                "material_augmented_weight": 0.9998511504496786,
+                "augmented_dimension": 196,
+                "ode_evaluations": 170,
+                "scope": "This located augmented Floquet state; not complete bath spectrum"
+              }
+            },
+            {
+              "frequency_over_drive": [
+                -0.5000000000000306,
+                -0.003498427408545852
+              ],
+              "residual": 3.0685406325193766e-14,
+              "iterations": 0,
+              "simple_pole_compatible": true,
+              "derivative_pairing_relative": 0.11094287661747618,
+              "independent_cycle": {
+                "cycle_relative_state_error": 1.0916892435062495e-10,
+                "material_augmented_weight": 0.9998502533054615,
+                "augmented_dimension": 196,
+                "ode_evaluations": 182,
+                "scope": "This located augmented Floquet state; not complete bath spectrum"
+              }
+            }
+          ],
+          "failed_seeds": [],
+          "located_modulo_replica_count": 4,
+          "bare_material_dimension": 4,
+          "completeness": "Local seeded searches only; auxiliary bath roots are not enumerated"
+        }
+      },
+      "weak_calibrated": {
+        "half_harmonics": 3,
+        "pencil_dimension": 14,
+        "roots": [
+          {
+            "frequency_over_drive": [
+              0.5000661815018931,
+              -7.950563552703979e-06
+            ],
+            "residual": 2.608764726098569e-17,
+            "iterations": 4,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14061485615584082,
+            "independent_cycle": {
+              "cycle_relative_state_error": 3.073479105639166e-11,
+              "material_augmented_weight": 0.9998409593994443,
+              "augmented_dimension": 196,
+              "ode_evaluations": 134,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              0.5129001494125054,
+              -8.499960300214442e-06
+            ],
+            "residual": 6.654964832117525e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14608864033643076,
+            "independent_cycle": {
+              "cycle_relative_state_error": 3.02392156003764e-11,
+              "material_augmented_weight": 0.9998228946055198,
+              "augmented_dimension": 196,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              -0.5000661815018931,
+              -7.95056355270398e-06
+            ],
+            "residual": 2.6087025369159742e-17,
+            "iterations": 4,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14061485615584304,
+            "independent_cycle": {
+              "cycle_relative_state_error": 3.0733672982940196e-11,
+              "material_augmented_weight": 0.9998409593994447,
+              "augmented_dimension": 196,
+              "ode_evaluations": 134,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          },
+          {
+            "frequency_over_drive": [
+              -0.5129001494125054,
+              -8.499960300214437e-06
+            ],
+            "residual": 6.655057768167832e-16,
+            "iterations": 2,
+            "simple_pole_compatible": true,
+            "derivative_pairing_relative": 0.14608864033643065,
+            "independent_cycle": {
+              "cycle_relative_state_error": 3.0239040284356013e-11,
+              "material_augmented_weight": 0.9998228946055204,
+              "augmented_dimension": 196,
+              "ode_evaluations": 146,
+              "scope": "This located augmented Floquet state; not complete bath spectrum"
+            }
+          }
+        ],
+        "failed_seeds": [],
+        "located_modulo_replica_count": 4,
+        "bare_material_dimension": 4,
+        "completeness": "Local seeded searches only; auxiliary bath roots are not enumerated",
+        "m": 0.0001,
+        "drive_thz": 135.96247624289217,
+        "absolute_epsilon_amplitude": 0.0016,
+        "drive_rule": "2 times lowest Gamma eigenfrequency with weak DC offset, fixed once in the native static model before this memory calculation",
+        "scope": "Auxiliary static-calibrated pump; different from paper 136 THz, no memory-pole retuning",
+        "located_max_growth": -7.950563552703979e-06
+      }
+    },
+    "elapsed_seconds": 29.31304519999685
+  }
+]

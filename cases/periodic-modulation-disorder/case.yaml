@@ -1,0 +1,98 @@
+schema_version: '0.1'
+kind: case
+id: periodic-modulation-disorder
+project_id: floquet-maxwell
+title: 固定随机幅相与独立时空谐波
+stage: results_available
+question:
+  summary: 固定随机幅相与独立时空谐波
+  scope: 固定图案逐周期重复的标量介质；空间截止对转移轨迹约一成敏感，开放试算使用冻结共同通道。
+  record:
+    path: sptc_toolbox/results/modulation_disorder_20261019/report.md
+capability_refs:
+- periodic-modulation-disorder
+- general-periodic-modulation
+- native-field-projection
+- finite-floquet-dynamics
+model:
+  description: 固定图案逐周期重复的标量介质；空间截止对转移轨迹约一成敏感，开放试算使用冻结共同通道。
+  record:
+    path: sptc_toolbox/results/modulation_disorder_20261019/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/modulation_disorder_20261019/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/modulation_disorder_20261019/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_modulation_disorder.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/modulation_disorder_20261019/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/check_modulation_disorder_projection.py
+  - id: workflow-3
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/modulation_disorder_20261019/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/check_modulation_disorder_identity.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/modulation_disorder_20261019/validation_manifest.json
+  record:
+    path: sptc_toolbox/results/modulation_disorder_20261019/validation_manifest.json
+- id: output-2
+  description: sptc_toolbox/results/modulation_disorder_20261019/drive_patterns.json
+  record:
+    path: sptc_toolbox/results/modulation_disorder_20261019/drive_patterns.json
+- id: output-3
+  description: sptc_toolbox/results/modulation_disorder_20261019/independent_projection.json
+  record:
+    path: sptc_toolbox/results/modulation_disorder_20261019/independent_projection.json
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/modulation_disorder_20261019/report.md
+criteria:
+- id: criterion-1
+  description: 2×2固定周期图案的材料耦合、有限模型乘子及跨扇区转移。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/modulation_disorder_20261019/report.md
+checks:
+- id: check-1
+  method: 全超胞实空间积分、共同物理场身份、静态/模态细化和Floquet/ODE比较
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/modulation_disorder_20261019/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/modulation_disorder_20261019/report.md
+  artifacts:
+  - path: sptc_toolbox/results/modulation_disorder_20261019/validation_manifest.json
+  - path: sptc_toolbox/results/modulation_disorder_20261019/drive_patterns.json
+  - path: sptc_toolbox/results/modulation_disorder_20261019/independent_projection.json
+  notes: 同步、交替、随机相位、随机幅相和独立p1/p2图案；全超胞积分差约1.6e-10，有限模型Floquet/ODE差约3.7e-9。 固定图案逐周期重复的标量介质；空间截止对转移轨迹约一成敏感，开放试算使用冻结共同通道。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/modulation_disorder_20261019/report.md

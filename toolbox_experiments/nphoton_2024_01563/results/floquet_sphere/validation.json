@@ -1,0 +1,127 @@
+{
+  "status": "SINGLE_SPHERE_VALIDATION_PASSED",
+  "test_count": 18,
+  "scope": "Canonical electric-amplitude single-sphere T blocks only; no lattice or paper Smin certification",
+  "checks": [
+    "static analytic Mie each signed sideband",
+    "static treams0.4.7 positive-frequency parity basis",
+    "lossless static optical theorem",
+    "vacuum no-scattering",
+    "negative-frequency Hankel analytic continuation",
+    "real-material frequency reflection",
+    "modulation phase covariance",
+    "interior and boundary residuals",
+    "central harmonic convergence",
+    "first-sideband linearity"
+  ],
+  "harmonic_convergence": [
+    {
+      "regime": "nonresonant",
+      "carrier_cyclic": 0.1928324027417661,
+      "parity": 0,
+      "N_to_Nplus1": [
+        {
+          "N": 1,
+          "relative_central_block_change": 4.175002900752759e-05
+        },
+        {
+          "N": 2,
+          "relative_central_block_change": 3.545936084191787e-09
+        },
+        {
+          "N": 3,
+          "relative_central_block_change": 2.164539929619413e-13
+        },
+        {
+          "N": 4,
+          "relative_central_block_change": 1.0212186727256802e-15
+        }
+      ],
+      "max_boundary_residual": 7.86386113166204e-18
+    },
+    {
+      "regime": "nonresonant",
+      "carrier_cyclic": 0.1928324027417661,
+      "parity": 1,
+      "N_to_Nplus1": [
+        {
+          "N": 1,
+          "relative_central_block_change": 0.00018469647005132575
+        },
+        {
+          "N": 2,
+          "relative_central_block_change": 9.492880666565008e-09
+        },
+        {
+          "N": 3,
+          "relative_central_block_change": 3.558360964665346e-13
+        },
+        {
+          "N": 4,
+          "relative_central_block_change": 4.700974979050075e-15
+        }
+      ],
+      "max_boundary_residual": 4.76622920239806e-18
+    },
+    {
+      "regime": "resonant",
+      "carrier_cyclic": 0.41306175887853724,
+      "parity": 0,
+      "N_to_Nplus1": [
+        {
+          "N": 1,
+          "relative_central_block_change": 0.0001792652038434092
+        },
+        {
+          "N": 2,
+          "relative_central_block_change": 5.853786713334723e-09
+        },
+        {
+          "N": 3,
+          "relative_central_block_change": 2.016547796763789e-13
+        },
+        {
+          "N": 4,
+          "relative_central_block_change": 3.196325532852326e-14
+        }
+      ],
+      "max_boundary_residual": 3.8214595378603334e-17
+    },
+    {
+      "regime": "resonant",
+      "carrier_cyclic": 0.41306175887853724,
+      "parity": 1,
+      "N_to_Nplus1": [
+        {
+          "N": 1,
+          "relative_central_block_change": 9.52081477624162e-05
+        },
+        {
+          "N": 2,
+          "relative_central_block_change": 7.904614761493874e-09
+        },
+        {
+          "N": 3,
+          "relative_central_block_change": 4.631425625265219e-13
+        },
+        {
+          "N": 4,
+          "relative_central_block_change": 2.9977267351809656e-15
+        }
+      ],
+      "max_boundary_residual": 4.348986038419808e-17
+    }
+  ],
+  "limits": [
+    "treams sphere with negative real k0 returns NaN; independent analytic continuation used and checked instead",
+    "exact zero exterior sidebands require a separate basis limit and are explicitly rejected",
+    "near-defective internal eigenbasis raises; no invariant-subspace implementation yet",
+    "N1 does not supply full truncation convergence for arbitrary frequency or stronger modulation",
+    "no independently time-integrated dynamic isolated-sphere scattering comparison yet"
+  ],
+  "input_sha256": {
+    "floquet_sphere_tmatrix.py": "c8f901891360eda2e45ca345671220b3086bbe6480a3cc0c46edaaa71253695e",
+    "test_floquet_sphere_tmatrix.py": "09317fa41ec381cbd2937f40738933e87c16196520b86259a00c2893113173b0",
+    "mie_reference.py": "05966087f956cc7886726e185e9da934d3ac03a835a324c88800180314ad9062"
+  }
+}

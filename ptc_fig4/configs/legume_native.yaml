@@ -1,0 +1,35 @@
+schema_version: 1
+platform: legume-gme
+version: 1.0.3
+physical_geometry:
+  radius_nm: 1030.0
+  period_nm: 3296.0
+  radius_over_height: 0.703
+  epsilon_cylinder: 16.0
+  epsilon_background: 1.0
+spatial_basis:
+  truncate_g: abs
+  gmax_sequence: [4.1, 6.1, 8.1]
+  horizontal_mirror: even
+  guided_indices_rule: index_mod_4_in_0_3
+  max_guided_index_sequence: [12, 24, 40]
+  reference_epsilon_sequence: [average, 8.0, 12.0, 16.0]
+  reference_changes_physical_geometry: false
+  gmode_compute: exact
+  gmode_step: 0.001
+  gmode_tol: 1.0e-10
+native_symmetry:
+  Gamma_X: {kz_symmetry: odd, mirror_angle_degrees: 0.0}
+  Gamma_M: {kz_symmetry: odd, mirror_angle_degrees: 45.0}
+  generic_X_M: {kz_symmetry: null}
+mode_management:
+  keep_related_A2g_subspace: true
+  seed_by_frequency_proximity: false
+  compare_fields_using: GuidedModeExp.ft_field_xy
+  individual_labels_at_mixing: ambiguous_until_subspace_converged
+radiation:
+  run_compute_im: false
+  selective_API: GuidedModeExp.compute_rad
+  polarization_resolved_API: GuidedModeExp.compute_rad_sp
+  status: perturbative_native_GME
+independent_spatial_solver_development: deferred

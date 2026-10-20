@@ -1,0 +1,178 @@
+{
+  "status": "COUNTEREXAMPLES_AND_INPUT_CONTRACT_AUDIT_NOT_PHYSICAL_REPRODUCTION",
+  "complex_inputs": [
+    {
+      "case": "complex_frequency_numpy_array",
+      "accepted": true,
+      "poles": [
+        [
+          1.2,
+          0.0
+        ],
+        [
+          -1.2,
+          0.0
+        ]
+      ],
+      "declared_status": "APPROXIMATE_LOSSLESS_FIXED_GME_SUBSPACE",
+      "warnings": [
+        {
+          "category": "ComplexWarning",
+          "message": "Casting complex values to real discards the imaginary part"
+        }
+      ]
+    },
+    {
+      "case": "complex_frequency_python_list",
+      "accepted": false,
+      "error_type": "TypeError",
+      "error": "float() argument must be a string or a real number, not 'complex'",
+      "warnings": []
+    },
+    {
+      "case": "complex_epsilon_numpy_scalar",
+      "accepted": true,
+      "poles": [
+        [
+          1.2,
+          0.0
+        ],
+        [
+          -1.2,
+          0.0
+        ]
+      ],
+      "declared_status": "APPROXIMATE_LOSSLESS_FIXED_GME_SUBSPACE",
+      "warnings": []
+    },
+    {
+      "case": "complex_epsilon_python_scalar",
+      "accepted": false,
+      "error_type": "TypeError",
+      "error": "'<=' not supported between instances of 'complex' and 'int'",
+      "warnings": []
+    },
+    {
+      "case": "legacy_instantaneous_complex_epsilon",
+      "accepted": true,
+      "poles": [
+        [
+          0.49953210273362414,
+          -0.012480507120503893
+        ],
+        [
+          -0.4995321027336243,
+          0.012480507120503897
+        ]
+      ],
+      "declared_status": null,
+      "warnings": []
+    }
+  ],
+  "equal_first_derivative_different_second_order": [
+    {
+      "lambda_chi": 0.2,
+      "displacement_weight": 0.64,
+      "first_static_derivative": -0.029249999999999998,
+      "second_inverse_coefficient": 0.006250000000000001,
+      "quadratic_floquet_coefficient": 0.0016044660213155781,
+      "measured_quadratic_coefficient": 0.0016044719586272294
+    },
+    {
+      "lambda_chi": 1.0,
+      "displacement_weight": 0.8,
+      "first_static_derivative": -0.029249999999999998,
+      "second_inverse_coefficient": 0.0125,
+      "quadratic_floquet_coefficient": 0.0034325910213155774,
+      "measured_quadratic_coefficient": 0.0034326470083057004
+    }
+  ],
+  "bloch_reality_counterexample": {
+    "description": "Synthetic complex Hermitian time-periodic stiffness with a rotating phase, not a Maxwell geometry",
+    "eigenmultipliers_k": [
+      [
+        -0.36904387882602346,
+        0.9294119729705677
+      ],
+      [
+        -0.1801923236285177,
+        0.9836313976817367
+      ],
+      [
+        -0.23158069637414805,
+        -0.9728156973789233
+      ],
+      [
+        -0.3197444891900425,
+        -0.9475038056031898
+      ]
+    ],
+    "eigenmultipliers_minus_k": [
+      [
+        -0.36904387882602346,
+        -0.9294119729705677
+      ],
+      [
+        -0.1801923236285177,
+        -0.9836313976817367
+      ],
+      [
+        -0.23158069637414805,
+        0.9728156973789233
+      ],
+      [
+        -0.3197444891900425,
+        0.9475038056031898
+      ]
+    ],
+    "cross_block_reality_error": 0.0,
+    "same_block_negative_conjugate_frequency_error": 0.05251422880026973,
+    "same_block_hamiltonian_reciprocal_conjugate_error": 7.158631627404127e-14,
+    "minimum_instantaneous_stiffness_eigenvalue": 0.47153415615735095
+  },
+  "harmonic_block_counterexample": {
+    "plus": [
+      [
+        0.1,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.0,
+        -0.1
+      ]
+    ],
+    "minus": [
+      [
+        0.1,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        -0.0,
+        0.1
+      ]
+    ],
+    "plus_hermiticity_error": 0.2,
+    "pair_adjoint_error": 0.0,
+    "interpretation": "Two real local cosines with distinct phases; each instantaneous material is real, but its +1 Fourier block is not a PSD Gram."
+  },
+  "source_sha256": {
+    "lpor_71318\\modal_floquet.py": "454d778b5c29f567dd007572a70a5edafb9484b3529e15c10eb7ed81484a6939",
+    "ptc_fig4\\src\\ptc_fig4\\materials.py": "4237c92386fe424b3ec1e3139cc144b5308d5722835911b0a6395b0d2d93c875"
+  }
+}

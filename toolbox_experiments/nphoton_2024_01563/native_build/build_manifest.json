@@ -1,0 +1,23 @@
+{
+  "inputs": {
+    "<source-checkout>/toolbox_experiments/nphoton_2024_01563/native_lorentz_sigma.cpp": "a033aecb7bd3a83a56ff64927795a0761174f9f4b797833757363e3813582633",
+    "<meep-environment>/include/meep.hpp": "cab8adce61e9348d7e9b17a168c3dd653895e7a7cc0564ff32b65798d6ef15f1",
+    "<meep-environment>/lib/libmeep.so": "48df29b6795bfe80dcdaec0595a779755c34643479d59d32453f9caaaca5f784"
+  },
+  "command": [
+    "g++",
+    "-std=c++17",
+    "-O2",
+    "-fPIC",
+    "-shared",
+    "<source-checkout>/toolbox_experiments/nphoton_2024_01563/native_lorentz_sigma.cpp",
+    "-I<meep-environment>/include",
+    "-L<meep-environment>/lib",
+    "-Wl,-rpath,<meep-environment>/lib",
+    "-lmeep",
+    "-o",
+    "<source-checkout>/toolbox_experiments/nphoton_2024_01563/native_build/liblorentz_sigma.so"
+  ],
+  "meep_version": "1.35.0",
+  "library_sha256": "143148ccb1882e2c7506b819fa8d59a281ce63154f171efc2708783195f679d9"
+}

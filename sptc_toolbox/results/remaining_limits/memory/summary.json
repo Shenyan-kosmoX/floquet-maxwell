@@ -1,0 +1,2946 @@
+{
+  "status": "ACTUAL_NON_GAMMA_SLAB_THRESHOLD_RESOLVED_MEMORY",
+  "geometry": "Square two-dimensional patterned slab; fixed original Legume gmax2.1 spatial basis",
+  "kpoint_ka": [
+    1.9634954084936207,
+    0.0
+  ],
+  "modes": [
+    2,
+    3
+  ],
+  "native_omega_a_over_c": [
+    1.7690042966558825,
+    2.3817567642926107
+  ],
+  "drive_omega_a_over_c": 4.7635135285852215,
+  "threshold_omega_a_over_c": 1.9634954084936207,
+  "threshold_physics": "One retained native mode below and one above the zero-order light cone; actual 0 -> 4 outgoing channel change",
+  "native_sources": [
+    {
+      "path": "sptc_toolbox\\results\\pc_slab_pipeline\\native_g2.1.pkl",
+      "sha256": "66b9fa8a59da2973687d2e07b6cc152c06f29fa828ee3b80e1b0ce9cece41745"
+    },
+    {
+      "path": "sptc_toolbox\\results\\physics_pipeline\\assessment\\minus_native.pkl",
+      "sha256": "656a55368f5846e2daac458456be28eed711847bd432c44917aa546be4f18ecd"
+    }
+  ],
+  "analytic_inverse_square_root_kernel": [
+    {
+      "order": 8,
+      "absolute_error": 0.028548608808939616
+    },
+    {
+      "order": 16,
+      "absolute_error": 0.00012900066291095762
+    },
+    {
+      "order": 32,
+      "absolute_error": 2.613579173860285e-09
+    },
+    {
+      "order": 64,
+      "absolute_error": 2.986715575865622e-13
+    }
+  ],
+  "configurations": [
+    {
+      "name": "q16",
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "94b9e197f2d074e20f35c064590bf5495cdff762ed82ddd31ee883c3d35c67d6",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "minus_native_source_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+        "drive_omega_a_over_c": 4.7635135285852215,
+        "native_omega_a_over_c": [
+          1.7690042966558825,
+          2.3817567642926107
+        ],
+        "positive_window_omega_a_over_c": [
+          1.0,
+          3.3
+        ],
+        "positive_window_over_drive": [
+          0.20992907734997093,
+          0.6927659552549041
+        ],
+        "quadrature_order_positive": 16,
+        "broadening_over_drive": 0.04,
+        "threshold_handling": "resolve",
+        "quadrature": {
+          "method": "positive_piecewise_endpoint_regularization",
+          "order_per_segment": 16,
+          "node_count": 32,
+          "segments": [
+            {
+              "low": 1.0,
+              "high": 1.9634954084936196,
+              "map": "upper_square",
+              "nodes": 16,
+              "threshold_at_lower": false,
+              "threshold_at_upper": true
+            },
+            {
+              "low": 1.9634954084936196,
+              "high": 3.3,
+              "map": "lower_square",
+              "nodes": 16,
+              "threshold_at_lower": true,
+              "threshold_at_upper": false
+            }
+          ],
+          "thresholds_in_closed_window": [
+            1.9634954084936196
+          ],
+          "holes_removed": false,
+          "minimum_threshold_distance": 2.705981167627769e-05,
+          "window": [
+            1.0,
+            3.3
+          ],
+          "scope": "Finite-window integral only; no spectral-tail or QNM completion"
+        },
+        "native_threshold_evaluation_relative_guard": 1e-12,
+        "positive_quadrature_node_count": 32,
+        "channel_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "minus_channel_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native H(-k)^* = H(k) T; Gamma(-nu,+k)=T Gamma(nu,-k)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.3967123807242641,
+                0.9179429649929691
+              ],
+              [
+                -1.79863213230024e-15,
+                1.2855207797673912e-15
+              ]
+            ],
+            [
+              [
+                2.929234048099305e-16,
+                -2.809687901528412e-15
+              ],
+              [
+                -0.994983680042408,
+                0.10003737526178613
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.132379070462433e-15,
+          "unitary_field_residual": 7.296326691854391e-15,
+          "raw_map_unitarity_residual": 3.2119043515658427e-15,
+          "polar_map_relative_change": 1.2044753583999105e-15,
+          "metric_isometry_residual": 1.1994257765560134e-15,
+          "frequency_intertwining_relative_residual": 2.8064353419979598e-15,
+          "principal_overlaps_squared": [
+            1.0,
+            1.0
+          ],
+          "field_rank_ratios": [
+            0.9999295189340225,
+            0.9999295189340199
+          ],
+          "field_Gram_condition_numbers": [
+            1.0001409770360974,
+            1.0001409770361027
+          ],
+          "plus_finite_window_Gram_identity_error": 0.00010502563840799528,
+          "minus_finite_window_Gram_identity_error": 0.00010502563841120631,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 5,
+          "minus_kind": 5,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "material_reality_relative_error": 4.577792319768788e-15,
+        "material_reality_contract": "K(+k,tau) = T K(-k,tau)^* T^H; no same-k constraint away from Gamma",
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1.9634954084936196,
+          1.9634954084936218,
+          4.319689898685964,
+          4.319689898685966,
+          6.5828361534776905,
+          6.582836153477691,
+          7.624836944169166,
+          7.624836944169167,
+          8.246680715673206,
+          8.24668071567321,
+          10.367553251882228,
+          10.367553251882232,
+          10.60287520586555,
+          10.602875205865553,
+          12.718843683157885,
+          14.529866022852792,
+          14.529866022852795
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 36,
+        "memory_states": 32
+      },
+      "all_augmented_states": 36,
+      "candidates": [
+        {
+          "index": 182,
+          "frequency": [
+            0.37136594580673216,
+            -1.2805451017709883e-06
+          ],
+          "material_fraction": 0.9999679861722395
+        },
+        {
+          "index": 188,
+          "frequency": [
+            -0.37136599694882766,
+            -1.2805198528312429e-06
+          ],
+          "material_fraction": 0.9999679850744431
+        },
+        {
+          "index": 198,
+          "frequency": [
+            0.5000000129524586,
+            5.305746557386457e-05
+          ],
+          "material_fraction": 0.9992564414466321
+        },
+        {
+          "index": 199,
+          "frequency": [
+            0.5000000381931892,
+            -0.00011271222465589845
+          ],
+          "material_fraction": 0.9992521460353428
+        }
+      ],
+      "maximum_growth_over_drive": 5.305746557386457e-05,
+      "minimum_material_fraction": 0.9992521460353428,
+      "static_maximum_growth_over_drive": -1.280513942612709e-06,
+      "kernels": [
+        [
+          [
+            [
+              1.1572511305455522e-05,
+              -1.3962135971929382e-06
+            ],
+            [
+              3.713759547416433e-06,
+              2.649760259331611e-05
+            ]
+          ],
+          [
+            [
+              -2.232686618109597e-06,
+              -2.6460077666466392e-05
+            ],
+            [
+              6.063684142524806e-05,
+              -6.286203969190355e-06
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.141245971054644e-05,
+              2.1747769745630626e-06
+            ],
+            [
+              -4.464244644157449e-06,
+              2.6210418776797478e-05
+            ]
+          ],
+          [
+            [
+              5.809127586837531e-06,
+              -2.577599320481797e-05
+            ],
+            [
+              5.92452310448345e-05,
+              1.214019038846686e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              2.5443185265542907e-06,
+              5.818801367605323e-06
+            ],
+            [
+              -1.3126085568195444e-05,
+              6.1341513185038375e-06
+            ]
+          ],
+          [
+            [
+              1.341423665756181e-05,
+              -5.431125850384852e-06
+            ],
+            [
+              1.315181659060587e-05,
+              3.0288233560258582e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              2.544318526554244e-06,
+              -5.818801367605199e-06
+            ],
+            [
+              1.341423665756156e-05,
+              5.431125850384665e-06
+            ]
+          ],
+          [
+            [
+              -1.3126085568195136e-05,
+              -6.134151318503817e-06
+            ],
+            [
+              1.315181659060565e-05,
+              -3.0288233560257996e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.1412459710546292e-05,
+              -2.1747769745630165e-06
+            ],
+            [
+              5.809127586837539e-06,
+              2.5775993204817604e-05
+            ]
+          ],
+          [
+            [
+              -4.464244644157224e-06,
+              -2.6210418776797194e-05
+            ],
+            [
+              5.924523104483385e-05,
+              -1.2140190388466634e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.1572511305455378e-05,
+              1.3962135971929367e-06
+            ],
+            [
+              -2.2326866181094923e-06,
+              2.6460077666466067e-05
+            ]
+          ],
+          [
+            [
+              3.7137595474165626e-06,
+              -2.6497602593315796e-05
+            ],
+            [
+              6.063684142524736e-05,
+              6.2862039691904074e-06
+            ]
+          ]
+        ]
+      ],
+      "integrated_signed_density": [
+        [
+          [
+            3.701426248040273e-06,
+            0.0
+          ],
+          [
+            2.429837472246138e-07,
+            8.481035381892548e-06
+          ]
+        ],
+        [
+          [
+            2.429837472246138e-07,
+            -8.481035381892548e-06
+          ],
+          [
+            1.9451357998782105e-05,
+            0.0
+          ]
+        ]
+      ],
+      "kernel_relative_difference_from_q64": 0.0011052739788341083,
+      "density_integral_relative_difference_from_q64": 5.531909667063752e-16,
+      "material_pole_distance_from_q64": 2.040492849678929e-09
+    },
+    {
+      "name": "q32",
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "94b9e197f2d074e20f35c064590bf5495cdff762ed82ddd31ee883c3d35c67d6",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "minus_native_source_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+        "drive_omega_a_over_c": 4.7635135285852215,
+        "native_omega_a_over_c": [
+          1.7690042966558825,
+          2.3817567642926107
+        ],
+        "positive_window_omega_a_over_c": [
+          1.0,
+          3.3
+        ],
+        "positive_window_over_drive": [
+          0.20992907734997093,
+          0.6927659552549041
+        ],
+        "quadrature_order_positive": 32,
+        "broadening_over_drive": 0.04,
+        "threshold_handling": "resolve",
+        "quadrature": {
+          "method": "positive_piecewise_endpoint_regularization",
+          "order_per_segment": 32,
+          "node_count": 64,
+          "segments": [
+            {
+              "low": 1.0,
+              "high": 1.9634954084936196,
+              "map": "upper_square",
+              "nodes": 32,
+              "threshold_at_lower": false,
+              "threshold_at_upper": true
+            },
+            {
+              "low": 1.9634954084936196,
+              "high": 3.3,
+              "map": "lower_square",
+              "nodes": 32,
+              "threshold_at_lower": true,
+              "threshold_at_upper": false
+            }
+          ],
+          "thresholds_in_closed_window": [
+            1.9634954084936196
+          ],
+          "holes_removed": false,
+          "minimum_threshold_distance": 1.8032905269027566e-06,
+          "window": [
+            1.0,
+            3.3
+          ],
+          "scope": "Finite-window integral only; no spectral-tail or QNM completion"
+        },
+        "native_threshold_evaluation_relative_guard": 1e-12,
+        "positive_quadrature_node_count": 64,
+        "channel_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "minus_channel_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native H(-k)^* = H(k) T; Gamma(-nu,+k)=T Gamma(nu,-k)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.3967123807242641,
+                0.9179429649929691
+              ],
+              [
+                -1.79863213230024e-15,
+                1.2855207797673912e-15
+              ]
+            ],
+            [
+              [
+                2.929234048099305e-16,
+                -2.809687901528412e-15
+              ],
+              [
+                -0.994983680042408,
+                0.10003737526178613
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.132379070462433e-15,
+          "unitary_field_residual": 7.296326691854391e-15,
+          "raw_map_unitarity_residual": 3.2119043515658427e-15,
+          "polar_map_relative_change": 1.2044753583999105e-15,
+          "metric_isometry_residual": 1.1994257765560134e-15,
+          "frequency_intertwining_relative_residual": 2.8064353419979598e-15,
+          "principal_overlaps_squared": [
+            1.0,
+            1.0
+          ],
+          "field_rank_ratios": [
+            0.9999295189340225,
+            0.9999295189340199
+          ],
+          "field_Gram_condition_numbers": [
+            1.0001409770360974,
+            1.0001409770361027
+          ],
+          "plus_finite_window_Gram_identity_error": 0.00010502563840799528,
+          "minus_finite_window_Gram_identity_error": 0.00010502563841120631,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 5,
+          "minus_kind": 5,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "material_reality_relative_error": 4.577792319768788e-15,
+        "material_reality_contract": "K(+k,tau) = T K(-k,tau)^* T^H; no same-k constraint away from Gamma",
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1.9634954084936196,
+          1.9634954084936218,
+          4.319689898685964,
+          4.319689898685966,
+          6.5828361534776905,
+          6.582836153477691,
+          7.624836944169166,
+          7.624836944169167,
+          8.246680715673206,
+          8.24668071567321,
+          10.367553251882228,
+          10.367553251882232,
+          10.60287520586555,
+          10.602875205865553,
+          12.718843683157885,
+          14.529866022852792,
+          14.529866022852795
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 68,
+        "memory_states": 64
+      },
+      "all_augmented_states": 68,
+      "candidates": [
+        {
+          "index": 340,
+          "frequency": [
+            0.3713659458067386,
+            -1.2805451020784702e-06
+          ],
+          "material_fraction": 0.9999679861723527
+        },
+        {
+          "index": 348,
+          "frequency": [
+            -0.3713659969488439,
+            -1.2805198750511827e-06
+          ],
+          "material_fraction": 0.9999679850753603
+        },
+        {
+          "index": 355,
+          "frequency": [
+            0.5000000129525052,
+            5.305670938115119e-05
+          ],
+          "material_fraction": 0.9992564549132122
+        },
+        {
+          "index": 356,
+          "frequency": [
+            0.500000038193011,
+            -0.00011271019203614145
+          ],
+          "material_fraction": 0.9992521632793806
+        }
+      ],
+      "maximum_growth_over_drive": 5.305670938115119e-05,
+      "minimum_material_fraction": 0.9992521632793806,
+      "static_maximum_growth_over_drive": -1.2805139425265771e-06,
+      "kernels": [
+        [
+          [
+            [
+              1.1579301974277595e-05,
+              -1.413034603329735e-06
+            ],
+            [
+              3.752612110663223e-06,
+              2.651182196026212e-05
+            ]
+          ],
+          [
+            [
+              -2.2708890054414045e-06,
+              -2.6476484753204742e-05
+            ],
+            [
+              6.067137988500754e-05,
+              -6.3745162563929956e-06
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.1412453822681917e-05,
+              2.181885114219452e-06
+            ],
+            [
+              -4.480362852695337e-06,
+              2.6210875375818468e-05
+            ]
+          ],
+          [
+            [
+              5.825312112099501e-06,
+              -2.5775649938722595e-05
+            ],
+            [
+              5.9245522712470014e-05,
+              1.2176911750671413e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              2.5443185265213873e-06,
+              5.818801367614969e-06
+            ],
+            [
+              -1.3126085568218773e-05,
+              6.1341513184304345e-06
+            ]
+          ],
+          [
+            [
+              1.341423665758224e-05,
+              -5.431125850310405e-06
+            ],
+            [
+              1.3151816590439719e-05,
+              3.028823356030824e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              2.5443185265213386e-06,
+              -5.818801367614839e-06
+            ],
+            [
+              1.341423665758198e-05,
+              5.431125850310212e-06
+            ]
+          ],
+          [
+            [
+              -1.3126085568218468e-05,
+              -6.1341513184304125e-06
+            ],
+            [
+              1.315181659043949e-05,
+              -3.028823356030764e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.1412453822681767e-05,
+              -2.1818851142194123e-06
+            ],
+            [
+              5.825312112099524e-06,
+              2.5775649938722243e-05
+            ]
+          ],
+          [
+            [
+              -4.4803628526951335e-06,
+              -2.6210875375818183e-05
+            ],
+            [
+              5.924552271246939e-05,
+              -1.2176911750671207e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.1579301974277456e-05,
+              1.4130346033297426e-06
+            ],
+            [
+              -2.2708890054413126e-06,
+              2.6476484753204427e-05
+            ]
+          ],
+          [
+            [
+              3.7526121106633614e-06,
+              -2.651182196026182e-05
+            ],
+            [
+              6.067137988500684e-05,
+              6.374516256393078e-06
+            ]
+          ]
+        ]
+      ],
+      "integrated_signed_density": [
+        [
+          [
+            3.701426248040271e-06,
+            0.0
+          ],
+          [
+            2.429837472246142e-07,
+            8.481035381892548e-06
+          ]
+        ],
+        [
+          [
+            2.429837472246142e-07,
+            -8.481035381892548e-06
+          ],
+          [
+            1.94513579987821e-05,
+            0.0
+          ]
+        ]
+      ],
+      "all_state_primitive_ode": {
+        "max_multiplier_error": 8.452728872336516e-10,
+        "augmented_state_count": 68,
+        "selected_floquet_state_count": 68,
+        "scope": "All states of the declared finite-window auxiliary model, not full Maxwell continuum"
+      },
+      "kernel_relative_difference_from_q64": 8.067004198527814e-07,
+      "density_integral_relative_difference_from_q64": 3.481008299610832e-16,
+      "material_pole_distance_from_q64": 7.873084979019472e-12
+    },
+    {
+      "name": "q64",
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "94b9e197f2d074e20f35c064590bf5495cdff762ed82ddd31ee883c3d35c67d6",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "minus_native_source_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+        "drive_omega_a_over_c": 4.7635135285852215,
+        "native_omega_a_over_c": [
+          1.7690042966558825,
+          2.3817567642926107
+        ],
+        "positive_window_omega_a_over_c": [
+          1.0,
+          3.3
+        ],
+        "positive_window_over_drive": [
+          0.20992907734997093,
+          0.6927659552549041
+        ],
+        "quadrature_order_positive": 64,
+        "broadening_over_drive": 0.04,
+        "threshold_handling": "resolve",
+        "quadrature": {
+          "method": "positive_piecewise_endpoint_regularization",
+          "order_per_segment": 64,
+          "node_count": 128,
+          "segments": [
+            {
+              "low": 1.0,
+              "high": 1.9634954084936196,
+              "map": "upper_square",
+              "nodes": 64,
+              "threshold_at_lower": false,
+              "threshold_at_upper": true
+            },
+            {
+              "low": 1.9634954084936196,
+              "high": 3.3,
+              "map": "lower_square",
+              "nodes": 64,
+              "threshold_at_lower": true,
+              "threshold_at_upper": false
+            }
+          ],
+          "thresholds_in_closed_window": [
+            1.9634954084936196
+          ],
+          "holes_removed": false,
+          "minimum_threshold_distance": 1.163341190046907e-07,
+          "window": [
+            1.0,
+            3.3
+          ],
+          "scope": "Finite-window integral only; no spectral-tail or QNM completion"
+        },
+        "native_threshold_evaluation_relative_guard": 1e-12,
+        "positive_quadrature_node_count": 128,
+        "channel_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "minus_channel_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native H(-k)^* = H(k) T; Gamma(-nu,+k)=T Gamma(nu,-k)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.3967123807242641,
+                0.9179429649929691
+              ],
+              [
+                -1.79863213230024e-15,
+                1.2855207797673912e-15
+              ]
+            ],
+            [
+              [
+                2.929234048099305e-16,
+                -2.809687901528412e-15
+              ],
+              [
+                -0.994983680042408,
+                0.10003737526178613
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.132379070462433e-15,
+          "unitary_field_residual": 7.296326691854391e-15,
+          "raw_map_unitarity_residual": 3.2119043515658427e-15,
+          "polar_map_relative_change": 1.2044753583999105e-15,
+          "metric_isometry_residual": 1.1994257765560134e-15,
+          "frequency_intertwining_relative_residual": 2.8064353419979598e-15,
+          "principal_overlaps_squared": [
+            1.0,
+            1.0
+          ],
+          "field_rank_ratios": [
+            0.9999295189340225,
+            0.9999295189340199
+          ],
+          "field_Gram_condition_numbers": [
+            1.0001409770360974,
+            1.0001409770361027
+          ],
+          "plus_finite_window_Gram_identity_error": 0.00010502563840799528,
+          "minus_finite_window_Gram_identity_error": 0.00010502563841120631,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 5,
+          "minus_kind": 5,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "material_reality_relative_error": 4.577792319768788e-15,
+        "material_reality_contract": "K(+k,tau) = T K(-k,tau)^* T^H; no same-k constraint away from Gamma",
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1.9634954084936196,
+          1.9634954084936218,
+          4.319689898685964,
+          4.319689898685966,
+          6.5828361534776905,
+          6.582836153477691,
+          7.624836944169166,
+          7.624836944169167,
+          8.246680715673206,
+          8.24668071567321,
+          10.367553251882228,
+          10.367553251882232,
+          10.60287520586555,
+          10.602875205865553,
+          12.718843683157885,
+          14.529866022852792,
+          14.529866022852795
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 132,
+        "memory_states": 128
+      },
+      "all_augmented_states": 132,
+      "candidates": [
+        {
+          "index": 698,
+          "frequency": [
+            0.37136594580673427,
+            -1.2805451045502351e-06
+          ],
+          "material_fraction": 0.9999679861723526
+        },
+        {
+          "index": 706,
+          "frequency": [
+            -0.3713659969488408,
+            -1.2805198734363516e-06
+          ],
+          "material_fraction": 0.9999679850753606
+        },
+        {
+          "index": 700,
+          "frequency": [
+            0.5000000129525087,
+            5.305671696313111e-05
+          ],
+          "material_fraction": 0.9992564551002029
+        },
+        {
+          "index": 701,
+          "frequency": [
+            0.500000038193009,
+            -0.00011271018416305672
+          ],
+          "material_fraction": 0.9992521634789906
+        }
+      ],
+      "maximum_growth_over_drive": 5.305671696313111e-05,
+      "minimum_material_fraction": 0.9992521634789906,
+      "static_maximum_growth_over_drive": -1.2805139425326057e-06,
+      "kernels": [
+        [
+          [
+            [
+              1.1579295927646727e-05,
+              -1.413047296866063e-06
+            ],
+            [
+              3.7526405928874417e-06,
+              2.6511807225922954e-05
+            ]
+          ],
+          [
+            [
+              -2.270918396201969e-06,
+              -2.6476471536712077e-05
+            ],
+            [
+              6.067134755597122e-05,
+              -6.374582263191582e-06
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.1412451776565073e-05,
+              2.1818848487490235e-06
+            ],
+            [
+              -4.4803623860145775e-06,
+              2.62108707186647e-05
+            ]
+          ],
+          [
+            [
+              5.825311412687649e-06,
+              -2.5775645292159303e-05
+            ],
+            [
+              5.9245512130073036e-05,
+              1.2176910471948367e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              2.5443185265213873e-06,
+              5.818801367614968e-06
+            ],
+            [
+              -1.3126085568218768e-05,
+              6.1341513184304345e-06
+            ]
+          ],
+          [
+            [
+              1.3414236657582244e-05,
+              -5.431125850310402e-06
+            ],
+            [
+              1.315181659043971e-05,
+              3.0288233560308215e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              2.544318526521338e-06,
+              -5.818801367614838e-06
+            ],
+            [
+              1.341423665758198e-05,
+              5.4311258503102105e-06
+            ]
+          ],
+          [
+            [
+              -1.3126085568218463e-05,
+              -6.134151318430412e-06
+            ],
+            [
+              1.3151816590439488e-05,
+              -3.0288233560307622e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.1412451776564933e-05,
+              -2.181884848748981e-06
+            ],
+            [
+              5.8253114126876724e-06,
+              2.577564529215894e-05
+            ]
+          ],
+          [
+            [
+              -4.480362386014359e-06,
+              -2.6210870718664445e-05
+            ],
+            [
+              5.9245512130072365e-05,
+              -1.2176910471948153e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.1579295927646585e-05,
+              1.4130472968660701e-06
+            ],
+            [
+              -2.27091839620188e-06,
+              2.6476471536711748e-05
+            ]
+          ],
+          [
+            [
+              3.752640592887584e-06,
+              -2.6511807225922652e-05
+            ],
+            [
+              6.0671347555970565e-05,
+              6.3745822631916535e-06
+            ]
+          ]
+        ]
+      ],
+      "integrated_signed_density": [
+        [
+          [
+            3.7014262480402702e-06,
+            0.0
+          ],
+          [
+            2.4298374722461345e-07,
+            8.481035381892542e-06
+          ]
+        ],
+        [
+          [
+            2.4298374722461345e-07,
+            -8.481035381892542e-06
+          ],
+          [
+            1.9451357998782095e-05,
+            0.0
+          ]
+        ]
+      ],
+      "kernel_relative_difference_from_q64": 0.0,
+      "density_integral_relative_difference_from_q64": 0.0,
+      "material_pole_distance_from_q64": 0.0
+    },
+    {
+      "name": "broader_window",
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "94b9e197f2d074e20f35c064590bf5495cdff762ed82ddd31ee883c3d35c67d6",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "minus_native_source_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+        "drive_omega_a_over_c": 4.7635135285852215,
+        "native_omega_a_over_c": [
+          1.7690042966558825,
+          2.3817567642926107
+        ],
+        "positive_window_omega_a_over_c": [
+          0.6,
+          4.2
+        ],
+        "positive_window_over_drive": [
+          0.12595744640998258,
+          0.881702124869878
+        ],
+        "quadrature_order_positive": 64,
+        "broadening_over_drive": 0.04,
+        "threshold_handling": "resolve",
+        "quadrature": {
+          "method": "positive_piecewise_endpoint_regularization",
+          "order_per_segment": 64,
+          "node_count": 128,
+          "segments": [
+            {
+              "low": 0.6,
+              "high": 1.9634954084936196,
+              "map": "upper_square",
+              "nodes": 64,
+              "threshold_at_lower": false,
+              "threshold_at_upper": true
+            },
+            {
+              "low": 1.9634954084936196,
+              "high": 4.2,
+              "map": "lower_square",
+              "nodes": 64,
+              "threshold_at_lower": true,
+              "threshold_at_upper": false
+            }
+          ],
+          "thresholds_in_closed_window": [
+            1.9634954084936196
+          ],
+          "holes_removed": false,
+          "minimum_threshold_distance": 1.6463081808915092e-07,
+          "window": [
+            0.6,
+            4.2
+          ],
+          "scope": "Finite-window integral only; no spectral-tail or QNM completion"
+        },
+        "native_threshold_evaluation_relative_guard": 1e-12,
+        "positive_quadrature_node_count": 128,
+        "channel_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "minus_channel_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native H(-k)^* = H(k) T; Gamma(-nu,+k)=T Gamma(nu,-k)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.3967123807242641,
+                0.9179429649929691
+              ],
+              [
+                -1.79863213230024e-15,
+                1.2855207797673912e-15
+              ]
+            ],
+            [
+              [
+                2.929234048099305e-16,
+                -2.809687901528412e-15
+              ],
+              [
+                -0.994983680042408,
+                0.10003737526178613
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.132379070462433e-15,
+          "unitary_field_residual": 7.296326691854391e-15,
+          "raw_map_unitarity_residual": 3.2119043515658427e-15,
+          "polar_map_relative_change": 1.2044753583999105e-15,
+          "metric_isometry_residual": 1.1994257765560134e-15,
+          "frequency_intertwining_relative_residual": 2.8064353419979598e-15,
+          "principal_overlaps_squared": [
+            1.0,
+            1.0
+          ],
+          "field_rank_ratios": [
+            0.9999295189340225,
+            0.9999295189340199
+          ],
+          "field_Gram_condition_numbers": [
+            1.0001409770360974,
+            1.0001409770361027
+          ],
+          "plus_finite_window_Gram_identity_error": 0.00010502563840799528,
+          "minus_finite_window_Gram_identity_error": 0.00010502563841120631,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 5,
+          "minus_kind": 5,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "material_reality_relative_error": 4.577792319768788e-15,
+        "material_reality_contract": "K(+k,tau) = T K(-k,tau)^* T^H; no same-k constraint away from Gamma",
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1.9634954084936196,
+          1.9634954084936218,
+          4.319689898685964,
+          4.319689898685966,
+          6.5828361534776905,
+          6.582836153477691,
+          7.624836944169166,
+          7.624836944169167,
+          8.246680715673206,
+          8.24668071567321,
+          10.367553251882228,
+          10.367553251882232,
+          10.60287520586555,
+          10.602875205865553,
+          12.718843683157885,
+          14.529866022852792,
+          14.529866022852795
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 132,
+        "memory_states": 128
+      },
+      "all_augmented_states": 132,
+      "candidates": [
+        {
+          "index": 757,
+          "frequency": [
+            0.3713655283907636,
+            -1.353930087083422e-06
+          ],
+          "material_fraction": 0.9999661515178689
+        },
+        {
+          "index": 754,
+          "frequency": [
+            -0.3713655795236495,
+            -1.3539013824086676e-06
+          ],
+          "material_fraction": 0.9999661502759395
+        },
+        {
+          "index": 790,
+          "frequency": [
+            0.5000000125303894,
+            5.178822401813443e-05
+          ],
+          "material_fraction": 0.9992341657049769
+        },
+        {
+          "index": 791,
+          "frequency": [
+            0.5000000386083866,
+            -0.0001132231586683935
+          ],
+          "material_fraction": 0.9992298792825008
+        }
+      ],
+      "maximum_growth_over_drive": 5.178822401813443e-05,
+      "minimum_material_fraction": 0.9992298792825008,
+      "static_maximum_growth_over_drive": -1.3539006901005888e-06,
+      "kernels": [
+        [
+          [
+            [
+              1.2053585979374364e-05,
+              5.080952061007438e-07
+            ],
+            [
+              -8.365032142486369e-07,
+              2.7911464955920564e-05
+            ]
+          ],
+          [
+            [
+              2.4391230845407513e-06,
+              -2.7361942937361996e-05
+            ],
+            [
+              6.343381017593064e-05,
+              4.923893976569852e-06
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.1724798541419826e-05,
+              3.6661473484221135e-06
+            ],
+            [
+              -8.035138427624798e-06,
+              2.7165266478589047e-05
+            ]
+          ],
+          [
+            [
+              9.461411982596392e-06,
+              -2.6329150222189436e-05
+            ],
+            [
+              6.107235274890154e-05,
+              2.092219445170229e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              2.693713021484581e-06,
+              6.647960326486952e-06
+            ],
+            [
+              -1.5117231530133185e-05,
+              6.60941319950145e-06
+            ]
+          ],
+          [
+            [
+              1.5445566720417114e-05,
+              -5.6793517515958786e-06
+            ],
+            [
+              1.403131170659386e-05,
+              3.518734538290731e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              2.6937130214845277e-06,
+              -6.647960326486776e-06
+            ],
+            [
+              1.544556672041674e-05,
+              5.679351751595668e-06
+            ]
+          ],
+          [
+            [
+              -1.511723153013278e-05,
+              -6.609413199501431e-06
+            ],
+            [
+              1.4031311706593622e-05,
+              -3.5187345382906445e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.1724798541419688e-05,
+              -3.6661473484220348e-06
+            ],
+            [
+              9.461411982596292e-06,
+              2.632915022218904e-05
+            ]
+          ],
+          [
+            [
+              -8.035138427624457e-06,
+              -2.716526647858878e-05
+            ],
+            [
+              6.107235274890085e-05,
+              -2.0922194451701737e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.2053585979374215e-05,
+              -5.080952061006786e-07
+            ],
+            [
+              2.4391230845406844e-06,
+              2.7361942937361647e-05
+            ]
+          ],
+          [
+            [
+              -8.365032142483369e-07,
+              -2.7911464955920263e-05
+            ],
+            [
+              6.343381017592988e-05,
+              -4.923893976569372e-06
+            ]
+          ]
+        ]
+      ],
+      "integrated_signed_density": [
+        [
+          [
+            5.340408271448969e-06,
+            0.0
+          ],
+          [
+            4.783683860635626e-07,
+            1.2475775028824325e-05
+          ]
+        ],
+        [
+          [
+            4.783683860635626e-07,
+            -1.2475775028824325e-05
+          ],
+          [
+            2.9232753720163594e-05,
+            0.0
+          ]
+        ]
+      ],
+      "kernel_relative_difference_from_q64": 0.16518641985625854,
+      "density_integral_relative_difference_from_q64": 0.4932026684335092,
+      "material_pole_distance_from_q64": 1.2684930152314934e-06
+    },
+    {
+      "name": "smaller_eta",
+      "metadata": {
+        "status": "ACTUAL_LEGUME_SLAB_FINITE_WINDOW_MEMORY_APPROXIMATION",
+        "basis_id": "94b9e197f2d074e20f35c064590bf5495cdff762ed82ddd31ee883c3d35c67d6",
+        "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+        "native_source_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "minus_native_source_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+        "drive_omega_a_over_c": 4.7635135285852215,
+        "native_omega_a_over_c": [
+          1.7690042966558825,
+          2.3817567642926107
+        ],
+        "positive_window_omega_a_over_c": [
+          1.0,
+          3.3
+        ],
+        "positive_window_over_drive": [
+          0.20992907734997093,
+          0.6927659552549041
+        ],
+        "quadrature_order_positive": 64,
+        "broadening_over_drive": 0.02,
+        "threshold_handling": "resolve",
+        "quadrature": {
+          "method": "positive_piecewise_endpoint_regularization",
+          "order_per_segment": 64,
+          "node_count": 128,
+          "segments": [
+            {
+              "low": 1.0,
+              "high": 1.9634954084936196,
+              "map": "upper_square",
+              "nodes": 64,
+              "threshold_at_lower": false,
+              "threshold_at_upper": true
+            },
+            {
+              "low": 1.9634954084936196,
+              "high": 3.3,
+              "map": "lower_square",
+              "nodes": 64,
+              "threshold_at_lower": true,
+              "threshold_at_upper": false
+            }
+          ],
+          "thresholds_in_closed_window": [
+            1.9634954084936196
+          ],
+          "holes_removed": false,
+          "minimum_threshold_distance": 1.163341190046907e-07,
+          "window": [
+            1.0,
+            3.3
+          ],
+          "scope": "Finite-window integral only; no spectral-tail or QNM completion"
+        },
+        "native_threshold_evaluation_relative_guard": 1e-12,
+        "positive_quadrature_node_count": 128,
+        "channel_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "minus_channel_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+        "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+        "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+        "negative_frequency": "Measured native H(-k)^* = H(k) T; Gamma(-nu,+k)=T Gamma(nu,-k)^* T^H",
+        "reality_map_metadata": {
+          "verified_from_physical_fields": true,
+          "least_squares_map": [
+            [
+              [
+                0.3967123807242641,
+                0.9179429649929691
+              ],
+              [
+                -1.79863213230024e-15,
+                1.2855207797673912e-15
+              ]
+            ],
+            [
+              [
+                2.929234048099305e-16,
+                -2.809687901528412e-15
+              ],
+              [
+                -0.994983680042408,
+                0.10003737526178613
+              ]
+            ]
+          ],
+          "least_squares_field_residual": 7.132379070462433e-15,
+          "unitary_field_residual": 7.296326691854391e-15,
+          "raw_map_unitarity_residual": 3.2119043515658427e-15,
+          "polar_map_relative_change": 1.2044753583999105e-15,
+          "metric_isometry_residual": 1.1994257765560134e-15,
+          "frequency_intertwining_relative_residual": 2.8064353419979598e-15,
+          "principal_overlaps_squared": [
+            1.0,
+            1.0
+          ],
+          "field_rank_ratios": [
+            0.9999295189340225,
+            0.9999295189340199
+          ],
+          "field_Gram_condition_numbers": [
+            1.0001409770360974,
+            1.0001409770361027
+          ],
+          "plus_finite_window_Gram_identity_error": 0.00010502563840799528,
+          "minus_finite_window_Gram_identity_error": 0.00010502563841120631,
+          "field_tolerance": 1e-06,
+          "unitary_tolerance": 1e-06,
+          "spectral_tolerance": 1e-07,
+          "rank_tolerance": 1e-09,
+          "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+          "not_a_whitened_coordinate_map": true,
+          "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+          "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+          "minus_G_index_for_each_plus_G": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "plus_kind": 5,
+          "minus_kind": 5,
+          "plus_modes": [
+            2,
+            3
+          ],
+          "minus_modes": [
+            2,
+            3
+          ],
+          "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+          "minus_native_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+          "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+        },
+        "material_reality_relative_error": 4.577792319768788e-15,
+        "material_reality_contract": "K(+k,tau) = T K(-k,tau)^* T^H; no same-k constraint away from Gamma",
+        "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+        "reactive_reference": "Unsubtracted causal finite-window integral; native bare GME stiffness; no fitted counterterm",
+        "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+        "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+        "native_thresholds_omega_a_over_c": [
+          1.9634954084936196,
+          1.9634954084936218,
+          4.319689898685964,
+          4.319689898685966,
+          6.5828361534776905,
+          6.582836153477691,
+          7.624836944169166,
+          7.624836944169167,
+          8.246680715673206,
+          8.24668071567321,
+          10.367553251882228,
+          10.367553251882232,
+          10.60287520586555,
+          10.602875205865553,
+          12.718843683157885,
+          14.529866022852792,
+          14.529866022852795
+        ],
+        "complete_open_dynamics_certified": false,
+        "augmented_dimension": 132,
+        "memory_states": 128
+      },
+      "all_augmented_states": 132,
+      "candidates": [
+        {
+          "index": 702,
+          "frequency": [
+            0.3713655576661477,
+            -7.444968647488076e-07
+          ],
+          "material_fraction": 0.9999627746506984
+        },
+        {
+          "index": 709,
+          "frequency": [
+            -0.3713656088095156,
+            -7.444679082578872e-07
+          ],
+          "material_fraction": 0.9999627721427906
+        },
+        {
+          "index": 737,
+          "frequency": [
+            0.5000000110538059,
+            4.8557362008368245e-05
+          ],
+          "material_fraction": 0.9982951016050069
+        },
+        {
+          "index": 736,
+          "frequency": [
+            0.5000000400961775,
+            -0.0001170915512810558
+          ],
+          "material_fraction": 0.9982780334960862
+        }
+      ],
+      "maximum_growth_over_drive": 4.8557362008368245e-05,
+      "minimum_material_fraction": 0.9982780334960862,
+      "static_maximum_growth_over_drive": -7.444692373533953e-07,
+      "kernels": [
+        [
+          [
+            [
+              1.2975524891684901e-05,
+              -1.6465141269225144e-06
+            ],
+            [
+              4.309692969229647e-06,
+              2.9713057774624896e-05
+            ]
+          ],
+          [
+            [
+              -2.6583879026411626e-06,
+              -2.964730179315975e-05
+            ],
+            [
+              6.794531623777555e-05,
+              -7.310364277310837e-06
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.313138391741308e-05,
+              2.5164415678945594e-06
+            ],
+            [
+              -5.202888177641358e-06,
+              3.0139513437139024e-05
+            ]
+          ],
+          [
+            [
+              6.7219127039083564e-06,
+              -2.9619118226376123e-05
+            ],
+            [
+              6.803366036455705e-05,
+              1.4133082384335527e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.5102443731602344e-06,
+              6.574486923708555e-06
+            ],
+            [
+              -1.4898205781472239e-05,
+              3.822143778789438e-06
+            ]
+          ],
+          [
+            [
+              1.5067140329988606e-05,
+              -3.038351801987976e-06
+            ],
+            [
+              7.79650994627696e-06,
+              3.417139427920949e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.5102443731602028e-06,
+              -6.574486923708404e-06
+            ],
+            [
+              1.5067140329988291e-05,
+              3.0383518019878136e-06
+            ]
+          ],
+          [
+            [
+              -1.4898205781471883e-05,
+              -3.822143778789462e-06
+            ],
+            [
+              7.796509946276816e-06,
+              -3.417139427920879e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.313138391741293e-05,
+              -2.5164415678945183e-06
+            ],
+            [
+              6.721912703908399e-06,
+              2.961911822637576e-05
+            ]
+          ],
+          [
+            [
+              -5.2028881776411315e-06,
+              -3.0139513437138736e-05
+            ],
+            [
+              6.803366036455636e-05,
+              -1.4133082384335294e-05
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1.2975524891684745e-05,
+              1.6465141269225167e-06
+            ],
+            [
+              -2.658387902641059e-06,
+              2.9647301793159405e-05
+            ]
+          ],
+          [
+            [
+              4.309692969229805e-06,
+              -2.9713057774624567e-05
+            ],
+            [
+              6.79453162377748e-05,
+              7.310364277310924e-06
+            ]
+          ]
+        ]
+      ],
+      "integrated_signed_density": [
+        [
+          [
+            3.7014262480402702e-06,
+            0.0
+          ],
+          [
+            2.4298374722461345e-07,
+            8.481035381892542e-06
+          ]
+        ],
+        [
+          [
+            2.4298374722461345e-07,
+            -8.481035381892542e-06
+          ],
+          [
+            1.9451357998782095e-05,
+            0.0
+          ]
+        ]
+      ],
+      "kernel_relative_difference_from_q64": 0.1454664087857405,
+      "density_integral_relative_difference_from_q64": 0.0,
+      "material_pole_distance_from_q64": 4.499355355383893e-06
+    }
+  ],
+  "wrong_same_k_material_reality_residual": 0.00036239483849437147,
+  "correct_paired_material_reality_residual": 4.577792319768788e-15,
+  "harmonic3_to4_material_pole_change": 7.43801479897353e-15,
+  "frozen_common_frequency_growth": 5.2456203171492394e-05,
+  "native_onshell_threshold_control": [
+    {
+      "omega": 1.7690042966558825,
+      "channel_count": 0,
+      "damping_diagonal": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "omega": 2.3817567642926107,
+      "channel_count": 4,
+      "damping_diagonal": [
+        3.647303388222253e-05,
+        0.0001885732262692406
+      ]
+    }
+  ],
+  "kernel_comparison_complex_frequencies_over_drive": [
+    [
+      -0.55,
+      0.001
+    ],
+    [
+      -0.5,
+      0.001
+    ],
+    [
+      -0.37,
+      0.001
+    ],
+    [
+      0.37,
+      0.001
+    ],
+    [
+      0.5,
+      0.001
+    ],
+    [
+      0.55,
+      0.001
+    ]
+  ],
+  "limitations": [
+    "Only the declared native spatial/modal subspace is represented; no full Maxwell-space convergence claim",
+    "Finite spectral tails are zero by model definition; their physical values remain unknown",
+    "Positive eta smooths the light-cone onset and can create residual damping below threshold",
+    "Stationary bath coupling, fixed reference channels and weak-radiation density; no QNM metric or actual external R/T ports",
+    "Analytic kernel and passive finite-state algebra establish this model, not a unique Maxwell self-energy"
+  ],
+  "elapsed_seconds": 46.27461659999972
+}

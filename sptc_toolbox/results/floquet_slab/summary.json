@@ -1,0 +1,84 @@
+{
+  "status": "PHYSICAL_AIR_SLAB_AIR_FINITE_HARMONIC_SCATTERING_CONTROLS_PASSED",
+  "geometry": "Normal incidence, air/homogeneous slab/air, thickness=.72, mu=1",
+  "static_material": {
+    "epsilon_inf": 2.7,
+    "plasma_frequency": 0.6,
+    "resonance_frequency": 1.7,
+    "damping": 0.08
+  },
+  "modulation": {
+    "epsilon_inf_cosine_amplitude": 0.22,
+    "oscillator_strength_cosine_amplitude": 0.07,
+    "drive": 1.0
+  },
+  "physical_equations": "Pddot+gamma Pdot+wr^2P=wp^2 strength(t)E; D=epsilon_inf(t)E+P; dx E=i nu H; dx H=i nu D",
+  "harmonic_convergence": [
+    {
+      "n_harmonics": 2,
+      "boundary_residual": 4.358132824974825e-17,
+      "condition": 1.7746332969249978,
+      "central_three_output_difference_from_N6": 1.4536933287210173e-07
+    },
+    {
+      "n_harmonics": 4,
+      "boundary_residual": 3.666333952192344e-17,
+      "condition": 1.7731519731234824,
+      "central_three_output_difference_from_N6": 5.863138184655427e-13
+    },
+    {
+      "n_harmonics": 6,
+      "boundary_residual": 3.602614046591511e-17,
+      "condition": 1.773151977700394,
+      "central_three_output_difference_from_N6": 0.0
+    }
+  ],
+  "maximum_boundary_residual": 4.605566663562416e-17,
+  "static_output_power_ratio_range": [
+    0.9982016330481177,
+    0.9999008519522466
+  ],
+  "dynamic_output_power_ratio_range": [
+    0.9990958962909644,
+    1.0035307117695336
+  ],
+  "physical_power_rejected_frequencies": [
+    {
+      "frequency": 0.5,
+      "reason": "Opposite-frequency channels overlap in a physical real field; coherent signed-frequency grouping is required before power evaluation"
+    }
+  ],
+  "real_field_power_contract": "Re sum a_n exp(-i nu_n t); independently group each port by positive absolute frequency and add negative-frequency conjugates before squaring",
+  "coherent_half_pump_phase_controls": [
+    {
+      "incident_phase_real": 1.0,
+      "incident_phase_imag": 0.0,
+      "input_power": 0.5,
+      "output_power": 0.5147099932954813,
+      "output_input_ratio": 1.0294199865909626,
+      "independent_real_time_average": 0.5147099932954814,
+      "time_average_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "incident_phase_real": 0.0,
+      "incident_phase_imag": 1.0,
+      "input_power": 0.5,
+      "output_power": 0.48794662926669946,
+      "output_input_ratio": 0.9758932585333989,
+      "independent_real_time_average": 0.48794662926669935,
+      "time_average_absolute_error": 1.1102230246251565e-16
+    }
+  ],
+  "limits": [
+    "Exact spatial transfer only for the declared homogeneous slab and finite temporal truncation",
+    "No temporal-growth stability guarantee from an algebraic response",
+    "Transfer exponential can become ill-conditioned for large thickness/truncation; a stable scattering cascade is future work",
+    "Complex outgoing boundary operator is available away zero/material singularities; global poles and residues require separate checks",
+    "No Legume spatial solver replacement or exact general-geometry open Floquet claim"
+  ],
+  "source_sha256": {
+    "sptc_toolbox\\scripts\\validate_floquet_slab.py": "929ef8ce75e3c27795e7c46958554ebb47f78dc29401e40357ea7802208bd5a7",
+    "sptc_toolbox\\floquet_slab.py": "6b1fd30eb592b4614d78eda39dbb9c8bf9288731195ff93e1a43e3792cd2761e",
+    "sptc_toolbox\\tests\\test_floquet_slab.py": "c772955db9b86fdd7487d288bfff0c919112848c73109c24636433c3c65b71c2"
+  }
+}

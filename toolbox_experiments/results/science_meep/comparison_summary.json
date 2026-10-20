@@ -1,0 +1,473 @@
+{
+  "status": "APPROXIMATE_SMALL_MEEP_CROSSCHECK",
+  "geometry": {
+    "paper": "Science Advances 10.1126/sciadv.aed4055 Figure 4",
+    "radius_over_period": 0.3125,
+    "height_over_period": 0.4445234708392603,
+    "period_nm": 3296.0,
+    "epsilon": 16.0,
+    "material_status": "APPROXIMATE: constant epsilon=16 authorized for toolbox comparison",
+    "background_epsilon": 1.0,
+    "lattice": "square, periodic x/y, PML z",
+    "excitation": "centered Hz pulse; Gamma magnetic-dipole-like A2g sector",
+    "target_frequency_fa_over_c": 0.7476105352857142
+  },
+  "runs": [
+    {
+      "case": "gamma_r24",
+      "config": {
+        "radius": 0.3125,
+        "height": 0.4445234708392603,
+        "epsilon": 16.0,
+        "period_nm": 3296.0,
+        "resolution": 24,
+        "kx": 0.0,
+        "ky": 0.0,
+        "center_frequency": 0.747,
+        "frequency_width": 0.22,
+        "pml": 0.5,
+        "padding": 0.5,
+        "window_time": 150.0,
+        "warmup": 25.0,
+        "courant": 0.5,
+        "source_component": "Hz",
+        "mirror_z": true,
+        "epsilon_averaging": true
+      },
+      "branches": [
+        {
+          "frequency_fa_over_c": 0.7240428163017374,
+          "frequency_thz": 65.85636395520034,
+          "center_window_frequency_spread": 7.372802368621478e-11,
+          "all_probe_frequency_spread": 2.4713022184208455e-08,
+          "decay_range": [
+            1.6441439555876701e-06,
+            1.6540713602497056e-06
+          ],
+          "signed_probe_amplitude_ratio": [
+            0.2067827591160168,
+            -1.1160483152195669e-05
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        },
+        {
+          "frequency_fa_over_c": 0.7462811106450616,
+          "frequency_thz": 67.87908025462772,
+          "center_window_frequency_spread": 2.8700153364979997e-11,
+          "all_probe_frequency_spread": 2.2846803338083532e-09,
+          "decay_range": [
+            1.3358658016591563e-06,
+            1.3375011034921503e-06
+          ],
+          "signed_probe_amplitude_ratio": [
+            -0.6428162097656501,
+            -0.0003114874779250033
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        }
+      ],
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 10.436152272013715
+    },
+    {
+      "case": "gamma_r24_pad1_pml0.5",
+      "config": {
+        "radius": 0.3125,
+        "height": 0.4445234708392603,
+        "epsilon": 16.0,
+        "period_nm": 3296.0,
+        "resolution": 24,
+        "kx": 0.0,
+        "ky": 0.0,
+        "center_frequency": 0.747,
+        "frequency_width": 0.22,
+        "pml": 0.5,
+        "padding": 1.0,
+        "window_time": 150.0,
+        "warmup": 25.0,
+        "courant": 0.5,
+        "source_component": "Hz",
+        "mirror_z": true,
+        "epsilon_averaging": true,
+        "save_volume": false
+      },
+      "branches": [
+        {
+          "frequency_fa_over_c": 0.7240398763045806,
+          "frequency_thz": 65.85609654349702,
+          "center_window_frequency_spread": 7.497424903135652e-11,
+          "all_probe_frequency_spread": 2.4670875897747635e-08,
+          "decay_range": [
+            1.2433548180249027e-08,
+            2.2377188513729466e-08
+          ],
+          "signed_probe_amplitude_ratio": [
+            0.20680401834190468,
+            6.263917226140259e-07
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        },
+        {
+          "frequency_fa_over_c": 0.7462812659401734,
+          "frequency_thz": 67.87909437971975,
+          "center_window_frequency_spread": 1.8604895402063448e-11,
+          "all_probe_frequency_spread": 2.2751155404066026e-09,
+          "decay_range": [
+            1.935838752198561e-08,
+            2.098170191598934e-08
+          ],
+          "signed_probe_amplitude_ratio": [
+            -0.6428528752043969,
+            -4.316054648255694e-06
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        }
+      ],
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 15.449469598999713
+    },
+    {
+      "case": "gamma_r32_pad1_pml0.5",
+      "config": {
+        "radius": 0.3125,
+        "height": 0.4445234708392603,
+        "epsilon": 16.0,
+        "period_nm": 3296.0,
+        "resolution": 32,
+        "kx": 0.0,
+        "ky": 0.0,
+        "center_frequency": 0.747,
+        "frequency_width": 0.22,
+        "pml": 0.5,
+        "padding": 1.0,
+        "window_time": 150.0,
+        "warmup": 25.0,
+        "courant": 0.5,
+        "source_component": "Hz",
+        "mirror_z": true,
+        "epsilon_averaging": true,
+        "save_volume": true
+      },
+      "branches": [
+        {
+          "frequency_fa_over_c": 0.732747804581503,
+          "frequency_thz": 66.64813878325013,
+          "center_window_frequency_spread": 7.880474051091824e-12,
+          "all_probe_frequency_spread": 1.041204491514236e-07,
+          "decay_range": [
+            -6.765880853416274e-08,
+            1.0730662194436203e-07
+          ],
+          "signed_probe_amplitude_ratio": [
+            0.19688750358540574,
+            5.4888242672277705e-06
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        },
+        {
+          "frequency_fa_over_c": 0.7569364102371674,
+          "frequency_thz": 68.84824847533277,
+          "center_window_frequency_spread": 1.3297530854217143e-09,
+          "all_probe_frequency_spread": 7.451243078104852e-08,
+          "decay_range": [
+            -1.5940782885888413e-08,
+            8.725669718678772e-08
+          ],
+          "signed_probe_amplitude_ratio": [
+            -0.6820214117510479,
+            -2.003801900216848e-06
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        }
+      ],
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 85.93226383900037
+    },
+    {
+      "case": "gamma_r32_pad1_pml0.5_eps15.9",
+      "config": {
+        "radius": 0.3125,
+        "height": 0.4445234708392603,
+        "epsilon": 15.9,
+        "period_nm": 3296.0,
+        "resolution": 32,
+        "kx": 0.0,
+        "ky": 0.0,
+        "center_frequency": 0.747,
+        "frequency_width": 0.22,
+        "pml": 0.5,
+        "padding": 1.0,
+        "window_time": 150.0,
+        "warmup": 25.0,
+        "courant": 0.5,
+        "source_component": "Hz",
+        "mirror_z": true,
+        "epsilon_averaging": true,
+        "save_volume": false
+      },
+      "branches": [
+        {
+          "frequency_fa_over_c": 0.7350134781392387,
+          "frequency_thz": 66.85421640609576,
+          "center_window_frequency_spread": 3.3528735343679728e-12,
+          "all_probe_frequency_spread": 1.1151235745909815e-07,
+          "decay_range": [
+            -6.62228454773872e-08,
+            1.1261868762713337e-07
+          ],
+          "signed_probe_amplitude_ratio": [
+            0.1969559388127791,
+            5.034204790722287e-06
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        },
+        {
+          "frequency_fa_over_c": 0.7592897741637965,
+          "frequency_thz": 69.0623021028002,
+          "center_window_frequency_spread": 3.611784205048707e-10,
+          "all_probe_frequency_spread": 9.280723967108884e-08,
+          "decay_range": [
+            3.653131390439286e-09,
+            9.282076232451597e-08
+          ],
+          "signed_probe_amplitude_ratio": [
+            -0.6817044007709486,
+            -1.0938924635587236e-06
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        }
+      ],
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 108.3238912030065
+    },
+    {
+      "case": "gamma_r32_pad1_pml0.5_eps16.1",
+      "config": {
+        "radius": 0.3125,
+        "height": 0.4445234708392603,
+        "epsilon": 16.1,
+        "period_nm": 3296.0,
+        "resolution": 32,
+        "kx": 0.0,
+        "ky": 0.0,
+        "center_frequency": 0.747,
+        "frequency_width": 0.22,
+        "pml": 0.5,
+        "padding": 1.0,
+        "window_time": 150.0,
+        "warmup": 25.0,
+        "courant": 0.5,
+        "source_component": "Hz",
+        "mirror_z": true,
+        "epsilon_averaging": true,
+        "save_volume": false
+      },
+      "branches": [
+        {
+          "frequency_fa_over_c": 0.7304989268601967,
+          "frequency_thz": 66.4435888500548,
+          "center_window_frequency_spread": 1.7470458413271217e-10,
+          "all_probe_frequency_spread": 9.530891020848031e-08,
+          "decay_range": [
+            -6.786313189171474e-08,
+            1.0804586765931102e-07
+          ],
+          "signed_probe_amplitude_ratio": [
+            0.19683627506057125,
+            5.931997722461343e-06
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        },
+        {
+          "frequency_fa_over_c": 0.7546033001329688,
+          "frequency_thz": 68.63603706364516,
+          "center_window_frequency_spread": 1.015598605214052e-09,
+          "all_probe_frequency_spread": 6.04782857127617e-08,
+          "decay_range": [
+            -3.238416920586105e-08,
+            7.254375780986183e-08
+          ],
+          "signed_probe_amplitude_ratio": [
+            -0.6821726515516782,
+            -2.711615907249686e-06
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        }
+      ],
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 78.68529895800748
+    },
+    {
+      "case": "gamma_r40_pad1_pml0.5",
+      "config": {
+        "radius": 0.3125,
+        "height": 0.4445234708392603,
+        "epsilon": 16.0,
+        "period_nm": 3296.0,
+        "resolution": 40,
+        "kx": 0.0,
+        "ky": 0.0,
+        "center_frequency": 0.747,
+        "frequency_width": 0.22,
+        "pml": 0.5,
+        "padding": 1.0,
+        "window_time": 150.0,
+        "warmup": 25.0,
+        "courant": 0.5,
+        "source_component": "Hz",
+        "mirror_z": true,
+        "epsilon_averaging": true,
+        "save_volume": false
+      },
+      "branches": [
+        {
+          "frequency_fa_over_c": 0.7376570979509256,
+          "frequency_thz": 67.09467067835399,
+          "center_window_frequency_spread": 1.0073050171754971e-09,
+          "all_probe_frequency_spread": 2.042476849983821e-06,
+          "decay_range": [
+            -1.6252655080091642e-06,
+            1.2406749052014566e-06
+          ],
+          "signed_probe_amplitude_ratio": [
+            0.18467799392715784,
+            0.00018721757090667265
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        },
+        {
+          "frequency_fa_over_c": 0.7595285125837596,
+          "frequency_thz": 69.08401690187173,
+          "center_window_frequency_spread": 4.946733023203365e-10,
+          "all_probe_frequency_spread": 1.6333306451787877e-07,
+          "decay_range": [
+            -1.2729881805886083e-07,
+            2.572893168088327e-08
+          ],
+          "signed_probe_amplitude_ratio": [
+            -0.7652858150955295,
+            -4.056777522767475e-05
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        }
+      ],
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 200.93445298500592
+    },
+    {
+      "case": "kx005_r20",
+      "config": {
+        "radius": 0.3125,
+        "height": 0.4445234708392603,
+        "epsilon": 16.0,
+        "period_nm": 3296.0,
+        "resolution": 20,
+        "kx": 0.05,
+        "ky": 0.0,
+        "center_frequency": 0.747,
+        "frequency_width": 0.22,
+        "pml": 0.5,
+        "padding": 0.5,
+        "window_time": 150.0,
+        "warmup": 25.0,
+        "courant": 0.5,
+        "source_component": "Hz",
+        "mirror_z": true,
+        "epsilon_averaging": true
+      },
+      "branches": [
+        {
+          "frequency_fa_over_c": 0.7246390755822287,
+          "frequency_thz": 65.9105975824163,
+          "center_window_frequency_spread": 1.1083079831664122e-07,
+          "all_probe_frequency_spread": 1.1693791249212104e-05,
+          "decay_range": [
+            -2.0654097654715212e-05,
+            2.019700854622679e-06
+          ],
+          "signed_probe_amplitude_ratio": [
+            0.19833410876863095,
+            -0.033602923773245384
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "UNRESOLVED"
+        },
+        {
+          "frequency_fa_over_c": 0.744597419177121,
+          "frequency_thz": 67.72593765642155,
+          "center_window_frequency_spread": 1.0794163263216916e-07,
+          "all_probe_frequency_spread": 4.485693432476623e-06,
+          "decay_range": [
+            -1.3442756091372243e-05,
+            -9.86142803679407e-06
+          ],
+          "signed_probe_amplitude_ratio": [
+            -0.707470517291991,
+            -0.03332707534506922
+          ],
+          "matched_probes_and_windows": 4,
+          "decay_status": "PASSIVE_ESTIMATE_NOT_YET_GRID_CONVERGED"
+        }
+      ],
+      "meep_version": "1.35.0",
+      "elapsed_seconds": 4.9976383120229
+    }
+  ],
+  "static_derivative_calibration": [
+    {
+      "branch": "lower",
+      "base_frequency_fa_over_c": 0.732747804581503,
+      "base_frequency_thz": 66.64813878325013,
+      "df_depsilon": -0.022572756395209947,
+      "S_effective": 0.061611256298753456,
+      "inferred_electric_energy_fraction": 0.9857801007800553,
+      "epsilon_step": 0.1,
+      "second_difference": 1.679583642921756e-05,
+      "slope_minus": -0.02265673557735659,
+      "slope_plus": -0.022488777213063305,
+      "identity_evidence": "Two poles excited by centered Hz, stable ordering, opposite signed off-axis/center amplitude ratios; no full qBIC assignment",
+      "interpretation": "Static derivative calibration for a nondispersive single-mode approximation, not QNM residue normalization"
+    },
+    {
+      "branch": "upper",
+      "base_frequency_fa_over_c": 0.7569364102371674,
+      "base_frequency_thz": 68.84824847533277,
+      "df_depsilon": -0.02343237015413835,
+      "S_effective": 0.06191370856845529,
+      "inferred_electric_energy_fraction": 0.9906193370952846,
+      "epsilon_step": 0.1,
+      "second_difference": 2.0253822430538193e-05,
+      "slope_minus": -0.02353363926629104,
+      "slope_plus": -0.023331101041985658,
+      "identity_evidence": "Two poles excited by centered Hz, stable ordering, opposite signed off-axis/center amplitude ratios; no full qBIC assignment",
+      "interpretation": "Static derivative calibration for a nondispersive single-mode approximation, not QNM residue normalization"
+    }
+  ],
+  "acceptance": {
+    "two_source_free_windows": "VERIFIED for retained pole frequencies",
+    "grid_frequency_convergence": "UNVERIFIED; r32 to r40 shifts remain material",
+    "Gamma_physical_radiation_Q": "UNRESOLVED; fitted decay changes sign and depends on padding/probe",
+    "near_Gamma_physical_radiation_Q": "UNRESOLVED; only r20 and probe disagreement",
+    "positive_decay_interpreted_as_gain": "FAILED; forbidden interpretation for this passive static model",
+    "separate_mode_field_identity": "UNVERIFIED; saved ringdown field is a superposition"
+  },
+  "limitations": [
+    "Grid frequencies are not fully converged",
+    "Gamma decay unresolved; positive fitted tiny decay is numerical, not physical gain",
+    "Ringdown snapshots mix two modes and cannot supply separate modal overlap tensors without filtering",
+    "Sparse k sample does not establish momentum gap",
+    "Material epsilon16 is a stated approximation"
+  ]
+}

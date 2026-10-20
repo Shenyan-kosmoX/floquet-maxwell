@@ -1,0 +1,36 @@
+{
+  "signature": "1420bf755df4ece031bb7b6921634052ce4fa23cd561bf8db32c7316fef04583",
+  "config": {
+    "schema_version": 1,
+    "epsilon_base": 4.0,
+    "modulation": 0.12,
+    "dc_shift": true,
+    "phase": 0.37,
+    "n_harmonics": 5,
+    "n_samples": 512,
+    "k_min": 0.72,
+    "k_max": 1.38,
+    "k_points": 121,
+    "convergence_harmonics": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "monodromy_rtol": 2e-11,
+    "monodromy_atol": 2e-13
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.3",
+    "PyYAML": "6.0.2",
+    "ptc-fig4": "0.1.0"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "units": "tau=Omega*t; kappa=c0*k/Omega; w=omega/Omega",
+  "convention": "exp(+ikx-iwt); Im(w)>0 means growth"
+}

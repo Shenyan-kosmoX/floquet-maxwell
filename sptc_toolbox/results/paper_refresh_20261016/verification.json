@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "status": "FRESH_RUNS_AND_PUBLISHED_PANEL_COMPARISONS_COMPLETE",
+  "regression": [
+    {
+      "path": "regression.xml",
+      "tests": 849,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "path": "auxiliary_regression.xml",
+      "tests": 70,
+      "failures": 0,
+      "errors": 0
+    }
+  ],
+  "total_tests": 919,
+  "new_science_path_points": 49,
+  "new_local_broad_points": 33,
+  "new_local_dense_points": 41,
+  "memory_configurations": 11,
+  "LPR_primary": "custom_g9.1_v10_m161",
+  "LPR_paper_over_electric_C": 17.750680366579996,
+  "published_parameter_replication": "Partial: unresolved magnitude, material and open-model differences",
+  "installed_Legume_modified": false,
+  "core_physics_modified_this_round": false,
+  "plots": {
+    "axis_and_observable_review": "Published panel contract checked",
+    "visual_review": "All main figures and auxiliary resonance control inspected; overlaps corrected",
+    "PDF_geometry": [
+      {
+        "file": "lpr_full_range.pdf",
+        "pages": 1,
+        "page_points": [
+          0.0,
+          0.0,
+          446.3999938964844,
+          345.6000061035156
+        ],
+        "minimum_extracted_font_pt": 6.300000190734863,
+        "source_raster_text": "not measurable from embedded raster"
+      },
+      {
+        "file": "lpr_paper_comparison.pdf",
+        "pages": 1,
+        "page_points": [
+          0.0,
+          0.0,
+          892.7999877929688,
+          489.6000061035156
+        ],
+        "minimum_extracted_font_pt": 4.829999923706055,
+        "source_raster_text": "not measurable from embedded raster"
+      },
+      {
+        "file": "science_full_range.pdf",
+        "pages": 1,
+        "page_points": [
+          0.0,
+          0.0,
+          748.7999877929688,
+          302.3999938964844
+        ],
+        "minimum_extracted_font_pt": 7.0,
+        "source_raster_text": "not measurable from embedded raster"
+      },
+      {
+        "file": "science_paper_comparison.pdf",
+        "pages": 1,
+        "page_points": [
+          0.0,
+          0.0,
+          864.0,
+          878.4000244140625
+        ],
+        "minimum_extracted_font_pt": 7.0,
+        "source_raster_text": "not measurable from embedded raster"
+      },
+      {
+        "file": "science_resonance_control.pdf",
+        "pages": 1,
+        "page_points": [
+          0.0,
+          0.0,
+          763.2000122070312,
+          496.79998779296875
+        ],
+        "minimum_extracted_font_pt": 7.0,
+        "source_raster_text": "not measurable from embedded raster"
+      }
+    ],
+    "limitations": [
+      "Official LPR original is only480x424 raster; not a high-resolution redraw",
+      "Computed PDF/SVG curves and labels are vectors; paper panels are attributed raster crops",
+      "Science D local numeric bounds are chosen explicitly because original lacks full numerical labels"
+    ]
+  },
+  "broken_markdown_links": [],
+  "source_and_artifact_sha256": {
+    "sptc_toolbox/baselines/lpr_latest.py": "be995c20c21fb4f81794cf211b2fafc0839b36d6d587da099b0ad6773d45486b",
+    "sptc_toolbox/baselines/science_latest.py": "fc0ed17fa1a84d9e8ebd400ec723e467e5504c4b54b32e3be220726ff3579c96",
+    "sptc_toolbox/baselines/science_memory_controls.py": "1138874b7d1671dcd8ba4b768fe3eff61fa05aadc84ee464ba714669c12b0a01",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g11.1_v10_m161/frequency_shift.csv": "9258e8caf0eb75d8eeae33293cfa5cbc1256f7964b88fd48b4ad9bf7aa5ec4a1",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g11.1_v10_m161/gme_native.pkl": "208f2778e1dfaddd0bf3bb8c71f5834bba144480d8942a2a9b441c9a856dbb1a",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g7.1_v8_m121/frequency_shift.csv": "1823c3a6f770d2c3ad9dd772d392cd9696691fc4bd47573c7899331f32d78c48",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g7.1_v8_m121/gme_native.pkl": "8a0ccd1f927a1f4d59d6bc6313d0884f054197cc388fe6aa35de300f1c78a1ea",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g9.1_v10_m161/frequency_shift.csv": "6317a4753416cfb78a99ec245f227d2868659d8700ccb2a5401883f3b1905ac3",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g9.1_v10_m161/gme_native.pkl": "37cda7976dd1da6dbf3dc76d6a6ffc4d22cc6cded21da742e9d2684690d10caa",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g9.1_v10_m161/target_fields.npz": "2051b405fc935e98a3562b9a2b8a5486d19c00a4efabaec943ef5862acb25cb7",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g9.1_v8_m161/frequency_shift.csv": "2d39cb7a89de047a530592bebdd567173f04d992b9823a35370c5744e040ce22",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g9.1_v8_m161/gme_native.pkl": "465e75d6fef8451b12482754f3f207342e92d9a0b99dfa13cceb15a9e528e47f",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr/report.md": "a10a5a1b68c16e55da2be47fa192d6434425e3d469e1fcb7f94d705a5cb31d0d",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr/summary.json": "c98e7e01ef9c4c5f1e8c4288036ea88bbcc6c0df2bd53ac37b06e025feb0f56e",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr_full_range.pdf": "f8f7c03922ff9d0bba12be8b95796551552f59cd856c63c1a0e103e4bd4fea02",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr_full_range.png": "5a0fd33dc007356e340e6c4662fc730a63860d4a988b360721049a8bd281f2bb",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr_full_range.svg": "4877147da5c8fd2fd0b7cdc70991ac05934c25a379708694368316f40cf4ea58",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr_full_range_provenance.json": "0ac89674066506c7869e09a681bb4840df9ff4ebbc5dc859bf315ee7b4a44dc4",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr_paper_comparison.pdf": "365ac3bfd76b6c5908e601e9242179bdcc376f417f0105229a275f2b00896fb3",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr_paper_comparison.png": "9f9bb31c48547dcea1dc045495e5054224daef9dca0530230eec3dd91fb46471",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr_paper_comparison.svg": "e3ce6ebea46b9dd8b78ff31234034e68429861f0a56e764cd4b51988217c0585",
+    "sptc_toolbox/results/paper_refresh_20261016/lpr_paper_comparison_provenance.json": "4e1f07ebc3850d5c125fb59fd07bea81454c98c6059c321fa4767e10824d11e4",
+    "sptc_toolbox/results/paper_refresh_20261016/report.md": "5aad8b2d856a0d2cb542be12979491752f16191b4929781a9483c2406db896fc",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/memory/complex_poles.csv": "a78c26f3b60507b5790f06de791f0cdd6d006cbe605efac47287f17897dbd233",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/memory/report.md": "56f9220e647e9b297fd6f40d317d69620047d4204adefef2e3f28ca77b1063e2",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/memory/summary.json": "1fbe7f9839505bfc533ceccf914adda6eedb6951ff82de23b00f1737c295202e",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/native_path/gme.pkl": "79d5fb29a6b248d150c6251cb80a6bbf41debed047c80bb8b5c70c637928c725",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/near_gamma/native_path/gme.pkl": "c20c7f80f4abd3323dcb84c1d9715917a5d589ac9108f84f60726ebb580d1811",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/near_gamma/path_narrow_summary.json": "5189e77503fd5de940d87c1d1762bb78c9d2a983966ccb333a2a1a468b815636",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/near_gamma_dense/native_path/gme.pkl": "5558ba16bf0dd4dad026071a7b4daaeccd9a2ec1d6788e77824553260294b455",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/near_gamma_dense/path_narrow_summary.json": "62a63ee9af15bde8922646aa206239591210558ef23f671283c8cfe15a067f21",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/path_narrow_summary.json": "5c254e47aa5052d752b2bec39c2e98ea1f6700f90dee9d25ec52930d0f605ee1",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/report.md": "4b6a5bc85b452a26f43bb12424cdccff2d35be0eda20fdc1b648af7cf5a14620",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/spatial/g6.1_v40/native_path/gme.pkl": "e1fc94f78d99506149579148735b1489f087938f99c2278ea2d42ca8f64b877e",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/spatial/g7.1_v24/native_path/gme.pkl": "ca0f7a0a14f20400171a12a7a1067afa33d8ac18a685c6bc510e3ce6ca6a312a",
+    "sptc_toolbox/results/paper_refresh_20261016/science_adv/summary.json": "fbbfbf8f24bb435202dd97f12827c0a6481e14312b65c217109975adaa7ad642",
+    "sptc_toolbox/results/paper_refresh_20261016/science_full_range.pdf": "b431776e9791559f23d7a5da235ab24e0fc34ff9dcb3312531e2ceba00404bad",
+    "sptc_toolbox/results/paper_refresh_20261016/science_full_range.png": "7caba50ca9b545cc62a606c46ab2175d6c76758816dc35801505afdeac8a1e6a",
+    "sptc_toolbox/results/paper_refresh_20261016/science_full_range.svg": "6eaf8f3ac0506e7a4161c6393f6cc3f6a2e65f3ba67419fdb1bb447f08698d3d",
+    "sptc_toolbox/results/paper_refresh_20261016/science_full_range_provenance.json": "add0fc1c186ce8da7c696767f0bb377f2b2de2fe397c49e0b1730714c30687f8",
+    "sptc_toolbox/results/paper_refresh_20261016/science_paper_comparison.pdf": "67775795ece23aae842703483d14e4d586878f12415dfa240d360c4fc6371fe8",
+    "sptc_toolbox/results/paper_refresh_20261016/science_paper_comparison.png": "7b4c89ed7227982ff48800e3fc0053763b9a22a06fdebcf13f733997842ee380",
+    "sptc_toolbox/results/paper_refresh_20261016/science_paper_comparison.svg": "34ff82abce484b4affcac5e1caaf41ecb19a1d17821b0f46ab98579e4ba0c940",
+    "sptc_toolbox/results/paper_refresh_20261016/science_paper_comparison_provenance.json": "0c8bf29244aed378bafd1385bd3437df01f413a0d116b8f7dc89d43b7387e742",
+    "sptc_toolbox/results/paper_refresh_20261016/science_resonance_control.pdf": "eb25ca356251c93ccd7c74c01187100d499f2ace12248566b7742e61c349299b",
+    "sptc_toolbox/results/paper_refresh_20261016/science_resonance_control.png": "d56408517c89b4ea73d704be16eef08b0e921e7647bcf20c93f13a3634185bbb",
+    "sptc_toolbox/results/paper_refresh_20261016/science_resonance_control.svg": "3562f364329201293abf90e83b9c914177ed1c5a2b7414d92bf5885a6d7cb3e6",
+    "sptc_toolbox/results/paper_refresh_20261016/science_resonance_control_provenance.json": "41733e3d3e6e68067846dbccbc8511d61a7b7653b34043f3a67b50cf3299f089",
+    "sptc_toolbox/results/paper_refresh_20261016/sources/figure_contract.json": "902eee6b70e90554db1e21adfb1b07157fdfeb00df4989ef41bce7b1efc7efd9",
+    "sptc_toolbox/results/paper_refresh_20261016/sources/source_manifest.json": "3486f9d74ad2e674e68d11fcc11d143f4acefaf035b98ee921513ae69e868ddb",
+    "sptc_toolbox/results/paper_refresh_20261016/sources/source_report.md": "9756f1303e151d830aa2a7dda07cc1cb2ae592cb4cb670ef73e98389112bebf5",
+    "sptc_toolbox/scripts/plot_paper_refresh.py": "cda86a4334fbd0600a56b161d0225e9b2e95a2708329fcc9c09bd335d3176050",
+    "sptc_toolbox/scripts/verify_paper_refresh.py": "94ba12bc8c327f6b64e33e69210d2b7fe7b188eaeebe813adb97ec8c8fc0a473"
+  }
+}

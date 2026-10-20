@@ -1,0 +1,187 @@
+{
+  "status": "NATIVE_YEE_SOURCE_AND_WORK_DIAGNOSTIC",
+  "frequency": 0.388,
+  "resolution": 24,
+  "dt": 0.020833333333333332,
+  "omega": 2.4378758991856797,
+  "omega_discrete": 2.4376138836383925,
+  "first_step_uniform_control": {
+    "maximum_interior_error": 2.220446049250313e-16,
+    "get_source_last_slice_relative_difference": 0.1884051108863171,
+    "extraction_seconds": 0.4245425969999701,
+    "formula": "D(first step)/(-dt*src.current(dt/2,dt)); initial H=0 and D=0, no PML in sampled support"
+  },
+  "source_extractions": [
+    {
+      "template": 0,
+      "initial_current_real_imag": [
+        0.0024794527214793945,
+        -2.4554850418842533e-05
+      ],
+      "get_source_last_slice_relative_difference": 0.24542869014031402,
+      "extraction_seconds": 1.6098712529999943
+    },
+    {
+      "template": 1,
+      "initial_current_real_imag": [
+        0.0024794527214793945,
+        -2.4554850418842533e-05
+      ],
+      "get_source_last_slice_relative_difference": 0.09974379501724506,
+      "extraction_seconds": 2.0383867219999843
+    }
+  ],
+  "basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+  "source_coordinate_method": "Component offset independently established with initialized linear source probes; get_field_point at native grid positions",
+  "source_lift_method": "First zero-field Maxwell update recovers sum of all source-volume contributions, unlike get_source slice overwrite",
+  "projection": "Native E paired with measured total current lift using dv once per unique periodic Yee site",
+  "source_frequency_factor": "src.swigobj.current(t,dt)*exp(i omega t), directly evaluated; no response amplitude fit",
+  "material_derivative_scope": "Same old masked interpolated current fixture; not derivative of Meep subpixel epsilon inverse tensor",
+  "rows": [
+    {
+      "template": 1,
+      "time": 1.0,
+      "data": "q1_t1.npz",
+      "native_work": 7.677387250955064e-07,
+      "net_port_flux": 2.9097749905410514e-08,
+      "outgoing_power": 2.904145010915484e-08,
+      "incoming_power": 2.5345305361620338e-12,
+      "flux_work_relative_residual": -0.9620994109658976,
+      "output_work_relative_residual": -0.9621727429399343,
+      "source_factor_real_imag": [
+        0.0027336246528427473,
+        4.2322958930093336e-05
+      ],
+      "field_change_from_previous": null,
+      "native_sampling_seconds": 0.1353383430000008,
+      "elapsed_seconds": 0.42598615099996096
+    },
+    {
+      "template": 1,
+      "time": 1200.0,
+      "data": "q1_t1200.npz",
+      "native_work": 0.0007306508206625475,
+      "net_port_flux": 0.0008393697659681788,
+      "outgoing_power": 0.000839332510980722,
+      "incoming_power": 3.396660075954926e-10,
+      "flux_work_relative_residual": 0.1295244952982414,
+      "output_work_relative_residual": 0.12948585798396497,
+      "source_factor_real_imag": [
+        0.9995701336459633,
+        -0.0253890822523683
+      ],
+      "field_change_from_previous": 0.9979509619868938,
+      "native_sampling_seconds": 0.20639504600001146,
+      "elapsed_seconds": 196.27013988899995
+    },
+    {
+      "template": 1,
+      "time": 1800.0,
+      "data": "q1_t1800.npz",
+      "native_work": 0.0009807179110663713,
+      "net_port_flux": 0.0008437526564660834,
+      "outgoing_power": 0.0008437753505367346,
+      "incoming_power": 3.4082864332450986e-10,
+      "flux_work_relative_residual": -0.13965815557641892,
+      "output_work_relative_residual": -0.13963501531315356,
+      "source_factor_real_imag": [
+        0.9995701336549081,
+        -0.02538908225281944
+      ],
+      "field_change_from_previous": 0.1715263874325078,
+      "native_sampling_seconds": 0.13787964499999816,
+      "elapsed_seconds": 288.746559989
+    },
+    {
+      "template": 1,
+      "time": 2400.0,
+      "data": "q1_t2400.npz",
+      "native_work": 0.0011510748222661126,
+      "net_port_flux": 0.0008446422178508836,
+      "outgoing_power": 0.0008446406905517263,
+      "incoming_power": 3.4114432242817254e-10,
+      "flux_work_relative_residual": -0.26621432289862557,
+      "output_work_relative_residual": -0.26621564974474177,
+      "source_factor_real_imag": [
+        0.9995701336549055,
+        -0.025389082252824158
+      ],
+      "field_change_from_previous": 0.1678598757390813,
+      "native_sampling_seconds": 0.19941270900005748,
+      "elapsed_seconds": 376.99327922599997
+    },
+    {
+      "template": 0,
+      "time": 1.0,
+      "data": "q0_t1.npz",
+      "native_work": 7.166853136873894e-07,
+      "net_port_flux": 1.0632167051882176e-09,
+      "outgoing_power": 7.060161793826724e-10,
+      "incoming_power": 1.778985241448572e-14,
+      "flux_work_relative_residual": -0.9985164804065568,
+      "output_work_relative_residual": -0.9990148867768056,
+      "source_factor_real_imag": [
+        0.0027336246528427473,
+        4.2322958930093336e-05
+      ],
+      "field_change_from_previous": null,
+      "native_sampling_seconds": 0.19504700899994987,
+      "elapsed_seconds": 0.43456773500008694
+    },
+    {
+      "template": 0,
+      "time": 1200.0,
+      "data": "q0_t1200.npz",
+      "native_work": 0.18573871901713973,
+      "net_port_flux": 0.18212329532055582,
+      "outgoing_power": 0.18212198533301072,
+      "incoming_power": 7.348500278040718e-08,
+      "flux_work_relative_residual": -0.019465105152632615,
+      "output_work_relative_residual": -0.01947215800382077,
+      "source_factor_real_imag": [
+        0.9995701336459633,
+        -0.0253890822523683
+      ],
+      "field_change_from_previous": 1.0000118471580255,
+      "native_sampling_seconds": 0.19620588100008263,
+      "elapsed_seconds": 160.765540869
+    },
+    {
+      "template": 0,
+      "time": 1800.0,
+      "data": "q0_t1800.npz",
+      "native_work": 0.18191501756984788,
+      "net_port_flux": 0.18171747563609653,
+      "outgoing_power": 0.18171763353348686,
+      "incoming_power": 7.342773513523664e-08,
+      "flux_work_relative_residual": -0.0010859022877289478,
+      "output_work_relative_residual": -0.0010850343143618303,
+      "source_factor_real_imag": [
+        0.9995701336549081,
+        -0.02538908225281944
+      ],
+      "field_change_from_previous": 0.014189310580897552,
+      "native_sampling_seconds": 0.19139681600017866,
+      "elapsed_seconds": 238.19364549900013
+    },
+    {
+      "template": 0,
+      "time": 2400.0,
+      "data": "q0_t2400.npz",
+      "native_work": 0.1821500499902242,
+      "net_port_flux": 0.18172803260389422,
+      "outgoing_power": 0.18172809367352377,
+      "incoming_power": 7.342634299945497e-08,
+      "flux_work_relative_residual": -0.002316866706062469,
+      "output_work_relative_residual": -0.0023165314350617142,
+      "source_factor_real_imag": [
+        0.9995701336549055,
+        -0.025389082252824158
+      ],
+      "field_change_from_previous": 0.013788723785811578,
+      "native_sampling_seconds": 0.2976533940000081,
+      "elapsed_seconds": 307.56151125400004
+    }
+  ],
+  "completed": true
+}

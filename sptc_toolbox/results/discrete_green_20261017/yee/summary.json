@@ -1,0 +1,164 @@
+{
+  "status": "NATIVE_YEE_MEASURED_LIFT_COMPARISON",
+  "completed": true,
+  "uniform_control": {
+    "maximum_interior_error": 2.220446049250313e-16,
+    "get_source_last_slice_relative_difference": 0.1884051108863171,
+    "extraction_seconds": 0.4245425969999701,
+    "formula": "D(first step)/(-dt*src.current(dt/2,dt)); initial H=0 and D=0, no PML in sampled support"
+  },
+  "source_extractions": [
+    {
+      "template": 0,
+      "initial_current_real_imag": [
+        0.0024794527214793945,
+        -2.4554850418842533e-05
+      ],
+      "get_source_last_slice_relative_difference": 0.24542869014031402,
+      "extraction_seconds": 1.6098712529999943
+    },
+    {
+      "template": 1,
+      "initial_current_real_imag": [
+        0.0024794527214793945,
+        -2.4554850418842533e-05
+      ],
+      "get_source_last_slice_relative_difference": 0.09974379501724506,
+      "extraction_seconds": 2.0383867219999843
+    }
+  ],
+  "rows": [
+    {
+      "time": 1200.0,
+      "native_reciprocity_relative_residual": 1.0424461092303539e-15,
+      "centered_reciprocity_relative_residual": 0.0307245453510783,
+      "native_output_work_relative_residual": 0.01948175140505725,
+      "centered_output_work_relative_residual": 0.17098881745621844,
+      "native_work_eigenvalues": [
+        -5.745317908603675e-05,
+        0.18652682301688822
+      ],
+      "centered_work_eigenvalues": [
+        -0.002709384194473555,
+        0.18840552927229787
+      ],
+      "native_diagonal_work": [
+        0.18573871901713968,
+        0.0007306508206625244
+      ],
+      "center_diagonal_work": [
+        0.1847193032395912,
+        0.0009768418382331125
+      ],
+      "outgoing_diagonal_power": [
+        0.18212198533301072,
+        0.000839332510980722
+      ]
+    },
+    {
+      "time": 1800.0,
+      "native_reciprocity_relative_residual": 3.4519550367643265e-16,
+      "centered_reciprocity_relative_residual": 0.030728897758791555,
+      "native_output_work_relative_residual": 0.0013159642599332919,
+      "centered_output_work_relative_residual": 0.17346363252321462,
+      "native_work_eigenvalues": [
+        0.00014124758190179948,
+        0.18275448789901294
+      ],
+      "centered_work_eigenvalues": [
+        -0.002721780706176633,
+        0.18471750591130526
+      ],
+      "native_diagonal_work": [
+        0.18191501756984835,
+        0.0009807179110664082
+      ],
+      "center_diagonal_work": [
+        0.18092771664678073,
+        0.0010680085583478828
+      ],
+      "outgoing_diagonal_power": [
+        0.18171763353348686,
+        0.0008437753505367347
+      ],
+      "R_change_from_previous": 0.002092977133846122,
+      "T_change_from_previous": 0.003026424940507486
+    },
+    {
+      "time": 2400.0,
+      "native_reciprocity_relative_residual": 2.006836757410158e-15,
+      "centered_reciprocity_relative_residual": 0.030726959313561973,
+      "native_output_work_relative_residual": 0.0028547318995792432,
+      "centered_output_work_relative_residual": 0.17322730941054998,
+      "native_work_eigenvalues": [
+        0.00030993705609887927,
+        0.18299118775639123
+      ],
+      "centered_work_eigenvalues": [
+        -0.002592279732978676,
+        0.18494811679714435
+      ],
+      "native_diagonal_work": [
+        0.18215004999022397,
+        0.0011510748222661256
+      ],
+      "center_diagonal_work": [
+        0.18115719178433926,
+        0.0011986452798264293
+      ],
+      "outgoing_diagonal_power": [
+        0.18172809367352377,
+        0.0008446406905517263
+      ],
+      "R_change_from_previous": 0.00020340683930718487,
+      "T_change_from_previous": 0.0020125545785321932
+    }
+  ],
+  "limitations": [
+    "Native source work is paired with actual Yee total source; center-port interpolation remains a separate small discretization effect",
+    "Current fixture is the original masked source; not the exact material derivative of subpixel-smoothed epsilon tensor",
+    "Only f=.388 and two even source templates; no harmonic-convergence or whole-slab scattering certificate",
+    "No reciprocity symmetrization, passivity projection, amplitude calibration or phase fit"
+  ],
+  "frequency_domain_control": {
+    "status": "MEEP_NATIVE_CW_CONSTANT_CURRENT_CONTROL",
+    "completed": true,
+    "success": true,
+    "frequency": 0.388,
+    "template": 1,
+    "tolerance": 1e-08,
+    "maxiters": 3000,
+    "L": 10,
+    "solver_seconds": 240.2789390009998,
+    "initial_current_real_imag": [
+      1.0,
+      0.0
+    ],
+    "native_source_lift_difference_from_CW_first_step": 1.2216460013129755e-16,
+    "native_work": 0.0008455589170728205,
+    "net_port_flux": 0.0008437267899768094,
+    "outgoing_power": 0.0008437271357556109,
+    "incoming_power": 3.4089866419806264e-10,
+    "flux_work_relative_residual": -0.0021667645613077306,
+    "output_work_relative_residual": -0.0021663556261116708,
+    "convention": "Frozen nonintegrated current: E_ph=exp(i omega dt/2)*(E_solve_cw+E_first_step); H_ph=H_solve_cw; independently audited in 1D",
+    "scope": "Single frequency Q1 diagnostic, same original masked current lift and subpixel material; no new material-derivative claim"
+  },
+  "time_sequence_vs_frequency_domain_same_current": [
+    {
+      "time": 1200.0,
+      "field_relative_difference": 0.0917684604327661,
+      "output_relative_difference": 0.015537459676787149
+    },
+    {
+      "time": 1800.0,
+      "field_relative_difference": 0.090148634179535,
+      "output_relative_difference": 0.01428258852915055
+    },
+    {
+      "time": 2400.0,
+      "field_relative_difference": 0.08855504398873543,
+      "output_relative_difference": 0.01157091739060137
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "tag": "g3.1_v0_3_4_7",
+  "contract": {
+    "gmax": 3.1,
+    "gmode_inds": [
+      0,
+      3,
+      4,
+      7
+    ],
+    "q": [
+      1.78,
+      2.2,
+      2.65,
+      3.141592653589793
+    ],
+    "numeig": 32,
+    "geometry": {
+      "epsilon": 12.1,
+      "thickness": 0.55,
+      "radius": 0.25,
+      "transverse_rows": 14,
+      "missing_row": 0
+    },
+    "legume_version": "1.0.3",
+    "gmode_compute": "exact",
+    "gmode_tol": 1e-10,
+    "truncate_g": "abs",
+    "source_hashes": {
+      "sptc_toolbox\\scripts\\converge_w1_spatial.py": "fedf20d1668aa8c5ba5e03ba8866247e005bc28cc1a6f055cba0e1970f17e6e8",
+      "sptc_toolbox\\baselines\\minkov2018_spatial.py": "16599398dd0ee06431285ee752a69170e25092611d3ab79821a112c19ba17ffd",
+      "sptc_toolbox\\baselines\\minkov2018_legume_dynamic.py": "b33457adc952d8457b04c1c45afea3cfed9895afe3a95eb83f9ab5af636a676f",
+      "sptc_toolbox\\continuous_modulation.py": "5e591608e3440914ba6906b69d843e918b58678f002d529347f536d42c554b2d"
+    }
+  },
+  "choices": [
+    {
+      "mode": 14,
+      "omega": 1.7290666674645214,
+      "gamma": 0.0,
+      "ik": 0,
+      "kx": 1.78,
+      "cross_k_identity": "not_assessed",
+      "central_fraction": 0.9994528948173436,
+      "mirror_y_real": -1.0,
+      "mirror_y_imag": -4.081730721826402e-18,
+      "omega_window": [
+        1.55,
+        1.91
+      ],
+      "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+      "radiation_source": "native compute_rad of selected target"
+    },
+    {
+      "mode": 14,
+      "omega": 1.6450458888877433,
+      "gamma": 0.0,
+      "ik": 1,
+      "kx": 2.2,
+      "cross_k_identity": "not_assessed",
+      "central_fraction": 0.9872364928459161,
+      "mirror_y_real": -1.0000000000000002,
+      "mirror_y_imag": 0.0,
+      "omega_window": [
+        1.55,
+        1.91
+      ],
+      "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+      "radiation_source": "native compute_rad of selected target"
+    },
+    {
+      "mode": 14,
+      "omega": 1.6124334007640317,
+      "gamma": 0.0,
+      "ik": 2,
+      "kx": 2.65,
+      "cross_k_identity": "not_assessed",
+      "central_fraction": 0.9904279595004033,
+      "mirror_y_real": -0.9999999999999999,
+      "mirror_y_imag": -2.2900921908062668e-18,
+      "omega_window": [
+        1.55,
+        1.91
+      ],
+      "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+      "radiation_source": "native compute_rad of selected target"
+    },
+    {
+      "mode": 14,
+      "omega": 1.6056313517501417,
+      "gamma": 0.0,
+      "ik": 3,
+      "kx": 3.141592653589793,
+      "cross_k_identity": "not_assessed",
+      "central_fraction": 0.9979136802093019,
+      "mirror_y_real": -1.0000000000000002,
+      "mirror_y_imag": -3.628720108382716e-18,
+      "omega_window": [
+        1.55,
+        1.91
+      ],
+      "selection": "Unique confined odd xz-mirror native E-field branch in source gap window",
+      "radiation_source": "native compute_rad of selected target"
+    }
+  ],
+  "omega": [
+    1.7290666674645214,
+    1.6450458888877433,
+    1.6124334007640317,
+    1.6056313517501417
+  ],
+  "gamma": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "S0_diagonal": [
+    -0.009658325763614964,
+    -0.009544873659397836,
+    -0.009530952324377928,
+    -0.009493199165326024
+  ],
+  "unweighted_E_mask_integral": [
+    0.0798208740794625,
+    0.07888325338345319,
+    0.07876820102791676,
+    0.07845619144897541
+  ],
+  "coupling_scope": "p=0 diagonal dielectric mass overlap only; not full Floquet coupling completeness",
+  "mass_metadata": {
+    "hermiticity_error": 2.0221928132015169e-32,
+    "depth": 0.02,
+    "quadrature": 96,
+    "exact_momentum_selection": "q_j-q_i+pQ is primitive reciprocal; all other supercell sums vanish",
+    "Fourier_convention": "delta_epsilon_p exp(-ip*tau), mask integral exp(+i dk.r)",
+    "finite_model": "Electric Galerkin mass M=I+integral Ei*delta_epsilon Ej; R=M^-1. Not exact full-space inverse-epsilon projection.",
+    "strip_area": 5.553756444329974
+  },
+  "native_G_count": 369,
+  "native_sha256": "fcf64657b7a87f5cb6e6edc481af665fa56160d31b596760c5e78d6b6dadfc84",
+  "cross_k_identity": "not_assessed"
+}

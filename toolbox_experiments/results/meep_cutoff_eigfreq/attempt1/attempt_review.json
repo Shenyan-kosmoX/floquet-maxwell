@@ -1,0 +1,105 @@
+{
+  "status": "FAILED_INNER_CW_CONVERGENCE",
+  "returncode": -15,
+  "process_timeout": false,
+  "process_timeout_seconds": 120,
+  "wall_seconds": 102.22864218402538,
+  "worker": {
+    "status": "RUNNING_NATIVE_EIGFREQ",
+    "config": {
+      "radius": 0.3125,
+      "height": 0.4445234708392603,
+      "epsilon": 16.0,
+      "kx_ka": 2.5936334233914913,
+      "ky_ka": 0.0,
+      "resolution": 24,
+      "padding": 1.0,
+      "pml": 0.5,
+      "frequency": 0.667,
+      "width": 0.3,
+      "warmup": 12.0,
+      "window": 100.0,
+      "sample_dt": 0.5,
+      "source_variant": 0,
+      "xy_samples": 12,
+      "z_order": 4,
+      "field_extent": 0.7
+    },
+    "guessfreq": [
+      0.667,
+      -0.009
+    ],
+    "tolerance": 1e-07,
+    "maxiters": 15,
+    "cwtol": 1e-08,
+    "cwmaxiters": 300,
+    "L": 10,
+    "native_meep_version": "1.35.0",
+    "units": "cyclic f*a/c; k input radians k*a converted to native k/(2pi)",
+    "symmetries": "MirrorY phase -1, MirrorZ phase +1",
+    "scope": "Finite-Q independent static native frequency-domain attempt, not Floquet"
+  },
+  "CW_failure_messages": [
+    "CONVERGENCE FAILURE (1) in solve_cw!",
+    "CONVERGENCE FAILURE (1) in solve_cw!",
+    "CONVERGENCE FAILURE (1) in solve_cw!",
+    "CONVERGENCE FAILURE (1) in solve_cw!",
+    "CONVERGENCE FAILURE (1) in solve_cw!"
+  ],
+  "outer_steps": [
+    {
+      "step": 1,
+      "CG_iters": 300,
+      "frequency": [
+        0.658443,
+        -0.0081089
+      ],
+      "change": [
+        0.00831398,
+        -0.000873167
+      ]
+    },
+    {
+      "step": 2,
+      "CG_iters": 300,
+      "frequency": [
+        0.657608,
+        -0.008995
+      ],
+      "change": [
+        -0.000834966,
+        -0.000886104
+      ]
+    },
+    {
+      "step": 3,
+      "CG_iters": 300,
+      "frequency": [
+        0.644028,
+        -0.00687559
+      ],
+      "change": [
+        -0.0135795,
+        0.00211941
+      ]
+    },
+    {
+      "step": 4,
+      "CG_iters": 300,
+      "frequency": [
+        0.657882,
+        -0.00866519
+      ],
+      "change": [
+        0.0138539,
+        -0.00178959
+      ]
+    }
+  ],
+  "last_outer_relative_frequency_change": 0.02123146127722477,
+  "all_inner_solves_and_outer_frequency_check_passed": false,
+  "raw_log": "toolbox_experiments\\results\\meep_cutoff_eigfreq\\attempt1\\native.log",
+  "fields_are_accepted": false,
+  "reason": "Native inner CW reported convergence failure; stopped without accepting a pole or field",
+  "stop_mechanism": "Supervisor child terminated by agent after inspecting explicit native CW failure; no second attempt"
+}

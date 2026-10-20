@@ -1,0 +1,91 @@
+{
+  "status": "REPRODUCED_HANN_SIDELOBE_DIAGNOSTIC",
+  "case": "results/figure4/full_dynamic_maps/resonant/k16",
+  "physical_convention": "exp(-i*2*pi*f*t); signed physical frequency=-numpy.fftfreq",
+  "dominant_frequency_fa_over_c": 0.4524775771179869,
+  "dominant_frequency_method": {
+    "objective": "Maximize sum over 18 channels of abs(sum_t Hann(t)*field(t)*exp(+i*2*pi*f*t))^2",
+    "optimizer": "scipy.optimize.minimize_scalar, bounded",
+    "search_interval_fa_over_c": [
+      0.45,
+      0.455
+    ],
+    "xatol": 1e-13,
+    "channel_amplitude": "Hann-weighted complex projection at the estimated carrier, divided by window sum",
+    "input_peak_neighborhood": "Dominant Gamma positive-frequency peak around f*a/c=0.4526 in the saved unfolded spectrum"
+  },
+  "sample_count": 2906,
+  "sample_dt": 0.041666666666671404,
+  "record_duration": 121.04166666666666,
+  "nfft": 16384,
+  "window": "numpy.hanning of the full saved record, identical for actual and synthetic fields",
+  "power_definition": "Squared FFT amplitude summed over three probes and six complex E/H components; divided by window-sum squared",
+  "normalization": "Both actual and synthetic powers divided by the same maximum of the actual unfolded Hann spectrum",
+  "raw_spectrum_reconstruction_max_error_over_peak": 1.5918137568813037e-16,
+  "checked_bins": [
+    {
+      "requested_audit_frequency": 0.433594,
+      "saved_bin_index": 8487,
+      "saved_frequency_fa_over_c": 0.4335937499999507,
+      "offset_from_carrier_times_record_duration": -2.2857299074122994,
+      "actual_power_over_actual_peak": 0.0006645726027787389,
+      "single_tone_Hann_power_over_actual_peak": 0.0006645924203219022,
+      "actual_to_single_tone_ratio": 0.9999701809070383,
+      "relative_disagreement": 2.9819092961735905e-05,
+      "folded_frequency_over_drive": 0.524853415597171
+    },
+    {
+      "requested_audit_frequency": 0.47168,
+      "saved_bin_index": 8513,
+      "saved_frequency_fa_over_c": 0.4716796874999464,
+      "offset_from_carrier_times_record_duration": 2.324255444149676,
+      "actual_power_over_actual_peak": 0.0007019556133721933,
+      "single_tone_Hann_power_over_actual_peak": 0.0007019260517807048,
+      "actual_to_single_tone_ratio": 1.0000421149655487,
+      "relative_disagreement": 4.211496554873406e-05,
+      "folded_frequency_over_drive": 0.5709554048050306
+    },
+    {
+      "requested_audit_frequency": 0.424805,
+      "saved_bin_index": 8481,
+      "saved_frequency_fa_over_c": 0.4248046874999517,
+      "offset_from_carrier_times_record_duration": -3.3495726808496786,
+      "actual_power_over_actual_peak": 6.858262019338096e-05,
+      "single_tone_Hann_power_over_actual_peak": 6.858434643701886e-05,
+      "actual_to_single_tone_ratio": 0.9999748303552111,
+      "relative_disagreement": 2.516964478893602e-05,
+      "folded_frequency_over_drive": 0.5142144950107419
+    },
+    {
+      "requested_audit_frequency": 0.480469,
+      "saved_bin_index": 8519,
+      "saved_frequency_fa_over_c": 0.4804687499999454,
+      "offset_from_carrier_times_record_duration": 3.388098217587055,
+      "actual_power_over_actual_peak": 7.089058286926233e-05,
+      "single_tone_Hann_power_over_actual_peak": 7.08797863752148e-05,
+      "actual_to_single_tone_ratio": 1.000152321199028,
+      "relative_disagreement": 0.0001523211990279716,
+      "folded_frequency_over_drive": 0.5815943253914597
+    }
+  ],
+  "maximum_relative_disagreement": 0.0001523211990279716,
+  "checks": {
+    "input_hashes_match_saved_summaries": true,
+    "signed_frequency_axis_matches_raw_timing": true,
+    "raw_spectrum_reconstruction_below_1e_12": true,
+    "all_four_bin_ratios_within_2e_4": true
+  },
+  "conclusion": "The four inspected weak features are quantitatively accounted for by leakage from one dominant tone through the Hann window; they do not constitute independent-mode evidence.",
+  "scope": [
+    "Offline synthetic window diagnostic, not a native Maxwell simulation or replacement dataset",
+    "The dominant tone is estimated from the actual signal solely to test its spectral leakage",
+    "Agreement at these four bins does not classify every other weak line in the response map",
+    "No raw data, existing spectra, native simulations, or figures are changed"
+  ],
+  "input_sha256": {
+    "results/figure4/full_dynamic_maps/resonant/k16/raw_dynamic_fields.npz": "a5d65e78ba6283bcced0891be0a288bc9cd29cd65fa439e3d3252ae461408080",
+    "results/figure4/full_dynamic_maps/resonant/k16/dynamic_spectrum.npz": "244cf809ca61302d714eb39bab3d9d070525488bb57fb6b6da349d0be6c5f831",
+    "results/figure4/full_dynamic_maps/resonant/k16/summary.json": "b6c53bfd00f7d5e39cf4fb2e86feca96a756bc5e678d4f00bd2c578362af957a"
+  },
+  "audit_script_sha256": "e17e29bd3c981603762ec54d82629c0af40ffb2b5196794e5bf3037e19be144e"
+}

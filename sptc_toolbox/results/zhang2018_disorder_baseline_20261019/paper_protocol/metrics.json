@@ -1,0 +1,81 @@
+{
+  "doi": "10.1038/s41467-018-06802-0",
+  "paper_panel": "Supplementary Figure 1b,c; original codes from Figure 1f",
+  "scope": "Ideal reflection-code Fourier reference, not Maxwell/Legume simulation",
+  "full_original_code_shape": [
+    8,
+    8,
+    8
+  ],
+  "paper_expansion": "Gamma(t)=sum_m a_m exp(+i*m*Omega*t)",
+  "toolbox_mapping": "For the same Gamma(t), exp(-i*p*Omega*t) coefficients have p=-m. A scattering comparison must also align the carrier/field time convention; +2 labels here remain the paper's labels.",
+  "state_mapping": {
+    "0": 1,
+    "1": -1
+  },
+  "independent_time_integration": {
+    "midpoint_samples_per_slot": 1024,
+    "total_samples": 8192,
+    "orders": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "max_absolute_coefficient_error": 1.8725356382143232e-07,
+    "max_absolute_error_m2": 6.241783900851061e-08,
+    "error_512_samples_per_slot": 7.490148790645357e-07,
+    "coarse_to_fine_error_ratio": 4.000003331198583
+  },
+  "m2": {
+    "zero_amplitude_cells": 7,
+    "maximum_amplitude": 0.6366197723675817,
+    "phase_at_zero_amplitude": "undefined; masked gray, not inherited from floating-point noise",
+    "source_comparison": "Amplitude pattern visually matches. Nonzero-cell phase map has an unresolved approximately pi offset. No offset applied or fitted.",
+    "specific_phase_example": {
+      "x_one_based": 2,
+      "y_one_based": 1,
+      "calculated_degrees": 44.99999999999999,
+      "published_color_approx_degrees": -135,
+      "published_value_type": "visual reading of raster color scale, not source numerical data"
+    }
+  },
+  "dc": {
+    "cells_with_nonzero_mean": 48,
+    "minimum": -0.75,
+    "maximum": 0.75,
+    "transferring_to_epsilon": "A direct +/- dielectric mapping has spatially nonuniform DC in 48 cells. Mean subtraction changes the protocol; original code is preserved here."
+  },
+  "original_figure_limits": {
+    "amplitude": [
+      0,
+      0.8
+    ],
+    "phase_deg": [
+      -180,
+      180
+    ],
+    "x_elements": [
+      1,
+      8
+    ],
+    "y_elements": [
+      1,
+      8
+    ]
+  },
+  "plot_palette": "Color palettes sampled only from the published colorbars for presentation; all numerical values come from direct code integration, with no color fitting or phase shift.",
+  "source": {
+    "pdf": "sptc_toolbox\\literature\\general_spatiotemporal_20261019\\sources\\patterned\\zhang2018_SI.pdf",
+    "pdf_sha256": "33c07e616e2ae741aa5460bc625b68ddf537b44cdadcfcea9a266307db1a2d0d",
+    "code_json": "sptc_toolbox\\literature\\general_spatiotemporal_20261019\\zhang2018_code.json",
+    "code_sha256": "8a27b888a7dcae66c4d2a2d75d22cfeb248f65c52be8c7381ae3bede585b23c7",
+    "source_page": 3,
+    "maintext_mapping": "Main article p4, preceding Supplementary Figure 1 discussion; Eq.6; SI Eq.2"
+  }
+}

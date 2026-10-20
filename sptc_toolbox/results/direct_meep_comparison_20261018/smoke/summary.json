@@ -1,0 +1,110 @@
+{
+  "status": "DIRECT_NATIVE_TIME_MODULATED_MAXWELL",
+  "completed": true,
+  "identity": {
+    "resolution": 32,
+    "sector": 1,
+    "carrier": 0.398,
+    "drive": 0.01,
+    "amplitude": 0.01,
+    "phase": 0.0,
+    "source_ramp": 500.0,
+    "source": "smooth raised-cosine ramp * exp(-i*2*pi*.398*t), actual midpoint electric current",
+    "material_interval": 2.0,
+    "material_stride": 128,
+    "material_timing": "t+(stride+1)*dt/2 before step; no immediate E recomputation",
+    "epsilon_law": "11.5+A*cos(2*pi*.01*t+phase); material held at interval midpoint",
+    "eps_averaging": true,
+    "y_mirror": false,
+    "reference_planes": [
+      -0.7,
+      0.7
+    ],
+    "pml": 0.65,
+    "cell_z_requested": 4.8,
+    "Courant": 0.5,
+    "dt": 0.015625,
+    "geometry": "a1,h.42,circle(-.22,0)r.12,ellipse(.22,0)rx.12ry.09",
+    "grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+    "script_sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6",
+    "dft_stride": 8,
+    "checkpoint_times": [
+      4.0,
+      8.0
+    ],
+    "meep_version": "1.35.0"
+  },
+  "rows": [
+    {
+      "time": 4.0,
+      "window": [
+        0.0,
+        4.0
+      ],
+      "output_power": [
+        0.13586632320302877,
+        0.13519010147682078,
+        0.13435404480136895,
+        0.13335282329718873,
+        0.13218324697401637
+      ],
+      "incoming_power": [
+        1.0179250557947945,
+        1.0103946158143993,
+        1.0000000000013571,
+        0.9867704582613159,
+        0.9707678880443841
+      ],
+      "carrier_normalization": [
+        -3.6701024430944356e-06,
+        -1.74080441576479e-05
+      ],
+      "wall_seconds": 1.7750958990000072,
+      "cpu_seconds": 1.6577231330000002,
+      "material_update_wall_seconds": 0.5849635390004551,
+      "material_update_cpu_seconds": 0.5849333970000001,
+      "updates": 3
+    },
+    {
+      "time": 8.0,
+      "window": [
+        4.0,
+        8.0
+      ],
+      "output_power": [
+        0.38846229767275325,
+        0.3955633409904554,
+        0.3996611777750468,
+        0.40061667009403695,
+        0.39835980930078524
+      ],
+      "incoming_power": [
+        1.002922651839072,
+        1.0056442649365498,
+        1.0000000000002496,
+        0.9861084763437309,
+        0.9642633162367544
+      ],
+      "carrier_normalization": [
+        -4.486368127994639e-05,
+        -0.00014672290622177127
+      ],
+      "wall_seconds": 2.8324714139998832,
+      "cpu_seconds": 2.5990389350000003,
+      "material_update_wall_seconds": 0.769511833001161,
+      "material_update_cpu_seconds": 0.769460941,
+      "updates": 4
+    }
+  ],
+  "initialization_wall_seconds": 0.25564023700098915,
+  "initialization_cpu_seconds": 0.25562906900000004,
+  "Fourier_convention": "exp(-i omega t), integrate field*exp(+i omega_l t)",
+  "input_normalization": "Unit total carrier parity-channel power; same scalar for every sideband",
+  "output_order": [
+    "bottom x",
+    "top x",
+    "bottom y",
+    "top y"
+  ],
+  "scope": "Direct forced response, not a fitted modal model or complete Floquet eigenspectrum"
+}

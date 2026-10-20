@@ -1,0 +1,31 @@
+{
+  "status": "NATIVE_SUBPIXEL_TENSOR_STENCIL_INITIALIZATION_AUDIT",
+  "completed": true,
+  "resolution": 24,
+  "eps_averaging": true,
+  "sector": 1,
+  "y_mirror": true,
+  "volume_z": 0.75,
+  "ndof": 34560,
+  "nnz": 40176,
+  "operator_id": "555a0e3ad669989458ad31efeb41bba5061de011d97d65244295cfaf8bc82e89",
+  "first_step_E_equal_KD_relative_residual": 7.707778868220329e-18,
+  "first_step_component_relative_residuals": [
+    1.581760549596561e-17,
+    1.018165169118489e-17,
+    0.0
+  ],
+  "second_step_E_equal_KD_relative_residual": 1.2140009728033709e-09,
+  "epsilon_derivative_centered_contrast_relative_residual": 7.411781911113444e-07,
+  "delta": 0.01,
+  "seconds": 2.294241429000067,
+  "dt": 0.020833333333333332,
+  "stencil_source": "https://github.com/NanoComp/meep/blob/v1.35.0/src/step_generic.cpp#L580",
+  "limitations": [
+    "Native bulk dielectric parameter only; no moving boundary or dispersion",
+    "Independent first-step operator audit is required before using any exported map"
+  ],
+  "owned_dofs": 10296,
+  "second_step_owned_E_equal_KD_relative_residual": 1.0438517216040248e-17,
+  "full_chart_use": "Use owned restriction/lift for MirrorY: redundant full-grid K inverse is not valid"
+}

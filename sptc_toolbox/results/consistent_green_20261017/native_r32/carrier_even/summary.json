@@ -1,0 +1,44 @@
+{
+  "status": "CONSISTENT_NATIVE_YEE_CW_RESPONSE",
+  "completed": true,
+  "success": true,
+  "identity": {
+    "kind": "incident",
+    "frequency": 0.398,
+    "sector": 1,
+    "epsilon": 11.5,
+    "template": 0,
+    "operator_id": "c433728a92ba0a843e3efd62c5924131d3915dcfb7374f163fd2c7a4f89fb6d5",
+    "base_operator_id": "c433728a92ba0a843e3efd62c5924131d3915dcfb7374f163fd2c7a4f89fb6d5",
+    "tolerance": 1e-06,
+    "L": 10,
+    "maxiters": 500,
+    "empty": false,
+    "script_sha256": "a860c08c445d80f17037d6048d9dc03b03511c4a04cbca8cc4818d03032e6f30",
+    "y_mirror": false,
+    "carrier_sha256": null,
+    "calibration_sha256": "0c9f3596715df05cfef9dffc2f30b9d8203df13b69bee3e4207532d2022ec287",
+    "basis_sha256": null
+  },
+  "solver_seconds": 137.82346071400025,
+  "source_lift_relative_residual": null,
+  "work": -0.0,
+  "net_flux": -6.352753333546343e-06,
+  "output_power": 0.9999651099217228,
+  "incoming_power": 0.9999906047384169,
+  "output_work_residual": null,
+  "normalization_real_imag": [
+    -0.1573262415967211,
+    -0.47442235092576684
+  ],
+  "frequency_convention": "continuous f; discrete Maxwell omega_discrete for polarization current",
+  "phasor_convention": "E=exp(i omega dt/2)*(E_cw+E_first), H=H_cw; frozen nonintegrated electric current",
+  "fields_normalization": "unit incoming parity channel; postprocessed by independently measured empty source normalization",
+  "port_convention": "Two native E planes; Yee k dispersion; sqrt(cos(k h/2)/2) flux normalization",
+  "native_port_condition_max": 4.1861946311115075,
+  "normalization_provenance": {
+    "raw_response_sha256": "7251031fa9ec7d8e2b383a871056760f7b0dc08f8449b1bf7ca74b630a626611",
+    "calibration_sha256": "0c9f3596715df05cfef9dffc2f30b9d8203df13b69bee3e4207532d2022ec287",
+    "formula": "all electric/output complex fields divided by sqrt(2)*empty incoming[0]; no fitting and no rerun"
+  }
+}

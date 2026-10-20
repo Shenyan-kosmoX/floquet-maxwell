@@ -1,0 +1,609 @@
+{
+  "status": "SAME_K_FIELD_MATCHING_DIAGNOSTIC",
+  "meep_source": "toolbox_experiments\\results\\meep_cutoff\\ref16_right_r40_source",
+  "meep_summary_file": "summary_v2.json",
+  "meep_summary_sha256": "ad745cbabcd9048486f2b890b3def0e95275f97490467c4d1c13dccfbff260a7",
+  "kpoint_ka": [
+    2.6736334233914913,
+    0.0
+  ],
+  "meep_config": {
+    "radius": 0.3125,
+    "height": 0.4445234708392603,
+    "epsilon": 16.0,
+    "kx_ka": 2.6736334233914913,
+    "ky_ka": 0.0,
+    "resolution": 40,
+    "padding": 1.0,
+    "pml": 0.5,
+    "frequency": 0.747,
+    "width": 0.3,
+    "warmup": 12.0,
+    "window": 100.0,
+    "sample_dt": 0.5,
+    "source_variant": 1,
+    "xy_samples": 12,
+    "z_order": 4,
+    "field_extent": 0.7
+  },
+  "meep_fit": {
+    "relative_time_space_fit_residual": 0.0012120309610544895,
+    "temporal_fit_rank": 14,
+    "temporal_fit_columns": 14,
+    "normalized_temporal_condition": 19.590769193117257,
+    "mode_to_residual_ratio": [
+      0.32125169491384836,
+      6.302702039594073,
+      0.20560878870800373,
+      166.74154864681856,
+      0.011766931459984234,
+      0.17340855754256063,
+      259.4540492473777,
+      10.226932708078536,
+      757.012216199737,
+      0.7291438979926768,
+      100.87172079262417,
+      33.40383184898009,
+      0.5713270451739673,
+      3.0274628613718657
+    ],
+    "norm_per_pole": [
+      0.028493016389188396,
+      0.3933872731508687,
+      0.024119201136522547,
+      4.564281657666249,
+      0.00018892609457809935,
+      0.0032144016151659637,
+      4.52658333470335,
+      0.8950210561037146,
+      10.134380141842465,
+      0.015481647220072017,
+      1.669543658742811,
+      0.4906500798548666,
+      0.03129107231220966,
+      0.1619843743589892
+    ]
+  },
+  "accepted_meep_pole_indexes": [
+    3,
+    6,
+    10,
+    11
+  ],
+  "comparisons": [
+    {
+      "reference_epsilon": 12,
+      "kind": 6,
+      "matches": [
+        {
+          "meep_pole_index": 3,
+          "meep_frequency": 0.7373524187112752,
+          "meep_decay": -0.0017061762547925835,
+          "native_mode_index": 5,
+          "native_frequency": 0.752908845101706,
+          "complex_H_overlap_squared": 0.49187431630171624,
+          "frequency_difference_native_minus_meep": 0.015556426390430755,
+          "candidates": [
+            {
+              "mode": 5,
+              "frequency": 0.752908845101706,
+              "overlap_squared": 0.49187431630171624
+            },
+            {
+              "mode": 4,
+              "frequency": 0.7084031387390377,
+              "overlap_squared": 0.12432688905710818
+            },
+            {
+              "mode": 30,
+              "frequency": 1.284352955356728,
+              "overlap_squared": 0.09227303049365845
+            },
+            {
+              "mode": 12,
+              "frequency": 0.9451471149408858,
+              "overlap_squared": 0.09163874532853021
+            }
+          ],
+          "identity_status": "FIELD_MATCH_CANDIDATE_NOT_CONVERGENCE_CERTIFICATE"
+        },
+        {
+          "meep_pole_index": 6,
+          "meep_frequency": 0.7572274560547849,
+          "meep_decay": -0.0005487125100133075,
+          "native_mode_index": 12,
+          "native_frequency": 0.9451471149408858,
+          "complex_H_overlap_squared": 0.1347614489009949,
+          "frequency_difference_native_minus_meep": 0.18791965888610085,
+          "candidates": [
+            {
+              "mode": 5,
+              "frequency": 0.752908845101706,
+              "overlap_squared": 0.4264647571814129
+            },
+            {
+              "mode": 12,
+              "frequency": 0.9451471149408858,
+              "overlap_squared": 0.1347614489009949
+            },
+            {
+              "mode": 11,
+              "frequency": 0.9366705476753332,
+              "overlap_squared": 0.10349003814897048
+            },
+            {
+              "mode": 26,
+              "frequency": 1.2071630132459177,
+              "overlap_squared": 0.04455803432614484
+            }
+          ],
+          "identity_status": "FIELD_MATCH_CANDIDATE_NOT_CONVERGENCE_CERTIFICATE"
+        },
+        {
+          "meep_pole_index": 10,
+          "meep_frequency": 0.8519595109685189,
+          "meep_decay": -0.0004148581554585163,
+          "native_mode_index": 8,
+          "native_frequency": 0.8256678739320319,
+          "complex_H_overlap_squared": 0.5451746385358062,
+          "frequency_difference_native_minus_meep": -0.02629163703648696,
+          "candidates": [
+            {
+              "mode": 8,
+              "frequency": 0.8256678739320319,
+              "overlap_squared": 0.5451746385358062
+            },
+            {
+              "mode": 10,
+              "frequency": 0.881154371174195,
+              "overlap_squared": 0.24192635500272813
+            },
+            {
+              "mode": 18,
+              "frequency": 1.0856971639752484,
+              "overlap_squared": 0.07088276060737934
+            },
+            {
+              "mode": 7,
+              "frequency": 0.8154745897035262,
+              "overlap_squared": 0.03471972260620647
+            }
+          ],
+          "identity_status": "FIELD_MATCH_CANDIDATE_NOT_CONVERGENCE_CERTIFICATE"
+        },
+        {
+          "meep_pole_index": 11,
+          "meep_frequency": 0.8626741093090365,
+          "meep_decay": -0.00018617681924326803,
+          "native_mode_index": 9,
+          "native_frequency": 0.8701737714798133,
+          "complex_H_overlap_squared": 0.9559950641263963,
+          "frequency_difference_native_minus_meep": 0.0074996621707768,
+          "candidates": [
+            {
+              "mode": 9,
+              "frequency": 0.8701737714798133,
+              "overlap_squared": 0.9559950641263963
+            },
+            {
+              "mode": 31,
+              "frequency": 1.3211314174610347,
+              "overlap_squared": 0.06026328131984335
+            },
+            {
+              "mode": 42,
+              "frequency": 1.4603401214370664,
+              "overlap_squared": 0.03682562956441061
+            },
+            {
+              "mode": 40,
+              "frequency": 1.4329519813652518,
+              "overlap_squared": 0.024321728055065994
+            }
+          ],
+          "identity_status": "FIELD_MATCH_CANDIDATE_NOT_CONVERGENCE_CERTIFICATE"
+        }
+      ],
+      "all_accepted_pair_subspaces": [
+        {
+          "meep_pole_indexes": [
+            3,
+            6
+          ],
+          "meep_frequencies": [
+            0.7373524187112752,
+            0.7572274560547849
+          ],
+          "native_modes": [
+            5,
+            12
+          ],
+          "native_frequencies": [
+            0.752908845101706,
+            0.9451471149408858
+          ],
+          "principal_overlap_squared": 0.21485278385855516,
+          "mean_principal_overlap_squared": 0.5891424426164324,
+          "competitor_margin": 0.0580690770004082
+        },
+        {
+          "meep_pole_indexes": [
+            3,
+            10
+          ],
+          "meep_frequencies": [
+            0.7373524187112752,
+            0.8519595109685189
+          ],
+          "native_modes": [
+            5,
+            8
+          ],
+          "native_frequencies": [
+            0.752908845101706,
+            0.8256678739320319
+          ],
+          "principal_overlap_squared": 0.4878539301336266,
+          "mean_principal_overlap_squared": 0.5187592993747879,
+          "competitor_margin": 0.25499885699225033
+        },
+        {
+          "meep_pole_indexes": [
+            3,
+            11
+          ],
+          "meep_frequencies": [
+            0.7373524187112752,
+            0.8626741093090365
+          ],
+          "native_modes": [
+            5,
+            9
+          ],
+          "native_frequencies": [
+            0.752908845101706,
+            0.8701737714798133
+          ],
+          "principal_overlap_squared": 0.4916305548599388,
+          "mean_principal_overlap_squared": 0.7239946671773992,
+          "competitor_margin": 0.36730273263252206
+        },
+        {
+          "meep_pole_indexes": [
+            6,
+            10
+          ],
+          "meep_frequencies": [
+            0.7572274560547849,
+            0.8519595109685189
+          ],
+          "native_modes": [
+            5,
+            8
+          ],
+          "native_frequencies": [
+            0.752908845101706,
+            0.8256678739320319
+          ],
+          "principal_overlap_squared": 0.4202797407548785,
+          "mean_principal_overlap_squared": 0.48679876112728404,
+          "competitor_margin": 0.1965169008490898
+        },
+        {
+          "meep_pole_indexes": [
+            6,
+            11
+          ],
+          "meep_frequencies": [
+            0.7572274560547849,
+            0.8626741093090365
+          ],
+          "native_modes": [
+            5,
+            9
+          ],
+          "native_frequencies": [
+            0.752908845101706,
+            0.8701737714798133
+          ],
+          "principal_overlap_squared": 0.4264014638678104,
+          "mean_principal_overlap_squared": 0.6913651635944891,
+          "competitor_margin": 0.2913265151730219
+        },
+        {
+          "meep_pole_indexes": [
+            10,
+            11
+          ],
+          "meep_frequencies": [
+            0.8519595109685189,
+            0.8626741093090365
+          ],
+          "native_modes": [
+            8,
+            9
+          ],
+          "native_frequencies": [
+            0.8256678739320319,
+            0.8701737714798133
+          ],
+          "principal_overlap_squared": 0.5460148472957468,
+          "mean_principal_overlap_squared": 0.7660970017944342,
+          "competitor_margin": 0.2954186927123671
+        }
+      ],
+      "maximum_native_G_component": 31.41592653589793,
+      "spatial_grid_note": "Common12x12xy and12z points; finite physical H metric; no QNM normalization"
+    },
+    {
+      "reference_epsilon": 16,
+      "kind": 6,
+      "matches": [
+        {
+          "meep_pole_index": 3,
+          "meep_frequency": 0.7373524187112752,
+          "meep_decay": -0.0017061762547925835,
+          "native_mode_index": 5,
+          "native_frequency": 0.7520429779145463,
+          "complex_H_overlap_squared": 0.48731312149990574,
+          "frequency_difference_native_minus_meep": 0.014690559203271114,
+          "candidates": [
+            {
+              "mode": 5,
+              "frequency": 0.7520429779145463,
+              "overlap_squared": 0.48731312149990574
+            },
+            {
+              "mode": 4,
+              "frequency": 0.7096040549334401,
+              "overlap_squared": 0.12919309030337633
+            },
+            {
+              "mode": 12,
+              "frequency": 0.9460723389462558,
+              "overlap_squared": 0.10818752998804891
+            },
+            {
+              "mode": 31,
+              "frequency": 1.3296999725941687,
+              "overlap_squared": 0.06482052846692175
+            }
+          ],
+          "identity_status": "FIELD_MATCH_CANDIDATE_NOT_CONVERGENCE_CERTIFICATE"
+        },
+        {
+          "meep_pole_index": 6,
+          "meep_frequency": 0.7572274560547849,
+          "meep_decay": -0.0005487125100133075,
+          "native_mode_index": 12,
+          "native_frequency": 0.9460723389462558,
+          "complex_H_overlap_squared": 0.1576859319540712,
+          "frequency_difference_native_minus_meep": 0.18884488289147083,
+          "candidates": [
+            {
+              "mode": 5,
+              "frequency": 0.7520429779145463,
+              "overlap_squared": 0.43098792526773794
+            },
+            {
+              "mode": 12,
+              "frequency": 0.9460723389462558,
+              "overlap_squared": 0.1576859319540712
+            },
+            {
+              "mode": 11,
+              "frequency": 0.9380414782175417,
+              "overlap_squared": 0.0721451154977402
+            },
+            {
+              "mode": 25,
+              "frequency": 1.2095397435208555,
+              "overlap_squared": 0.04856064195787501
+            }
+          ],
+          "identity_status": "FIELD_MATCH_CANDIDATE_NOT_CONVERGENCE_CERTIFICATE"
+        },
+        {
+          "meep_pole_index": 10,
+          "meep_frequency": 0.8519595109685189,
+          "meep_decay": -0.0004148581554585163,
+          "native_mode_index": 8,
+          "native_frequency": 0.8273948257038742,
+          "complex_H_overlap_squared": 0.5508233804225525,
+          "frequency_difference_native_minus_meep": -0.024564685264644615,
+          "candidates": [
+            {
+              "mode": 8,
+              "frequency": 0.8273948257038742,
+              "overlap_squared": 0.5508233804225525
+            },
+            {
+              "mode": 10,
+              "frequency": 0.8811835706280267,
+              "overlap_squared": 0.23857900831794665
+            },
+            {
+              "mode": 28,
+              "frequency": 1.2475668705059728,
+              "overlap_squared": 0.08849387639811711
+            },
+            {
+              "mode": 20,
+              "frequency": 1.126372497509348,
+              "overlap_squared": 0.05522533330831347
+            }
+          ],
+          "identity_status": "FIELD_MATCH_CANDIDATE_NOT_CONVERGENCE_CERTIFICATE"
+        },
+        {
+          "meep_pole_index": 11,
+          "meep_frequency": 0.8626741093090365,
+          "meep_decay": -0.00018617681924326803,
+          "native_mode_index": 9,
+          "native_frequency": 0.8697939209675334,
+          "complex_H_overlap_squared": 0.9572375870936817,
+          "frequency_difference_native_minus_meep": 0.007119811658496844,
+          "candidates": [
+            {
+              "mode": 9,
+              "frequency": 0.8697939209675334,
+              "overlap_squared": 0.9572375870936817
+            },
+            {
+              "mode": 30,
+              "frequency": 1.3202369410998442,
+              "overlap_squared": 0.06313532055963199
+            },
+            {
+              "mode": 41,
+              "frequency": 1.4536477491278363,
+              "overlap_squared": 0.049859307778451406
+            },
+            {
+              "mode": 39,
+              "frequency": 1.4399831756790962,
+              "overlap_squared": 0.013339020151228778
+            }
+          ],
+          "identity_status": "FIELD_MATCH_CANDIDATE_NOT_CONVERGENCE_CERTIFICATE"
+        }
+      ],
+      "all_accepted_pair_subspaces": [
+        {
+          "meep_pole_indexes": [
+            3,
+            6
+          ],
+          "meep_frequencies": [
+            0.7373524187112752,
+            0.7572274560547849
+          ],
+          "native_modes": [
+            5,
+            12
+          ],
+          "native_frequencies": [
+            0.7520429779145463,
+            0.9460723389462558
+          ],
+          "principal_overlap_squared": 0.2520796632012361,
+          "mean_principal_overlap_squared": 0.6080467483719088,
+          "competitor_margin": 0.13571339897764612
+        },
+        {
+          "meep_pole_indexes": [
+            3,
+            10
+          ],
+          "meep_frequencies": [
+            0.7373524187112752,
+            0.8519595109685189
+          ],
+          "native_modes": [
+            5,
+            8
+          ],
+          "native_frequencies": [
+            0.7520429779145463,
+            0.8273948257038742
+          ],
+          "principal_overlap_squared": 0.4832241039517109,
+          "mean_principal_overlap_squared": 0.5193341018878979,
+          "competitor_margin": 0.254147684266014
+        },
+        {
+          "meep_pole_indexes": [
+            3,
+            11
+          ],
+          "meep_frequencies": [
+            0.7373524187112752,
+            0.8626741093090365
+          ],
+          "native_modes": [
+            5,
+            9
+          ],
+          "native_frequencies": [
+            0.7520429779145463,
+            0.8697939209675334
+          ],
+          "principal_overlap_squared": 0.4870846873650672,
+          "mean_principal_overlap_squared": 0.7223421040828466,
+          "competitor_margin": 0.35788341169920646
+        },
+        {
+          "meep_pole_indexes": [
+            6,
+            10
+          ],
+          "meep_frequencies": [
+            0.7572274560547849,
+            0.8519595109685189
+          ],
+          "native_modes": [
+            5,
+            8
+          ],
+          "native_frequencies": [
+            0.7520429779145463,
+            0.8273948257038742
+          ],
+          "principal_overlap_squared": 0.42551151682070215,
+          "mean_principal_overlap_squared": 0.49172777029113357,
+          "competitor_margin": 0.20342584032531336
+        },
+        {
+          "meep_pole_indexes": [
+            6,
+            11
+          ],
+          "meep_frequencies": [
+            0.7572274560547849,
+            0.8626741093090365
+          ],
+          "native_modes": [
+            5,
+            9
+          ],
+          "native_frequencies": [
+            0.7520429779145463,
+            0.8697939209675334
+          ],
+          "principal_overlap_squared": 0.4309168672356809,
+          "mean_principal_overlap_squared": 0.6942377580621715,
+          "competitor_margin": 0.27291130092348886
+        },
+        {
+          "meep_pole_indexes": [
+            10,
+            11
+          ],
+          "meep_frequencies": [
+            0.8519595109685189,
+            0.8626741093090365
+          ],
+          "native_modes": [
+            8,
+            9
+          ],
+          "native_frequencies": [
+            0.8273948257038742,
+            0.8697939209675334
+          ],
+          "principal_overlap_squared": 0.5530507325412833,
+          "mean_principal_overlap_squared": 0.7692219568518623,
+          "competitor_margin": 0.30738081447080223
+        }
+      ],
+      "maximum_native_G_component": 31.41592653589793,
+      "spatial_grid_note": "Common12x12xy and12z points; finite physical H metric; no QNM normalization"
+    }
+  ],
+  "selection": "One-to-one assignment maximizes common-grid complex magnetic-field overlaps over every accepted Meep pole and60native modes; no nearest-frequency or strongest-two selection",
+  "limits": [
+    "Finite sampling metric and Meep pole fit need convergence checks",
+    "A missed lossy pole cannot be excluded by non-observation",
+    "Native GME radiation is approximate; this compares fields and real frequencies, not equal QNM norms"
+  ]
+}

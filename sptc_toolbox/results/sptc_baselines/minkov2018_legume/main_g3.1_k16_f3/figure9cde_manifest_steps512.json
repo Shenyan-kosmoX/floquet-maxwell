@@ -1,0 +1,68 @@
+{
+  "figure": "Fig.9(c-e)",
+  "source_version": "author manuscript; not verified publisher layout",
+  "source_image": "sptc_toolbox\\literature\\sptc_baselines\\sources\\next_candidates\\minkov2018_figure9cde_author.png",
+  "source_sha256": "0cab6e280d257a58ec205950e40d8c6a9b694efe598f947359f8d03bba5eb72b",
+  "steps_per_period": 512,
+  "simulation_status": "ACTUAL_LEGUME_SPATIAL_FIELDS_TO_FINITE_MAXWELL_DYNAMICS",
+  "input_summary": "summary_steps512.json",
+  "display_x_over_a": [
+    -50,
+    120
+  ],
+  "display_y_over_a": [
+    -1.5,
+    1.5
+  ],
+  "colormap": "Spectral_r",
+  "normalization": "one maximum across all three saved times and full saved x/y grid for each c/d/e block",
+  "no_rowwise_normalization": true,
+  "com_domain": "full saved x grid, physical y=0 centerline",
+  "source_ambiguities": [
+    "source y extent not numerically labeled",
+    "source row/panel normalization not specified",
+    "source across-k initial phase convention not specified"
+  ],
+  "cases": [
+    {
+      "drive": 0.01,
+      "file": "drive0.01_steps512.npz",
+      "sha256": "cbf41a82043ff84ea8dbaefca26dd1d1ca08443b21b82c7ed60783e1dc5ed043",
+      "vmax": 0.5947492254091847,
+      "centers": [
+        2.335417518236259e-05,
+        18.91570392195804,
+        39.04174954192045
+      ]
+    },
+    {
+      "drive": 0.001,
+      "file": "drive0.001_steps512.npz",
+      "sha256": "5f35a7205b29e9e6a1d92e63dc68c22e47e44cd593f9e64f2c6c0c946778f936",
+      "vmax": 0.5947492254091847,
+      "centers": [
+        2.335417518236259e-05,
+        25.04442945857067,
+        49.910170583188105
+      ]
+    },
+    {
+      "drive": 0.0001,
+      "file": "drive0.0001_steps512.npz",
+      "sha256": "239789f34d74f180c8b1cf0fdeb6ef8cf9f83bb6557a4e25d02db988d9e4815d",
+      "vmax": 0.5947492254091847,
+      "centers": [
+        2.335417518236259e-05,
+        25.127080419668868,
+        45.352687863110354
+      ]
+    }
+  ],
+  "outputs": [
+    "figure9cde_calculated_steps512.png",
+    "figure9cde_calculated_steps512.pdf",
+    "figure9cde_calculated_steps512.svg",
+    "figure9cde_paper_vs_legume_steps512.png",
+    "figure9cde_paper_vs_legume_steps512.pdf"
+  ]
+}

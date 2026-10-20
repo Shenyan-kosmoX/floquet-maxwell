@@ -1,0 +1,262 @@
+{
+  "config": {
+    "radius": 0.3333333333333333,
+    "height": 0.6666666666666666,
+    "epsilon": 11.68,
+    "kx_ka": 2.701769682087222,
+    "ky_ka": 2.701769682087222,
+    "resolution": 32,
+    "padding": 1.0,
+    "pml": 0.5,
+    "frequency": 0.413,
+    "width": 0.16,
+    "warmup": 15.0,
+    "window": 160.0,
+    "sample_dt": 0.5,
+    "source_variant": 0,
+    "xy_samples": 12,
+    "z_order": 5,
+    "field_extent": 0.9
+  },
+  "windows": [
+    {
+      "start": 77.5,
+      "end": 237.5,
+      "probes": [
+        [
+          {
+            "frequency": 0.4077520471700611,
+            "decay": -1.58437857258713e-06,
+            "Q": 128678.85687959136,
+            "amplitude": [
+              -80.97421384321459,
+              -101.53675871761341
+            ],
+            "error": 7.488490603234163e-13
+          }
+        ],
+        [
+          {
+            "frequency": 0.40775204889203137,
+            "decay": -1.5839417786046713e-06,
+            "Q": 128714.3424082257,
+            "amplitude": [
+              -48.397429650516074,
+              -66.69576672910661
+            ],
+            "error": 2.55455714663491e-11
+          }
+        ],
+        [
+          {
+            "frequency": 0.407752047176958,
+            "decay": -1.5843290079461285e-06,
+            "Q": 128682.88251111246,
+            "amplitude": [
+              -19.711320655196385,
+              -23.267356681261933
+            ],
+            "error": 1.0842932541704537e-12
+          }
+        ]
+      ]
+    },
+    {
+      "start": 237.5,
+      "end": 397.5,
+      "probes": [
+        [
+          {
+            "frequency": 0.40775204715926205,
+            "decay": -1.5843240434528936e-06,
+            "Q": 128683.2857344646,
+            "amplitude": [
+              -106.09826669265495,
+              74.5389258071076
+            ],
+            "error": 9.854864206361396e-13
+          }
+        ],
+        [
+          {
+            "frequency": 0.40775204870358966,
+            "decay": -1.5832854002237528e-06,
+            "Q": 128767.70310834843,
+            "amplitude": [
+              -69.40147016774945,
+              44.186775398884826
+            ],
+            "error": 2.6740435849720672e-11
+          }
+        ],
+        [
+          {
+            "frequency": 0.40775203052299697,
+            "decay": -1.6017970467169799e-06,
+            "Q": 127279.55497193594,
+            "amplitude": [
+              -24.382785688755252,
+              18.233056704353224
+            ],
+            "error": 3.489162350958915e-10
+          }
+        ]
+      ]
+    }
+  ],
+  "meep_version": "1.35.0",
+  "elapsed_seconds": 75.50782135201734,
+  "geometry_type": "Sphere",
+  "radius_nm": 210.6,
+  "period_nm": 631.8,
+  "epsilon": 11.68,
+  "q_definition": "q=kx*a/pi=ky*a/pi along Gamma-M",
+  "polarization": "Hz excitation, z-even vector symmetry; TE surface-wave candidate, check physical field identity",
+  "figure_mapping": "Fig4b static branch; epsilon perturbations are static weak-modulation counterparts only",
+  "status": "STATIC_ARRAY_MODE_PROBE_NOT_DYNAMIC_FLOQUET",
+  "poles": [
+    {
+      "frequency": 0.40775204717350955,
+      "decay": -1.584326525699511e-06,
+      "frequency_spread": 1.8369034404663864e-08,
+      "decay_spread": 1.8511646493227087e-08,
+      "windows": [
+        0,
+        1
+      ],
+      "probes": [
+        0,
+        1,
+        2
+      ],
+      "probe_count_per_window": {
+        "0": 3,
+        "1": 3
+      },
+      "persistent": true,
+      "positive_decay_detected": false,
+      "fit_only_nuisance": false,
+      "candidate_status": "PASSIVE_DECAY_CANDIDATE_REQUIRES_FIELD_AND_CONVERGENCE_CHECKS",
+      "detections": [
+        {
+          "window": 0,
+          "probe": 0,
+          "frequency": 0.4077520471700611,
+          "decay": -1.58437857258713e-06,
+          "Q": 128678.85687959136,
+          "amplitude": [
+            -80.97421384321459,
+            -101.53675871761341
+          ],
+          "error": 7.488490603234163e-13
+        },
+        {
+          "window": 0,
+          "probe": 1,
+          "frequency": 0.40775204889203137,
+          "decay": -1.5839417786046713e-06,
+          "Q": 128714.3424082257,
+          "amplitude": [
+            -48.397429650516074,
+            -66.69576672910661
+          ],
+          "error": 2.55455714663491e-11
+        },
+        {
+          "window": 0,
+          "probe": 2,
+          "frequency": 0.407752047176958,
+          "decay": -1.5843290079461285e-06,
+          "Q": 128682.88251111246,
+          "amplitude": [
+            -19.711320655196385,
+            -23.267356681261933
+          ],
+          "error": 1.0842932541704537e-12
+        },
+        {
+          "window": 1,
+          "probe": 0,
+          "frequency": 0.40775204715926205,
+          "decay": -1.5843240434528936e-06,
+          "Q": 128683.2857344646,
+          "amplitude": [
+            -106.09826669265495,
+            74.5389258071076
+          ],
+          "error": 9.854864206361396e-13
+        },
+        {
+          "window": 1,
+          "probe": 1,
+          "frequency": 0.40775204870358966,
+          "decay": -1.5832854002237528e-06,
+          "Q": 128767.70310834843,
+          "amplitude": [
+            -69.40147016774945,
+            44.186775398884826
+          ],
+          "error": 2.6740435849720672e-11
+        },
+        {
+          "window": 1,
+          "probe": 2,
+          "frequency": 0.40775203052299697,
+          "decay": -1.6017970467169799e-06,
+          "Q": 127279.55497193594,
+          "amplitude": [
+            -24.382785688755252,
+            18.233056704353224
+          ],
+          "error": 3.489162350958915e-10
+        }
+      ],
+      "independent_window_field_overlap": 0.9999999999677094,
+      "finite_window_H_norm": 27.12342390767226,
+      "accepted_pole_evidence": true,
+      "rejection_reasons": [],
+      "interpretation": "Finite-time pole-field evidence; grid and boundary checks are still required"
+    }
+  ],
+  "fit": {
+    "relative_time_space_fit_residual": 0.0001965438544132595,
+    "temporal_fit_rank": 1,
+    "temporal_fit_columns": 1,
+    "normalized_temporal_condition": 1.0,
+    "mode_to_residual_ratio": [
+      5087.922617583629
+    ],
+    "norm_per_pole": [
+      27.12342390767226
+    ]
+  },
+  "window_fits": [
+    {
+      "relative_time_space_fit_residual": 0.00020106019280029854,
+      "temporal_fit_rank": 1,
+      "temporal_fit_columns": 1,
+      "normalized_temporal_condition": 1.0,
+      "mode_to_residual_ratio": [
+        4973.634924165113
+      ],
+      "norm_per_pole": [
+        27.12342396295252
+      ]
+    },
+    {
+      "relative_time_space_fit_residual": 0.00019184827825528304,
+      "temporal_fit_rank": 1,
+      "temporal_fit_columns": 1,
+      "normalized_temporal_condition": 1.0,
+      "mode_to_residual_ratio": [
+        5212.452252977929
+      ],
+      "norm_per_pole": [
+        27.080122923086613
+      ]
+    }
+  ],
+  "analysis_revision": 2,
+  "raw_input": "field_timeseries.npz and summary.json.windows",
+  "positive_fitted_exponent_policy": "Retained only as nuisance terms for signal separation; never interpreted as physical gain or certified passive modes"
+}

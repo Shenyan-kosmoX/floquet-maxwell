@@ -1,0 +1,157 @@
+{
+  "status": "NATIVE_LORENTZ_SIGMA_DYNAMIC_RESPONSE",
+  "q": 0.8,
+  "loss_ratio": 0.02,
+  "resolution": 16,
+  "courant": 0.25,
+  "material": {
+    "epsilon_inf": 1.0,
+    "N0": 1.21e+29,
+    "resonance_frequency_THz": 600.0,
+    "resonance_cyclic_fa_over_c": 1.2644747720771548,
+    "plasma_angular_wa_over_c": 41.35643878620493,
+    "sigma": 27.096063050128183,
+    "gamma_cyclic_fa_over_c": 0.025289495441543096,
+    "interpretation": "600 THz interpreted as cyclic resonance frequency; no adjustment to match epsilon=11.68"
+  },
+  "windows": [
+    [
+      [
+        {
+          "frequency": 0.2650912693509823,
+          "decay": -0.0005150599018334545,
+          "error": 1.4799947664861208e-10,
+          "amplitude": [
+            -198.78535004123637,
+            -335.67945895527515
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2650912687047218,
+          "decay": -0.0005150596976105966,
+          "error": 6.790665671422517e-11,
+          "amplitude": [
+            -119.03089639747823,
+            -204.29731050656437
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2650912706644304,
+          "decay": -0.000515058272074408,
+          "error": 1.2841152036111482e-10,
+          "amplitude": [
+            -37.891333362476836,
+            -63.224343810714956
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "frequency": 0.26509126643573644,
+          "decay": -0.0005150552940674505,
+          "error": 2.1078810805363821e-10,
+          "amplitude": [
+            157.50975815915496,
+            234.229366257802
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.2650912682392363,
+          "decay": -0.000515058117255837,
+          "error": 4.0284474906139416e-11,
+          "amplitude": [
+            94.45207324705875,
+            142.635076652287
+          ]
+        }
+      ],
+      [
+        {
+          "frequency": 0.26509126977197056,
+          "decay": -0.0005150554545643761,
+          "error": 1.1807691114156904e-10,
+          "amplitude": [
+            29.992045269349997,
+            44.09784192353668
+          ]
+        }
+      ]
+    ]
+  ],
+  "meep_version": "1.35.0",
+  "source_frequency": 0.26516,
+  "source_width": 0.04,
+  "static_window": 100.0,
+  "modulation": 0.01,
+  "drive": 0.530319751,
+  "periods": 500.0,
+  "native_adapter": {
+    "array_count": 3,
+    "state_count": 2,
+    "realnum_bytes": 8,
+    "adapter": "Version-pinned C++ sigma forcing update; native polarization history retained"
+  },
+  "instantaneous_field_change_on_sigma_update": {
+    "Dx": 0.0,
+    "Dy": 0.0,
+    "Dz": 0.0,
+    "Bx": 0.0,
+    "By": 0.0,
+    "Bz": 0.0,
+    "Ex": 0.0,
+    "Ey": 0.0,
+    "Ez": 0.0
+  },
+  "growth_fits": [
+    {
+      "fraction_window": [
+        0.35,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": 0.00042135918608423646,
+      "growth_cyclic_fa_over_c": 6.7061397282484e-05,
+      "log_amplitude_fit_rms": 0.00860725943019151,
+      "cycles": [
+        175.5026925965625,
+        474.50359720725
+      ]
+    },
+    {
+      "fraction_window": [
+        0.35,
+        0.65
+      ],
+      "amplitude_growth_per_meep_time": 0.00041261837903357467,
+      "growth_cyclic_fa_over_c": 6.567025463375867e-05,
+      "log_amplitude_fit_rms": 0.00858625323471997,
+      "cycles": [
+        175.5026925965625,
+        324.48939764312496
+      ]
+    },
+    {
+      "fraction_window": [
+        0.65,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": 0.00042400507488746437,
+      "growth_cyclic_fa_over_c": 6.748250356438922e-05,
+      "log_amplitude_fit_rms": 0.008593533712843746,
+      "cycles": [
+        325.48374717624995,
+        474.50359720725
+      ]
+    }
+  ],
+  "timing": "Sigma(t+dt) is updated before native step; polarization state is retained",
+  "constitutive_equation": "Pddot+gamma*Pdot+wr^2*P=wp0^2*[1+m*cos(Omega*t+phase)]*E; D=E+P",
+  "elapsed_seconds": 22.465913635969628
+}

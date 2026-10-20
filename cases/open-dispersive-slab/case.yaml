@@ -1,0 +1,86 @@
+schema_version: '0.1'
+kind: case
+id: open-dispersive-slab
+project_id: floquet-maxwell
+title: 开放色散薄膜散射与Floquet复频极点
+stage: results_available
+question:
+  summary: 开放色散薄膜散射与Floquet复频极点
+  scope: 法向入射、空气两侧的均匀薄膜；保留指定Lorentz/Drude材料与有限时间谐波。
+  record:
+    path: sptc_toolbox/results/floquet_slab/report.md
+capability_refs:
+- dispersive-ade
+- qnm-residue
+- forced-scattering
+- open-response-controls
+model:
+  description: 法向入射、空气两侧的均匀薄膜；保留指定Lorentz/Drude材料与有限时间谐波。
+  record:
+    path: sptc_toolbox/results/floquet_slab/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/floquet_slab/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/floquet_slab/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_floquet_slab.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/floquet_slab/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/validate_floquet_slab_qnm.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/floquet_slab/summary.json
+  record:
+    path: sptc_toolbox/results/floquet_slab/summary.json
+- id: output-2
+  description: sptc_toolbox/results/floquet_slab_qnm/summary.json
+  record:
+    path: sptc_toolbox/results/floquet_slab_qnm/summary.json
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/floquet_slab/report.md
+criteria:
+- id: criterion-1
+  description: 法向双端口薄膜的散射振幅、半泵相敏功率、局部复频极点及散射留数。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/floquet_slab/report.md
+checks:
+- id: check-1
+  method: 静态Fresnel、原始ADE、时间谐波加密、实场时间平均及Laurent极限
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/floquet_slab/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/floquet_slab/report.md
+  artifacts:
+  - path: sptc_toolbox/results/floquet_slab/summary.json
+  - path: sptc_toolbox/results/floquet_slab_qnm/summary.json
+  notes: Fresnel静态对照、121点动态散射、半泵相敏功率、局部复频极点与散射留数；N4到N6所选侧带差5.86e-13。 法向入射、空气两侧的均匀薄膜；保留指定Lorentz/Drude材料与有限时间谐波。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/floquet_slab/report.md

@@ -1,0 +1,102 @@
+schema_version: '0.1'
+kind: case
+id: nature-photonics-fig4
+project_id: floquet-maxwell
+title: Nature Photonics Fig.4 共振增强、平带与动态增长
+stage: results_available
+question:
+  summary: Nature Photonics Fig.4 共振增强、平带与动态增长
+  scope: 各面板分别记录直接时变、静态校准和T-matrix来源；j完整放大带宽及Fig.5待完成，材料解释引入绝对中心频率差异。
+  record:
+    path: toolbox_experiments/nphoton_2024_01563/results/figure4/README.md
+capability_refs:
+- open-response-controls
+- finite-floquet-dynamics
+- dispersive-ade
+model:
+  description: 各面板分别记录直接时变、静态校准和T-matrix来源；j完整放大带宽及Fig.5待完成，材料解释引入绝对中心频率差异。
+  record:
+    path: toolbox_experiments/nphoton_2024_01563/results/figure4/README.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: toolbox_experiments/nphoton_2024_01563/results/figure4/README.md
+execution:
+  environment_ref: meep-linux
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: toolbox_experiments/nphoton_2024_01563/results/figure4/README.md
+    entrypoint:
+      path: toolbox_experiments/nphoton_2024_01563/run_dynamic_campaign.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: toolbox_experiments/nphoton_2024_01563/results/figure4/README.md
+    entrypoint:
+      path: toolbox_experiments/nphoton_2024_01563/run_smin_trial.py
+  - id: workflow-3
+    role: run
+    mode: documented
+    instructions:
+      path: toolbox_experiments/nphoton_2024_01563/results/figure4/README.md
+    entrypoint:
+      path: toolbox_experiments/nphoton_2024_01563/run_lorentz_loss_scan.py
+outputs:
+- id: output-1
+  description: toolbox_experiments/nphoton_2024_01563/results/figure4/figure_manifest.json
+  record:
+    path: toolbox_experiments/nphoton_2024_01563/results/figure4/figure_manifest.json
+- id: output-2
+  description: sptc_toolbox/results/direct_meep_comparison_20261018/paper_provenance.md
+  record:
+    path: sptc_toolbox/results/direct_meep_comparison_20261018/paper_provenance.md
+- id: output-3
+  description: toolbox_experiments/nphoton_2024_01563/results/figure4/smin_trial/README.md
+  record:
+    path: toolbox_experiments/nphoton_2024_01563/results/figure4/smin_trial/README.md
+- id: output-4
+  description: toolbox_experiments/nphoton_2024_01563/results/figure4/lorentz_loss_analysis/report.md
+  record:
+    path: toolbox_experiments/nphoton_2024_01563/results/figure4/lorentz_loss_analysis/report.md
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: toolbox_experiments/nphoton_2024_01563/results/figure4/README.md
+criteria:
+- id: criterion-1
+  description: 各局部工作点的频率分裂及增长/衰减；面板数据来源由逐面板清单区分。
+  representation: documented
+  record:
+    path: toolbox_experiments/nphoton_2024_01563/results/figure4/README.md
+checks:
+- id: check-1
+  method: 静态Mie对照、真实动态的多探针/时间窗比较、网格和材料更新时间控制
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: toolbox_experiments/nphoton_2024_01563/results/figure4/README.md
+results:
+  status: observed
+  records:
+  - path: toolbox_experiments/nphoton_2024_01563/results/figure4/README.md
+  artifacts:
+  - path: toolbox_experiments/nphoton_2024_01563/results/figure4/figure_manifest.json
+  - path: sptc_toolbox/results/direct_meep_comparison_20261018/paper_provenance.md
+  - path: toolbox_experiments/nphoton_2024_01563/results/figure4/smin_trial/README.md
+  - path: toolbox_experiments/nphoton_2024_01563/results/figure4/lorentz_loss_analysis/report.md
+  notes: 193点静态响应、真实时变分裂与增长；d/g有193×501 T-matrix本征条件图；保留材料记忆的Lorentz损耗对照。 各面板分别记录直接时变、静态校准和T-matrix来源；j完整放大带宽及Fig.5待完成，材料解释引入绝对中心频率差异。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: toolbox_experiments/nphoton_2024_01563/results/figure4/README.md

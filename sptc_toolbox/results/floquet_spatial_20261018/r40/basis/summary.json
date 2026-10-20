@@ -1,0 +1,296 @@
+{
+  "status": "ACTUAL_STATIC_PARITY_SEPARATED_NATIVE_BASIS",
+  "completed": true,
+  "rank": 9,
+  "parities": [
+    1,
+    -1,
+    1,
+    -1,
+    1,
+    -1,
+    1,
+    -1,
+    1
+  ],
+  "resolution": 40,
+  "rcond": 1e-07,
+  "source_half_width": 0.3125,
+  "seed_real_gauge_residual": 4.071159973449393e-14,
+  "native_legume_frequency": 0.3979539246410964,
+  "grid_id": "a48579b3c1719c9d7db2d4f4bc99fced06d7e1d0e0bcfa96a4020725bfe27846",
+  "basis_id": "724ee0658b67d0785e210cc80062a78daadd6d262e57cef00de4f3f0a410baae",
+  "material_operator_id": "c64ae3d47057a0a13a69d2824a9c8ad7cf52f4cda43ef26bdb6ddce7d4a9c41f",
+  "parity_blocks": [
+    {
+      "sector": "even",
+      "parity": 1,
+      "rank": 5,
+      "singular_values": [
+        1.6515282767920687,
+        0.49620684016111244,
+        0.16196642238931747,
+        2.6424498018323717e-05,
+        7.3276410822918085e-06,
+        3.469460179019501e-22
+      ],
+      "input_column_norms": [
+        0.35722336027152074,
+        8.898764728451617,
+        7.182612444850858
+      ],
+      "parity_projection_relative_changes": [
+        9.579366116458438e-14,
+        1.2558540556795823e-16,
+        1.0488903190017948e-16
+      ],
+      "input": "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r40\\carrier_even_fdtd\\response_t2000.npz",
+      "source_sha256": "171b37ef34bc518d9d1183101824359c51ea54a3df4a53954f49da67120a08cf"
+    },
+    {
+      "sector": "odd",
+      "parity": -1,
+      "rank": 4,
+      "singular_values": [
+        1.3152118907012214,
+        0.5198246574478327,
+        8.37166057703957e-05,
+        3.2541062004326416e-05
+      ],
+      "input_column_norms": [
+        1.180321524433388,
+        0.8452467195233835
+      ],
+      "parity_projection_relative_changes": [
+        3.3093254384421986e-15,
+        3.4597098630087285e-15
+      ],
+      "input": "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r40\\carrier_odd_fdtd\\response_t2000.npz",
+      "source_sha256": "50c657407c956e52d20b4eb8f6b82e34fe4eb167d8311e21bc22f7155b605068"
+    }
+  ],
+  "clamp_checks": [
+    {
+      "sector": "even",
+      "epsilon_prime_E_clamp_relative_difference": 0.0,
+      "polarization_outside_support_relative_norm": 0.0
+    },
+    {
+      "sector": "odd",
+      "epsilon_prime_E_clamp_relative_difference": 0.0,
+      "polarization_outside_support_relative_norm": 0.0
+    }
+  ],
+  "rank_rows": [
+    {
+      "rank": 1,
+      "parities": [
+        1
+      ],
+      "material_source_relative_residual": [
+        0.424049916720241,
+        0.9999999999999954
+      ],
+      "full_field_coverage_relative_residual": [
+        0.2844617098238048,
+        1.0
+      ],
+      "polarization_coverage_relative_residual": [
+        0.41402750044911313,
+        0.9999999999999954
+      ]
+    },
+    {
+      "rank": 2,
+      "parities": [
+        1,
+        -1
+      ],
+      "material_source_relative_residual": [
+        0.4240499167202397,
+        0.4066399248906628
+      ],
+      "full_field_coverage_relative_residual": [
+        0.2844617098238048,
+        0.5513635214123738
+      ],
+      "polarization_coverage_relative_residual": [
+        0.41402750044911313,
+        0.3675715458775798
+      ]
+    },
+    {
+      "rank": 3,
+      "parities": [
+        1,
+        -1,
+        1
+      ],
+      "material_source_relative_residual": [
+        0.0011422177020539242,
+        0.4066399248906628
+      ],
+      "full_field_coverage_relative_residual": [
+        0.2131711998577719,
+        0.5513635214123738
+      ],
+      "polarization_coverage_relative_residual": [
+        0.0007492040741198581,
+        0.3675715458775798
+      ]
+    },
+    {
+      "rank": 4,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "material_source_relative_residual": [
+        0.0011422177020539242,
+        6.391627170126572e-05
+      ],
+      "full_field_coverage_relative_residual": [
+        0.2131711998577719,
+        0.44190097552343865
+      ],
+      "polarization_coverage_relative_residual": [
+        0.0007492040741198579,
+        6.391626384931485e-05
+      ]
+    },
+    {
+      "rank": 5,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "material_source_relative_residual": [
+        1.994378958951574e-05,
+        6.391627170126572e-05
+      ],
+      "full_field_coverage_relative_residual": [
+        0.18079170777342585,
+        0.44190097552343865
+      ],
+      "polarization_coverage_relative_residual": [
+        1.99437728844341e-05,
+        6.391626384931485e-05
+      ]
+    },
+    {
+      "rank": 6,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "material_source_relative_residual": [
+        1.9943789589515643e-05,
+        2.5208665025503402e-05
+      ],
+      "full_field_coverage_relative_residual": [
+        0.18079170777342585,
+        0.4419009723880721
+      ],
+      "polarization_coverage_relative_residual": [
+        1.99437728844341e-05,
+        2.2809594356520433e-05
+      ]
+    },
+    {
+      "rank": 7,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "material_source_relative_residual": [
+        5.26957964521599e-06,
+        2.5208665025503365e-05
+      ],
+      "full_field_coverage_relative_residual": [
+        0.18079170690254592,
+        0.4419009723880721
+      ],
+      "polarization_coverage_relative_residual": [
+        5.0032803915829185e-06,
+        2.280959435652043e-05
+      ]
+    },
+    {
+      "rank": 8,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "material_source_relative_residual": [
+        5.269579645215977e-06,
+        1.5136215074072678e-14
+      ],
+      "full_field_coverage_relative_residual": [
+        0.18079170690254592,
+        0.4419009718976384
+      ],
+      "polarization_coverage_relative_residual": [
+        5.003280391582919e-06,
+        1.5203713406419685e-14
+      ]
+    },
+    {
+      "rank": 9,
+      "parities": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "material_source_relative_residual": [
+        2.8664551884426105e-14,
+        2.3111010930024333e-14
+      ],
+      "full_field_coverage_relative_residual": [
+        0.18079170682588797,
+        0.4419009718976384
+      ],
+      "polarization_coverage_relative_residual": [
+        6.412337521488876e-15,
+        1.520371242072857e-14
+      ]
+    }
+  ],
+  "source_sha256": {
+    "sptc_toolbox\\results\\connected_physics\\spatial\\g6.1_v01234567\\native.pkl": "8e0d97e7f1a218bae167dc0c0e05ea1da7881dc488416e818c03563286b3e45f",
+    "sptc_toolbox\\scripts\\build_full_floquet_basis.py": "4c2936ae56e0bbf45ff3b173379bbabfc05d252221f540fec1eeccc6ed1a7fee",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r40_noY\\grid.npz": "f72731952c9c804fa474b75d6b1e5c6e3d87e8e8edc95e7930a5f3617d01db84",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r40_noY\\K_base.npz": "453cb8df590a670a3978d2c4a5a2ca7b629d6269b8c29bb2999ce3320c7005ab",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\material\\r40_noY\\K_derivative.npz": "4153c425cf269e2b55066fb19f464c9f8d43a0cc1663b4897448c23b56cd2dc4",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r40\\carrier_even_fdtd\\response_t2000.npz": "171b37ef34bc518d9d1183101824359c51ea54a3df4a53954f49da67120a08cf",
+    "sptc_toolbox\\results\\spatial_repair_20261017\\static\\smooth_noY_r40\\carrier_odd_fdtd\\response_t2000.npz": "50c657407c956e52d20b4eb8f6b82e34fe4eb167d8311e21bc22f7155b605068"
+  },
+  "no_dynamic_output_fit": true,
+  "scope": "Basis construction only; complete static Green responses still required",
+  "basis_sha256": "d482460792ec43ad4a750048dd4e6ad4e7ae01e93f89049bc43e43ff47d6cf27"
+}

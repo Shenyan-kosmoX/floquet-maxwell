@@ -1,0 +1,108 @@
+{
+  "status": "ALL_98_NATIVE_DYNAMIC_CASES_AND_SIGNED_SPECTRA_VERIFIED",
+  "complete_maps": 2,
+  "actual_k_points_per_map": 49,
+  "total_modulated_cases": 98,
+  "matched_zero_controls": [
+    {
+      "regime": "resonant",
+      "identical_time_geometry_source_drive_except_m": true,
+      "zero_summary_sha256": "a4811481bb1d14df6d8a266e8c9e9770ec3adf37a7de32769dcca844e4211f2e",
+      "zero_raw_sha256": "06ffa83e83a413c297ddb2dd4c6b03692820aa0e1c20b712d545bb436471b59c"
+    },
+    {
+      "regime": "nonresonant",
+      "identical_time_geometry_source_drive_except_m": true,
+      "zero_summary_sha256": "3d1ef37d345883230eea3d27a1395e59d43135470e7ebd8f2d229ffc812933e1",
+      "zero_raw_sha256": "f7c717a694268d39e86eeccc5dfc26789fa0650246f0dee4e4c38a72323b6ddf"
+    }
+  ],
+  "source_sha256": "d1c070d2dcd079bb9facc1288ada29c19eb25fd5817133d944ee3915d70dbd4b",
+  "total_native_seconds": 1079.9375495238346,
+  "independent_raw_fft_fold_checks": [
+    {
+      "regime": "resonant",
+      "index": 0,
+      "independent_fft_fold_relative_error": 5.832437185239323e-16
+    },
+    {
+      "regime": "resonant",
+      "index": 8,
+      "independent_fft_fold_relative_error": 2.0758801253135116e-16
+    },
+    {
+      "regime": "resonant",
+      "index": 16,
+      "independent_fft_fold_relative_error": 1.865486211864556e-16
+    },
+    {
+      "regime": "resonant",
+      "index": 24,
+      "independent_fft_fold_relative_error": 2.193825296105111e-16
+    },
+    {
+      "regime": "resonant",
+      "index": 32,
+      "independent_fft_fold_relative_error": 5.531858031813575e-16
+    },
+    {
+      "regime": "resonant",
+      "index": 40,
+      "independent_fft_fold_relative_error": 1.3123272005461976e-16
+    },
+    {
+      "regime": "resonant",
+      "index": 48,
+      "independent_fft_fold_relative_error": 5.832437185239323e-16
+    },
+    {
+      "regime": "nonresonant",
+      "index": 0,
+      "independent_fft_fold_relative_error": 4.534250736494448e-16
+    },
+    {
+      "regime": "nonresonant",
+      "index": 8,
+      "independent_fft_fold_relative_error": 4.803879797685414e-16
+    },
+    {
+      "regime": "nonresonant",
+      "index": 16,
+      "independent_fft_fold_relative_error": 5.859778330033901e-16
+    },
+    {
+      "regime": "nonresonant",
+      "index": 24,
+      "independent_fft_fold_relative_error": 3.958994680603717e-16
+    },
+    {
+      "regime": "nonresonant",
+      "index": 32,
+      "independent_fft_fold_relative_error": 5.204476107282819e-16
+    },
+    {
+      "regime": "nonresonant",
+      "index": 40,
+      "independent_fft_fold_relative_error": 5.270949657990982e-16
+    },
+    {
+      "regime": "nonresonant",
+      "index": 48,
+      "independent_fft_fold_relative_error": 4.534250736494448e-16
+    }
+  ],
+  "maximum_independent_reconstruction_error": 5.859778330033901e-16,
+  "all_native_exit_hash_geometry_fixed_drive_timing_fields_checked": true,
+  "aggregate_rows_match_saved_dynamic_spectra": true,
+  "limits": "K sampling and finite dynamic spectral response only; r12/100T/stride4/pad3 not a complete Floquet or spatial-convergence certificate",
+  "map_hashes": {
+    "resonant": {
+      "map": "632bfe872c5731f8284cec8313ce94a2b023b22998798afb481f0584ffe8190a",
+      "summary": "61ea4a09994da95a2a9217c76ff7f72919060530312d4139ce2aea54b3a30442"
+    },
+    "nonresonant": {
+      "map": "acfe0e9597f752927db49efb52116f6e488facd0661a99e93c155be7a1f18f90",
+      "summary": "8a8b1c80cb2d313690f456e0094e2b0801a2dc55fea663b751247ffc0a97f62e"
+    }
+  }
+}

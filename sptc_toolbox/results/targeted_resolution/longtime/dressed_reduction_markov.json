@@ -1,0 +1,38 @@
+{
+  "records": [
+    {
+      "retained_dressed_modes": 12,
+      "full_signed_dimension": 360,
+      "initial_state_residual": 0.017593649809744025,
+      "maximum_instantaneous_sector_weight_error": 0.004181167875083408,
+      "maximum_full_photon_state_error": 0.01768152257036133,
+      "max_cycle_closure_residual": 1.0584199490317051e-07,
+      "nfev": 3407,
+      "compute_or_load_seconds": 3.589809500001138
+    },
+    {
+      "retained_dressed_modes": 24,
+      "full_signed_dimension": 360,
+      "initial_state_residual": 0.0005922111188891867,
+      "maximum_instantaneous_sector_weight_error": 3.15948702475366e-05,
+      "maximum_full_photon_state_error": 0.0005958505862675393,
+      "max_cycle_closure_residual": 1.6043697088873086e-07,
+      "nfev": 3422,
+      "compute_or_load_seconds": 5.656979299998056
+    },
+    {
+      "retained_dressed_modes": 32,
+      "full_signed_dimension": 360,
+      "initial_state_residual": 0.00038935896987823623,
+      "maximum_instantaneous_sector_weight_error": 3.159653675316454e-05,
+      "maximum_full_photon_state_error": 0.0003903358433346602,
+      "max_cycle_closure_residual": 1.59324805699668e-07,
+      "nfev": 3362,
+      "compute_or_load_seconds": 5.903540400002385
+    }
+  ],
+  "source_dimension": "18 native modes x 10 sectors x 2 photon signs",
+  "method": "Exact full-space one-period eigenvectors, selected by actual initial excitation; propagate full periodic micromotion for one cycle and apply exact integer multiplier powers",
+  "approximation": "Discard weakly excited dressed Floquet vectors only. This is not bare static truncation and not high-frequency expansion.",
+  "scope": "Fixed-reference common-channel Markov. State- and parameter-specific reduced dynamics in the complete fixed native GME space. Rebuild for changed drive/material; physical space and radiation approximation remain separate."
+}

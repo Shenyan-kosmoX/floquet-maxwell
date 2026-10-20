@@ -1,0 +1,51 @@
+{
+  "physical_inputs": {
+    "doi": "10.1364/OE.476035",
+    "epsilon_inf": 1.0,
+    "omega_r": 1.0,
+    "omega_p_squared": 11.0,
+    "gamma": 0.125,
+    "drive": 0.1,
+    "radius": 4.27,
+    "period": 11.93,
+    "incidence": "Normal upward native TE/M (polarization=0), unit electric plane wave",
+    "material_equation": "Pddot+gamma*Pdot+omega_r^2*P=omega_p^2*(1+Ms*cos(Omega*t))*E"
+  },
+  "figure": "4(a-e)",
+  "displayed_x_range": [
+    0,
+    1
+  ],
+  "computed_frequency_range": [
+    0.0063,
+    0.9963
+  ],
+  "primary_samples_per_depth": 199,
+  "depths": [
+    0.0,
+    0.5,
+    0.9
+  ],
+  "N": {
+    "0.0": 0,
+    "0.5": 9,
+    "0.9": 19
+  },
+  "lmax": 4,
+  "frequency_grid_note": "Direct sampled points; avoids DC / opposite-frequency collisions. No evaluation at omega=0 or1.",
+  "source_sha256": {
+    "sptc_toolbox/periodic_sphere_reference.py": "384cf6e04fcc48e489709226e48099200711bf89091b4163653919f63ce5bb8d",
+    "sptc_toolbox/sphere_material.py": "fc03c185e017422c10ca35bf81e4a12104b5187c1c206ff8b341ca470bc3016c",
+    "toolbox_experiments/nphoton_2024_01563/floquet_sphere_tmatrix.py": "e7b24d00a268c47b9b56fe3456a87e4dae3c4f1cb6d05b32999cf32f86f400af",
+    "toolbox_experiments/nphoton_2024_01563/sphere_lattice_smin.py": "62faadd8276035ebe12b698c0dd516b8be267568466a8c610f8b3fb89d65b001",
+    "sptc_toolbox/baselines/garg_2022.py": "acc49f6a9fa3fab7ad1d66062fb1c2bf3f6a72ef1cab18207dd8ce0097f5acae"
+  },
+  "record_stamp": "2f9fd522bca8977a",
+  "source_locations": "Main p4 Eqs3-4, p9 Eqs23-25, p11 Fig4; SI p2 S2, pp3-4 transforms",
+  "fitted_parameters": [],
+  "reference_backend": "Independent treams periodic-sphere reference, not Legume",
+  "power": "Positive-frequency sum for comparison to paper; full distinct-|frequency| power retained separately",
+  "phase": "Paper carrier l=1,m=-1,M/N coefficients, explicit native-to-SI field check; no fitted phase offset",
+  "convergence": "Separate probe table; full-window plot does not certify uniform temporal/spatial convergence",
+  "causal_stability_verified": false
+}

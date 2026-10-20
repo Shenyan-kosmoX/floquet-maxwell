@@ -1,0 +1,98 @@
+schema_version: '0.1'
+kind: case
+id: minkov2018-traveling
+project_id: floquet-maxwell
+title: Minkov–Fan 2018 W1波导行波输运
+stage: results_available
+question:
+  summary: Minkov–Fan 2018 W1波导行波输运
+  scope: Fig.9(c–e)导模范围；快速量值与空间宽度敏感性见后续连续Bloch及远尾结果；原wrapped图保留。
+  record:
+    path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/report.md
+capability_refs:
+- traveling-modulation
+- finite-floquet-dynamics
+- field-reconstruction
+- identity-convergence
+model:
+  description: Fig.9(c–e)导模范围；快速量值与空间宽度敏感性见后续连续Bloch及远尾结果；原wrapped图保留。
+  record:
+    path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/report.md
+    entrypoint:
+      path: sptc_toolbox/baselines/minkov2018_spatial.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/report.md
+    entrypoint:
+      path: sptc_toolbox/baselines/minkov2018_legume_dynamic.py
+  - id: workflow-3
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/report.md
+    entrypoint:
+      path: sptc_toolbox/baselines/minkov2018_floquet_period.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/sptc_baselines/minkov2018_legume/convergence_audit.md
+  record:
+    path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/convergence_audit.md
+- id: output-2
+  description: sptc_toolbox/results/convergence/w1/report.md
+  record:
+    path: sptc_toolbox/results/convergence/w1/report.md
+- id: output-3
+  description: sptc_toolbox/results/targeted_resolution/w1/report.md
+  record:
+    path: sptc_toolbox/results/targeted_resolution/w1/report.md
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/report.md
+criteria:
+- id: criterion-1
+  description: 指定W1导模窗口内的三个驱动速度、波包位置、展宽及一周期乘子。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/report.md
+checks:
+- id: check-1
+  method: 实际E场投影、时间步加密、一周期谱及场质心/宽度比较
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/report.md
+  artifacts:
+  - path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/convergence_audit.md
+  - path: sptc_toolbox/results/convergence/w1/report.md
+  - path: sptc_toolbox/results/targeted_resolution/w1/report.md
+  notes: 224个原始k点的场投影、三驱动速度与三时刻场图、一周期谱；中速拖曳及慢速展宽机制。 Fig.9(c–e)导模范围；快速量值与空间宽度敏感性见后续连续Bloch及远尾结果；原wrapped图保留。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/sptc_baselines/minkov2018_legume/report.md

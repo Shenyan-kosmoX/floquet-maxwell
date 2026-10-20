@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETED_STATIC_MPB_PERIODIC_Z_REFERENCE",
+  "config": {
+    "q": 0.2818,
+    "epsilon": 11.6266,
+    "radius": 0.3333333333333333,
+    "resolution": 12,
+    "lz": 64.0,
+    "bands": 3,
+    "parity": "EVEN_Z",
+    "k_point": [
+      0.1409,
+      0.1409,
+      0
+    ]
+  },
+  "light_line_cyclic_fa_over_c": 0.19926269093836907,
+  "modes": [
+    {
+      "band": 1,
+      "frequency": 0.1929848251104901,
+      "frequency_THz": 91.57232522408032,
+      "below_air_light_line": true,
+      "physical_air_kappa": 0.31179272968680694,
+      "fitted_positive_z_G0_kappa": 0.31179377797892377,
+      "central_H_fraction": 0.44607222688619463,
+      "outer_H_fraction": 4.212200055143204e-09
+    },
+    {
+      "band": 2,
+      "frequency": 0.1994489367176601,
+      "frequency_THz": 94.63958053826175,
+      "below_air_light_line": false,
+      "physical_air_kappa": null,
+      "fitted_positive_z_G0_kappa": -0.1250930136140992,
+      "central_H_fraction": 0.001326037750763037,
+      "outer_H_fraction": 0.06566424556418225
+    },
+    {
+      "band": 3,
+      "frequency": 0.19986543521846492,
+      "frequency_THz": 94.83721129057196,
+      "below_air_light_line": false,
+      "physical_air_kappa": null,
+      "fitted_positive_z_G0_kappa": -0.2909435484894299,
+      "central_H_fraction": 0.00032589278832671715,
+      "outer_H_fraction": 0.00017200109277814738
+    }
+  ],
+  "native_shape": [
+    12,
+    12,
+    768
+  ],
+  "elapsed_seconds": 7.61339299500105,
+  "raw_sha256": "3f11dd18230fb4203e9484d19857d0ae1bf484fd9ad0215f1b5c56fc62bcbcb6",
+  "scope": "Static Hermitian periodic-z supercell locator; compare z-size and spatial refinement before certification; no radiation rate or Floquet exponent"
+}

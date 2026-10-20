@@ -1,0 +1,13 @@
+{
+  "status": "WSL_COORDINATOR_REPLACEMENT_WITH_EARLY_SOURCE_RESTART",
+  "reason": "Raise the authorized global sampling concurrency from four to six.",
+  "old_coordinator_pid": 105217,
+  "unexpectedly_cleaned_up_child_pid": 105237,
+  "source": "extended_q9",
+  "completed_checkpoints_before_restart": [],
+  "new_source_pid": 105278,
+  "physical_source_identity_changed": false,
+  "existing_original_source_processes_affected": false,
+  "completed_response_files_modified": false,
+  "explanation": "Only the old coordination process was explicitly signalled. The WSL session cleanup also ended its unfinished child. The six-slot queue detected no surviving source process and restarted the same source. No completed response was lost. Do not replace another live WSL coordinator while its children are still running."
+}

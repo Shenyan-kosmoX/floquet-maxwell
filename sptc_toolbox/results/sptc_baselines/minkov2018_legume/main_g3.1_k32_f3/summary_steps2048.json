@@ -1,0 +1,115 @@
+{
+  "status": "ACTUAL_LEGUME_SPATIAL_FIELDS_TO_FINITE_MAXWELL_DYNAMICS",
+  "time_integrator": "Full positive/negative second-order Maxwell: exact frozen midpoint substeps; independent refinement required",
+  "steps_per_period": 2048,
+  "depth": 0.02,
+  "targets_T": [
+    0,
+    1.5625,
+    3.125
+  ],
+  "radiation": "Native gamma exported; zero-radiation guided finite basis, no diagonal-Q substitution",
+  "maximum_native_gamma": 0.0,
+  "source_contract": "Minkov/Fan2018 Eq30,Fig9(c-e); source is author manuscript",
+  "cases": [
+    {
+      "drive": 0.01,
+      "seconds": 2.6398691000003964,
+      "xcom": [
+        1.6168276568109328e-05,
+        18.915559989037437,
+        39.05367096832792
+      ],
+      "width": [
+        2.0834704367494266,
+        14.738748347379703,
+        25.99338029195674
+      ],
+      "negative_action_fraction": [
+        8.840798159672771e-33,
+        4.2377181646211455e-11,
+        2.8789561887031318e-11
+      ],
+      "file": "drive0.01_steps2048.npz"
+    },
+    {
+      "drive": 0.001,
+      "seconds": 2.669112999999925,
+      "xcom": [
+        1.6168276568109328e-05,
+        25.046147196444814,
+        49.90592486848068
+      ],
+      "width": [
+        2.0834704367494266,
+        4.797049825999429,
+        8.16997271157626
+      ],
+      "negative_action_fraction": [
+        8.840798159672771e-33,
+        5.424788402037492e-13,
+        6.635608914263569e-13
+      ],
+      "file": "drive0.001_steps2048.npz"
+    },
+    {
+      "drive": 0.0001,
+      "seconds": 2.5953411000000415,
+      "xcom": [
+        1.6168276568109328e-05,
+        25.217857607776942,
+        44.19507980144974
+      ],
+      "width": [
+        2.0834704367494266,
+        25.334433659382515,
+        44.14948198625657
+      ],
+      "negative_action_fraction": [
+        8.840798159672771e-33,
+        9.491908225115505e-11,
+        5.731774128884206e-11
+      ],
+      "file": "drive0.0001_steps2048.npz"
+    }
+  ],
+  "initial_state": {
+    "instantaneous_lowest_omega": [
+      1.6131268664580223,
+      1.6131269976139069,
+      1.6131272792011793,
+      1.6131277415141216,
+      1.6131284278819873,
+      1.6131293921899663,
+      1.6131306958080731,
+      1.6131324040971076,
+      1.613134582670502,
+      1.6131372935920303,
+      1.6131405916664219,
+      1.613144520972734,
+      1.6131491117590517,
+      1.6131543777987276,
+      1.6131603142888467,
+      1.6131668963570414,
+      1.6131668963570447,
+      1.6131603142888493,
+      1.6131543777987225,
+      1.6131491117590524,
+      1.6131445209727402,
+      1.6131405916664217,
+      1.613137293592032,
+      1.6131345826705066,
+      1.6131324040971056,
+      1.613130695808067,
+      1.6131293921899668,
+      1.6131284278819835,
+      1.6131277415141183,
+      1.6131272792011804,
+      1.6131269976139122,
+      1.6131268664580185
+    ],
+    "phase_reference": "Physical Ex/Ey/Ez overlap with central-K instantaneous field on y=0,x[-8,8],Gaussian window width4a",
+    "local_reference_overlap_min": 1.2074229209913567,
+    "normalization": "Each K has H norm1 and electric material energy1: q=v/omega_inst,p=-iv; c_K1=1 after physical gauge"
+  }
+}

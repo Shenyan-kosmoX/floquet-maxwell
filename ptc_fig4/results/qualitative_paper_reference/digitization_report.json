@@ -1,0 +1,64 @@
+{
+  "status": "APPROXIMATE_FIGURE_DIGITIZATION_NOT_NUMERICAL_GROUND_TRUTH",
+  "source": "Science Advances published main PDF, page 6, Fig.4B",
+  "source_file": "literature/published_main.pdf",
+  "source_sha256": "3c649a38e01936188f5de97cd33aa70dfa0ced6c992c47cc4abb062823559304",
+  "source_url": "https://publikationen.bibliothek.kit.edu/1000196234/187616299",
+  "method": "render official PDF crop at 6 pixels/point; isolate blue RGB pixels; columnwise contiguous-cluster continuity extraction",
+  "pdf_crop_points": [
+    250,
+    65,
+    450,
+    184
+  ],
+  "render_scale": 6,
+  "pixel_calibration": {
+    "x_M0": 168,
+    "x_Gamma": 473,
+    "x_X": 777,
+    "x_M1": 1080,
+    "y_at_4p8": 79,
+    "y_at_4p6": 513
+  },
+  "path_coordinate": "0=M,1=Gamma,2=X,3=M; equal-width plotted segments; not physical arclength",
+  "frequency_conversion": "f_THz=(omega*a/c0)*c0/(2*pi*3296nm)/1e12",
+  "sites": {
+    "M_left": {
+      "omega_a_over_c0": 4.651152073732718,
+      "frequency_THz": 67.33086144380907,
+      "recommended_rounding_THz": 67.3
+    },
+    "Gamma": {
+      "omega_a_over_c0": 4.689400921658986,
+      "frequency_THz": 67.8845582138315,
+      "recommended_rounding_THz": 67.9
+    },
+    "X": {
+      "omega_a_over_c0": 4.669841269841269,
+      "frequency_THz": 67.60140939703288,
+      "recommended_rounding_THz": 67.6
+    },
+    "M_right": {
+      "omega_a_over_c0": 4.651180875576037,
+      "frequency_THz": 67.33127838414794,
+      "recommended_rounding_THz": 67.3
+    }
+  },
+  "blue_curve_bandwidth_THz": 0.5536967700224267,
+  "blue_curve_bandwidth_normalized": 0.03824884792626726,
+  "relative_bandwidth_to_Gamma": 0.008156446540880793,
+  "red_Gamma_annotation_THz": 67.93792657720715,
+  "red_X_annotation_THz": 67.61104535153127,
+  "graph_extraction_uncertainty_THz_estimate": 0.04,
+  "recommended_qualitative_reference_uncertainty_THz": 0.1,
+  "uncertainty_status": "conservative visual estimates, not statistical confidence intervals",
+  "limitations": [
+    "Rasterized source plot, not vector numerical eigenvalues",
+    "Blue band peak does not exactly coincide with author red Gamma guide (~0.05 THz difference)",
+    "136 THz modulation is rounded and includes DC shift, not exact static Gamma data",
+    "Rendering/digitization yields highly correlated pixel samples",
+    "No linewidth or Q can be quantitatively inferred from color opacity",
+    "Nearby pale bands and vertical artifact-like dots excluded; main flat branch only",
+    "Fine oscillations near the X horizontal red guide arise from occlusion/anti-aliasing in the blue-pixel mask, not resolved band oscillations; use coarse shape and error envelope."
+  ]
+}

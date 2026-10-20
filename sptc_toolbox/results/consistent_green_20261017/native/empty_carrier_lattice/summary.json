@@ -1,0 +1,37 @@
+{
+  "status": "CONSISTENT_NATIVE_YEE_CW_RESPONSE",
+  "completed": true,
+  "success": true,
+  "identity": {
+    "kind": "incident",
+    "frequency": 0.398,
+    "sector": 0,
+    "epsilon": 11.5,
+    "template": 0,
+    "operator_id": "1893ad7f6ee9763dee7a84b73fc7fea3daef73fd2e5bfc45727d3f4d6dd94cf8",
+    "tolerance": 1e-08,
+    "L": 10,
+    "maxiters": 3000,
+    "empty": true,
+    "script_sha256": "6864d600dc460b6e3a47718d3a8f9ef220326e9d437ff6b6209d6e3859dcd41c",
+    "carrier_sha256": null,
+    "calibration_sha256": null,
+    "basis_sha256": null
+  },
+  "solver_seconds": 16.835920301000016,
+  "source_lift_relative_residual": null,
+  "work": -0.0,
+  "net_flux": -1.4613421583931085e-11,
+  "output_power": 0.12495123437588417,
+  "incoming_power": 0.12495123443016734,
+  "output_work_residual": null,
+  "normalization_real_imag": [
+    1.0,
+    0.0
+  ],
+  "frequency_convention": "continuous f; discrete Maxwell omega_discrete for polarization current",
+  "phasor_convention": "E=exp(i omega dt/2)*(E_cw+E_first), H=H_cw; frozen nonintegrated electric current",
+  "fields_normalization": "absolute source current",
+  "port_convention": "Two native E planes; Yee k dispersion; sqrt(cos(k h/2)/2) flux normalization",
+  "native_port_condition_max": 3.0930906594691083
+}

@@ -1,0 +1,5330 @@
+{
+  "k_index": 0,
+  "kpoint_ka": [
+    0.0,
+    0.0
+  ],
+  "modes": [
+    2,
+    3
+  ],
+  "cross_k_identity": "not_assessed",
+  "selection_mode": "explicit_local_native_clusters",
+  "scope": "Local native finite spatial subspace plus frozen common-frequency radiation; no band-connection claim",
+  "complete_open_dynamics_certified": false,
+  "radiation_policy": "assess",
+  "radiation_backend": "frozen",
+  "local_selection": {
+    "status": "COMPLETE_SELECTED_LOCAL_FREQUENCY_CLUSTERS",
+    "mode_indices": [
+      2,
+      3
+    ],
+    "selected_clusters": [
+      [
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "all_returned_clusters": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ]
+    ],
+    "returned_mode_count": 12,
+    "native_selected_frequencies_fa_over_c": [
+      0.36298988083710304,
+      0.364580460912445
+    ],
+    "minimum_selected_to_omitted_frequency_gap_fa_over_c": 0.017501435779659513,
+    "cluster_rtol": 1e-06,
+    "cluster_atol_fa_over_c": 1e-10,
+    "selected_eigenvector_gram_error": 1.4844692796982615e-15,
+    "highest_returned_cluster_excluded": true,
+    "cross_k_identity": "not_assessed",
+    "scope": "Complete local frequency clusters within returned native modes; not full spatial convergence, QNM completeness, band continuity, or topology"
+  },
+  "physical_indices": [
+    15,
+    16,
+    18,
+    13
+  ],
+  "sideband_coverage": [
+    {
+      "status": "DIAGNOSTIC_ONLY_NOT_FREQUENCY_DEPENDENT_RADIATION_VALIDATION",
+      "branch_index": 15,
+      "frequency_window": 0.05,
+      "negative_frequency_weight": 0.0006079707743698666,
+      "outside_frequency_window_weight": 1.384529323736101e-10,
+      "changed_channel_set_weight": 1.384529323736101e-10,
+      "near_diffraction_threshold_weight": 0.0,
+      "significant_changed_channel_harmonics": [],
+      "frozen_total_power": 1.0667874700316168e-08,
+      "sidebands": [
+        {
+          "harmonic": -3,
+          "physical_omega_a_over_c": -11.433644899402472,
+          "reference_energy_weight": 1.0495047201074629e-21,
+          "frozen_model_radiation_power": 1.9294244196023934e-26,
+          "negative_frequency": true,
+          "magnitude_detuning": 4.002186039968471,
+          "outside_frequency_window": true,
+          "open_channel_count": 36,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -2,
+          "physical_omega_a_over_c": -6.862185618182082,
+          "reference_energy_weight": 2.275636864355569e-13,
+          "frozen_model_radiation_power": 4.247445172316658e-18,
+          "negative_frequency": true,
+          "magnitude_detuning": 2.002186039968472,
+          "outside_frequency_window": true,
+          "open_channel_count": 20,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -1,
+          "physical_omega_a_over_c": -2.290726336961691,
+          "reference_energy_weight": 0.0006079707741423029,
+          "frozen_model_radiation_power": 6.201297068709896e-09,
+          "negative_frequency": true,
+          "magnitude_detuning": 0.0021860399684721435,
+          "outside_frequency_window": false,
+          "open_channel_count": 4,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 0,
+          "physical_omega_a_over_c": 2.2807329442587005,
+          "reference_energy_weight": 0.9993920290874047,
+          "frozen_model_radiation_power": 4.466577620349784e-09,
+          "negative_frequency": false,
+          "magnitude_detuning": 0.002186039968471949,
+          "outside_frequency_window": false,
+          "open_channel_count": 4,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 1,
+          "physical_omega_a_over_c": 6.852192225479091,
+          "reference_energy_weight": 1.382253669076919e-10,
+          "frozen_model_radiation_power": 7.009043624358093e-18,
+          "negative_frequency": false,
+          "magnitude_detuning": 1.9978139600315281,
+          "outside_frequency_window": true,
+          "open_channel_count": 20,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 2,
+          "physical_omega_a_over_c": 11.423651506699482,
+          "reference_energy_weight": 1.778433039794337e-18,
+          "frozen_model_radiation_power": 3.067821937237818e-25,
+          "negative_frequency": false,
+          "magnitude_detuning": 3.9978139600315274,
+          "outside_frequency_window": true,
+          "open_channel_count": 36,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 3,
+          "physical_omega_a_over_c": 15.995110787919874,
+          "reference_energy_weight": 8.157031413127632e-26,
+          "frozen_model_radiation_power": 6.045716524766422e-31,
+          "negative_frequency": false,
+          "magnitude_detuning": 5.997813960031528,
+          "outside_frequency_window": true,
+          "open_channel_count": 52,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        }
+      ],
+      "notes": [
+        "Weights use a fixed reference stiffness, not the full physical time-dependent energy metric",
+        "Negative-frequency amplitudes require a validated reality/retarded map; abs(frequency) only diagnoses geometric thresholds",
+        "Zero output in a dark mode does not certify unrepresented channels",
+        "Only diffraction orders within the native spatial truncation are inspected",
+        "kz=0 is a threshold, not a safely propagating channel; no threshold self-energy is computed"
+      ]
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY_NOT_FREQUENCY_DEPENDENT_RADIATION_VALIDATION",
+      "branch_index": 16,
+      "frequency_window": 0.05,
+      "negative_frequency_weight": 0.999392029225602,
+      "outside_frequency_window_weight": 1.38452932377669e-10,
+      "changed_channel_set_weight": 1.38452932377669e-10,
+      "near_diffraction_threshold_weight": 0.0,
+      "significant_changed_channel_harmonics": [],
+      "frozen_total_power": 1.0667874700618324e-08,
+      "sidebands": [
+        {
+          "harmonic": -3,
+          "physical_omega_a_over_c": -15.99511078791987,
+          "reference_energy_weight": 8.156813425220782e-26,
+          "frozen_model_radiation_power": 6.035263304365544e-31,
+          "negative_frequency": true,
+          "magnitude_detuning": 5.997813960031526,
+          "outside_frequency_window": true,
+          "open_channel_count": 52,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -2,
+          "physical_omega_a_over_c": -11.42365150669948,
+          "reference_energy_weight": 1.7784330128529745e-18,
+          "frozen_model_radiation_power": 3.0678206594401773e-25,
+          "negative_frequency": true,
+          "magnitude_detuning": 3.997813960031527,
+          "outside_frequency_window": true,
+          "open_channel_count": 36,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -1,
+          "physical_omega_a_over_c": -6.852192225479089,
+          "reference_energy_weight": 1.3822536691175745e-10,
+          "frozen_model_radiation_power": 7.009043625114187e-18,
+          "negative_frequency": true,
+          "magnitude_detuning": 1.9978139600315272,
+          "outside_frequency_window": true,
+          "open_channel_count": 20,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 0,
+          "physical_omega_a_over_c": -2.2807329442586988,
+          "reference_energy_weight": 0.9993920290873767,
+          "frozen_model_radiation_power": 4.466577620363432e-09,
+          "negative_frequency": true,
+          "magnitude_detuning": 0.0021860399684727264,
+          "outside_frequency_window": false,
+          "open_channel_count": 4,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 1,
+          "physical_omega_a_over_c": 2.290726336961692,
+          "reference_energy_weight": 0.0006079707741702589,
+          "frozen_model_radiation_power": 6.201297068998403e-09,
+          "negative_frequency": false,
+          "magnitude_detuning": 0.0021860399684727264,
+          "outside_frequency_window": false,
+          "open_channel_count": 4,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 2,
+          "physical_omega_a_over_c": 6.8621856181820835,
+          "reference_energy_weight": 2.275636864289674e-13,
+          "frozen_model_radiation_power": 4.247445172091019e-18,
+          "negative_frequency": false,
+          "magnitude_detuning": 2.0021860399684726,
+          "outside_frequency_window": true,
+          "open_channel_count": 20,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 3,
+          "physical_omega_a_over_c": 11.433644899402475,
+          "reference_energy_weight": 1.0494901096055952e-21,
+          "frozen_model_radiation_power": 1.9293925811448548e-26,
+          "negative_frequency": false,
+          "magnitude_detuning": 4.002186039968473,
+          "outside_frequency_window": true,
+          "open_channel_count": 36,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        }
+      ],
+      "notes": [
+        "Weights use a fixed reference stiffness, not the full physical time-dependent energy metric",
+        "Negative-frequency amplitudes require a validated reality/retarded map; abs(frequency) only diagnoses geometric thresholds",
+        "Zero output in a dark mode does not certify unrepresented channels",
+        "Only diffraction orders within the native spatial truncation are inspected",
+        "kz=0 is a threshold, not a safely propagating channel; no threshold self-energy is computed"
+      ]
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY_NOT_FREQUENCY_DEPENDENT_RADIATION_VALIDATION",
+      "branch_index": 18,
+      "frequency_window": 0.05,
+      "negative_frequency_weight": 0.9993787005073211,
+      "outside_frequency_window_weight": 3.8154873178543934e-10,
+      "changed_channel_set_weight": 3.8154873178543934e-10,
+      "near_diffraction_threshold_weight": 0.0,
+      "significant_changed_channel_harmonics": [],
+      "frozen_total_power": 1.0740998031683054e-05,
+      "sidebands": [
+        {
+          "harmonic": -3,
+          "physical_omega_a_over_c": -16.00510397809726,
+          "reference_energy_weight": 8.586272254764176e-23,
+          "frozen_model_radiation_power": 1.8090826266634182e-27,
+          "negative_frequency": true,
+          "magnitude_detuning": 6.002185951364115,
+          "outside_frequency_window": true,
+          "open_channel_count": 52,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -2,
+          "physical_omega_a_over_c": -11.433644696876868,
+          "reference_energy_weight": 1.6121768755264477e-18,
+          "frozen_model_radiation_power": 3.2782942207992146e-23,
+          "negative_frequency": true,
+          "magnitude_detuning": 4.002185951364115,
+          "outside_frequency_window": true,
+          "open_channel_count": 36,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -1,
+          "physical_omega_a_over_c": -6.862185415656477,
+          "reference_energy_weight": 3.8144363361595767e-10,
+          "frozen_model_radiation_power": 7.363242159127486e-15,
+          "negative_frequency": true,
+          "magnitude_detuning": 2.002185951364116,
+          "outside_frequency_window": true,
+          "open_channel_count": 20,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 0,
+          "physical_omega_a_over_c": -2.290726134436087,
+          "reference_energy_weight": 0.9993787001258775,
+          "frozen_model_radiation_power": 1.0740391111298396e-05,
+          "negative_frequency": true,
+          "magnitude_detuning": 0.0021859513641156857,
+          "outside_frequency_window": false,
+          "open_channel_count": 4,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 1,
+          "physical_omega_a_over_c": 2.280733146784304,
+          "reference_energy_weight": 0.0006212994925737372,
+          "frozen_model_radiation_power": 6.069130209225648e-10,
+          "negative_frequency": false,
+          "magnitude_detuning": 0.0021859513641156857,
+          "outside_frequency_window": false,
+          "open_channel_count": 4,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 2,
+          "physical_omega_a_over_c": 6.852192428004695,
+          "reference_energy_weight": 1.0509655568277924e-13,
+          "frozen_model_radiation_power": 4.923606726111535e-19,
+          "negative_frequency": false,
+          "magnitude_detuning": 1.9978140486358844,
+          "outside_frequency_window": true,
+          "open_channel_count": 20,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 3,
+          "physical_omega_a_over_c": 11.423651709225087,
+          "reference_energy_weight": 1.5361564719772238e-21,
+          "frozen_model_radiation_power": 1.0092280398777217e-26,
+          "negative_frequency": false,
+          "magnitude_detuning": 3.9978140486358846,
+          "outside_frequency_window": true,
+          "open_channel_count": 36,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        }
+      ],
+      "notes": [
+        "Weights use a fixed reference stiffness, not the full physical time-dependent energy metric",
+        "Negative-frequency amplitudes require a validated reality/retarded map; abs(frequency) only diagnoses geometric thresholds",
+        "Zero output in a dark mode does not certify unrepresented channels",
+        "Only diffraction orders within the native spatial truncation are inspected",
+        "kz=0 is a threshold, not a safely propagating channel; no threshold self-energy is computed"
+      ]
+    },
+    {
+      "status": "DIAGNOSTIC_ONLY_NOT_FREQUENCY_DEPENDENT_RADIATION_VALIDATION",
+      "branch_index": 13,
+      "frequency_window": 0.05,
+      "negative_frequency_weight": 0.0006212994928747247,
+      "outside_frequency_window_weight": 3.81548731780653e-10,
+      "changed_channel_set_weight": 3.81548731780653e-10,
+      "near_diffraction_threshold_weight": 0.0,
+      "significant_changed_channel_harmonics": [],
+      "frozen_total_power": 1.0740998031680857e-05,
+      "sidebands": [
+        {
+          "harmonic": -3,
+          "physical_omega_a_over_c": -11.423651709225082,
+          "reference_energy_weight": 1.5361581704279564e-21,
+          "frozen_model_radiation_power": 1.0092313927785254e-26,
+          "negative_frequency": true,
+          "magnitude_detuning": 3.9978140486358824,
+          "outside_frequency_window": true,
+          "open_channel_count": 36,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -2,
+          "physical_omega_a_over_c": -6.852192428004693,
+          "reference_energy_weight": 1.0509655571067532e-13,
+          "frozen_model_radiation_power": 4.923606722924363e-19,
+          "negative_frequency": true,
+          "magnitude_detuning": 1.9978140486358835,
+          "outside_frequency_window": true,
+          "open_channel_count": 20,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": -1,
+          "physical_omega_a_over_c": -2.2807331467843017,
+          "reference_energy_weight": 0.0006212994927696281,
+          "frozen_model_radiation_power": 6.069130209285198e-10,
+          "negative_frequency": true,
+          "magnitude_detuning": 0.002185951364116657,
+          "outside_frequency_window": false,
+          "open_channel_count": 4,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 0,
+          "physical_omega_a_over_c": 2.290726134436089,
+          "reference_energy_weight": 0.9993787001256818,
+          "frozen_model_radiation_power": 1.0740391111296194e-05,
+          "negative_frequency": false,
+          "magnitude_detuning": 0.002185951364116657,
+          "outside_frequency_window": false,
+          "open_channel_count": 4,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": false,
+          "significant": true
+        },
+        {
+          "harmonic": 1,
+          "physical_omega_a_over_c": 6.86218541565648,
+          "reference_energy_weight": 3.814436336111434e-10,
+          "frozen_model_radiation_power": 7.363242159015235e-15,
+          "negative_frequency": false,
+          "magnitude_detuning": 2.0021859513641163,
+          "outside_frequency_window": true,
+          "open_channel_count": 20,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 2,
+          "physical_omega_a_over_c": 11.433644696876872,
+          "reference_energy_weight": 1.612176864653125e-18,
+          "frozen_model_radiation_power": 3.278294037435627e-23,
+          "negative_frequency": false,
+          "magnitude_detuning": 4.002185951364117,
+          "outside_frequency_window": true,
+          "open_channel_count": 36,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        },
+        {
+          "harmonic": 3,
+          "physical_omega_a_over_c": 16.005103978097264,
+          "reference_energy_weight": 8.586361754218572e-23,
+          "frozen_model_radiation_power": 1.8091018511316096e-27,
+          "negative_frequency": false,
+          "magnitude_detuning": 6.002185951364117,
+          "outside_frequency_window": true,
+          "open_channel_count": 52,
+          "near_diffraction_threshold": false,
+          "channel_set_changed": true,
+          "significant": false
+        }
+      ],
+      "notes": [
+        "Weights use a fixed reference stiffness, not the full physical time-dependent energy metric",
+        "Negative-frequency amplitudes require a validated reality/retarded map; abs(frequency) only diagnoses geometric thresholds",
+        "Zero output in a dark mode does not certify unrepresented channels",
+        "Only diffraction orders within the native spatial truncation are inspected",
+        "kz=0 is a threshold, not a safely propagating channel; no threshold self-energy is computed"
+      ]
+    }
+  ],
+  "operator_fourier_check": {
+    "grids": [
+      {
+        "samples": 64,
+        "discarded_relative_tail": 3.8657909489985065e-17,
+        "coefficient_change": 0.0
+      },
+      {
+        "samples": 128,
+        "discarded_relative_tail": 4.1410456389469125e-17,
+        "coefficient_change": 1.2828417583491075e-17
+      }
+    ],
+    "shifted_time_relative_error": 5.2913256705755537e-17,
+    "tolerance": 1e-09,
+    "scope": "Sampled operator Fourier convergence; separate from state-sideband boundary convergence"
+  },
+  "spectrum_basis_id": "019615986f5712e39d2a76ed330a8b4e3fcb415b0e94abf726be4c8e8e08e492",
+  "maximum_growth_over_drive": 4.289333310274649e-09,
+  "frequency_window_passed": true,
+  "independent_period": {
+    "max_multiplier_error": 6.818807226358987e-12,
+    "physical_count": 4,
+    "scope": "Finite frozen-channel model only"
+  },
+  "power_balance": [
+    {
+      "mean_energy": 0.19930146578458835,
+      "mean_pump_power": 1.2377615503793902e-08,
+      "mean_radiation_power": 1.066787470031617e-08,
+      "growth_energy_rate": 1.7097408319527963e-09,
+      "absolute_balance_residual": 2.847506413666759e-17,
+      "relative_balance_residual": 2.3005290581162108e-09
+    },
+    {
+      "mean_energy": 0.1993014657845884,
+      "mean_pump_power": 1.2377615503989566e-08,
+      "mean_radiation_power": 1.0667874700618324e-08,
+      "growth_energy_rate": 1.7097408044145417e-09,
+      "absolute_balance_residual": 1.043299125170523e-18,
+      "relative_balance_residual": 8.42891851693281e-11
+    },
+    {
+      "mean_energy": 0.2006987822003672,
+      "mean_pump_power": -1.216851635595903e-08,
+      "mean_radiation_power": 1.0740998031683054e-05,
+      "growth_energy_rate": -1.0753166548133424e-05,
+      "absolute_balance_residual": 9.441029230096432e-17,
+      "relative_balance_residual": 8.77976658116138e-12
+    },
+    {
+      "mean_energy": 0.20069878220036663,
+      "mean_pump_power": -1.2168516357002575e-08,
+      "mean_radiation_power": 1.0740998031680854e-05,
+      "growth_energy_rate": -1.0753166548024372e-05,
+      "absolute_balance_residual": 1.3484764520288461e-17,
+      "relative_balance_residual": 1.2540273100081347e-12
+    }
+  ],
+  "radiation_assessment": {
+    "status": "FIXED_STATE_NATIVE_RADIATION_ASSESSMENT_NOT_CORRECTED_POLES",
+    "branches": [
+      {
+        "index": 15,
+        "frequency_over_drive": [
+          0.498906980015764,
+          4.289333310274649e-09
+        ],
+        "status": "ASSESSED_FIXED_STATE",
+        "power_balance": {
+          "mean_energy": 0.19930146578458835,
+          "mean_pump_power": 1.2377615503793902e-08,
+          "mean_radiation_power": 1.066787470031617e-08,
+          "growth_energy_rate": 1.7097408319527963e-09,
+          "absolute_balance_residual": 2.847506413666759e-17,
+          "relative_balance_residual": 2.3005290581162108e-09
+        },
+        "sidebands": [
+          {
+            "harmonic": -3,
+            "physical_omega_a_over_c": -11.433644899402472,
+            "velocity_norm_weight": 2.018001925886235e-21,
+            "frozen_power": 1.9294244196023936e-26,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.037318177810563e-26,
+            "channel_count": 36,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ]
+            ],
+            "damping_change_operator_norm": 1.3778246384099987e-05
+          },
+          {
+            "harmonic": -2,
+            "physical_omega_a_over_c": -6.862185618182082,
+            "velocity_norm_weight": 4.094925483435507e-13,
+            "frozen_power": 4.247445172316657e-18,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 3.795104855443549e-18,
+            "channel_count": 20,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.7588729318094515e-05
+          },
+          {
+            "harmonic": -1,
+            "physical_omega_a_over_c": -2.290726336961691,
+            "velocity_norm_weight": 0.0006080797679033009,
+            "frozen_power": 6.201297068709893e-09,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 6.176767662242939e-09,
+            "channel_count": 4,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.0594412898195148e-07
+          },
+          {
+            "harmonic": 0,
+            "physical_omega_a_over_c": 2.2807329442587005,
+            "velocity_norm_weight": 0.9993919199828174,
+            "frozen_power": 4.4665776203497835e-09,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 4.4841396653559104e-09,
+            "channel_count": 4,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.0660671384670096e-07
+          },
+          {
+            "harmonic": 1,
+            "physical_omega_a_over_c": 6.852192225479091,
+            "velocity_norm_weight": 2.4886970650841567e-10,
+            "frozen_power": 7.009043624358091e-18,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.7301121682894183e-15,
+            "channel_count": 20,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.7426526652951903e-05
+          },
+          {
+            "harmonic": 2,
+            "physical_omega_a_over_c": 11.423651506699482,
+            "velocity_norm_weight": 3.4203877641723628e-18,
+            "frozen_power": 3.0678219372378175e-25,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.6307721475212724e-23,
+            "channel_count": 36,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ]
+            ],
+            "damping_change_operator_norm": 1.3801075702863285e-05
+          },
+          {
+            "harmonic": 3,
+            "physical_omega_a_over_c": 15.995110787919874,
+            "velocity_norm_weight": 1.5987051371017682e-25,
+            "frozen_power": 6.045716524766422e-31,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 4.451532147747475e-31,
+            "channel_count": 52,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                12.566370614359172,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.9334807648352753e-05
+          }
+        ],
+        "all_nonzero_velocity_sidebands_evaluated": true,
+        "sampled_frozen_power": 1.0667874700316166e-08,
+        "sampled_frequency_resolved_power": 1.0660909061506139e-08,
+        "sampled_power_change": -6.965638810027528e-12,
+        "unresolved_velocity_weight": 0.0,
+        "absolute_change_over_absolute_net_power": 0.004074090458535555,
+        "fixed_state_net_power_after_replacement": 1.7167064707628238e-09,
+        "fixed_state_growth_sign_preserved": true,
+        "net_power_sign_resolution": 2.832244174791588e-15,
+        "original_net_sign_resolved": true,
+        "within_requested_power_tolerance": null
+      },
+      {
+        "index": 16,
+        "frequency_over_drive": [
+          -0.4989069800157636,
+          4.289333241187714e-09
+        ],
+        "status": "ASSESSED_FIXED_STATE",
+        "power_balance": {
+          "mean_energy": 0.1993014657845884,
+          "mean_pump_power": 1.2377615503989566e-08,
+          "mean_radiation_power": 1.0667874700618324e-08,
+          "growth_energy_rate": 1.7097408044145417e-09,
+          "absolute_balance_residual": 1.043299125170523e-18,
+          "relative_balance_residual": 8.42891851693281e-11
+        },
+        "sidebands": [
+          {
+            "harmonic": -3,
+            "physical_omega_a_over_c": -15.99511078791987,
+            "velocity_norm_weight": 1.5986982122878563e-25,
+            "frozen_power": 6.035263304365541e-31,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 4.45123802831894e-31,
+            "channel_count": 52,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                12.566370614359172,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.9334807648352712e-05
+          },
+          {
+            "harmonic": -2,
+            "physical_omega_a_over_c": -11.42365150669948,
+            "velocity_norm_weight": 3.4203877036171494e-18,
+            "frozen_power": 3.0678206594401764e-25,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.630772118079981e-23,
+            "channel_count": 36,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ]
+            ],
+            "damping_change_operator_norm": 1.3801075702863375e-05
+          },
+          {
+            "harmonic": -1,
+            "physical_omega_a_over_c": -6.852192225479089,
+            "velocity_norm_weight": 2.4886970651396145e-10,
+            "frozen_power": 7.009043625114185e-18,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.7301121683275715e-15,
+            "channel_count": 20,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.7426526652952174e-05
+          },
+          {
+            "harmonic": 0,
+            "physical_omega_a_over_c": -2.2807329442586988,
+            "velocity_norm_weight": 0.9993919199827896,
+            "frozen_power": 4.466577620363431e-09,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 4.484139665369616e-09,
+            "channel_count": 4,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.0660671384674502e-07
+          },
+          {
+            "harmonic": 1,
+            "physical_omega_a_over_c": 2.290726336961692,
+            "velocity_norm_weight": 0.000608079767931261,
+            "frozen_power": 6.201297068998401e-09,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 6.176767662530304e-09,
+            "channel_count": 4,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.0594412898196503e-07
+          },
+          {
+            "harmonic": 2,
+            "physical_omega_a_over_c": 6.8621856181820835,
+            "velocity_norm_weight": 4.0949254832425644e-13,
+            "frozen_power": 4.247445172091019e-18,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 3.7951048552593156e-18,
+            "channel_count": 20,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.7588729318094793e-05
+          },
+          {
+            "harmonic": 3,
+            "physical_omega_a_over_c": 11.433644899402475,
+            "velocity_norm_weight": 2.017979271579441e-21,
+            "frozen_power": 1.929392581144855e-26,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.037306132021256e-26,
+            "channel_count": 36,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ]
+            ],
+            "damping_change_operator_norm": 1.3778246384099982e-05
+          }
+        ],
+        "all_nonzero_velocity_sidebands_evaluated": true,
+        "sampled_frozen_power": 1.0667874700618322e-08,
+        "sampled_frequency_resolved_power": 1.066090906180721e-08,
+        "sampled_power_change": -6.965638811112789e-12,
+        "unresolved_velocity_weight": 0.0,
+        "absolute_change_over_absolute_net_power": 0.004074090524790393,
+        "fixed_state_net_power_after_replacement": 1.7167064432256545e-09,
+        "fixed_state_growth_sign_preserved": true,
+        "net_power_sign_resolution": 2.832244174791589e-15,
+        "original_net_sign_resolved": true,
+        "within_requested_power_tolerance": null
+      },
+      {
+        "index": 18,
+        "frequency_over_drive": [
+          -0.5010929756820578,
+          -2.6789316881350143e-05
+        ],
+        "status": "ASSESSED_FIXED_STATE",
+        "power_balance": {
+          "mean_energy": 0.2006987822003672,
+          "mean_pump_power": -1.216851635595903e-08,
+          "mean_radiation_power": 1.0740998031683054e-05,
+          "growth_energy_rate": -1.0753166548133424e-05,
+          "absolute_balance_residual": 9.441029230096432e-17,
+          "relative_balance_residual": 8.77976658116138e-12
+        },
+        "sidebands": [
+          {
+            "harmonic": -3,
+            "physical_omega_a_over_c": -16.00510397809726,
+            "velocity_norm_weight": 1.6826957419639918e-22,
+            "frozen_power": 1.8090826266634175e-27,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 5.0410915691352585e-28,
+            "channel_count": 52,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                12.566370614359172,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.9321342802614915e-05
+          },
+          {
+            "harmonic": -2,
+            "physical_omega_a_over_c": -11.433644696876868,
+            "velocity_norm_weight": 3.0997895489458116e-18,
+            "frozen_power": 3.2782942207992134e-23,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.616068112170129e-23,
+            "channel_count": 36,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ]
+            ],
+            "damping_change_operator_norm": 1.3778246842375949e-05
+          },
+          {
+            "harmonic": -1,
+            "physical_omega_a_over_c": -6.862185415656477,
+            "velocity_norm_weight": 6.863710962807127e-10,
+            "frozen_power": 7.363242159127485e-15,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 6.449774957103094e-15,
+            "channel_count": 20,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.758872605077202e-05
+          },
+          {
+            "harmonic": 0,
+            "physical_omega_a_over_c": -2.290726134436087,
+            "velocity_norm_weight": 0.9993789849092292,
+            "frozen_power": 1.0740391111298396e-05,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.0697910621229353e-05,
+            "channel_count": 4,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.0593984822027301e-07
+          },
+          {
+            "harmonic": 1,
+            "physical_omega_a_over_c": 2.280733146784304,
+            "velocity_norm_weight": 0.0006210144042105232,
+            "frozen_power": 6.069130209225645e-10,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 6.093302751904156e-10,
+            "channel_count": 4,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.0660237937415498e-07
+          },
+          {
+            "harmonic": 2,
+            "physical_omega_a_over_c": 6.852192428004695,
+            "velocity_norm_weight": 1.8917786386818484e-13,
+            "frozen_power": 4.923606726111534e-19,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.4285159387934407e-18,
+            "channel_count": 20,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.742652996011463e-05
+          },
+          {
+            "harmonic": 3,
+            "physical_omega_a_over_c": 11.423651709225087,
+            "velocity_norm_weight": 2.954073293533945e-21,
+            "frozen_power": 1.0092280398777211e-26,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.4554267023570485e-26,
+            "channel_count": 36,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ]
+            ],
+            "damping_change_operator_norm": 1.380107523579886e-05
+          }
+        ],
+        "all_nonzero_velocity_sidebands_evaluated": true,
+        "sampled_frozen_power": 1.0740998031683053e-05,
+        "sampled_frequency_resolved_power": 1.0698519957955747e-05,
+        "sampled_power_change": -4.24780737273061e-08,
+        "unresolved_velocity_weight": 0.0,
+        "absolute_change_over_absolute_net_power": 0.0039502851124982915,
+        "fixed_state_net_power_after_replacement": -1.0710688474406118e-05,
+        "fixed_state_growth_sign_preserved": true,
+        "net_power_sign_resolution": 2.852101235367388e-15,
+        "original_net_sign_resolved": true,
+        "within_requested_power_tolerance": null
+      },
+      {
+        "index": 13,
+        "frequency_over_drive": [
+          0.5010929756820584,
+          -2.6789316881078534e-05
+        ],
+        "status": "ASSESSED_FIXED_STATE",
+        "power_balance": {
+          "mean_energy": 0.20069878220036663,
+          "mean_pump_power": -1.2168516357002575e-08,
+          "mean_radiation_power": 1.0740998031680854e-05,
+          "growth_energy_rate": -1.0753166548024372e-05,
+          "absolute_balance_residual": 1.3484764520288461e-17,
+          "relative_balance_residual": 1.2540273100081347e-12
+        },
+        "sidebands": [
+          {
+            "harmonic": -3,
+            "physical_omega_a_over_c": -11.423651709225082,
+            "velocity_norm_weight": 2.954074168808632e-21,
+            "frozen_power": 1.0092313927785254e-26,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.4554272531356484e-26,
+            "channel_count": 36,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ]
+            ],
+            "damping_change_operator_norm": 1.3801075235798884e-05
+          },
+          {
+            "harmonic": -2,
+            "physical_omega_a_over_c": -6.852192428004693,
+            "velocity_norm_weight": 1.891778639281557e-13,
+            "frozen_power": 4.923606722924362e-19,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.428515939143114e-18,
+            "channel_count": 20,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.7426529960114406e-05
+          },
+          {
+            "harmonic": -1,
+            "physical_omega_a_over_c": -2.2807331467843017,
+            "velocity_norm_weight": 0.0006210144044064169,
+            "frozen_power": 6.069130209285199e-10,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 6.093302751963953e-10,
+            "channel_count": 4,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.0660237937414822e-07
+          },
+          {
+            "harmonic": 0,
+            "physical_omega_a_over_c": 2.290726134436089,
+            "velocity_norm_weight": 0.9993789849090333,
+            "frozen_power": 1.074039111129619e-05,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.0697910621227157e-05,
+            "channel_count": 4,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.0593984822027301e-07
+          },
+          {
+            "harmonic": 1,
+            "physical_omega_a_over_c": 6.86218541565648,
+            "velocity_norm_weight": 6.863710962723667e-10,
+            "frozen_power": 7.363242159015233e-15,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 6.449774957019501e-15,
+            "channel_count": 20,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.7588726050772118e-05
+          },
+          {
+            "harmonic": 2,
+            "physical_omega_a_over_c": 11.433644696876872,
+            "velocity_norm_weight": 3.0997894119941497e-18,
+            "frozen_power": 3.2782940374356264e-23,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 1.6160680392290477e-23,
+            "channel_count": 36,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ]
+            ],
+            "damping_change_operator_norm": 1.3778246842375991e-05
+          },
+          {
+            "harmonic": 3,
+            "physical_omega_a_over_c": 16.005103978097264,
+            "velocity_norm_weight": 1.6827137839614788e-22,
+            "frozen_power": 1.8091018511316096e-27,
+            "status": "SIGNED_REAL_AXIS_REEVALUATED",
+            "resolved_power": 5.041146367414261e-28,
+            "channel_count": 52,
+            "channel_labels": [
+              [
+                "l",
+                "te",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "te",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "l",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "l",
+                "tm",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "te",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "te",
+                12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -12.566370614359172,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                -6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -12.566370614359172
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                0.0,
+                12.566370614359172
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                -6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                0.0
+              ],
+              [
+                "u",
+                "tm",
+                6.283185307179586,
+                6.283185307179586
+              ],
+              [
+                "u",
+                "tm",
+                12.566370614359172,
+                0.0
+              ]
+            ],
+            "damping_change_operator_norm": 1.932134280261486e-05
+          }
+        ],
+        "all_nonzero_velocity_sidebands_evaluated": true,
+        "sampled_frozen_power": 1.0740998031680854e-05,
+        "sampled_frequency_resolved_power": 1.0698519957953558e-05,
+        "sampled_power_change": -4.247807372729594e-08,
+        "unresolved_velocity_weight": 0.0,
+        "absolute_change_over_absolute_net_power": 0.003950285112537407,
+        "fixed_state_net_power_after_replacement": -1.0710688474297076e-05,
+        "fixed_state_growth_sign_preserved": true,
+        "net_power_sign_resolution": 2.85210123536738e-15,
+        "original_net_sign_resolved": true,
+        "within_requested_power_tolerance": null
+      }
+    ],
+    "window_policy": "trial",
+    "absolute_power_tolerance": null,
+    "net_power_tolerance": null,
+    "sampler_metadata": {
+      "plus_basis_id": "019615986f5712e39d2a76ed330a8b4e3fcb415b0e94abf726be4c8e8e08e492",
+      "minus_basis_id": "d892a33909e2835cd38baa9e509caa27ee06efc93c6704c05383308702a0bb04",
+      "signed_mapping": "measured",
+      "reality_map": {
+        "verified_from_physical_fields": true,
+        "least_squares_map": [
+          [
+            [
+              0.8319816403640656,
+              -0.5548031633805978
+            ],
+            [
+              -1.2895377321274362e-14,
+              -1.720667736111471e-14
+            ]
+          ],
+          [
+            [
+              -1.3140133056070106e-14,
+              -1.7497044458977422e-14
+            ],
+            [
+              0.7649874192298709,
+              -0.6440452223408093
+            ]
+          ]
+        ],
+        "least_squares_field_residual": 1.4832446138395407e-13,
+        "unitary_field_residual": 1.483245843640447e-13,
+        "raw_map_unitarity_residual": 8.061272048903475e-16,
+        "polar_map_relative_change": 5.588601664978628e-16,
+        "metric_isometry_residual": 5.28573376363995e-16,
+        "frequency_intertwining_relative_residual": 9.567334555989633e-17,
+        "principal_overlaps_squared": [
+          1.0,
+          1.0
+        ],
+        "field_rank_ratios": [
+          0.9999999978528491,
+          0.9999999978528491
+        ],
+        "field_Gram_condition_numbers": [
+          1.0000000042943018,
+          1.0000000042943018
+        ],
+        "plus_finite_window_Gram_identity_error": 7.124021154435812e-09,
+        "minus_finite_window_Gram_identity_error": 7.1240211182165105e-09,
+        "field_tolerance": 1e-06,
+        "unitary_tolerance": 1e-06,
+        "spectral_tolerance": 1e-07,
+        "rank_tolerance": 1e-09,
+        "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+        "not_a_whitened_coordinate_map": true,
+        "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+        "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+        "minus_G_index_for_each_plus_G": [
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "plus_kind": 0,
+        "minus_kind": 0,
+        "plus_modes": [
+          2,
+          3
+        ],
+        "minus_modes": [
+          2,
+          3
+        ],
+        "plus_native_state_hash": "fc1cbdf2096cf532a5bc3c6b7ab30d8c73c09498361a67b2097f2e2d438aa4fc",
+        "minus_native_state_hash": "751ec5ce65058688861c5dac1c96fc4451aea3319ad36d1b756995b5de6e8b23",
+        "physical_geometry_sha256": "8595b6d1e5f1745ff46314dc684f676851816940e303f2eba2d8104b63d538cd"
+      }
+    },
+    "scope": "Actual signed real-axis dissipative power on computed states; not reactive shift, updated pole or physical SI scattering",
+    "limitations": [
+      "All contributions use the native weak-radiation normalization in the supplied modal coordinates",
+      "Missing negative-k maps or exact thresholds remain explicit unresolved samples",
+      "A fixed-state margin cannot bound eigenvector/reactive changes or near-EP sensitivity"
+    ]
+  },
+  "status": "SOLVED_LOCAL_APPROXIMATE_FROZEN_SLAB_MODEL",
+  "amplitude": 0.08,
+  "strict_status": "SOLVED_LOCAL_SCOPED_FROZEN_SLAB_MODEL",
+  "strict_reason": null,
+  "strict_reason_category": null,
+  "quasifrequencies_over_drive": [
+    [
+      0.498906980015764,
+      4.289333310274649e-09
+    ],
+    [
+      -0.4989069800157636,
+      4.289333241187714e-09
+    ],
+    [
+      -0.5010929756820578,
+      -2.6789316881350143e-05
+    ],
+    [
+      0.5010929756820584,
+      -2.6789316881078534e-05
+    ]
+  ],
+  "branch_power_changes": [
+    {
+      "index": 15,
+      "status": "ASSESSED_FIXED_STATE",
+      "sampled_power_change": -6.965638810027528e-12,
+      "absolute_change_over_absolute_net_power": 0.004074090458535555,
+      "fixed_state_growth_sign_preserved": true,
+      "unresolved_velocity_weight": 0.0
+    },
+    {
+      "index": 16,
+      "status": "ASSESSED_FIXED_STATE",
+      "sampled_power_change": -6.965638811112789e-12,
+      "absolute_change_over_absolute_net_power": 0.004074090524790393,
+      "fixed_state_growth_sign_preserved": true,
+      "unresolved_velocity_weight": 0.0
+    },
+    {
+      "index": 18,
+      "status": "ASSESSED_FIXED_STATE",
+      "sampled_power_change": -4.24780737273061e-08,
+      "absolute_change_over_absolute_net_power": 0.0039502851124982915,
+      "fixed_state_growth_sign_preserved": true,
+      "unresolved_velocity_weight": 0.0
+    },
+    {
+      "index": 13,
+      "status": "ASSESSED_FIXED_STATE",
+      "sampled_power_change": -4.247807372729594e-08,
+      "absolute_change_over_absolute_net_power": 0.003950285112537407,
+      "fixed_state_growth_sign_preserved": true,
+      "unresolved_velocity_weight": 0.0
+    }
+  ]
+}

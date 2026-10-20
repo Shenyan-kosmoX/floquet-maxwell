@@ -1,0 +1,28 @@
+{
+  "replacements": {
+    "f0388_q1": "f0388_q1_yexact",
+    "f0408_q1": "f0408_q1_yexact"
+  },
+  "selection_reason": "Fresh r32 weak-conversion validation: material/points/Legume seed resampled; tol1e-6 L10 max500 chosen after explicit L20 carrier breakdown. No side-frequency incident data or finite Floquet scattering matrix is claimed.",
+  "completed": true,
+  "same_source_basis_sha256": "1c486d4b2b222352039e10330cff878d7c4539147a939cb32bed6d228bacff5b",
+  "selected_tolerance": 1e-06,
+  "selected_L": 10,
+  "scope": "weak first-order only at .388/.408 from .398 pump",
+  "basis_file": "basis_yexact.npz",
+  "basis_summary_file": "basis_yexact_summary.json",
+  "source_projection_reason": "Exact actual material and source y-even parity removes tiny numerical forbidden-sector contamination before sampling; original Q1 and failed response retained; Q0/Q2 unchanged bytewise.",
+  "selected_response_sha256": {
+    "carrier_even": "4bd71022e55d2b2671af51973f5a74244d5427dd581d4e0fd946e1e42b86be17",
+    "carrier_odd": "a7c0579e968cd4b4ef5978585db4123625ce5f19b95faf439291f4ccefeb4b09",
+    "empty_carrier_lattice": "0c9f3596715df05cfef9dffc2f30b9d8203df13b69bee3e4207532d2022ec287",
+    "born_f0388": "52f1bb32db00b8f6c497ffbe7777f9362e9e17d3a9737936d7d3b4a557c7e15a",
+    "born_f0408": "20ccb3b4f8c32821265a211cc796e45788dae55e93560e379440539c55cac656",
+    "f0388_q0": "cb0a723fed32454c679658682a190629c0d4257aa42643bff7296b00b4f6bdff",
+    "f0388_q1_yexact": "407bc83140ae90b0923e1f0cc65e2fb1ddcf08523902fc60e0162d20aa2eb823",
+    "f0388_q2": "c52b8ae2f60222fe78c319861ad60ecfe44e1d12a6105e81d0d1a1e4194adf49",
+    "f0408_q0": "8d43e1c60c3269e2d7af7ad4d25f8da9a56bffcac05ac54f42f1d70d24f12ae7",
+    "f0408_q1_yexact": "04a57ddbe5433c702ebe7b3696ac92368ad227d8a503ecf57032b3732685aac1",
+    "f0408_q2": "7c7ab1e85c8ffda3e258e90ae0da068d88144f6268054e3097e1901a89d6f6f0"
+  }
+}

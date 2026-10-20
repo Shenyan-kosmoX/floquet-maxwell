@@ -1,0 +1,661 @@
+{
+  "schema": "native-slab-projection-v2",
+  "basis_id": "a2fec5a4c9045ec3121b325bcf8b3d42a9b7493999787b0edc256a3278d1c563",
+  "physical_signature": "0ad9b5ed36f0f6eb480c083e8514763eff726a4605e63cb296b892c7eff2bc19",
+  "arrays_sha256": "510cf2e214008ded94620f29d550adeff00db61e19847481dd14a22d9e286119",
+  "physical_description": {
+    "schema": "native-legume-physical-state-v1",
+    "lattice": {
+      "class": "legume.phc.lattice.Lattice",
+      "parameters": {
+        "a1": {
+          "array_shape": [
+            2
+          ],
+          "values": [
+            {
+              "integer": "1"
+            },
+            {
+              "integer": "0"
+            }
+          ]
+        },
+        "a2": {
+          "array_shape": [
+            2
+          ],
+          "values": [
+            {
+              "integer": "0"
+            },
+            {
+              "integer": "1"
+            }
+          ]
+        },
+        "b1": {
+          "array_shape": [
+            2
+          ],
+          "values": [
+            {
+              "real_hex": "0x1.921fb54442d18p+2"
+            },
+            {
+              "real_hex": "0x0.0p+0"
+            }
+          ]
+        },
+        "b2": {
+          "array_shape": [
+            2
+          ],
+          "values": [
+            {
+              "real_hex": "0x0.0p+0"
+            },
+            {
+              "real_hex": "0x1.921fb54442d18p+2"
+            }
+          ]
+        },
+        "bz_area": {
+          "real_hex": "0x1.3bd3cc9be45dep+5"
+        },
+        "ec_area": {
+          "real_hex": "0x1.0000000000000p+0"
+        },
+        "type": "square"
+      }
+    },
+    "layers": [
+      {
+        "class": "legume.phc.layer.ShapesLayer",
+        "parameters": {
+          "d": {
+            "real_hex": "0x1.ae147ae147ae1p-2"
+          },
+          "eps_avg": {
+            "array_shape": [],
+            "values": [
+              {
+                "real_hex": "0x1.55664611ec457p+3"
+              }
+            ]
+          },
+          "eps_b": {
+            "real_hex": "0x1.7000000000000p+3"
+          },
+          "layer_type": "shapes",
+          "z_max": {
+            "real_hex": "0x1.ae147ae147ae1p-2"
+          },
+          "z_mid": {
+            "real_hex": "0x1.ae147ae147ae1p-3"
+          },
+          "z_min": {
+            "integer": "0"
+          }
+        },
+        "shapes": [
+          {
+            "class": "legume.phc.shapes.Circle",
+            "parameters": {
+              "area": {
+                "array_shape": [
+                  1
+                ],
+                "values": [
+                  {
+                    "real_hex": "0x1.7298ebde3e663p-5"
+                  }
+                ]
+              },
+              "eps": {
+                "real_hex": "0x1.0000000000000p+0"
+              },
+              "r": {
+                "real_hex": "0x1.eb851eb851eb8p-4"
+              },
+              "x_cent": {
+                "real_hex": "-0x1.c28f5c28f5c29p-3"
+              },
+              "y_cent": {
+                "real_hex": "0x0.0p+0"
+              }
+            }
+          },
+          {
+            "class": "legume.phc.shapes.Ellipse",
+            "parameters": {
+              "area": {
+                "array_shape": [
+                  1
+                ],
+                "values": [
+                  {
+                    "real_hex": "0x1.15f2b0e6aeccap-5"
+                  }
+                ]
+              },
+              "eps": {
+                "real_hex": "0x1.0000000000000p+0"
+              },
+              "phi": {
+                "integer": "0"
+              },
+              "rx": {
+                "real_hex": "0x1.eb851eb851eb8p-4"
+              },
+              "ry": {
+                "real_hex": "0x1.70a3d70a3d70ap-4"
+              },
+              "x_cent": {
+                "real_hex": "0x1.c28f5c28f5c29p-3"
+              },
+              "y_cent": {
+                "real_hex": "0x0.0p+0"
+              }
+            }
+          }
+        ],
+        "lattice": {
+          "class": "legume.phc.lattice.Lattice",
+          "parameters": {
+            "a1": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "integer": "1"
+                },
+                {
+                  "integer": "0"
+                }
+              ]
+            },
+            "a2": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "integer": "0"
+                },
+                {
+                  "integer": "1"
+                }
+              ]
+            },
+            "b1": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "real_hex": "0x1.921fb54442d18p+2"
+                },
+                {
+                  "real_hex": "0x0.0p+0"
+                }
+              ]
+            },
+            "b2": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "real_hex": "0x0.0p+0"
+                },
+                {
+                  "real_hex": "0x1.921fb54442d18p+2"
+                }
+              ]
+            },
+            "bz_area": {
+              "real_hex": "0x1.3bd3cc9be45dep+5"
+            },
+            "ec_area": {
+              "real_hex": "0x1.0000000000000p+0"
+            },
+            "type": "square"
+          }
+        }
+      },
+      {
+        "class": "legume.phc.layer.ShapesLayer",
+        "parameters": {
+          "d": {
+            "real_hex": "0x1.70a3d70a3d70ap-3"
+          },
+          "eps_avg": {
+            "array_shape": [],
+            "values": [
+              {
+                "real_hex": "0x1.71a9fbe76c8b4p+2"
+              }
+            ]
+          },
+          "eps_b": {
+            "real_hex": "0x1.8000000000000p+2"
+          },
+          "layer_type": "shapes",
+          "z_max": {
+            "real_hex": "0x1.3333333333333p-1"
+          },
+          "z_mid": {
+            "real_hex": "0x1.051eb851eb852p-1"
+          },
+          "z_min": {
+            "real_hex": "0x1.ae147ae147ae1p-2"
+          }
+        },
+        "shapes": [
+          {
+            "class": "legume.phc.shapes.Poly",
+            "parameters": {
+              "area": {
+                "array_shape": [
+                  1
+                ],
+                "values": [
+                  {
+                    "real_hex": "0x1.cac083126e97ap-5"
+                  }
+                ]
+              },
+              "eps": {
+                "real_hex": "0x1.0000000000000p+1"
+              },
+              "x_edges": {
+                "array_shape": [
+                  5
+                ],
+                "values": [
+                  {
+                    "real_hex": "-0x1.1eb851eb851ecp-3"
+                  },
+                  {
+                    "real_hex": "0x1.1eb851eb851ecp-3"
+                  },
+                  {
+                    "real_hex": "0x1.1eb851eb851ecp-3"
+                  },
+                  {
+                    "real_hex": "-0x1.1eb851eb851ecp-3"
+                  },
+                  {
+                    "real_hex": "-0x1.1eb851eb851ecp-3"
+                  }
+                ]
+              },
+              "y_edges": {
+                "array_shape": [
+                  5
+                ],
+                "values": [
+                  {
+                    "real_hex": "-0x1.999999999999ap-4"
+                  },
+                  {
+                    "real_hex": "-0x1.999999999999ap-4"
+                  },
+                  {
+                    "real_hex": "0x1.999999999999ap-4"
+                  },
+                  {
+                    "real_hex": "0x1.999999999999ap-4"
+                  },
+                  {
+                    "real_hex": "-0x1.999999999999ap-4"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "lattice": {
+          "class": "legume.phc.lattice.Lattice",
+          "parameters": {
+            "a1": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "integer": "1"
+                },
+                {
+                  "integer": "0"
+                }
+              ]
+            },
+            "a2": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "integer": "0"
+                },
+                {
+                  "integer": "1"
+                }
+              ]
+            },
+            "b1": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "real_hex": "0x1.921fb54442d18p+2"
+                },
+                {
+                  "real_hex": "0x0.0p+0"
+                }
+              ]
+            },
+            "b2": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "real_hex": "0x0.0p+0"
+                },
+                {
+                  "real_hex": "0x1.921fb54442d18p+2"
+                }
+              ]
+            },
+            "bz_area": {
+              "real_hex": "0x1.3bd3cc9be45dep+5"
+            },
+            "ec_area": {
+              "real_hex": "0x1.0000000000000p+0"
+            },
+            "type": "square"
+          }
+        }
+      }
+    ],
+    "claddings": [
+      {
+        "class": "legume.phc.layer.ShapesLayer",
+        "parameters": {
+          "d": {
+            "real_hex": "0x1.2a05f20000000p+33"
+          },
+          "eps_avg": {
+            "array_shape": [],
+            "values": [
+              {
+                "real_hex": "0x1.0000000000000p+0"
+              }
+            ]
+          },
+          "eps_b": {
+            "real_hex": "0x1.0000000000000p+0"
+          },
+          "layer_type": "shapes",
+          "z_max": {
+            "integer": "0"
+          },
+          "z_mid": {
+            "real_hex": "-0x1.2a05f20000000p+32"
+          },
+          "z_min": {
+            "real_hex": "-0x1.2a05f20000000p+33"
+          }
+        },
+        "shapes": [],
+        "lattice": {
+          "class": "legume.phc.lattice.Lattice",
+          "parameters": {
+            "a1": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "integer": "1"
+                },
+                {
+                  "integer": "0"
+                }
+              ]
+            },
+            "a2": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "integer": "0"
+                },
+                {
+                  "integer": "1"
+                }
+              ]
+            },
+            "b1": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "real_hex": "0x1.921fb54442d18p+2"
+                },
+                {
+                  "real_hex": "0x0.0p+0"
+                }
+              ]
+            },
+            "b2": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "real_hex": "0x0.0p+0"
+                },
+                {
+                  "real_hex": "0x1.921fb54442d18p+2"
+                }
+              ]
+            },
+            "bz_area": {
+              "real_hex": "0x1.3bd3cc9be45dep+5"
+            },
+            "ec_area": {
+              "real_hex": "0x1.0000000000000p+0"
+            },
+            "type": "square"
+          }
+        }
+      },
+      {
+        "class": "legume.phc.layer.ShapesLayer",
+        "parameters": {
+          "d": {
+            "real_hex": "0x1.2a05f20000000p+33"
+          },
+          "eps_avg": {
+            "array_shape": [],
+            "values": [
+              {
+                "real_hex": "0x1.0000000000000p+0"
+              }
+            ]
+          },
+          "eps_b": {
+            "real_hex": "0x1.0000000000000p+0"
+          },
+          "layer_type": "shapes",
+          "z_max": {
+            "real_hex": "0x1.2a05f20000000p+33"
+          },
+          "z_mid": {
+            "real_hex": "0x1.2a05f20000000p+32"
+          },
+          "z_min": {
+            "real_hex": "0x1.3333333333333p-1"
+          }
+        },
+        "shapes": [],
+        "lattice": {
+          "class": "legume.phc.lattice.Lattice",
+          "parameters": {
+            "a1": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "integer": "1"
+                },
+                {
+                  "integer": "0"
+                }
+              ]
+            },
+            "a2": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "integer": "0"
+                },
+                {
+                  "integer": "1"
+                }
+              ]
+            },
+            "b1": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "real_hex": "0x1.921fb54442d18p+2"
+                },
+                {
+                  "real_hex": "0x0.0p+0"
+                }
+              ]
+            },
+            "b2": {
+              "array_shape": [
+                2
+              ],
+              "values": [
+                {
+                  "real_hex": "0x0.0p+0"
+                },
+                {
+                  "real_hex": "0x1.921fb54442d18p+2"
+                }
+              ]
+            },
+            "bz_area": {
+              "real_hex": "0x1.3bd3cc9be45dep+5"
+            },
+            "ec_area": {
+              "real_hex": "0x1.0000000000000p+0"
+            },
+            "type": "square"
+          }
+        }
+      }
+    ],
+    "other_phc_state": {
+      "class": "legume.phc.phc.PhotCryst",
+      "parameters": {}
+    }
+  },
+  "regions": [
+    {
+      "layer": 0,
+      "shape_index": 0,
+      "kind": "shape",
+      "name": "circle"
+    },
+    {
+      "layer": 0,
+      "shape_index": 1,
+      "kind": "shape",
+      "name": "ellipse"
+    },
+    {
+      "layer": 0,
+      "shape_index": null,
+      "kind": "background",
+      "name": "background"
+    },
+    {
+      "layer": 0,
+      "shape_index": null,
+      "kind": "layer",
+      "name": "whole layer"
+    },
+    {
+      "layer": 1,
+      "shape_index": 0,
+      "kind": "shape",
+      "name": "polygon"
+    },
+    {
+      "layer": 1,
+      "shape_index": null,
+      "kind": "background",
+      "name": "upper background"
+    }
+  ],
+  "layer_reports": [
+    {
+      "layer": 0,
+      "dielectric_reconstruction_relative_error": 2.2390813445925075e-16,
+      "disjointness": "Conservative periodic Cartesian enclosures; exact circle separation where applicable",
+      "checked_shape_image_pairs": 68,
+      "native_point_sample_count": 1681,
+      "native_pointwise_additive_error": 0.0,
+      "limitation": "Noncircular shapes whose bounding rectangles intersect are conservatively rejected even if the shapes may be disjoint"
+    },
+    {
+      "layer": 1,
+      "dielectric_reconstruction_relative_error": 2.1426781027955061e-16,
+      "disjointness": "Conservative periodic Cartesian enclosures; exact circle separation where applicable",
+      "checked_shape_image_pairs": 24,
+      "native_point_sample_count": 1681,
+      "native_pointwise_additive_error": 0.0,
+      "limitation": "Noncircular shapes whose bounding rectangles intersect are conservatively rejected even if the shapes may be disjoint"
+    }
+  ],
+  "kind": 0,
+  "z_order": 24,
+  "cell_area": 1.0,
+  "legume_version": "1.0.3",
+  "native_source_sha256": "80e0d88841cc5fdf90f28d04da77213bca694e5814e72984538b4bb5f1974332",
+  "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+  "formula": "eta_l(delta)=inverse(epsilon_l0+sum_r delta_r chi_r); R=I+sum_l F_l^dagger(eta_l(delta)-eta_l0)F_l; K=W R W",
+  "derivative": "deta_l/dtau=-eta_l (sum_r delta_dot_r chi_r) eta_l",
+  "normalization": "Native ft_field_xy D already includes1/omega_i and1/sqrt(cellarea); field_factors include sqrt(cellarea*Gauss_z_weight), with no second omega division.",
+  "fourier_orientation": "Native Legume epsilon[row,column]=shapeFT(G_column-G_row)/cellarea",
+  "loss_ownership": "Lossless material projection only; native radiation must be added separately in a compatible basis",
+  "physical_region_semantics": "Disjoint native shapes; background excludes all shapes; overlapping modulation selections add before one full layer inverse.",
+  "native_object_mutation_check": "Full native pickle hash, ordered basis identity and physical signature unchanged before/after",
+  "native_modal_gram_error": 1.7046869453029457e-15,
+  "scope": "Finite retained native spatial basis with exact finite dielectric-matrix inversion; not spatially complete, dispersive, QNM-normalized or a solved outgoing Floquet model",
+  "unsupported": [
+    "modulated or patterned claddings",
+    "overlapping/unresolved native shape geometry",
+    "negative/complex instantaneous epsilon",
+    "custom shape classes",
+    "unaudited field exporters"
+  ]
+}

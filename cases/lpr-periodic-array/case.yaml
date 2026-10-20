@@ -1,0 +1,86 @@
+schema_version: '0.1'
+kind: case
+id: lpr-periodic-array
+project_id: floquet-maxwell
+title: LPR Fig.3 周期阵列的频移与模式场
+stage: results_available
+question:
+  summary: LPR Fig.3 周期阵列的频移与模式场
+  scope: 目标为Fig.3周期阵列部分；系数比论文读图值小约16–18倍，E/D投影差异及源模式信息仍保留。
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/lpr/report.md
+capability_refs:
+- native-field-projection
+- finite-floquet-dynamics
+- field-reconstruction
+- identity-convergence
+model:
+  description: 目标为Fig.3周期阵列部分；系数比论文读图值小约16–18倍，E/D投影差异及源模式信息仍保留。
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/lpr/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/lpr/report.md
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/paper_refresh_20261016/lpr/report.md
+    entrypoint:
+      path: sptc_toolbox/baselines/lpr_latest.py
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/paper_refresh_20261016/lpr/report.md
+    entrypoint:
+      path: sptc_toolbox/baselines/lpr_latest_summary.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/paper_refresh_20261016/lpr/summary.json
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/lpr/summary.json
+- id: output-2
+  description: sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g9.1_v10_m161/frequency_shift.csv
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g9.1_v10_m161/frequency_shift.csv
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/lpr/report.md
+criteria:
+- id: criterion-1
+  description: 目标A2g子空间中的场身份、二次频移系数及所保留状态的周期乘子。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/lpr/report.md
+checks:
+- id: check-1
+  method: 原生材料微扰与场重叠、空间/垂向/模态加密、Floquet与独立时间积分
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/paper_refresh_20261016/lpr/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/paper_refresh_20261016/lpr/report.md
+  artifacts:
+  - path: sptc_toolbox/results/paper_refresh_20261016/lpr/summary.json
+  - path: sptc_toolbox/results/paper_refresh_20261016/lpr/custom_g9.1_v10_m161/frequency_shift.csv
+  notes: 频移幂律指数1.999821；真实场具有环状及双瓣特征；新空间/模态/时间序列和独立材料微扰。 目标为Fig.3周期阵列部分；系数比论文读图值小约16–18倍，E/D投影差异及源模式信息仍保留。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/paper_refresh_20261016/lpr/report.md

@@ -1,0 +1,49 @@
+{
+  "status": "HISTORICAL_EXECUTION_OBSERVATIONS",
+  "provenance": "Preserved from the first spectrum_counterexample.py execution tool output in this audit session. The unlabeled spectrum_audit.json was overwritten by a later current-source run; this record is an explicit transcription, not a fresh execution of old code.",
+  "source_sha256": {
+    "floquet_maxwell.py": "5b4999a723370966e444c09d288278968c02d7c18e74b05a0ebb19cc442149e2",
+    "mode_tracking.py": "ec0ba06a7b59fe9afe28a4f97b84ada014e4d5d57800ade9c9ba5db8b94c8a1c",
+    "static_modes.py": "da185856f2a1755eb1f877b3b7ed8dc8c503db62e76ae307a30b71f43d246167"
+  },
+  "observed_cases": {
+    "ordinary_distinct_nonhermitian": {
+      "raw_matching_error": 0,
+      "selected_count": 2
+    },
+    "ordinary_static_N0": {
+      "edge_weights": [
+        1,
+        1
+      ],
+      "selection_status": "rejected",
+      "found": 0,
+      "required": 2
+    },
+    "semisimple_equal_frequencies": {
+      "selection_status": "rejected",
+      "found": 1,
+      "required": 2
+    },
+    "nondegenerate_close_frequencies": {
+      "selection_status": "rejected",
+      "found": 1,
+      "required": 2
+    },
+    "independent_integer_separated_frequencies": {
+      "selection_status": "rejected",
+      "found": 1,
+      "required": 2
+    },
+    "orthogonal_selected_state": {
+      "overlap": 0,
+      "subspace_angle": 1.5707963267948966,
+      "ambiguous": false
+    },
+    "NEP_EP_exact_seed": {
+      "residual": 0,
+      "derivative_pairing_abs": 0,
+      "returned_without_simple_pole_flag": true
+    }
+  }
+}

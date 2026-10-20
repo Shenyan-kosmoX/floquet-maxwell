@@ -1,0 +1,137 @@
+{
+  "status": "COMMON_EVEN_SECTOR_TWO_POLE_STATIC_RESPONSE_CANDIDATE",
+  "source": "extended_q11",
+  "applied_time_coefficients": [
+    [
+      -0.03340540860634302,
+      -0.027504653631831858
+    ],
+    [
+      0.5210980598301777,
+      -0.2030331120716691
+    ],
+    [
+      0.5123073487761653,
+      0.23053776570350096
+    ]
+  ],
+  "normalization": "Fixed same template source normalization; one identical linear time combination on E,D,T and ports",
+  "differences": [
+    {
+      "quantity": "electric",
+      "correction_relative_to_candidate": 0.3145021584115153,
+      "independent_pole_window_relative_difference": 8.783358804583928e-07,
+      "per_frequency_correction_relative_to_candidate": [
+        0.23595452474417383,
+        0.6501741074530767,
+        0.04815298081161353,
+        0.05470454236337926,
+        0.09024292876579672
+      ],
+      "per_frequency_pole_window_relative_difference": [
+        6.589694700109712e-07,
+        1.8157943751075313e-06,
+        1.3448071697245386e-07,
+        1.5277784590790617e-07,
+        2.520288035703349e-07
+      ]
+    },
+    {
+      "quantity": "displacement",
+      "correction_relative_to_candidate": 0.4698856594197727,
+      "independent_pole_window_relative_difference": 1.312288086756259e-06,
+      "per_frequency_correction_relative_to_candidate": [
+        0.5638960329484949,
+        0.9030779651056531,
+        0.05933299167877343,
+        0.1258284202364586,
+        0.2137082895203676
+      ],
+      "per_frequency_pole_window_relative_difference": [
+        1.5748385333221318e-06,
+        2.522099654837932e-06,
+        1.657040448207265e-07,
+        3.5141130999961644e-07,
+        5.968406025626334e-07
+      ]
+    },
+    {
+      "quantity": "output",
+      "correction_relative_to_candidate": 0.025361802880867763,
+      "independent_pole_window_relative_difference": 7.082975452758441e-08,
+      "per_frequency_correction_relative_to_candidate": [
+        0.01913930365151907,
+        0.056280754756897346,
+        0.34881493776256134,
+        0.0028375343133518753,
+        0.003990050367268029
+      ],
+      "per_frequency_pole_window_relative_difference": [
+        5.345152180070483e-08,
+        1.5717962639834774e-07,
+        9.740545895643664e-07,
+        7.924427371444219e-09,
+        1.1143139859631086e-08
+      ]
+    },
+    {
+      "quantity": "incoming",
+      "correction_relative_to_candidate": 41.88197970453934,
+      "independent_pole_window_relative_difference": 0.00011696583024600618,
+      "per_frequency_correction_relative_to_candidate": [
+        84.87913575989067,
+        26.720902287661737,
+        476.43920353894686,
+        19.13671885436817,
+        39.615714258922964
+      ],
+      "per_frequency_pole_window_relative_difference": [
+        0.0002370460668766261,
+        7.462475658888488e-05,
+        0.0013305748452037086,
+        5.344404025527492e-05,
+        0.00011063672100324444
+      ]
+    },
+    {
+      "quantity": "native_port_fields",
+      "correction_relative_to_candidate": 0.025315750320677174,
+      "independent_pole_window_relative_difference": 7.070114060021376e-08,
+      "per_frequency_correction_relative_to_candidate": [
+        0.018878761812200003,
+        0.056198230637348065,
+        0.3524110509160642,
+        0.002899150640000678,
+        0.004120746865466514
+      ],
+      "per_frequency_pole_window_relative_difference": [
+        5.2723893955424344e-08,
+        1.5694915721123162e-07,
+        9.840982727389038e-07,
+        8.096506354313226e-09,
+        1.150814234709656e-08
+      ]
+    }
+  ],
+  "raw_checkpoint": 2000,
+  "shared_slow_pole_window_validation": "sampling_tail/template_q6/summary.json",
+  "independent_bright_pole": "spatial_repair_20261017/static/pulse_smooth_noY_r32/summary.json",
+  "independent_complete_source_controls": "review_global_tail.json",
+  "window_validated": true,
+  "window_validation_scope": "Shared pole law tested with independent q6 window and complete-source four-window control; not every internal weak direction certified",
+  "independent_validated": false,
+  "source_hashes": {
+    "sampling/extended_q11/response_t1000.npz": "e49684a2166754411b4729f1586e19b06a3fd470cb6956494a61ec1a55484ba7",
+    "sampling/extended_q11/response_t1500.npz": "ae20e33f1643d0ff763fa3f9455d844ab80c354610d03fcdcd2faedbf62014a0",
+    "sampling/extended_q11/response_t2000.npz": "8c32ec44ad373076ac705ba3297a35d6f529bb457c2aeec9aa7de3fbc456cb67"
+  },
+  "script_sha256": "f957bb4df9bf3d812ebc858969fddd93bb4ecc0e8450ffdc0b8ad239ad7f6786",
+  "candidate_sha256": "74821833f424eff2114e4b88e9313c0ea2971c0fb8469abc995bddf35903fb7a",
+  "heldout_time_validated": true,
+  "maxwell_equation_validated": true,
+  "continuous_wave_solver_validated": false,
+  "selected_for_scattering": true,
+  "validation_summary": "tail_validation.json",
+  "validation_scope": "Finite current weak-scattering data assessed with measured residuals and separate controls; no retrospective numerical pass threshold; failed CW is not relabelled as successful",
+  "accepted_for_finite_forced_response": true
+}

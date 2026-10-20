@@ -1,0 +1,118 @@
+{
+  "cases": [
+    {
+      "drive": 0.01,
+      "file": "drive0.01_steps2048_fullcom.npz",
+      "xcom": [
+        -4.9131890860786116e-12,
+        18.96252569126915,
+        39.12974613333402
+      ],
+      "width": [
+        2.1061013097382855,
+        14.623248729847784,
+        26.937222021921155
+      ],
+      "negative_action_fraction": [
+        9.575572772931831e-33,
+        4.1432521998595765e-11,
+        3.278027200186103e-11
+      ],
+      "circular_centers": [
+        -4.671049605869275e-15,
+        19.206915896624942,
+        41.35505445501979
+      ],
+      "periodic_edge_fraction": [
+        8.035708862723382e-10,
+        1.2706133521503255e-05,
+        0.0020977908392415126
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256
+    },
+    {
+      "drive": 0.001,
+      "file": "drive0.001_steps2048_fullcom.npz",
+      "xcom": [
+        -4.9131890860786116e-12,
+        24.98484328869045,
+        49.99588133551567
+      ],
+      "width": [
+        2.1061013097382855,
+        4.700662724617343,
+        8.495473716163401
+      ],
+      "negative_action_fraction": [
+        9.575572772931831e-33,
+        7.237753989142326e-13,
+        5.665271757155315e-13
+      ],
+      "circular_centers": [
+        -4.671049605869275e-15,
+        24.98721610698731,
+        50.004165258535544
+      ],
+      "periodic_edge_fraction": [
+        8.035708862723382e-10,
+        1.0030723201744678e-05,
+        0.0004737381848932986
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256
+    },
+    {
+      "drive": 0.0001,
+      "file": "drive0.0001_steps2048_fullcom.npz",
+      "xcom": [
+        -4.9131890860786116e-12,
+        24.99153827990198,
+        50.0078684588043
+      ],
+      "width": [
+        2.1061013097382855,
+        21.196955324211988,
+        42.203936885396494
+      ],
+      "negative_action_fraction": [
+        9.575572772931831e-33,
+        1.4757188581194558e-09,
+        4.453338193176177e-09
+      ],
+      "circular_centers": [
+        -4.671049605869275e-15,
+        24.99405854525991,
+        50.01338443915502
+      ],
+      "periodic_edge_fraction": [
+        8.035708862723382e-10,
+        4.6972010136360665e-06,
+        3.862632630200417e-05
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256
+    }
+  ],
+  "steps_per_period": 2048,
+  "layer": "sampling",
+  "physical_model": "Original W1 geometry and Delta=.02 unchanged",
+  "numerical_controls": {
+    "gmax": 3.1,
+    "nk": 16,
+    "fold_halfwidth": 3,
+    "z_order": 10,
+    "gmode_inds": [
+      0,
+      3
+    ],
+    "momentum_chart": "extended"
+  },
+  "source_sha256": "473841820ebefea9d636455b516d048c5393c747ed6522eb1a33b4d67c0647b7",
+  "cache_npz_sha256": "e3a0ff21bfa13fcd7d32379f45f383d3591d5856c7534792560291b5d25abb28",
+  "cache_evidence": {
+    "fields_sha256": "e3a0ff21bfa13fcd7d32379f45f383d3591d5856c7534792560291b5d25abb28",
+    "cache_validation": "sptc_toolbox\\results\\convergence\\w1\\cache_checks\\0c29115c075d18fd.json",
+    "authority": "Export-time field digest"
+  }
+}

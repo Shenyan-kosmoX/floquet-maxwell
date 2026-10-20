@@ -1,0 +1,125 @@
+{
+  "tag": "g3.1_k16_f3_steps2048",
+  "gmax": 3.1,
+  "steps_per_period": 2048,
+  "nk": 16,
+  "fold_halfwidth": 3,
+  "depth": 0.02,
+  "cases": [
+    {
+      "drive": 0.01,
+      "seconds": 0.262248200000613,
+      "state_origin": "Cached 2048-step primitive q,p; reconstructed again with the current physical-field observable",
+      "xcom": [
+        -5.46753440261786e-15,
+        18.907041036088216,
+        39.17934131375569
+      ],
+      "width": [
+        2.0842296134458094,
+        14.771082135567694,
+        27.40491636439159
+      ],
+      "negative_action_fraction": [
+        1.630291469944542e-32,
+        4.234038769222281e-11,
+        2.819384392170544e-11
+      ],
+      "circular_centers": [
+        -4.246289075530188e-15,
+        19.114965827990133,
+        41.264794185714905
+      ],
+      "periodic_edge_fraction": [
+        8.054217872347123e-08,
+        1.1708092830044799e-05,
+        0.0021655615186422054
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256
+    },
+    {
+      "drive": 0.001,
+      "seconds": 0.17302639999979874,
+      "state_origin": "Cached 2048-step primitive q,p; reconstructed again with the current physical-field observable",
+      "xcom": [
+        -5.46753440261786e-15,
+        25.043714800888164,
+        50.03667657970705
+      ],
+      "width": [
+        2.0842296134458094,
+        4.80315546072179,
+        8.937461045321545
+      ],
+      "negative_action_fraction": [
+        1.630291469944542e-32,
+        5.533680636452244e-13,
+        6.936629900381839e-13
+      ],
+      "circular_centers": [
+        -4.246289075530188e-15,
+        25.04796730091597,
+        50.06190248387135
+      ],
+      "periodic_edge_fraction": [
+        8.054217872347123e-08,
+        1.000429414133008e-05,
+        0.00018668928524927676
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256
+    },
+    {
+      "drive": 0.0001,
+      "seconds": 0.16991400000006252,
+      "state_origin": "Cached 2048-step primitive q,p; reconstructed again with the current physical-field observable",
+      "xcom": [
+        -5.46753440261786e-15,
+        25.012935087264385,
+        50.15587200804273
+      ],
+      "width": [
+        2.0842296134458094,
+        24.96280463232828,
+        47.54122360194195
+      ],
+      "negative_action_fraction": [
+        1.630291469944542e-32,
+        5.3483590270231224e-11,
+        1.513259660163584e-10
+      ],
+      "circular_centers": [
+        -4.246289075530188e-15,
+        25.186655357828744,
+        51.946658486689515
+      ],
+      "periodic_edge_fraction": [
+        8.054217872347123e-08,
+        2.8913259113908548e-05,
+        0.0014125964037071245
+      ],
+      "com_domain": "Complete Born-von-Karman period, unwrapped around independently measured circular field center; separate from figure crop",
+      "com_period_a": 256
+    }
+  ],
+  "maximum_native_gamma": 0.0,
+  "mass_checks": {
+    "hermiticity_error": 3.469446951953614e-18,
+    "depth": 0.02,
+    "quadrature": 96,
+    "exact_momentum_selection": "q_j-q_i+pQ is primitive reciprocal; all other supercell sums vanish",
+    "Fourier_convention": "delta_epsilon_p exp(-ip*tau), mask integral exp(+i dk.r)",
+    "finite_model": "Electric Galerkin mass M=I+integral Ei*delta_epsilon Ej; R=M^-1. Not exact full-space inverse-epsilon projection.",
+    "strip_area": 5.553756444329974
+  },
+  "source": "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\main_g3.1_k16_f3",
+  "source_fingerprints": {
+    "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\main_g3.1_k16_f3\\native.pkl": "1424c6b4d81fac0fbc45765eada4261beedb5a7a24d0ea29b8a3bca984175c08",
+    "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\main_g3.1_k16_f3\\native_fields.npz": "e529b2904bb486e10dfc016e8a73347e67679f15a19b92c19502a5c6ba1c823c",
+    "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\main_g3.1_k16_f3\\basis_contract.json": "f6e35c27b8a1ea9fd79c156360f64399c208c6b908190935f6ebcd6caf4d5b61",
+    "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\main_g3.1_k16_f3\\drive0.01_steps2048_fullcom.npz": "d2d6c873fb0e9b8c79d60cfee324da65496b58d21aed8fa4b60b4041d63f9d13",
+    "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\main_g3.1_k16_f3\\drive0.001_steps2048_fullcom.npz": "baac1b5c3efcb5cd44298143f279e7d27e52cc08f6873f446c2f7c15e523645c",
+    "sptc_toolbox\\results\\sptc_baselines\\minkov2018_legume\\main_g3.1_k16_f3\\drive0.0001_steps2048_fullcom.npz": "fc6daaf1b5e5b69edfc48c097f33f9baa37784c2372c03104f32b16cc8378a3b"
+  }
+}

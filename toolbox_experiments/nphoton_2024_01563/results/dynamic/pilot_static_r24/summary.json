@@ -1,0 +1,71 @@
+{
+  "status": "COMPLETED_DIRECT_MEEP_DYNAMIC_PROBE",
+  "error": null,
+  "config": {
+    "q": 0.86,
+    "resolution": 24,
+    "epsilon": 11.68,
+    "radius": 0.3333333333333333,
+    "padding": 1.0,
+    "pml": 0.5,
+    "courant": 0.5,
+    "source_frequency": 0.40688259140086147,
+    "source_width": 0.1,
+    "drive_frequency": 0.8137651828017229,
+    "modulation": 0.0,
+    "phase": 1.5707963267948966,
+    "periods": 20.0,
+    "ramp_periods": 10.0,
+    "update_stride": 8,
+    "static_window": 100.0,
+    "eps_averaging": false,
+    "max_dynamic_wall_seconds": 900.0
+  },
+  "meep_version": "1.35.0",
+  "static_poles": [
+    {
+      "frequency": 0.4127635943335213,
+      "decay": -1.779782650508118e-06,
+      "amplitude": [
+        -161.1087702794216,
+        -130.1538684388337
+      ],
+      "error": 2.444429681884483e-12
+    }
+  ],
+  "dt": 0.020833333333333332,
+  "material_update_interval": 0.16666666666666666,
+  "updates_per_pump_period": 7.373134322781569,
+  "modulation_start": 220.0,
+  "source_free": true,
+  "completed_cycles": 19.4964575046246,
+  "material_reset_DB_relative_change": {
+    "Dx": 0.0,
+    "Dy": 0.0,
+    "Dz": 0.0,
+    "Bx": 0.0,
+    "By": 0.0,
+    "Bz": 0.0
+  },
+  "growth_fits": [
+    {
+      "fraction_window": [
+        0.35,
+        0.95
+      ],
+      "amplitude_growth_per_meep_time": -1.1186868464810848e-05,
+      "growth_cyclic_fa_over_c": -1.7804454138934891e-06,
+      "log_amplitude_fit_rms": 1.1883439215512136e-07,
+      "cycles": [
+        7.493421058299192,
+        18.51315790873919
+      ]
+    }
+  ],
+  "elapsed_seconds": 7.045824961998733,
+  "dynamic_seconds": 2.117900589015335,
+  "units": "length a=631.8nm, time a/c, cyclic frequency f*a/c; amplitude exp(lambda*time)",
+  "material": "epsilon_sphere(t)=11.68+10.68*m*ramp(t)*cos(2*pi*fm*t+phase); air=1",
+  "method": "Native 3D Meep D/B stepping; subpixel sphere coefficients rebuilt with public set_materials and sample-and-hold time updates",
+  "scope": "Measured source-free growth in a specified time-step/material-update approximation; not a full Floquet spectrum or QNM residue normalization"
+}

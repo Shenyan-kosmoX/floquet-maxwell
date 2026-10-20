@@ -1,0 +1,76 @@
+{
+  "scope": "Native Legume field-derived overlaps; no spectrum or efficiency inferred",
+  "array_axes": [
+    "kx",
+    "ky",
+    "x/y polarized unit pump tensor"
+  ],
+  "polarization_combinations": [
+    "Vx",
+    "Vy",
+    "Vx-Vy",
+    "Vx-1j*Vy"
+  ],
+  "common_scale": 0.008862700330246966,
+  "common_scale_definition": "median(sqrt(abs(Vx)^2+abs(Vy)^2)) over all finite k",
+  "plotted_value": "min(common_scale / abs(V_combination), display_cap)",
+  "display_cap": 100.0,
+  "source_color_scale": "Original paper marks only 0 and infinity; no absolute color comparison",
+  "masked_points": [
+    [
+      0,
+      0
+    ]
+  ],
+  "axis_nodal_x": {
+    "max_nodal_magnitude": 2.7413714593182737e-16,
+    "median_off_diagonal_magnitude": 0.0035916038180197406,
+    "ratio": 7.632722310752389e-14,
+    "nodal_samples": 7,
+    "reference_samples": 30
+  },
+  "axis_nodal_y": {
+    "max_nodal_magnitude": 1.8279972451569688e-16,
+    "median_off_diagonal_magnitude": 0.0035916038180200784,
+    "ratio": 5.08964055552396e-14,
+    "nodal_samples": 7,
+    "reference_samples": 30
+  },
+  "diagonal_cancellation": {
+    "max_nodal_magnitude": 5.815833925559843e-14,
+    "median_off_diagonal_magnitude": 0.007700935802117753,
+    "ratio": 7.552113243121041e-12,
+    "nodal_samples": 7,
+    "reference_samples": 30
+  },
+  "mask_definition": {
+    "nodal_lines": "axis/diagonal index >=2; Gamma and first neighboring sample omitted",
+    "reference": "ix>=2, iy>=2, abs(ix-iy)>=2",
+    "circular_domain": "finite points with ix>=2 or iy>=2"
+  },
+  "circular": {
+    "samples": 77,
+    "minimum_magnitude": 0.005044307303970148,
+    "median_magnitude": 0.00884245069621221,
+    "minimum_over_common_scale": 0.5691614424505296,
+    "minimum_over_local_pair_norm": 0.9999999999999998,
+    "maximum_over_local_pair_norm": 1.0000000000000002,
+    "exact_computed_zeros": 0,
+    "interpretation": "Sampled domain away from Gamma only; not a continuum no-zero proof"
+  },
+  "source": {
+    "data": "sptc_toolbox\\results\\jin2025_legume_tensor_20261019\\n3.3_g3.1_N9\\coupling.npz",
+    "data_sha256": "aeb4258005183a1d56fd295d5183f24c09314052ce1184e3924d3f83fcdee11a",
+    "paper": "sptc_toolbox\\results\\jin2025_legume_tensor_20261019\\paper_SFig5_panels.png",
+    "paper_sha256": "f6222ad41cc48c61e19921e1793ea3ebfbb309d452baa210236ea52e95e6878c",
+    "script_sha256": "bbd112a6ef21e8f8f9661091b36984f8f8215ae0db79d2d7f6e637e852fa308a"
+  },
+  "visualization": {
+    "colormap": "hot",
+    "interpolation": "nearest",
+    "masked_color": "#969696",
+    "no_per_panel_scale": true,
+    "no_data_filling": true,
+    "no_fitted_parameters": true
+  }
+}

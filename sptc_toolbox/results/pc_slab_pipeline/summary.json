@@ -1,0 +1,470 @@
+{
+  "status": "ACTUAL_PATTERNED_2D_SLAB_REGIONAL_FLOQUET_PIPELINE_EXECUTED",
+  "geometry": "a=1 square lattice, d=.42 eps_background11.5, air circle at(-.22,0)r=.12 and air ellipse at(.22,0)rx=.12 ry=.09",
+  "modulation": "Absolute epsilon cosine amplitude .08 in each hole, relative phase pi/2; repeated in every cell",
+  "drive_omega_a_over_c": 4.571459281220391,
+  "native_k_points": 25,
+  "solved_points": 1,
+  "rejected_points": [
+    {
+      "k_index": 1,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 2,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 3,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 4,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 5,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 6,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 7,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 8,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 9,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 10,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 11,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 12,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 13,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 14,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 15,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 16,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 17,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 18,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 19,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 20,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 21,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 22,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 23,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    },
+    {
+      "k_index": 24,
+      "status": "REJECTED_SPATIAL_IDENTITY",
+      "reason": "Physical target continuity from the declared seed has not passed"
+    }
+  ],
+  "source_geometry_hash": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+  "native_spatial_configuration": {
+    "gmax": 2.1,
+    "gmode_inds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reference_eps": [
+      10.0
+    ],
+    "numeig": 12
+  },
+  "field_metric_id": "bbde7622cf1936ea6189ef3664a938c7a1e1bdc8799c26c4f68356998a74897b",
+  "tracking_sampled_bundle_passed": false,
+  "refinements": [
+    {
+      "k_index": 0,
+      "fine_modes": [
+        2,
+        3
+      ],
+      "physical_match": {
+        "modes": [
+          2,
+          3
+        ],
+        "minimum_overlap_squared": 0.999384830960598,
+        "mean_overlap_squared": 0.9994793073796938,
+        "competitor_margin": 0.9993690511239097,
+        "alternatives": [
+          {
+            "modes": [
+              3,
+              4
+            ],
+            "minimum_overlap_squared": 1.5779836688281645e-05
+          },
+          {
+            "modes": [
+              2,
+              4
+            ],
+            "minimum_overlap_squared": 1.6337828894208428e-06
+          },
+          {
+            "modes": [
+              2,
+              13
+            ],
+            "minimum_overlap_squared": 6.934053714685584e-07
+          }
+        ],
+        "method": "exhaustive target-local principal-angle selection; no endpoint information",
+        "candidate_count": 106
+      },
+      "frequency_relative_change": 0.0004231170306497848,
+      "field_capture": 0.9993848309605995,
+      "local_refinement_passed": true
+    },
+    {
+      "k_index": 1,
+      "fine_modes": [
+        2,
+        3
+      ],
+      "physical_match": {
+        "modes": [
+          2,
+          3
+        ],
+        "minimum_overlap_squared": 0.9976605488423163,
+        "mean_overlap_squared": 0.9985891102211899,
+        "competitor_margin": 0.9970714752084757,
+        "alternatives": [
+          {
+            "modes": [
+              3,
+              5
+            ],
+            "minimum_overlap_squared": 0.0005890736338405381
+          },
+          {
+            "modes": [
+              3,
+              14
+            ],
+            "minimum_overlap_squared": 5.236167535931785e-05
+          },
+          {
+            "modes": [
+              3,
+              10
+            ],
+            "minimum_overlap_squared": 1.4520730351616495e-05
+          }
+        ],
+        "method": "exhaustive target-local principal-angle selection; no endpoint information",
+        "candidate_count": 120
+      },
+      "frequency_relative_change": 0.002366948591306155,
+      "field_capture": 0.9976605488423161,
+      "local_refinement_passed": true
+    },
+    {
+      "k_index": 2,
+      "fine_modes": [
+        2,
+        3
+      ],
+      "physical_match": {
+        "modes": [
+          2,
+          3
+        ],
+        "minimum_overlap_squared": 0.9977889213375891,
+        "mean_overlap_squared": 0.9985845149710616,
+        "competitor_margin": 0.9976218944774163,
+        "alternatives": [
+          {
+            "modes": [
+              3,
+              5
+            ],
+            "minimum_overlap_squared": 0.00016702686017273927
+          },
+          {
+            "modes": [
+              3,
+              9
+            ],
+            "minimum_overlap_squared": 4.8772318740425424e-05
+          },
+          {
+            "modes": [
+              0,
+              3
+            ],
+            "minimum_overlap_squared": 6.980451602800475e-06
+          }
+        ],
+        "method": "exhaustive target-local principal-angle selection; no endpoint information",
+        "candidate_count": 120
+      },
+      "frequency_relative_change": 0.0034393273077535148,
+      "field_capture": 0.9977889213375886,
+      "local_refinement_passed": true
+    },
+    {
+      "k_index": 8,
+      "fine_modes": [
+        0,
+        4
+      ],
+      "physical_match": {
+        "modes": [
+          0,
+          4
+        ],
+        "minimum_overlap_squared": 0.9949059672465398,
+        "mean_overlap_squared": 0.9971222745566002,
+        "competitor_margin": 0.9937089552603678,
+        "alternatives": [
+          {
+            "modes": [
+              0,
+              5
+            ],
+            "minimum_overlap_squared": 0.0011970119861719902
+          },
+          {
+            "modes": [
+              1,
+              4
+            ],
+            "minimum_overlap_squared": 0.00011205255848995292
+          },
+          {
+            "modes": [
+              1,
+              5
+            ],
+            "minimum_overlap_squared": 0.00010805645421713864
+          }
+        ],
+        "method": "exhaustive target-local principal-angle selection; no endpoint information",
+        "candidate_count": 120
+      },
+      "frequency_relative_change": 0.004884163322335573,
+      "field_capture": 0.99490596724654,
+      "local_refinement_passed": true
+    },
+    {
+      "k_index": 16,
+      "fine_modes": [
+        1,
+        2
+      ],
+      "physical_match": {
+        "modes": [
+          1,
+          2
+        ],
+        "minimum_overlap_squared": 0.9272944191950162,
+        "mean_overlap_squared": 0.9601304759187013,
+        "competitor_margin": 0.8751083563953407,
+        "alternatives": [
+          {
+            "modes": [
+              0,
+              2
+            ],
+            "minimum_overlap_squared": 0.052186062799675546
+          },
+          {
+            "modes": [
+              0,
+              1
+            ],
+            "minimum_overlap_squared": 0.015763071272464086
+          },
+          {
+            "modes": [
+              1,
+              3
+            ],
+            "minimum_overlap_squared": 0.003921659010440691
+          }
+        ],
+        "method": "exhaustive target-local principal-angle selection; no endpoint information",
+        "candidate_count": 120
+      },
+      "frequency_relative_change": 0.006770271822039622,
+      "field_capture": 0.9272944191950159,
+      "local_refinement_passed": false
+    }
+  ],
+  "z12_to_z24_overlap_relative_error": 4.353603021590956e-15,
+  "phase_cases": [
+    {
+      "relative_phase": 0.0,
+      "quasifrequencies": [
+        [
+          -0.49890701928470205,
+          -9.023326308357546e-09
+        ],
+        [
+          0.4989070192847006,
+          -9.023326152609771e-09
+        ],
+        [
+          0.5010928399195786,
+          -2.6776004221684802e-05
+        ],
+        [
+          -0.5010928399195774,
+          -2.67760042217198e-05
+        ]
+      ],
+      "independent_period": {
+        "max_multiplier_error": 6.817790992346196e-12,
+        "physical_count": 4,
+        "scope": "Finite frozen-channel model only"
+      },
+      "max_power_balance_error": 3.732365317036859e-17
+    },
+    {
+      "relative_phase": 1.5707963267948966,
+      "quasifrequencies": [
+        [
+          -0.49890698001576445,
+          4.289333281268717e-09
+        ],
+        [
+          0.49890698001576544,
+          4.289333122014751e-09
+        ],
+        [
+          0.5010929756820607,
+          -2.678931688122119e-05
+        ],
+        [
+          -0.5010929756820578,
+          -2.678931688104876e-05
+        ]
+      ],
+      "independent_period": {
+        "max_multiplier_error": 6.833299699186957e-12,
+        "physical_count": 4,
+        "scope": "Finite frozen-channel model only"
+      },
+      "max_power_balance_error": 4.720762376321191e-17
+    },
+    {
+      "relative_phase": 3.141592653589793,
+      "quasifrequencies": [
+        [
+          -0.501093111331701,
+          -2.6802612137721614e-05
+        ],
+        [
+          0.5010931113317004,
+          -2.680261213770243e-05
+        ],
+        [
+          0.4989069406525533,
+          1.758458974861067e-08
+        ],
+        [
+          -0.49890694065255276,
+          1.7584590039753827e-08
+        ]
+      ],
+      "independent_period": {
+        "max_multiplier_error": 6.812768675644089e-12,
+        "physical_count": 4,
+        "scope": "Finite frozen-channel model only"
+      },
+      "max_power_balance_error": 6.540457215580441e-17
+    }
+  ],
+  "common_time_shift_multiplier_error": 1.384130287592602e-14,
+  "limitations": [
+    "A frozen common-frequency weak-radiation approximation at each k",
+    "Rejected spatial identities and bath applicability are not filled",
+    "Space refinement checks only at listed diagnostic points",
+    "Neither complete BZ topology nor BIC/EP nor strict QNM certification",
+    "No cross-k traveling-wave material coupling in this pipeline"
+  ],
+  "elapsed_seconds": 10.887737499997456,
+  "source_sha256": {
+    "sptc_toolbox/scripts/validate_pc_slab_pipeline.py": "7d7a5b982833c8e63a4bc85c643a7d9811046f264ea628379ddbaa5a71675365",
+    "sptc_toolbox/slab_study.py": "3a370893514f5cc7b307f66e61fc99a197436e5207574c599534d1bb07b810ea",
+    "sptc_toolbox/slab_model.py": "8119f09879359d7b2c44b542d3ac10cb7db8a06badd79f4e39acbea049bc0c6a",
+    "sptc_toolbox/slab_projection.py": "f1d29ec432da69d5695caaff7c2eceec4ffc61e45d1d140b5e60a33b93daa555",
+    "sptc_toolbox/modulation.py": "16b88349d85672a95ea73733590ddd1baf5b198488bcb954193d5cf76a5d243c",
+    "sptc_toolbox/mode_package.py": "83b4b0d3b828f19a8c359c5c9e456e1dc29f0ff7021804e91a9c7ae284cd94e3",
+    "sptc_toolbox/basis.py": "d340e600ab81833d554c8c277bbc17d1b96aaafd29b6f4de711b346eeb473ffb"
+  }
+}

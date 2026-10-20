@@ -1,0 +1,851 @@
+{
+  "status": "COMPLETED_APPROXIMATE_MULTIMODE_FROZEN_OPEN_BASELINE",
+  "physical_scope": "Native Legume real epsilon16 spatial modes plus full shared-channel R1 damping; no independent spatial solver or fitted coupling",
+  "configuration": {
+    "gmax": 5.1,
+    "max_guided_index": 24,
+    "segments": 7,
+    "numeig": 28,
+    "epsilon_physical": 16.0,
+    "reference_epsilon": 16.0,
+    "horizontal": "even",
+    "vertical": null,
+    "r_nm": 1030.0,
+    "period_nm": 3296.0,
+    "height_nm": 1465.149359886202,
+    "material_status": "APPROXIMATE constant epsilon16, no material absorption or dispersion",
+    "elapsed_seconds": 19.29030649998458
+  },
+  "primary_path": "M-Gamma-X-M, 22 points",
+  "selected_mode_count": 2,
+  "retained_static_eigenpairs": 616,
+  "accepted_R1_points": 19,
+  "guard_rejected_points": [
+    {
+      "k_index": 1,
+      "reason": "Native radiative loss is too strong for the weak-radiation conversion"
+    },
+    {
+      "k_index": 2,
+      "reason": "Open channel sets differ between modes; a diffraction threshold prevents this frozen on-shell approximation"
+    },
+    {
+      "k_index": 19,
+      "reason": "Native radiative loss is too strong for the weak-radiation conversion"
+    }
+  ],
+  "failed_case_selections": [],
+  "complete_positive_and_negative_physical_spectra_saved": true,
+  "physical_state_count_per_accepted_point": 4,
+  "maximum_right_residual": 1.1952194030649838e-15,
+  "maximum_left_residual": 1.2779463130834548e-15,
+  "maximum_harmonic_edge_weight": 3.396256629810174e-18,
+  "max_independent_monodromy_multiplier_error": 7.678425700220082e-12,
+  "max_power_balance_absolute_residual": 1.4817472575688254e-16,
+  "passive_zero_modulation_all_accepted": true,
+  "zero_modulation_DC_shift": 0.0,
+  "weak_and_strong_DC_shift": "epsilon_base*m; same amplitude multiplies cos(Omega*t)",
+  "case_summary": {
+    "static": {
+      "computed_k_count": 19,
+      "max_growth_over_drive": -1.0839706643137391e-32,
+      "growing_k_indexes_above_1e_8": [],
+      "decaying_k_indexes_below_minus1e_8": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21
+      ]
+    },
+    "weak": {
+      "computed_k_count": 19,
+      "max_growth_over_drive": 1.5843905111948485e-16,
+      "growing_k_indexes_above_1e_8": [],
+      "decaying_k_indexes_below_minus1e_8": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21
+      ]
+    },
+    "strong": {
+      "computed_k_count": 19,
+      "max_growth_over_drive": 0.0034307380766850602,
+      "growing_k_indexes_above_1e_8": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "decaying_k_indexes_below_minus1e_8": [
+        0,
+        3,
+        10,
+        11,
+        12,
+        20,
+        21
+      ]
+    }
+  },
+  "harmonic_convergence": [
+    {
+      "k_index": 7,
+      "case": "static",
+      "N_reference": 5,
+      "N_compare": 3,
+      "complete_multiplier_set_error": 0.0,
+      "growth_difference": 0.0
+    },
+    {
+      "k_index": 7,
+      "case": "weak",
+      "N_reference": 5,
+      "N_compare": 3,
+      "complete_multiplier_set_error": 8.43769498715119e-15,
+      "growth_difference": -4.3330289766786934e-17
+    },
+    {
+      "k_index": 7,
+      "case": "strong",
+      "N_reference": 5,
+      "N_compare": 3,
+      "complete_multiplier_set_error": 2.1334094713930937e-13,
+      "growth_difference": 5.779231260216733e-15
+    },
+    {
+      "k_index": 7,
+      "case": "static",
+      "N_reference": 5,
+      "N_compare": 7,
+      "complete_multiplier_set_error": 0.0,
+      "growth_difference": 0.0
+    },
+    {
+      "k_index": 7,
+      "case": "weak",
+      "N_reference": 5,
+      "N_compare": 7,
+      "complete_multiplier_set_error": 9.859482137161227e-15,
+      "growth_difference": -3.4968956481693373e-17
+    },
+    {
+      "k_index": 7,
+      "case": "strong",
+      "N_reference": 5,
+      "N_compare": 7,
+      "complete_multiplier_set_error": 2.7091009405195554e-14,
+      "growth_difference": 8.313662258618848e-16
+    },
+    {
+      "k_index": 9,
+      "case": "static",
+      "N_reference": 5,
+      "N_compare": 3,
+      "complete_multiplier_set_error": 1.3270634591222574e-15,
+      "growth_difference": -6.938893903907228e-18
+    },
+    {
+      "k_index": 9,
+      "case": "weak",
+      "N_reference": 5,
+      "N_compare": 3,
+      "complete_multiplier_set_error": 1.0593989076084323e-14,
+      "growth_difference": 4.5644911461639737e-17
+    },
+    {
+      "k_index": 9,
+      "case": "strong",
+      "N_reference": 5,
+      "N_compare": 3,
+      "complete_multiplier_set_error": 2.188694394625264e-13,
+      "growth_difference": -1.6181066903042662e-14
+    },
+    {
+      "k_index": 9,
+      "case": "static",
+      "N_reference": 5,
+      "N_compare": 7,
+      "complete_multiplier_set_error": 1.3270634591222574e-15,
+      "growth_difference": -6.938893903907228e-18
+    },
+    {
+      "k_index": 9,
+      "case": "weak",
+      "N_reference": 5,
+      "N_compare": 7,
+      "complete_multiplier_set_error": 1.1911839727252773e-14,
+      "growth_difference": 2.667137344314341e-17
+    },
+    {
+      "k_index": 9,
+      "case": "strong",
+      "N_reference": 5,
+      "N_compare": 7,
+      "complete_multiplier_set_error": 1.6783375074571618e-14,
+      "growth_difference": -1.8648277366750676e-15
+    },
+    {
+      "k_index": 14,
+      "case": "static",
+      "N_reference": 5,
+      "N_compare": 3,
+      "complete_multiplier_set_error": 1.7527816313752604e-15,
+      "growth_difference": -4.106415728288848e-18
+    },
+    {
+      "k_index": 14,
+      "case": "weak",
+      "N_reference": 5,
+      "N_compare": 3,
+      "complete_multiplier_set_error": 1.1877083983984956e-14,
+      "growth_difference": 2.2005915969666723e-16
+    },
+    {
+      "k_index": 14,
+      "case": "strong",
+      "N_reference": 5,
+      "N_compare": 3,
+      "complete_multiplier_set_error": 5.690858795803901e-13,
+      "growth_difference": 8.492620669209305e-14
+    },
+    {
+      "k_index": 14,
+      "case": "static",
+      "N_reference": 5,
+      "N_compare": 7,
+      "complete_multiplier_set_error": 1.7527816313752604e-15,
+      "growth_difference": -4.106415728288848e-18
+    },
+    {
+      "k_index": 14,
+      "case": "weak",
+      "N_reference": 5,
+      "N_compare": 7,
+      "complete_multiplier_set_error": 1.0155089600892692e-14,
+      "growth_difference": 3.203275318608423e-16
+    },
+    {
+      "k_index": 14,
+      "case": "strong",
+      "N_reference": 5,
+      "N_compare": 7,
+      "complete_multiplier_set_error": 2.824881970452108e-14,
+      "growth_difference": 3.955386365661617e-15
+    }
+  ],
+  "mode_window_convergence": [
+    {
+      "case": "static",
+      "small_count": 4,
+      "large_count": 8,
+      "two_parent_subset_multiplier_error": 4.120955286171318e-15,
+      "large_complete_spectrum": [
+        [
+          0.4944586389720174,
+          -4.13991882314404e-29
+        ],
+        [
+          -0.49445863897201753,
+          -4.139579059285436e-29
+        ],
+        [
+          0.4977108394169422,
+          -4.3112929099268895e-18
+        ],
+        [
+          0.5002952255067603,
+          -2.3056946946076955e-18
+        ],
+        [
+          0.5133807299708582,
+          -1.5433337852989782e-16
+        ],
+        [
+          -0.49771083941694155,
+          -3.695442843775906e-18
+        ],
+        [
+          -0.50029522550676,
+          1.344517145735256e-17
+        ],
+        [
+          -0.5133807299708578,
+          -8.551478687945661e-18
+        ]
+      ],
+      "max_growth_difference": 1.344517145735257e-17
+    },
+    {
+      "case": "weak",
+      "small_count": 4,
+      "large_count": 8,
+      "two_parent_subset_multiplier_error": 8.896614543268005e-15,
+      "large_complete_spectrum": [
+        [
+          0.5133559092106469,
+          7.573432713185149e-17
+        ],
+        [
+          -0.5133559092106461,
+          4.316387284186973e-17
+        ],
+        [
+          -0.49443516320716385,
+          -1.1384788490814411e-18
+        ],
+        [
+          0.4944351632071641,
+          1.1260565634680222e-17
+        ],
+        [
+          -0.49768692618974697,
+          -1.4985749509042477e-17
+        ],
+        [
+          0.49768692618974675,
+          1.9254569221002879e-16
+        ],
+        [
+          0.500270926498011,
+          -1.5438352838190176e-16
+        ],
+        [
+          -0.5002709264980121,
+          8.259360520137612e-17
+        ]
+      ],
+      "max_growth_difference": 3.4106641090543936e-17
+    },
+    {
+      "case": "strong",
+      "small_count": 4,
+      "large_count": 8,
+      "two_parent_subset_multiplier_error": 2.7987104521515298e-14,
+      "large_complete_spectrum": [
+        [
+          0.5132672481552777,
+          8.481121842621237e-17
+        ],
+        [
+          -0.5132672481552785,
+          1.3931127386915877e-17
+        ],
+        [
+          0.4962689374232223,
+          -4.828348437605511e-16
+        ],
+        [
+          -0.4962689374232238,
+          -6.927007596613515e-16
+        ],
+        [
+          0.4999999999999981,
+          0.0029279664072582603
+        ],
+        [
+          0.499999999999998,
+          -0.0029279664072587555
+        ],
+        [
+          0.49999999999999944,
+          0.0034307380766852307
+        ],
+        [
+          0.5000000000000002,
+          -0.0034307380766851734
+        ]
+      ],
+      "max_growth_difference": 1.704365815147213e-16
+    }
+  ],
+  "spatial_basis_convergence": [
+    {
+      "basis": "g5.1_v24",
+      "Gamma_parent_frequencies_thz": [
+        68.04015066891941,
+        69.81977927603666
+      ],
+      "Gamma_strong_max_growth_over_drive": 0.0034307380766850602,
+      "Gamma_weak_max_growth_over_drive": 1.5843905111948485e-16
+    },
+    {
+      "basis": "g6.1_v24",
+      "Gamma_parent_frequencies_thz": [
+        67.9845049840843,
+        69.74946128170613
+      ],
+      "Gamma_strong_max_growth_over_drive": 0.0034874044917575526,
+      "Gamma_weak_max_growth_over_drive": 5.516508945409566e-17
+    },
+    {
+      "basis": "g5.1_v40",
+      "Gamma_parent_frequencies_thz": [
+        68.03773299158233,
+        69.81892634859932
+      ],
+      "Gamma_strong_max_growth_over_drive": 0.003434403237166116,
+      "Gamma_weak_max_growth_over_drive": 1.6237342089951644e-16
+    }
+  ],
+  "k_path_tracking_checks": [
+    {
+      "segments": 2,
+      "kpoint_count": 7,
+      "minimum_subspace_overlap_squared": 0.24763758588574256,
+      "ambiguous_k_indexes": [
+        0,
+        1,
+        4,
+        6
+      ],
+      "M_start_modes": [
+        7,
+        12
+      ],
+      "M_end_modes": [
+        7,
+        8
+      ],
+      "M_same_selected_eigenspace": false,
+      "M_start_frequency_thz": [
+        65.45306592115492,
+        69.32117628064329
+      ],
+      "M_end_frequency_thz": [
+        65.45306592115492,
+        66.72818391755874
+      ]
+    },
+    {
+      "segments": 4,
+      "kpoint_count": 13,
+      "minimum_subspace_overlap_squared": 0.4263681862231046,
+      "ambiguous_k_indexes": [
+        0,
+        8,
+        11
+      ],
+      "M_start_modes": [
+        7,
+        12
+      ],
+      "M_end_modes": [
+        7,
+        8
+      ],
+      "M_same_selected_eigenspace": false,
+      "M_start_frequency_thz": [
+        65.45306592115492,
+        69.32117628064329
+      ],
+      "M_end_frequency_thz": [
+        65.45306592115492,
+        66.72818391755874
+      ]
+    },
+    {
+      "segments": 7,
+      "kpoint_count": 22,
+      "minimum_subspace_overlap_squared": 0.4690251609917901,
+      "ambiguous_k_indexes": [
+        0,
+        1,
+        13,
+        19
+      ],
+      "M_start_modes": [
+        7,
+        12
+      ],
+      "M_end_modes": [
+        7,
+        8
+      ],
+      "M_same_selected_eigenspace": false,
+      "M_start_frequency_thz": [
+        65.45306592115492,
+        69.32117628064329
+      ],
+      "M_end_frequency_thz": [
+        65.45306592115492,
+        66.72818391755874
+      ]
+    }
+  ],
+  "Gamma_z24_to_z32_relative_projection_difference": 1.1014921472404183e-10,
+  "near_Gamma_points": [
+    {
+      "dataset": "nearGamma_g5.1_v24",
+      "ka_x": 0.0,
+      "approximate_angle_degrees": 0.0,
+      "parent_frequencies_thz": [
+        68.04015066891941,
+        69.81977927603666
+      ],
+      "subspace_overlap_squared": 1.0,
+      "static_max_imag": -1.0839706643137391e-32,
+      "weak_max_imag": 1.5843905111948485e-16,
+      "strong_max_imag": 0.0034307380766850602,
+      "weak_complete_quasifrequencies": [
+        [
+          0.5133559092106454,
+          1.5843905111948485e-16
+        ],
+        [
+          -0.5133559092106461,
+          -3.556909861739065e-17
+        ],
+        [
+          -0.5002709264980109,
+          -3.575373470546333e-18
+        ],
+        [
+          0.500270926498012,
+          4.009915949815323e-18
+        ]
+      ]
+    },
+    {
+      "dataset": "nearGamma_g5.1_v24",
+      "ka_x": 0.1,
+      "approximate_angle_degrees": 1.2191799201111502,
+      "parent_frequencies_thz": [
+        68.03638605376524,
+        69.81550115457271
+      ],
+      "subspace_overlap_squared": 0.9992648366447272,
+      "static_max_imag": -6.255411757413132e-06,
+      "weak_max_imag": -6.2554193971276074e-06,
+      "strong_max_imag": 0.003428962684008644,
+      "weak_complete_quasifrequencies": [
+        [
+          0.5133244440116567,
+          -2.5675374643243895e-05
+        ],
+        [
+          -0.5133244440116568,
+          -2.5675374643190993e-05
+        ],
+        [
+          0.5002432324580816,
+          -6.255419397373712e-06
+        ],
+        [
+          -0.5002432324580796,
+          -6.2554193971276074e-06
+        ]
+      ]
+    },
+    {
+      "dataset": "nearGamma_g5.1_v24",
+      "ka_x": 0.2,
+      "approximate_angle_degrees": 2.439319460761941,
+      "parent_frequencies_thz": [
+        68.02503663589084,
+        69.80274954905146
+      ],
+      "subspace_overlap_squared": 0.9992597634069706,
+      "static_max_imag": -2.486393321186291e-05,
+      "weak_max_imag": -2.486399497746431e-05,
+      "strong_max_imag": 0.0034226137902286123,
+      "weak_complete_quasifrequencies": [
+        [
+          0.5132305048260317,
+          -0.00010088940266830494
+        ],
+        [
+          -0.5132305048260316,
+          -0.00010088940266865287
+        ],
+        [
+          0.5001598190134341,
+          -2.486399497746431e-05
+        ],
+        [
+          -0.5001598190134323,
+          -2.4863994977682655e-05
+        ]
+      ]
+    },
+    {
+      "dataset": "nearGamma_g5.1_v24",
+      "ka_x": 0.3,
+      "approximate_angle_degrees": 3.6613929063466206,
+      "parent_frequencies_thz": [
+        68.00593355908629,
+        69.78177359525186
+      ],
+      "subspace_overlap_squared": 0.999245936215066,
+      "static_max_imag": -5.532115001840949e-05,
+      "weak_max_imag": -5.5321406083380065e-05,
+      "strong_max_imag": 0.0034086367208288728,
+      "weak_complete_quasifrequencies": [
+        [
+          0.5130755040899344,
+          -0.0002203048545327719
+        ],
+        [
+          -0.5130755040899336,
+          -0.00022030485453237902
+        ],
+        [
+          0.5000166997804654,
+          -5.5321406083770717e-05
+        ],
+        [
+          -0.5000166997804661,
+          -5.5321406083380065e-05
+        ]
+      ]
+    },
+    {
+      "dataset": "nearGamma_g5.1_v24",
+      "ka_x": 0.4,
+      "approximate_angle_degrees": 4.886405475705297,
+      "parent_frequencies_thz": [
+        67.97877632524505,
+        69.75291558960588
+      ],
+      "subspace_overlap_squared": 0.9992099207954691,
+      "static_max_imag": -9.670312124832118e-05,
+      "weak_max_imag": -9.67038696417676e-05,
+      "strong_max_imag": 0.00338192354038873,
+      "weak_complete_quasifrequencies": [
+        [
+          0.5128613762913699,
+          -0.0003758721520508584
+        ],
+        [
+          -0.5128613762913703,
+          -0.0003758721520508996
+        ],
+        [
+          0.4998231413377927,
+          -9.67038696417676e-05
+        ],
+        [
+          -0.49982314133779326,
+          -9.670386964204494e-05
+        ]
+      ]
+    },
+    {
+      "dataset": "nearGamma_crossing_g5.1_v24",
+      "ka_x": 0.0,
+      "approximate_angle_degrees": 0.0,
+      "parent_frequencies_thz": [
+        68.04015066891941,
+        69.81977927603666
+      ],
+      "subspace_overlap_squared": 1.0,
+      "static_max_imag": -1.0839706643137391e-32,
+      "weak_max_imag": 1.5843905111948485e-16,
+      "strong_max_imag": 0.0034307380766850602,
+      "weak_complete_quasifrequencies": [
+        [
+          0.5133559092106454,
+          1.5843905111948485e-16
+        ],
+        [
+          -0.5133559092106461,
+          -3.556909861739065e-17
+        ],
+        [
+          -0.5002709264980109,
+          -3.575373470546333e-18
+        ],
+        [
+          0.500270926498012,
+          4.009915949815323e-18
+        ]
+      ]
+    },
+    {
+      "dataset": "nearGamma_crossing_g5.1_v24",
+      "ka_x": 0.305,
+      "approximate_angle_degrees": 3.722565181777304,
+      "parent_frequencies_thz": [
+        68.0047703592847,
+        69.78051543052389
+      ],
+      "subspace_overlap_squared": 0.9931795334671526,
+      "static_max_imag": -5.713977955632642e-05,
+      "weak_max_imag": -5.714005154845012e-05,
+      "strong_max_imag": 0.003407655575993289,
+      "weak_complete_quasifrequencies": [
+        [
+          0.5130661890366572,
+          -0.00022729989753873353
+        ],
+        [
+          -0.513066189036658,
+          -0.00022729989753886735
+        ],
+        [
+          0.5000013525512143,
+          -5.7140051551053884e-05
+        ],
+        [
+          -0.5000013525512245,
+          -5.714005154845012e-05
+        ]
+      ]
+    },
+    {
+      "dataset": "nearGamma_crossing_g5.1_v24",
+      "ka_x": 0.31,
+      "approximate_angle_degrees": 3.783744919861422,
+      "parent_frequencies_thz": [
+        68.00358705712438,
+        69.77923772441565
+      ],
+      "subspace_overlap_squared": 0.9999980732926396,
+      "static_max_imag": -5.8985519117481754e-05,
+      "weak_max_imag": -4.749465620099487e-05,
+      "strong_max_imag": 0.0034066424076303757,
+      "weak_complete_quasifrequencies": [
+        [
+          0.5130567272978216,
+          -0.00023438439009757463
+        ],
+        [
+          -0.5130567272978219,
+          -0.00023438439009769332
+        ],
+        [
+          0.5000000000000001,
+          -7.047695937936358e-05
+        ],
+        [
+          0.5,
+          -4.749465620099487e-05
+        ]
+      ]
+    },
+    {
+      "dataset": "nearGamma_crossing_g5.1_v24",
+      "ka_x": 0.315,
+      "approximate_angle_degrees": 3.844932248839096,
+      "parent_frequencies_thz": [
+        68.0023836088269,
+        69.7779405358206
+      ],
+      "subspace_overlap_squared": 0.999998068802997,
+      "static_max_imag": -6.085819990471041e-05,
+      "weak_max_imag": -5.0123975671796184e-05,
+      "strong_max_imag": 0.0034055964434448445,
+      "weak_complete_quasifrequencies": [
+        [
+          0.5130471192283887,
+          -0.00024155715454446812
+        ],
+        [
+          -0.5130471192283899,
+          -0.00024155715454433994
+        ],
+        [
+          0.5,
+          -7.15930363914739e-05
+        ],
+        [
+          0.5000000000000001,
+          -5.0123975671796184e-05
+        ]
+      ]
+    },
+    {
+      "dataset": "nearGamma_crossing_g5.1_v24",
+      "ka_x": 0.32,
+      "approximate_angle_degrees": 3.9061272972441334,
+      "parent_frequencies_thz": [
+        68.00115996986915,
+        69.77662392440949
+      ],
+      "subspace_overlap_squared": 0.9999980641128737,
+      "static_max_imag": -6.275764846593469e-05,
+      "weak_max_imag": -6.275797284643231e-05,
+      "strong_max_imag": 0.003404516898427954,
+      "weak_complete_quasifrequencies": [
+        [
+          0.5130373651891539,
+          -0.0002488170017098186
+        ],
+        [
+          -0.5130373651891544,
+          -0.00024881700170975476
+        ],
+        [
+          0.49999225804920344,
+          -6.275797284668084e-05
+        ],
+        [
+          -0.49999225804920466,
+          -6.275797284643231e-05
+        ]
+      ]
+    }
+  ],
+  "paper_static_digitized_vertices_thz": {
+    "M_start": 67.33086144380907,
+    "Gamma": 67.8845582138315,
+    "X": 67.60770982882028,
+    "M_end": 67.33086144380907
+  },
+  "max_strong_changed_channel_energy_weight": 0.005261685478317832,
+  "max_strong_outside_5percent_bath_frequency_weight": 0.019163090536585808,
+  "strong_significant_sideband_channel_changes_present": true,
+  "acceptance": {
+    "finite_R1_numerics": "VERIFIED for computed points and checked convergence directions",
+    "paper_static_two_parent_identification": "APPROXIMATE Gamma symmetry/field-based subspace",
+    "global_two_parent_branch_tracking": "UNRESOLVED: ambiguous segments and unequal M-end subspaces",
+    "weak_paper_gain_window": "NOT_REPRODUCED at unchanged pump136 THz; sampled near crossing remains net decaying",
+    "strong_full_path_momentum_gap": "NOT_ESTABLISHED: accepted M points decay, rejected points are masked",
+    "frequency_dependent_outgoing_radiation": "NOT_IMPLEMENTED_R2"
+  },
+  "limits": [
+    "Physical epsilon16 replaces unknown exact Ge dispersion/epsilon_infinity with an explicit approximation",
+    "Same two-parent ordered material and radiation inputs are bound by native basis_id",
+    "Bath is frozen in frequency and pump; no reactive self-energy or retarded negative-frequency validation",
+    "Reported sideband coverage flags are geometric diagnostics, not R2 corrections",
+    "No interpolation over rejected points; no closed-band claim where the chosen subspace does not return to itself",
+    "No silent pump-frequency retuning, no fitted static shift or linewidth",
+    "This replaces the previous exploratory scalar Meep calibration by an actual Legume multimode R1 model; differences reflect changed model scope and approximations, not automatically prior bugs"
+  ]
+}

@@ -1,0 +1,595 @@
+{
+  "status": "ACTUAL_R32_WEAK_CONVERSION_SPATIAL_REFINEMENT",
+  "scope": "Actual Legume seed and native static background with independent Meep scalar-Yee Green",
+  "resolution": 32,
+  "eps_averaging": false,
+  "current_convention": "J=-i*omega_discrete*P; centered Yee time difference; exp(-i*omega*t); c=mu=1",
+  "time_step": 0.015625,
+  "basis": {
+    "status": "NATIVE_LEGUME_BACKGROUND_EXACT_Y_Q1_BASIS",
+    "rank": 3,
+    "gram_relative_error": 6.508730330684854e-15,
+    "coverage": {
+      "even": 3.0481692725148045e-07,
+      "odd": 1.1490629414660096e-06,
+      "bottom": 3.346903079491806e-07
+    },
+    "real_imag_source_svd_relative_threshold": 1e-06,
+    "minimum_basis_requested": true,
+    "minimum_basis_scope": "Three static seed/even/odd shapes with explicit coverage; no claim that discarded secondary singular directions are physically zero",
+    "actual_z_parity_projection_relative_changes": {
+      "seed": 8.771224855918637e-14,
+      "even": 5.963229484457596e-08,
+      "odd": 0.0
+    },
+    "even_residual_singular_values": [
+      0.6481610598268149,
+      2.053961689996872e-06
+    ],
+    "odd_singular_values": [
+      0.8742154885612793,
+      1.0045286207620397e-06
+    ],
+    "basis_sha256": "1c486d4b2b222352039e10330cff878d7c4539147a939cb32bed6d228bacff5b",
+    "operator_id": "c433728a92ba0a843e3efd62c5924131d3915dcfb7374f163fd2c7a4f89fb6d5",
+    "source_inputs": [
+      "Actual Legume eigenfield seed",
+      "Fresh scalar-Yee complete even carrier field",
+      "Fresh scalar-Yee complete odd carrier field; real/imag source shapes"
+    ],
+    "no_dynamic_target_fit": true,
+    "no_old_response_inputs": true,
+    "y_projection": {
+      "status": "EXACT_ACTUAL_Y_SYMMETRY_SOURCE_COLUMN",
+      "parent_basis_sha256": "b6ba6977a3ad6bb6820878e350e68db2f505f7ff56a8169ba490e7db38e8212d",
+      "basis_sha256": "1c486d4b2b222352039e10330cff878d7c4539147a939cb32bed6d228bacff5b",
+      "preserved_columns": [
+        0,
+        2
+      ],
+      "preserved_column_sha256": {
+        "0": "3f86911e140e666b7a7593f774ed537761acfd1d4eb29460ae20655d1c0f0ebc",
+        "2": "6c4e40d94d43a34c9896668ecef71985ebbb17fd2a973aaac83d91d4e0f030dc"
+      },
+      "Q1_relative_change": 9.667537207445153e-07,
+      "operator_id": "c433728a92ba0a843e3efd62c5924131d3915dcfb7374f163fd2c7a4f89fb6d5",
+      "scope": "Exact physical y-even vector parity on component-native coordinates before source construction; failed original-source attempts preserved. No dynamic response fitting."
+    }
+  },
+  "selected_basis_file": "basis_yexact.npz",
+  "sample_selection": {
+    "replacements": {
+      "f0388_q1": "f0388_q1_yexact",
+      "f0408_q1": "f0408_q1_yexact"
+    },
+    "selection_reason": "Fresh r32 weak-conversion validation: material/points/Legume seed resampled; tol1e-6 L10 max500 chosen after explicit L20 carrier breakdown. No side-frequency incident data or finite Floquet scattering matrix is claimed.",
+    "completed": true,
+    "same_source_basis_sha256": "1c486d4b2b222352039e10330cff878d7c4539147a939cb32bed6d228bacff5b",
+    "selected_tolerance": 1e-06,
+    "selected_L": 10,
+    "scope": "weak first-order only at .388/.408 from .398 pump",
+    "basis_file": "basis_yexact.npz",
+    "basis_summary_file": "basis_yexact_summary.json",
+    "source_projection_reason": "Exact actual material and source y-even parity removes tiny numerical forbidden-sector contamination before sampling; original Q1 and failed response retained; Q0/Q2 unchanged bytewise.",
+    "selected_response_sha256": {
+      "carrier_even": "4bd71022e55d2b2671af51973f5a74244d5427dd581d4e0fd946e1e42b86be17",
+      "carrier_odd": "a7c0579e968cd4b4ef5978585db4123625ce5f19b95faf439291f4ccefeb4b09",
+      "empty_carrier_lattice": "0c9f3596715df05cfef9dffc2f30b9d8203df13b69bee3e4207532d2022ec287",
+      "born_f0388": "52f1bb32db00b8f6c497ffbe7777f9362e9e17d3a9737936d7d3b4a557c7e15a",
+      "born_f0408": "20ccb3b4f8c32821265a211cc796e45788dae55e93560e379440539c55cac656",
+      "f0388_q0": "cb0a723fed32454c679658682a190629c0d4257aa42643bff7296b00b4f6bdff",
+      "f0388_q1_yexact": "407bc83140ae90b0923e1f0cc65e2fb1ddcf08523902fc60e0162d20aa2eb823",
+      "f0388_q2": "c52b8ae2f60222fe78c319861ad60ecfe44e1d12a6105e81d0d1a1e4194adf49",
+      "f0408_q0": "8d43e1c60c3269e2d7af7ad4d25f8da9a56bffcac05ac54f42f1d70d24f12ae7",
+      "f0408_q1_yexact": "04a57ddbe5433c702ebe7b3696ac92368ad227d8a503ecf57032b3732685aac1",
+      "f0408_q2": "7c7ab1e85c8ffda3e258e90ae0da068d88144f6268054e3097e1901a89d6f6f0"
+    }
+  },
+  "initial_audit": {
+    "status": "SCALAR_NATIVE_YEE_INITIALIZATION_AUDIT",
+    "completed": true,
+    "eps_averaging": false,
+    "physical_geometry_unchanged": true,
+    "resolution": 32,
+    "operator_id": "c433728a92ba0a843e3efd62c5924131d3915dcfb7374f163fd2c7a4f89fb6d5",
+    "source_space_size": 55296,
+    "active_dofs": 37842,
+    "delta": 0.01,
+    "material_derivative_max_error": 2.1316282072803006e-14,
+    "material_second_difference_max": 0.0,
+    "offdiagonal_inverse_epsilon_max": 0.0,
+    "material_mirror_relative_residual": 0.0,
+    "source_lift_relative_residual": 2.1239925634302314e-18,
+    "initial_current_real_imag": [
+      1.0,
+      0.0
+    ],
+    "dt": 0.015625,
+    "weights": "dv once per unique component Yee degree of freedom",
+    "source_convention": "J=-i omega_discrete P; omega_discrete=2 sin(omega dt/2)/dt",
+    "basis_seed_sha256": "90c9fd436d44e830912c38aca8d47fb861678d279f2daa06fdd808e6d34a119e",
+    "script_sha256": "a860c08c445d80f17037d6048d9dc03b03511c4a04cbca8cc4818d03032e6f30"
+  },
+  "physical_inputs": "same geometry, epsilon, bottom x incidence, .398 carrier, .01 drive, cosine delta epsilon .01",
+  "input_power": 0.9999923240853171,
+  "output_static_power": 0.9999795764381658,
+  "sidebands": [
+    {
+      "harmonic": -1,
+      "full_current_power_x": 8.880041371497159e-05,
+      "full_current_power_x_over_measured_input": 8.88010953446032e-05,
+      "full_current_output_real_imag": [
+        [
+          -0.003112168680272397,
+          0.004778273235983945
+        ],
+        [
+          -0.002530725971727161,
+          0.007062460673080473
+        ],
+        [
+          1.0002561811466735e-10,
+          9.283177604409892e-11
+        ],
+        [
+          1.0459380133033997e-10,
+          1.0500244642992459e-10
+        ]
+      ],
+      "R_transpose_relative_residual": 5.286817113066399e-07,
+      "optical_work_relative_residual": 1.5576184875107881e-06,
+      "optical_work_diagonal_relative_residuals": [
+        1.3386869394259639e-07,
+        7.055264476383107e-06,
+        8.661194802451214e-11
+      ],
+      "source_work_eigenvalues": [
+        1.0194519423079029e-07,
+        0.1362303998742726,
+        0.29077229156423173
+      ],
+      "source_solver_tolerances": [
+        1e-06,
+        1e-06,
+        1e-06
+      ],
+      "full_current_solver_tolerance": 1e-06,
+      "full_current_reference_metadata": {
+        "status": "CONSISTENT_NATIVE_YEE_CW_RESPONSE",
+        "completed": true,
+        "success": true,
+        "identity": {
+          "kind": "born",
+          "frequency": 0.388,
+          "sector": 0,
+          "epsilon": 11.5,
+          "template": 0,
+          "operator_id": "c433728a92ba0a843e3efd62c5924131d3915dcfb7374f163fd2c7a4f89fb6d5",
+          "base_operator_id": "c433728a92ba0a843e3efd62c5924131d3915dcfb7374f163fd2c7a4f89fb6d5",
+          "tolerance": 1e-06,
+          "L": 10,
+          "maxiters": 500,
+          "empty": false,
+          "script_sha256": "b045274c4defe210e366e99c3b2c8ade4b8859d1076f81b7014c5268acd95578",
+          "y_mirror": false,
+          "carrier_sha256": "918ea2da83c1aa4e5bb96237ca527355a7a2f1e5a7b7497b4a73b24557e5033e",
+          "calibration_sha256": null,
+          "basis_sha256": null
+        },
+        "solver_seconds": 438.0530594080001,
+        "source_lift_relative_residual": 3.146737403076629e-18,
+        "work": 3.5520165472721583,
+        "net_flux": 3.550161357302674,
+        "output_power": 3.552016548598865,
+        "incoming_power": 4.1899269702290716e-11,
+        "output_work_residual": 3.7350804150610744e-10,
+        "normalization_real_imag": [
+          1.0,
+          0.0
+        ],
+        "frequency_convention": "continuous f; discrete Maxwell omega_discrete for polarization current",
+        "phasor_convention": "E=exp(i omega dt/2)*(E_cw+E_first), H=H_cw; frozen nonintegrated electric current",
+        "fields_normalization": "absolute source current",
+        "port_convention": "Two native E planes; Yee k dispersion; sqrt(cos(k h/2)/2) flux normalization",
+        "native_port_condition_max": 4.29813546502437,
+        "analysis_requested_label": "born_f0388",
+        "analysis_actual_label": "born_f0388"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "polarization_relative_residual": 0.15038321456495135,
+          "complex_output_relative_difference": 0.1781083181769772,
+          "electric_field_relative_difference": 0.023609383489981404,
+          "projected_power_x": 8.238991997940379e-05,
+          "projected_power_x_over_measured_input": 8.23905524022547e-05,
+          "power_relative_difference": -0.07218990844056172,
+          "output_real_imag": [
+            [
+              -0.002761231188252914,
+              0.005794010900466213
+            ],
+            [
+              -0.0027612311882529135,
+              0.005794010900466212
+            ],
+            [
+              -2.8536390631146296e-14,
+              9.242594589072746e-15
+            ],
+            [
+              -2.8536390631146296e-14,
+              9.242594589072743e-15
+            ]
+          ]
+        },
+        {
+          "rank": 2,
+          "polarization_relative_residual": 0.1208022408052986,
+          "complex_output_relative_difference": 0.17686525238177428,
+          "electric_field_relative_difference": 0.021773293455701635,
+          "projected_power_x": 8.602261614944453e-05,
+          "projected_power_x_over_measured_input": 8.602327645677536e-05,
+          "power_relative_difference": -0.03128135837793655,
+          "output_real_imag": [
+            [
+              -0.002821447664694717,
+              0.005920366639838364
+            ],
+            [
+              -0.002821447664694716,
+              0.005920366639838363
+            ],
+            [
+              -2.3081691997330778e-14,
+              1.483816827404221e-14
+            ],
+            [
+              -2.3081691997330778e-14,
+              1.4838168274042205e-14
+            ]
+          ]
+        },
+        {
+          "rank": 3,
+          "polarization_relative_residual": 3.346903079496547e-07,
+          "complex_output_relative_difference": 7.260307718886502e-08,
+          "electric_field_relative_difference": 2.237755226537722e-07,
+          "projected_power_x": 8.880041008385281e-05,
+          "projected_power_x_over_measured_input": 8.880109171345655e-05,
+          "power_relative_difference": -4.089078664559764e-08,
+          "output_real_imag": [
+            [
+              -0.0031121690188501594,
+              0.0047782729215112875
+            ],
+            [
+              -0.002530726310539274,
+              0.00706246035816544
+            ],
+            [
+              -6.502816292351143e-15,
+              2.7080025426281884e-14
+            ],
+            [
+              -3.9660567702310416e-14,
+              2.5963111218025294e-15
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "harmonic": 1,
+      "full_current_power_x": 0.00011588583269833973,
+      "full_current_power_x_over_measured_input": 0.00011588672223493249,
+      "full_current_output_real_imag": [
+        [
+          0.0029136828594084293,
+          -0.008156343920442202
+        ],
+        [
+          0.0027298051937041093,
+          -0.00578087383956966
+        ],
+        [
+          3.7836819096721396e-11,
+          -2.8968226492365768e-11
+        ],
+        [
+          3.715322427575027e-11,
+          -1.1647035919582239e-11
+        ]
+      ],
+      "R_transpose_relative_residual": 5.944372171685408e-07,
+      "optical_work_relative_residual": 2.018883184662096e-06,
+      "optical_work_diagonal_relative_residuals": [
+        1.2374965136644131e-07,
+        0.00012936503419255928,
+        8.692240668527749e-10
+      ],
+      "source_work_eigenvalues": [
+        1.3558199810081994e-07,
+        0.17917956461059106,
+        0.2971095267499179
+      ],
+      "source_solver_tolerances": [
+        1e-06,
+        1e-06,
+        1e-06
+      ],
+      "full_current_solver_tolerance": 1e-06,
+      "full_current_reference_metadata": {
+        "status": "CONSISTENT_NATIVE_YEE_CW_RESPONSE",
+        "completed": true,
+        "success": true,
+        "identity": {
+          "kind": "born",
+          "frequency": 0.408,
+          "sector": 0,
+          "epsilon": 11.5,
+          "template": 0,
+          "operator_id": "c433728a92ba0a843e3efd62c5924131d3915dcfb7374f163fd2c7a4f89fb6d5",
+          "base_operator_id": "c433728a92ba0a843e3efd62c5924131d3915dcfb7374f163fd2c7a4f89fb6d5",
+          "tolerance": 1e-06,
+          "L": 10,
+          "maxiters": 500,
+          "empty": false,
+          "script_sha256": "a87348780ad9618a970c141eef1ea4889f91d2d66d99b9ddaa2dc68a1db2454e",
+          "y_mirror": false,
+          "carrier_sha256": "918ea2da83c1aa4e5bb96237ca527355a7a2f1e5a7b7497b4a73b24557e5033e",
+          "calibration_sha256": null,
+          "basis_sha256": null
+        },
+        "solver_seconds": 359.781731433,
+        "source_lift_relative_residual": 2.2444417840619544e-18,
+        "work": 4.635433313154019,
+        "net_flux": 4.63275627072464,
+        "output_power": 4.63543330793359,
+        "incoming_power": 6.06412177675221e-11,
+        "output_work_residual": -1.126200954561763e-09,
+        "normalization_real_imag": [
+          1.0,
+          0.0
+        ],
+        "frequency_convention": "continuous f; discrete Maxwell omega_discrete for polarization current",
+        "phasor_convention": "E=exp(i omega dt/2)*(E_cw+E_first), H=H_cw; frozen nonintegrated electric current",
+        "fields_normalization": "absolute source current",
+        "port_convention": "Two native E planes; Yee k dispersion; sqrt(cos(k h/2)/2) flux normalization",
+        "native_port_condition_max": 4.079641579953547,
+        "analysis_requested_label": "born_f0408",
+        "analysis_actual_label": "born_f0408"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "polarization_relative_residual": 0.15038321456495135,
+          "complex_output_relative_difference": 0.1565890585061795,
+          "electric_field_relative_difference": 0.020597585351415176,
+          "projected_power_x": 0.00011425389956309707,
+          "projected_power_x_over_measured_input": 0.00011425477657301415,
+          "power_relative_difference": -0.014082248858587554,
+          "output_real_imag": [
+            [
+              0.0028367595821379827,
+              -0.007005693745425708
+            ],
+            [
+              0.0028367595821379835,
+              -0.007005693745425707
+            ],
+            [
+              -1.1655533467229246e-13,
+              -7.333572568776557e-15
+            ],
+            [
+              -1.1655533467229246e-13,
+              -7.333572568776582e-15
+            ]
+          ]
+        },
+        {
+          "rank": 2,
+          "polarization_relative_residual": 0.1208022408052986,
+          "complex_output_relative_difference": 0.15650082058704387,
+          "electric_field_relative_difference": 0.018682273068089884,
+          "projected_power_x": 0.00011304749998473722,
+          "projected_power_x_over_measured_input": 0.00011304836773436299,
+          "power_relative_difference": -0.02449249099319084,
+          "output_real_imag": [
+            [
+              0.0028217430272723175,
+              -0.006968609350538217
+            ],
+            [
+              0.0028217430272723183,
+              -0.006968609350538216
+            ],
+            [
+              -1.1753838214633652e-13,
+              -7.466210473732425e-15
+            ],
+            [
+              -1.175383821463365e-13,
+              -7.466210473732444e-15
+            ]
+          ]
+        },
+        {
+          "rank": 3,
+          "polarization_relative_residual": 3.346903079496547e-07,
+          "complex_output_relative_difference": 1.452154111319782e-07,
+          "electric_field_relative_difference": 3.020238094531118e-07,
+          "projected_power_x": 0.00011588583453228,
+          "projected_power_x_over_measured_input": 0.00011588672406888683,
+          "power_relative_difference": 1.582540520850273e-08,
+          "output_real_imag": [
+            [
+              0.0029136818608835684,
+              -0.00815634439028639
+            ],
+            [
+              0.0027298041936610674,
+              -0.005780874310790044
+            ],
+            [
+              -1.2073863966823115e-13,
+              7.260909960475423e-17
+            ],
+            [
+              -1.1433812462444188e-13,
+              -1.5005030047069622e-14
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "historical_and_spatial_comparison": [
+    {
+      "harmonic": -1,
+      "old_native_power": 0.0001317392578255223,
+      "current_native_green_power": 0.00013173925782551015,
+      "old_r32_reference_power": 0.00011220728109203111,
+      "new_noavg_r24_full_current_power": 2.4761707827401745e-05,
+      "new_noavg_r32_full_current_power": 8.880041371497159e-05,
+      "new_noavg_r32_projected_power": 8.880041008385281e-05,
+      "current_native_vs_new_reference_power_difference": 0.48354328898018584,
+      "r32_vs_r24_full_current_relative_power_change": 2.5861990753603625
+    },
+    {
+      "harmonic": 1,
+      "old_native_power": 0.0001359786533442951,
+      "current_native_green_power": 0.00013597865334428197,
+      "old_r32_reference_power": 0.00011877672025167711,
+      "new_noavg_r24_full_current_power": 2.0552337660214627e-06,
+      "new_noavg_r32_full_current_power": 0.00011588583269833973,
+      "new_noavg_r32_projected_power": 0.00011588583453228,
+      "current_native_vs_new_reference_power_difference": 0.17338461637709845,
+      "r32_vs_r24_full_current_relative_power_change": 55.385718556323845
+    }
+  ],
+  "current_native_retest": {
+    "status": "HISTORICAL_PHYSICAL_PROTOCOL_RECOMPUTED_WITH_CURRENT_NATIVE_GREEN",
+    "native_modes": [
+      5
+    ],
+    "gmax": 6.1,
+    "frequency_fa_over_c": 0.398,
+    "drive_fa_over_c": 0.01,
+    "absolute_epsilon_cosine_amplitude": 0.01,
+    "modulation_region": "dielectric excluding holes",
+    "input": "bottom x unit power; Gamma",
+    "reference_planes": [
+      -0.7,
+      0.7
+    ],
+    "rows": [
+      {
+        "harmonic": -1,
+        "current_native_green_power": 0.00013173925782551015,
+        "historical_native_power": 0.0001317392578255223,
+        "relative_change": -9.214851104388799e-14,
+        "harmonic3_to4_complex_amplitude_difference": 6.139240144419921e-16,
+        "output_real_imag": [
+          [
+            -0.007133768425614764,
+            0.003870268332101079
+          ],
+          [
+            -0.007133768425612137,
+            0.0038702683321039733
+          ]
+        ]
+      },
+      {
+        "harmonic": 1,
+        "current_native_green_power": 0.00013597865334428197,
+        "historical_native_power": 0.0001359786533442951,
+        "relative_change": -9.64783808399261e-14,
+        "harmonic3_to4_complex_amplitude_difference": 0.0,
+        "output_real_imag": [
+          [
+            0.006872516010013877,
+            -0.004556078397509385
+          ],
+          [
+            0.006872516010010961,
+            -0.0045560783975120795
+          ]
+        ]
+      }
+    ],
+    "current_green_vs_current_legacy_S_relative_difference": 8.3985358117091e-14,
+    "source_sha256": {
+      "sptc_toolbox/results/connected_physics/spatial/g6.1_v01234567/native.pkl": "8e0d97e7f1a218bae167dc0c0e05ea1da7881dc488416e818c03563286b3e45f",
+      "sptc_toolbox/scripts/retest_historical_native_green.py": "c42753658776cb26b451ac03eb6cc26e3f6067bbfdca3dfb12fa61119d33bd37"
+    },
+    "scope": "Current native Green assembly, same original physical/approximation inputs; not a completed hybrid-to-pure-Legume spatial adapter",
+    "approximations": [
+      "One native mode",
+      "Frozen radiation channels",
+      "Area-average homogeneous background",
+      "No complete-pattern direct background modulation"
+    ]
+  },
+  "finite_Floquet_solved": false,
+  "sideband_incident_fields_supplied": false,
+  "no_fitting_or_old_response_reuse": true,
+  "source_sha256": {
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/sample_selection.json": "dee7c698d239bd8b88e052c05736b20fa2ede68ad9b6bca129852e2d031856cc",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/carrier_even/summary.json": "fd5ad684a97c9915f8c13795c337a8c3f47960a5653b255ac2e06ad6afef6e86",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/carrier_even/response.npz": "4bd71022e55d2b2671af51973f5a74244d5427dd581d4e0fd946e1e42b86be17",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/carrier_odd/summary.json": "5895ffe97132be7c53898fbff47f771aacfcc9d8a2ff00f5d066c7115d984f93",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/carrier_odd/response.npz": "a7c0579e968cd4b4ef5978585db4123625ce5f19b95faf439291f4ccefeb4b09",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0388_q0/summary.json": "2f08fbbab6a522cb34e4f0e375b8d45b7ea9e82b5ef7bb3066aff5a267a27dda",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0388_q0/response.npz": "cb0a723fed32454c679658682a190629c0d4257aa42643bff7296b00b4f6bdff",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0388_q1_yexact/summary.json": "87454a049eaea72c8dd66b9341a9c1159fab9a24366fd2a8c9c2a6d59837b005",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0388_q1_yexact/response.npz": "407bc83140ae90b0923e1f0cc65e2fb1ddcf08523902fc60e0162d20aa2eb823",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0388_q2/summary.json": "a4d261da373de0ad395e9e1ebc8ae9ceadeb9bf67230d42df7efdacb54862b37",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0388_q2/response.npz": "c52b8ae2f60222fe78c319861ad60ecfe44e1d12a6105e81d0d1a1e4194adf49",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/born_f0388/summary.json": "ecfce712034872b6500213b94c0454ab653c580ecb29932b5e4e89bcbc2ef0ff",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/born_f0388/response.npz": "52f1bb32db00b8f6c497ffbe7777f9362e9e17d3a9737936d7d3b4a557c7e15a",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0408_q0/summary.json": "3fbad31dca96c90908da11970aea3b3a416927788901fef6e00f8e6aa9bb6b34",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0408_q0/response.npz": "8d43e1c60c3269e2d7af7ad4d25f8da9a56bffcac05ac54f42f1d70d24f12ae7",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0408_q1_yexact/summary.json": "34bba50ec7fa322a7dfb60bc4b14648a9b86e82ad266c402a93ce15801fa732f",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0408_q1_yexact/response.npz": "04a57ddbe5433c702ebe7b3696ac92368ad227d8a503ecf57032b3732685aac1",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0408_q2/summary.json": "eaeb938a0664bf60c7556ff93097d7ef78ff48a64334c3b73eeb0f11703568a4",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/f0408_q2/response.npz": "7c7ab1e85c8ffda3e258e90ae0da068d88144f6268054e3097e1901a89d6f6f0",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/born_f0408/summary.json": "04e4b5370c976d592fc2f9b9135edd56386916065d35b60fae25d04c74866379",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/born_f0408/response.npz": "20ccb3b4f8c32821265a211cc796e45788dae55e93560e379440539c55cac656",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/grid.npz": "119c1f8843a0dcf867c6769b809e5fbca095d5c4f5dde0e4a5dd5b4507eff98c",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/basis_yexact.npz": "1c486d4b2b222352039e10330cff878d7c4539147a939cb32bed6d228bacff5b",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/init_summary.json": "ca1c62227c04d3850d03dbfd656df7480af90f0340ef2867c1b34bb22c83cc03",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/basis_yexact_summary.json": "74dcdabff2317532d7b5620334d9efa3286cb06636f21f60abc12f5d2f56d936",
+    "sptc_toolbox/results/consistent_green_20261017/historical_baseline.json": "cb99238a05a01c6a2ffe144dd2b93dd97a65f3a3bdf9ae0bc92d108aeb36e52d",
+    "sptc_toolbox/results/consistent_green_20261017/native_retest/summary.json": "3011ee27c48632e610fcc7b895cad45f8d46a6f4bd5fe6b546c0698ca2073c0f",
+    "sptc_toolbox/results/consistent_green_20261017/analysis/summary.json": "847441f3304a3dd62d9bda1693c5080b70daf47e52ae2a8548cd46ceb3441df9",
+    "sptc_toolbox/scripts/analyze_consistent_green.py": "2655d1d80b33a634863fd1bdaf69a3fe5e042558f70d62cecb2692bc4ef35e22",
+    "sptc_toolbox/results/consistent_green_20261017/native_r32/y_source_response_sensitivity.json": "ed3ca28a7f00dfa399a2688b6120ca812834d811af243be07fced924b598e2f5"
+  },
+  "y_source_response_sensitivity": [
+    {
+      "frequency": 0.388,
+      "original_status": false,
+      "selected_status": true,
+      "relative_change": {
+        "electric": 1.0564451682073008e-05,
+        "output": 1.7432450040615345e-06,
+        "current": 9.667537207449755e-07
+      },
+      "scope": "Source changes by exact physical Y projector; comparison is targeted small-source sensitivity, not identical source tolerance convergence."
+    },
+    {
+      "frequency": 0.408,
+      "original_status": true,
+      "selected_status": true,
+      "relative_change": {
+        "electric": 5.976946218052692e-06,
+        "output": 7.364957179345875e-06,
+        "current": 9.667537207440943e-07
+      },
+      "scope": "Source changes by exact physical Y projector; comparison is targeted small-source sensitivity, not identical source tolerance convergence."
+    }
+  ]
+}

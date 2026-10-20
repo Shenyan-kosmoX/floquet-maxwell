@@ -1,0 +1,511 @@
+{
+  "status": "BOUNDED_PHYSICAL_K_REFINEMENT_COMPLETED_WITH_EXPLICIT_REMAINING_LIMITS",
+  "rounds": [
+    {
+      "round": 0,
+      "k_points": 25,
+      "seed_supported_count": 1,
+      "seed_supported_indexes": [
+        0
+      ],
+      "target_rejected_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          23,
+          24
+        ]
+      ],
+      "worst_selected_capture": 0.40446315009620226,
+      "midpoint_requests": [
+        {
+          "edge_index": 0,
+          "kpoint": [
+            0.19634954084936207,
+            0.0
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 7,
+          "kpoint": [
+            2.945243112740431,
+            0.0
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 8,
+          "kpoint": [
+            3.141592653589793,
+            0.19634954084936207
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 14,
+          "kpoint": [
+            3.141592653589793,
+            2.552544031041707
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 15,
+          "kpoint": [
+            3.141592653589793,
+            2.945243112740431
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 16,
+          "kpoint": [
+            2.945243112740431,
+            2.945243112740431
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 23,
+          "kpoint": [
+            0.19634954084936207,
+            0.19634954084936207
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        }
+      ],
+      "unresolved": [],
+      "sampled_bundle_criteria_passed": false
+    },
+    {
+      "round": 1,
+      "k_points": 32,
+      "seed_supported_count": 1,
+      "seed_supported_indexes": [
+        0
+      ],
+      "target_rejected_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          30,
+          31
+        ]
+      ],
+      "worst_selected_capture": 0.06363238791220636,
+      "midpoint_requests": [
+        {
+          "edge_index": 0,
+          "kpoint": [
+            0.09817477042468103,
+            0.0
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 9,
+          "kpoint": [
+            3.043417883165112,
+            0.0
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 10,
+          "kpoint": [
+            3.141592653589793,
+            0.09817477042468103
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 11,
+          "kpoint": [
+            3.141592653589793,
+            0.2945243112740431
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 19,
+          "kpoint": [
+            3.141592653589793,
+            2.84706834231575
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 20,
+          "kpoint": [
+            3.141592653589793,
+            3.043417883165112
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 21,
+          "kpoint": [
+            3.043417883165112,
+            3.043417883165112
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 26,
+          "kpoint": [
+            1.3744467859455345,
+            1.3744467859455345
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        }
+      ],
+      "unresolved": [
+        {
+          "edge_index": 27,
+          "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+          "reasons": [
+            "selected_field_discontinuity",
+            "output_window_or_reference_space_incomplete"
+          ]
+        },
+        {
+          "edge_index": 28,
+          "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+          "reasons": [
+            "output_window_or_reference_space_incomplete"
+          ]
+        },
+        {
+          "edge_index": 29,
+          "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+          "reasons": [
+            "output_window_or_reference_space_incomplete"
+          ]
+        },
+        {
+          "edge_index": 30,
+          "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+          "reasons": [
+            "target_rank_changed",
+            "selected_field_discontinuity",
+            "output_window_or_reference_space_incomplete"
+          ]
+        }
+      ],
+      "sampled_bundle_criteria_passed": false
+    },
+    {
+      "round": 2,
+      "k_points": 40,
+      "seed_supported_count": 12,
+      "seed_supported_indexes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "target_rejected_edges": [
+        [
+          11,
+          12
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          35,
+          36
+        ],
+        [
+          38,
+          39
+        ]
+      ],
+      "worst_selected_capture": 0.06363238791220636,
+      "midpoint_requests": [
+        {
+          "edge_index": 11,
+          "kpoint": [
+            3.0925052683774528,
+            0.0
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 26,
+          "kpoint": [
+            3.141592653589793,
+            3.0925052683774528
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        },
+        {
+          "edge_index": 27,
+          "kpoint": [
+            3.0925052683774528,
+            3.0925052683774528
+          ],
+          "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+        }
+      ],
+      "unresolved": [
+        {
+          "edge_index": 35,
+          "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+          "reasons": [
+            "selected_field_discontinuity",
+            "output_window_or_reference_space_incomplete"
+          ]
+        },
+        {
+          "edge_index": 36,
+          "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+          "reasons": [
+            "output_window_or_reference_space_incomplete"
+          ]
+        },
+        {
+          "edge_index": 37,
+          "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+          "reasons": [
+            "output_window_or_reference_space_incomplete"
+          ]
+        },
+        {
+          "edge_index": 38,
+          "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+          "reasons": [
+            "target_rank_changed",
+            "selected_field_discontinuity",
+            "output_window_or_reference_space_incomplete"
+          ]
+        }
+      ],
+      "sampled_bundle_criteria_passed": false
+    }
+  ],
+  "maximum_native_refinement_rounds": 2,
+  "final_k_points": 40,
+  "final_seed_supported_count": 12,
+  "final_target_rejected_edges": [
+    [
+      11,
+      12
+    ],
+    [
+      26,
+      27
+    ],
+    [
+      27,
+      28
+    ],
+    [
+      35,
+      36
+    ],
+    [
+      38,
+      39
+    ]
+  ],
+  "final_sampled_bundle_criteria_passed": false,
+  "remaining_midpoint_candidates_after_budget": [
+    {
+      "edge_index": 11,
+      "kpoint": [
+        3.0925052683774528,
+        0.0
+      ],
+      "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+    },
+    {
+      "edge_index": 26,
+      "kpoint": [
+        3.141592653589793,
+        3.0925052683774528
+      ],
+      "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+    },
+    {
+      "edge_index": 27,
+      "kpoint": [
+        3.0925052683774528,
+        3.0925052683774528
+      ],
+      "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+    }
+  ],
+  "non_sampling_representation_limits": [
+    {
+      "edge_index": 35,
+      "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+      "reasons": [
+        "selected_field_discontinuity",
+        "output_window_or_reference_space_incomplete"
+      ]
+    },
+    {
+      "edge_index": 36,
+      "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+      "reasons": [
+        "output_window_or_reference_space_incomplete"
+      ]
+    },
+    {
+      "edge_index": 37,
+      "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+      "reasons": [
+        "output_window_or_reference_space_incomplete"
+      ]
+    },
+    {
+      "edge_index": 38,
+      "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+      "reasons": [
+        "target_rank_changed",
+        "selected_field_discontinuity",
+        "output_window_or_reference_space_incomplete"
+      ]
+    }
+  ],
+  "original_point_indexes_in_refined_path": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    23,
+    27,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    37,
+    39
+  ],
+  "max_original_point_native_frequency_change": 0.0,
+  "physical_signature": "55367e8925e3f086f15dfae9dd5a404c88733764a72b3543bf5c70deb2f18890",
+  "reference_id": "23f5d6d7fa35da223766faa4d3f799721094f63928678b207376c9de6021f6aa",
+  "same_physical_geometry": true,
+  "same_reference": true,
+  "native_config": {
+    "gmax": 2.1,
+    "gmode_inds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reference_eps": [
+      10.0
+    ],
+    "numeig": 12,
+    "eps_eff": "custom",
+    "gmode_compute": "exact",
+    "gmode_step": 0.001,
+    "gmode_tol": 1e-10,
+    "compute_im": false,
+    "truncate_g": "abs",
+    "eig_solver": "eigh",
+    "eig_sigma": 0.0,
+    "verbose": false,
+    "kz_symmetry": null,
+    "angles": null
+  },
+  "field_metric_id": "bbde7622cf1936ea6189ef3664a938c7a1e1bdc8799c26c4f68356998a74897b",
+  "selection": "Original Gamma seed modes [2,3], physical-field principal angles; no endpoint constraint or frequency-nearest reassignment",
+  "scope": "Only bounded k-sampling/identity refinement; no independent full-path spatial refinement, topological, BIC, or radiation completeness certificate",
+  "elapsed_seconds": 17.755971900001896,
+  "source_sha256": {
+    "sptc_toolbox/results/pc_slab_pipeline/native_g2.1.pkl": "c07d3acb8fa5f11aea7304afbcd061b7947c5d1d426bc95d22a6e0660a220851",
+    "sptc_toolbox/results/pc_slab_pipeline/tracking.json": "7f45a708180dd07e330562ff710476bcd8dfda36d71af8e48218ac8e49c90175",
+    "sptc_toolbox/scripts/refine_pc_slab_path.py": "094678245d642cb78a38b4762d2fa821d1a13c95dcd7f4c87c87f4288745dbe8",
+    "sptc_toolbox/scripts/validate_pc_slab_pipeline.py": "7d7a5b982833c8e63a4bc85c643a7d9811046f264ea628379ddbaa5a71675365",
+    "sptc_toolbox/basis_stability.py": "154f90b3c223afaa85a990cbf8cf15dc9c1734f672c7b1c4abbafa0c9657f8e8",
+    "sptc_toolbox/tracking.py": "26afe00e6caec4c4435b67f99df7ce63a22edcce3264383cc6723cd1d06717ed"
+  },
+  "output_native_sha256": "ad4c527ed27b1631cdeb7f1e96d760d3dcf0131fe5d0fc7c9784f8f5be70a351"
+}

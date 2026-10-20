@@ -1,0 +1,59 @@
+{
+  "scope": "Initialization only, no field propagation",
+  "resolutions": [
+    {
+      "resolution": 24,
+      "actual_computational_min": [
+        -0.5,
+        -0.5,
+        -2.375
+      ],
+      "actual_computational_max": [
+        0.5,
+        0.5,
+        2.4166666666666665
+      ],
+      "actual_cell_size": [
+        1.0,
+        1.0,
+        4.791666666666666
+      ],
+      "requested_cell_size": [
+        1.0,
+        1.0,
+        4.8
+      ],
+      "requested_pml_thickness": 0.65,
+      "derived_air_pml_interface_abs_z": 1.7666666666666666,
+      "pml_note": "Interface derived from measured cell boundary minus requested PML thickness; no sigma-profile audit",
+      "time_step": 0.020833333333333332
+    },
+    {
+      "resolution": 32,
+      "actual_computational_min": [
+        -0.5,
+        -0.5,
+        -2.40625
+      ],
+      "actual_computational_max": [
+        0.5,
+        0.5,
+        2.40625
+      ],
+      "actual_cell_size": [
+        1.0,
+        1.0,
+        4.8125
+      ],
+      "requested_cell_size": [
+        1.0,
+        1.0,
+        4.8
+      ],
+      "requested_pml_thickness": 0.65,
+      "derived_air_pml_interface_abs_z": 1.75625,
+      "pml_note": "Interface derived from measured cell boundary minus requested PML thickness; no sigma-profile audit",
+      "time_step": 0.015625
+    }
+  ]
+}

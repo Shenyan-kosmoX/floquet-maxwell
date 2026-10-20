@@ -1,0 +1,91 @@
+{
+  "scope": "Native zone-edge target identity and spatial refinement; not QNM residue normalization",
+  "field_metric": "cell_area integral dz sum_G,component |H_G(z)|^2; union G, no components dropped",
+  "field_metric_id": "06b0eb45dc66ec7e8798396ac1611f1517c93e9f8fb28f1ad6e0aa42639d8e2e",
+  "z_window": [
+    -3.0,
+    3.55
+  ],
+  "z_quadrature_per_slab_interval": 24,
+  "rows": [
+    {
+      "config": "pilot_g2.1_v0",
+      "mode": 14,
+      "kx": 3.141592653589793,
+      "omega": 1.6036020440595065,
+      "magnetic_window_norm": 0.9999999996440203,
+      "native_g_count": 171
+    },
+    {
+      "config": "g3.1_v0",
+      "mode": 14,
+      "kx": 3.141592653589793,
+      "omega": 1.6094149732398528,
+      "magnetic_window_norm": 0.9999999996557561,
+      "native_g_count": 369
+    },
+    {
+      "config": "pilot_g3.1_v03",
+      "mode": 14,
+      "kx": 3.141592653589793,
+      "omega": 1.6091512690819756,
+      "magnetic_window_norm": 0.9999999875622377,
+      "native_g_count": 369
+    },
+    {
+      "config": "control_g4.1_v03",
+      "mode": 14,
+      "kx": 3.141592653589793,
+      "omega": 1.6110106573379381,
+      "magnetic_window_norm": 0.9999999883158712,
+      "native_g_count": 643
+    },
+    {
+      "config": "control_g5.1_v03",
+      "mode": 14,
+      "kx": 3.141592653589793,
+      "omega": 1.6125266419358326,
+      "magnetic_window_norm": 0.9999999896735529,
+      "native_g_count": 997
+    }
+  ],
+  "overlap_squared": [
+    [
+      1.0000000000000013,
+      0.996514008473769,
+      0.996460710478301,
+      0.9957006885605272,
+      0.9952403349896117
+    ],
+    [
+      0.996514008473769,
+      1.0000000000000013,
+      0.9999211648667067,
+      0.999486334776813,
+      0.9993104636817578
+    ],
+    [
+      0.996460710478301,
+      0.9999211648667067,
+      1.0000000000000027,
+      0.99955864965162,
+      0.9993724509532037
+    ],
+    [
+      0.9957006885605272,
+      0.999486334776813,
+      0.99955864965162,
+      1.0000000000000018,
+      0.9998616518036015
+    ],
+    [
+      0.9952403349896117,
+      0.9993104636817578,
+      0.9993724509532037,
+      0.9998616518036015,
+      1.0000000000000084
+    ]
+  ],
+  "finest_frequency_change": 0.001515984597894482,
+  "status": "IDENTITY_SUPPORTED_SPATIAL_FREQUENCY_NOT_YET_FULLY_CONVERGED"
+}

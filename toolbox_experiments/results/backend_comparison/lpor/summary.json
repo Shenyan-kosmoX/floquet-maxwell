@@ -1,0 +1,341 @@
+{
+  "status": "MEEP_STATIC_CALIBRATED_ONE_MODE_CLOSURE",
+  "calibration": {
+    "label": "LPOR ring candidate",
+    "base": {
+      "source": "toolbox_experiments\\results\\lpor_meep\\r32_pad1\\summary.json",
+      "sha256": "7948bfe6571cf2c4100776f011bbd0c09e64883fd2ab6c7c4fd0608ee9fad473",
+      "config": {
+        "radius": 0.375,
+        "height": 0.125,
+        "epsilon": 16.0,
+        "period_nm": 400.0,
+        "resolution": 32,
+        "kx": 0.0,
+        "ky": 0.0,
+        "center_frequency": 0.51,
+        "frequency_width": 0.2,
+        "pml": 0.5,
+        "padding": 1.0,
+        "window_time": 100.0,
+        "warmup": 25.0,
+        "courant": 0.5,
+        "source_component": "Hz",
+        "mirror_z": true,
+        "epsilon_averaging": true,
+        "save_volume": true
+      },
+      "meep_version": "1.35.0",
+      "frequency_mean": 0.5022905280882822,
+      "frequency_spread": 2.563438350478009e-10,
+      "decay_mean": -4.73127016379677e-09,
+      "decay_spread": 2.5166358033535656e-10,
+      "observations": [
+        {
+          "window": 0,
+          "probe": 0,
+          "frequency": 0.5022905281933833,
+          "decay": -4.5600763132354576e-09,
+          "Q": 55074794.11424575,
+          "amplitude_real": -133.12302132048126,
+          "amplitude_imag": 116.66170987306828,
+          "error": 6.548014344536619e-12
+        },
+        {
+          "window": 0,
+          "probe": 1,
+          "frequency": 0.5022905281120473,
+          "decay": -4.804665209092013e-09,
+          "Q": 52271126.73340359,
+          "amplitude_real": -100.90815929096411,
+          "amplitude_imag": 88.43037648106421,
+          "error": 9.618761083798624e-13
+        },
+        {
+          "window": 1,
+          "probe": 0,
+          "frequency": 0.5022905279370394,
+          "decay": -4.7485992392887966e-09,
+          "Q": 52888283.747047484,
+          "amplitude_real": 98.18199494092359,
+          "amplitude_imag": 147.28137459546625,
+          "error": 1.6199139739780195e-11
+        },
+        {
+          "window": 1,
+          "probe": 1,
+          "frequency": 0.502290528110659,
+          "decay": -4.811739893570814e-09,
+          "Q": 52194272.67689515,
+          "amplitude_real": 74.42261927409889,
+          "amplitude_imag": 111.64028310253745,
+          "error": 5.86462469459789e-13
+        }
+      ],
+      "scope": "Four fits of a declared isolated cluster; not eigenvector identity proof"
+    },
+    "epsilon_minus": {
+      "source": "toolbox_experiments\\results\\lpor_meep\\r32_pad1_eps15.9\\summary.json",
+      "sha256": "9932c0f2f7dcbbf83293b274018bf248f3c50092e6507fa7a1d50543c7c3b734",
+      "config": {
+        "radius": 0.375,
+        "height": 0.125,
+        "epsilon": 15.9,
+        "period_nm": 400.0,
+        "resolution": 32,
+        "kx": 0.0,
+        "ky": 0.0,
+        "center_frequency": 0.51,
+        "frequency_width": 0.2,
+        "pml": 0.5,
+        "padding": 1.0,
+        "window_time": 100.0,
+        "warmup": 25.0,
+        "courant": 0.5,
+        "source_component": "Hz",
+        "mirror_z": true,
+        "epsilon_averaging": true,
+        "save_volume": false
+      },
+      "meep_version": "1.35.0",
+      "frequency_mean": 0.5037473797824494,
+      "frequency_spread": 3.659286207380319e-10,
+      "decay_mean": -5.754035903002811e-09,
+      "decay_spread": 1.0946898133542466e-09,
+      "observations": [
+        {
+          "window": 0,
+          "probe": 0,
+          "frequency": 0.5037473795132306,
+          "decay": -5.22895629269571e-09,
+          "Q": 48169017.99474893,
+          "amplitude_real": -68.72316367725234,
+          "amplitude_imag": 165.5272629089095,
+          "error": 2.987671986620757e-11
+        },
+        {
+          "window": 0,
+          "probe": 1,
+          "frequency": 0.5037473798665366,
+          "decay": -5.710463434698738e-09,
+          "Q": 44107399.13030477,
+          "amplitude_real": -52.09579435382413,
+          "amplitude_imag": 125.47837558488978,
+          "error": 2.651537796222516e-12
+        },
+        {
+          "window": 1,
+          "probe": 0,
+          "frequency": 0.503747379870871,
+          "decay": -6.3236461060499566e-09,
+          "Q": 39830453.14545085,
+          "amplitude_real": 165.7519969284955,
+          "amplitude_imag": -68.17781137918718,
+          "error": 2.6425734249942757e-11
+        },
+        {
+          "window": 1,
+          "probe": 1,
+          "frequency": 0.5037473798791592,
+          "decay": -5.753077778566837e-09,
+          "Q": 43780685.68409385,
+          "amplitude_real": 125.64870252458348,
+          "amplitude_imag": -51.68235622677441,
+          "error": 1.2800143425132182e-12
+        }
+      ],
+      "scope": "Four fits of a declared isolated cluster; not eigenvector identity proof"
+    },
+    "epsilon_plus": {
+      "source": "toolbox_experiments\\results\\lpor_meep\\r32_pad1_eps16.1\\summary.json",
+      "sha256": "424bb320e49d90f791f36c85bfc661bf2e275787e175305c862c46232b813276",
+      "config": {
+        "radius": 0.375,
+        "height": 0.125,
+        "epsilon": 16.1,
+        "period_nm": 400.0,
+        "resolution": 32,
+        "kx": 0.0,
+        "ky": 0.0,
+        "center_frequency": 0.51,
+        "frequency_width": 0.2,
+        "pml": 0.5,
+        "padding": 1.0,
+        "window_time": 100.0,
+        "warmup": 25.0,
+        "courant": 0.5,
+        "source_component": "Hz",
+        "mirror_z": true,
+        "epsilon_averaging": true,
+        "save_volume": false
+      },
+      "meep_version": "1.35.0",
+      "frequency_mean": 0.5008459210325014,
+      "frequency_spread": 8.164691145395864e-11,
+      "decay_mean": -3.8134143847957e-09,
+      "decay_spread": 6.643146818762606e-11,
+      "observations": [
+        {
+          "window": 0,
+          "probe": 0,
+          "frequency": 0.5008459210683933,
+          "decay": -3.7724183071582125e-09,
+          "Q": 66382606.63167068,
+          "amplitude_real": -168.3460419471546,
+          "amplitude_imag": 45.82260164977084,
+          "error": 1.3430141942563328e-12
+        },
+        {
+          "window": 0,
+          "probe": 1,
+          "frequency": 0.5008459209905377,
+          "decay": -3.8169358949403055e-09,
+          "Q": 65608374.724665195,
+          "amplitude_real": -127.59988216565716,
+          "amplitude_imag": 34.731791079506166,
+          "error": 4.047827397340145e-13
+        },
+        {
+          "window": 1,
+          "probe": 0,
+          "frequency": 0.5008459210721846,
+          "decay": -3.825453561738447e-09,
+          "Q": 65462292.6391739,
+          "amplitude_real": -121.89693473395766,
+          "amplitude_imag": 124.8242443332432,
+          "error": 5.018080861058698e-12
+        },
+        {
+          "window": 1,
+          "probe": 1,
+          "frequency": 0.5008459209988894,
+          "decay": -3.838849775345839e-09,
+          "Q": 65233852.62630765,
+          "amplitude_real": -92.39322401301015,
+          "amplitude_imag": 94.61202442573723,
+          "error": 7.331580871997602e-13
+        }
+      ],
+      "scope": "Four fits of a declared isolated cluster; not eigenvector identity proof"
+    },
+    "derivative_dfade_depsilon": -0.01450729374974028,
+    "electric_overlap_S": 0.05776455233967895,
+    "electric_fill_fraction_approx": 0.9242328374348632,
+    "frequency_thz": 376.45728011426036,
+    "angular_frequency_per_s": 2365350851194710.5,
+    "derivative_step_epsilon": 0.20000000000000107,
+    "derivative_uncertainty_from_fit_spread_bound": 2.2378776609599407e-09,
+    "linewidth_policy": "Gamma linewidth unresolved; gamma=0 is a lossless closure, not measured infinite Q",
+    "assumptions": [
+      "single independent mode",
+      "electric-mass closure calibrated to first derivative only",
+      "no off-diagonal mode coupling recovered",
+      "not a finite-difference step-convergence certificate"
+    ]
+  },
+  "Omega_per_s": 100000000000000.0,
+  "absolute_sine_modulation": true,
+  "dc_shift": 0.0,
+  "computed_C_median": 0.014796370351177757,
+  "scalar_analytic_C": 0.014796361885717837,
+  "loglog_slope": 1.9999611444161454,
+  "paper_image_C": 0.2720566656436988,
+  "paper_image_relative_uncertainty": 0.2,
+  "legume_projected_C": 0.016572021035120107,
+  "paper_over_computed_C": 18.386716416708488,
+  "diagnostics": [
+    {
+      "multiplier_error": 3.446816808173604e-12,
+      "residual": 1.3783334637950414e-16,
+      "edge_weight": 5.761571623092882e-30,
+      "physical_branch_count": 2
+    },
+    {
+      "multiplier_error": 3.5351852160244486e-12,
+      "residual": 1.237796171762118e-16,
+      "edge_weight": 4.312136602095087e-30,
+      "physical_branch_count": 2
+    },
+    {
+      "multiplier_error": 3.597737761511253e-12,
+      "residual": 8.608984803817337e-17,
+      "edge_weight": 9.465025683608203e-30,
+      "physical_branch_count": 2
+    },
+    {
+      "multiplier_error": 3.3575717541129456e-12,
+      "residual": 7.345238439577494e-17,
+      "edge_weight": 1.1089353388510166e-29,
+      "physical_branch_count": 2
+    },
+    {
+      "multiplier_error": 3.367417873271288e-12,
+      "residual": 1.1270228688673272e-16,
+      "edge_weight": 3.110988395089125e-29,
+      "physical_branch_count": 2
+    },
+    {
+      "multiplier_error": 3.749767464196667e-12,
+      "residual": 1.4675036102190043e-16,
+      "edge_weight": 9.694870516309963e-29,
+      "physical_branch_count": 2
+    },
+    {
+      "multiplier_error": 3.2953750943769955e-12,
+      "residual": 1.245039762099054e-16,
+      "edge_weight": 1.2126186654478806e-29,
+      "physical_branch_count": 2
+    },
+    {
+      "multiplier_error": 3.464123517586431e-12,
+      "residual": 1.146666884948211e-16,
+      "edge_weight": 2.958200854045343e-29,
+      "physical_branch_count": 2
+    },
+    {
+      "multiplier_error": 3.4362398695548278e-12,
+      "residual": 8.477196639378692e-17,
+      "edge_weight": 2.746351720924338e-30,
+      "physical_branch_count": 2
+    }
+  ],
+  "max_analytic_relative_error": 9.612558287930284e-05,
+  "static_curvature": {
+    "d2_fa_over_c_d_epsilon2": 0.001224463838633825,
+    "epsilon_half_step": 0.10000000000000053,
+    "slow_modulation_C_adiabatic": 0.014415395179722618,
+    "adiabatic_over_mass_C": 0.9742526771825616,
+    "scope": "Independent static curvature; slow-modulation diagnostic only, not exact finite-Omega Floquet"
+  },
+  "limitations": [
+    "Meep supplied static frequencies and scalar dielectric sensitivity only",
+    "No Meep direct time-modulated geometry simulation",
+    "No open-QNM identification or coupling matrix",
+    "First derivative does not fix all second-order multimode physics"
+  ],
+  "static_step_convergence_diagnostic": {
+    "source": "toolbox_experiments\\results\\lpor_meep\\comparison_summary.json",
+    "source_sha256": "ef670dd13b5f7bb3bd6f1ad0e0aa18f3f076ea5f76524e02e4f174dcf1f1c8dd",
+    "calibration_records": [
+      {
+        "epsilon_step": 0.1,
+        "df_depsilon": -0.014507294175312158,
+        "d2f_depsilon2": 0.001224467963867326,
+        "S_from_static_derivative": 0.057764554031550536,
+        "adiabatic_C_estimate": 0.014415443745363556
+      },
+      {
+        "epsilon_step": 0.05,
+        "df_depsilon": -0.014507080751825496,
+        "d2f_depsilon2": 0.0012244309740339074,
+        "S_from_static_derivative": 0.057763704230589866,
+        "adiabatic_C_estimate": 0.014415008270627973
+      }
+    ],
+    "relative_S_difference": 1.4711677029488612e-05,
+    "relative_static_curvature_C_difference": 3.0209815173654064e-05,
+    "status": "PASS_NARROW_STEP_CHECK",
+    "scope": "epsilon half-steps 0.1 versus 0.05 at resolution32/padding1 only; not spatial or open-QNM convergence",
+    "statistic_note": "Independent static summary uses its robust frequency statistic; closure retains documented four-fit means"
+  }
+}

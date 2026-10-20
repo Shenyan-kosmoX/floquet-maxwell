@@ -1,0 +1,74 @@
+{
+  "scope": "SI Fig7(a) two-mode pulse model; selected static measured decay pair and low-pump optimized delay",
+  "decay_GHz": [
+    190.2827597038855,
+    123.73030067434513
+  ],
+  "probe_intensity_FWHM_ps": 0.169,
+  "pump_intensity_FWHM_ps": [
+    1.5,
+    6.0
+  ],
+  "delay_ps": [
+    0.6006299716057537,
+    0.7969380891371111
+  ],
+  "delay_method": "Maximize on-resonance spectral conversion at C0=.001, then fix delay for entire C0 scan",
+  "spectral_efficiency": "sum_faces |integral s_out_upper(t)dt|^2 / |integral s_in_lower(t)dt|^2 at the resonant spectral bin",
+  "pulse_photon_efficiency": "integral sum_faces |s_out_upper(t)|^2 dt / integral |s_in_lower(t)|^2 dt",
+  "peaks": [
+    {
+      "tau": 1.5,
+      "C0": 1.8,
+      "spectral": 0.8806314553929944,
+      "max_integrated": 0.12152710253129062
+    },
+    {
+      "tau": 6.0,
+      "C0": 0.9,
+      "spectral": 0.5249777955962782,
+      "max_integrated": 0.12891565341892183
+    }
+  ],
+  "max_photon_balance_error": 9.56583781275448e-15,
+  "refinement": [
+    {
+      "tau": 1.5,
+      "C0": 1.0,
+      "spectral_change": 4.107825191113079e-15,
+      "integrated_change": 3.7470027081099033e-16
+    },
+    {
+      "tau": 1.5,
+      "C0": 2.0,
+      "spectral_change": 1.1879386363489175e-14,
+      "integrated_change": 1.0824674490095276e-15
+    },
+    {
+      "tau": 1.5,
+      "C0": 4.0,
+      "spectral_change": 9.43689570931383e-15,
+      "integrated_change": 1.6375789613221059e-15
+    },
+    {
+      "tau": 6.0,
+      "C0": 1.0,
+      "spectral_change": 9.880984919163893e-15,
+      "integrated_change": 6.661338147750939e-16
+    },
+    {
+      "tau": 6.0,
+      "C0": 2.0,
+      "spectral_change": 6.439293542825908e-15,
+      "integrated_change": 1.304512053934559e-15
+    },
+    {
+      "tau": 6.0,
+      "C0": 4.0,
+      "spectral_change": 5.384581669432009e-15,
+      "integrated_change": 2.3037127760972e-15
+    }
+  ],
+  "limits": "Published SI does not specify exact scalar decay pair, delay or integration formula for Fig7. The two observables are kept separate; no vertical fit or amplitude rescaling.",
+  "total_photon_bound": "Symmetric two-face single-sided passive photon model converts at most one half of total pulse photons; spectral-bin ratio can exceed one half without violating this bound"
+}

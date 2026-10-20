@@ -1,0 +1,157 @@
+{
+  "status": "STATIC_SOURCE_SUBSET_SENSITIVITY_ONLY",
+  "completed": true,
+  "scope": "No Green response, no scattering target and no production-basis replacement; isolates old small singular directions",
+  "frequencies": [
+    0.378,
+    0.388,
+    0.398,
+    0.408,
+    0.418
+  ],
+  "input_channels": [
+    "bottom x",
+    "top x"
+  ],
+  "rows": [
+    {
+      "name": "all_17",
+      "rank": 17,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "static_material_source_relative_residual_by_frequency_and_input": [
+        [
+          0.00018514516764935214,
+          0.00018514516764934615
+        ],
+        [
+          0.0006256873661891256,
+          0.0006256873661891271
+        ],
+        [
+          4.615293268534573e-05,
+          4.61529326853461e-05
+        ],
+        [
+          0.000499703856071458,
+          0.0004997038560714592
+        ],
+        [
+          0.0001791794507337202,
+          0.00017917945073372396
+        ]
+      ],
+      "maximum_static_source_relative_residual": 0.0006256873661891271,
+      "within_predeclared_1e_minus3_static_source_goal": true,
+      "gram_condition": 1.000000000003888
+    },
+    {
+      "name": "omit_old_6_7_8",
+      "rank": 14,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "static_material_source_relative_residual_by_frequency_and_input": [
+        [
+          0.009316456003569465,
+          0.009316456003569439
+        ],
+        [
+          0.004869696921264388,
+          0.00486969692126439
+        ],
+        [
+          6.752232706109195e-05,
+          6.752232706109391e-05
+        ],
+        [
+          0.00978804328898043,
+          0.009788043288980435
+        ],
+        [
+          0.011824064740224993,
+          0.011824064740224974
+        ]
+      ],
+      "maximum_static_source_relative_residual": 0.011824064740224993,
+      "within_predeclared_1e_minus3_static_source_goal": false,
+      "gram_condition": 1.0000000000038878
+    },
+    {
+      "name": "omit_old_5_6_7_8",
+      "rank": 13,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "static_material_source_relative_residual_by_frequency_and_input": [
+        [
+          0.00933252490230362,
+          0.009332524902303622
+        ],
+        [
+          0.004878646076325674,
+          0.004878646076325672
+        ],
+        [
+          6.945569078367584e-05,
+          6.945569078367648e-05
+        ],
+        [
+          0.009796453962241452,
+          0.009796453962241432
+        ],
+        [
+          0.011886514678135882,
+          0.011886514678135887
+        ]
+      ],
+      "maximum_static_source_relative_residual": 0.011886514678135887,
+      "within_predeclared_1e_minus3_static_source_goal": false,
+      "gram_condition": 1.0000000000038873
+    }
+  ],
+  "basis_sha256": "a539895c0e0346627b74bf95d7c8715286ba975cf53ce32c849df423b131d164",
+  "checkpoint": 2000
+}

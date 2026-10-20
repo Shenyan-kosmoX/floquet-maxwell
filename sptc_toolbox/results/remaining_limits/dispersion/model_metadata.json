@@ -1,0 +1,40 @@
+{
+  "adapter": "NATIVE_REGION_ELECTRIC_GALERKIN_LORENTZ_ADE",
+  "basis_id": "70e6d34787ddf8cfe8bd93cdf3b8ffa7ed34be704215b33bd3eda555db82697c",
+  "physical_signature": "7cc32bf4c6ed8d73c2f6e699911b5ff6ab5780822247c21856cccf3df6768f10",
+  "native_source_sha256": "80e0d88841cc5fdf90f28d04da77213bca694e5814e72984538b4bb5f1974332",
+  "projection_arrays_sha256": "c081f3e3930d66b531f11543280be67b741101d599c3e24f0b797b47778fe3e2",
+  "drive_omega_a_over_c": 2.2,
+  "baseline_interpretation": "high_frequency_permittivity",
+  "static_physical_dielectric": "epsilon_native(r) + sum_r chi_region(r)*chi_Lorentz_r(z), constant strengths only",
+  "dynamic_material_equation": "Physical regional polarization: Pddot+gamma Pdot+wr^2 P=f(t)*wp^2*chi_region*E; keep augmented states",
+  "region_materials": [
+    {
+      "rank": 4,
+      "full_dimension": 4,
+      "relative_rank_tolerance": 1e-12,
+      "discarded_positive_trace": 0.0,
+      "relative_gram_error": 1.0190921601353821e-15,
+      "region_index": 0,
+      "label": "background Lorentz material",
+      "plasma_frequency_a_over_c": 0.8,
+      "resonance_frequency_a_over_c": 3.4,
+      "damping_a_over_c": 0.02,
+      "modulated": true,
+      "oscillator_index": 0
+    }
+  ],
+  "normalization": "integral E_i* epsilon_native E_j=delta_ij; M_inf=I; mu=I",
+  "native_coordinate_contract": "D=d projected displacement; B=h native H coefficient; E=e native E coefficient; d=e+sum L P",
+  "material_frequency_units": "Input angular omega*a/c; internal angular omega/Omega_drive",
+  "loss_ownership": "Material damping only; native radiative linewidth is neither added nor hidden in damping",
+  "spatial_scope": "Finite electric Galerkin projection of actual native patterned-slab modes; no full dispersive Legume spatial solve or QNM normalization",
+  "status": "FINITE_SPATIAL_MAXWELL_MULTIOSCILLATOR_ADE",
+  "time_units": "tau=Omega_drive*t",
+  "frequency_units": "angular omega/Omega_drive",
+  "state_order": "D,B,P0,J0,P1,J1,...",
+  "equation": "D'=C H; B'=-C^dagger E; Pj'=Jj; Jj'=fj Lj^dagger E-Kj Pj-Gj Jj",
+  "electric_field": "E=epsilon_inf(tau)^-1(D-sum_j Lj Pj)",
+  "polarization_coordinates": "Pj and Jj are material coordinates; physical electric polarization is Lj Pj",
+  "scope": "Supplied finite spatial operator and passive material memory; no native dispersive Legume, outgoing radiation, full continuum, or QNM residue claim"
+}

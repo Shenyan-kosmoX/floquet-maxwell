@@ -1,0 +1,856 @@
+{
+  "requests": [
+    {
+      "edge_index": 11,
+      "kpoint": [
+        3.0925052683774528,
+        0.0
+      ],
+      "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+    },
+    {
+      "edge_index": 26,
+      "kpoint": [
+        3.141592653589793,
+        3.0925052683774528
+      ],
+      "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+    },
+    {
+      "edge_index": 27,
+      "kpoint": [
+        3.0925052683774528,
+        3.0925052683774528
+      ],
+      "reason": "Resolve coarse sampling or modal mixing while retaining the original physical target"
+    }
+  ],
+  "unresolved": [
+    {
+      "edge_index": 35,
+      "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+      "reasons": [
+        "selected_field_discontinuity",
+        "output_window_or_reference_space_incomplete"
+      ]
+    },
+    {
+      "edge_index": 36,
+      "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+      "reasons": [
+        "output_window_or_reference_space_incomplete"
+      ]
+    },
+    {
+      "edge_index": 37,
+      "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+      "reasons": [
+        "output_window_or_reference_space_incomplete"
+      ]
+    },
+    {
+      "edge_index": 38,
+      "action": "INVESTIGATE_REFERENCE_WINDOW_OR_TARGET_SUBSPACE",
+      "reasons": [
+        "target_rank_changed",
+        "selected_field_discontinuity",
+        "output_window_or_reference_space_incomplete"
+      ]
+    }
+  ],
+  "edge_classification": [
+    {
+      "edge_index": 0,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        0.0,
+        0.0
+      ],
+      "k_current": [
+        0.09817477042468103,
+        0.0
+      ],
+      "selected_capture": 0.9454350378771755,
+      "full_window_capture": 0.9998897076910119,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 1,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        0.09817477042468103,
+        0.0
+      ],
+      "k_current": [
+        0.19634954084936207,
+        0.0
+      ],
+      "selected_capture": 0.974046245747636,
+      "full_window_capture": 0.9998953739438812,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 2,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        0.19634954084936207,
+        0.0
+      ],
+      "k_current": [
+        0.39269908169872414,
+        0.0
+      ],
+      "selected_capture": 0.9745465779536714,
+      "full_window_capture": 0.9996254640429052,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 3,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        0.39269908169872414,
+        0.0
+      ],
+      "k_current": [
+        0.7853981633974483,
+        0.0
+      ],
+      "selected_capture": 0.9874138853559701,
+      "full_window_capture": 0.9986851803564065,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 4,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        0.7853981633974483,
+        0.0
+      ],
+      "k_current": [
+        1.1780972450961724,
+        0.0
+      ],
+      "selected_capture": 0.9971410675270611,
+      "full_window_capture": 0.9986616631597931,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 5,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        1.1780972450961724,
+        0.0
+      ],
+      "k_current": [
+        1.5707963267948966,
+        0.0
+      ],
+      "selected_capture": 0.9980325948139578,
+      "full_window_capture": 0.998502756857546,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 6,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        1.5707963267948966,
+        0.0
+      ],
+      "k_current": [
+        1.9634954084936207,
+        0.0
+      ],
+      "selected_capture": 0.9979786101976231,
+      "full_window_capture": 0.9982407683220171,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 7,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        1.9634954084936207,
+        0.0
+      ],
+      "k_current": [
+        2.356194490192345,
+        0.0
+      ],
+      "selected_capture": 0.9976002299220823,
+      "full_window_capture": 0.9978717422790809,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 8,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        2.356194490192345,
+        0.0
+      ],
+      "k_current": [
+        2.748893571891069,
+        0.0
+      ],
+      "selected_capture": 0.9962608415067064,
+      "full_window_capture": 0.9973352547317877,
+      "maximum_changed_guided_row_weight": 2.3468206829265806e-29,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [
+        [
+          2,
+          0.0,
+          0.0
+        ],
+        [
+          3,
+          0.0,
+          0.0
+        ]
+      ],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 9,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        2.748893571891069,
+        0.0
+      ],
+      "k_current": [
+        2.945243112740431,
+        0.0
+      ],
+      "selected_capture": 0.9947761594147506,
+      "full_window_capture": 0.9992122384369895,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 10,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        2.945243112740431,
+        0.0
+      ],
+      "k_current": [
+        3.043417883165112,
+        0.0
+      ],
+      "selected_capture": 0.9841840265041767,
+      "full_window_capture": 0.9997847477619604,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 11,
+      "decision": "MIDPOINT_EXPERIMENT_ELIGIBLE",
+      "k_previous": [
+        3.043417883165112,
+        0.0
+      ],
+      "k_current": [
+        3.141592653589793,
+        0.0
+      ],
+      "selected_capture": 0.6551974371691165,
+      "full_window_capture": 0.9997666063229185,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 12,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        0.0
+      ],
+      "k_current": [
+        3.141592653589793,
+        0.09817477042468103
+      ],
+      "selected_capture": 0.9578235805380864,
+      "full_window_capture": 0.9997127133415968,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 13,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        0.09817477042468103
+      ],
+      "k_current": [
+        3.141592653589793,
+        0.19634954084936207
+      ],
+      "selected_capture": 0.9163577331728053,
+      "full_window_capture": 0.9997134430920478,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 14,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        0.19634954084936207
+      ],
+      "k_current": [
+        3.141592653589793,
+        0.2945243112740431
+      ],
+      "selected_capture": 0.9153934817197039,
+      "full_window_capture": 0.9997148898348632,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 15,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        0.2945243112740431
+      ],
+      "k_current": [
+        3.141592653589793,
+        0.39269908169872414
+      ],
+      "selected_capture": 0.9712751758218579,
+      "full_window_capture": 0.9997170298253275,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 16,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        0.39269908169872414
+      ],
+      "k_current": [
+        3.141592653589793,
+        0.7853981633974483
+      ],
+      "selected_capture": 0.962505147188548,
+      "full_window_capture": 0.9956244782689263,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 17,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        0.7853981633974483
+      ],
+      "k_current": [
+        3.141592653589793,
+        1.1780972450961724
+      ],
+      "selected_capture": 0.9958461444420237,
+      "full_window_capture": 0.9959397789916429,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 18,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        1.1780972450961724
+      ],
+      "k_current": [
+        3.141592653589793,
+        1.5707963267948966
+      ],
+      "selected_capture": 0.9961413725461543,
+      "full_window_capture": 0.9963414511786144,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 19,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        1.5707963267948966
+      ],
+      "k_current": [
+        3.141592653589793,
+        1.9634954084936207
+      ],
+      "selected_capture": 0.9961567444681334,
+      "full_window_capture": 0.9967761905831272,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 20,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        1.9634954084936207
+      ],
+      "k_current": [
+        3.141592653589793,
+        2.356194490192345
+      ],
+      "selected_capture": 0.9825326134706138,
+      "full_window_capture": 0.997202578613624,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 21,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        2.356194490192345
+      ],
+      "k_current": [
+        3.141592653589793,
+        2.552544031041707
+      ],
+      "selected_capture": 0.9792267212989685,
+      "full_window_capture": 0.9993737479661626,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 22,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        2.552544031041707
+      ],
+      "k_current": [
+        3.141592653589793,
+        2.748893571891069
+      ],
+      "selected_capture": 0.9365307705787745,
+      "full_window_capture": 0.9994201680977222,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 23,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        2.748893571891069
+      ],
+      "k_current": [
+        3.141592653589793,
+        2.84706834231575
+      ],
+      "selected_capture": 0.9725553378164035,
+      "full_window_capture": 0.9998631068183091,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 24,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        2.84706834231575
+      ],
+      "k_current": [
+        3.141592653589793,
+        2.945243112740431
+      ],
+      "selected_capture": 0.9671191912885662,
+      "full_window_capture": 0.9998681888693325,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 25,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.141592653589793,
+        2.945243112740431
+      ],
+      "k_current": [
+        3.141592653589793,
+        3.043417883165112
+      ],
+      "selected_capture": 0.9348767850254192,
+      "full_window_capture": 0.9998728942474787,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 26,
+      "decision": "MIDPOINT_EXPERIMENT_ELIGIBLE",
+      "k_previous": [
+        3.141592653589793,
+        3.043417883165112
+      ],
+      "k_current": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "selected_capture": 0.7146565679316035,
+      "full_window_capture": 0.9998758830583775,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 27,
+      "decision": "MIDPOINT_EXPERIMENT_ELIGIBLE",
+      "k_previous": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "k_current": [
+        3.043417883165112,
+        3.043417883165112
+      ],
+      "selected_capture": 0.4011156765564737,
+      "full_window_capture": 0.9997552378973757,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 28,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        3.043417883165112,
+        3.043417883165112
+      ],
+      "k_current": [
+        2.945243112740431,
+        2.945243112740431
+      ],
+      "selected_capture": 0.996832216613138,
+      "full_window_capture": 0.9997522863848105,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 29,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        2.945243112740431,
+        2.945243112740431
+      ],
+      "k_current": [
+        2.748893571891069,
+        2.748893571891069
+      ],
+      "selected_capture": 0.9984370591022691,
+      "full_window_capture": 0.998892424341456,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 30,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        2.748893571891069,
+        2.748893571891069
+      ],
+      "k_current": [
+        2.356194490192345,
+        2.356194490192345
+      ],
+      "selected_capture": 0.9943249394595886,
+      "full_window_capture": 0.9944041243054015,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 31,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        2.356194490192345,
+        2.356194490192345
+      ],
+      "k_current": [
+        1.9634954084936207,
+        1.9634954084936207
+      ],
+      "selected_capture": 0.9921857559396203,
+      "full_window_capture": 0.9922287969665136,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 32,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        1.9634954084936207,
+        1.9634954084936207
+      ],
+      "k_current": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "selected_capture": 0.9889740264750525,
+      "full_window_capture": 0.9890237557454065,
+      "maximum_changed_guided_row_weight": 3.408922512451218e-06,
+      "lost_guided_rows": [
+        [
+          2,
+          0.0,
+          0.0
+        ],
+        [
+          3,
+          0.0,
+          0.0
+        ]
+      ],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 33,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "k_current": [
+        1.3744467859455345,
+        1.3744467859455345
+      ],
+      "selected_capture": 0.9910590261410085,
+      "full_window_capture": 0.9964411863488137,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 34,
+      "decision": "CURRENT_EDGE_ACCEPTED",
+      "k_previous": [
+        1.3744467859455345,
+        1.3744467859455345
+      ],
+      "k_current": [
+        1.1780972450961724,
+        1.1780972450961724
+      ],
+      "selected_capture": 0.937065659582518,
+      "full_window_capture": 0.9958075216418434,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 35,
+      "decision": "NOT_REPAIRED_BY_K_SAMPLING",
+      "k_previous": [
+        1.1780972450961724,
+        1.1780972450961724
+      ],
+      "k_current": [
+        0.7853981633974483,
+        0.7853981633974483
+      ],
+      "selected_capture": 0.5059726769970422,
+      "full_window_capture": 0.9791210769613252,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": true
+    },
+    {
+      "edge_index": 36,
+      "decision": "NOT_REPAIRED_BY_K_SAMPLING",
+      "k_previous": [
+        0.7853981633974483,
+        0.7853981633974483
+      ],
+      "k_current": [
+        0.39269908169872414,
+        0.39269908169872414
+      ],
+      "selected_capture": 0.963105942851303,
+      "full_window_capture": 0.9694257231028903,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 37,
+      "decision": "NOT_REPAIRED_BY_K_SAMPLING",
+      "k_previous": [
+        0.39269908169872414,
+        0.39269908169872414
+      ],
+      "k_current": [
+        0.19634954084936207,
+        0.19634954084936207
+      ],
+      "selected_capture": 0.9711844088482143,
+      "full_window_capture": 0.9719413288714347,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": false
+    },
+    {
+      "edge_index": 38,
+      "decision": "NOT_REPAIRED_BY_K_SAMPLING",
+      "k_previous": [
+        0.19634954084936207,
+        0.19634954084936207
+      ],
+      "k_current": [
+        0.0,
+        0.0
+      ],
+      "selected_capture": 0.06363238791220636,
+      "full_window_capture": 0.06237278357656227,
+      "maximum_changed_guided_row_weight": 0.0,
+      "lost_guided_rows": [],
+      "gained_guided_rows": [],
+      "competing_subspace_ambiguous": true
+    }
+  ],
+  "policy": {
+    "status": "UNVERIFIED_CONFIGURATION",
+    "accepted": false,
+    "sampled_stability_passed": false,
+    "reasons": [
+      "sampled_path_stability_failed",
+      "independent_refinement_missing",
+      "independent_field_refinement_missing"
+    ],
+    "bad_edges": [
+      {
+        "edge_index": 11,
+        "reasons": [
+          "selected_field_discontinuity"
+        ]
+      },
+      {
+        "edge_index": 26,
+        "reasons": [
+          "selected_field_discontinuity"
+        ]
+      },
+      {
+        "edge_index": 27,
+        "reasons": [
+          "selected_field_discontinuity"
+        ]
+      },
+      {
+        "edge_index": 35,
+        "reasons": [
+          "selected_field_discontinuity",
+          "output_window_or_reference_space_incomplete"
+        ]
+      },
+      {
+        "edge_index": 36,
+        "reasons": [
+          "output_window_or_reference_space_incomplete"
+        ]
+      },
+      {
+        "edge_index": 37,
+        "reasons": [
+          "output_window_or_reference_space_incomplete"
+        ]
+      },
+      {
+        "edge_index": 38,
+        "reasons": [
+          "target_rank_changed",
+          "selected_field_discontinuity",
+          "output_window_or_reference_space_incomplete"
+        ]
+      }
+    ],
+    "anchor_capture": 1.0,
+    "convergence_relative_frequency": null,
+    "convergence_field_capture": null,
+    "policy": {
+      "minimum_selected_capture": 0.9,
+      "minimum_full_window_capture": 0.98,
+      "maximum_changed_row_weight": 0.02,
+      "minimum_anchor_capture": 0.85,
+      "maximum_convergence_relative_frequency": 0.005,
+      "minimum_convergence_field_capture": 0.98
+    },
+    "scope": "Only supplied geometry, sampled edges, field metric and refinement pair"
+  }
+}

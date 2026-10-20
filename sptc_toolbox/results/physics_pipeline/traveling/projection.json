@@ -1,0 +1,233 @@
+{
+  "schema": "native-traveling-electric-mass-v1",
+  "basis_id": "90c2286e0a6c04f9209ca6ffda6678364e13b9cfa6f2db13ebfb2c4b46a75f57",
+  "sector_basis_ids": [
+    "104acb05c3b003fd473dd200436d32f70675fdd56926e6909c67254f14aebdd1",
+    "d56363579c89aaa1435cf7707c18ad912ac2decab31d102cb6f2ae06720fbb0e",
+    "57300482503bda0cdda517a98c128b6d817e84121a7c188b431f666194b4dd27"
+  ],
+  "selections": [
+    {
+      "kind": 0,
+      "modes": [
+        0,
+        1
+      ]
+    },
+    {
+      "kind": 1,
+      "modes": [
+        0,
+        1
+      ]
+    },
+    {
+      "kind": 2,
+      "modes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "physical_signature": "81c008641b1953426244007fbc1dc1284135ca157abcc39fc042254fad5571b1",
+  "regions": [
+    {
+      "layer": 0,
+      "shape_index": 0,
+      "kind": "shape",
+      "name": ""
+    },
+    {
+      "layer": 0,
+      "shape_index": 1,
+      "kind": "shape",
+      "name": ""
+    },
+    {
+      "layer": 0,
+      "shape_index": 2,
+      "kind": "shape",
+      "name": ""
+    },
+    {
+      "layer": 0,
+      "shape_index": null,
+      "kind": "background",
+      "name": ""
+    }
+  ],
+  "wavevector": [
+    0.6283185307179586,
+    0.6283185307179586
+  ],
+  "supercell": [
+    [
+      10,
+      0
+    ],
+    [
+      0,
+      10
+    ]
+  ],
+  "n_primitive_cells": 100,
+  "lattice_columns": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "z_order": 12,
+  "native_state_sha256": "6ed825c53c0afae6e01a993be391ec8a480e3dcb6e34e551a0e28e86bbf9f953",
+  "native_kpoints": [
+    [
+      -0.8716814692820414,
+      -0.5716814692820413
+    ],
+    [
+      -1.5,
+      -1.2
+    ],
+    [
+      -2.1283185307179586,
+      -1.8283185307179586
+    ]
+  ],
+  "physical_kpoints": [
+    [
+      0.8716814692820414,
+      0.5716814692820413
+    ],
+    [
+      1.5,
+      1.2
+    ],
+    [
+      2.1283185307179586,
+      1.8283185307179586
+    ]
+  ],
+  "field_chart": "physical G=-native G; physical k=-native k; physical vector coefficients=diag(-1,-1,1) times native coefficients; native display ftinv is not used",
+  "finite_sector_edges": [
+    {
+      "harmonic": -1,
+      "source_sector": 0,
+      "target_k": [
+        0.24336293856408275,
+        -0.05663706143591729
+      ]
+    },
+    {
+      "harmonic": 1,
+      "source_sector": 2,
+      "target_k": [
+        2.7566370614359172,
+        2.4566370614359174
+      ]
+    }
+  ],
+  "selection_matrices": {
+    "-1": [
+      [
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    "0": [
+      [
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        false,
+        true
+      ]
+    ],
+    "1": [
+      [
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        false
+      ]
+    ]
+  },
+  "adjoint_error": 1.4161191201670933e-17,
+  "layer_geometry_reports": [
+    {
+      "layer": 0,
+      "disjointness": "Conservative periodic Cartesian enclosures; exact circle separation where applicable",
+      "checked_shape_image_pairs": 124,
+      "native_point_sample_count": 1681,
+      "native_pointwise_additive_error": 0.0,
+      "limitation": "Noncircular shapes whose bounding rectangles intersect are conservatively rejected even if the shapes may be disjoint"
+    }
+  ],
+  "atom_epsilon": [
+    11.0,
+    1.0,
+    2.0,
+    2.5
+  ],
+  "atom_region_weights": [
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ]
+  ],
+  "normalization": "Each primitive native field divided by sqrt(N_cells); supercell integral gives N_cells times allowed primitive overlap, so net factor is one. No division by cell area after native field normalization.",
+  "convention": "E=sum E_G exp(+i(G+k).r); delta epsilon=sum delta[p,r] chi_r exp(+ipQ.r-ipOmega t); M=I+integral E*delta_epsilon E; K=W inv(M) W",
+  "loss_ownership": "Material projection only. Export native sector radiation separately; no radiation, absorption, gain or QNM metric is inserted.",
+  "scope": "Finite selected momentum/modal window. No forced edge closure, global Bloch certificate, dynamic radiation or continuum completeness."
+}

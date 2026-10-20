@@ -1,0 +1,214 @@
+{
+  "audit_date": "2026-10-14",
+  "time_zone": "Asia/Shanghai",
+  "status": "SOURCE_AUDIT_NOT_REPRODUCTION_VALIDATION",
+  "sources": {
+    "science_main": {
+      "path": "ptc_fig4\\literature\\published_main.pdf",
+      "sha256": "3c649a38e01936188f5de97cd33aa70dfa0ced6c992c47cc4abb062823559304",
+      "bytes": 1284184
+    },
+    "science_si": {
+      "path": "ptc_fig4\\literature\\published_supplementary\\sciadv.aed4055_sm.pdf",
+      "sha256": "d397d19eeab29de7d8b2276711e31741ae3df4c5ff4bb6f7cf63e820595cbe35",
+      "bytes": 2891928
+    },
+    "science_ge_reference_explanation": {
+      "path": "ptc_fig4\\literature\\ge_summary.pdf",
+      "sha256": "a426cc9a4488c9e3bcd2885576408fdafd23bdc19d6b6f9e624d7031c849806d",
+      "bytes": 175332
+    },
+    "lpr_si": {
+      "path": "lpor_71318\\literature\\published_supporting.pdf",
+      "sha256": "a66c310382e65328769b1372c4118255ff9da3055bbfcd387775ba466d631ef7",
+      "bytes": 344801
+    },
+    "lpr_fig3_element": {
+      "path": "lpor_71318\\literature\\formal_fig3.html",
+      "sha256": "b7430080669130f9ce31edbf7553a8093442ba9dfc4073a433eda23138c442bd",
+      "bytes": 70740
+    },
+    "lpr_formal_text": {
+      "path": "lpor_71318\\literature\\formal_browser.txt",
+      "sha256": "9ab01f66f7b80286b260b78e07dc335c4cfa5269d462db1877efff0ec9db5533",
+      "bytes": 70742
+    },
+    "lpr_fig3_image": {
+      "path": "lpor_71318\\literature\\published_fig3.png",
+      "sha256": "2b4de3553e5ad0081c0d570cb4ceee12d6f92a22823275650830a4e6b4084b17",
+      "bytes": 119245
+    }
+  },
+  "science_advances": {
+    "doi": "10.1126/sciadv.aed4055",
+    "version": "published",
+    "geometry": {
+      "radius_nm": 1030,
+      "r_over_h_approx": 0.703,
+      "height_nm_derived": 1465.149359886202,
+      "height_exact_nm": null,
+      "period_over_radius": 3.2,
+      "period_nm": 3296,
+      "lattice": "square",
+      "background": "air",
+      "path": [
+        "M",
+        "Gamma",
+        "X",
+        "M"
+      ],
+      "source": "main PDF p5-6; SI p11-12"
+    },
+    "material": {
+      "name": "Ge",
+      "paper_model": "Drude-Lorentz with losses",
+      "epsilon_infinity": null,
+      "oscillators": null,
+      "selected_ref59_sample": null,
+      "reference_doi": "10.1364/AO.59.000A40",
+      "source": "main PDF p5; SI S1 p3-4",
+      "external_reference_evidence": "author supplied data explanation labels both Ge substrate and Ge film non-parametric tabulated nk",
+      "table_is_analytic_Drude_Lorentz_fit": false,
+      "SI_S10_denominator_as_printed": "omega_0j^2-i gamma_j-omega^2",
+      "SI_S10_warning": "usual omega multiplying damping absent; unresolved notation/printing issue, not evidence of numerical code error"
+    },
+    "modulation": {
+      "instantaneous_background": "epsilon_inf*(1+m*(1+cos(Omega*t)))",
+      "static_dispersion_kernel_modulated": false,
+      "delta_background": "epsilon_inf*m*(1+cos(Omega*t))",
+      "DC": "epsilon_inf*m",
+      "fourier_offdiagonal_epsilon": "epsilon_inf*m/2",
+      "source": "SI S5-S10 p3; S1 p4",
+      "amplitude_definition": "m=chi3*Ep^2/(2*epsilon_inf)",
+      "paper_signal_polarization": "oblique s; A2g isolated-cylinder parent; axial dark",
+      "pump_example": {
+        "polarization": "p",
+        "incidence_deg": 5,
+        "amplitude_V_per_m": 1,
+        "frequency": "Omega/2",
+        "source": "SI FigS1 p4"
+      },
+      "weak": {
+        "m": 0.0001,
+        "ordinary_frequency_THz": 136,
+        "Omega_per_s": 854513201776423.8,
+        "source": "main p5"
+      },
+      "strong": {
+        "m": 0.03,
+        "ordinary_frequency_THz": 134,
+        "Omega_per_s": 841946831162064.5,
+        "source": "main p6"
+      }
+    },
+    "truncation": {
+      "l_cut": 10,
+      "l_max": 6,
+      "static_J_total": 1,
+      "dynamic_J_total": 7,
+      "source": "SI S8 PDF p15",
+      "quadrature_and_AAA_grid": null
+    },
+    "observables": {
+      "panel_B": "Re(omega)*a/c0; M-Gamma-X-M",
+      "panel_C": "isolated cylinder rotational-average normalized scattering; Q approximately500",
+      "panel_DE": "Re(omega)/Omega near .5; Im(omega)/Omega approx1e-5; Delta theta4deg",
+      "panel_F": "Im(omega)/Omega at Re(omega)/Omega=.5; approx1e-3; full path",
+      "angle_gap_deg": 4,
+      "normalized_M_Gamma_X_width_approx_percent": 4,
+      "source": "main Fig4 p6; SI S4 p10"
+    },
+    "availability": {
+      "main_page": 9,
+      "quote": "All data and code needed to evaluate and reproduce the results in the paper are present in the paper and/or the Supplementary Materials.",
+      "obtained_payload": "SI text and figures only; no executable author code/material coefficient table found",
+      "DOI_github_repository_count": 0
+    }
+  },
+  "lpr": {
+    "doi": "10.1002/lpor.71318",
+    "version": "published Wiley live browser + official SI; not preprint-only",
+    "target": "Fig3(a,b) metasurface green-circle weak-modulation law",
+    "geometry": {
+      "radius_nm": 150,
+      "height_nm": 50,
+      "period_nm": 400,
+      "r_over_a": 0.375,
+      "h_over_a": 0.125,
+      "lattice_type": null,
+      "bloch_k": null,
+      "background_epsilon_explicit": null,
+      "source": "formal Fig3 caption; Methods4.4.1",
+      "baseline_assumptions_if_used": [
+        "square lattice",
+        "Gamma",
+        "air outside"
+      ]
+    },
+    "material": {
+      "epsilon_static": 16,
+      "dispersion": "worked example constant dielectric",
+      "source": "formal Fig3 caption"
+    },
+    "modulation": {
+      "equation": "epsilon(t)=epsilon_u+delta_epsilon*sin(Omega*t)",
+      "amplitude_interpretation": "additive absolute relative-permittivity change; not fractional delta_epsilon/epsilon_u",
+      "amplitude_definition_source": "formal Sec2.4; Methods4.4.2 consistent; SI S37-S38 V=epsilon W",
+      "DC": 0,
+      "Omega_per_s": 100000000000000.0,
+      "as_printed": "Omega=100 THz",
+      "ordinary_frequency_THz": 15.915494309189533,
+      "source": "formal Fig3 caption; angular-frequency definition main Eq6 and Eq8",
+      "spatial_support": "resonator volume; detailed metasurface subregion mask not independently enumerated",
+      "pointwise_phase_profile": null,
+      "offdiagonal_sine_epsilon_coefficients": "positive/negative harmonic differ by sign; magnitude delta_epsilon/2"
+    },
+    "selected_mode": {
+      "complex_frequency": null,
+      "wavelength_nm": null,
+      "Q": null,
+      "irrep": null,
+      "normalization": "open resonant-state Green residue, main Eq30, refs47&51; not ordinary Hermitian energy normalization",
+      "author_solver": "COMSOL FEM Arnoldi; z/open PML; in-plane periodic BC",
+      "source": "Methods4.2,4.4.1"
+    },
+    "truncation": {
+      "metasurface_temporal_harmonics": null,
+      "metasurface_static_QNM_basis_size": null,
+      "caption_11_harmonics_scope": "Explicit sentence follows slab(c,d); no separately verified nonplanar allocation",
+      "SI_slab_harmonics_total": 11,
+      "SI_slab_static_states_total": [
+        21,
+        41,
+        81
+      ],
+      "SI_slab_amplitude": 0.2,
+      "source": "SI S2 pp3-5"
+    },
+    "observables": {
+      "x": "Modulation amplitude, unnormalized absolute epsilon",
+      "y": "Changes in Re(omega_tilde)/Omega = [Re(omega_tilde(epsilon))-Re(omega_tilde(0))]/Omega",
+      "read_amplitude_range": [
+        0.0001,
+        0.001
+      ],
+      "approximate_green_C": 0.27,
+      "reading_relative_uncertainty": 0.2,
+      "normalization_16_rescaling_supported": false,
+      "relative_amplitude_hypothesis_would_multiply_squared_coefficient_by": 256,
+      "note": "A quadratic coefficient changes with the square of any amplitude rescaling; no data fitting or rescaling authorized by source"
+    },
+    "availability": {
+      "quote": "data ... available from corresponding author upon reasonable request",
+      "formal_support_count": 1,
+      "figshare29237384": "arXiv SVG/link only, no data",
+      "DOI_github_repository_count": 0
+    }
+  },
+  "search_limits": {
+    "crossref_relations": "both formal DOI records relation={} and update-to absent on recheck",
+    "interpretation": "No amendment found in these channels; not proof none exists",
+    "author_contact": false,
+    "exact_parameter_gaps_do_not_block_explicitly_labeled_approximate_baseline": true
+  }
+}

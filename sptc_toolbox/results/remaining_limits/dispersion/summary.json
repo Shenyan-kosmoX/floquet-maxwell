@@ -1,0 +1,325 @@
+{
+  "status": "NATIVE_PATTERNED_SLAB_MATERIAL_MEMORY_VERIFIED",
+  "checks": {
+    "independent_polynomial": true,
+    "passive_poles": true,
+    "passive_energy_monotone": true,
+    "passive_energy_balance": true,
+    "actual_native_material_shift": true,
+    "native_mode_identity": true,
+    "dynamic_energy_balance": true,
+    "full_floquet_primitive": true
+  },
+  "geometry": "Square 2D lattice: d=0.42, epsilon_inf=11.5 background; circular hole x=-0.22,r=0.12 and elliptical hole x=0.22,rx=0.12,ry=0.09; air claddings",
+  "native_settings": {
+    "gmax": 2.1,
+    "gmode_inds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fixed_reference_epsilon": 10.0,
+    "k_native": [
+      0.41,
+      0.19
+    ],
+    "retained_modes": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "material": {
+    "plasma_frequency": 0.8,
+    "resonance_frequency": 3.4,
+    "damping": 0.02,
+    "drive": 2.2,
+    "angular_units": "omega*a/c",
+    "strength": "1+0.15*cos(Omega*t) for dynamic test",
+    "static_physical_permittivity": "11.5+f*wp^2/(wr^2-z^2-i*gamma*z) in dielectric background for constant f; holes unchanged",
+    "dynamic_material": "Pddot+gamma Pdot+wr^2 P=f(t)*wp^2*chi_background*E; no instantaneous epsilon(omega,t) substitution"
+  },
+  "dimension": 16,
+  "basis_id": "70e6d34787ddf8cfe8bd93cdf3b8ffa7ed34be704215b33bd3eda555db82697c",
+  "independent_polynomial_pole_max_absolute_error": 1.9100625840835725e-14,
+  "static_max_pole_imaginary": -5.8113776416258506e-05,
+  "static_energy_balance_error": 9.118268076355185e-11,
+  "actual_native_static_material_controls": [
+    {
+      "susceptibility_strength_factor": 1.0,
+      "native_selfconsistent_pole": 2.207523274736315,
+      "native_evaluations": [
+        {
+          "w": 2.083442974291142,
+          "delta_epsilon": 0.0886516794914494,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.999999967144314
+        },
+        {
+          "w": 2.21864512475046,
+          "delta_epsilon": 0.09642019229790139,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999611849513
+        },
+        {
+          "w": 2.207516791565435,
+          "delta_epsilon": 0.09570995650468497,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999617500669
+        },
+        {
+          "w": 2.2075232743631816,
+          "delta_epsilon": 0.09571036617381937,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999617497415
+        },
+        {
+          "w": 2.207523274736315,
+          "delta_epsilon": 0.09571036619739903,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999617497423
+        },
+        {
+          "w": 2.207523274735314,
+          "delta_epsilon": 0.09571036619733576,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999617497414
+        }
+      ],
+      "modal_controls": [
+        {
+          "mode_count": 1,
+          "pole": 2.2075215870910934,
+          "absolute_error": 1.6876452217928772e-06,
+          "relative_error_in_material_shift": 0.000189507622549479
+        },
+        {
+          "mode_count": 4,
+          "pole": 2.2075215824705205,
+          "absolute_error": 1.6922657946061292e-06,
+          "relative_error_in_material_shift": 0.00019002647198379668
+        },
+        {
+          "mode_count": 8,
+          "pole": 2.2075215824705268,
+          "absolute_error": 1.6922657883888803e-06,
+          "relative_error_in_material_shift": 0.00019002647128565464
+        }
+      ]
+    },
+    {
+      "susceptibility_strength_factor": 0.5,
+      "native_selfconsistent_pole": 2.211949051030963,
+      "native_evaluations": [
+        {
+          "w": 2.083442974291142,
+          "delta_epsilon": 0.04432583974572471,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999917239213
+        },
+        {
+          "w": 2.21864512475046,
+          "delta_epsilon": 0.0482100961489507,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999902163874
+        },
+        {
+          "w": 2.211947000050867,
+          "delta_epsilon": 0.04799550904366538,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999903029353
+        },
+        {
+          "w": 2.211949050994756,
+          "delta_epsilon": 0.0479955743583012,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999903029092
+        },
+        {
+          "w": 2.211949051030963,
+          "delta_epsilon": 0.04799557435945425,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.999999990302909
+        },
+        {
+          "w": 2.211949051029962,
+          "delta_epsilon": 0.04799557435942238,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999903029093
+        }
+      ],
+      "modal_controls": [
+        {
+          "mode_count": 1,
+          "pole": 2.211948622820351,
+          "absolute_error": 4.2821061230213786e-07,
+          "relative_error_in_material_shift": 9.559030013789358e-05
+        },
+        {
+          "mode_count": 4,
+          "pole": 2.2119486216434217,
+          "absolute_error": 4.293875415228854e-07,
+          "relative_error_in_material_shift": 9.585302837073086e-05
+        },
+        {
+          "mode_count": 8,
+          "pole": 2.2119486216434194,
+          "absolute_error": 4.2938754374333143e-07,
+          "relative_error_in_material_shift": 9.585302886640542e-05
+        }
+      ]
+    },
+    {
+      "susceptibility_strength_factor": 0.25,
+      "native_selfconsistent_pole": 2.214182042020971,
+      "native_evaluations": [
+        {
+          "w": 2.083442974291142,
+          "delta_epsilon": 0.02216291987286235,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999979231431
+        },
+        {
+          "w": 2.21864512475046,
+          "delta_epsilon": 0.024105048074475346,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999975440212
+        },
+        {
+          "w": 2.2141813414971034,
+          "delta_epsilon": 0.024033402871969006,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999975585699
+        },
+        {
+          "w": 2.2141820420168146,
+          "delta_epsilon": 0.02403341407084315,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999975585673
+        },
+        {
+          "w": 2.214182042020971,
+          "delta_epsilon": 0.02403341407090959,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999975585665
+        },
+        {
+          "w": 2.21418204201997,
+          "delta_epsilon": 0.024033414070893593,
+          "matched_mode": 2,
+          "H_overlap_squared": 0.9999999975585674
+        }
+      ],
+      "modal_controls": [
+        {
+          "mode_count": 1,
+          "pole": 2.214181934162002,
+          "absolute_error": 1.0785896886744695e-07,
+          "relative_error_in_material_shift": 4.8008713073867794e-05
+        },
+        {
+          "mode_count": 4,
+          "pole": 2.214181933864981,
+          "absolute_error": 1.0815598994184938e-07,
+          "relative_error_in_material_shift": 4.814091904327033e-05
+        },
+        {
+          "mode_count": 8,
+          "pole": 2.214181933864969,
+          "absolute_error": 1.0815600193225805e-07,
+          "relative_error_in_material_shift": 4.814092438027749e-05
+        }
+      ]
+    }
+  ],
+  "dynamic_energy_balance_error": 5.2301290607431605e-09,
+  "floquet_primitive_controls": [
+    {
+      "harmonic_half_width": 1,
+      "expected_count": 16,
+      "status": "INCOMPLETE_RETAINED_ADE_SPECTRUM",
+      "message": "Found 8/16 independent quasifrequency classes. Increase N, resolve a degeneracy as a subspace, or inspect the raw spectrum; do not report an incomplete band spectrum."
+    },
+    {
+      "harmonic_half_width": 2,
+      "physical_count": 16,
+      "expected_count": 16,
+      "max_multiplier_error": 2.223385084205024e-11
+    },
+    {
+      "harmonic_half_width": 3,
+      "physical_count": 16,
+      "expected_count": 16,
+      "max_multiplier_error": 2.2257577306898647e-11
+    },
+    {
+      "harmonic_half_width": 5,
+      "physical_count": 16,
+      "expected_count": 16,
+      "max_multiplier_error": 2.221772793607763e-11
+    },
+    {
+      "harmonic_half_width": 7,
+      "physical_count": 16,
+      "expected_count": 16,
+      "max_multiplier_error": 2.2237249598020467e-11
+    }
+  ],
+  "adapter_metadata": {
+    "adapter": "NATIVE_REGION_ELECTRIC_GALERKIN_LORENTZ_ADE",
+    "basis_id": "70e6d34787ddf8cfe8bd93cdf3b8ffa7ed34be704215b33bd3eda555db82697c",
+    "physical_signature": "7cc32bf4c6ed8d73c2f6e699911b5ff6ab5780822247c21856cccf3df6768f10",
+    "native_source_sha256": "80e0d88841cc5fdf90f28d04da77213bca694e5814e72984538b4bb5f1974332",
+    "projection_arrays_sha256": "c081f3e3930d66b531f11543280be67b741101d599c3e24f0b797b47778fe3e2",
+    "drive_omega_a_over_c": 2.2,
+    "baseline_interpretation": "high_frequency_permittivity",
+    "static_physical_dielectric": "epsilon_native(r) + sum_r chi_region(r)*chi_Lorentz_r(z), constant strengths only",
+    "dynamic_material_equation": "Physical regional polarization: Pddot+gamma Pdot+wr^2 P=f(t)*wp^2*chi_region*E; keep augmented states",
+    "region_materials": [
+      {
+        "rank": 4,
+        "full_dimension": 4,
+        "relative_rank_tolerance": 1e-12,
+        "discarded_positive_trace": 0.0,
+        "relative_gram_error": 1.0190921601353821e-15,
+        "region_index": 0,
+        "label": "background Lorentz material",
+        "plasma_frequency_a_over_c": 0.8,
+        "resonance_frequency_a_over_c": 3.4,
+        "damping_a_over_c": 0.02,
+        "modulated": true,
+        "oscillator_index": 0
+      }
+    ],
+    "normalization": "integral E_i* epsilon_native E_j=delta_ij; M_inf=I; mu=I",
+    "native_coordinate_contract": "D=d projected displacement; B=h native H coefficient; E=e native E coefficient; d=e+sum L P",
+    "material_frequency_units": "Input angular omega*a/c; internal angular omega/Omega_drive",
+    "loss_ownership": "Material damping only; native radiative linewidth is neither added nor hidden in damping",
+    "spatial_scope": "Finite electric Galerkin projection of actual native patterned-slab modes; no full dispersive Legume spatial solve or QNM normalization",
+    "status": "FINITE_SPATIAL_MAXWELL_MULTIOSCILLATOR_ADE",
+    "time_units": "tau=Omega_drive*t",
+    "frequency_units": "angular omega/Omega_drive",
+    "state_order": "D,B,P0,J0,P1,J1,...",
+    "equation": "D'=C H; B'=-C^dagger E; Pj'=Jj; Jj'=fj Lj^dagger E-Kj Pj-Gj Jj",
+    "electric_field": "E=epsilon_inf(tau)^-1(D-sum_j Lj Pj)",
+    "polarization_coordinates": "Pj and Jj are material coordinates; physical electric polarization is Lj Pj",
+    "scope": "Supplied finite spatial operator and passive material memory; no native dispersive Legume, outgoing radiation, full continuum, or QNM residue claim"
+  },
+  "source_sha256": {
+    "sptc_toolbox\\slab_dispersion.py": "73901afd87242c8044c1423c400b578a647baa398f68aaa8e7eb1e80d23e3ba3",
+    "sptc_toolbox\\dispersive.py": "df74ba6c4b4bb499ffce0ee7e8e22b9737dbeb9196af1040db1dbf2a691fc822",
+    "sptc_toolbox\\slab_projection.py": "f1d29ec432da69d5695caaff7c2eceec4ffc61e45d1d140b5e60a33b93daa555",
+    "sptc_toolbox\\field_chart.py": "7f34e4deb56109609879cd228727df78daf362946f6d1feaad051121239de210",
+    "sptc_toolbox\\scripts\\validate_slab_dispersion.py": "79e14dc634280429e2d8161a4ba725d46c8b39f8607bdcb36166775f2410a237",
+    "sptc_toolbox\\results\\remaining_limits\\dispersion\\native_baseline.pkl": "4edec38f473c9658be352869f1857ff021d395e29d492ce034fbfb7caddce63e"
+  },
+  "scope": [
+    "Actual native patterned geometry supplies modes, electric field overlaps, positive metric and regional embedding; no paper fit or arbitrary curl is used.",
+    "The nonlinear frequency-domain control is independent material elimination of the same finite Galerkin model; actual Legume epsilon(omega) re-solves additionally check spatial material embedding.",
+    "The native fixed-reference spatial control is lossless. Complex material poles and dynamic loss are checked against ADE/primitive equations, not a complex-epsilon Legume solve.",
+    "Radiative linewidth/common channels are not included. The result validates material dispersion/absorption/modulation in a finite electric modal space, not a full open dispersive QNM solution.",
+    "No global spatial convergence is claimed at gmax=2.1. Repeating spatial/mode refinement is needed only when it changes the intended observable."
+  ]
+}

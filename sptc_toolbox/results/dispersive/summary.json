@@ -1,0 +1,126 @@
+{
+  "status": "VERIFIED_SPECIFIED_FINITE_SPATIAL_MAXWELL_ADE",
+  "scope": "General finite supplied electric/magnetic coordinates with multiple passive Lorentz/Drude auxiliary oscillators; not a native dispersive Legume or complete open Maxwell solver",
+  "model_contract": {
+    "status": "FINITE_SPATIAL_MAXWELL_MULTIOSCILLATOR_ADE",
+    "time_units": "tau=Omega_drive*t",
+    "frequency_units": "angular omega/Omega_drive",
+    "state_order": "D,B,P0,J0,P1,J1,...",
+    "equation": "D'=C H; B'=-C^dagger E; Pj'=Jj; Jj'=fj Lj^dagger E-Kj Pj-Gj Jj",
+    "electric_field": "E=epsilon_inf(tau)^-1(D-sum_j Lj Pj)",
+    "polarization_coordinates": "Pj and Jj are material coordinates; physical electric polarization is Lj Pj",
+    "scope": "Supplied finite spatial operator and passive material memory; no native dispersive Legume, outgoing radiation, full continuum, or QNM residue claim"
+  },
+  "checks": {
+    "static_multiresonance_polynomial": true,
+    "static_loss_all_poles_nonpositive": true,
+    "zero_modulation_full_state_count": true,
+    "zero_modulation_full_multipliers": true,
+    "static_energy_monotone": true,
+    "integrated_loss_balance": true,
+    "independent_primitive_vs_exponential": true,
+    "dynamic_all_auxiliary_modes_retained": true,
+    "dynamic_floquet_vs_independent_ode": true,
+    "fourier_sampling": true,
+    "time_phase_invariance": true,
+    "determinant_trace": true,
+    "instantaneous_pump_loss_balance": true,
+    "midpoint_shorttime_second_order": true
+  },
+  "static": {
+    "dimension": 6,
+    "poles": [
+      [
+        1.4371762060852518,
+        -0.034640144893266625
+      ],
+      [
+        1.0031384893023991,
+        -0.019147520958280765
+      ],
+      [
+        0.49506077673187565,
+        -0.001212334148452557
+      ],
+      [
+        -0.4950607767318757,
+        -0.0012123341484525933
+      ],
+      [
+        -1.4371762060852513,
+        -0.034640144893266604
+      ],
+      [
+        -1.0031384893024002,
+        -0.019147520958280824
+      ]
+    ],
+    "polynomial_root_error": 3.109120064723846e-15,
+    "zero_modulation_multiplier_error": 2.358369166067529e-15,
+    "integrated_loss_error": 4.477226797638956e-09,
+    "primitive_exponential_state_error": 4.977172075838877e-12
+  },
+  "dynamic": {
+    "dimension": 10,
+    "harmonic_convergence": [
+      {
+        "n_harmonics": 3,
+        "physical_count": 10,
+        "dimension": 10,
+        "maximum_multiplier_error": 1.728153669067149e-11,
+        "maximum_selected_edge_weight": 3.4119266483292006e-11,
+        "maximum_selected_residual": 1.1468209133619881e-15
+      },
+      {
+        "n_harmonics": 5,
+        "physical_count": 10,
+        "dimension": 10,
+        "maximum_multiplier_error": 1.7308566500127256e-11,
+        "maximum_selected_edge_weight": 3.0826617413200464e-20,
+        "maximum_selected_residual": 1.3872646961203236e-15
+      },
+      {
+        "n_harmonics": 7,
+        "physical_count": 10,
+        "dimension": 10,
+        "maximum_multiplier_error": 1.733887475192524e-11,
+        "maximum_selected_edge_weight": 3.870684776062566e-28,
+        "maximum_selected_residual": 1.1523389413691769e-15
+      }
+    ],
+    "fourier_sampling_128_vs256_error": 6.540005237194686e-14,
+    "phase_shift_multiplier_error": 1.2068941341478555e-13,
+    "determinant_error": 1.4389045512625049e-12,
+    "instantaneous_energy_identity_error": 3.365571710212123e-10,
+    "primitive_shorttime_convergence": [
+      {
+        "steps": 40,
+        "dt": 0.017499999999999998,
+        "state_error": 0.00014219212846665246
+      },
+      {
+        "steps": 80,
+        "dt": 0.008749999999999999,
+        "state_error": 3.5495370186369715e-05
+      },
+      {
+        "steps": 160,
+        "dt": 0.0043749999999999995,
+        "state_error": 8.867131448527576e-06
+      }
+    ]
+  },
+  "source_sha256": {
+    "sptc_toolbox\\dispersive.py": "df74ba6c4b4bb499ffce0ee7e8e22b9737dbeb9196af1040db1dbf2a691fc822",
+    "sptc_toolbox\\tests\\test_dispersive.py": "d49f3996e4aeb3902e466b1cec02a5978cc94b765a88c760a8fe4d5211c87f85",
+    "sptc_toolbox\\scripts\\validate_dispersive.py": "edb347ecb85fb10718266d3273f2a457685f07a4b88205f2874513a7ef2cf351"
+  },
+  "limits": [
+    "All spatial matrices and material parameters are supplied; no Legume spatial solver is modified or replaced.",
+    "Material damping is absorption with positive semidefinite damping matrices; radiation and gain are not inferred.",
+    "Dynamic epsilon_infinity and oscillator strength are separate coefficients; P/J history is retained.",
+    "Zero-strength dynamics retain material states, but inverse-strength energy is undefined for nonzero material states there.",
+    "Drude longitudinal/static states are retained; arbitrary supplied curl null spaces require caller physical interpretation.",
+    "Finite-state causality and spectra do not supply outgoing Maxwell boundaries, spatial convergence, port normalization, or QNM residues."
+  ]
+}

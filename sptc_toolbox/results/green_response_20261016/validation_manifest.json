@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "status": "UNIFIED_STATIC_RESPONSE_FLOQUET_COMPOSITION_IMPLEMENTED",
+  "tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "1010",
+    "time": "84.581",
+    "timestamp": "2026-10-16T23:22:54.061748+08:00",
+    "hostname": "ambiguous"
+  },
+  "previous_tests": 969,
+  "new_tests": 41,
+  "broken_local_links": [],
+  "installed_legume_modified": false,
+  "new_complete_2d_green_obtained": false,
+  "independent_evidence": [
+    "Uniform outgoing Green vs independent Floquet Maxwell boundary solver",
+    "Actual native two-mode coupled fields and source response",
+    "Full/Schur state and S reconstruction",
+    "Primitive two-tone ODE and independent stability"
+  ],
+  "legacy_papers": {
+    "lpr_configs": 4,
+    "science_points": 22,
+    "rejections_preserved": 3,
+    "scope": "same historical finite models interface regression"
+  },
+  "artifact_sha256": {
+    "sptc_toolbox/results/green_response_20261016/regression.xml": "c0f456c3aa0d1cd9549288ac68f199098d007e378504768f7715195c7aa5b07e",
+    "sptc_toolbox/results/green_response_20261016/report.md": "7baec1f0d76b7904c88ac6cfc0c361fb88119a31df9d739f2bc6867f00ca30f1",
+    "sptc_toolbox/results/green_response_20261016/review.md": "0d7174cf16f223f7171b2c4f84a1c8238da6a1fc972b4c90a3533f1cebd65c77",
+    "sptc_toolbox/results/green_response_20261016/review_native_candidates.json": "7987aa0cb8d81e273200d6786fc0e96fca3dda69e7c941aa86e4bcb04881df24",
+    "sptc_toolbox/results/green_response_20261016/native/native_green_comparison.pdf": "a53ed7ddfddf7db0813f6ea4fb84088e81c886e3e005fc8828bc98f3741ade88",
+    "sptc_toolbox/results/green_response_20261016/native/native_green_comparison.png": "b3c0e104be342c40d0fa5cbd076b537bd52059996fd1c91413fa75ec52c11f74",
+    "sptc_toolbox/results/green_response_20261016/native/native_green_comparison.svg": "7b9ba9884f5f9ea4ec0aa080041f89fe6a17f0a7244953c88e646ffac7c39ee4",
+    "sptc_toolbox/results/green_response_20261016/native/responses.npz": "4bd616683e5e3b52b3ec1ac85d102695980c4b7ebbc467a12bc0b005e51c8355",
+    "sptc_toolbox/results/green_response_20261016/native/summary.json": "c0464228f82c0226e9d78ababc49149afff33d9d1a47a811710ccd6921daba5b",
+    "sptc_toolbox/results/green_response_20261016/paper_regression/summary.json": "e8be20ebc5688f4b53bad1505700cbe9fb276501bc0e1a1f7ed1a6725b305ee3",
+    "sptc_toolbox/results/green_response_20261016/uniform/report.md": "55d64e92c3145ce502e02d6075c12e3eb7af833c0d9219e0cc05b6a7586af22b",
+    "sptc_toolbox/results/green_response_20261016/uniform/response.npz": "8b0b15e750df9f467136d2c9b75c0ab9964e96b31322d4df6b6569fa3de5904d",
+    "sptc_toolbox/results/green_response_20261016/uniform/summary.json": "520ca3049789bd6f8162f1618ad223821d9a2b32dc7354efdd7e8b2b7511da0f",
+    "sptc_toolbox/results/green_response_20261016/uniform/tests.xml": "8f9439639ddc434c4230346c08077a245f9838d9933006235d6c446fce446907",
+    "sptc_toolbox/results/green_response_20261016/uniform/uniform_green_validation.pdf": "7600e567ca8dd18c4adc5bfebe389b250dffe3b9fce0dfed6acff3a84df8c977",
+    "sptc_toolbox/results/green_response_20261016/uniform/uniform_green_validation.png": "0aca8b94248dd9120f6dc2d18c860710319bc667b9dcb9daf091900a8bff758e",
+    "sptc_toolbox/results/green_response_20261016/uniform/uniform_green_validation.svg": "b4507eab3538bae970fe27a0b04c22d0dbcba1dc68bbb0f92b6aa9b3feae9522",
+    "sptc_toolbox/green_scattering.py": "91ea0764335706178a6321fc07010f9044c339a0adf9c47e8e4996f5722af7cf",
+    "sptc_toolbox/native_green.py": "bbd3b3890773fd3077f30c3ef974ddbba99f411e64eef70c9df463755a2b5a36",
+    "sptc_toolbox/uniform_green.py": "e44f1982567df20e7efd20a4e8297619a0511002c41f3ece3e8bf95fc8b66227",
+    "sptc_toolbox/__init__.py": "514bdd921ad3b4ec0795df559cf42a3349fd214ef89ff5b0327b132472ead576",
+    "sptc_toolbox/tests/test_green_scattering.py": "8a39f7c4bdc045763fedb369291749330d63f99b25c185fcbd4d48338a0c7136",
+    "sptc_toolbox/tests/test_native_green.py": "217964132e5cef184a1ce5ad6674c68cff59e05e017f78c6ba29a8b24ef3442d",
+    "sptc_toolbox/tests/test_uniform_green.py": "432096d180d1c70cad7d14d77356d0c37f8450aa7e88fcf1230be9647cf84549",
+    "sptc_toolbox/scripts/validate_native_green.py": "15f909e07c1028dcccffd1533d28b4ace0071b95c4ae5eced8fa72eb03d980fe",
+    "sptc_toolbox/scripts/validate_uniform_green.py": "6bcd7e305fba22c93035d0781e324394753d45d713e0c1ba11fee3cc98128671",
+    "sptc_toolbox/docs/green_response_design.md": "b213b77961faaf8642995fb99ac87e3a837565e1e95ccd8855e8d515301ba52f",
+    "sptc_toolbox/docs/green_response_usage.md": "f3cdf5260a96a6806413b4231f2252c509cc42c14d48e60ae6716a5b140594ea"
+  }
+}

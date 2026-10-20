@@ -1,0 +1,203 @@
+{
+  "status": "DIRECT_NATIVE_TIME_MODULATED_MAXWELL",
+  "completed": true,
+  "identity": {
+    "resolution": 32,
+    "sector": 1,
+    "carrier": 0.398,
+    "drive": 0.01,
+    "amplitude": 0.01,
+    "phase": 0.0,
+    "source_ramp": 500.0,
+    "source": "smooth raised-cosine ramp * exp(-i*2*pi*.398*t), actual midpoint electric current",
+    "material_interval": 1.0,
+    "material_stride": 64,
+    "material_timing": "t+(stride+1)*dt/2 before step; no immediate E recomputation",
+    "epsilon_law": "11.5+A*cos(2*pi*.01*t+phase); material held at interval midpoint",
+    "eps_averaging": true,
+    "y_mirror": false,
+    "reference_planes": [
+      -0.7,
+      0.7
+    ],
+    "pml": 0.65,
+    "cell_z_requested": 4.8,
+    "Courant": 0.5,
+    "dt": 0.015625,
+    "geometry": "a1,h.42,circle(-.22,0)r.12,ellipse(.22,0)rx.12ry.09",
+    "grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+    "script_sha256": "74f85fa8a644d9756cf541b1d9fa3e25a8ac135687986324ed5223858472bbd6",
+    "dft_stride": 8,
+    "checkpoint_times": [
+      500,
+      1000,
+      1500,
+      2000,
+      2500
+    ],
+    "meep_version": "1.35.0"
+  },
+  "rows": [
+    {
+      "time": 500.0,
+      "window": [
+        0.0,
+        500
+      ],
+      "output_power": [
+        0.00019728390052850666,
+        0.0005587953280435389,
+        0.02700665327396653,
+        0.00043799507485033735,
+        0.00013447621556677165
+      ],
+      "incoming_power": [
+        0.001095860916397123,
+        0.004293708251148063,
+        1.0000000000000255,
+        0.0040163888339697145,
+        0.0009577899739848216
+      ],
+      "carrier_normalization": [
+        -0.07826481806740682,
+        -0.23686177491683771
+      ],
+      "wall_seconds": 287.615712705001,
+      "cpu_seconds": 287.053284926,
+      "material_update_wall_seconds": 119.53537796000637,
+      "material_update_cpu_seconds": 119.33465496599975,
+      "updates": 501
+    },
+    {
+      "time": 1000.0,
+      "window": [
+        500,
+        1000
+      ],
+      "output_power": [
+        9.231756367281913e-05,
+        0.0003423983356786715,
+        0.6415758258652993,
+        0.0003395589584391714,
+        7.634142844396515e-05
+      ],
+      "incoming_power": [
+        6.282798500440114e-08,
+        5.981511367026228e-08,
+        1.0000000000000013,
+        5.452368841662783e-08,
+        5.211739059242087e-08
+      ],
+      "carrier_normalization": [
+        -0.15721131269991592,
+        -0.47445804377401096
+      ],
+      "wall_seconds": 590.259790600001,
+      "cpu_seconds": 589.8169231749999,
+      "material_update_wall_seconds": 232.4122209879988,
+      "material_update_cpu_seconds": 232.29743023700115,
+      "updates": 1001
+    },
+    {
+      "time": 1500.0,
+      "window": [
+        1000,
+        1500
+      ],
+      "output_power": [
+        4.870007950634525e-07,
+        0.00019104864700885115,
+        0.9905758602388398,
+        0.00020048289959859232,
+        5.594643285728741e-07
+      ],
+      "incoming_power": [
+        3.8661872676252973e-10,
+        3.6527525114712305e-10,
+        1.0000000000000004,
+        3.363180226931083e-10,
+        3.2014067196061035e-10
+      ],
+      "carrier_normalization": [
+        -0.15731722614486898,
+        -0.47441539192477283
+      ],
+      "wall_seconds": 933.3536264060003,
+      "cpu_seconds": 932.441945166,
+      "material_update_wall_seconds": 347.2159416979666,
+      "material_update_cpu_seconds": 347.0768848010012,
+      "updates": 1501
+    },
+    {
+      "time": 2000.0,
+      "window": [
+        1500,
+        2000
+      ],
+      "output_power": [
+        1.5203870292760653e-09,
+        0.0002306045372079656,
+        1.0012006032200742,
+        0.00023611880926565704,
+        1.26888354076845e-08
+      ],
+      "incoming_power": [
+        2.4038576959476286e-12,
+        2.3583320710779386e-12,
+        0.999999999999999,
+        1.9117193023815647e-12,
+        1.976112084450753e-12
+      ],
+      "carrier_normalization": [
+        -0.15732461835211417,
+        -0.47442044044032083
+      ],
+      "wall_seconds": 1261.0745350880006,
+      "cpu_seconds": 1260.004822409,
+      "material_update_wall_seconds": 459.8063864849646,
+      "material_update_cpu_seconds": 459.6616163470041,
+      "updates": 2001
+    },
+    {
+      "time": 2500.0,
+      "window": [
+        2000,
+        2500
+      ],
+      "output_power": [
+        3.6494382309868326e-09,
+        0.00023302852760544128,
+        0.9997306085782144,
+        0.0002384835565742952,
+        4.39558817837924e-09
+      ],
+      "incoming_power": [
+        1.4944725314223533e-14,
+        5.758847744856516e-14,
+        1.0000000000000004,
+        7.056689549839795e-15,
+        1.4358897044014467e-14
+      ],
+      "carrier_normalization": [
+        -0.1573246110984365,
+        -0.47442114205181046
+      ],
+      "wall_seconds": 1491.6190212370002,
+      "cpu_seconds": 1490.458277632,
+      "material_update_wall_seconds": 562.7491945029924,
+      "material_update_cpu_seconds": 562.5920903140018,
+      "updates": 2500
+    }
+  ],
+  "initialization_wall_seconds": 0.2903506370003015,
+  "initialization_cpu_seconds": 0.2903613199999999,
+  "Fourier_convention": "exp(-i omega t), integrate field*exp(+i omega_l t)",
+  "input_normalization": "Unit total carrier parity-channel power; same scalar for every sideband",
+  "output_order": [
+    "bottom x",
+    "top x",
+    "bottom y",
+    "top y"
+  ],
+  "scope": "Direct forced response, not a fitted modal model or complete Floquet eigenspectrum"
+}

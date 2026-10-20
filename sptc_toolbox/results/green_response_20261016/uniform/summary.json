@@ -1,0 +1,120 @@
+{
+  "status": "INDEPENDENT_1D_MAXWELL_GREEN_REFERENCE",
+  "parameters": {
+    "epsilon": 11.5,
+    "thickness": 0.42,
+    "carrier_angular_frequency": 2.0106192982974678,
+    "drive_angular_frequency": 0.34557519189487723,
+    "cosine_delta_epsilon": 0.8,
+    "main_harmonic_halfwidth": 3
+  },
+  "spatial_refinement": [
+    {
+      "cells": 16,
+      "full_S_relative_error": 0.00014879160530688665,
+      "carrier_input_complex_output_error": 0.0002365499615525854,
+      "solve_residual": 3.2847732219900756e-16,
+      "static_volume_green_condition": 516.0852567255051
+    },
+    {
+      "cells": 32,
+      "full_S_relative_error": 3.723065115876026e-05,
+      "carrier_input_complex_output_error": 5.914567524487273e-05,
+      "solve_residual": 3.7130294567202306e-16,
+      "static_volume_green_condition": 2102.364882992833
+    },
+    {
+      "cells": 64,
+      "full_S_relative_error": 9.30971124856774e-06,
+      "carrier_input_complex_output_error": 1.4786933169022242e-05,
+      "solve_residual": 4.463576323323171e-16,
+      "static_volume_green_condition": 8447.834430325429
+    },
+    {
+      "cells": 128,
+      "full_S_relative_error": 2.32755586497627e-06,
+      "carrier_input_complex_output_error": 3.6967654833184833e-06,
+      "solve_residual": 5.019581151437758e-16,
+      "static_volume_green_condition": 33829.800807652064
+    }
+  ],
+  "full_internal_field_relative_error": 2.887137038238851e-06,
+  "inverse_green_vs_direct_Lippmann_Schwinger": {
+    "complex_output_relative_error": 3.4561712827598823e-14,
+    "full_field_relative_error": 2.660878290239897e-14,
+    "generic_condition": 4016.2374773238394
+  },
+  "harmonic_control": [
+    {
+      "harmonics": 1,
+      "output_error_vs_boundary_M5": 0.00969421784506572,
+      "spatial_error_vs_same_harmonics": 3.6773895627756126e-06
+    },
+    {
+      "harmonics": 2,
+      "output_error_vs_boundary_M5": 0.0006502241786775514,
+      "spatial_error_vs_same_harmonics": 3.696734306458186e-06
+    },
+    {
+      "harmonics": 3,
+      "output_error_vs_boundary_M5": 3.8309967119705685e-05,
+      "spatial_error_vs_same_harmonics": 3.6967654833184833e-06
+    },
+    {
+      "harmonics": 4,
+      "output_error_vs_boundary_M5": 4.213935422087444e-06,
+      "spatial_error_vs_same_harmonics": 3.6967661057486777e-06
+    },
+    {
+      "harmonics": 5,
+      "output_error_vs_boundary_M5": 3.69676611226093e-06,
+      "spatial_error_vs_same_harmonics": 3.69676611226093e-06
+    }
+  ],
+  "background_conversion": {
+    "noncarrier_output_power": 0.1295969632053252,
+    "reference_noncarrier_output_power": 0.12959704900165644,
+    "complex_output_relative_error": 3.979243256819145e-06,
+    "static_scattering": "free propagation: no static resonator or fitted modal pole",
+    "omitted_background_conversion_prediction": 0.0
+  },
+  "amplitude_control": [
+    {
+      "cosine_delta_epsilon": 0.02,
+      "first_sideband_Born_vs_repeated_conversion_error": 6.756711534910738e-06,
+      "first_sideband_output_power": 1.0209688945682828e-05
+    },
+    {
+      "cosine_delta_epsilon": 0.2,
+      "first_sideband_Born_vs_repeated_conversion_error": 0.0006758427107874821,
+      "first_sideband_output_power": 0.0010196782897812107
+    },
+    {
+      "cosine_delta_epsilon": 0.8,
+      "first_sideband_Born_vs_repeated_conversion_error": 0.010854895696617342,
+      "first_sideband_output_power": 0.016005436779091296
+    },
+    {
+      "cosine_delta_epsilon": 2.0,
+      "first_sideband_Born_vs_repeated_conversion_error": 0.06924911331583668,
+      "first_sideband_output_power": 0.08993099951179982
+    }
+  ],
+  "normalization": "Input unit time-averaged flux per unit area, air E=sqrt(2); output E/sqrt(2); reference planes 0,L",
+  "static_operator": "L0=-d_z^2-epsilon omega^2; outgoing G=-uL(z<)uR(z>)/Wronskian; jump Gprime=-1",
+  "modulation": "V[l,m]=omega_l^2 delta_epsilon[l-m], not omega_m^2 or constant coupling",
+  "limitations": [
+    "1D independent validation only; does not replace or validate arbitrary patterned Legume scattering",
+    "Finite scalar nondispersive modulation; real positive time permittivity; normal incidence air ports",
+    "Frequency-domain response does not certify causal stability or a realizable high-gain steady state",
+    "Generic inverse-Green D includes a counterterm and is not the bare static S0",
+    "Cell quadrature is second order; finite harmonic and spatial errors are separately recorded"
+  ],
+  "source_sha256": {
+    "sptc_toolbox\\scripts\\validate_uniform_green.py": "6bcd7e305fba22c93035d0781e324394753d45d713e0c1ba11fee3cc98128671",
+    "sptc_toolbox\\uniform_green.py": "e44f1982567df20e7efd20a4e8297619a0511002c41f3ece3e8bf95fc8b66227",
+    "sptc_toolbox\\floquet_slab.py": "6b1fd30eb592b4614d78eda39dbb9c8bf9288731195ff93e1a43e3792cd2761e",
+    "sptc_toolbox\\green_scattering.py": "91ea0764335706178a6321fc07010f9044c339a0adf9c47e8e4996f5722af7cf",
+    "sptc_toolbox\\tests\\test_uniform_green.py": "432096d180d1c70cad7d14d77356d0c37f8450aa7e88fcf1230be9647cf84549"
+  }
+}

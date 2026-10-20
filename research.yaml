@@ -1,0 +1,180 @@
+kind: project
+project:
+  id: floquet-maxwell
+  name: Floquet–Maxwell
+  domain: computational-photonics
+  stage: development
+  purpose: 基于Legume空间模式与场，研究二维周期薄膜的调制投影、Floquet动力学、输运、色散、开放辐射与受迫响应。
+  maintainers:
+  - wenkuizhao261-pixel
+documents:
+  overview: README.md
+  research: docs/sors/PROJECT.md
+  usage: docs/sors/RUN.md
+  validation: docs/sors/CASES.md
+  limitations: docs/sors/PROJECT.md
+  sources: docs/sors/SOURCES.md
+  contributing: docs/sors/CONTRIBUTING.md
+  capabilities: docs/sors/CAPABILITIES.md
+  cases: docs/sors/CASES.md
+assets:
+- id: toolbox
+  description: Full native-field, material, modulation, Floquet and response modules
+  record:
+    path: sptc_toolbox
+- id: historical-results
+  description: Published snapshot of reports, selected arrays and computed figures;
+    availability listed in the release guide
+  record:
+    path: docs/RELEASE.md
+capabilities:
+- id: mode-package
+  description: 统一ModePackage导出、读回、单位、基底及损耗归属。
+  documentation: sptc_toolbox/docs/integrated_backend.md
+- id: patterned-slab
+  description: 多层二维Circle/Ellipse/Poly及区域材料，局部k与Bloch路径。
+  documentation: sptc_toolbox/docs/pc_slab_pipeline.md
+- id: native-field-projection
+  description: 实际Legume场的多区域标量材料投影及有限幅值质量矩阵。
+  documentation: sptc_toolbox/docs/slab_projection_contract.md
+- id: tensor-phase-coupling
+  description: 非对角介电张量、偏振与复相位选择规则。
+  documentation: sptc_toolbox/docs/tensor_modulation_usage.md
+- id: general-periodic-modulation
+  description: DC、多时间Fourier阶、区域相位及独立空间和时间指标。
+  documentation: sptc_toolbox/docs/modulation_disorder_usage.md
+- id: traveling-modulation
+  description: 连续行波真实场投影、跨动量耦合和导模输运。
+  documentation: sptc_toolbox/docs/physics_pipeline_usage.md
+- id: periodic-modulation-disorder
+  description: 静态周期背景上的逐晶胞固定随机幅相和周期波形。
+  documentation: sptc_toolbox/docs/modulation_disorder_usage.md
+- id: finite-floquet-dynamics
+  description: 正负频率Floquet、一周期算符、有限时间演化和脉冲。
+  documentation: sptc_toolbox/docs/electric_mass_photon_projection.md
+- id: common-channel-radiation
+  description: 原生复辐射导出、线宽重建与共同通道干涉。
+  documentation: sptc_toolbox/docs/validation_report.md
+- id: frequency-memory
+  description: 共同实频采样、负频映射、有限谱窗因果记忆和Schur–Floquet。
+  documentation: sptc_toolbox/docs/connected_physics_usage.md
+- id: dispersive-ade
+  description: Lorentz/Drude材料辅助场和实际图案区域色散投影。
+  documentation: sptc_toolbox/docs/remaining_limits_usage.md
+- id: qnm-residue
+  description: 广义左右模态、兼容简并子空间与简单极点导数留数。
+  documentation: sptc_toolbox/docs/integrated_backend.md
+- id: forced-scattering
+  description: 显式H/B/C/D、多频相干激励、侧带端口、相敏功率与瞬态。
+  documentation: sptc_toolbox/docs/forced_excitation_usage.md
+- id: green-response
+  description: 静态Green采样、背景增广、材料算子及Floquet受迫响应。
+  documentation: sptc_toolbox/docs/projected_green_usage.md
+- id: field-reconstruction
+  description: 真实原生基底中的E/H/D及受迫谐波场重建。
+  documentation: sptc_toolbox/docs/pc_slab_pipeline.md
+- id: identity-convergence
+  description: 共同物理场度量、子空间/Bloch身份、模态富集与分层收敛。
+  documentation: sptc_toolbox/docs/convergence_workflow.md
+- id: open-response-controls
+  description: 解析出射边界、直接Meep、Mie/T-matrix与可选COMSOL独立比较。
+  documentation: docs/sors/CASES.md
+cases:
+- id: jin2025-tensor-selection
+  manifest: cases/jin2025-tensor/case.yaml
+- id: lpr-periodic-array
+  manifest: cases/lpr-periodic-array/case.yaml
+- id: science-advances-fig4
+  manifest: cases/science-advances-fig4/case.yaml
+- id: nature-photonics-fig4
+  manifest: cases/nature-photonics-fig4/case.yaml
+- id: minkov2018-traveling
+  manifest: cases/minkov2018-traveling/case.yaml
+- id: garg2022-array
+  manifest: cases/garg2022-array/case.yaml
+- id: jin2025-modal-dynamics
+  manifest: cases/jin2025-modal-dynamics/case.yaml
+- id: zhang2018-dielectric-migration
+  manifest: cases/zhang2018-dielectric-migration/case.yaml
+- id: zhang2018-metal-reference
+  manifest: cases/zhang2018-metal-reference/case.yaml
+- id: homogeneous-ptc
+  manifest: cases/homogeneous-ptc/case.yaml
+- id: analytic-guided-slab
+  manifest: cases/analytic-guided-slab/case.yaml
+- id: common-channel-radiation
+  manifest: cases/common-channel-radiation/case.yaml
+- id: integrated-modal-material
+  manifest: cases/integrated-modal-material/case.yaml
+- id: open-dispersive-slab
+  manifest: cases/open-dispersive-slab/case.yaml
+- id: periodic-resonator
+  manifest: cases/periodic-resonator/case.yaml
+- id: periodic-modulation-disorder
+  manifest: cases/periodic-modulation-disorder/case.yaml
+- id: full-floquet-scattering
+  manifest: cases/full-floquet-scattering/case.yaml
+- id: direct-meep-sidebands
+  manifest: cases/direct-meep-sidebands/case.yaml
+- id: forced-green-response
+  manifest: cases/forced-green-response/case.yaml
+- id: w1-convergence
+  manifest: cases/w1-convergence/case.yaml
+licensing:
+  code_license: MIT
+  license_file: LICENSE
+  sources: THIRD_PARTY_NOTICES.md
+extensions:
+- id: computational-photonics
+  version: '0.1'
+  description: docs/sors/PROJECT.md
+schema_version: '0.1'
+environments:
+- id: python-legume
+  description: Python 3.12, NumPy/SciPy and native Legume fields
+  platforms:
+  - windows
+  - linux
+  - macos
+  dependency_files:
+  - pyproject.toml
+  setup_steps:
+  - argv:
+    - python
+    - -m
+    - pip
+    - install
+    - -e
+    - .[legume,test]
+    cwd: .
+    timeout_seconds: 600
+- id: python-sphere
+  description: Optional treams periodic-sphere comparison
+  platforms:
+  - windows
+  - linux
+  dependency_files:
+  - pyproject.toml
+  setup_steps:
+  - argv:
+    - python
+    - -m
+    - pip
+    - install
+    - -e
+    - .[legume,test,sphere]
+    cwd: .
+    timeout_seconds: 600
+- id: meep-linux
+  description: Linux/WSL PyMeep environment for independent open-boundary time-domain
+    calculations; installation described in environment guide
+  platforms:
+  - linux
+  dependency_files:
+  - environments/meep.yml
+- id: comsol
+  description: Separately licensed COMSOL installation with optional MPh Python bridge;
+    see environment guide
+  platforms:
+  - windows
+  - linux

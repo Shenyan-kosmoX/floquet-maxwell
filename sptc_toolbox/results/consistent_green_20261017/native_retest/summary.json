@@ -1,0 +1,64 @@
+{
+  "status": "HISTORICAL_PHYSICAL_PROTOCOL_RECOMPUTED_WITH_CURRENT_NATIVE_GREEN",
+  "native_modes": [
+    5
+  ],
+  "gmax": 6.1,
+  "frequency_fa_over_c": 0.398,
+  "drive_fa_over_c": 0.01,
+  "absolute_epsilon_cosine_amplitude": 0.01,
+  "modulation_region": "dielectric excluding holes",
+  "input": "bottom x unit power; Gamma",
+  "reference_planes": [
+    -0.7,
+    0.7
+  ],
+  "rows": [
+    {
+      "harmonic": -1,
+      "current_native_green_power": 0.00013173925782551015,
+      "historical_native_power": 0.0001317392578255223,
+      "relative_change": -9.214851104388799e-14,
+      "harmonic3_to4_complex_amplitude_difference": 6.139240144419921e-16,
+      "output_real_imag": [
+        [
+          -0.007133768425614764,
+          0.003870268332101079
+        ],
+        [
+          -0.007133768425612137,
+          0.0038702683321039733
+        ]
+      ]
+    },
+    {
+      "harmonic": 1,
+      "current_native_green_power": 0.00013597865334428197,
+      "historical_native_power": 0.0001359786533442951,
+      "relative_change": -9.64783808399261e-14,
+      "harmonic3_to4_complex_amplitude_difference": 0.0,
+      "output_real_imag": [
+        [
+          0.006872516010013877,
+          -0.004556078397509385
+        ],
+        [
+          0.006872516010010961,
+          -0.0045560783975120795
+        ]
+      ]
+    }
+  ],
+  "current_green_vs_current_legacy_S_relative_difference": 8.3985358117091e-14,
+  "source_sha256": {
+    "sptc_toolbox/results/connected_physics/spatial/g6.1_v01234567/native.pkl": "8e0d97e7f1a218bae167dc0c0e05ea1da7881dc488416e818c03563286b3e45f",
+    "sptc_toolbox/scripts/retest_historical_native_green.py": "c42753658776cb26b451ac03eb6cc26e3f6067bbfdca3dfb12fa61119d33bd37"
+  },
+  "scope": "Current native Green assembly, same original physical/approximation inputs; not a completed hybrid-to-pure-Legume spatial adapter",
+  "approximations": [
+    "One native mode",
+    "Frozen radiation channels",
+    "Area-average homogeneous background",
+    "No complete-pattern direct background modulation"
+  ]
+}

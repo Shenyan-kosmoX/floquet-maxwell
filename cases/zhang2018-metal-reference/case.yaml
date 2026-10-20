@@ -1,0 +1,100 @@
+schema_version: '0.1'
+kind: case
+id: zhang2018-metal-reference
+project_id: floquet-maxwell
+title: Zhang 2018 原金属单元与远场编码对照
+stage: results_available
+question:
+  summary: Zhang 2018 原金属单元与远场编码对照
+  scope: 静态金属单元及慢调制反射编码控制；28pF和0.028pF输入歧义保留，完整动态阵列仍需进一步研究。
+  record:
+    path: sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md
+capability_refs:
+- open-response-controls
+- general-periodic-modulation
+model:
+  description: 静态金属单元及慢调制反射编码控制；28pF和0.028pF输入歧义保留，完整动态阵列仍需进一步研究。
+  record:
+    path: sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md
+execution:
+  environment_ref: comsol
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md
+    entrypoint:
+      availability: not_bundled
+      description: 'Historical artifact: sptc_toolbox/scripts/reproduce_zhang2018_original_farfield.py'
+      retrieval: Regenerate using the case workflow; source figures are available
+        from the cited publisher. This release does not provide a download for this
+        historical artifact.
+  - id: workflow-2
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/comsol_zhang2018_unitcell.py
+  - id: workflow-3
+    role: run
+    mode: documented
+    instructions:
+      path: sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md
+    entrypoint:
+      path: sptc_toolbox/scripts/plot_zhang2018_unitcell_scattering.py
+outputs:
+- id: output-1
+  description: sptc_toolbox/results/zhang2018_original_alignment_20261019/manifest.json
+  record:
+    path: sptc_toolbox/results/zhang2018_original_alignment_20261019/manifest.json
+- id: output-2
+  description: sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/report.md
+  record:
+    path: sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/report.md
+- id: output-3
+  description: sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/report.md
+  record:
+    path: sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/report.md
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md
+criteria:
+- id: criterion-1
+  description: 八阶理想远场峰值以及两种源电容解释下单元复反射和相位差。
+  representation: documented
+  record:
+    path: sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md
+checks:
+- id: check-1
+  method: 原理想反射公式、三档COMSOL网格和解析grounded-slab比较
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md
+results:
+  status: observed
+  records:
+  - path: sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md
+  artifacts:
+  - path: sptc_toolbox/results/zhang2018_original_alignment_20261019/manifest.json
+  - path: sptc_toolbox/results/zhang2018_original_alignment_20261019/farfield/report.md
+  - path: sptc_toolbox/results/zhang2018_original_alignment_20261019/unitcell_plots/report.md
+  notes: 全部八阶理想远场峰值差不超过0.02744dB；原尺寸单元两态散射、三档网格与grounded-slab解析控制。 静态金属单元及慢调制反射编码控制；28pF和0.028pF输入歧义保留，完整动态阵列仍需进一步研究。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: sptc_toolbox/results/zhang2018_original_alignment_20261019/report.md

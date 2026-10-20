@@ -1,0 +1,65 @@
+{
+  "status": "CALCULATED_PUBLISHED_TWO_MODE_RESPONSE_WITH_DECLARED_MEASURED_INPUTS",
+  "parameters": {
+    "k_a_over_2pi": 0.00727452158797604,
+    "linewidths_GHz": [
+      190.2827597038855,
+      123.73030067434513
+    ],
+    "decay_per_ps": [
+      1.1955818399810372,
+      0.7774204072499578
+    ],
+    "lower_frequency_THz": 294.6917845646588,
+    "upper_frequency_THz": 392.9843937449866,
+    "pump_wavelength_nm": 3050.0,
+    "drive_per_ps": 617.5906778061814,
+    "C_per_mW": 0.04582357251070147,
+    "static_method": "Linear interpolation of Fig2 TE_y/TM measured modes at f_TM-f_TE=c/3050nm; not fit to Fig4",
+    "coupling_method": "Published Fig4 C/P calibration used as input; g=sqrt(C*kappa1*kappa2) uses independently selected Fig2 decays",
+    "linewidth_scope": "Selected Fig2 decay pair is reproducible but not explicitly identified by authors as their Fig4/SFig7 pair"
+  },
+  "max_CW_analytic_error": 3.3306690738754696e-16,
+  "max_photon_balance_error": 4.440892098500626e-16,
+  "max_omitted_harmonic_residual": 0.0,
+  "controls": [
+    {
+      "C": 0.0,
+      "primitive_complex_amplitude_error": 0.0,
+      "phase_covariance_error": 0.0
+    },
+    {
+      "C": 0.2,
+      "primitive_complex_amplitude_error": 3.3639757646142243e-13,
+      "phase_covariance_error": 1.1128587932241826e-16
+    },
+    {
+      "C": 1.0,
+      "primitive_complex_amplitude_error": 7.416289804496046e-14,
+      "phase_covariance_error": 1.1443916996305594e-16
+    },
+    {
+      "C": 2.062060762981566,
+      "primitive_complex_amplitude_error": 3.219646771412954e-15,
+      "phase_covariance_error": 1.1509558805928374e-16
+    }
+  ],
+  "max_detuned_analytic_error": 4.440892098500626e-16,
+  "intensity_peak_power_mW": 21.75,
+  "g45_GHz": 220.33753379998385,
+  "author_source_g45_GHz": 227.75236221124317,
+  "author_caption_g45_GHz": 220.0,
+  "all_controls_pass": true,
+  "comparison_scope": "Fig4a conditional on author C/P calibration, normalized source intensity. Fig4b independently selected static decays yield g; not a first-principles prediction of C(P).",
+  "physical_scope": "SI two-mode rotating-wave photon model with symmetric two-face radiative closure; real slab is asymmetric",
+  "not_certified": [
+    "Legume tensor/dissipative full Maxwell slab",
+    "Chern number",
+    "actual modal radiation branching fractions"
+  ],
+  "source_sha256": {
+    "source_data_parsed.json": "19b13ca0fc383d38a898ad549a4afc224fc571e614545882de652dbc190d0f1e",
+    "figure4_author_data.csv": "5d28b0d3be63954ad1228abf34a79ba49b983344580551044b6ddd62ae200d00",
+    "41565_2025_2003_MOESM1_ESM.pdf": "9c5e59fe64526ad5d4644f3427ad700dc51356aff4c1908fae627761c26996dc"
+  }
+}

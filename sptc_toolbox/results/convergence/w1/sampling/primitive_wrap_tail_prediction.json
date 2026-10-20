@@ -1,0 +1,58 @@
+{
+  "status": "ASYMPTOTIC_INITIAL_TAIL_DIAGNOSTIC_NO_FIT",
+  "primitive_wrap_jump_line_integral": 4.671724406348256e-06,
+  "packet_total_line_integral": 6.01151497351146,
+  "average_K_supercell_line_norm": 0.09392992146111656,
+  "predicted_cell_average_r_squared_density": 2.0157353019738225e-05,
+  "observed_radial_bins": [
+    {
+      "range_a": [
+        32,
+        64
+      ],
+      "mean_r_squared_probability_density": 2.2591060064897024e-05
+    },
+    {
+      "range_a": [
+        64,
+        96
+      ],
+      "mean_r_squared_probability_density": 2.1458604846638e-05
+    },
+    {
+      "range_a": [
+        96,
+        128
+      ],
+      "mean_r_squared_probability_density": 2.151496136297534e-05
+    },
+    {
+      "range_a": [
+        128,
+        192
+      ],
+      "mean_r_squared_probability_density": 2.2277552336357902e-05
+    },
+    {
+      "range_a": [
+        192,
+        256
+      ],
+      "mean_r_squared_probability_density": 2.4023874775246665e-05
+    },
+    {
+      "range_a": [
+        256,
+        384
+      ],
+      "mean_r_squared_probability_density": 2.8686047160047063e-05
+    }
+  ],
+  "formula": "C=(L/(4 pi^2))*integral_cell |Delta psi_ExEy(s)|^2 ds / average_K integral_cell |psi_K_ExEy(s)|^2 ds; L=16a",
+  "derivation": "Integration by parts of the Bloch integral gives f_l(s)~Delta psi(s)/(2 pi i l) at an internal spectral jump; the normalized line intensity has a cell-averaged C/x^2 tail. The normalization is measured from the saved full-period initial packet, using Parseval total/Nk.",
+  "limitations": [
+    "Asymptotic prediction for initial packet from the internal primitive-q wrap only",
+    "Finite-period aliasing and outer supercell-edge jump are omitted here",
+    "No claim that this alone explains the evolved slow-drive packet-width change"
+  ]
+}

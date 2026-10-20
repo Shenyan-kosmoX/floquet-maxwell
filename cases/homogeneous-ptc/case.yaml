@@ -1,0 +1,81 @@
+schema_version: '0.1'
+kind: case
+id: homogeneous-ptc
+project_id: floquet-maxwell
+title: 均匀PTC的Floquet–Maxwell基准
+stage: results_available
+question:
+  summary: 均匀PTC的Floquet–Maxwell基准
+  scope: 均匀空间介质的独立方法基准；物理参数与论文图案薄膜分别定义。
+  record:
+    path: ptc_fig4/results/homogeneous_quick/validation_report.json
+capability_refs:
+- finite-floquet-dynamics
+model:
+  description: 均匀空间介质的独立方法基准；物理参数与论文图案薄膜分别定义。
+  record:
+    path: ptc_fig4/results/homogeneous_quick/validation_report.json
+inputs:
+- id: model-inputs
+  description: Geometry, materials, drive parameters and numerical settings are recorded
+    with the source case.
+  record:
+    path: ptc_fig4/results/homogeneous_quick/validation_report.json
+execution:
+  environment_ref: python-legume
+  cwd: .
+  steps:
+  - id: workflow-1
+    role: run
+    mode: documented
+    instructions:
+      path: ptc_fig4/results/homogeneous_quick/validation_report.json
+    entrypoint:
+      path: ptc_fig4/src/ptc_fig4/validation.py
+outputs:
+- id: output-1
+  description: ptc_fig4/configs/homogeneous_quick.yaml
+  record:
+    path: ptc_fig4/configs/homogeneous_quick.yaml
+- id: output-2
+  description: ptc_fig4/results/homogeneous_quick/convergence.json
+  record:
+    path: ptc_fig4/results/homogeneous_quick/convergence.json
+- id: output-3
+  description: ptc_fig4/results/homogeneous_quick/manifest.json
+  record:
+    path: ptc_fig4/results/homogeneous_quick/manifest.json
+references:
+- id: method-reference
+  description: Scientific model, source literature and independent comparison methods.
+  record:
+    path: ptc_fig4/results/homogeneous_quick/validation_report.json
+criteria:
+- id: criterion-1
+  description: 指定均匀PTC的正负频率分支、弱调制带隙和完整有限状态乘子。
+  representation: documented
+  record:
+    path: ptc_fig4/results/homogeneous_quick/validation_report.json
+checks:
+- id: check-1
+  method: 静态解析极限、Mathieu弱调制、谐波加密及独立一周期积分
+  criterion_refs:
+  - criterion-1
+  reference_refs:
+  - method-reference
+  output_refs: []
+  record:
+    path: ptc_fig4/results/homogeneous_quick/validation_report.json
+results:
+  status: observed
+  records:
+  - path: ptc_fig4/results/homogeneous_quick/validation_report.json
+  artifacts:
+  - path: ptc_fig4/configs/homogeneous_quick.yaml
+  - path: ptc_fig4/results/homogeneous_quick/convergence.json
+  - path: ptc_fig4/results/homogeneous_quick/manifest.json
+  notes: 静态极限、正负频率、调制带隙、弱调制Mathieu和时间谐波/独立周期积分比较。 均匀空间介质的独立方法基准；物理参数与论文图案薄膜分别定义。  Historical
+    results retain their original scope and numerical verdicts; see release verification
+    for the checks rerun from this snapshot.
+limitations:
+  path: ptc_fig4/results/homogeneous_quick/validation_report.json

@@ -1,0 +1,511 @@
+{
+  "status": "APPROXIMATE_CONTROLLED_DIAGNOSIS",
+  "provenance": {
+    "material_sources": [
+      {
+        "file": "ge_amotchkina.yml",
+        "source_url": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/Ge/nk/Amotchkina.yml",
+        "description": "author-provided Ge substrate tabulated nk, CC0 database",
+        "retrieved_on": "2026-10-13",
+        "bytes": 20875,
+        "sha256": "961aea6c00168f1885041b767698a355c556b8c24f5b81f059c3542aee8b37cc"
+      },
+      {
+        "file": "ge_film.yml",
+        "source_url": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/Ge/nk/Amotchkina-film.yml",
+        "description": "author-provided Ge film tabulated nk, CC0 database",
+        "retrieved_on": "2026-10-13",
+        "bytes": 59489,
+        "sha256": "298823b05a619d67b9d704352505e8fe7ef75ad129f6dbce98403467b09dc848"
+      }
+    ],
+    "software_versions": {
+      "legume-gme": "1.0.3",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3"
+    },
+    "diagnostic_script_sha256": "b9e4dfec18bb360fd3c35ed8c1c2a065d86e02b328d3a26d72e322c54155e388"
+  },
+  "fixed_parameters": {
+    "gmax": 6.1,
+    "vertical_modes": 12,
+    "kpoints": 25,
+    "modes_per_k": 24,
+    "radius_nm": 1030.0,
+    "period_nm": 3296.0,
+    "radius_over_height": 0.703
+  },
+  "changed_parameter_only": "frozen real cylinder epsilon; absorption deliberately omitted in all three comparisons",
+  "seed": "Same audited A2g H-field seed; subsequent tracking by shared physical H fields",
+  "runs": [
+    {
+      "sample": "n4",
+      "directory": "ptc_fig4\\results\\qualitative_comparison\\n4_g6_v12_k25",
+      "epsilon_real": 16.0,
+      "vertex_frequencies_thz": {
+        "M_start": 66.28990609810022,
+        "Gamma": 68.76362147101432,
+        "X": 63.717883237833156,
+        "M_end": 66.28990609810022
+      },
+      "normalized_vertex_frequencies": {
+        "M_start": 4.579243865356422,
+        "Gamma": 4.750125778045984,
+        "X": 4.401570964643534,
+        "M_end": 4.579243865356422
+      },
+      "sampled_bandwidth_thz": 5.0457382331811615,
+      "relative_bandwidth_percent": 7.33780176965821,
+      "bandwidth_over_paper_readback": 9.112818615461295,
+      "min_adjacent_field_overlap_squared": 0.8042758204348394,
+      "ambiguous_k_indexes": [],
+      "degenerate_k_indexes": [],
+      "radiative_Q_only": {
+        "M_start": 52.56343560109784,
+        "Gamma": 4.3439338639417673e+27,
+        "X": 10.532708740457549,
+        "M_end": 52.56343560109784,
+        "minimum_along_path": 7.918527322182743
+      },
+      "dispersion": null
+    },
+    {
+      "sample": "substrate",
+      "directory": "ptc_fig4\\results\\material_vs_solver\\material_sweep\\substrate",
+      "epsilon_real": 15.817108643702946,
+      "vertex_frequencies_thz": {
+        "M_start": 66.63716095357195,
+        "Gamma": 69.14422635244156,
+        "X": 64.02764837699888,
+        "M_end": 66.63716095357195
+      },
+      "normalized_vertex_frequencies": {
+        "M_start": 4.603231901548251,
+        "Gamma": 4.776417602412445,
+        "X": 4.422969246776063,
+        "M_end": 4.603231901548251
+      },
+      "sampled_bandwidth_thz": 5.116577975442681,
+      "relative_bandwidth_percent": 7.399862931956876,
+      "bandwidth_over_paper_readback": 9.240758213625558,
+      "min_adjacent_field_overlap_squared": 0.725472153042413,
+      "ambiguous_k_indexes": [
+        24
+      ],
+      "degenerate_k_indexes": [],
+      "radiative_Q_only": {
+        "M_start": 48.09038959087417,
+        "Gamma": 4.657446479825062e+27,
+        "X": 10.593288129879971,
+        "M_end": 48.09038959087417,
+        "minimum_along_path": 7.659007477873428
+      },
+      "dispersion": {
+        "table": "ptc_fig4\\literature\\ge_amotchkina.yml",
+        "interpolation": "linear n,k versus wavelength",
+        "center_frequency_thz": 68.0,
+        "epsilon_real_68": 15.817108643702946,
+        "epsilon_imag_68_omitted_in_GME": 0.0,
+        "effective_real_index_used": 3.9770728738235293,
+        "epsilon_slope_per_THz": 0.005157002605562511,
+        "finite_difference_slope_checks": {
+          "h_0.01_THz": 0.0051569916869276256,
+          "h_0.1_THz": 0.005157002605562511,
+          "h_0.5_THz": 0.005072285135963028,
+          "h_1_THz": 0.005049708610934012
+        },
+        "max_confinement_bandwidth_factor_first_order": 0.9890361936779142,
+        "estimated_max_bandwidth_reduction_percent": 1.0963806322085823,
+        "epsilon_real_at_63_68_70_thz": {
+          "63.0": 15.792764353624023,
+          "68.0": 15.817108643702946,
+          "70.0": 15.827357291038618
+        },
+        "approximation": "Local Hermitian nondispersive perturbation plus first-order material self-consistency; assumes unchanged modal identity and weak dispersion"
+      },
+      "field_overlap_to_n4": [
+        {
+          "k_index": 0,
+          "principal_overlap_squared": [
+            0.9999907900374772
+          ]
+        },
+        {
+          "k_index": 1,
+          "principal_overlap_squared": [
+            0.9997399065562936
+          ]
+        },
+        {
+          "k_index": 2,
+          "principal_overlap_squared": [
+            0.9993845177781586
+          ]
+        },
+        {
+          "k_index": 3,
+          "principal_overlap_squared": [
+            0.9997018113844267
+          ]
+        },
+        {
+          "k_index": 4,
+          "principal_overlap_squared": [
+            0.9999143279041004
+          ]
+        },
+        {
+          "k_index": 5,
+          "principal_overlap_squared": [
+            0.999945354707623
+          ]
+        },
+        {
+          "k_index": 6,
+          "principal_overlap_squared": [
+            0.9999737149200928
+          ]
+        },
+        {
+          "k_index": 7,
+          "principal_overlap_squared": [
+            0.9999406539923662
+          ]
+        },
+        {
+          "k_index": 8,
+          "principal_overlap_squared": [
+            0.9999978787577202
+          ]
+        },
+        {
+          "k_index": 9,
+          "principal_overlap_squared": [
+            0.9999510144088741
+          ]
+        },
+        {
+          "k_index": 10,
+          "principal_overlap_squared": [
+            0.9999681811507527
+          ]
+        },
+        {
+          "k_index": 11,
+          "principal_overlap_squared": [
+            0.9999004699962035
+          ]
+        },
+        {
+          "k_index": 12,
+          "principal_overlap_squared": [
+            0.9998176781191481
+          ]
+        },
+        {
+          "k_index": 13,
+          "principal_overlap_squared": [
+            0.9997615622798912
+          ]
+        },
+        {
+          "k_index": 14,
+          "principal_overlap_squared": [
+            0.9997991981093092
+          ]
+        },
+        {
+          "k_index": 15,
+          "principal_overlap_squared": [
+            0.999840651048093
+          ]
+        },
+        {
+          "k_index": 16,
+          "principal_overlap_squared": [
+            0.9998628393583647
+          ]
+        },
+        {
+          "k_index": 17,
+          "principal_overlap_squared": [
+            0.9998566308071813
+          ]
+        },
+        {
+          "k_index": 18,
+          "principal_overlap_squared": [
+            0.9998225135980192
+          ]
+        },
+        {
+          "k_index": 19,
+          "principal_overlap_squared": [
+            0.9997443270417368
+          ]
+        },
+        {
+          "k_index": 20,
+          "principal_overlap_squared": [
+            0.999594620064738
+          ]
+        },
+        {
+          "k_index": 21,
+          "principal_overlap_squared": [
+            0.9992160104299616
+          ]
+        },
+        {
+          "k_index": 22,
+          "principal_overlap_squared": [
+            0.9980112117820952
+          ]
+        },
+        {
+          "k_index": 23,
+          "principal_overlap_squared": [
+            0.9906829798370882
+          ]
+        },
+        {
+          "k_index": 24,
+          "principal_overlap_squared": [
+            0.9999907900374772
+          ]
+        }
+      ],
+      "min_field_overlap_squared_to_n4": 0.9906829798370882
+    },
+    {
+      "sample": "film",
+      "directory": "ptc_fig4\\results\\material_vs_solver\\material_sweep\\film",
+      "epsilon_real": 17.54587299806142,
+      "vertex_frequencies_thz": {
+        "M_start": 63.55348105027984,
+        "Gamma": 65.75813628133758,
+        "X": 61.293273618339256,
+        "M_end": 63.55348105027984
+      },
+      "normalized_vertex_frequencies": {
+        "M_start": 4.390214217393198,
+        "Gamma": 4.5425097105729115,
+        "X": 4.2340812308442315,
+        "M_end": 4.390214217393198
+      },
+      "sampled_bandwidth_thz": 4.464862662998328,
+      "relative_bandwidth_percent": 6.789825435283016,
+      "bandwidth_over_paper_readback": 8.06373254230377,
+      "min_adjacent_field_overlap_squared": 0.8514717085897582,
+      "ambiguous_k_indexes": [],
+      "degenerate_k_indexes": [],
+      "radiative_Q_only": {
+        "M_start": null,
+        "Gamma": 4.232534341987183e+27,
+        "X": 10.263343738844446,
+        "M_end": null,
+        "minimum_along_path": 9.135066568652183
+      },
+      "dispersion": {
+        "table": "ptc_fig4\\literature\\ge_film.yml",
+        "interpolation": "linear n,k versus wavelength",
+        "center_frequency_thz": 68.0,
+        "epsilon_real_68": 17.545872998061423,
+        "epsilon_imag_68_omitted_in_GME": 0.041741886618510235,
+        "effective_real_index_used": 4.188779416257368,
+        "epsilon_slope_per_THz": 0.007332555613235314,
+        "finite_difference_slope_checks": {
+          "h_0.01_THz": 0.007332540137383603,
+          "h_0.1_THz": 0.007332555613235314,
+          "h_0.5_THz": 0.007529536506744705,
+          "h_1_THz": 0.007534886891475523
+        },
+        "max_confinement_bandwidth_factor_first_order": 0.985990201143999,
+        "estimated_max_bandwidth_reduction_percent": 1.4009798856000955,
+        "epsilon_real_at_63_68_70_thz": {
+          "63.0": 17.509641206990857,
+          "68.0": 17.545872998061423,
+          "70.0": 17.561176944904062
+        },
+        "approximation": "Local Hermitian nondispersive perturbation plus first-order material self-consistency; assumes unchanged modal identity and weak dispersion"
+      },
+      "field_overlap_to_n4": [
+        {
+          "k_index": 0,
+          "principal_overlap_squared": [
+            0.9995270441863227
+          ]
+        },
+        {
+          "k_index": 1,
+          "principal_overlap_squared": [
+            0.9940010263408116
+          ]
+        },
+        {
+          "k_index": 2,
+          "principal_overlap_squared": [
+            0.9869316010452875
+          ]
+        },
+        {
+          "k_index": 3,
+          "principal_overlap_squared": [
+            0.9924854253825599
+          ]
+        },
+        {
+          "k_index": 4,
+          "principal_overlap_squared": [
+            0.9961596442104476
+          ]
+        },
+        {
+          "k_index": 5,
+          "principal_overlap_squared": [
+            0.9978593533909217
+          ]
+        },
+        {
+          "k_index": 6,
+          "principal_overlap_squared": [
+            0.9989092846734046
+          ]
+        },
+        {
+          "k_index": 7,
+          "principal_overlap_squared": [
+            0.9993593728633207
+          ]
+        },
+        {
+          "k_index": 8,
+          "principal_overlap_squared": [
+            0.9997634102083566
+          ]
+        },
+        {
+          "k_index": 9,
+          "principal_overlap_squared": [
+            0.9992445374832669
+          ]
+        },
+        {
+          "k_index": 10,
+          "principal_overlap_squared": [
+            0.996922815039749
+          ]
+        },
+        {
+          "k_index": 11,
+          "principal_overlap_squared": [
+            0.992032142425957
+          ]
+        },
+        {
+          "k_index": 12,
+          "principal_overlap_squared": [
+            0.9867531464206927
+          ]
+        },
+        {
+          "k_index": 13,
+          "principal_overlap_squared": [
+            0.985201337013059
+          ]
+        },
+        {
+          "k_index": 14,
+          "principal_overlap_squared": [
+            0.988275964471607
+          ]
+        },
+        {
+          "k_index": 15,
+          "principal_overlap_squared": [
+            0.9889247373419119
+          ]
+        },
+        {
+          "k_index": 16,
+          "principal_overlap_squared": [
+            0.990027595194324
+          ]
+        },
+        {
+          "k_index": 17,
+          "principal_overlap_squared": [
+            0.9897199521581339
+          ]
+        },
+        {
+          "k_index": 18,
+          "principal_overlap_squared": [
+            0.9870889529006156
+          ]
+        },
+        {
+          "k_index": 19,
+          "principal_overlap_squared": [
+            0.9801805479086422
+          ]
+        },
+        {
+          "k_index": 20,
+          "principal_overlap_squared": [
+            0.9693659718504359
+          ]
+        },
+        {
+          "k_index": 21,
+          "principal_overlap_squared": [
+            0.9442498753963997
+          ]
+        },
+        {
+          "k_index": 22,
+          "principal_overlap_squared": [
+            0.87377681477446
+          ]
+        },
+        {
+          "k_index": 23,
+          "principal_overlap_squared": [
+            0.9046964542612111
+          ]
+        },
+        {
+          "k_index": 24,
+          "principal_overlap_squared": [
+            0.9995270441863227
+          ]
+        }
+      ],
+      "min_field_overlap_squared_to_n4": 0.87377681477446
+    }
+  ],
+  "paper_bandwidth_thz_approximate_readback": 0.5536967700224267,
+  "close_sample_frequency_derivative_thz_per_epsilon": {
+    "M_start": -1.8986947360580433,
+    "Gamma": -2.0810435721689546,
+    "X": -1.6937112034021076,
+    "M_end": -1.8986947360580433
+  },
+  "substrate_empirical_local_dispersion_factors": {
+    "M_start": 0.9903033715510897,
+    "Gamma": 0.9893820046407931,
+    "X": 0.9913411573391878,
+    "M_end": 0.9903033715510897
+  },
+  "epsilon_slope_per_THz_required_for_dispersion_alone_at_full_confinement": 3.8177969955111974,
+  "nonfinite_value_policy": "Nonfinite numeric diagnostics are serialized as null; null radiative Q denotes an unresolved infinite/zero-linewidth result, not a finite physical Q. Raw NPZ values are preserved.",
+  "conclusion_scope": "Within the tested frozen real epsilon range 15.8171 to 17.5459 and average-reference GME basis, material changes shift frequencies but do not recover the paper's narrow bandwidth. This does not diagnose a program/library bug or rule out other material parameters, basis incompleteness, additional A2g parents, or changed qBIC conditions.",
+  "limits": [
+    "Standard Hermitian GME with perturbative radiation; no full open complex-frequency solve",
+    "Only Legume eps_eff=average reference basis was tested in this sweep; same gmax/order settings do not prove basis completeness",
+    "Frozen-material cases test mean permittivity, not a self-consistent dispersive solver",
+    "Material slope estimate is local and assumes weak dispersion and consistent modal identity",
+    "Gamma Q is a symmetry-protected numerical floor, not a resolved linewidth",
+    "This comparison cannot establish that the original article used either public sample"
+  ]
+}

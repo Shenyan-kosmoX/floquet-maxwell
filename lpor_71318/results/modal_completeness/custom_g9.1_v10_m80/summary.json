@@ -1,0 +1,70 @@
+{
+  "status": "VERIFIED_WITHIN_NATIVE_LEGUME_MODAL_PROJECTION",
+  "does_not_verify": "Open-QNM normalization or radiation continuum completeness",
+  "gmax": 9.1,
+  "vertical_orders": 10,
+  "stored_native_modes": 80,
+  "basis_dimension": 2402,
+  "reference_epsilon": 16.0,
+  "physical_epsilon": 16.0,
+  "A2g_modes": [
+    2,
+    7,
+    14,
+    25,
+    43,
+    60,
+    64
+  ],
+  "A2g_frequencies_thz": [
+    377.39260464204244,
+    614.1859868424735,
+    745.7918259962693,
+    846.3233910958911,
+    1000.99881793792,
+    1078.6878887263879,
+    1095.9081079823982
+  ],
+  "modal_convergence": [
+    {
+      "count": 1,
+      "included_GME_modes": [
+        2
+      ],
+      "highest_omega_over_Omega": 23.71227668525115,
+      "coefficient": 0.016592633819520242
+    },
+    {
+      "count": 3,
+      "included_GME_modes": [
+        2,
+        7,
+        14
+      ],
+      "highest_omega_over_Omega": 46.85948243314393,
+      "coefficient": 0.016586115233471817
+    },
+    {
+      "count": 7,
+      "included_GME_modes": [
+        2,
+        7,
+        14,
+        25,
+        43,
+        60,
+        64
+      ],
+      "highest_omega_over_Omega": 68.85793722093982,
+      "coefficient": 0.016572705331841908
+    }
+  ],
+  "three_to_all_absolute_change": -1.3409901629908572e-05,
+  "three_to_all_relative_change": -0.0008085016558215242,
+  "paper_coefficient_approximate_readback": 0.27,
+  "paper_to_projected_coefficient_ratio": 16.291848228378047,
+  "dielectric_reconstruction_error": 3.8273017461251453e-13,
+  "z_quadrature_order": 24,
+  "elapsed_seconds": 16.980097300023772,
+  "interpretation": "Tests omission of the extra stored A2g eigenmodes at fixed GME basis; it does not prove completeness of the guided-mode approximation."
+}

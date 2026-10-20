@@ -1,0 +1,37 @@
+{
+  "status": "CONSISTENT_NATIVE_YEE_CW_RESPONSE",
+  "completed": true,
+  "success": true,
+  "identity": {
+    "kind": "incident",
+    "frequency": 0.388,
+    "sector": 1,
+    "epsilon": 11.5,
+    "template": 0,
+    "operator_id": "1893ad7f6ee9763dee7a84b73fc7fea3daef73fd2e5bfc45727d3f4d6dd94cf8",
+    "tolerance": 1e-08,
+    "L": 10,
+    "maxiters": 3000,
+    "empty": false,
+    "script_sha256": "eea0a94d489a5f31de86a8587eed6bce0e18e2c400384ba0f9ab755299d03859",
+    "carrier_sha256": null,
+    "calibration_sha256": "0e6eb729217f8758ef952b86e2021b5ce4fcda20e25239c5f4e39ff4c29514f5",
+    "basis_sha256": null
+  },
+  "solver_seconds": 93.26935362700004,
+  "source_lift_relative_residual": null,
+  "work": -0.0,
+  "net_flux": 1.0648671805539248e-08,
+  "output_power": 1.0000231496446301,
+  "incoming_power": 1.0000231380739508,
+  "output_work_residual": null,
+  "normalization_real_imag": [
+    -0.17210116708173318,
+    -0.4693485968585799
+  ],
+  "frequency_convention": "continuous f; discrete Maxwell omega_discrete for polarization current",
+  "phasor_convention": "E=exp(i omega dt/2)*(E_cw+E_first), H=H_cw; frozen nonintegrated electric current",
+  "fields_normalization": "unit incoming parity channel",
+  "port_convention": "Two native E planes; Yee k dispersion; sqrt(cos(k h/2)/2) flux normalization",
+  "native_port_condition_max": 3.1782402163636467
+}

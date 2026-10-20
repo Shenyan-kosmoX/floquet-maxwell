@@ -1,0 +1,114 @@
+{
+  "spatial": [
+    {
+      "config": "main_g3.1_k16_f3",
+      "gmax": 3.1,
+      "nk": 16,
+      "instantaneous_lowest_bandwidth": 3.6612428587101675e-05,
+      "instantaneous_gap_min": 0.006328845042001818,
+      "final_centers": [
+        39.17934131375568,
+        50.03667657970705,
+        50.15587200804273
+      ],
+      "final_widths": [
+        27.404916364391585,
+        8.937461045321545,
+        47.541223601941944
+      ],
+      "drives": [
+        0.01,
+        0.001,
+        0.0001
+      ]
+    },
+    {
+      "config": "main_g3.1_k32_f3",
+      "gmax": 3.1,
+      "nk": 32,
+      "instantaneous_lowest_bandwidth": 4.002989902618381e-05,
+      "instantaneous_gap_min": 0.006325284346702098,
+      "final_centers": [
+        39.28805422725115,
+        50.03703253954652,
+        50.021366069565445
+      ],
+      "final_widths": [
+        27.66250768473915,
+        9.187023379559507,
+        53.02577322952353
+      ],
+      "drives": [
+        0.01,
+        0.001,
+        0.0001
+      ]
+    },
+    {
+      "config": "control_g4.1_k16_f3",
+      "gmax": 4.1,
+      "nk": 16,
+      "instantaneous_lowest_bandwidth": 3.361021682857235e-05,
+      "instantaneous_gap_min": 0.006315628395437534,
+      "final_centers": [
+        39.157699224998126,
+        50.06691396460857,
+        49.996376942271716
+      ],
+      "final_widths": [
+        27.14605995510777,
+        8.132108279947616,
+        37.945192942201714
+      ],
+      "drives": [
+        0.01,
+        0.001,
+        0.0001
+      ]
+    }
+  ],
+  "temporal": [
+    {
+      "drive": 0.01,
+      "steps": [
+        1024,
+        2048
+      ],
+      "maximum_period_operator_relative_change": 3.5977972899251877e-06,
+      "maximum_multiplier_phase_change": 3.5837950946804627e-06,
+      "maximum_matched_quasifrequency_change": 5.703787043468828e-09,
+      "maximum_growth_rate_change": 2.2020040244650517e-15,
+      "scope": "Eigenvalue-set matching only, not degeneracy-resolved Floquet field/subspace convergence"
+    },
+    {
+      "drive": 0.001,
+      "steps": [
+        1024,
+        2048
+      ],
+      "maximum_period_operator_relative_change": 2.3727291962580057e-05,
+      "maximum_multiplier_phase_change": 3.847070396095949e-05,
+      "maximum_matched_quasifrequency_change": 6.122802699611661e-09,
+      "maximum_growth_rate_change": 2.265261723129626e-16,
+      "scope": "Eigenvalue-set matching only, not degeneracy-resolved Floquet field/subspace convergence"
+    },
+    {
+      "drive": 0.0001,
+      "steps": [
+        1024,
+        2048
+      ],
+      "maximum_period_operator_relative_change": 0.0007044808826642074,
+      "maximum_multiplier_phase_change": 0.00038778669317199977,
+      "maximum_matched_quasifrequency_change": 6.1718169083583906e-09,
+      "maximum_growth_rate_change": 2.1949361251729204e-17,
+      "scope": "Eigenvalue-set matching only, not degeneracy-resolved Floquet field/subspace convergence"
+    }
+  ],
+  "status": "POSTPROCESSING_AND_ONE_PERIOD_TIME_REFINEMENT_ON_EXISTING_NATIVE_BASES",
+  "limitations": [
+    "No new native spatial eigenproblem solved in this audit",
+    "Static modal/folded-sector completeness remains unverified",
+    "Computed modal subset cannot certify open radiation beyond its guided-only domain"
+  ]
+}

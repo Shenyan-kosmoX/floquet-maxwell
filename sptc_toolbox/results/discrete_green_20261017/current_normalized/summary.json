@@ -1,0 +1,846 @@
+{
+  "status": "KNOWN_SOURCE_TIME_FACTOR_REMOVED_FOR_CONTINUOUS_CURRENT_CONVENTION",
+  "dt": 0.020833333333333332,
+  "factors": [
+    {
+      "frequency": 0.38800000000000007,
+      "alpha_real_imag": [
+        0.9995701336510037,
+        -0.02538908225262235
+      ]
+    },
+    {
+      "frequency": 0.3980000000000001,
+      "alpha_real_imag": [
+        0.9995476930956176,
+        -0.026043147739395686
+      ]
+    },
+    {
+      "frequency": 0.408,
+      "alpha_real_imag": [
+        0.999524681847616,
+        -0.026697190915738453
+      ]
+    }
+  ],
+  "input_and_background_unchanged": true,
+  "comparisons": {
+    "bottom": {
+      "sideband_complex_amplitude_change": 0.02600205806739732,
+      "sideband_power_relative_change": [
+        0.00021861812361345656,
+        0.00024128186437866184
+      ],
+      "corrected_sideband_power": [
+        6.443330585836523e-05,
+        5.50219410916271e-05
+      ]
+    },
+    "even": {
+      "sideband_complex_amplitude_change": 0.026003548931568993,
+      "sideband_power_relative_change": [
+        0.0002187451057205081,
+        0.00024142666617543718
+      ],
+      "corrected_sideband_power": [
+        0.0001235718452385861,
+        0.00010606579450942928
+      ]
+    },
+    "odd": {
+      "sideband_complex_amplitude_change": 0.026041907295473163,
+      "sideband_power_relative_change": [
+        0.00021513941056738872,
+        0.0002378775392750665
+      ],
+      "corrected_sideband_power": [
+        4.713580049081227e-06,
+        4.485617197289521e-06
+      ]
+    }
+  },
+  "corrected_finite_three_frequency_response": [
+    {
+      "rank": 2,
+      "ls_abcd_relative_difference": 3.330239015400309e-16,
+      "sources": {
+        "bottom": {
+          "output_amplitudes": [
+            [
+              [
+                -0.005237754583355859,
+                -0.0017921468490026367
+              ],
+              [
+                -0.005326368001790654,
+                -0.0016642905610787734
+              ]
+            ],
+            [
+              [
+                -0.7059195383094994,
+                -0.5689981678032179
+              ],
+              [
+                0.2626291146779795,
+                -0.35079794084128735
+              ]
+            ],
+            [
+              [
+                0.004955356136026111,
+                0.0012809975451571606
+              ],
+              [
+                0.005042438179052562,
+                0.0011875208301300377
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            6.178592256605067e-05,
+            1.0141145567055425,
+            5.3032897657109956e-05
+          ],
+          "source_representation_residual": 0.15477498355003358,
+          "sideband_relative_change_from_template_settling": 0.008698917631914856,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.0001049647450736573
+        },
+        "even": {
+          "output_amplitudes": [
+            [
+              [
+                -0.007407303568163713,
+                -0.0025344783796237306
+              ],
+              [
+                -0.007532621866322442,
+                -0.0023536622832071234
+              ]
+            ],
+            [
+              [
+                -0.313454732909595,
+                -0.650393323162008
+              ],
+              [
+                -0.31345259626021515,
+                -0.6503948083010478
+              ]
+            ],
+            [
+              [
+                0.007007931853956869,
+                0.0018116041017278935
+              ],
+              [
+                0.007131084460244033,
+                0.0016794080635704513
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            0.00012357184513210175,
+            1.042531281164372,
+            0.00010606579531422009
+          ],
+          "source_representation_residual": 0.0007659454833710143,
+          "sideband_relative_change_from_template_settling": 0.00869891763191485,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.00010496474507363592
+        },
+        "odd": {
+          "output_amplitudes": [
+            [
+              [
+                1.7780915628762273e-17,
+                -5.204170427930421e-18
+              ],
+              [
+                1.7780915628762273e-17,
+                -5.637851296924623e-18
+              ]
+            ],
+            [
+              [
+                -0.6848662521118526,
+                -0.15429160271074474
+              ],
+              [
+                0.6848662521118526,
+                0.15429160271074466
+              ]
+            ],
+            [
+              [
+                -8.239936510889834e-18,
+                4.0115480381963664e-18
+              ],
+              [
+                -7.806255641895632e-18,
+                4.336808689942018e-18
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            6.9119067828350505e-34,
+            0.9856953638975716,
+            1.6373460812603645e-34
+          ],
+          "source_representation_residual": 1.0,
+          "sideband_relative_change_from_template_settling": 0.05646310987981199,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.03977770947832367
+        }
+      },
+      "diagnostics": {
+        "equation_relative_residual": 1.672092760716843e-17,
+        "reconstructed_projection_relative_residual": 8.524161696427979e-15,
+        "static_incident_outside_basis": [
+          [
+            0.7884797517273671,
+            0.7884797517273684
+          ],
+          [
+            0.1547596750049141,
+            0.15475967500491408
+          ],
+          [
+            0.808000999987941,
+            0.8080009999879431
+          ]
+        ],
+        "static_polarization_response_outside_basis": [
+          [
+            0.047157351024769124,
+            0.37695337687809194
+          ],
+          [
+            0.04710379534062351,
+            0.06154606159606432
+          ],
+          [
+            0.04889154602857397,
+            0.35293136312884865
+          ]
+        ],
+        "modulation_template_outside_basis": {
+          "-1": [
+            2.4542479836134696e-15,
+            2.2511126686969575e-15
+          ],
+          "1": [
+            2.4542479836134696e-15,
+            2.2511126686969575e-15
+          ]
+        },
+        "reconstructed_field_outside_basis": [
+          [
+            0.047514048848662185,
+            0.047514048848662165
+          ],
+          [
+            0.15477502748316588,
+            0.15477473185759644
+          ],
+          [
+            0.048850637179588825,
+            0.048850637179588784
+          ]
+        ],
+        "polarization_representation_relative_residual": [
+          0.1547749835500326,
+          0.15477468792474267
+        ],
+        "polarization_representation_absolute_residual": [
+          0.004119703371969965,
+          0.004119695310077044
+        ],
+        "polarization_representation_per_harmonic": [
+          [
+            0.1547750274831657,
+            0.1547747318575966
+          ],
+          [
+            0.11394627572912244,
+            0.11394627572912155
+          ],
+          [
+            0.1547750274831657,
+            0.1547747318575966
+          ]
+        ],
+        "finite_spatial_projection": true,
+        "harmonic_convergence_checked": false,
+        "stability_checked": false,
+        "frequency_interpolation": false,
+        "scope": "Static background is reconstructed exactly from supplied data; its modulation outside Q is omitted and audited. Residual is a source-density diagnostic, not a scattering-error bound."
+      }
+    },
+    {
+      "rank": 3,
+      "ls_abcd_relative_difference": 3.044385113373641e-16,
+      "sources": {
+        "bottom": {
+          "output_amplitudes": [
+            [
+              [
+                -0.005178462095505177,
+                -0.0028774618214913034
+              ],
+              [
+                -0.00538501516009864,
+                -0.0005817271456112177
+              ]
+            ],
+            [
+              [
+                -0.7059174227270485,
+                -0.5689969398536994
+              ],
+              [
+                0.26262697628799464,
+                -0.3507991481705538
+              ]
+            ],
+            [
+              [
+                0.005325511847131687,
+                0.0002900669345825106
+              ],
+              [
+                0.0046713502404827885,
+                0.002180574104478296
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            6.443305095515708e-05,
+            1.014109896303834,
+            5.502163175485798e-05
+          ],
+          "source_representation_residual": 0.0018485962744254109,
+          "sideband_relative_change_from_template_settling": 0.008528122017334086,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.00010290298576095226
+        },
+        "even": {
+          "output_amplitudes": [
+            [
+              [
+                -0.007407304015527548,
+                -0.0025344799183807773
+              ],
+              [
+                -0.007532621422895846,
+                -0.002353660748240412
+              ]
+            ],
+            [
+              [
+                -0.31345471467952746,
+                -0.650393313840463
+              ],
+              [
+                -0.31345261490007986,
+                -0.6503948175614336
+              ]
+            ],
+            [
+              [
+                0.0070079318883709656,
+                0.0018116025426045093
+              ],
+              [
+                0.007131084428750845,
+                0.0016794096255236296
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            0.00012357184565360302,
+            1.0425312813416712,
+            0.00010606579494469195
+          ],
+          "source_representation_residual": 0.0007659440011196188,
+          "sideband_relative_change_from_template_settling": 0.008698917593592204,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.00010496469752103634
+        },
+        "odd": {
+          "output_amplitudes": [
+            [
+              [
+                8.385268782913017e-05,
+                -0.001534865614783013
+              ],
+              [
+                -8.294005010037447e-05,
+                0.0015309743293164398
+              ]
+            ],
+            [
+              [
+                -0.6848632784565257,
+                -0.1542898754494268
+              ],
+              [
+                0.6848632466115991,
+                0.15428990454970756
+              ]
+            ],
+            [
+              [
+                0.000523479192421258,
+                -0.0014013859497219337
+              ],
+              [
+                -0.0005247975640652676,
+                0.0014043878467891427
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            4.713605177635981e-06,
+            0.9856861170497582,
+            4.485630752433943e-06
+          ],
+          "source_representation_residual": 0.010899112244123241,
+          "sideband_relative_change_from_template_settling": 1.3920319955700037e-05,
+          "repeated_conversion_vs_first_order_amplitude_difference": 2.5864251674230183e-06
+        }
+      },
+      "diagnostics": {
+        "equation_relative_residual": 1.9291735639989015e-16,
+        "reconstructed_projection_relative_residual": 8.0623303660361e-15,
+        "static_incident_outside_basis": [
+          [
+            0.23641816390430997,
+            0.23641816390430984
+          ],
+          [
+            0.0018455967340389272,
+            0.0018455967340389292
+          ],
+          [
+            0.21834029739574295,
+            0.21834029739574354
+          ]
+        ],
+        "static_polarization_response_outside_basis": [
+          [
+            0.04713108846103766,
+            0.37694998990052864,
+            0.10318688714963467
+          ],
+          [
+            0.04707769961950134,
+            0.061526955576054185,
+            0.10772627931441899
+          ],
+          [
+            0.04886716515570531,
+            0.35292990756343695,
+            0.11792537470198416
+          ]
+        ],
+        "modulation_template_outside_basis": {
+          "-1": [
+            2.454247983830396e-15,
+            2.251112737430304e-15,
+            1.3895714998110577e-15
+          ],
+          "1": [
+            2.454247983830396e-15,
+            2.251112737430304e-15,
+            1.3895714998110577e-15
+          ]
+        },
+        "reconstructed_field_outside_basis": [
+          [
+            0.04748933912578312,
+            0.047565524351532315
+          ],
+          [
+            0.0018440442591298172,
+            0.0018445189923567
+          ],
+          [
+            0.04892094312904071,
+            0.04885613948782996
+          ]
+        ],
+        "polarization_representation_relative_residual": [
+          0.0018485962744254107,
+          0.001849080739224427
+        ],
+        "polarization_representation_absolute_residual": [
+          4.920477508409556e-05,
+          4.9217666736915495e-05
+        ],
+        "polarization_representation_per_harmonic": [
+          [
+            0.0018440442591298387,
+            0.001844518992356694
+          ],
+          [
+            0.11360993431864308,
+            0.11385492005505117
+          ],
+          [
+            0.0018440442591298387,
+            0.001844518992356694
+          ]
+        ],
+        "finite_spatial_projection": true,
+        "harmonic_convergence_checked": false,
+        "stability_checked": false,
+        "frequency_interpolation": false,
+        "scope": "Static background is reconstructed exactly from supplied data; its modulation outside Q is omitted and audited. Residual is a source-density diagnostic, not a scattering-error bound."
+      }
+    },
+    {
+      "rank": 4,
+      "ls_abcd_relative_difference": 6.818163933237311e-16,
+      "sources": {
+        "bottom": {
+          "output_amplitudes": [
+            [
+              [
+                -0.005178767902540302,
+                -0.002877507917089716
+              ],
+              [
+                -0.005384718033375448,
+                -0.0005817463004702417
+              ]
+            ],
+            [
+              [
+                -0.7059174235500069,
+                -0.568996941130504
+              ],
+              [
+                0.26262697442809596,
+                -0.3507991449457715
+              ]
+            ],
+            [
+              [
+                0.005325173510306716,
+                0.0002899699770826866
+              ],
+              [
+                0.004671701650582353,
+                0.002180731362889875
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            6.443330585836523e-05,
+            1.0141098956792904,
+            5.50219410916271e-05
+          ],
+          "source_representation_residual": 0.0007571658812169276,
+          "sideband_relative_change_from_template_settling": 0.008528118671819278,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.00010290302530972568
+        },
+        "even": {
+          "output_amplitudes": [
+            [
+              [
+                -0.0074073039366281,
+                -0.0025344799699233357
+              ],
+              [
+                -0.007532621481310151,
+                -0.00235366066593343
+              ]
+            ],
+            [
+              [
+                -0.31345471533096003,
+                -0.6503933138140282
+              ],
+              [
+                -0.31345261368565835,
+                -0.6503948154287061
+              ]
+            ],
+            [
+              [
+                0.007007931982165454,
+                0.0018116024773727753
+              ],
+              [
+                0.007131084313602138,
+                0.0016794096638539976
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            0.0001235718452385861,
+            1.0425312781801173,
+            0.00010606579450942928
+          ],
+          "source_representation_residual": 0.0007659354338544686,
+          "sideband_relative_change_from_template_settling": 0.00869891752279051,
+          "repeated_conversion_vs_first_order_amplitude_difference": 0.00010496689834916525
+        },
+        "odd": {
+          "output_amplitudes": [
+            [
+              [
+                8.342013247313951e-05,
+                -0.0015349307522608958
+              ],
+              [
+                -8.251979104438763e-05,
+                0.0015309471579480404
+              ]
+            ],
+            [
+              [
+                -0.6848632789689321,
+                -0.15428987728153606
+              ],
+              [
+                0.6848632427668836,
+                0.1542899069775109
+              ]
+            ],
+            [
+              [
+                0.0005230006181002455,
+                -0.001401523003101424
+              ],
+              [
+                -0.0005243004799878014,
+                0.0014046102054372268
+              ]
+            ]
+          ],
+          "sideband_powers": [
+            4.713580049081227e-06,
+            0.985686113799929,
+            4.485617197289521e-06
+          ],
+          "source_representation_residual": 0.00017191470236045802,
+          "sideband_relative_change_from_template_settling": 1.4202514370123943e-05,
+          "repeated_conversion_vs_first_order_amplitude_difference": 2.5866678523962386e-06
+        }
+      },
+      "diagnostics": {
+        "equation_relative_residual": 2.260604724561301e-16,
+        "reconstructed_projection_relative_residual": 3.740603980094286e-15,
+        "static_incident_outside_basis": [
+          [
+            0.23603827509930672,
+            0.2360382750993067
+          ],
+          [
+            0.0007496198374667213,
+            0.0007496198374667214
+          ],
+          [
+            0.21762280240978046,
+            0.21762280240978027
+          ]
+        ],
+        "static_polarization_response_outside_basis": [
+          [
+            0.04700928271343365,
+            0.376933670992289,
+            0.10071505210208903,
+            0.9888237505125758
+          ],
+          [
+            0.046940352177292435,
+            0.061426463829850494,
+            0.1050140576798923,
+            0.9331506165523266
+          ],
+          [
+            0.04871285048756203,
+            0.35292135382448864,
+            0.1150537217467599,
+            0.9738045932557037
+          ]
+        ],
+        "modulation_template_outside_basis": {
+          "-1": [
+            2.2648459900973694e-14,
+            2.616876912590538e-15,
+            1.3226136467395043e-14,
+            1.7939369420743073e-14
+          ],
+          "1": [
+            2.2648459900973694e-14,
+            2.616876912590538e-15,
+            1.3226136467395043e-14,
+            1.7939369420743073e-14
+          ]
+        },
+        "reconstructed_field_outside_basis": [
+          [
+            0.04739896608953346,
+            0.04740937236488311
+          ],
+          [
+            0.000746006305880932,
+            0.0007460067627926396
+          ],
+          [
+            0.04872451351333966,
+            0.048738229245713915
+          ]
+        ],
+        "polarization_representation_relative_residual": [
+          0.0007571658812169272,
+          0.0007571813722957351
+        ],
+        "polarization_representation_absolute_residual": [
+          2.015376610839272e-05,
+          2.015417690926167e-05
+        ],
+        "polarization_representation_per_harmonic": [
+          [
+            0.0007460063058809325,
+            0.0007460067627926386
+          ],
+          [
+            0.11348361972933273,
+            0.1136687778707032
+          ],
+          [
+            0.0007460063058809325,
+            0.0007460067627926386
+          ]
+        ],
+        "finite_spatial_projection": true,
+        "harmonic_convergence_checked": false,
+        "stability_checked": false,
+        "frequency_interpolation": false,
+        "scope": "Static background is reconstructed exactly from supplied data; its modulation outside Q is omitted and audited. Residual is a source-density diagnostic, not a scattering-error bound."
+      }
+    }
+  ],
+  "limitations": [
+    "Source waveform normalization only; not target-response calibration",
+    "Does not remove startup transients, centered/Yee spatial pairing mismatch, or material derivative mismatch",
+    "Finite three-frequency model only; no harmonic or stability certification",
+    "Raw current-vs-current weak-conversion comparisons remain in parity/report.md; no one-sided correction of reference"
+  ],
+  "source_column_provenance": [
+    {
+      "frequency": 0.388,
+      "column": 0,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "a79419f4446fb1df58bac8d5f8e4ac4ccccb880577cd998d8ea07f2ebc535447",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.388_q0\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.388,
+      "column": 1,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "eb0c640fdd813a96a253d03078bb620e46a15e11c923259ada22fb170d0fff05",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.388_q1\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.388,
+      "column": 2,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "16d6ca5fd507a8bdaaf0d944d28b1a71694c8c7a8333fc42fec42b83e1468f99",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.388_q2\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.388,
+      "column": 3,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "09d32fa6e92591875a586c9a1746d645402093c3543850fc973358748876ab0a",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.388_q3\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.398,
+      "column": 0,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "a79419f4446fb1df58bac8d5f8e4ac4ccccb880577cd998d8ea07f2ebc535447",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.398_q0\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.398,
+      "column": 1,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "eb0c640fdd813a96a253d03078bb620e46a15e11c923259ada22fb170d0fff05",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.398_q1\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.398,
+      "column": 2,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "16d6ca5fd507a8bdaaf0d944d28b1a71694c8c7a8333fc42fec42b83e1468f99",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.398_q2\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.398,
+      "column": 3,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "09d32fa6e92591875a586c9a1746d645402093c3543850fc973358748876ab0a",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.398_q3\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.408,
+      "column": 0,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "a79419f4446fb1df58bac8d5f8e4ac4ccccb880577cd998d8ea07f2ebc535447",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.408_q0\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.408,
+      "column": 1,
+      "original_basis_id": "5f334143e7bc67fe3cd666ddc6d0e82a6c63586afe93e47ecd2150b815e03566",
+      "original_basis_sha256": "e07c5615899df8927582426e6e27334c2adf4335de1e9a0abc598018b318eea5",
+      "actual_column_sha256": "eb0c640fdd813a96a253d03078bb620e46a15e11c923259ada22fb170d0fff05",
+      "reused_historical_response": true,
+      "original_response_path": "sptc_toolbox\\results\\patterned_green_20261016\\template_responses\\f0.408_q1\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.408,
+      "column": 2,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "16d6ca5fd507a8bdaaf0d944d28b1a71694c8c7a8333fc42fec42b83e1468f99",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.408_q2\\response_t1200.npz"
+    },
+    {
+      "frequency": 0.408,
+      "column": 3,
+      "original_basis_id": "1dd631b5c2aa860f0edc3a3cc22210ba81bcb1d00c5865d60f2c82b12ef15623",
+      "original_basis_sha256": "dad5ac87d8dcd3760462e52550ddbc3fa748c8c73119a9adfb01d80e25542b19",
+      "actual_column_sha256": "09d32fa6e92591875a586c9a1746d645402093c3543850fc973358748876ab0a",
+      "reused_historical_response": false,
+      "original_response_path": "sptc_toolbox\\results\\discrete_green_20261017\\parity\\template_responses\\f0.408_q3\\response_t1200.npz"
+    }
+  ],
+  "source_sha256": {
+    "sptc_toolbox/scripts/normalize_green_current.py": "5df5f49fbfe045dcb04dfde1b0df388aa26e765854f8962955aa8c7a67dd8761",
+    "sptc_toolbox/results/discrete_green_20261017/parity/summary.json": "2ed296a443f1f4b5c4add30587130d1566d4eb08da15c25fc97aab0feefc0173",
+    "sptc_toolbox/results/discrete_green_20261017/yee/f0388/summary.json": "831427815cde049859aad034a9071a74f6544d59f602d7151b8e9292d6f09926"
+  }
+}

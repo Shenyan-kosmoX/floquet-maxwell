@@ -1,0 +1,265 @@
+{
+  "status": "PASSIVE_STATIC_AND_MODULATED_MATERIAL_SPHERE_ADAPTER_CHECKED",
+  "new_tests_passed": 15,
+  "existing_nondispersive_tests_passed": 18,
+  "convention": "Angular omega; exp(-i*(omega+n*drive)*t); output-row Lorentz denominator; canonical electric VSH amplitudes",
+  "garg_example_parameters": {
+    "wp_squared": 11.0,
+    "wr": 1.0,
+    "gamma": 0.125,
+    "drive": 0.1,
+    "radius": 4.27,
+    "carrier": 0.437
+  },
+  "controls": [
+    "static dispersive Mie vs treams at all signed sidebands via validated reality",
+    "unmodulated passive partial-wave optical theorem",
+    "old nondispersive harmonic T exact regression",
+    "modulation phase covariance",
+    "complex-frequency negative reality",
+    "primitive Lorentz time ODE vs output-row chi harmonic response",
+    "multi-Lorentz plus epsinf harmonic additivity",
+    "complex Cauchy derivative check",
+    "material pole, zero wave and unphysical real-time coefficient rejection"
+  ],
+  "temporal_truncation_diagnostics": [
+    {
+      "modulation_depth": 0.0,
+      "half_harmonics": 1,
+      "internal_eigenvector_condition": 1.0,
+      "boundary_relative_residuals": [
+        3.9760554474107896e-17,
+        6.15191617007344e-17
+      ],
+      "central_T_relative_change_TE_TM": null
+    },
+    {
+      "modulation_depth": 0.0,
+      "half_harmonics": 3,
+      "internal_eigenvector_condition": 1.0,
+      "boundary_relative_residuals": [
+        1.1247064035792024e-17,
+        1.497043283686611e-17
+      ],
+      "central_T_relative_change_TE_TM": [
+        2.504607797680686e-16,
+        0.0
+      ]
+    },
+    {
+      "modulation_depth": 0.0,
+      "half_harmonics": 5,
+      "internal_eigenvector_condition": 1.0,
+      "boundary_relative_residuals": [
+        5.53429286485624e-21,
+        5.6409287849138894e-21
+      ],
+      "central_T_relative_change_TE_TM": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "modulation_depth": 0.0,
+      "half_harmonics": 7,
+      "internal_eigenvector_condition": 1.0,
+      "boundary_relative_residuals": [
+        5.851543378548477e-30,
+        6.2357866591455765e-30
+      ],
+      "central_T_relative_change_TE_TM": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "modulation_depth": 0.0,
+      "half_harmonics": 9,
+      "internal_eigenvector_condition": 1.0,
+      "boundary_relative_residuals": [
+        5.6246247960371755e-30,
+        5.634918523842314e-30
+      ],
+      "central_T_relative_change_TE_TM": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "modulation_depth": 0.5,
+      "half_harmonics": 1,
+      "internal_eigenvector_condition": 1.3467596847746792,
+      "boundary_relative_residuals": [
+        4.3538615479996837e-17,
+        4.167231077460945e-17
+      ],
+      "central_T_relative_change_TE_TM": null
+    },
+    {
+      "modulation_depth": 0.5,
+      "half_harmonics": 3,
+      "internal_eigenvector_condition": 1.5931100846187862,
+      "boundary_relative_residuals": [
+        1.3678950592832345e-17,
+        1.8308265703067373e-17
+      ],
+      "central_T_relative_change_TE_TM": [
+        0.21968717065166138,
+        0.23569736825082307
+      ]
+    },
+    {
+      "modulation_depth": 0.5,
+      "half_harmonics": 5,
+      "internal_eigenvector_condition": 1.684009096740735,
+      "boundary_relative_residuals": [
+        8.365022833767437e-21,
+        8.875176498086993e-21
+      ],
+      "central_T_relative_change_TE_TM": [
+        0.007484257819316082,
+        0.007282061750373864
+      ]
+    },
+    {
+      "modulation_depth": 0.5,
+      "half_harmonics": 7,
+      "internal_eigenvector_condition": 1.9798296756058495,
+      "boundary_relative_residuals": [
+        7.483879874313838e-30,
+        7.234820854198075e-30
+      ],
+      "central_T_relative_change_TE_TM": [
+        5.546944609862079e-05,
+        5.9778717617964085e-05
+      ]
+    },
+    {
+      "modulation_depth": 0.5,
+      "half_harmonics": 9,
+      "internal_eigenvector_condition": 2.2374950673112437,
+      "boundary_relative_residuals": [
+        7.010346332834543e-30,
+        7.55215601721938e-30
+      ],
+      "central_T_relative_change_TE_TM": [
+        1.961141524643909e-07,
+        2.0067859349743931e-07
+      ]
+    },
+    {
+      "modulation_depth": 0.9,
+      "half_harmonics": 1,
+      "internal_eigenvector_condition": 1.5380888361593341,
+      "boundary_relative_residuals": [
+        5.686987437925723e-17,
+        4.3023586749285815e-17
+      ],
+      "central_T_relative_change_TE_TM": null
+    },
+    {
+      "modulation_depth": 0.9,
+      "half_harmonics": 3,
+      "internal_eigenvector_condition": 2.7182753957715375,
+      "boundary_relative_residuals": [
+        2.259707520086203e-17,
+        2.0928711530740037e-17
+      ],
+      "central_T_relative_change_TE_TM": [
+        0.6506039116107136,
+        0.6993694898782662
+      ]
+    },
+    {
+      "modulation_depth": 0.9,
+      "half_harmonics": 5,
+      "internal_eigenvector_condition": 3.249179576427195,
+      "boundary_relative_residuals": [
+        1.0078439516686621e-20,
+        9.986186966344743e-21
+      ],
+      "central_T_relative_change_TE_TM": [
+        0.18194770165739957,
+        0.19152963645485194
+      ]
+    },
+    {
+      "modulation_depth": 0.9,
+      "half_harmonics": 7,
+      "internal_eigenvector_condition": 3.8659761194185145,
+      "boundary_relative_residuals": [
+        4.152770822220401e-30,
+        3.662181361837655e-30
+      ],
+      "central_T_relative_change_TE_TM": [
+        0.029335278143700547,
+        0.03748982797390361
+      ]
+    },
+    {
+      "modulation_depth": 0.9,
+      "half_harmonics": 9,
+      "internal_eigenvector_condition": 4.306453610733574,
+      "boundary_relative_residuals": [
+        4.4719097902049e-30,
+        5.5986927852294635e-30
+      ],
+      "central_T_relative_change_TE_TM": [
+        0.0038178977528083385,
+        0.0041197949088169145
+      ]
+    },
+    {
+      "modulation_depth": 0.9,
+      "half_harmonics": 11,
+      "internal_eigenvector_condition": 4.826476666096593,
+      "boundary_relative_residuals": [
+        5.970831849086785e-30,
+        5.8914030097588225e-30
+      ],
+      "central_T_relative_change_TE_TM": [
+        0.0005341002595224035,
+        0.0004997204744073209
+      ]
+    },
+    {
+      "modulation_depth": 0.9,
+      "half_harmonics": 13,
+      "internal_eigenvector_condition": 5.350495610389295,
+      "boundary_relative_residuals": [
+        5.0777770110750476e-30,
+        7.691778233760603e-30
+      ],
+      "central_T_relative_change_TE_TM": [
+        0.00011554777647966833,
+        0.00010617318169332034
+      ]
+    },
+    {
+      "modulation_depth": 0.9,
+      "half_harmonics": 15,
+      "internal_eigenvector_condition": 5.791487582803065,
+      "boundary_relative_residuals": [
+        5.817984520087727e-30,
+        7.327612618173856e-30
+      ],
+      "central_T_relative_change_TE_TM": [
+        5.9743144101206506e-05,
+        8.975768046390366e-05
+      ]
+    }
+  ],
+  "limits": [
+    "Single sphere material/boundary tests do not validate periodic array lattice or plane-wave conversion",
+    "Strong Ms=.9 is not certified by N1; convergence must be checked for each final array observable",
+    "exact zero sidebands require a separate static wave basis",
+    "material poles are excluded by this eliminated epsilon representation",
+    "pumped Floquet scattering is not constrained to passive-unitary flux; pump work needs separate accounting"
+  ],
+  "source_sha256": {
+    "sptc_toolbox/sphere_material.py": "fc03c185e017422c10ca35bf81e4a12104b5187c1c206ff8b341ca470bc3016c",
+    "sptc_toolbox/tests/test_sphere_material.py": "3d8faf5c7fa39ef3697afbbcb1342eaf4f9d22a6e2e6b0426d974546f47130fd",
+    "toolbox_experiments/nphoton_2024_01563/floquet_sphere_tmatrix.py": "e7b24d00a268c47b9b56fe3456a87e4dae3c4f1cb6d05b32999cf32f86f400af",
+    "toolbox_experiments/nphoton_2024_01563/test_floquet_sphere_tmatrix.py": "09317fa41ec381cbd2937f40738933e87c16196520b86259a00c2893113173b0"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "status": "ZERO_FIELD_FIRST_MAXWELL_UPDATE_TEMPLATE_SOURCE_AUDIT",
+  "completed": true,
+  "passed": true,
+  "resolution": 40,
+  "dt": 0.0125,
+  "rank": 9,
+  "tolerance": 1e-10,
+  "basis_file": "<source-checkout>/sptc_toolbox/results/floquet_spatial_20261018/r40/basis/basis.npz",
+  "basis_sha256": "d482460792ec43ad4a750048dd4e6ad4e7ae01e93f89049bc43e43ff47d6cf27",
+  "grid_file": "<source-checkout>/sptc_toolbox/results/floquet_spatial_20261018/r40/source_grid.npz",
+  "grid_sha256": "ddecd289c2ea5c24d04029742f6ee199f316735fc5179d84af27f2b561b474db",
+  "script_sha256": "5d5ee411ab24905b45bed68a9f88f0cb0124c93ccee4a36e33df83d795950e4d",
+  "source_volume": [
+    1.0,
+    1.0,
+    0.75
+  ],
+  "eps_averaging": true,
+  "y_mirror": false,
+  "method": "Initialize H=D=0, apply one Maxwell update, recover J_spatial=-D_new/(dt*source.current(dt/2,dt)) at native Yee sites.",
+  "scope": "Source injection identity only; not a Green-response convergence check.",
+  "rows": [
+    {
+      "template": 0,
+      "sector": 1,
+      "relative_residual": 3.2151680296376593e-15,
+      "maximum_absolute_residual": 8.107217837591564e-13,
+      "outside_lift_support_relative_norm": 3.207824211580523e-15,
+      "actual_dt": 0.0125,
+      "initial_current_real_imag": [
+        1.0,
+        0.0
+      ],
+      "elapsed_seconds": 2.2934566929998255
+    },
+    {
+      "template": 1,
+      "sector": -1,
+      "relative_residual": 3.9884178520297295e-15,
+      "maximum_absolute_residual": 9.7701086793805e-13,
+      "outside_lift_support_relative_norm": 3.9875550591937555e-15,
+      "actual_dt": 0.0125,
+      "initial_current_real_imag": [
+        1.0,
+        0.0
+      ],
+      "elapsed_seconds": 2.3948799419999887
+    },
+    {
+      "template": 2,
+      "sector": 1,
+      "relative_residual": 3.048638465452663e-15,
+      "maximum_absolute_residual": 7.272959115547332e-13,
+      "outside_lift_support_relative_norm": 2.8751215650896917e-15,
+      "actual_dt": 0.0125,
+      "initial_current_real_imag": [
+        1.0,
+        0.0
+      ],
+      "elapsed_seconds": 2.5685627760001353
+    },
+    {
+      "template": 3,
+      "sector": -1,
+      "relative_residual": 2.9254871670133326e-15,
+      "maximum_absolute_residual": 6.354625474373545e-13,
+      "outside_lift_support_relative_norm": 2.924405811036791e-15,
+      "actual_dt": 0.0125,
+      "initial_current_real_imag": [
+        1.0,
+        0.0
+      ],
+      "elapsed_seconds": 2.186703078999926
+    },
+    {
+      "template": 4,
+      "sector": 1,
+      "relative_residual": 2.2452253621664177e-14,
+      "maximum_absolute_residual": 5.6707807343450655e-12,
+      "outside_lift_support_relative_norm": 2.245209819212296e-14,
+      "actual_dt": 0.0125,
+      "initial_current_real_imag": [
+        1.0,
+        0.0
+      ],
+      "elapsed_seconds": 2.203941626999949
+    },
+    {
+      "template": 5,
+      "sector": -1,
+      "relative_residual": 3.662404233449112e-12,
+      "maximum_absolute_residual": 8.515114899842167e-10,
+      "outside_lift_support_relative_norm": 3.662404145592408e-12,
+      "actual_dt": 0.0125,
+      "initial_current_real_imag": [
+        1.0,
+        0.0
+      ],
+      "elapsed_seconds": 2.1390280329999314
+    },
+    {
+      "template": 6,
+      "sector": 1,
+      "relative_residual": 3.3299615460953466e-12,
+      "maximum_absolute_residual": 7.799012730037212e-10,
+      "outside_lift_support_relative_norm": 1.2588879875732206e-12,
+      "actual_dt": 0.0125,
+      "initial_current_real_imag": [
+        1.0,
+        0.0
+      ],
+      "elapsed_seconds": 2.274075787000129
+    },
+    {
+      "template": 7,
+      "sector": -1,
+      "relative_residual": 8.671894636833437e-12,
+      "maximum_absolute_residual": 1.9900469442203352e-09,
+      "outside_lift_support_relative_norm": 8.671894392600095e-12,
+      "actual_dt": 0.0125,
+      "initial_current_real_imag": [
+        1.0,
+        0.0
+      ],
+      "elapsed_seconds": 2.3373067979998723
+    },
+    {
+      "template": 8,
+      "sector": 1,
+      "relative_residual": 1.6284373811318386e-11,
+      "maximum_absolute_residual": 2.794503559278345e-09,
+      "outside_lift_support_relative_norm": 1.2539405345178082e-11,
+      "actual_dt": 0.0125,
+      "initial_current_real_imag": [
+        1.0,
+        0.0
+      ],
+      "elapsed_seconds": 2.4394764349999605
+    }
+  ],
+  "discrete_frequency_prefactor_comparison": {
+    "reference_grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+    "reference_resolution": 32,
+    "resolution": 40,
+    "reference_dt": 0.015625,
+    "dt": 0.0125,
+    "reference_courant": 0.5,
+    "courant": 0.5,
+    "frequencies": [
+      0.378,
+      0.388,
+      0.398,
+      0.408,
+      0.418
+    ],
+    "reference_kappa": [
+      2.374907764791583,
+      2.437728513361199,
+      2.5005486745427397,
+      2.563368233199238,
+      2.6261871741938743
+    ],
+    "kappa": [
+      2.3749568255270885,
+      2.4377815716421076,
+      2.5006059418205733,
+      2.563429926374178,
+      2.6262535156146747
+    ],
+    "relative_kappa_change": [
+      2.065795406158699e-05,
+      2.176545936838359e-05,
+      2.290188486098188e-05,
+      2.4067230818047847e-05,
+      2.526149752468676e-05
+    ],
+    "relative_kappa_squared_change": [
+      4.13163348742529e-05,
+      4.353139247204041e-05,
+      4.580429421818799e-05,
+      4.8135040867647305e-05,
+      5.052363319268949e-05
+    ],
+    "scope": "Only J=-i*kappa*P prefactor with P held fixed; excludes changes of Maxwell Green response, resonant detuning, ports, material sampling and Floquet feedback. Not a time-step error bound."
+  },
+  "maximum_relative_residual": 1.6284373811318386e-11
+}

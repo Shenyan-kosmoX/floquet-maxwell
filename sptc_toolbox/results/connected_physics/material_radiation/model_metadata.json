@@ -1,0 +1,249 @@
+{
+  "status": "NATIVE_MATERIAL_ADE_AND_FINITE_WINDOW_RADIATION_CONNECTED",
+  "basis_id": "f58103a86dc11194f517b2e5c74134678d85e70deae89e5852835e5eed6d2718",
+  "drive_omega_a_over_c": 2.2,
+  "material_metadata": {
+    "adapter": "NATIVE_REGION_ELECTRIC_GALERKIN_LORENTZ_ADE",
+    "basis_id": "f58103a86dc11194f517b2e5c74134678d85e70deae89e5852835e5eed6d2718",
+    "physical_signature": "7cc32bf4c6ed8d73c2f6e699911b5ff6ab5780822247c21856cccf3df6768f10",
+    "native_source_sha256": "80e0d88841cc5fdf90f28d04da77213bca694e5814e72984538b4bb5f1974332",
+    "projection_arrays_sha256": "9d18b129634119118a019ea4022e9d4ba0254538cf61bec9aa675b005c79e26c",
+    "drive_omega_a_over_c": 2.2,
+    "baseline_interpretation": "high_frequency_permittivity",
+    "static_physical_dielectric": "epsilon_native(r) + sum_r chi_region(r)*chi_Lorentz_r(z), constant strengths only",
+    "dynamic_material_equation": "Physical regional polarization: Pddot+gamma Pdot+wr^2 P=f(t)*wp^2*chi_region*E; keep augmented states",
+    "region_materials": [
+      {
+        "rank": 2,
+        "full_dimension": 2,
+        "relative_rank_tolerance": 1e-12,
+        "discarded_positive_trace": 0.0,
+        "relative_gram_error": 2.3868139428178106e-16,
+        "region_index": 0,
+        "label": "physical dielectric background Lorentz oscillator",
+        "plasma_frequency_a_over_c": 0.8,
+        "resonance_frequency_a_over_c": 3.4,
+        "damping_a_over_c": 0.02,
+        "modulated": true,
+        "oscillator_index": 0
+      }
+    ],
+    "normalization": "integral E_i* epsilon_native E_j=delta_ij; M_inf=I; mu=I",
+    "native_coordinate_contract": "D=d projected displacement; B=h native H coefficient; E=e native E coefficient; d=e+sum L P",
+    "material_frequency_units": "Input angular omega*a/c; internal angular omega/Omega_drive",
+    "loss_ownership": "Material damping only; native radiative linewidth is neither added nor hidden in damping",
+    "spatial_scope": "Finite electric Galerkin projection of actual native patterned-slab modes; no full dispersive Legume spatial solve or QNM normalization",
+    "status": "FINITE_SPATIAL_MAXWELL_MULTIOSCILLATOR_ADE",
+    "time_units": "tau=Omega_drive*t",
+    "frequency_units": "angular omega/Omega_drive",
+    "state_order": "D,B,P0,J0,P1,J1,...",
+    "equation": "D'=C H; B'=-C^dagger E; Pj'=Jj; Jj'=fj Lj^dagger E-Kj Pj-Gj Jj",
+    "electric_field": "E=epsilon_inf(tau)^-1(D-sum_j Lj Pj)",
+    "polarization_coordinates": "Pj and Jj are material coordinates; physical electric polarization is Lj Pj",
+    "scope": "Supplied finite spatial operator and passive material memory; no native dispersive Legume, outgoing radiation, full continuum, or QNM residue claim"
+  },
+  "radiation_metadata": {
+    "status": "DECLARED_FINITE_WINDOW_DAMPING_DENSITY",
+    "basis_id": "f58103a86dc11194f517b2e5c74134678d85e70deae89e5852835e5eed6d2718",
+    "physical_signature": "7cc32bf4c6ed8d73c2f6e699911b5ff6ab5780822247c21856cccf3df6768f10",
+    "native_source_state_hash": "7197315952893443ab96cf84e5f3ac0b3de4eb18b305e3a55ccc868fe2aef029",
+    "minus_native_source_state_hash": "bea4ca140b414f0fb940ff66773202fb508006d2eb0095d01c77204c4e0970aa",
+    "drive_omega_a_over_c": 2.2,
+    "native_omega_a_over_c": [
+      2.216428696054406,
+      2.267777587610038
+    ],
+    "positive_window_omega_a_over_c": [
+      0.3,
+      3.5
+    ],
+    "positive_window_over_drive": [
+      0.13636363636363635,
+      1.5909090909090908
+    ],
+    "quadrature_order_positive": 3,
+    "broadening_over_drive": 0.035,
+    "threshold_handling": "resolve",
+    "quadrature": {
+      "method": "positive_piecewise_endpoint_regularization",
+      "order_per_segment": 3,
+      "node_count": 6,
+      "segments": [
+        {
+          "low": 0.3,
+          "high": 0.4518849411077992,
+          "map": "upper_square",
+          "nodes": 3,
+          "threshold_at_lower": false,
+          "threshold_at_upper": true
+        },
+        {
+          "low": 0.4518849411077992,
+          "high": 3.5,
+          "map": "lower_square",
+          "nodes": 3,
+          "threshold_at_lower": true,
+          "threshold_at_upper": false
+        }
+      ],
+      "thresholds_in_closed_window": [
+        0.4518849411077992
+      ],
+      "holes_removed": false,
+      "minimum_threshold_distance": 0.0019291916980996304,
+      "window": [
+        0.3,
+        3.5
+      ],
+      "scope": "Finite-window integral only; no spectral-tail or QNM completion"
+    },
+    "native_threshold_evaluation_relative_guard": 1e-12,
+    "positive_quadrature_node_count": 6,
+    "channel_counts": [
+      0,
+      0,
+      0,
+      4,
+      4,
+      4
+    ],
+    "minus_channel_counts": [
+      0,
+      0,
+      0,
+      4,
+      4,
+      4
+    ],
+    "coordinate_contract": "Scaled displacement u: physical D=sum_i omega_i D_i u_i; native H-mode coefficient=i du_i/dt under matching units. Not a direct time-varying-H coefficient equation.",
+    "radiation_units": "Gamma_over_drive = native squared-angular-frequency Gram / (2*abs(omega)*drive)",
+    "density_role": "Weak-radiation real-axis density evaluated with fixed native spatial modes",
+    "negative_frequency": "Measured native H(-k)^* = H(k) T; Gamma(-nu,+k)=T Gamma(nu,-k)^* T^H",
+    "reality_map_metadata": {
+      "verified_from_physical_fields": true,
+      "least_squares_map": [
+        [
+          [
+            -0.2983493529867899,
+            -0.9544567374021541
+          ],
+          [
+            -4.2285015720906663e-14,
+            2.6073134065858135e-14
+          ]
+        ],
+        [
+          [
+            1.3767599289497081e-15,
+            -5.061048427978627e-14
+          ],
+          [
+            0.9781875563403801,
+            -0.20772362557215018
+          ]
+        ]
+      ],
+      "least_squares_field_residual": 6.4572425688808504e-15,
+      "unitary_field_residual": 6.521258042315474e-15,
+      "raw_map_unitarity_residual": 3.570061379553399e-15,
+      "polar_map_relative_change": 1.4168117148850227e-15,
+      "metric_isometry_residual": 7.252732684885802e-16,
+      "frequency_intertwining_relative_residual": 2.0351658078100088e-15,
+      "principal_overlaps_squared": [
+        1.0,
+        1.0
+      ],
+      "field_rank_ratios": [
+        0.9999974019798317,
+        0.9999974019798312
+      ],
+      "field_Gram_condition_numbers": [
+        1.0000051960605858,
+        1.0000051960605867
+      ],
+      "plus_finite_window_Gram_identity_error": 6.1567805935910895e-06,
+      "minus_finite_window_Gram_identity_error": 6.156780592808236e-06,
+      "field_tolerance": 1e-06,
+      "unitary_tolerance": 1e-06,
+      "spectral_tolerance": 1e-07,
+      "rank_tolerance": 1e-09,
+      "normalization_contract": "Native full-space modal coordinates are orthonormal; sampled window may have nonidentity Gram but must support a unitary pointwise field map",
+      "not_a_whitened_coordinate_map": true,
+      "map_direction": "H_positive(-k)^* with G->-G = H_positive(+k) @ T",
+      "scope": "signed real-axis Gram/power map only, no complex retarded continuation",
+      "minus_G_index_for_each_plus_G": [
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "plus_kind": 0,
+      "minus_kind": 0,
+      "plus_modes": [
+        2,
+        3
+      ],
+      "minus_modes": [
+        2,
+        3
+      ],
+      "plus_native_state_hash": "7197315952893443ab96cf84e5f3ac0b3de4eb18b305e3a55ccc868fe2aef029",
+      "minus_native_state_hash": "bea4ca140b414f0fb940ff66773202fb508006d2eb0095d01c77204c4e0970aa",
+      "physical_geometry_sha256": "783ad42e11dece6bedbd0f7e2605da414a567f76ac204e87fa6871e64cc4a12d"
+    },
+    "material_reality_relative_error": 3.567388558690058e-15,
+    "material_reality_contract": "K(+k,tau) = T K(-k,tau)^* T^H; no same-k constraint away from Gamma",
+    "loss_ownership": "One memory bath only; material has no damping and no frozen gamma added",
+    "reactive_reference": "Kernel completion as written; no fitted counterterm or missing-tail correction",
+    "outside_window": "Density set to zero as an explicit model truncation, not asserted physically zero",
+    "system_bath_modulation": "Bath is stationary; only projected physical permittivity is time modulated",
+    "native_thresholds_omega_a_over_c": [
+      0.4518849411077992,
+      0.45188494110780103,
+      5.876257793227775,
+      5.876257793227777,
+      6.106963827273679,
+      6.486156644815609,
+      6.695881536903463,
+      6.695881536903465,
+      8.462931692983192,
+      8.740505344289645,
+      8.740505344289646,
+      9.05127818287969,
+      9.051278182879692,
+      9.311329527910091,
+      9.311329527910093,
+      12.157855341862525,
+      12.157855341862529,
+      12.383159919179485,
+      12.76295777830853,
+      12.977761529678538,
+      12.97776152967854
+    ],
+    "complete_open_dynamics_certified": false,
+    "density_convention": "L_j L_j^H = (2/pi) quadrature_weight_j * Gamma(nu_j)",
+    "broadened_hermitian_part": "D_H(omega)=(2/pi) sum w Gamma eta/[(nu-omega)^2+eta^2]",
+    "not_provided": [
+      "Unique full continuum",
+      "Physical ultraviolet tails",
+      "Pump-dependent continuum coupling"
+    ]
+  },
+  "state_order": "d,h,P0,J0,...,radiation_memory",
+  "bath_equation": "h'=-i W e-Lr; r'=-(eta+i nu)r+L^H h",
+  "bath_energy": "0.5*r^H*r",
+  "nondispersive_similarity": "d=W q; h=i v; r_new=i r_old",
+  "loss_ownership": "Material G acts only on J; radiation memory acts only through h; no native diagonal Q added",
+  "scope": "Finite native electric Galerkin + material ADE + stationary finite-window broadened native bath; no unique full Maxwell/QNM self-energy",
+  "native_bath_reference": "Fixed epsilon_inf modes and channels; material-induced changes in exterior coupling are not re-solved",
+  "physical_scattering_ports_provided": false
+}

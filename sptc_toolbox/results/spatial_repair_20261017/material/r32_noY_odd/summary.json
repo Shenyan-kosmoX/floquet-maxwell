@@ -1,0 +1,31 @@
+{
+  "status": "NATIVE_SUBPIXEL_TENSOR_STENCIL_INITIALIZATION_AUDIT",
+  "completed": true,
+  "resolution": 32,
+  "eps_averaging": true,
+  "sector": -1,
+  "y_mirror": false,
+  "volume_z": 0.75,
+  "ndof": 79872,
+  "nnz": 91104,
+  "operator_id": "492bc3d7af1c1e77c05970f646e2e07b2308e199f0368d17ff9f88f5a2dca741",
+  "first_step_E_equal_KD_relative_residual": 3.016305661349794e-18,
+  "first_step_component_relative_residuals": [
+    4.535885900644092e-18,
+    3.2901537574465468e-18,
+    0.0
+  ],
+  "second_step_E_equal_KD_relative_residual": 3.8322546902902616e-18,
+  "epsilon_derivative_centered_contrast_relative_residual": 7.361438670385752e-07,
+  "delta": 0.01,
+  "seconds": 6.621361827000328,
+  "dt": 0.015625,
+  "stencil_source": "https://github.com/NanoComp/meep/blob/v1.35.0/src/step_generic.cpp#L580",
+  "limitations": [
+    "Native bulk dielectric parameter only; no moving boundary or dispersion",
+    "Independent first-step operator audit is required before using any exported map"
+  ],
+  "owned_dofs": 43008,
+  "second_step_owned_E_equal_KD_relative_residual": 3.796019023635048e-18,
+  "full_chart_use": "Z-mirror full sampled K validated; Kxz=Kyz=0 for this fixed geometry"
+}

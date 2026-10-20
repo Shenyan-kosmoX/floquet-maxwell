@@ -1,0 +1,99 @@
+{
+  "scope": "Actual native Legume fields and finite Maxwell model; no paper curve calibration",
+  "spatial_quadrature": {
+    "z_order": [
+      10,
+      20
+    ],
+    "clipped_circle_order": [
+      96,
+      192
+    ],
+    "maximum_block_change": 1.474514954580286e-16
+  },
+  "zero_modulation_frequency_error": 0.0,
+  "independent_primitive_Maxwell": {
+    "drive": 0.01,
+    "periods": 1,
+    "rtol": 3e-10,
+    "midpoint_vs_DOP853_relative_state_error": 1.233610725208333e-06,
+    "independent_pump_work_balance_error": 6.388431205480577e-09
+  },
+  "pump_reversal": {
+    "forward_center": [
+      2.48213583431358e-15,
+      25.038333044378493,
+      50.03703253954652
+    ],
+    "reversed_center": [
+      -5.243598046315206e-15,
+      -25.03835008371628,
+      -50.037045214136825
+    ],
+    "maximum_opposite_center_error": 1.7039337787849718e-05
+  },
+  "finite_fold_boundary": [
+    {
+      "drive": 0.01,
+      "outer_sector_fraction": [
+        5.388283662362993e-05,
+        0.0009433018016976154,
+        0.0010992493246701456
+      ]
+    },
+    {
+      "drive": 0.001,
+      "outer_sector_fraction": [
+        5.388283662362993e-05,
+        5.1426563282140216e-05,
+        5.524374179842602e-05
+      ]
+    },
+    {
+      "drive": 0.0001,
+      "outer_sector_fraction": [
+        5.388283662362993e-05,
+        5.4014391975547535e-05,
+        5.414920404053109e-05
+      ]
+    }
+  ],
+  "native_supercell_static_controls": [
+    {
+      "gmax": 1.1,
+      "direct_unmodulated": 1.5894014210860783,
+      "direct_modulated": 1.5932518349657907,
+      "folded_unmodulated": 1.6072111255269375,
+      "folded_modulated": 1.6111437292519732,
+      "direct_shift": 0.003850413879712411,
+      "folded_shift": 0.003932603725035788,
+      "shift_difference": 8.218984532337714e-05,
+      "direct_modulated_radiation_gamma": 5.256171907593401e-13,
+      "scope": "Direct native 16a supercell versus folded primitive native E-space; absolute reference/cutoff discrepancy retained"
+    },
+    {
+      "gmax": 1.6,
+      "direct_unmodulated": 1.5996801479862213,
+      "direct_modulated": 1.6036366758328338,
+      "folded_unmodulated": 1.5952088895606478,
+      "folded_modulated": 1.599790141932919,
+      "direct_shift": 0.00395652784661249,
+      "folded_shift": 0.0045812523722712495,
+      "shift_difference": 0.0006247245256587597,
+      "direct_modulated_radiation_gamma": 5.745731132204167e-13,
+      "scope": "Direct native 16a supercell versus folded primitive native E-space; absolute reference/cutoff discrepancy retained"
+    },
+    {
+      "gmax": 2.1,
+      "direct_unmodulated": 1.6027090421967094,
+      "direct_modulated": 1.607102168262852,
+      "folded_unmodulated": 1.6032242785248996,
+      "folded_modulated": 1.6073314190575143,
+      "direct_shift": 0.004393126066142505,
+      "folded_shift": 0.004107140532614739,
+      "shift_difference": -0.0002859855335277661,
+      "direct_modulated_radiation_gamma": 3.0198318224645245e-13,
+      "scope": "Direct native 16a supercell versus folded primitive native E-space; absolute reference/cutoff discrepancy retained"
+    }
+  ]
+}

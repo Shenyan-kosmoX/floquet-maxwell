@@ -1,0 +1,74 @@
+{
+  "status": "SAME_K_FIELD_MATCHING_DIAGNOSTIC",
+  "meep_source": "toolbox_experiments\\results\\meep_cutoff\\path2.4_r32",
+  "meep_summary_file": "summary_v2.json",
+  "meep_summary_sha256": "19656b6ab271f7ff7053a29cda1865b8f28eb3bdbddc66d05d1461d888b3f92c",
+  "kpoint_ka": [
+    2.4,
+    0.0
+  ],
+  "meep_config": {
+    "radius": 0.3125,
+    "height": 0.4445234708392603,
+    "epsilon": 16.0,
+    "kx_ka": 2.4,
+    "ky_ka": 0.0,
+    "resolution": 32,
+    "padding": 1.0,
+    "pml": 0.5,
+    "frequency": 0.747,
+    "width": 0.3,
+    "warmup": 12.0,
+    "window": 100.0,
+    "sample_dt": 0.5,
+    "source_variant": 0,
+    "xy_samples": 12,
+    "z_order": 4,
+    "field_extent": 0.7
+  },
+  "meep_fit": {
+    "relative_time_space_fit_residual": 0.0006292938317835066,
+    "temporal_fit_rank": 10,
+    "temporal_fit_columns": 10,
+    "normalized_temporal_condition": 8.888372926222765,
+    "mode_to_residual_ratio": [
+      25.809509173819208,
+      17.756267711104538,
+      683.8813842246809,
+      1110.0088904088193,
+      39.66570390322347,
+      895.9532796490658,
+      83.4173279201849,
+      0.726779187970155,
+      51.05107519585236,
+      2.8246980135873554
+    ],
+    "norm_per_pole": [
+      0.12915441966124996,
+      0.4039297709284581,
+      6.107969516937686,
+      6.122569172243636,
+      1.260940691368276,
+      4.260488492373915,
+      0.4991043745237232,
+      0.0056904550173338024,
+      0.295218950129281,
+      0.05398170429720041
+    ]
+  },
+  "accepted_meep_pole_indexes": [
+    0,
+    2,
+    3,
+    5,
+    6,
+    8
+  ],
+  "comparisons": [],
+  "selection": "One-to-one assignment maximizes common-grid complex magnetic-field overlaps over every accepted Meep pole and60native modes; no nearest-frequency or strongest-two selection",
+  "limits": [
+    "Finite sampling metric and Meep pole fit need convergence checks",
+    "A missed lossy pole cannot be excluded by non-observation",
+    "Native GME radiation is approximate; this compares fields and real frequencies, not equal QNM norms"
+  ]
+}

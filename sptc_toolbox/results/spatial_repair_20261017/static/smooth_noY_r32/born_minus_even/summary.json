@@ -1,0 +1,31 @@
+{
+  "status": "SMOOTH_NATIVE_YEE_STATIC_RESPONSE",
+  "completed": true,
+  "success": false,
+  "identity": {
+    "resolution": 32,
+    "frequency": 0.388,
+    "sector": 1,
+    "y_mirror": false,
+    "eps_averaging": true,
+    "epsilon": 11.5,
+    "empty": false,
+    "grid_sha256": "c2e5f2527e78fcfa160a08ce3c78ee955ac57940a41941f2d86c623bae7f1cf3",
+    "polarization_sha256": "2983bddd01ab568b2cbdc7c9ed726b948afb34e248d77f4519288a6c5b7db9ce",
+    "calibration_sha256": null,
+    "polarization_key": "polarization",
+    "kind": "material_derivative_current",
+    "tolerance": 1e-06,
+    "L": 10,
+    "maxiters": 500
+  },
+  "solver_seconds": 361.96072381500016,
+  "source_lift_relative_residual": 2.962683377984834e-17,
+  "work": 9.32410812100636,
+  "output_power": 9.324100469536218,
+  "incoming_power": 1.0965915336406854e-10,
+  "fields_normalization": "absolute source",
+  "phasor_convention": "exp(-i omega t); E,D=exp(i omega dt/2)*(cw+first); J=-i kappa P",
+  "data_sha256": "fd2bbffcd02de11b4b293d31d675118314681c97c12442c0b50880944abd9187",
+  "audit_note": "Completed return captured from solver stdout. A proposed time-budget termination found the process already finished. Numerical success remains false; independent FDTD control is in born_minus_even_fdtd."
+}
